@@ -41,9 +41,12 @@ Build the editor with **Windows PowerShell 5.1**, .NET Framework 4, and an insta
 
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File Source/build.ps1 -MediaPortalDirectory 'C:\Program Files\Team MediaPortal\MediaPortal'
+python tools/validate.py --refresh
 python tools/validate.py
 python tools/package.py
 ```
+
+Review the rebuilt DLL and assembly version before refreshing the payload hashes. The refresh records an intentional payload change; it is not a compatibility test. To package the unchanged checked-in reference DLL, skip the editor build and hash refresh.
 
 The installer is written to `dist/Backdrop-MP139-AnyCPU-ALPHA5.mpe1`. Packaging can also use the checked-in ALPHA5 reference DLL. GitHub Actions validates the payload and builds an installer artifact; it does not run the MediaPortal GUI or compile the editor against MediaPortal binaries.
 
