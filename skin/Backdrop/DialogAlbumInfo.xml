@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<?xml version='1.0' encoding='utf-8'?>
 <window>
   <id>2001</id>
   <defaultcontrol>5</defaultcontrol>
@@ -12,23 +11,24 @@
       <posX>279</posX>
       <posY>86</posY>
       <width>1200</width>
-      <height>750</height>
+      <height>840</height>
       <texture>dialog_745_470.png</texture>
       <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
     </control>
     <control>
       <description>Album value</description>
-      <type>label</type>
+      <type>fadelabel</type>
       <id>20</id>
       <posX>318</posX>
       <posY>110</posY>
-      <label>-</label>
+      <label>#AlbumInfo.Title</label>
       <width>750</width>
-      <font>font32</font>
+      <font>font16BC</font>
       <textcolor>ff7FB1E5</textcolor>
       <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <height>55</height>
     </control>
     <control>
       <description>Artist</description>
@@ -51,7 +51,7 @@
       <posX>848</posX>
       <posY>225</posY>
       <width>570</width>
-      <label>-</label>
+      <label>#AlbumInfo.Artist</label>
       <font>font14</font>
       <textcolor>FFFFFFFF</textcolor>
       <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
@@ -133,7 +133,7 @@
       <id>22</id>
       <posX>848</posX>
       <posY>270</posY>
-      <label>-</label>
+      <label>#AlbumInfo.Year</label>
       <font>font14</font>
       <width>570</width>
       <textcolor>FFFFFFFF</textcolor>
@@ -146,7 +146,7 @@
       <id>23</id>
       <posX>848</posX>
       <posY>315</posY>
-      <label>-</label>
+      <label>#AlbumInfo.Rating</label>
       <font>font14</font>
       <width>570</width>
       <textcolor>FFFFFFFF</textcolor>
@@ -159,7 +159,7 @@
       <id>24</id>
       <posX>848</posX>
       <posY>360</posY>
-      <label>-</label>
+      <label>#AlbumInfo.Genre</label>
       <font>font14</font>
       <width>570</width>
       <textcolor>FFFFFFFF</textcolor>
@@ -173,7 +173,7 @@
       <posX>848</posX>
       <posY>405</posY>
       <width>330</width>
-      <label>-</label>
+      <label>#AlbumInfo.Tones</label>
       <font>font14</font>
       <width>570</width>
       <textcolor>FFFFFFFF</textcolor>
@@ -187,22 +187,12 @@
       <posX>848</posX>
       <posY>450</posY>
       <width>570</width>
-      <label>-</label>
+      <label>#AlbumInfo.Styles</label>
       <font>font14</font>
       <textcolor>FFFFFFFF</textcolor>
       <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
     </control>
-    <!--<control>
-	  <description>Music Thumb Default</description>
-      <id>0</id>
-      <type>image</type>
-      <posX>52</posX>
-      <posY>276</posY>
-      <width>480</width>
-      <height>442</height>
-      <texture>nothumb.png</texture>      	  
-    </control>-->
     <control>
       <description>Music Thumb</description>
       <id>3</id>
@@ -211,30 +201,19 @@
       <posY>225</posY>
       <width>270</width>
       <height>270</height>
-      <keepaspectratio>no</keepaspectratio>
-      <texture>-</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <texture>#AlbumInfo.Thumb</texture>
       <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
     </control>
-    <!--	    <control>
-	  <description>Music Thumb Frame</description>
-      <id>0</id>
-      <type>image</type>
-      <posX>15</posX>
-      <posY>238</posY>
-      <width>525</width>
-      <height>525</height>
-	  <texture>music_frame_shadow_big.png</texture> 
-    </control>-->
     <control>
       <description>textarea</description>
-      <type>textbox</type>
+      <type>textboxscrollup</type>
       <id>4</id>
       <posX>600</posX>
       <posY>495</posY>
       <width>810</width>
       <height>330</height>
-      <seperator>_______________________________________________________________________________________________________________</seperator>
       <font>font14</font>
       <onleft>5</onleft>
       <onright>5</onright>
@@ -242,6 +221,26 @@
       <ondown>5</ondown>
       <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <label>#AlbumInfo.Review</label>
+      <visible>!skin.hassetting(#AlbumInfo.ShowTracks)</visible>
+    </control>
+    <control>
+      <description>textarea</description>
+      <type>textboxscrollup</type>
+      <id>41</id>
+      <posX>600</posX>
+      <posY>495</posY>
+      <width>810</width>
+      <height>330</height>
+      <font>font14</font>
+      <onleft>5</onleft>
+      <onright>5</onright>
+      <onup>5</onup>
+      <ondown>5</ondown>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <label>#AlbumInfo.Tracks</label>
+      <visible>skin.hassetting(#AlbumInfo.ShowTracks)</visible>
     </control>
     <control>
       <description>Tracks/Review</description>
@@ -250,7 +249,7 @@
       <posX>318</posX>
       <posY>615</posY>
       <font>font14</font>
-      <label>182</label>
+      <label>#(L(183)) / #(L(182))</label>
       <onleft>4</onleft>
       <width>248</width>
       <height>60</height>
@@ -266,6 +265,7 @@
       <ondown>6</ondown>
       <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <onclick>#(skin.togglesetting('#AlbumInfo.ShowTracks'))</onclick>
     </control>
     <control>
       <description>Refresh</description>

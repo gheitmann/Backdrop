@@ -143,7 +143,7 @@
       <posY>153</posY>
       <width>215</width>
       <height>49</height>
-      <texture>MP139\tvpg.png</texture>
+      <texture>tvguide_time_bg.png</texture>
     </control>
     <control Style="mp139.NoShadow">
       <description>time header label template</description>
@@ -151,8 +151,8 @@
       <id>40</id>
       <posX>399</posX>
       <posY>156</posY>
-      <font>font13</font>
-      <textcolor>darkgray</textcolor>
+      <font>font16</font>
+      <textcolor>ff7FB1E5</textcolor>
     </control>
     <control>
       <description>day spin control</description>
@@ -444,7 +444,7 @@
       <posY>205</posY>
       <width>56</width>
       <height>629</height>
-      <texture>white.png</texture>
+      <texture>-</texture>
       <colordiffuse>994682b4</colordiffuse>
       <visible>control.isvisible(100)</visible>
     </control>
@@ -456,12 +456,12 @@
       <posY>206</posY>
       <width>54</width>
       <height>627</height>
-      <textureFocusedLeft>MP139\tvguide_channelgroup_overlay.png</textureFocusedLeft>
-      <textureNonFocusedLeft>MP139\tvguide_channelgroup_overlay.png</textureNonFocusedLeft>
-      <textureFocusedMid>MP139\tvguide_channelgroup_overlay.png</textureFocusedMid>
-      <textureNonFocusedMid>MP139\tvguide_channelgroup_overlay.png</textureNonFocusedMid>
-      <textureFocusedRight>MP139\tvguide_channelgroup_overlay.png</textureFocusedRight>
-      <textureNonFocusedRight>MP139\tvguide_channelgroup_overlay.png</textureNonFocusedRight>
+      <textureFocusedLeft>-</textureFocusedLeft>
+      <textureNonFocusedLeft>-</textureNonFocusedLeft>
+      <textureFocusedMid>tv_group_bg_focus.png</textureFocusedMid>
+      <textureNonFocusedMid>tv_group_bg.png</textureNonFocusedMid>
+      <textureFocusedRight>-</textureFocusedRight>
+      <textureNonFocusedRight>-</textureNonFocusedRight>
       <textureIcon>-</textureIcon>
       <textureIcon2>-</textureIcon2>
       <label />

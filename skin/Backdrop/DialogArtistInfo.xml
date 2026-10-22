@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <window>
   <id>2011</id>
   <defaultcontrol>5</defaultcontrol>
@@ -11,23 +11,24 @@
       <posX>279</posX>
       <posY>86</posY>
       <width>1200</width>
-      <height>750</height>
+      <height>840</height>
       <texture>dialog_745_470.png</texture>
       <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
     </control>
     <control>
       <description>Artist value</description>
-      <type>label</type>
+      <type>fadelabel</type>
       <id>20</id>
       <posX>318</posX>
       <posY>110</posY>
-      <label>-</label>
+      <label>#ArtistInfo.Artist</label>
       <width>750</width>
-      <font>font32</font>
+      <font>font16BC</font>
       <textcolor>ff7FB1E5</textcolor>
       <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <height>55</height>
     </control>
     <control>
       <description>Artist value</description>
@@ -133,7 +134,7 @@
       <id>22</id>
       <posX>848</posX>
       <posY>225</posY>
-      <label>-</label>
+      <label>#ArtistInfo.Born</label>
       <width>570</width>
       <font>font14</font>
       <textcolor>FFFFFFFF</textcolor>
@@ -146,7 +147,7 @@
       <id>23</id>
       <posX>848</posX>
       <posY>270</posY>
-      <label>-</label>
+      <label>#ArtistInfo.YearsActive</label>
       <width>570</width>
       <font>font14</font>
       <textcolor>FFFFFFFF</textcolor>
@@ -159,7 +160,7 @@
       <id>24</id>
       <posX>848</posX>
       <posY>315</posY>
-      <label>-</label>
+      <label>#ArtistInfo.Genres</label>
       <width>570</width>
       <font>font14</font>
       <textcolor>FFFFFFFF</textcolor>
@@ -173,7 +174,7 @@
       <posX>848</posX>
       <posY>360</posY>
       <width>570</width>
-      <label>-</label>
+      <label>#ArtistInfo.Tones</label>
       <font>font14</font>
       <textcolor>FFFFFFFF</textcolor>
       <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
@@ -186,7 +187,7 @@
       <posX>848</posX>
       <posY>405</posY>
       <width>570</width>
-      <label>-</label>
+      <label>#ArtistInfo.Styles</label>
       <font>font14</font>
       <textcolor>FFFFFFFF</textcolor>
       <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
@@ -199,7 +200,7 @@
       <posX>848</posX>
       <posY>450</posY>
       <width>570</width>
-      <label>-</label>
+      <label>#ArtistInfo.Instruments</label>
       <font>font14</font>
       <textcolor>FFFFFFFF</textcolor>
       <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
@@ -213,20 +214,19 @@
       <posY>225</posY>
       <width>270</width>
       <height>270</height>
-      <keepaspectratio>no</keepaspectratio>
-      <texture>-</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <texture>#ArtistInfo.Thumb</texture>
       <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
     </control>
     <control>
       <description>textarea</description>
-      <type>textbox</type>
+      <type>textboxscrollup</type>
       <id>4</id>
       <posX>600</posX>
       <posY>510</posY>
       <width>810</width>
       <height>360</height>
-      <seperator>_______________________________________________________________________________________________________________</seperator>
       <font>font14</font>
       <onleft>5</onleft>
       <onright>5</onright>
@@ -234,6 +234,26 @@
       <ondown>5</ondown>
       <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <label>#ArtistInfo.Bio</label>
+      <visible>!skin.hassetting(#ArtistInfo.ShowAlbums)</visible>
+    </control>
+    <control>
+      <description>textarea</description>
+      <type>textboxscrollup</type>
+      <id>41</id>
+      <posX>600</posX>
+      <posY>510</posY>
+      <width>810</width>
+      <height>360</height>
+      <font>font14</font>
+      <onleft>5</onleft>
+      <onright>5</onright>
+      <onup>5</onup>
+      <ondown>5</ondown>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <label>#ArtistInfo.Albums</label>
+      <visible>skin.hassetting(#ArtistInfo.ShowAlbums)</visible>
     </control>
     <control>
       <description>Bia/album</description>
@@ -244,7 +264,7 @@
       <width>248</width>
       <height>60</height>
       <font>font14</font>
-      <label>689</label>
+      <label>#(L(689)) / #(L(132))</label>
       <onleft>4</onleft>
       <textalign>center</textalign>
       <textureFocus>button.focus.png</textureFocus>
@@ -260,6 +280,7 @@
       <ondown>6</ondown>
       <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <onclick>#(skin.togglesetting('#ArtistInfo.ShowAlbums'))</onclick>
     </control>
     <control>
       <description>Refresh</description>

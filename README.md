@@ -2,7 +2,7 @@
 
 Experimental port of cul8er's **Backdrop 1.0.1** skin to **MediaPortal 1.39**.
 
-Current version: **ALPHA5**, menu editor **1.39.0.5**. The editor and installer target AnyCPU. Runtime checks were performed on MediaPortal 1.39 x64; a complete x86 runtime test is still pending.
+Current version on this branch: **ALPHA6**, menu editor **1.39.0.5** (unchanged). The editor and installer target AnyCPU. Runtime checks were performed on MediaPortal 1.39 x64; a complete x86 runtime test is still pending.
 
 ## Install
 
@@ -19,15 +19,18 @@ Use architecture-compatible versions of Fanart Handler, Latest Media Handler, an
 - Corrected lower-menu mouse hit areas and submenu wake-up behavior.
 - Enabled the topbar on regular pages and fixed vertical side-menu captions.
 - Replaced visible `#scroll.wrap` placeholders with a static separator.
+- Removed unused DWHD-specific Now Playing design and classic-home settings.
+- Corrected the previous-track topbar icon, guide time-header artwork, and group-button textures.
+- Restored artist/album information using current MediaPortal properties, including biography/discography and review/track-list toggles.
 
-See [validation and limitations](docs/VALIDATION.md) and [maintenance guidance](docs/MAINTENANCE.md). Six of seven reported UI areas were verified; this is **not** an overall compatibility percentage. A populated TV guide remains unverified.
+See [validation and limitations](docs/VALIDATION.md) and [maintenance guidance](docs/MAINTENANCE.md). For the latest five reported areas, three were verified in the running application, the guide is partially verified, and the TuneIn hang remains unresolved. This is **not** an overall compatibility percentage.
 
 ## Repository layout
 
 | Path | Contents |
 | --- | --- |
 | `skin/Backdrop/` | Complete installable skin, including images, sounds, and translations |
-| `Source/` | Menu editor source, build script, and ALPHA5 reference DLL |
+| `Source/` | Menu editor source, build script, and unchanged 1.39.0.5 reference DLL |
 | `fonts/` | Fonts carried over from the original installer |
 | `config/` | Default menu editor configuration |
 | `packaging/` | Portable installer template and payload checksums |
@@ -48,7 +51,7 @@ python tools/package.py
 
 Review the rebuilt DLL and assembly version before refreshing the payload hashes. The refresh records an intentional payload change; it is not a compatibility test. To package the unchanged checked-in reference DLL, skip the editor build and hash refresh.
 
-The installer is written to `dist/Backdrop-MP139-AnyCPU-ALPHA5.mpe1`. Packaging can also use the checked-in ALPHA5 reference DLL. GitHub Actions validates the payload and builds an installer artifact; it does not run the MediaPortal GUI or compile the editor against MediaPortal binaries.
+The installer is written to `dist/Backdrop-MP139-AnyCPU-ALPHA6.mpe1`. Packaging can also use the checked-in reference DLL. GitHub Actions validates the payload and builds an installer artifact; it does not run the MediaPortal GUI or compile the editor against MediaPortal binaries.
 
 ## Credits
 
