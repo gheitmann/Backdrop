@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+This file should contain the facade view
+-->
+<window>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>yes</disabletopbar>
+  <controls>
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <visible>!Control.HasFocus(50)</visible>
+      <control>
+        <description>composite control consisting of a list control and a thumbnail panel</description>
+        <type>facadeview</type>
+        <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+        <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+        <id>50</id>
+        <control>
+          <description>Movie List</description>
+          <type>listcontrol</type>
+          <id>50</id>
+          <posY>608</posY>
+          <posX>1181</posX>
+          <height>518</height>
+          <width>739</width>
+          <spinPosY>1200</spinPosY>
+          <spinPosX>2100</spinPosX>
+          <textXOff>24</textXOff>
+          <textYOff>0</textYOff>
+          <textureFocus>playlist_sub_focus2.png</textureFocus>
+          <textureNoFocus>playlist_sub_nofocus1.png</textureNoFocus>
+          <textureUp>-</textureUp>
+          <textureDown>-</textureDown>
+          <spinCanFocus>no</spinCanFocus>
+          <shadowAngle>45</shadowAngle>
+          <shadowDistance>1</shadowDistance>
+          <shadowColor>FF000000</shadowColor>
+          <unfocusedAlpha>255</unfocusedAlpha>
+          <dimColor>ffffffff</dimColor>
+          <textcolor>ffffffff</textcolor>
+          <selectedColor>ff335266</selectedColor>
+          <shadedColor>ffffffff</shadedColor>
+          <playedColor>ffffffff</playedColor>
+          <textcolor2>ff7FB1E5</textcolor2>
+          <textcolor3>ffffffff</textcolor3>
+          <colordiffuse>ffffffff</colordiffuse>
+          <remoteColor>ffcccccc</remoteColor>
+          <spaceBetweenItems>-1</spaceBetweenItems>
+          <textureHeight>80</textureHeight>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <textXOff>20</textXOff>
+          <textYOff>0</textYOff>
+          <textXOff2>455</textXOff2>
+          <textYOff2>40</textYOff2>
+          <textXOff3>1800</textXOff3>
+          <textYOff3>0</textYOff3>
+          <IconYOff>4</IconYOff>
+          <IconXOff>6</IconXOff>
+          <font>font14</font>
+          <font2>font12</font2>
+          <font3>font12</font3>
+          <itemHeight>72</itemHeight>
+          <itemWidth>72</itemWidth>
+          <animation effect="slide" start="750,0" time="800" acceleration="-0.9" reversible="true">focus</animation>
+          <animation effect="slide" end="750,0" time="200" acceleration="0.5" reversible="true">unfocus</animation>
+        </control>
+        <control>
+          <description>Movie List</description>
+          <type>listcontrol</type>
+          <subtype>album</subtype>
+          <id>50</id>
+          <posY>608</posY>
+          <posX>1299</posX>
+          <height>518</height>
+          <width>428</width>
+          <spinPosY>1200</spinPosY>
+          <spinPosX>2100</spinPosX>
+          <textXOff>24</textXOff>
+          <textYOff>0</textYOff>
+          <textureFocus>playlist_sub_focus2.png</textureFocus>
+          <textureNoFocus>playlist_sub_nofocus1.png</textureNoFocus>
+          <textureUp>-</textureUp>
+          <textureDown>-</textureDown>
+          <spinCanFocus>no</spinCanFocus>
+          <shadowAngle>45</shadowAngle>
+          <shadowDistance>1</shadowDistance>
+          <shadowColor>FF000000</shadowColor>
+          <unfocusedAlpha>255</unfocusedAlpha>
+          <dimColor>ffffffff</dimColor>
+          <textcolor>ffffffff</textcolor>
+          <selectedColor>ff335266</selectedColor>
+          <shadedColor>ffffffff</shadedColor>
+          <playedColor>ffffffff</playedColor>
+          <textcolor2>ffffffff</textcolor2>
+          <textcolor3>ffffffff</textcolor3>
+          <colordiffuse>ffffffff</colordiffuse>
+          <remoteColor>ffcccccc</remoteColor>
+          <spaceBetweenItems>-1</spaceBetweenItems>
+          <textureHeight>52</textureHeight>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <textXOff>-95</textXOff>
+          <textXOff2>2382</textXOff2>
+          <textXOff3>2480</textXOff3>
+          <textYOff3>6</textYOff3>
+          <textYOff2>6</textYOff2>
+          <IconYOff>6</IconYOff>
+          <IconXOff>430</IconXOff>
+          <font>font14</font>
+          <font2>font14</font2>
+          <font3>font11</font3>
+          <itemHeight>75</itemHeight>
+          <itemWidth>105</itemWidth>
+          <animation effect="slide" start="750,0" time="800" acceleration="-0.9" reversible="true">focus</animation>
+          <animation effect="slide" end="750,0" time="200" acceleration="0.5" reversible="true">unfocus</animation>
+        </control>
+        <control>
+          <description>Thumbnail Panel</description>
+          <type>thumbnailpanel</type>
+          <id>50</id>
+          <onleft>2</onleft>
+          <onright>50</onright>
+          <posX>34</posX>
+          <posY>600</posY>
+          <width>1875</width>
+          <height>600</height>
+          <spinPosX>3300</spinPosX>
+          <spinPosY>1028</spinPosY>
+          <textureUp>-</textureUp>
+          <textureDown>-</textureDown>
+          <textureUpFocus>-</textureUpFocus>
+          <textureDownFocus>-</textureDownFocus>
+          <imageFolder>-</imageFolder>
+          <!--		<imageFolderFocus>cd_glass_frame.png</imageFolderFocus> 		-->
+          <imageFolderFocus>-</imageFolderFocus>
+          <frameNoFocus>episode.frame.png</frameNoFocus>
+          <frameFocus>episode.frame.png</frameFocus>
+          <textureMask>episode.frame.background.png</textureMask>
+          <textureWidth>216</textureWidth>
+          <textureHeight>146</textureHeight>
+          <itemWidth>232</itemWidth>
+          <itemHeight>160</itemHeight>
+          <thumbWidth>216</thumbWidth>
+          <thumbHeight>146</thumbHeight>
+          <thumbPosX>0</thumbPosX>
+          <thumbPosY>0</thumbPosY>
+          <font>font14</font>
+          <suffix>|</suffix>
+          <textureWidthBig>296</textureWidthBig>
+          <textureHeightBig>195</textureHeightBig>
+          <itemWidthBig>310</itemWidthBig>
+          <itemHeightBig>270</itemHeightBig>
+          <thumbWidthBig>296</thumbWidthBig>
+          <thumbHeightBig>195</thumbHeightBig>
+          <thumbPosXBig>0</thumbPosXBig>
+          <thumbPosYBig>0</thumbPosYBig>
+          <!--<thumbZoom>yes</thumbZoom>-->
+          <thumbZoom>no</thumbZoom>
+          <keepaspectratio>no</keepaspectratio>
+          <centered>yes</centered>
+          <enableFocusZoom>no</enableFocusZoom>
+          <unfocusedAlpha>255</unfocusedAlpha>
+          <scrollOffset>1</scrollOffset>
+          <!--<zoomXPixels>60</zoomXPixels>
+					<zoomYPixels>40</zoomYPixels>	-->
+          <zoomXPixels>55</zoomXPixels>
+          <zoomYPixels>55</zoomYPixels>
+          <showFrame>true</showFrame>
+          <hideUnfocusTexture>yes</hideUnfocusTexture>
+          <renderFocusText>no</renderFocusText>
+          <renderUnfocusText>no</renderUnfocusText>
+          <animation effect="slide" start="2025,0" time="1200" acceleration="-0.9" reversible="true">focus</animation>
+          <animation effect="slide" end="-2025,0" time="1400" acceleration="0.5" reversible="true">unfocus</animation>
+        </control>
+        <control>
+          <description>Filmstrip view</description>
+          <type>filmstrip</type>
+          <dimColor>90ffffff</dimColor>
+          <id>50</id>
+          <onrigth>50</onrigth>
+          <onleft>50</onleft>
+          <onup>2</onup>
+          <ondown>2</ondown>
+          <dimColor>90ffffff</dimColor>
+          <posX>70</posX>
+          <posY>315</posY>
+          <spinPosX>2100</spinPosX>
+          <spinPosY>1020</spinPosY>
+          <scrollOffset>3</scrollOffset>
+          <width>1860</width>
+          <height>864</height>
+          <thumbWidth>330</thumbWidth>
+          <thumbHeight>218</thumbHeight>
+          <thumbPosX>0</thumbPosX>
+          <thumbPosY>0</thumbPosY>
+          <itemWidth>362</itemWidth>
+          <itemHeight>195</itemHeight>
+          <textureWidth>330</textureWidth>
+          <textureHeight>218</textureHeight>
+          <imageFolderFocus>-</imageFolderFocus>
+          <frame>thumb.frame.small.png</frame>
+          <frameFocus>thumb.frame.small.png</frameFocus>
+          <thumbs flipY="true" diffuse="diffuseoverlay.png" />
+          <InfoImage>-</InfoImage>
+          <background>-</background>
+          <showFrame>yes</showFrame>
+          <showFolder>no</showFolder>
+          <showBackGround>no</showBackGround>
+          <showInfoImage>no</showInfoImage>
+          <unfocusedAlpha>255</unfocusedAlpha>
+          <thumbAnimation effect="zoom" tween="back" acceleration="-4" easing="out" start="100,100" reversible="true" end="138,138" center="0,290" time="450">focus</thumbAnimation>
+          <thumbAnimation effect="zoom" start="138,138" reversible="true" end="100,100" center="0,290" time="200">unfocus</thumbAnimation>
+          <animation effect="slide" start="1350,0" time="1200" acceleration="-0.9" reversible="true">focus</animation>
+          <animation effect="slide" end="-1350,0" time="1400" acceleration="0.5" reversible="true">unfocus</animation>
+        </control>
+        <control>
+          <description>playlist listcontrol</description>
+          <type>playlistcontrol</type>
+          <id>50</id>
+          <!--		        <posX>1050</posX>
+      <posY>742</posY>
+      <width>855</width>
+      <height>390</height>-->
+          <posY>174</posY>
+          <posX>1299</posX>
+          <height>562</height>
+          <width>600</width>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <textureHeight>45</textureHeight>
+          <itemHeight>45</itemHeight>
+          <textXOff>0</textXOff>
+          <textXOff2>510</textXOff2>
+          <font>font14</font>
+          <font2>font14</font2>
+          <textYOff>-3</textYOff>
+          <textYOff2>-3</textYOff2>
+          <IconYOff>2</IconYOff>
+          <PinIconYOff>2</PinIconYOff>
+          <spinPosX>1755</spinPosX>
+          <spinPosY>730</spinPosY>
+          <spinAlign>Right</spinAlign>
+          <spinColor>ffffffff</spinColor>
+          <spinWidth>45</spinWidth>
+          <spinHeight>45</spinHeight>
+          <textureUp>arrow_round_right_nofocus.png</textureUp>
+          <textureDown>arrow_round_left_nofocus.png</textureDown>
+          <textureUpFocus>arrow_round_right_focus.png</textureUpFocus>
+          <textureDownFocus>arrow_round_left_focus.png</textureDownFocus>
+          <textureFocus>list_background_focus.png</textureFocus>
+          <textureNoFocus>-</textureNoFocus>
+          <spaceBetweenItems>-1</spaceBetweenItems>
+          <upBtnYOffset>-10</upBtnYOffset>
+          <downBtnYOffset>-10</downBtnYOffset>
+          <deleteBtnYOffset>-10</deleteBtnYOffset>
+          <!--		  		  		<textcolor>ffffffff</textcolor>
+		<selectedColor>ffffffff</selectedColor>
+		<textcolor>ffffffff</textcolor>
+		<textcolor2>ffffffff</textcolor2>
+		 <colordiffuse>ffffffff</colordiffuse>
+	-->
+          <shadedColor>20ffffff</shadedColor>
+          <selectedColor>ffffffff</selectedColor>
+          <playedColor>ffffffff</playedColor>
+          <textcolor>90cccccc</textcolor>
+          <textcolor2>90cccccc</textcolor2>
+          <textcolor3>90cccccc</textcolor3>
+          <colordiffuse>90cccccc</colordiffuse>
+          <remoteColor>ffffffff</remoteColor>
+          <downloadColor>ffffffff</downloadColor>
+          <scrollOffset>2</scrollOffset>
+          <unfocusedAlpha>250</unfocusedAlpha>
+          <upBtnWidth>27</upBtnWidth>
+          <downBtnWidth>27</downBtnWidth>
+          <deleteBtnWidth>27</deleteBtnWidth>
+          <upBtnHeight>63</upBtnHeight>
+          <downBtnHeight>63</downBtnHeight>
+          <deleteBtnHeight>63</deleteBtnHeight>
+          <upBtnXOffset>524</upBtnXOffset>
+          <downBtnXOffset>550</downBtnXOffset>
+          <deleteBtnXOffset>578</deleteBtnXOffset>
+          <!--<shadowAngle>45</shadowAngle>
+          <shadowDistance>1</shadowDistance>
+          <shadowColor>FF000000</shadowColor>-->
+          <!--          <itemWidth>42</itemWidth>
+          <itemHeight>42</itemHeight>
+          <IconXOff>2</IconXOff>
+          <IconYOff>2</IconYOff>		  -->
+        </control>
+      </control>
+    </control>
+  </controls>
+</window>

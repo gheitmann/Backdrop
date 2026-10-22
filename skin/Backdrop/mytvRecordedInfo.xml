@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <id>759</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>no</disabletopbar>
+  <controls>
+    <import>common.fanart.selected.movie.xml</import>
+    <control>
+      <description>overlay image</description>
+      <type>image</type>
+      <id>9789671</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>overlay.default.wide.png</texture>
+    </control>
+    <!--MENU **********************************************-->
+    <control>
+      <description>Menu Button 0</description>
+      <type>button</type>
+      <id>2</id>
+      <posX>1672</posX>
+      <posY>375</posY>
+      <width>225</width>
+      <height>52</height>
+      <textureFocus>button.focus.png</textureFocus>
+      <textureNoFocus>button.focus.png</textureNoFocus>
+      <label>1042</label>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <!--<disabledcolor>ffffffff</disabledcolor>-->
+      <textcolorNoFocus>90cccccc</textcolorNoFocus>
+      <font>font14BC</font>
+      <hover>-</hover>
+      <onleft>2</onleft>
+      <onright>2</onright>
+      <onup>2</onup>
+      <ondown>2</ondown>
+    </control>
+    <control>
+      <type>fadelabel</type>
+      <description>Current program title</description>
+      <id>27</id>
+      <posX>3693</posX>
+      <posY>188</posY>
+      <label>-</label>
+      <disabledcolor>ff808080</disabledcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>label</type>
+      <description>genre</description>
+      <id>24</id>
+      <posX>3260</posX>
+      <posY>225</posY>
+      <label>-</label>
+      <align>right</align>
+      <textcolor>ffb2d4f5</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>label</type>
+      <description>Current program time</description>
+      <id>26</id>
+      <posX>3693</posX>
+      <posY>225</posY>
+      <label>-</label>
+      <textcolor>ffb2d4f5</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>textboxscrollup</type>
+      <description>Description1</description>
+      <id>25</id>
+      <posX>3693</posX>
+      <posY>262</posY>
+      <width>1146</width>
+      <height>618</height>
+      <colordiffuse>ffffffff</colordiffuse>
+      <font>font13</font>
+      <label>#TV.RecordedTV.Description</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>fadelabel</type>
+      <description>Current program title</description>
+      <id>13</id>
+      <label>-</label>
+      <posX>1898</posX>
+      <posY>435</posY>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <textcolor>ffffffff</textcolor>
+      <shadowColor>FF333333</shadowColor>
+      <align>right</align>
+      <font>font16</font>
+      <width>645</width>
+      <scrollStartDelaySec>5</scrollStartDelaySec>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>label</type>
+      <description>Current program time</description>
+      <id>14</id>
+      <posX>1898</posX>
+      <posY>480</posY>
+      <width>645</width>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <textcolor>ff7FB1E5</textcolor>
+      <shadowColor>FF333333</shadowColor>
+      <align>right</align>
+      <font>font12</font>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>label</type>
+      <description>genre</description>
+      <id>17</id>
+      <posX>1898</posX>
+      <posY>510</posY>
+      <width>645</width>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <textcolor>ff7FB1E5</textcolor>
+      <shadowColor>FF333333</shadowColor>
+      <align>right</align>
+      <font>font12</font>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>textboxscrollup</type>
+      <description>Description1</description>
+      <id>15</id>
+      <posX>1110</posX>
+      <posY>555</posY>
+      <width>788</width>
+      <height>525</height>
+      <textalign>right</textalign>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <textcolor>ffffffff</textcolor>
+      <shadowColor>FF333333</shadowColor>
+      <seperator>--------------------------------------------------------------------------------------</seperator>
+      <font>font13</font>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <import>common.time.xml</import>
+    <import>common.overlays.xml</import>
+  </controls>
+</window>

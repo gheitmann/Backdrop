@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+    <control>
+      <description>DUMMY CONTROLL FOR FANART HANDLER IS SCRAPING VISIBILITY CONDITION</description>
+      <type>label</type>
+      <id>91919280</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>2</width>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>Scraping Header Shadow</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>812</posX>
+      <posY>358</posY>
+      <width>300</width>
+      <textcolor>90000000</textcolor>
+      <!--<textcolor>ff000000</textcolor>-->
+      <font>font14</font>
+      <label>scraping fanart</label>
+      <align>center</align>
+      <visible>control.isvisible(91919280)</visible>
+    </control>
+    <control>
+      <description>Scraping Header</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>810</posX>
+      <posY>357</posY>
+      <width>300</width>
+      <textcolor>90ffffff</textcolor>
+      <!--<textcolor>ffffffff</textcolor>-->
+      <font>font14</font>
+      <label>scraping fanart</label>
+      <align>center</align>
+      <visible>control.isvisible(91919280)</visible>
+    </control>
+    <control>
+      <description>music background image</description>
+      <id>0</id>
+      <type>multiimage</type>
+      <posX>888</posX>
+      <posY>195</posY>
+      <width>144</width>
+      <height>144</height>
+      <imagepath>../FanartHandler</imagepath>
+      <timeperimage>150</timeperimage>
+      <fadetime>20</fadetime>
+      <loop>yes</loop>
+      <randomize>no</randomize>
+      <visible>control.isvisible(91919280)</visible>
+    </control>
+    <control>
+      <description>Scraping Percent Complete Shadow</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>890</posX>
+      <posY>268</posY>
+      <width>144</width>
+      <textcolor>90000000</textcolor>
+      <!--<textcolor>ff000000</textcolor>-->
+      <font>font14</font>
+      <label>#fanarthandler.scraper.percent.completed %</label>
+      <align>center</align>
+      <visible>control.isvisible(91919280)</visible>
+    </control>
+    <control>
+      <description>Scraping Percent Complete</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>888</posX>
+      <posY>267</posY>
+      <width>144</width>
+      <textcolor>90ffffff</textcolor>
+      <!--<textcolor>ffffffff</textcolor>-->
+      <font>font14</font>
+      <label>#fanarthandler.scraper.percent.completed %</label>
+      <align>center</align>
+      <visible>control.isvisible(91919280)</visible>
+    </control>
+  </controls>
+</window>

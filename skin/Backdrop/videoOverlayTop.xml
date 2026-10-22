@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <defaultcontrol>4</defaultcontrol>
+  <id>3008</id>
+  <controls>
+    <control>
+      <description>play logo</description>
+      <type>image</type>
+      <id>3</id>
+      <posX>3000</posX>
+      <posY>970</posY>
+      <width>57</width>
+      <height>58</height>
+      <texture>logo_play.png</texture>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>Pause logo</description>
+      <type>image</type>
+      <id>4</id>
+      <posX>3000</posX>
+      <posY>1095</posY>
+      <texture>logo_pause.png</texture>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>FF logo</description>
+      <type>image</type>
+      <id>5</id>
+      <posX>3000</posX>
+      <posY>1095</posY>
+      <texture>logo_fastforward.png</texture>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>RW logo</description>
+      <type>image</type>
+      <id>6</id>
+      <posX>3000</posX>
+      <posY>1095</posY>
+      <texture>logo_rewind.png</texture>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>play time label</description>
+      <type>label</type>
+      <id>2</id>
+      <posX>3000</posX>
+      <posY>970</posY>
+      <label>#currentplaytime</label>
+      <align>left</align>
+      <font>font10</font>
+      <textcolor>70ffffff</textcolor>
+    </control>
+  </controls>
+</window>

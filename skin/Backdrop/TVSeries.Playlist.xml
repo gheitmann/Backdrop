@@ -1,0 +1,561 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <id>9813</id>
+  <defaultcontrol>50</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>no</disabletopbar>
+  <define>#header.label:136</define>
+  <define>#header.hover:hover_my tv series.png</define>
+  <define>#shadow.dark:ff111111</define>
+  <define>#shadow.light:ff222222</define>
+  <controls>
+    <import>common.fanart.selected.movie.xml</import>
+    <control>
+      <description>overlay image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>overlay.default.wide.png</texture>
+      <visible>[facadeview.list|facadeview.album|facadeview.playlist]</visible>
+    </control>
+    <control>
+      <description>Listview separator line</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>993</posX>
+      <posY>608</posY>
+      <width>10</width>
+      <height>474</height>
+      <texture>line.listview.png</texture>
+      <visible>[facadeview.list]+Control.hasfocus(50)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>PlayListview separator line</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>993</posX>
+      <posY>608</posY>
+      <width>10</width>
+      <height>474</height>
+      <texture>line.listview.png</texture>
+      <visible>[facadeview.playlist]+Control.hasfocus(50)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Big Episode Thumb</description>
+      <type>image</type>
+      <id>67</id>
+      <posX>1395</posX>
+      <posY>98</posY>
+      <width>510</width>
+      <height>321</height>
+      <texture mask="episode.frame.background.png">#selectedthumb</texture>
+      <visible>Control.hasfocus(50)+!player.hasmedia</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <id>0</id>
+      <type>image</type>
+      <posX>1395</posX>
+      <posY>98</posY>
+      <width>510</width>
+      <height>321</height>
+      <texture>episode.frame.png</texture>
+      <visible>Control.hasfocus(50)+!player.hasmedia</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Header Background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background.header.png</texture>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">Hidden</animation>
+    </control>
+    <control>
+      <description>Episode Title</description>
+      <type>fadelabel</type>
+      <label>#TVSeries.Episode.SeriesName - #TVSeries.Episode.SeasonLabel</label>
+      <id>0</id>
+      <posX>30</posX>
+      <posY>45</posY>
+      <width>1350</width>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <font>font50BC</font>
+      <scrollStartDelaySec>5</scrollStartDelaySec>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Episode Title</description>
+      <type>fadelabel</type>
+      <label>#TVSeries.Episode.LocalEpisodeName</label>
+      <id>0</id>
+      <posX>30</posX>
+      <posY>105</posY>
+      <width>1350</width>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <font>font16</font>
+      <scrollStartDelaySec>5</scrollStartDelaySec>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Series Genre Value</description>
+      <label>#TVSeries.Episode.InfoPanelLine1Value</label>
+      <type>label</type>
+      <posX>30</posX>
+      <posY>150</posY>
+      <width>1350</width>
+      <textcolor>ff7FB1E5</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <font>font14</font>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Episode Plot Value</description>
+      <type>textboxscrollup</type>
+      <id>0</id>
+      <posX>1230</posX>
+      <posY>405</posY>
+      <width>645</width>
+      <height>135</height>
+      <textalign>right</textalign>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <textcolor>ffffffff</textcolor>
+      <shadowColor>FF333333</shadowColor>
+      <seperator>--------------------------------------------------------------------------------------</seperator>
+      <font>font14</font>
+      <label>#TVSeries.Description</label>
+      <visible>Control.hasfocus(50)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>image</type>
+      <description>thumb Logos ( in textlist )</description>
+      <id>66</id>
+      <posX>1300</posX>
+      <posY>548</posY>
+      <width>525</width>
+      <height>52</height>
+      <texture>#TVSeries.Logos</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <spaceBetweenItems>2</spaceBetweenItems>
+      <visible>Control.hasfocus(50)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>image</type>
+      <description>Dim background</description>
+      <id>0</id>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>overlay.dim.png</texture>
+      <visible>Control.IsVisible(50)+[Control.HasFocus(991799)|Control.HasFocus(991899)|Control.HasFocus(2)|Control.HasFocus(20)|Control.HasFocus(30)|Control.HasFocus(40)|Control.HasFocus(21)|Control.HasFocus(22)|Control.HasFocus(23)|Control.HasFocus(24)|Control.HasFocus(25)|Control.HasFocus(9)]</visible>
+      <animation effect="fade" time="450">visible</animation>
+      <animation effect="fade" time="400">hidden</animation>
+    </control>
+    <control>
+      <description>Menu Image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>890</posX>
+      <posY>0</posY>
+      <width>142</width>
+      <height>45</height>
+      <texture>button.menu.top.png</texture>
+      <visible>[facadeview.filmstrip|facadeview.coverflow]+Control.isvisible(50)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Menu Image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>390</posY>
+      <width>45</width>
+      <height>142</height>
+      <texture>button.menu.left.png</texture>
+      <visible>Control.isvisible(50)+![facadeview.filmstrip|facadeview.coverflow]</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>actiongroup</type>
+      <description>action menu</description>
+      <defaultcontrol>2</defaultcontrol>
+      <onexit>50</onexit>
+      <visible>Control.IsVisible(50)+[Control.HasFocus(991799)|Control.HasFocus(991899)|Control.HasFocus(2)|Control.HasFocus(20)|Control.HasFocus(30)|Control.HasFocus(40)|Control.HasFocus(21)|Control.HasFocus(22)|Control.HasFocus(23)|Control.HasFocus(24)|Control.HasFocus(25)|Control.HasFocus(9)]</visible>
+      <control>
+        <type>group</type>
+        <animation effect="zoom" delay="20" tween="back" easing="out" start="1,1" end="100,100" center="960,461" time="550" reversible="true">Visible</animation>
+        <animation effect="zoom" delay="250" start="100,100" end="1,1" center="960,300" time="250" reversible="true">Hidden</animation>
+        <animation effect="rotatex" start="0" end="65" center="960,291" time="550" reversible="true">Hidden</animation>
+        <animation effect="fade" delay="500" start="100" end="0" time="50" reversible="true">Hidden</animation>
+        <control>
+          <type>image</type>
+          <id>0</id>
+          <posX>720</posX>
+          <posY>274</posY>
+          <width>480</width>
+          <height>548</height>
+          <texture>dialog_290_400.png</texture>
+          <animation effect="zoom" delay="20" tween="back" easing="out" start="1,1" end="100,100" center="960,461" time="550" reversible="true">Visible</animation>
+          <animation effect="zoom" delay="250" start="100,100" end="1,1" center="960,300" time="250" reversible="true">Hidden</animation>
+          <animation effect="rotatex" start="0" end="65" center="960,291" time="550" reversible="true">Hidden</animation>
+          <animation effect="fade" delay="500" start="100" end="0" time="50" reversible="true">Hidden</animation>
+          <visible>Control.IsVisible(50)+[Control.HasFocus(991799)|Control.HasFocus(991899)|Control.HasFocus(2)|Control.HasFocus(20)|Control.HasFocus(30)|Control.HasFocus(40)|Control.HasFocus(21)|Control.HasFocus(22)|Control.HasFocus(23)|Control.HasFocus(24)|Control.HasFocus(25)|Control.HasFocus(9)]</visible>
+        </control>
+        <control>
+          <description>Heading text label</description>
+          <type>label</type>
+          <id>0</id>
+          <posX>518</posX>
+          <posY>555</posY>
+          <width>510</width>
+          <label>924</label>
+          <font>font16BCB</font>
+          <align>center</align>
+          <textcolor>ff7FB1E5</textcolor>
+          <visible>!Control.IsVisible(51)+Control.IsVisible(50)</visible>
+          <animation effect="fade" start="100" end="0" time="1">Hidden</animation>
+          <animation effect="fade" start="0" end="100" delay="500" time="250">Visible</animation>
+          <animation effect="rotate" start="90" end="90" time="1" condition="true">Conditional</animation>
+        </control>
+        <control>
+          <description>Now Playing Button</description>
+          <type>button</type>
+          <id>991899</id>
+          <posX>932</posX>
+          <posY>294</posY>
+          <width>70</width>
+          <height>27</height>
+          <textureFocus>play.now.button.focus.png</textureFocus>
+          <textureNoFocus>play.now.button.nofocus.png</textureNoFocus>
+          <hyperlink>510</hyperlink>
+          <onup>2</onup>
+          <ondown>2</ondown>
+          <onleft>50</onleft>
+          <onright>50</onright>
+          <animation effect="fade" delay="500" start="100" end="0" time="50" reversible="true">Hidden</animation>
+          <visible>control.isvisible(3337)+Player.HasAudio+Control.IsVisible(50)</visible>
+        </control>
+        <control>
+          <description>Now Playing Button Animation</description>
+          <type>image</type>
+          <id>0</id>
+          <posX>932</posX>
+          <posY>294</posY>
+          <width>70</width>
+          <height>27</height>
+          <shouldCache>true</shouldCache>
+          <texture>play.now.button.back.png</texture>
+          <animation effect="fade" time="450" delay="100" tween="cubic" easing="inout" condition="true" pulse="true">Conditional</animation>
+          <visible>control.isvisible(3337)+Player.HasAudio+Control.IsVisible(50)</visible>
+        </control>
+        <control>
+          <description>Video Window Button</description>
+          <type>button</type>
+          <id>991799</id>
+          <posX>932</posX>
+          <posY>294</posY>
+          <width>70</width>
+          <height>27</height>
+          <textureFocus>play.now.button.focus.png</textureFocus>
+          <textureNoFocus>play.now.button.nofocus.png</textureNoFocus>
+          <action>18</action>
+          <onup>991899</onup>
+          <ondown>2</ondown>
+          <onleft>50</onleft>
+          <onright>50</onright>
+          <animation effect="fade" delay="500" start="100" end="0" time="50" reversible="true">Hidden</animation>
+          <visible>Player.HasVideo+!control.isvisible(3337)+Control.IsVisible(50)</visible>
+        </control>
+        <control>
+          <description>Now Playing Button Animation</description>
+          <type>image</type>
+          <id>0</id>
+          <posX>932</posX>
+          <posY>294</posY>
+          <width>70</width>
+          <height>27</height>
+          <shouldCache>true</shouldCache>
+          <texture>play.now.button.back.png</texture>
+          <animation effect="fade" time="450" delay="100" tween="cubic" easing="inout" condition="true" pulse="true">Conditional</animation>
+          <visible>Player.HasVideo+!control.isvisible(3337)+Control.IsVisible(50)</visible>
+        </control>
+        <control>
+          <type>group</type>
+          <description>group element</description>
+          <posX>800</posX>
+          <posY>340</posY>
+          <id>0</id>
+          <layout>StackLayout(1)</layout>
+          <control>
+            <description>Menu Button 0</description>
+            <type>button</type>
+            <id>2</id>
+            <width>375</width>
+            <label>457</label>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <font>font14BC</font>
+            <hover>-</hover>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>991799</onup>
+            <ondown>20</ondown>
+            <animation effect="zoom" start="95,95" end="100,100" time="450" tween="back" easing="out" reversible="true">focus</animation>
+            <animation effect="zoom" start="102,102" end="100,100" time="150" tween="back" easing="out" reversible="true">unfocus</animation>
+            <animation effect="fade" start="30" end="100" time="200" reversible="true">focus</animation>
+          </control>
+          <control>
+            <description>Menu Button 1</description>
+            <type>button</type>
+            <id>20</id>
+            <width>375</width>
+            <label>191</label>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <font>font14BC</font>
+            <hover>-</hover>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>2</onup>
+            <ondown>30</ondown>
+            <animation effect="zoom" start="95,95" end="100,100" time="450" tween="back" easing="out" reversible="true">focus</animation>
+            <animation effect="zoom" start="102,102" end="100,100" time="150" tween="back" easing="out" reversible="true">unfocus</animation>
+            <animation effect="fade" start="30" end="100" time="200" reversible="true">focus</animation>
+          </control>
+          <control>
+            <description>Menu Button 2</description>
+            <type>checkbutton</type>
+            <id>30</id>
+            <width>375</width>
+            <label>486</label>
+            <textYOff>8</textYOff>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <font>font14BC</font>
+            <textureFocus>dropdown_togglebutton_on.png</textureFocus>
+            <textureNoFocus>dropdown_togglebutton_nof_on.png</textureNoFocus>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>20</onup>
+            <ondown>40</ondown>
+            <animation effect="zoom" start="95,95" end="100,100" time="450" tween="back" easing="out" reversible="true">focus</animation>
+            <animation effect="zoom" start="102,102" end="100,100" time="150" tween="back" easing="out" reversible="true">unfocus</animation>
+            <animation effect="fade" start="30" end="100" time="200" reversible="true">focus</animation>
+            <textureCheckmark>check-box.png</textureCheckmark>
+            <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+            <markWidth>30</markWidth>
+            <markHeight>30</markHeight>
+            <markalign>right</markalign>
+            <markvalign>middle</markvalign>
+            <markXOff>12</markXOff>
+          </control>
+          <control>
+            <description>Menu Button 3</description>
+            <type>checkbutton</type>
+            <id>40</id>
+            <width>375</width>
+            <label>Auto Play</label>
+            <textYOff>8</textYOff>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <font>font14BC</font>
+            <textureFocus>dropdown_togglebutton_on.png</textureFocus>
+            <textureNoFocus>dropdown_togglebutton_nof_on.png</textureNoFocus>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>30</onup>
+            <ondown>21</ondown>
+            <animation effect="zoom" start="95,95" end="100,100" time="450" tween="back" easing="out" reversible="true">focus</animation>
+            <animation effect="zoom" start="102,102" end="100,100" time="150" tween="back" easing="out" reversible="true">unfocus</animation>
+            <animation effect="fade" start="30" end="100" time="200" reversible="true">focus</animation>
+            <textureCheckmark>check-box.png</textureCheckmark>
+            <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+            <markWidth>30</markWidth>
+            <markHeight>30</markHeight>
+            <markalign>right</markalign>
+            <markvalign>middle</markvalign>
+            <markXOff>12</markXOff>
+          </control>
+          <control>
+            <description>Menu Button 4</description>
+            <type>button</type>
+            <id>21</id>
+            <width>375</width>
+            <label>190</label>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <font>font14BC</font>
+            <hover>-</hover>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>40</onup>
+            <ondown>22</ondown>
+            <animation effect="zoom" start="95,95" end="100,100" time="450" tween="back" easing="out" reversible="true">focus</animation>
+            <animation effect="zoom" start="102,102" end="100,100" time="150" tween="back" easing="out" reversible="true">unfocus</animation>
+            <animation effect="fade" start="30" end="100" time="200" reversible="true">focus</animation>
+          </control>
+          <control>
+            <description>Menu Button 5</description>
+            <type>button</type>
+            <id>22</id>
+            <width>375</width>
+            <label>192</label>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <font>font14BC</font>
+            <hover>-</hover>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>21</onup>
+            <ondown>23</ondown>
+            <animation effect="zoom" start="95,95" end="100,100" time="450" tween="back" easing="out" reversible="true">focus</animation>
+            <animation effect="zoom" start="102,102" end="100,100" time="150" tween="back" easing="out" reversible="true">unfocus</animation>
+            <animation effect="fade" start="30" end="100" time="200" reversible="true">focus</animation>
+          </control>
+          <control>
+            <description>Menu Button 6</description>
+            <type>button</type>
+            <id>23</id>
+            <width>375</width>
+            <label>208</label>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <font>font14BC</font>
+            <hover>-</hover>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>22</onup>
+            <ondown>24</ondown>
+            <animation effect="zoom" start="95,95" end="100,100" time="450" tween="back" easing="out" reversible="true">focus</animation>
+            <animation effect="zoom" start="102,102" end="100,100" time="150" tween="back" easing="out" reversible="true">unfocus</animation>
+            <animation effect="fade" start="30" end="100" time="200" reversible="true">focus</animation>
+          </control>
+          <control>
+            <description>Menu Button 7</description>
+            <type>button</type>
+            <id>24</id>
+            <width>375</width>
+            <label>209</label>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <font>font14BC</font>
+            <hover>-</hover>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>23</onup>
+            <ondown>25</ondown>
+            <animation effect="zoom" start="95,95" end="100,100" time="450" tween="back" easing="out" reversible="true">focus</animation>
+            <animation effect="zoom" start="102,102" end="100,100" time="150" tween="back" easing="out" reversible="true">unfocus</animation>
+            <animation effect="fade" start="30" end="100" time="200" reversible="true">focus</animation>
+          </control>
+          <control>
+            <description>Menu Button 8</description>
+            <type>button</type>
+            <id>25</id>
+            <width>375</width>
+            <label>210</label>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <font>font14BC</font>
+            <hover>-</hover>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>24</onup>
+            <ondown>9</ondown>
+            <animation effect="zoom" start="95,95" end="100,100" time="450" tween="back" easing="out" reversible="true">focus</animation>
+            <animation effect="zoom" start="102,102" end="100,100" time="150" tween="back" easing="out" reversible="true">unfocus</animation>
+            <animation effect="fade" start="30" end="100" time="200" reversible="true">focus</animation>
+          </control>
+          <control>
+            <description>Menu Button 9</description>
+            <type>button</type>
+            <id>9</id>
+            <width>375</width>
+            <label>983</label>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <font>font14BC</font>
+            <hover>-</hover>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>25</onup>
+            <ondown>2</ondown>
+            <animation effect="zoom" start="95,95" end="100,100" time="450" tween="back" easing="out" reversible="true">focus</animation>
+            <animation effect="zoom" start="102,102" end="100,100" time="150" tween="back" easing="out" reversible="true">unfocus</animation>
+            <animation effect="fade" start="30" end="100" time="200" reversible="true">focus</animation>
+          </control>
+        </control>
+      </control>
+    </control>
+    <import>TVSeries.Playlist.common.facade.xml</import>
+    <control>
+      <description>Horizon Overlay - Filmstrip</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>1015</posY>
+      <width>1920</width>
+      <height>65</height>
+      <texture>horizon.overlay.png</texture>
+      <visible>facadeview.filmstrip+Control.HasFocus(50)+!Control.isvisible(93761234)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Horizon Bg - Filmstrip</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>1006</posY>
+      <width>1920</width>
+      <height>33</height>
+      <texture>horizon.png</texture>
+      <visible>facadeview.filmstrip+Control.HasFocus(50)+!Control.isvisible(93761234)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <import>common.time.xml</import>
+    <import>common.overlays.xml</import>
+  </controls>
+</window>

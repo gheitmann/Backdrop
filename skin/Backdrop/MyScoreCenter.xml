@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <id>42000</id>
+  <defaultcontrol>10</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>no</disabletopbar>
+  <controls>
+    <import>common.fanart.selected.scorecenter.xml</import>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>overlay.transparent23.png</texture>
+    </control>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>overlay.default.png</texture>
+    </control>
+    <control>
+      <description>Current Category</description>
+      <type>image</type>
+      <posX>45</posX>
+      <posY>170</posY>
+      <width>60</width>
+      <height>60</height>
+      <texture>#ScoreCenter.CatIco</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+    </control>
+    <control>
+      <description>Current League Image</description>
+      <type>image</type>
+      <posX>135</posX>
+      <posY>170</posY>
+      <width>60</width>
+      <height>60</height>
+      <texture>#ScoreCenter.LIco</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+    </control>
+    <control>
+      <description>Current Score Image</description>
+      <type>image</type>
+      <posX>225</posX>
+      <posY>170</posY>
+      <width>60</width>
+      <height>60</height>
+      <texture>#ScoreCenter.ScoreIco</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+    </control>
+    <control>
+      <description>Scores</description>
+      <type>listcontrol</type>
+      <id>10</id>
+      <posY>555</posY>
+      <posX>1299</posX>
+      <height>562</height>
+      <width>615</width>
+      <spinPosY>1200</spinPosY>
+      <spinPosX>2100</spinPosX>
+      <textXOff>24</textXOff>
+      <textYOff>0</textYOff>
+      <textureFocus>playlist_sub_focus1.png</textureFocus>
+      <textureNoFocus>playlist_sub_nofocus1.png</textureNoFocus>
+      <textureUp>-</textureUp>
+      <textureDown>-</textureDown>
+      <unfocusedAlpha>250</unfocusedAlpha>
+      <dimColor>0x99ffffff</dimColor>
+      <spinCanFocus>no</spinCanFocus>
+      <textureHeight>52</textureHeight>
+      <textalign>right</textalign>
+      <onleft>40</onleft>
+      <onright>40</onright>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF000000</shadowColor>
+      <unfocusedAlpha>180</unfocusedAlpha>
+      <dimColor>ffffffff</dimColor>
+      <textcolor>ffffffff</textcolor>
+      <selectedColor>ff335266</selectedColor>
+      <shadedColor>ffffffff</shadedColor>
+      <playedColor>ffffffff</playedColor>
+      <textcolor2>ffffffff</textcolor2>
+      <textcolor3>ffffffff</textcolor3>
+      <colordiffuse>ffffffff</colordiffuse>
+      <remoteColor>ffcccccc</remoteColor>
+      <spaceBetweenItems>-1</spaceBetweenItems>
+      <textXOff>0</textXOff>
+      <textYOff>0</textYOff>
+      <textXOff2>608</textXOff2>
+      <textXOff3>489</textXOff3>
+      <textYOff3>9</textYOff3>
+      <IconYOff>4</IconYOff>
+      <IconXOff>6</IconXOff>
+      <itemWidth>44</itemWidth>
+      <itemHeight>44</itemHeight>
+      <font>font14</font>
+      <font2>font14</font2>
+      <font3>font11</font3>
+      <animation effect="slide" start="750,0" time="800" acceleration="-0.9" reversible="false">focus</animation>
+      <animation effect="slide" end="750,0" time="200" acceleration="0.5" reversible="false">unfocus</animation>
+    </control>
+    <!-- This control defines the area and the format (font and color)
+    in which the score will be displayed -->
+    <control>
+      <description>Results</description>
+      <type>textboxscrollup</type>
+      <id>20</id>
+      <posX>30</posX>
+      <posY>252</posY>
+      <visible>yes</visible>
+      <width>975</width>
+      <height>800</height>
+      <seperator>----------------------------------------------------------------------------------------------------</seperator>
+      <textcolor>98ffffff</textcolor>
+      <font>font12</font>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+    </control>
+    <control>
+      <description>Next Button</description>
+      <type>button</type>
+      <id>40</id>
+      <posX>1125</posX>
+      <posY>735</posY>
+      <width>150</width>
+      <label>Next</label>
+      <onup>10</onup>
+      <ondown>10</ondown>
+      <font>font14</font>
+      <height>45</height>
+      <width>150</width>
+      <textXOff>8</textXOff>
+      <textYOff>3</textYOff>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+    </control>
+    <import>common.time.xml</import>
+    <import>common.overlays.xml</import>
+    <control>
+      <description>Window Header</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>30</posX>
+      <posY>45</posY>
+      <width>1350</width>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <font>font50BC</font>
+      <scrollStartDelaySec>5</scrollStartDelaySec>
+      <label>Scorecenter</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+    </control>
+    <control>
+      <description>Genre</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>30</posX>
+      <posY>105</posY>
+      <width>1350</width>
+      <textcolor>ff7FB1E5</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <font>font14</font>
+      <label>#ScoreCenter.Results</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+    </control>
+  </controls>
+</window>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<window>
+  <controls>
+    <control>
+      <type>image</type>
+      <id>500</id>
+      <posX>885</posX>
+      <posY>60</posY>
+      <width>148</width>
+      <height>66</height>
+      <texture>volume.states.mute.png</texture>
+      <visible>no</visible>
+    </control>
+    <control>
+      <type>volumebar</type>
+      <id>501</id>
+      <posX>960</posX>
+      <posY>28</posY>
+      <align>center</align>
+      <height>36</height>
+      <width>15</width>
+      <imageHeight>3</imageHeight>
+      <texture>volume.states.png</texture>
+      <colordiffuse>White</colordiffuse>
+      <visible>no</visible>
+    </control>
+  </controls>
+</window>

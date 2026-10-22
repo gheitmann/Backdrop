@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+    <control>
+      <description>DUMMY CONTROL FOR FANART 1 VISIBILITY CONDITION</description>
+      <type>label</type>
+      <id>91919295</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <visible>yes</visible>
+    </control>
+    <control>
+      <description>DUMMY CONTROL FOR FANART 2 VISIBILITY CONDITION</description>
+      <type>label</type>
+      <id>91919296</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>DUMMY CONTROL FOR FANART AVAILABILITY  CONDITION</description>
+      <type>label</type>
+      <id>91919294</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1</width>
+    </control>
+    <control>
+      <description>Bing image frame</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>32</posX>
+      <posY>172</posY>
+      <width>1198</width>
+      <height>676</height>
+      <texture>MP139\imageframe.png</texture>
+      <visible>!skin.hassetting(#skin.music.nowplaying.fullscreen)</visible>
+    </control>
+    <control>
+      <description>DEFAULT FANART IMAGE</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>34</posX>
+      <posY>174</posY>
+      <width>1194</width>
+      <height>672</height>
+      <colordiffuse>ffffffff</colordiffuse>
+      <texture mask="MP139\musicfanart_mask.png">MP139\DefaultFanart.gif</texture>
+      <visible>!control.isvisible(91919294)+!skin.hassetting(#skin.music.nowplaying.fullscreen)</visible>
+      <animation effect="fade" time="300">visible</animation>
+      <animation effect="fade" time="300">hidden</animation>
+    </control>
+    <control>
+      <description>FANART IMAGE 1</description>
+      <id>897688</id>
+      <type>image</type>
+      <posX>34</posX>
+      <posY>174</posY>
+      <width>1194</width>
+      <height>672</height>
+      <colordiffuse>ffffffff</colordiffuse>
+      <texture mask="MP139\musicfanart_mask.png">#fanarthandler.music.backdrop1.play</texture>
+      <visible>control.isvisible(91919295)+control.isvisible(91919294)+!skin.hassetting(#skin.music.nowplaying.fullscreen)</visible>
+      <animation effect="fade" time="300">visible</animation>
+      <animation effect="fade" time="300">hidden</animation>
+    </control>
+    <control>
+      <description>FANART IMAGE 2</description>
+      <id>897689</id>
+      <type>image</type>
+      <posX>34</posX>
+      <posY>174</posY>
+      <width>1194</width>
+      <height>672</height>
+      <colordiffuse>ffffffff</colordiffuse>
+      <texture mask="MP139\musicfanart_mask.png">#fanarthandler.music.backdrop2.play</texture>
+      <visible>control.isvisible(91919296)+control.isvisible(91919294)+!skin.hassetting(#skin.music.nowplaying.fullscreen)</visible>
+      <animation effect="fade" time="300">visible</animation>
+      <animation effect="fade" time="300">hidden</animation>
+    </control>
+  </controls>
+</window>

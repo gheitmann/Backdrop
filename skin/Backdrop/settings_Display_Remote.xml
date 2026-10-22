@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <id>9006</id>
+  <defaultcontrol>50</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>no</disabletopbar>
+  <define>#header.label:109006</define>
+  <define>#header.image:settings_logo.png</define>
+  <define>#header.hover:hover_settings.png</define>
+  <define>#itemcount:-</define>
+  <define>#defaultcontrol.onright:99910</define>
+  <define>#selecteditem:-</define>
+  <controls>
+    <control>
+      <description>Header</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>100</posX>
+      <posY>300</posY>
+      <width>1350</width>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <font>font50BC</font>
+      <label>Remote</label>
+      <scrollStartDelaySec>5</scrollStartDelaySec>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+    </control>
+    <import>common.settings1.xml</import>
+    <control>
+      <description>buttons</description>
+      <type>group</type>
+      <posX>98</posX>
+      <posY>350</posY>
+      <width>450</width>
+      <height>750</height>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <layout>StackLayout</layout>
+      <control>
+        <description>NO REMOTE OPTIONS</description>
+        <type>label</type>
+        <id>40</id>
+        <width>450</width>
+        <label>9144</label>
+        <onup>17</onup>
+      </control>
+      <control>
+        <description>Disable Remote</description>
+        <type>checkbutton</type>
+        <id>50</id>
+        <width>450</width>
+        <label>9145</label>
+        <onleft>#defaultcontrol.onright</onleft>
+        <onright>#defaultcontrol.onright</onright>
+        <textureCheckmark>check-box.png</textureCheckmark>
+        <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+        <markWidth>30</markWidth>
+        <markHeight>30</markHeight>
+        <markalign>right</markalign>
+        <markvalign>middle</markvalign>
+        <markXOff>12</markXOff>
+      </control>
+      <control>
+        <description>Disable Repeat</description>
+        <type>checkbutton</type>
+        <id>51</id>
+        <width>450</width>
+        <label>9146</label>
+        <onleft>#defaultcontrol.onright</onleft>
+        <onright>#defaultcontrol.onright</onright>
+        <textureCheckmark>check-box.png</textureCheckmark>
+        <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+        <markWidth>30</markWidth>
+        <markHeight>30</markHeight>
+        <markalign>right</markalign>
+        <markvalign>middle</markvalign>
+        <markXOff>12</markXOff>
+      </control>
+      <control>
+        <description>Repeat Delay</description>
+        <type>selectbutton</type>
+        <id>52</id>
+        <width>450</width>
+        <label>9147</label>
+      </control>
+      <control Style="settingsmainbutton">
+        <textXOff>15</textXOff>
+        <textYOff>3</textYOff>
+        <onleft>#defaultcontrol.onright</onleft>
+        <onright>#defaultcontrol.onright</onright>
+        <description>Keypad Options</description>
+        <description>Remote Mapping</description>
+        <type>button</type>
+        <id>53</id>
+        <width>450</width>
+        <label>9148</label>
+      </control>
+    </control>
+    <import>common.time.xml</import>
+  </controls>
+</window>

@@ -1,0 +1,2408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <id>1016</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <rememberLastFocusedControl>yes</rememberLastFocusedControl>
+  <controls>
+    <import>mp139.common.settings.xml</import>
+    <import>mp139.common.time.xml</import>
+    <control>
+      <description>buttons</description>
+      <type>group</type>
+      <control>
+        <description>buttons</description>
+        <type>group</type>
+        <posX>92</posX>
+        <posY>305</posY>
+        <dimColor>ffffffff</dimColor>
+        <layout>StackLayout(0, Vertical, true)</layout>
+        <control>
+          <description>General Main setttings</description>
+          <type>button</type>
+          <id>9991</id>
+          <label>128</label>
+          <width>410</width>
+          <onup>17</onup>
+          <onright>2</onright>
+          <hyperlink>1016</hyperlink>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>General Skin settings</description>
+          <type>button</type>
+          <id>9992</id>
+          <label>101021</label>
+          <width>410</width>
+          <hyperlink>1021</hyperlink>
+          <onup>9991</onup>
+          <onright>2</onright>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>Screen</description>
+          <type>button</type>
+          <id>9993</id>
+          <label>6023</label>
+          <width>410</width>
+          <hyperlink>9</hyperlink>
+          <onup>9992</onup>
+          <onright>2</onright>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>TV</description>
+          <type>button</type>
+          <id>9994</id>
+          <label>605</label>
+          <width>410</width>
+          <hyperlink>700</hyperlink>
+          <onup>9993</onup>
+          <onright>2</onright>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>My Pictures</description>
+          <type>button</type>
+          <id>9995</id>
+          <label>1</label>
+          <width>410</width>
+          <hyperlink>12</hyperlink>
+          <onup>9994</onup>
+          <onright>2</onright>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>Movies</description>
+          <type>button</type>
+          <id>9996</id>
+          <label>3</label>
+          <width>410</width>
+          <hyperlink>703</hyperlink>
+          <onup>9995</onup>
+          <onright>2</onright>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>My DVD</description>
+          <type>button</type>
+          <id>9997</id>
+          <label>1027</label>
+          <width>410</width>
+          <hyperlink>704</hyperlink>
+          <onup>9996</onup>
+          <onright>2</onright>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>BluRay</description>
+          <type>button</type>
+          <id>9998</id>
+          <label>300217</label>
+          <width>410</width>
+          <hyperlink>1024</hyperlink>
+          <onup>9997</onup>
+          <onright>2</onright>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>My Music</description>
+          <type>button</type>
+          <id>9999</id>
+          <label>2</label>
+          <width>410</width>
+          <hyperlink>14</hyperlink>
+          <ondown>99910</ondown>
+          <onup>9998</onup>
+          <onright>2</onright>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>MiniDisplay</description>
+          <type>button</type>
+          <id>99910</id>
+          <label>9100</label>
+          <width>410</width>
+          <hyperlink>9000</hyperlink>
+          <ondown>9991</ondown>
+          <onup>9999</onup>
+          <onright>2</onright>
+          <visible>plugin.isenabled(MiniDisplay)</visible>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+      </control>
+      <control>
+        <description>buttons</description>
+        <type>group</type>
+        <posX>655</posX>
+        <posY>305</posY>
+        <dimColor>ffffffff</dimColor>
+        <layout>StackLayout(0, Vertical, true)</layout>
+        <control>
+          <description>General MP Settings</description>
+          <type>button</type>
+          <id>2</id>
+          <label>300080</label>
+          <width>580</width>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <onup>21</onup>
+          <onleft>9991</onleft>
+          <visible>!skin.hassetting(#skin.keyboard.shortcuts)+!skin.hassetting(#skin.drivefreespace)+!skin.hassetting(#skin.drivefreespaceHelp)</visible>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>Startup settings</description>
+          <type>button</type>
+          <id>3</id>
+          <label>300081</label>
+          <width>580</width>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <visible>!skin.hassetting(#skin.keyboard.shortcuts)+!skin.hassetting(#skin.drivefreespace)+!skin.hassetting(#skin.drivefreespaceHelp)</visible>
+          <onleft>9991</onleft>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>Resume settings</description>
+          <type>button</type>
+          <id>4</id>
+          <label>300082</label>
+          <width>580</width>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <visible>!skin.hassetting(#skin.keyboard.shortcuts)+!skin.hassetting(#skin.drivefreespace)+!skin.hassetting(#skin.drivefreespaceHelp)</visible>
+          <onleft>9991</onleft>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>Volume settings</description>
+          <type>button</type>
+          <id>5</id>
+          <label>101007</label>
+          <width>580</width>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <visible>!skin.hassetting(#skin.keyboard.shortcuts)+!skin.hassetting(#skin.drivefreespace)+!skin.hassetting(#skin.drivefreespaceHelp)</visible>
+          <onleft>9991</onleft>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>RefreshRate settings</description>
+          <type>button</type>
+          <id>6</id>
+          <label>300083</label>
+          <width>580</width>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <visible>!skin.hassetting(#skin.keyboard.shortcuts)+!skin.hassetting(#skin.drivefreespace)+!skin.hassetting(#skin.drivefreespaceHelp)</visible>
+          <onleft>9991</onleft>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>AUtoplay</description>
+          <type>button</type>
+          <id>7</id>
+          <label>713</label>
+          <ondown>8</ondown>
+          <width>580</width>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <visible>!skin.hassetting(#skin.keyboard.shortcuts)+!skin.hassetting(#skin.drivefreespace)+!skin.hassetting(#skin.drivefreespaceHelp)</visible>
+          <onleft>9991</onleft>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>Keyboard Shortcuts</description>
+          <id>8</id>
+          <type>checkbutton</type>
+          <label>#SkinTranslation.Translations.KeyboardShortcuts.Label</label>
+          <selected>#(skin.hassetting('#skin.keyboard.shortcuts'))</selected>
+          <onclick>#(skin.togglesetting('#skin.keyboard.shortcuts')) </onclick>
+          <onright>8</onright>
+          <onleft>9991</onleft>
+          <ondown>9</ondown>
+          <width>580</width>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <visible>!skin.hassetting(#skin.drivefreespace)+!skin.hassetting(#skin.drivefreespaceHelp)</visible>
+          <onleft>9991</onleft>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>9</textYOff>
+          <textpadding>30</textpadding>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+          <markWidth>43</markWidth>
+          <markHeight>42</markHeight>
+          <markXOff>20</markXOff>
+          <markYOff>10</markYOff>
+          <markalign>right</markalign>
+          <markvalign>middle</markvalign>
+          <textureCheckmark>check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+        </control>
+        <control>
+          <description>Drive Free Space</description>
+          <id>9</id>
+          <type>checkbutton</type>
+          <label>DriveFreeSpace</label>
+          <selected>#(skin.hassetting('#skin.drivefreespace'))</selected>
+          <onclick>#(skin.togglesetting('#skin.drivefreespace')) </onclick>
+          <onright>10</onright>
+          <onleft>9991</onleft>
+          <ondown>2</ondown>
+          <width>580</width>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <visible>!skin.hassetting(#skin.keyboard.shortcuts)</visible>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>9</textYOff>
+          <textpadding>30</textpadding>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+          <markWidth>43</markWidth>
+          <markHeight>42</markHeight>
+          <markXOff>20</markXOff>
+          <markYOff>10</markYOff>
+          <markalign>right</markalign>
+          <markvalign>middle</markvalign>
+          <textureCheckmark>check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+        </control>
+      </control>
+      <control>
+        <description>Drive Free Space Help</description>
+        <id>10</id>
+        <type>checkbutton</type>
+        <posX>1255</posX>
+        <posY>305</posY>
+        <label>#(L(19148))</label>
+        <selected>#(skin.hassetting('#skin.drivefreespaceHelp'))</selected>
+        <onclick>#(skin.togglesetting('#skin.drivefreespaceHelp')) </onclick>
+        <onright>11</onright>
+        <onleft>9</onleft>
+        <ondown>10</ondown>
+        <onup>10</onup>
+        <width>280</width>
+        <textureFocus>listbg_fo.png</textureFocus>
+        <visible>!skin.hassetting(#skin.keyboard.shortcuts)+skin.hassetting(#skin.drivefreespace)</visible>
+        <height>60</height>
+        <textXOff>25</textXOff>
+        <textYOff>9</textYOff>
+        <textpadding>30</textpadding>
+        <textureNoFocus>listbg_nf.png</textureNoFocus>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <colordiffuse>ffffffff</colordiffuse>
+        <disabledcolor>90ffffff</disabledcolor>
+        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <dimColor>90ffffff</dimColor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+        <markWidth>43</markWidth>
+        <markHeight>42</markHeight>
+        <markXOff>20</markXOff>
+        <markYOff>10</markYOff>
+        <markalign>right</markalign>
+        <markvalign>middle</markvalign>
+        <textureCheckmark>check-box.png</textureCheckmark>
+        <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+        <textalign>left</textalign>
+        <textvalign>middle</textvalign>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <scrollWrapString>  |  </scrollWrapString>
+      </control>
+      <control>
+        <description>Drive Free Space Help - Enlarge image</description>
+        <id>11</id>
+        <type>checkbutton</type>
+        <posX>1555</posX>
+        <posY>305</posY>
+        <label>#SkinTranslation.Translations.EnlargeImage.Label</label>
+        <selected>#(skin.hassetting('#skin.drivefreespaceImage'))</selected>
+        <onclick>#(skin.togglesetting('#skin.drivefreespaceImage')) </onclick>
+        <onright>11</onright>
+        <onleft>10</onleft>
+        <ondown>11</ondown>
+        <onup>11</onup>
+        <width>330</width>
+        <textureFocus>listbg_fo.png</textureFocus>
+        <visible>!skin.hassetting(#skin.keyboard.shortcuts)+skin.hassetting(#skin.drivefreespace)+skin.hassetting(#skin.drivefreespaceHelp)</visible>
+        <height>60</height>
+        <textXOff>25</textXOff>
+        <textYOff>9</textYOff>
+        <textpadding>30</textpadding>
+        <textureNoFocus>listbg_nf.png</textureNoFocus>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <colordiffuse>ffffffff</colordiffuse>
+        <disabledcolor>90ffffff</disabledcolor>
+        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <dimColor>90ffffff</dimColor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+        <markWidth>43</markWidth>
+        <markHeight>42</markHeight>
+        <markXOff>20</markXOff>
+        <markYOff>10</markYOff>
+        <markalign>right</markalign>
+        <markvalign>middle</markvalign>
+        <textureCheckmark>check-box.png</textureCheckmark>
+        <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+        <textalign>left</textalign>
+        <textvalign>middle</textvalign>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <scrollWrapString>  |  </scrollWrapString>
+      </control>
+      <dimColor>ffffffff</dimColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>Help Text</description>
+      <id>0</id>
+      <posX>685</posX>
+      <posY>360</posY>
+      <width>1520</width>
+      <align>left</align>
+      <height>700</height>
+      <label>Here is some information about DriveFreeSpace.
+If installed and configured correctly, this plugin is able to display a lot of information about your attached drives.
+To configure the drive(s) you want to display, open MPConfig -&gt; Plugins and navigate to the process plugin "DriveFreeSpace".
+Click on the button "Configure" and you should see a configuration window like this (without the coloured rectangles):</label>
+      <font>font12</font>
+      <textcolor>skyblue</textcolor>
+      <animation effect="fade" start="100" end="0" time="700" condition="skin.hassetting(#skin.drivefreespaceImage)">conditional</animation>
+      <visible>!skin.hassetting(#skin.keyboard.shortcuts)+skin.hassetting(#skin.drivefreespaceHelp)</visible>
+      <disabledcolor>90ffffff</disabledcolor>
+      <shadowAngle>0</shadowAngle>
+      <shadowDistance>0</shadowDistance>
+      <shadowColor />
+    </control>
+    <control>
+      <type>image</type>
+      <description>Drivefreespace Config window</description>
+      <id>0</id>
+      <posX>685</posX>
+      <posY>507</posY>
+      <texture>MP139\drivefreespaceconfig_example.png</texture>
+      <width>250</width>
+      <height>200</height>
+      <align>left</align>
+      <keepaspectratio>no</keepaspectratio>
+      <colordiffuse>ffffffff</colordiffuse>
+      <animation effect="zoom" start="100,100" end="360,300" center="700,570" time="700" condition="skin.hassetting(#skin.drivefreespaceImage)">conditional</animation>
+      <animation effect="slide" start="0,0" end="45,0" time="700" condition="skin.hassetting(#skin.drivefreespaceImage)">conditional</animation>
+      <visible>!skin.hassetting(#skin.keyboard.shortcuts)+skin.hassetting(#skin.drivefreespaceHelp)</visible>
+    </control>
+    <control>
+      <type>label</type>
+      <description>Help Text</description>
+      <id>0</id>
+      <posX>965</posX>
+      <posY>520</posY>
+      <label>Inside the red rectangle the available drives are listed. Select the ones you want to display.
+After selecting the drive(s), you now specify the information to be displayed 
+(blue rectangle). This is a bit tricky, the properties to select from are shown when 
+hovering over the field in the blue rectangle. To get the most information (including 
+the free space for recordings in HD), you could use this example string: 
+</label>
+      <width>900</width>
+      <height>200</height>
+      <align>left</align>
+      <font>font12</font>
+      <textcolor>skyblue</textcolor>
+      <animation effect="fade" start="100" end="0" time="700" condition="skin.hassetting(#skin.drivefreespaceImage)">conditional</animation>
+      <visible>!skin.hassetting(#skin.keyboard.shortcuts)+skin.hassetting(#skin.drivefreespaceHelp)</visible>
+      <disabledcolor>90ffffff</disabledcolor>
+      <shadowAngle>0</shadowAngle>
+      <shadowDistance>0</shadowDistance>
+      <shadowColor />
+    </control>
+    <control>
+      <type>label</type>
+      <description>Help Text</description>
+      <id>0</id>
+      <posX>630</posX>
+      <posY>700</posY>
+      <label>                                                            %drive% %labelbrackets% 
+                                                            %totalspace% GB total / %usedspace% GB used 
+                                                            %freespace% %unit% free (%fspercent%) 
+                                                            (for approx. %rectimeleft% hours HD) </label>
+      <width>1520</width>
+      <height>200</height>
+      <align>left</align>
+      <font>font12</font>
+      <textcolor>lightgray</textcolor>
+      <animation effect="fade" start="100" end="0" time="700" condition="skin.hassetting(#skin.drivefreespaceImage)">conditional</animation>
+      <visible>!skin.hassetting(#skin.keyboard.shortcuts)+skin.hassetting(#skin.drivefreespaceHelp)</visible>
+      <disabledcolor>90ffffff</disabledcolor>
+      <shadowAngle>0</shadowAngle>
+      <shadowDistance>0</shadowDistance>
+      <shadowColor />
+    </control>
+    <control>
+      <type>label</type>
+      <description>Help Text</description>
+      <id>0</id>
+      <posX>685</posX>
+      <posY>850</posY>
+      <label>The skin layout is for the 6 drives C, D, E, F, and G. If you need other drive names, please contact me! 
+catavolt</label>
+      <width>1520</width>
+      <height>200</height>
+      <textcolor>skyblue</textcolor>
+      <align>left</align>
+      <font>font12</font>
+      <animation effect="fade" start="100" end="0" time="700" condition="skin.hassetting(#skin.drivefreespaceImage)">conditional</animation>
+      <visible>!skin.hassetting(#skin.keyboard.shortcuts)+skin.hassetting(#skin.drivefreespaceHelp)</visible>
+      <disabledcolor>90ffffff</disabledcolor>
+      <shadowAngle>0</shadowAngle>
+      <shadowDistance>0</shadowDistance>
+      <shadowColor />
+    </control>
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <visible>plugin.isenabled(DriveFreeSpace)+skin.hassetting(#skin.drivefreespace)+!skin.hassetting(#skin.drivefreespaceHelp)</visible>
+      <control>
+        <type>image</type>
+        <id>0</id>
+        <posX>670</posX>
+        <posY>380</posY>
+        <width>410</width>
+        <height>34</height>
+        <texture>#(switch(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),'MP139\osd_progress_background_medium_green2.png',
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),'MP139\osd_progress_background_medium_green2.png',
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),'MP139\osd_progress_background_medium_green2.png',
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),'MP139\osd_progress_background_medium_green2.png',
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),'MP139\osd_progress_background_medium_green2.png',
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0'),'MP139\osd_progress_background_medium_green2.png',
+        eq(1,1),''))</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+      </control>
+      <control>
+        <description>Progress Bar</description>
+        <type>progress</type>
+        <id>0</id>
+        <posX>661</posX>
+        <posY>382</posY>
+        <width>410</width>
+        <height>30</height>
+        <label>#(switch(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),'#DriveFreeSpace.C.AvailableSpace.UsedPercentage',
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),'#DriveFreeSpace.D.AvailableSpace.UsedPercentage',
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),'#DriveFreeSpace.E.AvailableSpace.UsedPercentage',
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),'#DriveFreeSpace.F.AvailableSpace.UsedPercentage',
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),'#DriveFreeSpace.G.AvailableSpace.UsedPercentage',
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0'),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage',
+        eq(1,1),''))</label>
+        <texturebg>-</texturebg>
+        <onlymidtexture>no</onlymidtexture>
+        <midwidth>360</midwidth>
+        <midheight>0</midheight>
+        <midoffsetX>0</midoffsetX>
+        <midoffsetY>0</midoffsetY>
+        <lefttexture>MP139\osd_progress_left_red2.png</lefttexture>
+        <midtexture>MP139\osd_progress_mid_red2.png</midtexture>
+        <righttexture>MP139\osd_progress_right_red2.png</righttexture>
+        <visible>control.hastext(1001)</visible>
+      </control>
+      <control>
+        <description>DriveFreeSpace label</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>688</posX>
+        <posY>380</posY>
+        <width>480</width>
+        <label>#(switch(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),'#DriveFreeSpace.C.AvailableSpace.UsedPercentage%',
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),'#DriveFreeSpace.D.AvailableSpace.UsedPercentage%',
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),'#DriveFreeSpace.E.AvailableSpace.UsedPercentage%',
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),'#DriveFreeSpace.F.AvailableSpace.UsedPercentage%',
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),'#DriveFreeSpace.G.AvailableSpace.UsedPercentage%',
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0'),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage%',
+        eq(1,1),''))</label>
+        <align>left</align>
+        <font>font12</font>
+        <textcolor>white</textcolor>
+        <shadowAngle>45</shadowAngle>
+        <shadowDistance>2</shadowDistance>
+        <shadowColor>ff000000</shadowColor>
+        <visible>!string.equals(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0')</visible>
+        <disabledcolor>90ffffff</disabledcolor>
+      </control>
+      <control>
+        <description>DriveFreeSpace label</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1065</posX>
+        <posY>380</posY>
+        <width>480</width>
+        <label>#(switch(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),'#DriveFreeSpace.C.AvailableSpace.Percentage%',
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),'#DriveFreeSpace.D.AvailableSpace.Percentage%',
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),'#DriveFreeSpace.E.AvailableSpace.Percentage%',
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),'#DriveFreeSpace.F.AvailableSpace.Percentage%',
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),'#DriveFreeSpace.G.AvailableSpace.Percentage%',
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0'),'#DriveFreeSpace.H.AvailableSpace.Percentage%',
+        eq(1,1),''))</label>
+        <align>right</align>
+        <font>font12</font>
+        <textcolor>white</textcolor>
+        <shadowAngle>45</shadowAngle>
+        <shadowDistance>2</shadowDistance>
+        <shadowColor>ff000000</shadowColor>
+        <disabledcolor>90ffffff</disabledcolor>
+      </control>
+      <control>
+        <description>DriveFreeSpace</description>
+        <type>textboxscrollup</type>
+        <id>1001</id>
+        <posX>685</posX>
+        <posY>415</posY>
+        <width>1120</width>
+        <height>700</height>
+        <label>#(switch(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),'#DriveFreeSpace.C.AvailableSpace.Data',
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),'#DriveFreeSpace.D.AvailableSpace.Data',
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),'#DriveFreeSpace.E.AvailableSpace.Data',
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),'#DriveFreeSpace.F.AvailableSpace.Data',
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),'#DriveFreeSpace.G.AvailableSpace.Data',
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0'),'#DriveFreeSpace.H.AvailableSpace.Data',
+        eq(1,1),''))</label>
+        <textcolor>deepskyblue</textcolor>
+        <font>font12</font>
+        <seperator>. . . . . . .  . . . . . . . . . . . . . . . .  . . . . . . . . . . . . . . . . . . . .</seperator>
+        <textalign>left</textalign>
+        <scrollStartDelaySec>10</scrollStartDelaySec>
+        <spaceBetweenItems>3</spaceBetweenItems>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor>0</shadowColor>
+      </control>
+      <control>
+        <type>image</type>
+        <id>0</id>
+        <posX>1320</posX>
+        <posY>380</posY>
+        <width>410</width>
+        <height>34</height>
+        <texture>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        eq(1,1),''))</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+      </control>
+      <control>
+        <description>Progress Bar D</description>
+        <type>progress</type>
+        <id>0</id>
+        <posX>1311</posX>
+        <posY>382</posY>
+        <width>410</width>
+        <height>30</height>
+        <label>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.D.AvailableSpace.UsedPercentage',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.E.AvailableSpace.UsedPercentage',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.UsedPercentage',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.UsedPercentage',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage',
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.E.AvailableSpace.UsedPercentage',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.UsedPercentage',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.UsedPercentage',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.UsedPercentage',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.UsedPercentage',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage',
+        eq(1,1),''))</label>
+        <texturebg>-</texturebg>
+        <onlymidtexture>no</onlymidtexture>
+        <midwidth>200</midwidth>
+        <midheight>26</midheight>
+        <midoffsetX>0</midoffsetX>
+        <midoffsetY>0</midoffsetY>
+        <lefttexture>MP139\osd_progress_left_red2.png</lefttexture>
+        <midtexture>MP139\osd_progress_mid_red2.png</midtexture>
+        <righttexture>MP139\osd_progress_right_red2.png</righttexture>
+        <visible>control.hastext(1002)</visible>
+      </control>
+      <control>
+        <description>DriveFreeSpace Used % D</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1338</posX>
+        <posY>380</posY>
+        <width>480</width>
+        <label>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.D.AvailableSpace.UsedPercentage%',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.E.AvailableSpace.UsedPercentage%',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.UsedPercentage%',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.UsedPercentage%',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage%',
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.E.AvailableSpace.UsedPercentage%',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.UsedPercentage%',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.UsedPercentage%',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage%',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.UsedPercentage%',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.UsedPercentage%',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage%',
+        eq(1,1),''))</label>
+        <align>left</align>
+        <font>font12</font>
+        <textcolor>white</textcolor>
+        <shadowAngle>45</shadowAngle>
+        <shadowDistance>2</shadowDistance>
+        <shadowColor>ff000000</shadowColor>
+        <disabledcolor>90ffffff</disabledcolor>
+      </control>
+      <control>
+        <description>DriveFreeSpace Available % D</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1715</posX>
+        <posY>380</posY>
+        <width>480</width>
+        <label>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.D.AvailableSpace.Percentage%',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.E.AvailableSpace.Percentage%',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.Percentage%',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.Percentage%',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Percentage%',
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.E.AvailableSpace.Percentage%',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.Percentage%',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.Percentage%',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Percentage%',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.Percentage%',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.Percentage%',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Percentage%',
+        eq(1,1),''))</label>
+        <align>left</align>
+        <align>right</align>
+        <font>font12</font>
+        <textcolor>white</textcolor>
+        <shadowAngle>45</shadowAngle>
+        <shadowDistance>2</shadowDistance>
+        <shadowColor>ff000000</shadowColor>
+        <disabledcolor>90ffffff</disabledcolor>
+      </control>
+      <control>
+        <description>DriveFreeSpace Data D</description>
+        <type>textboxscrollup</type>
+        <id>1002</id>
+        <posX>1335</posX>
+        <posY>415</posY>
+        <width>1120</width>
+        <height>700</height>
+        <label>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.D.AvailableSpace.Data',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.E.AvailableSpace.Data',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.Data',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.Data',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Data',
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.E.AvailableSpace.Data',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.Data',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.Data',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Data',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.Data',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.Data',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Data',
+        eq(1,1),''))</label>
+        <textcolor>deepskyblue</textcolor>
+        <font>font12</font>
+        <seperator>. . . . . . .  . . . . . . . . . . . . . . . .  . . . . . . . . . . . . . . . . . . . .</seperator>
+        <textalign>left</textalign>
+        <scrollStartDelaySec>10</scrollStartDelaySec>
+        <spaceBetweenItems>3</spaceBetweenItems>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor>0</shadowColor>
+      </control>
+      <control>
+        <type>image</type>
+        <id>0</id>
+        <posX>670</posX>
+        <posY>560</posY>
+        <width>410</width>
+        <height>34</height>
+        <texture>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        eq(1,1),''))</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+      </control>
+      <control>
+        <description>Progress Bar D</description>
+        <type>progress</type>
+        <id>0</id>
+        <posX>661</posX>
+        <posY>562</posY>
+        <width>410</width>
+        <height>30</height>
+        <label>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.E.AvailableSpace.UsedPercentage',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.UsedPercentage',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.UsedPercentage',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.UsedPercentage',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.UsedPercentage',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage',
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.UsedPercentage',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.UsedPercentage',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.UsedPercentage',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage',
+        eq(1,1),''))</label>
+        <texturebg>-</texturebg>
+        <onlymidtexture>no</onlymidtexture>
+        <midwidth>200</midwidth>
+        <midheight>26</midheight>
+        <midoffsetX>0</midoffsetX>
+        <midoffsetY>0</midoffsetY>
+        <lefttexture>MP139\osd_progress_left_red2.png</lefttexture>
+        <midtexture>MP139\osd_progress_mid_red2.png</midtexture>
+        <righttexture>MP139\osd_progress_right_red2.png</righttexture>
+        <visible>control.hastext(1003)</visible>
+      </control>
+      <control>
+        <description>DriveFreeSpace Used % D</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>688</posX>
+        <posY>560</posY>
+        <width>480</width>
+        <label>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.E.AvailableSpace.UsedPercentage%',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.UsedPercentage%',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.UsedPercentage%',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage%',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.UsedPercentage%',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.UsedPercentage%',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage%',
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.UsedPercentage%',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.UsedPercentage%',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage%',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.UsedPercentage%',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage%',
+        eq(1,1),''))</label>
+        <align>left</align>
+        <font>font12</font>
+        <textcolor>white</textcolor>
+        <shadowAngle>45</shadowAngle>
+        <shadowDistance>2</shadowDistance>
+        <shadowColor>ff000000</shadowColor>
+        <disabledcolor>90ffffff</disabledcolor>
+      </control>
+      <control>
+        <description>DriveFreeSpace Available % D</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1065</posX>
+        <posY>560</posY>
+        <width>480</width>
+        <label>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.E.AvailableSpace.Percentage%',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.Percentage%',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.Percentage%',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Percentage%',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.Percentage%',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.Percentage%',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Percentage%',
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.Percentage%',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.Percentage%',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Percentage%',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.Percentage%',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Percentage%',
+        eq(1,1),''))</label>
+        <align>left</align>
+        <align>right</align>
+        <font>font12</font>
+        <textcolor>white</textcolor>
+        <shadowAngle>45</shadowAngle>
+        <shadowDistance>2</shadowDistance>
+        <shadowColor>ff000000</shadowColor>
+        <disabledcolor>90ffffff</disabledcolor>
+      </control>
+      <control>
+        <description>DriveFreeSpace Data D</description>
+        <type>textboxscrollup</type>
+        <id>1003</id>
+        <posX>685</posX>
+        <posY>595</posY>
+        <width>1120</width>
+        <height>700</height>
+        <label>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.E.AvailableSpace.Data',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.Data',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.Data',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Data',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.Data',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.Data',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Data',
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.Data',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.Data',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Data',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.Data',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Data',
+        eq(1,1),''))</label>
+        <textcolor>deepskyblue</textcolor>
+        <font>font12</font>
+        <seperator>. . . . . . .  . . . . . . . . . . . . . . . .  . . . . . . . . . . . . . . . . . . . .</seperator>
+        <textalign>left</textalign>
+        <scrollStartDelaySec>10</scrollStartDelaySec>
+        <spaceBetweenItems>3</spaceBetweenItems>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor>0</shadowColor>
+      </control>
+      <control>
+        <type>image</type>
+        <id>0</id>
+        <posX>1320</posX>
+        <posY>560</posY>
+        <width>410</width>
+        <height>34</height>
+        <texture>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        eq(1,1),''))</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+      </control>
+      <control>
+        <description>Progress Bar</description>
+        <type>progress</type>
+        <id>0</id>
+        <posX>1311</posX>
+        <posY>562</posY>
+        <width>410</width>
+        <height>30</height>
+        <label>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.UsedPercentage',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.UsedPercentage',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.UsedPercentage',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage',
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.UsedPercentage',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage',
+        eq(1,1),''))</label>
+        <texturebg>-</texturebg>
+        <onlymidtexture>no</onlymidtexture>
+        <midwidth>200</midwidth>
+        <midheight>26</midheight>
+        <midoffsetX>0</midoffsetX>
+        <midoffsetY>0</midoffsetY>
+        <lefttexture>MP139\osd_progress_left_red2.png</lefttexture>
+        <midtexture>MP139\osd_progress_mid_red2.png</midtexture>
+        <righttexture>MP139\osd_progress_right_red2.png</righttexture>
+        <visible>control.hastext(1004)</visible>
+      </control>
+      <control>
+        <description>DriveFreeSpace Used %</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1338</posX>
+        <posY>560</posY>
+        <width>480</width>
+        <label>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.UsedPercentage%',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.UsedPercentage%',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage%',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.UsedPercentage%',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage%',
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.UsedPercentage%',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage%',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage%',
+        eq(1,1),''))</label>
+        <align>left</align>
+        <font>font12</font>
+        <textcolor>white</textcolor>
+        <shadowAngle>45</shadowAngle>
+        <shadowDistance>2</shadowDistance>
+        <shadowColor>ff000000</shadowColor>
+        <disabledcolor>90ffffff</disabledcolor>
+      </control>
+      <control>
+        <description>DriveFreeSpace Available %</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1715</posX>
+        <posY>560</posY>
+        <width>480</width>
+        <label>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.Percentage%',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.Percentage%',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Percentage%',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.Percentage%',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Percentage%',
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.Percentage%',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Percentage%',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Percentage%',
+        eq(1,1),''))</label>
+        <align>left</align>
+        <align>right</align>
+        <font>font12</font>
+        <textcolor>white</textcolor>
+        <shadowAngle>45</shadowAngle>
+        <shadowDistance>2</shadowDistance>
+        <shadowColor>ff000000</shadowColor>
+        <disabledcolor>90ffffff</disabledcolor>
+      </control>
+      <control>
+        <description>DriveFreeSpace Data</description>
+        <type>textboxscrollup</type>
+        <id>1004</id>
+        <posX>1335</posX>
+        <posY>595</posY>
+        <width>1120</width>
+        <height>700</height>
+        <label>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.F.AvailableSpace.Data',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.Data',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Data',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.Data',
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Data',
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.Data',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Data',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Data',
+        eq(1,1),''))</label>
+        <textcolor>deepskyblue</textcolor>
+        <font>font12</font>
+        <seperator>. . . . . . .  . . . . . . . . . . . . . . . .  . . . . . . . . . . . . . . . . . . . .</seperator>
+        <textalign>left</textalign>
+        <scrollStartDelaySec>10</scrollStartDelaySec>
+        <spaceBetweenItems>3</spaceBetweenItems>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor>0</shadowColor>
+      </control>
+      <control>
+        <type>image</type>
+        <id>0</id>
+        <posX>670</posX>
+        <posY>740</posY>
+        <width>410</width>
+        <height>34</height>
+        <texture>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        
+        eq(1,1),''))</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+      </control>
+      <control>
+        <description>Progress Bar</description>
+        <type>progress</type>
+        <id>0</id>
+        <posX>661</posX>
+        <posY>742</posY>
+        <width>410</width>
+        <height>30</height>
+        <label>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.UsedPercentage',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage',
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage',
+        
+        eq(1,1),''))</label>
+        <texturebg>-</texturebg>
+        <onlymidtexture>no</onlymidtexture>
+        <midwidth>200</midwidth>
+        <midheight>26</midheight>
+        <midoffsetX>0</midoffsetX>
+        <midoffsetY>0</midoffsetY>
+        <lefttexture>MP139\osd_progress_left_red2.png</lefttexture>
+        <midtexture>MP139\osd_progress_mid_red2.png</midtexture>
+        <righttexture>MP139\osd_progress_right_red2.png</righttexture>
+        <visible>control.hastext(1005)</visible>
+      </control>
+      <control>
+        <description>DriveFreeSpace Used %</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>688</posX>
+        <posY>740</posY>
+        <width>480</width>
+        <label>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.UsedPercentage%',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage%',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage%',
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage%',
+        
+        eq(1,1),''))</label>
+        <align>left</align>
+        <font>font12</font>
+        <textcolor>white</textcolor>
+        <shadowAngle>45</shadowAngle>
+        <shadowDistance>2</shadowDistance>
+        <shadowColor>ff000000</shadowColor>
+        <disabledcolor>90ffffff</disabledcolor>
+      </control>
+      <control>
+        <description>DriveFreeSpace Available %</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1065</posX>
+        <posY>740</posY>
+        <width>480</width>
+        <label>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.Percentage%',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Percentage%',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Percentage%',
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Percentage%',
+        
+        eq(1,1),''))</label>
+        <align>left</align>
+        <align>right</align>
+        <font>font12</font>
+        <textcolor>white</textcolor>
+        <shadowAngle>45</shadowAngle>
+        <shadowDistance>2</shadowDistance>
+        <shadowColor>ff000000</shadowColor>
+        <disabledcolor>90ffffff</disabledcolor>
+      </control>
+      <control>
+        <description>DriveFreeSpace Data</description>
+        <type>textboxscrollup</type>
+        <id>1005</id>
+        <posX>685</posX>
+        <posY>775</posY>
+        <width>1120</width>
+        <height>700</height>
+        <label>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.G.AvailableSpace.Data',
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Data',
+        
+        and(
+        eq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Data',
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        eq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Data',
+        
+        eq(1,1),''))</label>
+        <textcolor>deepskyblue</textcolor>
+        <font>font12</font>
+        <seperator>. . . . . . .  . . . . . . . . . . . . . . . .  . . . . . . . . . . . . . . . . . . . .</seperator>
+        <textalign>left</textalign>
+        <scrollStartDelaySec>10</scrollStartDelaySec>
+        <spaceBetweenItems>3</spaceBetweenItems>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor>0</shadowColor>
+      </control>
+      <control>
+        <type>image</type>
+        <id>0</id>
+        <posX>1320</posX>
+        <posY>740</posY>
+        <width>410</width>
+        <height>34</height>
+        <texture>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'MP139\osd_progress_background_medium_green2.png',
+        
+          
+          
+        eq(1,1),''))</texture>
+        <colordiffuse>ffffffff</colordiffuse>
+      </control>
+      <control>
+        <description>Progress Bar</description>
+        <type>progress</type>
+        <id>0</id>
+        <posX>1311</posX>
+        <posY>742</posY>
+        <width>410</width>
+        <height>30</height>
+        <label>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage',
+        
+          
+          
+        eq(1,1),''))</label>
+        <texturebg>-</texturebg>
+        <onlymidtexture>no</onlymidtexture>
+        <midwidth>200</midwidth>
+        <midheight>26</midheight>
+        <midoffsetX>0</midoffsetX>
+        <midoffsetY>0</midoffsetY>
+        <lefttexture>MP139\osd_progress_left_red2.png</lefttexture>
+        <midtexture>MP139\osd_progress_mid_red2.png</midtexture>
+        <righttexture>MP139\osd_progress_right_red2.png</righttexture>
+        <visible>control.hastext(1006)</visible>
+      </control>
+      <control>
+        <description>DriveFreeSpace Used %</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1338</posX>
+        <posY>740</posY>
+        <width>480</width>
+        <label>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.UsedPercentage%',
+        
+          
+          
+        eq(1,1),''))</label>
+        <align>left</align>
+        <font>font12</font>
+        <textcolor>white</textcolor>
+        <shadowAngle>45</shadowAngle>
+        <shadowDistance>2</shadowDistance>
+        <shadowColor>ff000000</shadowColor>
+        <disabledcolor>90ffffff</disabledcolor>
+      </control>
+      <control>
+        <description>DriveFreeSpace Available %</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1715</posX>
+        <posY>740</posY>
+        <width>480</width>
+        <label>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Percentage%',
+        
+          
+          
+        eq(1,1),''))</label>
+        <align>left</align>
+        <align>right</align>
+        <font>font12</font>
+        <textcolor>white</textcolor>
+        <shadowAngle>45</shadowAngle>
+        <shadowDistance>2</shadowDistance>
+        <shadowColor>ff000000</shadowColor>
+        <disabledcolor>90ffffff</disabledcolor>
+      </control>
+      <control>
+        <description>DriveFreeSpace</description>
+        <type>textboxscrollup</type>
+        <id>1006</id>
+        <posX>1335</posX>
+        <posY>775</posY>
+        <width>1120</width>
+        <height>700</height>
+        <label>#(switch(
+        
+        and(
+        neq(#DriveFreeSpace.C.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.D.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.E.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.F.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.G.AvailableSpace.UsedPercentage,'0'),
+        neq(#DriveFreeSpace.H.AvailableSpace.UsedPercentage,'0')),'#DriveFreeSpace.H.AvailableSpace.Data',
+        
+          
+          
+        eq(1,1),''))</label>
+        <textcolor>deepskyblue</textcolor>
+        <font>font12</font>
+        <seperator>. . . . . . .  . . . . . . . . . . . . . . . .  . . . . . . . . . . . . . . . . . . . .</seperator>
+        <textalign>left</textalign>
+        <scrollStartDelaySec>10</scrollStartDelaySec>
+        <spaceBetweenItems>3</spaceBetweenItems>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor>0</shadowColor>
+      </control>
+      <dimColor>ffffffff</dimColor>
+    </control>
+    <control>
+      <description>Keyboard Shortcuts left</description>
+      <type>textbox</type>
+      <id>1</id>
+      <posX>685</posX>
+      <posY>360</posY>
+      <width>1120</width>
+      <height>700</height>
+      <label>
+      Escape:           ⤟  Previous window
+      Cursor Keys:    ∷  Select item
+      Home:              ↥   Select first item
+      End:                 ↧   Select last item
+      PageUp:          ↩  Previous item page
+      PageDown:     ↪  Next item page
+      U:                    ⤴   Parent folder
+      Enter:             ✓  Perform action
+      P:                    ▶  Start playing
+      B:                    ■  Stop playing
+      Space:           ⏸  Pause/Resume playing
+      F7:                  ⇤  Play previous
+      F8:                  ⇥  Play next
+      </label>
+      <textcolor>C0C0C0</textcolor>
+      <font>font12</font>
+      <visible>skin.hassetting(#skin.keyboard.shortcuts)</visible>
+      <spinWidth>42</spinWidth>
+      <spinHeight>30</spinHeight>
+      <spinPosX>3126</spinPosX>
+      <spinPosY>993</spinPosY>
+      <spinColor>ffffffff</spinColor>
+      <textureUp>MP139\page_up_nofocus.png</textureUp>
+      <textureDown>MP139\page_down_nofocus.png</textureDown>
+      <textureUpFocus>MP139\page_up_focus.png</textureUpFocus>
+      <textureDownFocus>MP139\page_down_focus.png</textureDownFocus>
+      <image>emtpy.png</image>
+      <colordiffuse>ffffffff</colordiffuse>
+      <shadowAngle>0</shadowAngle>
+      <shadowDistance>0</shadowDistance>
+      <shadowColor>0</shadowColor>
+    </control>
+    <control>
+      <description>Keyboard Shortcuts right</description>
+      <type>textbox</type>
+      <id>1</id>
+      <posX>1285</posX>
+      <posY>360</posY>
+      <width>1120</width>
+      <height>700</height>
+      <label> 
+      F5:      «  Rewind
+      F6:      »  FastForward
+      R:       ●  Record current TV
+      ✚ :         Volume up
+      ➖ :         Volume down
+      M:       ⊠  Mute
+      F3:    ⓘ  Show info of selected item
+      F9:      ≡  Show context menu
+      Y:       ⚏  Show OSD
+      H:       ⇄  Switch Classic/Basic Home
+      X:       ⇄  Switch GUI/Fullscreen (TV/Video)
+      F11:    ⊞  Screenshot of current screen
+      </label>
+      <textcolor>C0C0C0</textcolor>
+      <font>font12</font>
+      <visible>skin.hassetting(#skin.keyboard.shortcuts)</visible>
+      <spinWidth>42</spinWidth>
+      <spinHeight>30</spinHeight>
+      <spinPosX>3126</spinPosX>
+      <spinPosY>993</spinPosY>
+      <spinColor>ffffffff</spinColor>
+      <textureUp>MP139\page_up_nofocus.png</textureUp>
+      <textureDown>MP139\page_down_nofocus.png</textureDown>
+      <textureUpFocus>MP139\page_up_focus.png</textureUpFocus>
+      <textureDownFocus>MP139\page_down_focus.png</textureDownFocus>
+      <image>emtpy.png</image>
+      <colordiffuse>ffffffff</colordiffuse>
+      <shadowAngle>0</shadowAngle>
+      <shadowDistance>0</shadowDistance>
+      <shadowColor>0</shadowColor>
+    </control>
+    <control>
+      <description>background</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>1240</posX>
+      <posY>365</posY>
+      <height>540</height>
+      <width>1</width>
+      <texture>MP139\verticalbar.png</texture>
+      <colordiffuse>deepskyblue</colordiffuse>
+      <visible>skin.hassetting(#skin.keyboard.shortcuts)</visible>
+    </control>
+  </controls>
+</window>

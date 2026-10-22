@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  <main>
+    <latestscount>3</latestscount>
+    <tvlatestscount>3</tvlatestscount>
+  </main>
+  <playids>
+    <movingpictures>
+      <id>91919991</id>
+      <id>91919992</id>
+      <id>91919993</id>
+    </movingpictures>
+    <music>
+      <id>91919997</id>
+      <id>91919998</id>
+      <id>91919999</id>
+    </music>
+    <pictures>
+      <id>91919971</id>
+      <id>91919972</id>
+      <id>91919973</id>
+    </pictures>
+    <tvseries>
+      <id>91919994</id>
+      <id>91919995</id>
+      <id>91919996</id>
+    </tvseries>
+    <tv>
+      <id>91919984</id>
+      <id>91919985</id>
+      <id>91919986</id>
+    </tv>
+  </playids>
+</settings>

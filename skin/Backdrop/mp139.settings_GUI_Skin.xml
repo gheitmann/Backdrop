@@ -1,0 +1,1197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <id>705</id>
+  <defaultcontrol>10</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#header.label:897</define>
+  <define property="true" evaluateNow="true">#hedit.main.return:810101</define>
+  <define property="true" evaluateNow="true">#hedit.sub.return:820201</define>
+  <rememberLastFocusedControl>no</rememberLastFocusedControl>
+  <controls>
+    <import>mp139.common.settings.xml</import>
+    <import>mp139.common.time.xml</import>
+    <control>
+      <description>buttons</description>
+      <type>group</type>
+      <visible>!skin.hassetting(#skin.basichome.editor)</visible>
+      <control>
+        <description>buttons</description>
+        <type>group</type>
+        <control>
+          <description>buttons</description>
+          <type>group</type>
+          <posX>92</posX>
+          <posY>305</posY>
+          <dimColor>ffffffff</dimColor>
+          <layout>StackLayout(0, Vertical, true)</layout>
+          <control>
+            <description>General Main setttings</description>
+            <type>button</type>
+            <id>9991</id>
+            <label>128</label>
+            <width>410</width>
+            <onup>17</onup>
+            <onright>2</onright>
+            <hyperlink>1016</hyperlink>
+            <posX>799</posX>
+            <posY>375</posY>
+            <height>60</height>
+            <textXOff>25</textXOff>
+            <textYOff>1</textYOff>
+            <textalign>left</textalign>
+            <textvalign>middle</textvalign>
+            <textureFocus>listbg_fo.png</textureFocus>
+            <textureNoFocus>listbg_nf.png</textureNoFocus>
+            <scrollStartDelaySec>5</scrollStartDelaySec>
+            <scrollWrapString>  |  </scrollWrapString>
+            <font>font12</font>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <disabledcolor>90ffffff</disabledcolor>
+            <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+            <dimColor>90ffffff</dimColor>
+            <shadowAngle>0</shadowAngle>
+            <shadowDistance>0</shadowDistance>
+            <shadowColor />
+          </control>
+          <control>
+            <description>General Skin settings</description>
+            <type>button</type>
+            <id>9992</id>
+            <label>101021</label>
+            <width>410</width>
+            <hyperlink>1021</hyperlink>
+            <onup>9991</onup>
+            <onright>10</onright>
+            <posX>799</posX>
+            <posY>375</posY>
+            <height>60</height>
+            <textXOff>25</textXOff>
+            <textYOff>1</textYOff>
+            <textalign>left</textalign>
+            <textvalign>middle</textvalign>
+            <textureFocus>listbg_fo.png</textureFocus>
+            <textureNoFocus>listbg_nf.png</textureNoFocus>
+            <scrollStartDelaySec>5</scrollStartDelaySec>
+            <scrollWrapString>  |  </scrollWrapString>
+            <font>font12</font>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <disabledcolor>90ffffff</disabledcolor>
+            <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+            <dimColor>90ffffff</dimColor>
+            <shadowAngle>0</shadowAngle>
+            <shadowDistance>0</shadowDistance>
+            <shadowColor />
+          </control>
+          <control>
+            <description>Screen</description>
+            <type>button</type>
+            <id>9993</id>
+            <label>6023</label>
+            <width>410</width>
+            <hyperlink>9</hyperlink>
+            <onup>9992</onup>
+            <onright>2</onright>
+            <posX>799</posX>
+            <posY>375</posY>
+            <height>60</height>
+            <textXOff>25</textXOff>
+            <textYOff>1</textYOff>
+            <textalign>left</textalign>
+            <textvalign>middle</textvalign>
+            <textureFocus>listbg_fo.png</textureFocus>
+            <textureNoFocus>listbg_nf.png</textureNoFocus>
+            <scrollStartDelaySec>5</scrollStartDelaySec>
+            <scrollWrapString>  |  </scrollWrapString>
+            <font>font12</font>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <disabledcolor>90ffffff</disabledcolor>
+            <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+            <dimColor>90ffffff</dimColor>
+            <shadowAngle>0</shadowAngle>
+            <shadowDistance>0</shadowDistance>
+            <shadowColor />
+          </control>
+          <control>
+            <description>TV</description>
+            <type>button</type>
+            <id>9994</id>
+            <label>605</label>
+            <width>410</width>
+            <hyperlink>700</hyperlink>
+            <onup>9993</onup>
+            <onright>2</onright>
+            <posX>799</posX>
+            <posY>375</posY>
+            <height>60</height>
+            <textXOff>25</textXOff>
+            <textYOff>1</textYOff>
+            <textalign>left</textalign>
+            <textvalign>middle</textvalign>
+            <textureFocus>listbg_fo.png</textureFocus>
+            <textureNoFocus>listbg_nf.png</textureNoFocus>
+            <scrollStartDelaySec>5</scrollStartDelaySec>
+            <scrollWrapString>  |  </scrollWrapString>
+            <font>font12</font>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <disabledcolor>90ffffff</disabledcolor>
+            <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+            <dimColor>90ffffff</dimColor>
+            <shadowAngle>0</shadowAngle>
+            <shadowDistance>0</shadowDistance>
+            <shadowColor />
+          </control>
+          <control>
+            <description>My Pictures</description>
+            <type>button</type>
+            <id>9995</id>
+            <label>1</label>
+            <width>410</width>
+            <hyperlink>12</hyperlink>
+            <onup>9994</onup>
+            <onright>2</onright>
+            <posX>799</posX>
+            <posY>375</posY>
+            <height>60</height>
+            <textXOff>25</textXOff>
+            <textYOff>1</textYOff>
+            <textalign>left</textalign>
+            <textvalign>middle</textvalign>
+            <textureFocus>listbg_fo.png</textureFocus>
+            <textureNoFocus>listbg_nf.png</textureNoFocus>
+            <scrollStartDelaySec>5</scrollStartDelaySec>
+            <scrollWrapString>  |  </scrollWrapString>
+            <font>font12</font>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <disabledcolor>90ffffff</disabledcolor>
+            <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+            <dimColor>90ffffff</dimColor>
+            <shadowAngle>0</shadowAngle>
+            <shadowDistance>0</shadowDistance>
+            <shadowColor />
+          </control>
+          <control>
+            <description>Movies</description>
+            <type>button</type>
+            <id>9996</id>
+            <label>3</label>
+            <width>410</width>
+            <hyperlink>703</hyperlink>
+            <onup>9995</onup>
+            <onright>2</onright>
+            <posX>799</posX>
+            <posY>375</posY>
+            <height>60</height>
+            <textXOff>25</textXOff>
+            <textYOff>1</textYOff>
+            <textalign>left</textalign>
+            <textvalign>middle</textvalign>
+            <textureFocus>listbg_fo.png</textureFocus>
+            <textureNoFocus>listbg_nf.png</textureNoFocus>
+            <scrollStartDelaySec>5</scrollStartDelaySec>
+            <scrollWrapString>  |  </scrollWrapString>
+            <font>font12</font>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <disabledcolor>90ffffff</disabledcolor>
+            <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+            <dimColor>90ffffff</dimColor>
+            <shadowAngle>0</shadowAngle>
+            <shadowDistance>0</shadowDistance>
+            <shadowColor />
+          </control>
+          <control>
+            <description>My DVD</description>
+            <type>button</type>
+            <id>9997</id>
+            <label>1027</label>
+            <width>410</width>
+            <hyperlink>704</hyperlink>
+            <onup>9996</onup>
+            <onright>2</onright>
+            <posX>799</posX>
+            <posY>375</posY>
+            <height>60</height>
+            <textXOff>25</textXOff>
+            <textYOff>1</textYOff>
+            <textalign>left</textalign>
+            <textvalign>middle</textvalign>
+            <textureFocus>listbg_fo.png</textureFocus>
+            <textureNoFocus>listbg_nf.png</textureNoFocus>
+            <scrollStartDelaySec>5</scrollStartDelaySec>
+            <scrollWrapString>  |  </scrollWrapString>
+            <font>font12</font>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <disabledcolor>90ffffff</disabledcolor>
+            <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+            <dimColor>90ffffff</dimColor>
+            <shadowAngle>0</shadowAngle>
+            <shadowDistance>0</shadowDistance>
+            <shadowColor />
+          </control>
+          <control>
+            <description>BluRay</description>
+            <type>button</type>
+            <id>9998</id>
+            <label>300217</label>
+            <width>410</width>
+            <hyperlink>1024</hyperlink>
+            <onup>9997</onup>
+            <onright>2</onright>
+            <posX>799</posX>
+            <posY>375</posY>
+            <height>60</height>
+            <textXOff>25</textXOff>
+            <textYOff>1</textYOff>
+            <textalign>left</textalign>
+            <textvalign>middle</textvalign>
+            <textureFocus>listbg_fo.png</textureFocus>
+            <textureNoFocus>listbg_nf.png</textureNoFocus>
+            <scrollStartDelaySec>5</scrollStartDelaySec>
+            <scrollWrapString>  |  </scrollWrapString>
+            <font>font12</font>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <disabledcolor>90ffffff</disabledcolor>
+            <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+            <dimColor>90ffffff</dimColor>
+            <shadowAngle>0</shadowAngle>
+            <shadowDistance>0</shadowDistance>
+            <shadowColor />
+          </control>
+          <control>
+            <description>My Music</description>
+            <type>button</type>
+            <id>9999</id>
+            <label>2</label>
+            <width>410</width>
+            <hyperlink>14</hyperlink>
+            <ondown>99910</ondown>
+            <onup>9998</onup>
+            <onright>2</onright>
+            <posX>799</posX>
+            <posY>375</posY>
+            <height>60</height>
+            <textXOff>25</textXOff>
+            <textYOff>1</textYOff>
+            <textalign>left</textalign>
+            <textvalign>middle</textvalign>
+            <textureFocus>listbg_fo.png</textureFocus>
+            <textureNoFocus>listbg_nf.png</textureNoFocus>
+            <scrollStartDelaySec>5</scrollStartDelaySec>
+            <scrollWrapString>  |  </scrollWrapString>
+            <font>font12</font>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <disabledcolor>90ffffff</disabledcolor>
+            <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+            <dimColor>90ffffff</dimColor>
+            <shadowAngle>0</shadowAngle>
+            <shadowDistance>0</shadowDistance>
+            <shadowColor />
+          </control>
+          <control>
+            <description>MiniDisplay</description>
+            <type>button</type>
+            <id>99910</id>
+            <label>9100</label>
+            <width>410</width>
+            <hyperlink>9000</hyperlink>
+            <ondown>9991</ondown>
+            <onup>9999</onup>
+            <onright>2</onright>
+            <visible>plugin.isenabled(MiniDisplay)</visible>
+            <posX>799</posX>
+            <posY>375</posY>
+            <height>60</height>
+            <textXOff>25</textXOff>
+            <textYOff>1</textYOff>
+            <textalign>left</textalign>
+            <textvalign>middle</textvalign>
+            <textureFocus>listbg_fo.png</textureFocus>
+            <textureNoFocus>listbg_nf.png</textureNoFocus>
+            <scrollStartDelaySec>5</scrollStartDelaySec>
+            <scrollWrapString>  |  </scrollWrapString>
+            <font>font12</font>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <disabledcolor>90ffffff</disabledcolor>
+            <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+            <dimColor>90ffffff</dimColor>
+            <shadowAngle>0</shadowAngle>
+            <shadowDistance>0</shadowDistance>
+            <shadowColor />
+          </control>
+        </control>
+        <dimColor>ffffffff</dimColor>
+      </control>
+      <control>
+        <description>buttons</description>
+        <type>group</type>
+        <posX>655</posX>
+        <posY>305</posY>
+        <dimColor>ffffffff</dimColor>
+        <layout>StackLayout(0, Vertical, true)</layout>
+        <control>
+          <description>Skin</description>
+          <type>button</type>
+          <id>10</id>
+          <width>550</width>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <label>166</label>
+          <onup>10000</onup>
+          <ondown>15</ondown>
+          <onright>30</onright>
+          <onleft>9992</onleft>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>theme</description>
+          <type>menubutton</type>
+          <id>15</id>
+          <width>550</width>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <mode>dialoglist</mode>
+          <dialogTitle>90</dialogTitle>
+          <valueTextInButton>yes</valueTextInButton>
+          <valuePrefixText>94</valuePrefixText>
+          <textXOff>25</textXOff>
+          <onclick>#(skin.settheme(#selectedlabel15,15))</onclick>
+          <binding>#skin.currenttheme</binding>
+          <subitems>
+            <subitem>#skin.themes</subitem>
+          </subitems>
+          <onup>10</onup>
+          <ondown>11</ondown>
+          <onright>30</onright>
+          <onleft>9992</onleft>
+          <height>60</height>
+          <textYOff>9</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureUp>arrow_round_up_nofocus.png</textureUp>
+          <textureUpFocus>arrow_round_up_focus.png</textureUpFocus>
+          <textureDown>arrow_round_down_nofocus.png</textureDown>
+          <textureDownFocus>arrow_round_down_focus.png</textureDownFocus>
+          <spinWidth>36</spinWidth>
+          <spinHeight>36</spinHeight>
+          <spinXOff>13</spinXOff>
+          <spinTextXOff>7</spinTextXOff>
+          <spinTextYOff>2</spinTextYOff>
+          <spinalign>right</spinalign>
+          <spinvalign>middle</spinvalign>
+          <spintype>text</spintype>
+          <showrange>no</showrange>
+          <reverse>no</reverse>
+          <cycleItems>yes</cycleItems>
+          <dialogShowNumbers>no</dialogShowNumbers>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+        </control>
+        <control>
+          <description>Language</description>
+          <type>button</type>
+          <id>11</id>
+          <width>550</width>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <label>248</label>
+          <onup>15</onup>
+          <ondown>14</ondown>
+          <onright>30</onright>
+          <onleft>9992</onleft>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>Prefix My</description>
+          <type>checkbutton</type>
+          <id>14</id>
+          <width>550</width>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <label>300137</label>
+          <onup>11</onup>
+          <ondown>32</ondown>
+          <onright>30</onright>
+          <onleft>9992</onleft>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>9</textYOff>
+          <textpadding>30</textpadding>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+          <markWidth>43</markWidth>
+          <markHeight>42</markHeight>
+          <markXOff>20</markXOff>
+          <markYOff>10</markYOff>
+          <markalign>right</markalign>
+          <markvalign>middle</markvalign>
+          <textureCheckmark>check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+        </control>
+        <control>
+          <description>Category BG BasicHome</description>
+          <type>checkbutton</type>
+          <id>32</id>
+          <width>550</width>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <label>#SkinTranslation.Translations.CategoryBG.Label</label>
+          <selected>#(skin.hassetting('#skin.category BG'))</selected>
+          <onclick>#(skin.togglesetting('#skin.category BG'))</onclick>
+          <onup>14</onup>
+          <ondown>33</ondown>
+          <onright>30</onright>
+          <onleft>9992</onleft>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>9</textYOff>
+          <textpadding>30</textpadding>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+          <markWidth>43</markWidth>
+          <markHeight>42</markHeight>
+          <markXOff>20</markXOff>
+          <markYOff>10</markYOff>
+          <markalign>right</markalign>
+          <markvalign>middle</markvalign>
+          <textureCheckmark>check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <visible>no</visible>
+        </control>
+      </control>
+      <control>
+        <type>label</type>
+        <id>1</id>
+        <posX>700</posX>
+        <posY>620</posY>
+        <width>500</width>
+        <label>TV/Radio-EPG: 12 Zeilen (Backdrop)</label>
+        <textcolor>lightgray</textcolor>
+        <font>font12</font>
+        <disabledcolor>90ffffff</disabledcolor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>tvguide rows</description>
+        <type>menubutton</type>
+        <id>33</id>
+        <posX>655</posX>
+        <posY>660</posY>
+        <width>550</width>
+        <textureFocus>listbg_fo.png</textureFocus>
+        <mode>dialoglist</mode>
+        <dialogTitle>#SkinTranslation.Translations.EPGRows.Label</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText>Zeilen:</valuePrefixText>
+        <onclick>#(skin.setstring('#skin.tvguide.rows',#selectedlabel33))</onclick>
+        <binding>#skin.tvguide.rows</binding>
+        <subitems>
+          <subitem> 10</subitem>
+          <subitem> 12</subitem>
+          <subitem> 15</subitem>
+          <subitem> 18</subitem>
+          <subitem> 24</subitem>
+        </subitems>
+        <onup>32</onup>
+        <ondown>3570</ondown>
+        <onleft>9992</onleft>
+        <onright>30</onright>
+        <height>60</height>
+        <textXOff>25</textXOff>
+        <textYOff>9</textYOff>
+        <textalign>left</textalign>
+        <textvalign>middle</textvalign>
+        <textureUp>arrow_round_up_nofocus.png</textureUp>
+        <textureUpFocus>arrow_round_up_focus.png</textureUpFocus>
+        <textureDown>arrow_round_down_nofocus.png</textureDown>
+        <textureDownFocus>arrow_round_down_focus.png</textureDownFocus>
+        <spinWidth>36</spinWidth>
+        <spinHeight>36</spinHeight>
+        <spinXOff>13</spinXOff>
+        <spinTextXOff>7</spinTextXOff>
+        <spinTextYOff>2</spinTextYOff>
+        <spinalign>right</spinalign>
+        <spinvalign>middle</spinvalign>
+        <spintype>text</spintype>
+        <showrange>no</showrange>
+        <reverse>no</reverse>
+        <cycleItems>yes</cycleItems>
+        <dialogShowNumbers>no</dialogShowNumbers>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <colordiffuse>ffffffff</colordiffuse>
+        <disabledcolor>90ffffff</disabledcolor>
+        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <dimColor>90ffffff</dimColor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+        <textureNoFocus>listbg_nf.png</textureNoFocus>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <scrollWrapString>  |  </scrollWrapString>
+        <visible>no</visible>
+      </control>
+      <control>
+        <type>label</type>
+        <id>1</id>
+        <posX>700</posX>
+        <posY>740</posY>
+        <width>500</width>
+        <label>#SkinTranslation.Translations.Thumbsview.Label</label>
+        <textcolor>lightgray</textcolor>
+        <font>font12</font>
+        <visible>plugin.isenabled(Moving Pictures)</visible>
+        <disabledcolor>90ffffff</disabledcolor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>Thumbnail Views</description>
+        <type>menubutton</type>
+        <id>3570</id>
+        <mode>dialoglist</mode>
+        <posX>655</posX>
+        <posY>780</posY>
+        <width>550</width>
+        <textureFocus>listbg_fo.png</textureFocus>
+        <dialogTitle>#SkinTranslation.Translations.Thumbsview.Label</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText>#(L(143)) </valuePrefixText>
+        <onclick>#(skin.setstring('#skin.thumbsview',#selectedlabel3570))</onclick>
+        <binding>#skin.thumbsview</binding>
+        <subitems>
+          <subitem>#SkinTranslation.Translations.Thumbsview.Select.Label</subitem>
+          <subitem>Fanart Wall</subitem>
+        </subitems>
+        <onup>33</onup>
+        <ondown>50</ondown>
+        <onleft>9992</onleft>
+        <onright>30</onright>
+        <height>60</height>
+        <textXOff>25</textXOff>
+        <textYOff>9</textYOff>
+        <textalign>left</textalign>
+        <textvalign>middle</textvalign>
+        <textureUp>arrow_round_up_nofocus.png</textureUp>
+        <textureUpFocus>arrow_round_up_focus.png</textureUpFocus>
+        <textureDown>arrow_round_down_nofocus.png</textureDown>
+        <textureDownFocus>arrow_round_down_focus.png</textureDownFocus>
+        <spinWidth>36</spinWidth>
+        <spinHeight>36</spinHeight>
+        <spinXOff>13</spinXOff>
+        <spinTextXOff>7</spinTextXOff>
+        <spinTextYOff>2</spinTextYOff>
+        <spinalign>right</spinalign>
+        <spinvalign>middle</spinvalign>
+        <spintype>text</spintype>
+        <showrange>no</showrange>
+        <reverse>no</reverse>
+        <cycleItems>yes</cycleItems>
+        <dialogShowNumbers>no</dialogShowNumbers>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <colordiffuse>ffffffff</colordiffuse>
+        <disabledcolor>90ffffff</disabledcolor>
+        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <dimColor>90ffffff</dimColor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+        <textureNoFocus>listbg_nf.png</textureNoFocus>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <scrollWrapString>  |  </scrollWrapString>
+      </control>
+      <control>
+        <description>Facade Classic Home</description>
+        <type>menubutton</type>
+        <id>50</id>
+        <posX>655</posX>
+        <posY>850</posY>
+        <width>550</width>
+        <textureFocus>listbg_fo.png</textureFocus>
+        <mode>dialoglist</mode>
+        <dialogTitle>Layout Classic Home</dialogTitle>
+        <valueTextInButton>yes</valueTextInButton>
+        <valuePrefixText>Layout Classic Home: </valuePrefixText>
+        <onfocus>#(skin.setstring('#skin.previewframe','No'))</onfocus>
+        <onclick>#(skin.setstring('#home.myhome.layout',#selectedlabel50))</onclick>
+        <binding>#home.myhome.layout</binding>
+        <subitems>
+          <subitem>List</subitem>
+          <subitem>LargeIcons</subitem>
+          <subitem>Filmstrip</subitem>
+          <subitem>CoverFlow</subitem>
+        </subitems>
+        <onup>3570</onup>
+        <ondown>30</ondown>
+        <onright>30</onright>
+        <onleft>9992</onleft>
+        <height>60</height>
+        <textXOff>25</textXOff>
+        <textYOff>9</textYOff>
+        <textalign>left</textalign>
+        <textvalign>middle</textvalign>
+        <textureUp>arrow_round_up_nofocus.png</textureUp>
+        <textureUpFocus>arrow_round_up_focus.png</textureUpFocus>
+        <textureDown>arrow_round_down_nofocus.png</textureDown>
+        <textureDownFocus>arrow_round_down_focus.png</textureDownFocus>
+        <spinWidth>36</spinWidth>
+        <spinHeight>36</spinHeight>
+        <spinXOff>13</spinXOff>
+        <spinTextXOff>7</spinTextXOff>
+        <spinTextYOff>2</spinTextYOff>
+        <spinalign>right</spinalign>
+        <spinvalign>middle</spinvalign>
+        <spintype>text</spintype>
+        <showrange>no</showrange>
+        <reverse>no</reverse>
+        <cycleItems>yes</cycleItems>
+        <dialogShowNumbers>no</dialogShowNumbers>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <colordiffuse>ffffffff</colordiffuse>
+        <disabledcolor>90ffffff</disabledcolor>
+        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <dimColor>90ffffff</dimColor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+        <textureNoFocus>listbg_nf.png</textureNoFocus>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <scrollWrapString>  |  </scrollWrapString>
+      </control>
+      <control>
+        <type>label</type>
+        <id>1</id>
+        <posX>1300</posX>
+        <posY>615</posY>
+        <width>500</width>
+        <label>Fanart BasicHome</label>
+        <textcolor>lightgray</textcolor>
+        <font>font12</font>
+        <visible>!skin.hassetting(#skin.basichome.editor)+[string.equals(#hedit.mode,Horizontal Text only)|string.equals(#hedit.mode,Horizontal (scroll))]</visible>
+        <disabledcolor>90ffffff</disabledcolor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>buttons</description>
+        <type>group</type>
+        <posX>1270</posX>
+        <posY>670</posY>
+        <dimColor>ffffffff</dimColor>
+        <layout>StackLayout(0, Vertical, true)</layout>
+        <control>
+          <description>Video Fanart BasicHome</description>
+          <type>checkbutton</type>
+          <id>30</id>
+          <width>550</width>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <label>#SkinTranslation.Translations.VideoFanart.Label</label>
+          <selected>#(skin.hassetting('#skin.video.fanart.basichome'))</selected>
+          <onclick>#(skin.togglesetting('#skin.video.fanart.basichome'))</onclick>
+          <onup>33</onup>
+          <ondown>31</ondown>
+          <onright>30</onright>
+          <onleft>10</onleft>
+          <visible>!skin.hassetting(#skin.basichome.editor)+[string.equals(#hedit.mode,Horizontal Text only)|string.equals(#hedit.mode,Horizontal (scroll))]</visible>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>9</textYOff>
+          <textpadding>30</textpadding>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+          <markWidth>43</markWidth>
+          <markHeight>42</markHeight>
+          <markXOff>20</markXOff>
+          <markYOff>10</markYOff>
+          <markalign>right</markalign>
+          <markvalign>middle</markvalign>
+          <textureCheckmark>check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+        </control>
+        <control>
+          <description>Music Fanart BasicHome</description>
+          <type>checkbutton</type>
+          <id>31</id>
+          <width>550</width>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <label>#SkinTranslation.Translations.MusicFanart.Label</label>
+          <selected>#(skin.hassetting('#skin.music.fanart.basichome'))</selected>
+          <onclick>#(skin.togglesetting('#skin.music.fanart.basichome'))</onclick>
+          <onup>30</onup>
+          <ondown>37</ondown>
+          <onright>31</onright>
+          <onleft>10</onleft>
+          <visible>!skin.hassetting(#skin.basichome.editor)+[string.equals(#hedit.mode,Horizontal Text only)|string.equals(#hedit.mode,Horizontal (scroll))]</visible>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>9</textYOff>
+          <textpadding>30</textpadding>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+          <markWidth>43</markWidth>
+          <markHeight>42</markHeight>
+          <markXOff>20</markXOff>
+          <markYOff>10</markYOff>
+          <markalign>right</markalign>
+          <markvalign>middle</markvalign>
+          <textureCheckmark>check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+        </control>
+        <control>
+          <description>Music Fanart NowPlaying BasicHome</description>
+          <type>checkbutton</type>
+          <id>37</id>
+          <width>550</width>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <label>#SkinTranslation.Translations.MusicNowPlayingFanart.Label</label>
+          <selected>#(skin.hassetting('#skin.music.fanart.nowplaying.basichome'))</selected>
+          <onclick>#(skin.togglesetting('#skin.music.fanart.nowplaying.basichome'))</onclick>
+          <onup>31</onup>
+          <ondown>10</ondown>
+          <onright>37</onright>
+          <onleft>10</onleft>
+          <visible>!skin.hassetting(#skin.basichome.editor)+[string.equals(#hedit.mode,Horizontal Text only)|string.equals(#hedit.mode,Horizontal (scroll))]</visible>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>9</textYOff>
+          <textpadding>30</textpadding>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+          <markWidth>43</markWidth>
+          <markHeight>42</markHeight>
+          <markXOff>20</markXOff>
+          <markYOff>10</markYOff>
+          <markalign>right</markalign>
+          <markvalign>middle</markvalign>
+          <textureCheckmark>check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+        </control>
+      </control>
+      <control>
+        <description>Skin Preview</description>
+        <type>image</type>
+        <id>20</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <visible>!control.hasfocus(32)+!control.hasfocus(33)+!control.hasfocus(3750)+!control.hasfocus(37)+!control.hasfocus(31)+!control.hasfocus(30)</visible>
+      </control>
+      <control>
+        <description>Plugin Poster BasicHome</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <texture>MP139\Settings\basichome_nopluginbg.png</texture>
+        <visible>no</visible>
+      </control>
+      <control>
+        <description>Plugin Poster BasicHome</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <texture>MP139\Settings\basichome_pluginbg.png</texture>
+        <visible>no</visible>
+      </control>
+      <control>
+        <description>tv guide 10 lines</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <texture>MP139\Settings\tvguide_10lines.png</texture>
+        <visible>no</visible>
+      </control>
+      <control>
+        <description>radio guide 10 lines</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <texture>MP139\Settings\radioguide_10lines.png</texture>
+        <animation effect="fade" start="0" end="100" time="2000" delay="3000" condition="control.hasfocus(33)+string.contains(#skin.tvguide.rows, 10)">conditional</animation>
+        <animation effect="fade" start="100" end="0" time="2000" delay="8000" condition="control.hasfocus(33)+string.contains(#skin.tvguide.rows, 10)">conditional</animation>
+        <visible>no</visible>
+      </control>
+      <control>
+        <description>tv guide 12 lines</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <texture>MP139\Settings\tvguide_12lines.png</texture>
+        <visible>no</visible>
+      </control>
+      <control>
+        <description>radio guide 12 lines</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <texture>MP139\Settings\radioguide_12lines.png</texture>
+        <animation effect="fade" start="0" end="100" time="2000" delay="3000" condition="control.hasfocus(33)+string.contains(#skin.tvguide.rows, 12)">conditional</animation>
+        <animation effect="fade" start="100" end="0" time="2000" delay="8000" condition="control.hasfocus(33)+string.contains(#skin.tvguide.rows, 12)">conditional</animation>
+        <visible>no</visible>
+      </control>
+      <control>
+        <description>tv guide 15 lines</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <texture>MP139\Settings\tvguide_15lines.png</texture>
+        <visible>no</visible>
+      </control>
+      <control>
+        <description>radio guide 15 lines</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <texture>MP139\Settings\radioguide_15lines.png</texture>
+        <animation effect="fade" start="0" end="100" time="2000" delay="3000" condition="control.hasfocus(33)+string.contains(#skin.tvguide.rows, 15)">conditional</animation>
+        <animation effect="fade" start="100" end="0" time="2000" delay="8000" condition="control.hasfocus(33)+string.contains(#skin.tvguide.rows, 15)">conditional</animation>
+        <visible>no</visible>
+      </control>
+      <control>
+        <description>tv guide 18 lines</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <texture>MP139\Settings\tvguide_18lines.png</texture>
+        <visible>no</visible>
+      </control>
+      <control>
+        <description>radio guide 18 lines</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <texture>MP139\Settings\radioguide_18lines.png</texture>
+        <animation effect="fade" start="0" end="100" time="2000" delay="3000" condition="control.hasfocus(33)+string.contains(#skin.tvguide.rows, 18)">conditional</animation>
+        <animation effect="fade" start="100" end="0" time="2000" delay="8000" condition="control.hasfocus(33)+string.contains(#skin.tvguide.rows, 18)">conditional</animation>
+        <visible>no</visible>
+      </control>
+      <control>
+        <description>tv guide 24 lines</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <texture>MP139\Settings\tvguide_24lines.png</texture>
+        <visible>no</visible>
+      </control>
+      <control>
+        <description>radio guide 24 lines</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <texture>MP139\Settings\radioguide_24lines.png</texture>
+        <animation effect="fade" start="0" end="100" time="2000" delay="3000" condition="control.hasfocus(33)+string.contains(#skin.tvguide.rows, 24)">conditional</animation>
+        <animation effect="fade" start="100" end="0" time="2000" delay="8000" condition="control.hasfocus(33)+string.contains(#skin.tvguide.rows, 24)">conditional</animation>
+        <visible>no</visible>
+      </control>
+      <control>
+        <description>thumbnail view</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <texture>Settings\thumnailview.png</texture>
+        <visible>control.hasfocus(3570)+string.contains(#skin.thumbsview, #SkinTranslation.Translations.Thumbsview.Select.Label)</visible>
+      </control>
+      <control>
+        <description>Fanart Wall view</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <texture>Settings\fanartwall.png</texture>
+        <visible>control.hasfocus(3570)+string.contains(#skin.thumbsview, Fanart Wall)</visible>
+      </control>
+      <control>
+        <description>Video Fanart BasicHome disabled</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <texture>MP139\Settings\basichome_novideofanart.png</texture>
+        <visible>no</visible>
+      </control>
+      <control>
+        <description>Video Fanart BasicHome enabled</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <texture>MP139\Settings\basichome_videofanart.png</texture>
+        <visible>no</visible>
+      </control>
+      <control>
+        <description>Music Fanart BasicHome disabled</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <texture>MP139\Settings\basichome_music_norandomfanart.png</texture>
+        <visible>no</visible>
+      </control>
+      <control>
+        <description>Music Fanart BasicHome enabled</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <texture>MP139\Settings\basichome_music_randomfanart.png</texture>
+        <visible>no</visible>
+      </control>
+      <control>
+        <description>Music Fanart NowPlaying BasicHome disabled</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <texture>MP139\Settings\basichome_nomusicplayfanart.png</texture>
+        <visible>no</visible>
+      </control>
+      <control>
+        <description>Music Fanart NowPlaying BasicHome enabled</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <texture>MP139\Settings\basichome_musicplayfanart.png</texture>
+        <visible>no</visible>
+      </control>
+      <control>
+        <description>Listview in Classic Home</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <texture>MP139\Settings\myhomeListview.png</texture>
+        <visible>no</visible>
+      </control>
+      <control>
+        <description>LargeIconsview in Classic Home</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <texture>MP139\Settings\myhomeLargeIconsview.png</texture>
+        <visible>no</visible>
+      </control>
+      <control>
+        <description>Filmstripview in Classic Home</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <texture>MP139\Settings\myhomeFilmstripview.png</texture>
+        <visible>no</visible>
+      </control>
+      <control>
+        <description>Coverflowview in Classic Home</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1290</posX>
+        <posY>280</posY>
+        <width>552</width>
+        <height>310</height>
+        <keepaspectratio>no</keepaspectratio>
+        <texture>MP139\Settings\myhomeCoverflowview.png</texture>
+        <visible>no</visible>
+      </control>
+      <dimColor>ffffffff</dimColor>
+    </control>
+  </controls>
+</window>

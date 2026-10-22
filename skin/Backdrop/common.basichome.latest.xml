@@ -1,0 +1,1831 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+    <!--MovingPicture 1 ******************************************************-->
+    <control>
+      <description>SELECTED BACKGROUND</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background.png</texture>
+      <visible>Control.HasFocus(91919991)|Control.HasFocus(91919992)|Control.HasFocus(91919993)</visible>
+    </control>
+    <control>
+      <description>SELECTED BACKGROUND</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#latestMediaHandler.movingpicture.latest1.fanart</texture>
+      <visible>Control.HasFocus(91919991)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>SELECTED BACKGROUND</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#latestMediaHandler.movingpicture.latest2.fanart</texture>
+      <visible>Control.HasFocus(91919992)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>SELECTED BACKGROUND</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#latestMediaHandler.movingpicture.latest3.fanart</texture>
+      <visible>Control.HasFocus(91919993)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>SELECTED BACKGROUND</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>default.png</texture>
+      <visible>[Control.HasFocus(91919991)+!string.equals(#latestMediaHandler.movingpicture.latest1.fanart)]|[Control.HasFocus(91919992)+!string.equals(#latestMediaHandler.movingpicture.latest2.fanart)]|[Control.HasFocus(91919993)+!string.equals(#latestMediaHandler.movingpicture.latest3.fanart)]</visible>
+    </control>
+    <control>
+      <description>Dummy label</description>
+      <type>label</type>
+      <id>98345611</id>
+      <posX>3000</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <label>#latestMediaHandler.movingpicture.latest1.title</label>
+      <visible>string.equals(#latestMediaHandler.movingpicture.latest1.title)</visible>
+    </control>
+    <control>
+      <description>Latest Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1482</posX>
+      <posY>674</posY>
+      <width>495</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#SkinTranslation.Translations.LatestMovies.Label</label>
+      <font>font18</font>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" start="0" end="90" time="0" condition="true">conditional</animation>
+      <animation effect="fade" start="0" end="100" delay="350" time="50">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>[Control.isvisible(98345611)+[Control.HasFocus(77033)|Control.HasFocus(77034)]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Latest Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1418</posX>
+      <posY>674</posY>
+      <width>495</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#SkinTranslation.Translations.LatestMovies.Label</label>
+      <font>font18</font>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" start="0" end="90" time="0" condition="true">conditional</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>[Control.HasFocus(91919991)|Control.HasFocus(91919992)|Control.HasFocus(91919993)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>9834561</id>
+      <posX>1800</posX>
+      <posY>405</posY>
+      <width>112</width>
+      <height>166</height>
+      <shouldCache>true</shouldCache>
+      <texture mask="poster_frame_rounder_corners_background1.png">#latestMediaHandler.movingpicture.latest1.thumb</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[Control.HasFocus(91919991)|Control.HasFocus(91919992)|Control.HasFocus(91919993)]|[Control.isvisible(98345611)+[Control.HasFocus(77033)|Control.HasFocus(77034)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1800</posX>
+      <posY>405</posY>
+      <width>112</width>
+      <height>166</height>
+      <shouldCache>true</shouldCache>
+      <texture mask="poster_frame_rounder_corners_background1.png">defaultposter.png</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[[Control.HasFocus(91919991)|Control.HasFocus(91919992)|Control.HasFocus(91919993)]+!Control.hasthumb(9834561)]|[Control.isvisible(98345611)+[Control.HasFocus(77033)|Control.HasFocus(77034)]+!Control.hasthumb(9834561)]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Title Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1468</posX>
+      <posY>674</posY>
+      <width>490</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#latestMediaHandler.movingpicture.latest1.title</label>
+      <font>font14</font>
+      <textcolor>ffa9d0f7</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" start="0" end="90" time="0" condition="true">conditional</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.HasFocus(91919991)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Genre Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1508</posX>
+      <posY>674</posY>
+      <width>490</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#latestMediaHandler.movingpicture.latest1.genre</label>
+      <font>font13</font>
+      <textcolor>ffa9d0f7</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" start="0" end="90" time="0" condition="true">conditional</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.HasFocus(91919991)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Play Button</description>
+      <type>button</type>
+      <id>91919991</id>
+      <posX>1800</posX>
+      <posY>405</posY>
+      <width>112</width>
+      <height>166</height>
+      <textureFocus>poster_frame_rounder_corners_play.png</textureFocus>
+      <textureNoFocus>poster_frame_rounder_corners.png</textureNoFocus>
+      <label>-</label>
+      <hyperlink>96742</hyperlink>
+      <hyperlinkParameter>movieid:#latestMediaHandler.movingpicture.latest1.id</hyperlinkParameter>
+      <onleft>#backdrops.skin.lastfocused</onleft>
+      <onright>#backdrops.skin.lastfocused</onright>
+      <onup>91919993</onup>
+      <ondown>91919992</ondown>
+      <font>font12</font>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible allowhiddenfocus="true">[[Control.HasFocus(91919991)|Control.HasFocus(91919992)|Control.HasFocus(91919993)]|[Control.isvisible(98345611)+[Control.HasFocus(77033)|Control.HasFocus(77034)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <!--MovingPicture 2 ******************************************************-->
+    <control>
+      <description>Dummy label</description>
+      <type>label</type>
+      <id>98345621</id>
+      <posX>3000</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <label>#latestMediaHandler.movingpicture.latest2.title</label>
+      <visible>string.equals(#latestMediaHandler.movingpicture.latest2.title))</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>9834562</id>
+      <posX>1800</posX>
+      <posY>585</posY>
+      <width>112</width>
+      <height>166</height>
+      <shouldCache>true</shouldCache>
+      <texture mask="poster_frame_rounder_corners_background1.png">#latestMediaHandler.movingpicture.latest2.thumb</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[Control.HasFocus(91919991)|Control.HasFocus(91919992)|Control.HasFocus(91919993)]|[Control.isvisible(98345621)+[Control.HasFocus(77033)|Control.HasFocus(77034)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1800</posX>
+      <posY>585</posY>
+      <width>112</width>
+      <height>166</height>
+      <shouldCache>true</shouldCache>
+      <texture mask="poster_frame_rounder_corners_background1.png">defaultposter.png</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[[Control.HasFocus(91919991)|Control.HasFocus(91919992)|Control.HasFocus(91919993)]+!Control.hasthumb(9834562)]|[Control.isvisible(98345621)+[Control.HasFocus(77033)|Control.HasFocus(77034)]+!Control.hasthumb(9834562)]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Title Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1468</posX>
+      <posY>674</posY>
+      <width>490</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#latestMediaHandler.movingpicture.latest2.title</label>
+      <font>font14</font>
+      <textcolor>ffa9d0f7</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" start="0" end="90" time="0" condition="true">conditional</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.HasFocus(91919992)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Genre Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1508</posX>
+      <posY>674</posY>
+      <width>490</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#latestMediaHandler.movingpicture.latest2.genre</label>
+      <font>font13</font>
+      <textcolor>ffa9d0f7</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" start="0" end="90" time="0" condition="true">conditional</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.HasFocus(91919992)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Play Button</description>
+      <type>button</type>
+      <id>91919992</id>
+      <posX>1800</posX>
+      <posY>585</posY>
+      <width>112</width>
+      <height>166</height>
+      <textureFocus>poster_frame_rounder_corners_play.png</textureFocus>
+      <textureNoFocus>poster_frame_rounder_corners.png</textureNoFocus>
+      <label>-</label>
+      <hyperlink>96742</hyperlink>
+      <hyperlinkParameter>movieid:#latestMediaHandler.movingpicture.latest2.id</hyperlinkParameter>
+      <onleft>#backdrops.skin.lastfocused</onleft>
+      <onright>#backdrops.skin.lastfocused</onright>
+      <onup>91919991</onup>
+      <ondown>91919993</ondown>
+      <font>font12</font>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible allowhiddenfocus="true">[[Control.HasFocus(91919991)|Control.HasFocus(91919992)|Control.HasFocus(91919993)]|[Control.isvisible(98345621)+[Control.HasFocus(77033)|Control.HasFocus(77034)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <!--MovingPicture 3 ******************************************************-->
+    <control>
+      <description>Dummy label</description>
+      <type>label</type>
+      <id>98345631</id>
+      <posX>3000</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <label>#latestMediaHandler.movingpicture.latest3.title</label>
+      <visible>string.equals(#latestMediaHandler.movingpicture.latest3.title)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>9834563</id>
+      <posX>1800</posX>
+      <posY>765</posY>
+      <width>112</width>
+      <height>166</height>
+      <shouldCache>true</shouldCache>
+      <texture mask="poster_frame_rounder_corners_background1.png">#latestMediaHandler.movingpicture.latest3.thumb</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[Control.HasFocus(91919991)|Control.HasFocus(91919992)|Control.HasFocus(91919993)]|[Control.isvisible(98345631)+[Control.HasFocus(77033)|Control.HasFocus(77034)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1800</posX>
+      <posY>765</posY>
+      <width>112</width>
+      <height>166</height>
+      <shouldCache>true</shouldCache>
+      <texture mask="poster_frame_rounder_corners_background1.png">defaultposter.png</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[[Control.HasFocus(91919991)|Control.HasFocus(91919992)|Control.HasFocus(91919993)]+!Control.hasthumb(9834563)]|[Control.isvisible(98345631)+[Control.HasFocus(77033)|Control.HasFocus(77034)]+!Control.hasthumb(9834563)]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Title Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1468</posX>
+      <posY>674</posY>
+      <width>490</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#latestMediaHandler.movingpicture.latest3.title</label>
+      <font>font14</font>
+      <textcolor>ffa9d0f7</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" start="0" end="90" time="0" condition="true">conditional</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.HasFocus(91919993)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Genre Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1508</posX>
+      <posY>674</posY>
+      <width>490</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#latestMediaHandler.movingpicture.latest3.genre</label>
+      <font>font13</font>
+      <textcolor>ffa9d0f7</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" start="0" end="90" time="0" condition="true">conditional</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.HasFocus(91919993)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Play Button</description>
+      <type>button</type>
+      <id>91919993</id>
+      <posX>1800</posX>
+      <posY>765</posY>
+      <width>112</width>
+      <height>166</height>
+      <textureFocus>poster_frame_rounder_corners_play.png</textureFocus>
+      <textureNoFocus>poster_frame_rounder_corners.png</textureNoFocus>
+      <label>-</label>
+      <hyperlink>96742</hyperlink>
+      <hyperlinkParameter>movieid:#latestMediaHandler.movingpicture.latest3.id</hyperlinkParameter>
+      <onleft>#backdrops.skin.lastfocused</onleft>
+      <onright>#backdrops.skin.lastfocused</onright>
+      <onup>91919992</onup>
+      <ondown>91919991</ondown>
+      <font>font12</font>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible allowhiddenfocus="true">[[Control.HasFocus(91919991)|Control.HasFocus(91919992)|Control.HasFocus(91919993)]|[Control.isvisible(98345631)+[Control.HasFocus(77033)|Control.HasFocus(77034)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <!--TVSeries 1 ******************************************************-->
+    <control>
+      <description>SELECTED BACKGROUND</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background.png</texture>
+      <visible>Control.HasFocus(91919994)|Control.HasFocus(91919995)|Control.HasFocus(91919996)</visible>
+    </control>
+    <control>
+      <description>SELECTED BACKGROUND</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#latestMediaHandler.tvseries.latest1.fanart</texture>
+      <visible>Control.HasFocus(91919994)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>SELECTED BACKGROUND</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#latestMediaHandler.tvseries.latest2.fanart</texture>
+      <visible>Control.HasFocus(91919995)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>SELECTED BACKGROUND</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#latestMediaHandler.tvseries.latest3.fanart</texture>
+      <visible>Control.HasFocus(91919996)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>SELECTED BACKGROUND</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>default.png</texture>
+      <visible>[Control.HasFocus(91919994)+!string.equals(#latestMediaHandler.tvseries.latest1.fanart)]|[Control.HasFocus(91919995)+!string.equals(#latestMediaHandler.tvseries.latest2.fanart)]|[Control.HasFocus(91919996)+!string.equals(#latestMediaHandler.tvseries.latest3.fanart)]</visible>
+    </control>
+    <control>
+      <description>Dummy label</description>
+      <type>label</type>
+      <id>98345511</id>
+      <posX>3000</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <label>#latestMediaHandler.tvseries.latest1.episodeName</label>
+      <visible>string.equals(#latestMediaHandler.tvseries.latest1.episodeName)</visible>
+    </control>
+    <control>
+      <description>Latest Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1372</posX>
+      <posY>635</posY>
+      <width>495</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#SkinTranslation.Translations.LatestSeries.Label</label>
+      <font>font18</font>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" start="0" end="90" time="0" condition="true">conditional</animation>
+      <animation effect="fade" start="0" end="100" delay="350" time="50">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>[Control.isvisible(98345511)+[Control.HasFocus(77046)]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Latest Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1302</posX>
+      <posY>635</posY>
+      <width>495</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#SkinTranslation.Translations.LatestSeries.Label</label>
+      <font>font18</font>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" start="0" end="90" time="0" condition="true">conditional</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>[Control.HasFocus(91919994)|Control.HasFocus(91919995)|Control.HasFocus(91919996)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>9834551</id>
+      <posX>1678</posX>
+      <posY>465</posY>
+      <width>242</width>
+      <height>142</height>
+      <shouldCache>true</shouldCache>
+      <keepaspectratio>yes</keepaspectratio>
+      <zoom>yes</zoom>
+      <zoomfromtop>yes</zoomfromtop>
+      <centered>yes</centered>
+      <texture mask="episode.frame.background.png">#latestMediaHandler.tvseries.latest1.thumb</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[Control.HasFocus(91919994)|Control.HasFocus(91919995)|Control.HasFocus(91919996)]|[Control.isvisible(98345511)+[Control.HasFocus(77046)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1678</posX>
+      <posY>465</posY>
+      <width>242</width>
+      <height>142</height>
+      <shouldCache>true</shouldCache>
+      <keepaspectratio>yes</keepaspectratio>
+      <zoom>yes</zoom>
+      <zoomfromtop>yes</zoomfromtop>
+      <centered>yes</centered>
+      <texture mask="episode.frame.background.png">default.recording.png</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[[Control.HasFocus(91919994)|Control.HasFocus(91919995)|Control.HasFocus(91919996)]+!Control.hasthumb(9834551)]|[Control.isvisible(98345511)+[Control.HasFocus(77046)]]+!Control.hasthumb(9834551)]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Series Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1396</posX>
+      <posY>670</posY>
+      <width>420</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#latestMediaHandler.tvseries.latest1.serieName</label>
+      <font>font12</font>
+      <textcolor>ffa9d0f7</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" end="90" time="0">Visible</animation>
+      <animation effect="rotate" end="90" time="0">Hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.HasFocus(91919994)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Episode Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1425</posX>
+      <posY>670</posY>
+      <width>420</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#latestMediaHandler.tvseries.latest1.episodeName</label>
+      <font>font13</font>
+      <textcolor>ffa9d0f7</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" end="90" time="0">Visible</animation>
+      <animation effect="rotate" end="90" time="0">Hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.HasFocus(91919994)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Play Button</description>
+      <type>button</type>
+      <id>91919994</id>
+      <posX>1678</posX>
+      <posY>465</posY>
+      <width>242</width>
+      <height>142</height>
+      <textureFocus>episode.frame_play.png</textureFocus>
+      <textureNoFocus>episode.frame.png</textureNoFocus>
+      <label>-</label>
+      <onleft>#backdrops.skin.lastfocused</onleft>
+      <onright>#backdrops.skin.lastfocused</onright>
+      <onup>91919996</onup>
+      <ondown>91919995</ondown>
+      <font>font12</font>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible allowhiddenfocus="true">[[Control.HasFocus(91919994)|Control.HasFocus(91919995)|Control.HasFocus(91919996)]|[Control.isvisible(98345511)+[Control.HasFocus(77046)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <!--TVSeries 2 ******************************************************-->
+    <control>
+      <description>Dummy label</description>
+      <type>label</type>
+      <id>98345521</id>
+      <posX>3000</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <label>#latestMediaHandler.tvseries.latest2.episodeName</label>
+      <visible>string.equals(#latestMediaHandler.tvseries.latest2.episodeName)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>9834552</id>
+      <posX>1678</posX>
+      <posY>615</posY>
+      <width>242</width>
+      <height>142</height>
+      <shouldCache>true</shouldCache>
+      <keepaspectratio>yes</keepaspectratio>
+      <zoom>yes</zoom>
+      <zoomfromtop>yes</zoomfromtop>
+      <centered>yes</centered>
+      <texture mask="episode.frame.background.png">#latestMediaHandler.tvseries.latest2.thumb</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[Control.HasFocus(91919994)|Control.HasFocus(91919995)|Control.HasFocus(91919996)]|[Control.isvisible(98345521)+[Control.HasFocus(77046)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1678</posX>
+      <posY>615</posY>
+      <width>242</width>
+      <height>142</height>
+      <shouldCache>true</shouldCache>
+      <keepaspectratio>yes</keepaspectratio>
+      <zoom>yes</zoom>
+      <zoomfromtop>yes</zoomfromtop>
+      <centered>yes</centered>
+      <texture mask="episode.frame.background.png">default.recording.png</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[[Control.HasFocus(91919994)|Control.HasFocus(91919995)|Control.HasFocus(91919996)]+!Control.hasthumb(9834552)]|[Control.isvisible(98345521)+[Control.HasFocus(77046)]+!Control.hasthumb(9834552)]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Series Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1396</posX>
+      <posY>670</posY>
+      <width>420</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#latestMediaHandler.tvseries.latest2.serieName</label>
+      <font>font12</font>
+      <textcolor>ffa9d0f7</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" end="90" time="0">Visible</animation>
+      <animation effect="rotate" end="90" time="0">Hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.HasFocus(91919995)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Episode Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1425</posX>
+      <posY>670</posY>
+      <width>420</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#latestMediaHandler.tvseries.latest2.episodeName</label>
+      <font>font13</font>
+      <textcolor>ffa9d0f7</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" end="90" time="0">Visible</animation>
+      <animation effect="rotate" end="90" time="0">Hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.HasFocus(91919995)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Play Button</description>
+      <type>button</type>
+      <id>91919995</id>
+      <posX>1678</posX>
+      <posY>615</posY>
+      <width>242</width>
+      <height>142</height>
+      <textureFocus>episode.frame_play.png</textureFocus>
+      <textureNoFocus>episode.frame.png</textureNoFocus>
+      <label>-</label>
+      <onleft>#backdrops.skin.lastfocused</onleft>
+      <onright>#backdrops.skin.lastfocused</onright>
+      <onup>91919994</onup>
+      <ondown>91919996</ondown>
+      <font>font12</font>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible allowhiddenfocus="true">[[Control.HasFocus(91919994)|Control.HasFocus(91919995)|Control.HasFocus(91919996)]|[Control.isvisible(98345521)+[Control.HasFocus(77046)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <!--TVSeries 3 ******************************************************-->
+    <control>
+      <description>Dummy label</description>
+      <type>label</type>
+      <id>98345531</id>
+      <posX>3000</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <label>#latestMediaHandler.tvseries.latest3.episodeName</label>
+      <visible>string.equals(#latestMediaHandler.tvseries.latest3.episodeName)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>9834553</id>
+      <posX>1678</posX>
+      <posY>765</posY>
+      <width>242</width>
+      <height>142</height>
+      <shouldCache>true</shouldCache>
+      <keepaspectratio>yes</keepaspectratio>
+      <zoom>yes</zoom>
+      <zoomfromtop>yes</zoomfromtop>
+      <centered>yes</centered>
+      <texture mask="episode.frame.background.png">#latestMediaHandler.tvseries.latest3.thumb</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[Control.HasFocus(91919994)|Control.HasFocus(91919995)|Control.HasFocus(91919996)]|[Control.isvisible(98345531)+[Control.HasFocus(77046)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1678</posX>
+      <posY>765</posY>
+      <width>242</width>
+      <height>142</height>
+      <shouldCache>true</shouldCache>
+      <keepaspectratio>yes</keepaspectratio>
+      <zoom>yes</zoom>
+      <zoomfromtop>yes</zoomfromtop>
+      <centered>yes</centered>
+      <texture mask="episode.frame.background.png">default.recording.png</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[[Control.HasFocus(91919994)|Control.HasFocus(91919995)|Control.HasFocus(91919996)]+!Control.hasthumb(9834553)]|[Control.isvisible(98345531)+[Control.HasFocus(77046)]+!Control.hasthumb(9834552)]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Series Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1396</posX>
+      <posY>670</posY>
+      <width>420</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#latestMediaHandler.tvseries.latest3.serieName</label>
+      <font>font12</font>
+      <textcolor>ffa9d0f7</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" end="90" time="0">Visible</animation>
+      <animation effect="rotate" end="90" time="0">Hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.HasFocus(91919996)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Episode Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1425</posX>
+      <posY>670</posY>
+      <width>420</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#latestMediaHandler.tvseries.latest3.episodeName</label>
+      <font>font13</font>
+      <textcolor>ffa9d0f7</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" end="90" time="0">Visible</animation>
+      <animation effect="rotate" end="90" time="0">Hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.HasFocus(91919996)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Play Button</description>
+      <type>button</type>
+      <id>91919996</id>
+      <posX>1678</posX>
+      <posY>765</posY>
+      <width>242</width>
+      <height>142</height>
+      <textureFocus>episode.frame_play.png</textureFocus>
+      <textureNoFocus>episode.frame.png</textureNoFocus>
+      <label>-</label>
+      <onleft>#backdrops.skin.lastfocused</onleft>
+      <onright>#backdrops.skin.lastfocused</onright>
+      <onup>91919995</onup>
+      <ondown>91919994</ondown>
+      <font>font12</font>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible allowhiddenfocus="true">[[Control.HasFocus(91919994)|Control.HasFocus(91919995)|Control.HasFocus(91919996)]|[Control.isvisible(98345531)+[Control.HasFocus(77046)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <!--Picture 1 ******************************************************-->
+    <control>
+      <description>Dummy label</description>
+      <type>label</type>
+      <id>98345711</id>
+      <posX>3000</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <label>#latestMediaHandler.picture.latest1.filename</label>
+      <visible>string.equals(#latestMediaHandler.picture.latest1.filename)</visible>
+    </control>
+    <control>
+      <description>Latest Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1402</posX>
+      <posY>690</posY>
+      <width>495</width>
+      <align>center</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#SkinTranslation.Translations.LatestPictures.Label</label>
+      <font>font18</font>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" start="0" end="90" time="0" condition="true">conditional</animation>
+      <animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="0,450" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.isvisible(98345711)+[Control.HasFocus(77013)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>9834571</id>
+      <posX>1678</posX>
+      <posY>465</posY>
+      <width>242</width>
+      <height>142</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <zoom>yes</zoom>
+      <zoomfromtop>yes</zoomfromtop>
+      <centered>yes</centered>
+      <shouldCache>true</shouldCache>
+      <texture mask="episode.frame.background.png">#latestMediaHandler.picture.latest1.thumb</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>Control.isvisible(98345711)+[Control.HasFocus(77013)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <id>0</id>
+      <type>image</type>
+      <posX>1678</posX>
+      <posY>465</posY>
+      <width>242</width>
+      <height>142</height>
+      <shouldCache>true</shouldCache>
+      <texture>episode.frame.png</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>Control.isvisible(98345711)+[Control.HasFocus(77013)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <!--Picture 2 ******************************************************-->
+    <control>
+      <description>Dummy label</description>
+      <type>label</type>
+      <id>98345721</id>
+      <posX>3000</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <label>#latestMediaHandler.picture.latest2.filename</label>
+      <visible>string.equals(#latestMediaHandler.picture.latest2.filename)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>9834572</id>
+      <posX>1678</posX>
+      <posY>615</posY>
+      <width>242</width>
+      <height>142</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <zoom>yes</zoom>
+      <zoomfromtop>yes</zoomfromtop>
+      <centered>yes</centered>
+      <shouldCache>true</shouldCache>
+      <texture mask="episode.frame.background.png">#latestMediaHandler.picture.latest2.thumb</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>Control.isvisible(98345721)+[Control.HasFocus(77013)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <id>0</id>
+      <type>image</type>
+      <posX>1678</posX>
+      <posY>615</posY>
+      <width>242</width>
+      <height>142</height>
+      <shouldCache>true</shouldCache>
+      <texture>episode.frame.png</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>Control.isvisible(98345721)+[Control.HasFocus(77013)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <!--Picture 3 ******************************************************-->
+    <control>
+      <description>Dummy label</description>
+      <type>label</type>
+      <id>98345731</id>
+      <posX>3000</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <label>#latestMediaHandler.picture.latest3.filename</label>
+      <visible>string.equals(#latestMediaHandler.picture.latest3.filename)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>9834573</id>
+      <posX>1678</posX>
+      <posY>765</posY>
+      <width>242</width>
+      <height>142</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <zoom>yes</zoom>
+      <zoomfromtop>yes</zoomfromtop>
+      <centered>yes</centered>
+      <shouldCache>true</shouldCache>
+      <texture mask="episode.frame.background.png">#latestMediaHandler.picture.latest3.thumb</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>Control.isvisible(98345731)+[Control.HasFocus(77013)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <id>0</id>
+      <type>image</type>
+      <posX>1678</posX>
+      <posY>765</posY>
+      <width>242</width>
+      <height>142</height>
+      <shouldCache>true</shouldCache>
+      <texture>episode.frame.png</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>Control.isvisible(98345731)+[Control.HasFocus(77013)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <!--Music 1 ******************************************************-->
+    <control>
+      <description>SELECTED BACKGROUND</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background.png</texture>
+      <visible>Control.HasFocus(91919997)|Control.HasFocus(91919998)|Control.HasFocus(91919999)</visible>
+    </control>
+    <control>
+      <description>SELECTED BACKGROUND</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#latestMediaHandler.music.latest1.fanart</texture>
+      <visible>Control.HasFocus(91919997)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>SELECTED BACKGROUND</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#latestMediaHandler.music.latest2.fanart</texture>
+      <visible>Control.HasFocus(91919998)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>SELECTED BACKGROUND</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#latestMediaHandler.music.latest3.fanart</texture>
+      <visible>Control.HasFocus(91919999)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>SELECTED BACKGROUND</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>default.png</texture>
+      <visible>[Control.HasFocus(91919997)+!string.equals(#latestMediaHandler.music.latest1.fanart)]|[Control.HasFocus(91919998)+!string.equals(#latestMediaHandler.music.latest2.fanart)]|[Control.HasFocus(91919999)+!string.equals(#latestMediaHandler.music.latest3.fanart)]</visible>
+    </control>
+    <control>
+      <description>Dummy label</description>
+      <type>label</type>
+      <id>98345811</id>
+      <posX>3000</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <label>#latestMediaHandler.music.latest1.artist</label>
+      <visible>string.equals(#latestMediaHandler.music.latest1.artist)</visible>
+    </control>
+    <control>
+      <description>Latest Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1428</posX>
+      <posY>693</posY>
+      <width>495</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#SkinTranslation.Translations.LatestMusic.Label</label>
+      <font>font18</font>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" start="0" end="90" time="0" condition="true">conditional</animation>
+      <animation effect="fade" start="0" end="100" delay="350" time="50">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>[Control.isvisible(98345811)+[Control.HasFocus(77023)|Control.HasFocus(77027)|Control.HasFocus(77028)]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Latest Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1362</posX>
+      <posY>693</posY>
+      <width>495</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#SkinTranslation.Translations.LatestMusic.Label</label>
+      <font>font18</font>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" start="0" end="90" time="0" condition="true">conditional</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>[Control.HasFocus(91919997)|Control.HasFocus(91919998)|Control.HasFocus(91919999)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>9834581</id>
+      <posX>1734</posX>
+      <posY>420</posY>
+      <width>180</width>
+      <height>180</height>
+      <shouldCache>true</shouldCache>
+      <texture mask="music_frame_rounder_corners_background1.png">#latestMediaHandler.music.latest1.thumb</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[Control.HasFocus(91919997)|Control.HasFocus(91919998)|Control.HasFocus(91919999)]|[Control.isvisible(98345811)+[Control.HasFocus(77023)|Control.HasFocus(77027)|Control.HasFocus(77028)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1734</posX>
+      <posY>420</posY>
+      <width>180</width>
+      <height>180</height>
+      <shouldCache>true</shouldCache>
+      <texture mask="music_frame_rounder_corners_background1.png">nothumb.png</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[[Control.HasFocus(91919997)|Control.HasFocus(91919998)|Control.HasFocus(91919999)]+!Control.hasthumb(9834581)]|[Control.isvisible(98345811)+[Control.HasFocus(77023)|Control.HasFocus(77027)|Control.HasFocus(77028)]+!Control.hasthumb(9834581)]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Artist Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1407</posX>
+      <posY>693</posY>
+      <width>495</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#latestMediaHandler.music.latest1.artist</label>
+      <font>font14</font>
+      <textcolor>ffa9d0f7</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" end="90" time="0">Visible</animation>
+      <animation effect="rotate" end="90" time="0">Hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.HasFocus(91919997)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Album Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1445</posX>
+      <posY>693</posY>
+      <width>495</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#latestMediaHandler.music.latest1.album</label>
+      <font>font13</font>
+      <textcolor>ffa9d0f7</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" end="90" time="0">Visible</animation>
+      <animation effect="rotate" end="90" time="0">Hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.HasFocus(91919997)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Play Button</description>
+      <type>button</type>
+      <id>91919997</id>
+      <posX>1734</posX>
+      <posY>420</posY>
+      <width>180</width>
+      <height>180</height>
+      <textureFocus>music_frame_rounder_corners_play.png</textureFocus>
+      <textureNoFocus>music_frame_rounder_corners.png</textureNoFocus>
+      <label>-</label>
+      <onleft>#backdrops.skin.lastfocused</onleft>
+      <onright>#backdrops.skin.lastfocused</onright>
+      <onup>91919999</onup>
+      <ondown>91919998</ondown>
+      <font>font12</font>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible allowhiddenfocus="true">[[Control.HasFocus(91919997)|Control.HasFocus(91919998)|Control.HasFocus(91919999)]|[Control.isvisible(98345811)+[Control.HasFocus(77023)|Control.HasFocus(77027)|Control.HasFocus(77028)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <!--Music 2 ******************************************************-->
+    <control>
+      <description>Dummy label</description>
+      <type>label</type>
+      <id>98345821</id>
+      <posX>3000</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <label>#latestMediaHandler.music.latest2.artist</label>
+      <visible>string.equals(#latestMediaHandler.music.latest2.artist)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>9834582</id>
+      <posX>1734</posX>
+      <posY>600</posY>
+      <width>180</width>
+      <height>180</height>
+      <shouldCache>true</shouldCache>
+      <texture mask="music_frame_rounder_corners_background1.png">#latestMediaHandler.music.latest2.thumb</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[Control.HasFocus(91919997)|Control.HasFocus(91919998)|Control.HasFocus(91919999)]|[Control.isvisible(98345821)+[Control.HasFocus(77023)|Control.HasFocus(77027)|Control.HasFocus(77028)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1734</posX>
+      <posY>600</posY>
+      <width>180</width>
+      <height>180</height>
+      <shouldCache>true</shouldCache>
+      <texture mask="music_frame_rounder_corners_background1.png">nothumb.png</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[[Control.HasFocus(91919997)|Control.HasFocus(91919998)|Control.HasFocus(91919999)]+!Control.hasthumb(9834582)]|[Control.isvisible(98345821)+[Control.HasFocus(77023)|Control.HasFocus(77027)|Control.HasFocus(77028)]+!Control.hasthumb(9834582)]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Artist Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1407</posX>
+      <posY>693</posY>
+      <width>495</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#latestMediaHandler.music.latest2.artist</label>
+      <font>font14</font>
+      <textcolor>ffa9d0f7</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" end="90" time="0">Visible</animation>
+      <animation effect="rotate" end="90" time="0">Hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.HasFocus(91919998)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Album Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1445</posX>
+      <posY>693</posY>
+      <width>495</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#latestMediaHandler.music.latest2.album</label>
+      <font>font13</font>
+      <textcolor>ffa9d0f7</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" end="90" time="0">Visible</animation>
+      <animation effect="rotate" end="90" time="0">Hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.HasFocus(91919998)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Play Button</description>
+      <type>button</type>
+      <id>91919998</id>
+      <posX>1734</posX>
+      <posY>600</posY>
+      <width>180</width>
+      <height>180</height>
+      <textureFocus>music_frame_rounder_corners_play.png</textureFocus>
+      <textureNoFocus>music_frame_rounder_corners.png</textureNoFocus>
+      <label>-</label>
+      <onleft>#backdrops.skin.lastfocused</onleft>
+      <onright>#backdrops.skin.lastfocused</onright>
+      <onup>91919997</onup>
+      <ondown>91919999</ondown>
+      <font>font12</font>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible allowhiddenfocus="true">[[Control.HasFocus(91919997)|Control.HasFocus(91919998)|Control.HasFocus(91919999)]|[Control.isvisible(98345821)+[Control.HasFocus(77023)|Control.HasFocus(77027)|Control.HasFocus(77028)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <!--Music 3 ******************************************************-->
+    <control>
+      <description>Dummy label</description>
+      <type>label</type>
+      <id>98345831</id>
+      <posX>3000</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <label>#latestMediaHandler.music.latest2.artist</label>
+      <visible>string.equals(#latestMediaHandler.music.latest3.artist)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>9834583</id>
+      <posX>1734</posX>
+      <posY>780</posY>
+      <width>180</width>
+      <height>180</height>
+      <shouldCache>true</shouldCache>
+      <texture mask="music_frame_rounder_corners_background1.png">#latestMediaHandler.music.latest3.thumb</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[Control.HasFocus(91919997)|Control.HasFocus(91919998)|Control.HasFocus(91919999)]|[Control.isvisible(98345831)+[Control.HasFocus(77023)|Control.HasFocus(77027)|Control.HasFocus(77028)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1734</posX>
+      <posY>780</posY>
+      <width>180</width>
+      <height>180</height>
+      <shouldCache>true</shouldCache>
+      <texture mask="music_frame_rounder_corners_background1.png">nothumb.png</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[[Control.HasFocus(91919997)|Control.HasFocus(91919998)|Control.HasFocus(91919999)]+!Control.hasthumb(9834583)]|[Control.isvisible(98345831)+[Control.HasFocus(77023)|Control.HasFocus(77027)|Control.HasFocus(77028)]+!Control.hasthumb(9834583)]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Artist Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1407</posX>
+      <posY>693</posY>
+      <width>495</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#latestMediaHandler.music.latest3.artist</label>
+      <font>font14</font>
+      <textcolor>ffa9d0f7</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" end="90" time="0">Visible</animation>
+      <animation effect="rotate" end="90" time="0">Hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.HasFocus(91919999)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Album Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1445</posX>
+      <posY>693</posY>
+      <width>495</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#latestMediaHandler.music.latest3.album</label>
+      <font>font13</font>
+      <textcolor>ffa9d0f7</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" end="90" time="0">Visible</animation>
+      <animation effect="rotate" end="90" time="0">Hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.HasFocus(91919999)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Play Button</description>
+      <type>button</type>
+      <id>91919999</id>
+      <posX>1734</posX>
+      <posY>780</posY>
+      <width>180</width>
+      <height>180</height>
+      <textureFocus>music_frame_rounder_corners_play.png</textureFocus>
+      <textureNoFocus>music_frame_rounder_corners.png</textureNoFocus>
+      <label>-</label>
+      <onleft>#backdrops.skin.lastfocused</onleft>
+      <onright>#backdrops.skin.lastfocused</onright>
+      <onup>91919998</onup>
+      <ondown>91919997</ondown>
+      <font>font12</font>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible allowhiddenfocus="true">[[Control.HasFocus(91919997)|Control.HasFocus(91919998)|Control.HasFocus(91919999)]|[Control.isvisible(98345831)+[Control.HasFocus(77023)|Control.HasFocus(77027)|Control.HasFocus(77028)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <!--TV Recordings 1 ******************************************************-->
+    <control>
+      <description>Dummy label</description>
+      <type>label</type>
+      <id>98345911</id>
+      <posX>3000</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <label>#latestMediaHandler.tvrecordings.latest1.title</label>
+      <visible>string.equals(#latestMediaHandler.tvrecordings.latest1.title)</visible>
+    </control>
+    <control>
+      <description>Latest Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1372</posX>
+      <posY>635</posY>
+      <width>495</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#SkinTranslation.Translations.LatestRecordings.Label</label>
+      <font>font18</font>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" start="0" end="90" time="0" condition="true">conditional</animation>
+      <animation effect="fade" start="0" end="100" delay="350" time="50">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>[Control.isvisible(98345511)+[Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Latest Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1302</posX>
+      <posY>635</posY>
+      <width>495</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#SkinTranslation.Translations.LatestRecordings.Label</label>
+      <font>font18</font>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" start="0" end="90" time="0" condition="true">conditional</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>[Control.HasFocus(91919984)|Control.HasFocus(91919985)|Control.HasFocus(91919986)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>9834591</id>
+      <posX>1678</posX>
+      <posY>465</posY>
+      <width>242</width>
+      <height>142</height>
+      <shouldCache>true</shouldCache>
+      <keepaspectratio>yes</keepaspectratio>
+      <zoom>yes</zoom>
+      <zoomfromtop>yes</zoomfromtop>
+      <centered>yes</centered>
+      <texture mask="episode.frame.background.png">#latestMediaHandler.tvrecordings.latest1.thumb</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[Control.HasFocus(91919984)|Control.HasFocus(91919985)|Control.HasFocus(91919986)]|[Control.isvisible(98345911)+[Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1678</posX>
+      <posY>465</posY>
+      <width>242</width>
+      <height>142</height>
+      <shouldCache>true</shouldCache>
+      <keepaspectratio>yes</keepaspectratio>
+      <zoom>yes</zoom>
+      <zoomfromtop>yes</zoomfromtop>
+      <centered>yes</centered>
+      <texture mask="episode.frame.background.png">default.recording.png</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[Control.HasFocus(91919984)|Control.HasFocus(91919985)|Control.HasFocus(91919986)]|[Control.isvisible(98345911)+[Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)]]]+!Control.hasthumb(9834591)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <id>0</id>
+      <type>image</type>
+      <posX>1678</posX>
+      <posY>465</posY>
+      <width>242</width>
+      <height>142</height>
+      <shouldCache>true</shouldCache>
+      <texture>episode.frame.png</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[Control.HasFocus(91919984)|Control.HasFocus(91919985)|Control.HasFocus(91919986)]|[Control.isvisible(98345911)+[Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Series Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1396</posX>
+      <posY>670</posY>
+      <width>420</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#latestMediaHandler.tvrecordings.latest1.title</label>
+      <font>font12</font>
+      <textcolor>ffa9d0f7</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" end="90" time="0">Visible</animation>
+      <animation effect="rotate" end="90" time="0">Hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.HasFocus(91919984)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Episode Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1425</posX>
+      <posY>670</posY>
+      <width>420</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#latestMediaHandler.tvrecordings.latest1.genre</label>
+      <font>font13</font>
+      <textcolor>ffa9d0f7</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" end="90" time="0">Visible</animation>
+      <animation effect="rotate" end="90" time="0">Hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.HasFocus(91919984)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Play Button</description>
+      <type>button</type>
+      <id>91919984</id>
+      <posX>1678</posX>
+      <posY>465</posY>
+      <width>242</width>
+      <height>142</height>
+      <textureFocus>episode.frame_play.png</textureFocus>
+      <textureNoFocus>episode.frame.png</textureNoFocus>
+      <label>-</label>
+      <onleft>#backdrops.skin.lastfocused</onleft>
+      <onright>#backdrops.skin.lastfocused</onright>
+      <onup>91919986</onup>
+      <ondown>91919985</ondown>
+      <font>font12</font>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible allowhiddenfocus="true">[[Control.HasFocus(91919984)|Control.HasFocus(91919985)|Control.HasFocus(91919986)]|[Control.isvisible(98345911)+[Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <!--TV Recordings 2 ******************************************************-->
+    <control>
+      <description>Dummy label</description>
+      <type>label</type>
+      <id>98345921</id>
+      <posX>3000</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <label>#latestMediaHandler.tvrecordings.latest2.title</label>
+      <visible>string.equals(#latestMediaHandler.tvrecordings.latest2.title)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>9834592</id>
+      <posX>1678</posX>
+      <posY>615</posY>
+      <width>242</width>
+      <height>142</height>
+      <shouldCache>true</shouldCache>
+      <keepaspectratio>yes</keepaspectratio>
+      <zoom>yes</zoom>
+      <zoomfromtop>yes</zoomfromtop>
+      <centered>yes</centered>
+      <texture mask="episode.frame.background.png">#latestMediaHandler.tvrecordings.latest2.thumb</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[Control.HasFocus(91919984)|Control.HasFocus(91919985)|Control.HasFocus(91919986)]|[Control.isvisible(98345921)+[Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1678</posX>
+      <posY>615</posY>
+      <width>242</width>
+      <height>142</height>
+      <shouldCache>true</shouldCache>
+      <keepaspectratio>yes</keepaspectratio>
+      <zoom>yes</zoom>
+      <zoomfromtop>yes</zoomfromtop>
+      <centered>yes</centered>
+      <texture mask="episode.frame.background.png">default.recording.png</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[Control.HasFocus(91919984)|Control.HasFocus(91919985)|Control.HasFocus(91919986)]|[Control.isvisible(98345921)+[Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)]]]+!Control.hasthumb(9834592)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <id>0</id>
+      <type>image</type>
+      <posX>1678</posX>
+      <posY>615</posY>
+      <width>242</width>
+      <height>142</height>
+      <shouldCache>true</shouldCache>
+      <texture>episode.frame.png</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[Control.HasFocus(91919984)|Control.HasFocus(91919985)|Control.HasFocus(91919986)]|[Control.isvisible(98345921)+[Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Series Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1396</posX>
+      <posY>670</posY>
+      <width>420</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#latestMediaHandler.tvrecordings.latest2.title</label>
+      <font>font12</font>
+      <textcolor>ffa9d0f7</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" end="90" time="0">Visible</animation>
+      <animation effect="rotate" end="90" time="0">Hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.HasFocus(91919985)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Episode Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1425</posX>
+      <posY>670</posY>
+      <width>420</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#latestMediaHandler.tvrecordings.latest2.genre</label>
+      <font>font13</font>
+      <textcolor>ffa9d0f7</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" end="90" time="0">Visible</animation>
+      <animation effect="rotate" end="90" time="0">Hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.HasFocus(91919985)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Play Button</description>
+      <type>button</type>
+      <id>91919985</id>
+      <posX>1678</posX>
+      <posY>615</posY>
+      <width>242</width>
+      <height>142</height>
+      <textureFocus>episode.frame_play.png</textureFocus>
+      <textureNoFocus>episode.frame.png</textureNoFocus>
+      <label>-</label>
+      <onleft>#backdrops.skin.lastfocused</onleft>
+      <onright>#backdrops.skin.lastfocused</onright>
+      <onup>91919984</onup>
+      <ondown>91919986</ondown>
+      <font>font12</font>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible allowhiddenfocus="true">[[Control.HasFocus(91919984)|Control.HasFocus(91919985)|Control.HasFocus(91919986)]|[Control.isvisible(98345921)+[Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <!--TV Recordings 3 ******************************************************-->
+    <control>
+      <description>Dummy label</description>
+      <type>label</type>
+      <id>98345931</id>
+      <posX>3000</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <label>#latestMediaHandler.tvrecordings.latest3.title</label>
+      <visible>string.equals(#latestMediaHandler.tvrecordings.latest3.title)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>9834593</id>
+      <posX>1678</posX>
+      <posY>765</posY>
+      <width>242</width>
+      <height>142</height>
+      <shouldCache>true</shouldCache>
+      <keepaspectratio>yes</keepaspectratio>
+      <zoom>yes</zoom>
+      <zoomfromtop>yes</zoomfromtop>
+      <centered>yes</centered>
+      <texture mask="episode.frame.background.png">#latestMediaHandler.tvrecordings.latest3.thumb</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[Control.HasFocus(91919984)|Control.HasFocus(91919985)|Control.HasFocus(91919986)]|[Control.isvisible(98345931)+[Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1678</posX>
+      <posY>765</posY>
+      <width>242</width>
+      <height>142</height>
+      <shouldCache>true</shouldCache>
+      <keepaspectratio>yes</keepaspectratio>
+      <zoom>yes</zoom>
+      <zoomfromtop>yes</zoomfromtop>
+      <centered>yes</centered>
+      <texture mask="episode.frame.background.png">default.recording.png</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[Control.HasFocus(91919984)|Control.HasFocus(91919985)|Control.HasFocus(91919986)]|[Control.isvisible(98345931)+[Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)]]]+!Control.hasthumb(9834593)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <id>0</id>
+      <type>image</type>
+      <posX>1678</posX>
+      <posY>765</posY>
+      <width>242</width>
+      <height>142</height>
+      <shouldCache>true</shouldCache>
+      <texture>episode.frame.png</texture>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible>[[Control.HasFocus(91919984)|Control.HasFocus(91919985)|Control.HasFocus(91919986)]|[Control.isvisible(98345931)+[Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Series Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1396</posX>
+      <posY>670</posY>
+      <width>420</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#latestMediaHandler.tvrecordings.latest3.title</label>
+      <font>font12</font>
+      <textcolor>ffa9d0f7</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" end="90" time="0">Visible</animation>
+      <animation effect="rotate" end="90" time="0">Hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.HasFocus(91919986)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Episode Label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1425</posX>
+      <posY>670</posY>
+      <width>420</width>
+      <align>left</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#latestMediaHandler.tvrecordings.latest3.genre</label>
+      <font>font13</font>
+      <textcolor>ffa9d0f7</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <animation effect="rotate" end="90" time="0">Visible</animation>
+      <animation effect="rotate" end="90" time="0">Hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
+      <visible>Control.HasFocus(91919986)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Play Button</description>
+      <type>button</type>
+      <id>91919986</id>
+      <posX>1678</posX>
+      <posY>765</posY>
+      <width>242</width>
+      <height>142</height>
+      <textureFocus>episode.frame_play.png</textureFocus>
+      <textureNoFocus>episode.frame.png</textureNoFocus>
+      <label>-</label>
+      <onleft>#backdrops.skin.lastfocused</onleft>
+      <onright>#backdrops.skin.lastfocused</onright>
+      <onup>91919985</onup>
+      <ondown>91919984</ondown>
+      <font>font12</font>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="450,0" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
+      <animation effect="slide" start="0,0" end="450,0" tween="quadratic" easing="in" time="350">Hidden</animation>
+      <visible allowhiddenfocus="true">[[Control.HasFocus(91919984)|Control.HasFocus(91919985)|Control.HasFocus(91919986)]|[Control.isvisible(98345921)+[Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)]]]+!Control.isvisible(93761234)</visible>
+    </control>
+  </controls>
+</window>

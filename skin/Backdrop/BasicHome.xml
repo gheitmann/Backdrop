@@ -1,0 +1,2282 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <id>35</id>
+  <defaultcontrol>77032</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>no</disabletopbar>
+  <rememberLastFocusedControl>yes</rememberLastFocusedControl>
+  <define>#LatestMediaHandler:Yes</define>
+  <define>#usePlayFanart:Yes</define>
+  <define>#useSelectedFanart:Yes</define>
+  <define>#backdrops.skin.lastfocused:77032</define>
+  <define>#useRandomTVUserFanart:Yes</define>
+  <define>#useRandomMoviesUserFanart:No</define>
+  <define>#useRandomPluginsUserFanart:No</define>
+  <define>#useRandomMovingPicturesFanart:Yes</define>
+  <define>#useRandomPicturesUserFanart:Yes</define>
+  <define>#useRandomGamesUserFanart:No</define>
+  <define>#useRandomMusicUserFanart:No</define>
+  <define>#useRandomMusicScraperFanart:Yes</define>
+  <define>#useRandomTVSeriesFanart:Yes</define>
+  <controls>
+    <import>common.backdrop.fallback.xml</import>
+    <control>
+      <description>DUMMY CONTROLL FOR VISIBILITY CONDITION</description>
+      <type>label</type>
+      <id>93761234</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>DUMMY CONTROLL FOR MENU VISIBILITY CONDITION</description>
+      <type>label</type>
+      <id>93761236</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>DUMMY CONTROLL FOR NAVIGATION CONDITION</description>
+      <type>label</type>
+      <id>93761254</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>DUMMY CONTROLL FOR NAVIGATION CONDITION</description>
+      <type>label</type>
+      <id>93761264</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
+      <type>label</type>
+      <id>91919291</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1</width>
+    </control>
+    <control>
+      <description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
+      <type>label</type>
+      <id>91919292</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1</width>
+    </control>
+    <control>
+      <description>DUMMY CONTROLL FOR FANART AVAILABILITY CONDITION</description>
+      <type>label</type>
+      <id>91919293</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>DUMMY CONTROLL FOR FANART 1 RANDOM VISIBILITY CONDITION</description>
+      <type>label</type>
+      <id>91919297</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1</width>
+    </control>
+    <control>
+      <description>DUMMY CONTROLL FOR FANART 2 RANDOM VISIBILITY CONDITION</description>
+      <type>label</type>
+      <id>91919298</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1</width>
+    </control>
+    <control>
+      <description>DUMMY CONTROLL FOR FANART 1 PLAY VISIBILITY CONDITION</description>
+      <type>label</type>
+      <id>91919295</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1</width>
+    </control>
+    <control>
+      <description>DUMMY CONTROLL FOR FANART 2 PLAY VISIBILITY CONDITION</description>
+      <type>label</type>
+      <id>91919296</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1</width>
+    </control>
+    <control>
+      <description>DUMMY CONTROLL FOR FANART AVAILABILITY CONDITION</description>
+      <type>label</type>
+      <id>91919294</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>BACKGROUND 0</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <shouldCache>true</shouldCache>
+      <texture>Animations\tvguide\tvguide3_default.jpg</texture>
+      <visible>Control.HasFocus(77044)|Control.HasFocus(91919984)|Control.HasFocus(91919985)|Control.HasFocus(91919986)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>BACKGROUND 1_1</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#fanarthandler.picture.userdef.backdrop1.any</texture>
+      <visible>[Control.HasFocus(77013)|Control.HasFocus(77012)]+control.isvisible(91919297)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>BACKGROUND 1_2</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#fanarthandler.picture.userdef.backdrop2.any</texture>
+      <visible>[Control.HasFocus(77013)|Control.HasFocus(77012)]+control.isvisible(91919298)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>BACKGROUND 2</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <shouldCache>true</shouldCache>
+      <texture>Animations\shutdownbg\default.jpg</texture>
+      <visible>Control.HasFocus(77066)|Control.HasFocus(77067)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>BACKGROUND 3_1</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#fanarthandler.tvseries.backdrop1.any</texture>
+      <visible>[Control.HasFocus(77045)|Control.HasFocus(91919984)|Control.HasFocus(91919985)|Control.HasFocus(91919986)|Control.HasFocus(77046)|Control.HasFocus(91919994)|Control.HasFocus(91919995)|Control.HasFocus(91919996)]+control.isvisible(91919297)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>BACKGROUND 3_2</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#fanarthandler.tvseries.backdrop2.any</texture>
+      <visible>[Control.HasFocus(77045)|Control.HasFocus(91919984)|Control.HasFocus(91919985)|Control.HasFocus(91919986)|Control.HasFocus(77046)|Control.HasFocus(91919994)|Control.HasFocus(91919995)|Control.HasFocus(91919996)]+control.isvisible(91919298)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>BACKGROUND 4_1</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#fanarthandler.movingpicture.backdrop1.any</texture>
+      <visible>[Control.HasFocus(77033)|Control.HasFocus(91919991)|Control.HasFocus(91919992)|Control.HasFocus(91919993)|Control.HasFocus(77034)|Control.HasFocus(91919991)|Control.HasFocus(91919992)|Control.HasFocus(91919993)|Control.HasFocus(77035)|Control.HasFocus(77036)|Control.HasFocus(77037)|Control.HasFocus(77038)|Control.HasFocus(77032)|Control.HasFocus(17)|Control.HasFocus(98129812)]+control.isvisible(91919297)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>BACKGROUND 4_2</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#fanarthandler.movingpicture.backdrop2.any</texture>
+      <visible>[Control.HasFocus(77033)|Control.HasFocus(91919991)|Control.HasFocus(91919992)|Control.HasFocus(91919993)|Control.HasFocus(77034)|Control.HasFocus(91919991)|Control.HasFocus(91919992)|Control.HasFocus(91919993)|Control.HasFocus(77035)|Control.HasFocus(77036)|Control.HasFocus(77037)|Control.HasFocus(77038)|Control.HasFocus(77032)|Control.HasFocus(17)|Control.HasFocus(98129812)]+control.isvisible(91919298)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>BACKGROUND 5</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <shouldCache>true</shouldCache>
+      <texture>Animations\settings\default.jpg</texture>
+      <visible>Control.HasFocus(77064)|Control.HasFocus(77065)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>BACKGROUND 6</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <shouldCache>true</shouldCache>
+      <texture>Animations\games\default.jpg</texture>
+      <visible>Control.HasFocus(77053)|Control.HasFocus(77054)|Control.HasFocus(77055)|Control.HasFocus(77052)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>BACKGROUND 7_1</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#fanarthandler.tv.userdef.backdrop1.any</texture>
+      <visible>[Control.HasFocus(77043)|Control.HasFocus(91919984)|Control.HasFocus(91919985)|Control.HasFocus(91919986)|Control.HasFocus(77047)|Control.HasFocus(77042)]+control.isvisible(91919297)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>BACKGROUND 7_2</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#fanarthandler.tv.userdef.backdrop2.any</texture>
+      <visible>[Control.HasFocus(77043)|Control.HasFocus(91919984)|Control.HasFocus(91919985)|Control.HasFocus(91919986)|Control.HasFocus(77047)|Control.HasFocus(77042)]+control.isvisible(91919298)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>BACKGROUND 8_1</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#fanarthandler.music.scraper.backdrop1.any</texture>
+      <visible>[Control.HasFocus(77023)|Control.HasFocus(91919997)|Control.HasFocus(91919998)|Control.HasFocus(91919999)|Control.HasFocus(77024)|Control.HasFocus(77025)|Control.HasFocus(77026)|Control.HasFocus(77027)|Control.HasFocus(91919997)|Control.HasFocus(91919998)|Control.HasFocus(91919999)|Control.HasFocus(77028)|Control.HasFocus(91919997)|Control.HasFocus(91919998)|Control.HasFocus(91919999)|Control.HasFocus(77022)]+control.isvisible(91919297)+!control.isvisible(91919294)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>BACKGROUND 8_2</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#fanarthandler.music.scraper.backdrop2.any</texture>
+      <visible>[Control.HasFocus(77023)|Control.HasFocus(91919997)|Control.HasFocus(91919998)|Control.HasFocus(91919999)|Control.HasFocus(77024)|Control.HasFocus(77025)|Control.HasFocus(77026)|Control.HasFocus(77027)|Control.HasFocus(91919997)|Control.HasFocus(91919998)|Control.HasFocus(91919999)|Control.HasFocus(77028)|Control.HasFocus(91919997)|Control.HasFocus(91919998)|Control.HasFocus(91919999)|Control.HasFocus(77022)]+control.isvisible(91919298)+!control.isvisible(91919294)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>FANART BACKGROUND 8_1</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#fanarthandler.music.backdrop1.play</texture>
+      <visible>[Control.HasFocus(77023)|Control.HasFocus(91919997)|Control.HasFocus(91919998)|Control.HasFocus(91919999)|Control.HasFocus(77024)|Control.HasFocus(77025)|Control.HasFocus(77026)|Control.HasFocus(77027)|Control.HasFocus(91919997)|Control.HasFocus(91919998)|Control.HasFocus(91919999)|Control.HasFocus(77028)|Control.HasFocus(91919997)|Control.HasFocus(91919998)|Control.HasFocus(91919999)|Control.HasFocus(77022)]+player.hasmedia+control.isvisible(91919295)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>FANART BACKGROUND 8_2</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#fanarthandler.music.backdrop2.play</texture>
+      <visible>[Control.HasFocus(77023)|Control.HasFocus(91919997)|Control.HasFocus(91919998)|Control.HasFocus(91919999)|Control.HasFocus(77024)|Control.HasFocus(77025)|Control.HasFocus(77026)|Control.HasFocus(77027)|Control.HasFocus(91919997)|Control.HasFocus(91919998)|Control.HasFocus(91919999)|Control.HasFocus(77028)|Control.HasFocus(91919997)|Control.HasFocus(91919998)|Control.HasFocus(91919999)|Control.HasFocus(77022)]+player.hasmedia+control.isvisible(91919296)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>BACKGROUND 9</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <shouldCache>true</shouldCache>
+      <texture>Animations//weatherbg//#infoservice.weather.today.img.small.filenamewithoutext//weather.jpg</texture>
+      <visible>Control.HasFocus(77063)|Control.HasFocus(77062)|Control.HasFocus(73071091)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <control>
+      <description>RSS BACKGROUND</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <shouldCache>true</shouldCache>
+      <texture>rss_bg.png</texture>
+      <visible>Control.HasFocus(91111)</visible>
+      <animation effect="fade" time="850">VisibleChange</animation>
+    </control>
+    <import>common.basichome.latest.xml</import>
+    <control>
+      <description>Menu Background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>980</posY>
+      <width>1920</width>
+      <height>100</height>
+      <shouldCache>true</shouldCache>
+      <texture>menu_bg.png</texture>
+      <visible>!Control.HasFocus(7888)+!Control.HasFocus(7999)+!Control.HasFocus(7777)+!Control.HasFocus(73071091)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>feed image</description>
+      <type>button</type>
+      <id>91111</id>
+      <width>36</width>
+      <height>36</height>
+      <posY>1044</posY>
+      <posX>2</posX>
+      <hyperlink>16001</hyperlink>
+      <textureFocus>rss_image_focus.png</textureFocus>
+      <textureNoFocus>rss_image_nofocus.png</textureNoFocus>
+      <onup>77032</onup>
+      <ondown>73071091</ondown>
+      <onleft>91111</onleft>
+      <onright>91111</onright>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>plugin.isenabled(InfoService)+![Control.HasFocus(73071091)|Control.isvisible(93761234)]</visible>
+    </control>
+    <control>
+      <description>RSS Items</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <width>1852</width>
+      <height>75</height>
+      <posY>1040</posY>
+      <posX>68</posX>
+      <font>font14</font>
+      <textcolor>FFFFFFFF</textcolor>
+      <label>#infoservice.feed.titles</label>
+      <wrapString> :: </wrapString>
+      <scrollStartDelaySec>5</scrollStartDelaySec>
+      <animation effect="fade" start="0" end="50" time="10" reversible="false">WindowOpen</animation>
+      <visible>plugin.isenabled(InfoService)+![Control.HasFocus(73071091)|Control.isvisible(93761234)]</visible>
+    </control>
+    <control>
+      <description>RSS Overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>1038</posY>
+      <width>1920</width>
+      <height>42</height>
+      <shouldCache>true</shouldCache>
+      <texture>rss_overlay.png</texture>
+      <visible>plugin.isenabled(InfoService)+![Control.HasFocus(73071091)|Control.isvisible(93761234)]</visible>
+    </control>
+    <control>
+      <description>Bg Now Playing Top Line</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>976</posY>
+      <width>1920</width>
+      <height>7</height>
+      <shouldCache>true</shouldCache>
+      <texture>top.png</texture>
+      <visible>![window.istopmost(0)|window.istopmost(34)]+![Control.HasFocus(73071091)|Control.isvisible(93761234)]</visible>
+    </control>
+    <control>
+      <description>Bg Now Playing Bottom Line</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>1034</posY>
+      <width>1920</width>
+      <height>7</height>
+      <shouldCache>true</shouldCache>
+      <texture>top.png</texture>
+      <visible>![window.istopmost(0)|window.istopmost(34)]+![Control.HasFocus(73071091)|Control.isvisible(93761234)]</visible>
+    </control>
+    <control>
+      <description>Menu 1 Label</description>
+      <id>6002</id>
+      <type>label</type>
+      <posX>2</posX>
+      <posY>974</posY>
+      <width>322</width>
+      <height>75</height>
+      <align>center</align>
+      <font>font16BC</font>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <label>Photos</label>
+      <visible>!Control.HasFocus(7888)+!Control.HasFocus(7999)+!Control.HasFocus(7777)+!Control.HasFocus(73071091)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 2 Label</description>
+      <id>6005</id>
+      <type>label</type>
+      <posX>323</posX>
+      <posY>974</posY>
+      <width>322</width>
+      <height>75</height>
+      <align>center</align>
+      <font>font16BC</font>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <label>Music &amp; Radio</label>
+      <visible>!Control.HasFocus(7888)+!Control.HasFocus(7999)+!Control.HasFocus(7777)+!Control.HasFocus(73071091)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 3 Label</description>
+      <id>6008</id>
+      <type>label</type>
+      <posX>644</posX>
+      <posY>974</posY>
+      <width>322</width>
+      <height>75</height>
+      <align>center</align>
+      <font>font16BC</font>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <label>Movies</label>
+      <visible>!Control.HasFocus(7888)+!Control.HasFocus(7999)+!Control.HasFocus(7777)+!Control.HasFocus(73071091)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 4 Label</description>
+      <id>60011</id>
+      <type>label</type>
+      <posX>965</posX>
+      <posY>974</posY>
+      <width>322</width>
+      <height>75</height>
+      <align>center</align>
+      <font>font16BC</font>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <label>TV</label>
+      <visible>!Control.HasFocus(7888)+!Control.HasFocus(7999)+!Control.HasFocus(7777)+!Control.HasFocus(73071091)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 5 Label</description>
+      <id>60014</id>
+      <type>label</type>
+      <posX>1286</posX>
+      <posY>974</posY>
+      <width>322</width>
+      <height>75</height>
+      <align>center</align>
+      <font>font16BC</font>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <label>Games &amp; Sports</label>
+      <visible>!Control.HasFocus(7888)+!Control.HasFocus(7999)+!Control.HasFocus(7777)+!Control.HasFocus(73071091)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 6 Label</description>
+      <id>60017</id>
+      <type>label</type>
+      <posX>1607</posX>
+      <posY>974</posY>
+      <width>322</width>
+      <height>75</height>
+      <align>center</align>
+      <font>font16BC</font>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <label>Plugins</label>
+      <visible>!Control.HasFocus(7888)+!Control.HasFocus(7999)+!Control.HasFocus(7777)+!Control.HasFocus(73071091)+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 1 Submenu Background Top</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>-5</posX>
+      <posY>741</posY>
+      <width>333</width>
+      <height>236</height>
+      <shouldCache>true</shouldCache>
+      <texture>menu_selected_bg_top.png</texture>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77012)|Control.HasFocus(77013)]+!Control.isvisible(93761234)</visible>
+      <animation effect="zoom" start="90,10" end="100,100" acceleration="-1.3" center="161,977" time="320" reversible="true">visible</animation>
+      <animation effect="fade" start="0" end="100" time="120" acceleration="-1.2" reversible="true">hidden</animation>
+      <animation effect="zoom" start="100,100" end="100,10" center="161,977" time="120" acceleration="-1.2" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>Menu 1 Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>-5</posX>
+      <posY>982</posY>
+      <width>333</width>
+      <height>52</height>
+      <shouldCache>true</shouldCache>
+      <texture>menu.selected.png</texture>
+      <visible allowhiddenfocus="true">Control.isvisible(93761254)+[Control.HasFocus(77012)|Control.HasFocus(77013)]+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="-333,0" end="0,0" time="200" acceleration="-0.9" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 1 Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>-5</posX>
+      <posY>982</posY>
+      <width>333</width>
+      <height>52</height>
+      <shouldCache>true</shouldCache>
+      <texture>menu.selected.png</texture>
+      <visible allowhiddenfocus="true">[Control.HasFocus(77012)|Control.HasFocus(77013)]+!Control.isvisible(93761234)+!Control.isvisible(93761254)</visible>
+      <animation effect="slide" start="333,0" end="0,0" time="200" acceleration="-0.9" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 1 Submenu</description>
+      <type>button</type>
+      <id>77012</id>
+      <posX>-5</posX>
+      <posY>966</posY>
+      <width>321</width>
+      <height>76</height>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <textalign>center</textalign>
+      <label>Photos</label>
+      <textcolor>00ffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <disabledcolor>00ffffff</disabledcolor>
+      <textcolorNoFocus>00ffffff</textcolorNoFocus>
+      <font>font10</font>
+      <hyperlink>2</hyperlink>
+      <hover>-</hover>
+      <onleft>77062</onleft>
+      <onright>77022</onright>
+      <onup>77013</onup>
+      <ondown>77013</ondown>
+    </control>
+    <control>
+      <description>Menu 1 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>15</posX>
+      <posY>770</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77013)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 1 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>15</posX>
+      <posY>770</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77013)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 1 Submenu Button 0</description>
+      <type>button</type>
+      <id>77013</id>
+      <posX>15</posX>
+      <posY>770</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>Photos</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <hyperlink>2</hyperlink>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77062</onleft>
+      <onright>77022</onright>
+      <textureFocus>-</textureFocus>
+      <onup>991899</onup>
+      <ondown>91111</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77012)|Control.HasFocus(77013)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 2 Submenu Background Top</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>315</posX>
+      <posY>741</posY>
+      <width>333</width>
+      <height>236</height>
+      <shouldCache>true</shouldCache>
+      <texture>menu_selected_bg_top.png</texture>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77022)|Control.HasFocus(77023)|Control.HasFocus(77024)|Control.HasFocus(77025)|Control.HasFocus(77026)|Control.HasFocus(77027)|Control.HasFocus(77028)]+!Control.isvisible(93761234)</visible>
+      <animation effect="zoom" start="90,10" end="100,100" acceleration="-1.3" center="481,977" time="320" reversible="true">visible</animation>
+      <animation effect="fade" start="0" end="100" time="120" acceleration="-1.2" reversible="true">hidden</animation>
+      <animation effect="zoom" start="100,100" end="100,10" center="481,977" time="120" acceleration="-1.2" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>Menu 2 Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>315</posX>
+      <posY>982</posY>
+      <width>333</width>
+      <height>52</height>
+      <shouldCache>true</shouldCache>
+      <texture>menu.selected.png</texture>
+      <visible allowhiddenfocus="true">Control.isvisible(93761254)+[Control.HasFocus(77022)|Control.HasFocus(77023)|Control.HasFocus(77024)|Control.HasFocus(77025)|Control.HasFocus(77026)|Control.HasFocus(77027)|Control.HasFocus(77028)]+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="-333,0" end="0,0" time="200" acceleration="-0.9" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 2 Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>315</posX>
+      <posY>982</posY>
+      <width>333</width>
+      <height>52</height>
+      <shouldCache>true</shouldCache>
+      <texture>menu.selected.png</texture>
+      <visible allowhiddenfocus="true">[Control.HasFocus(77022)|Control.HasFocus(77023)|Control.HasFocus(77024)|Control.HasFocus(77025)|Control.HasFocus(77026)|Control.HasFocus(77027)|Control.HasFocus(77028)]+!Control.isvisible(93761234)+!Control.isvisible(93761254)</visible>
+      <animation effect="slide" start="333,0" end="0,0" time="200" acceleration="-0.9" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 2 Submenu</description>
+      <type>button</type>
+      <id>77022</id>
+      <posX>315</posX>
+      <posY>966</posY>
+      <width>321</width>
+      <height>76</height>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <textalign>center</textalign>
+      <label>Music</label>
+      <textcolor>00ffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <disabledcolor>00ffffff</disabledcolor>
+      <textcolorNoFocus>00ffffff</textcolorNoFocus>
+      <font>font10</font>
+      <hyperlink>504</hyperlink>
+      <hover>-</hover>
+      <onleft>77012</onleft>
+      <onright>77032</onright>
+      <onup>77028</onup>
+      <ondown>77028</ondown>
+    </control>
+    <control>
+      <description>Menu 2 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>335</posX>
+      <posY>770</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo_right.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77023)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 2 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>335</posX>
+      <posY>770</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo_right.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77023)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 2 Submenu Button 0</description>
+      <type>button</type>
+      <id>77023</id>
+      <posX>335</posX>
+      <posY>770</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>Music</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <hyperlink>504</hyperlink>
+      <hyperlinkParameter>528</hyperlinkParameter>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77012</onleft>
+      <onright>91919997</onright>
+      <textureFocus>-</textureFocus>
+      <onup>991899</onup>
+      <ondown>77024</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77022)|Control.HasFocus(77023)|Control.HasFocus(77024)|Control.HasFocus(77025)|Control.HasFocus(77026)|Control.HasFocus(77027)|Control.HasFocus(77028)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 2 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>335</posX>
+      <posY>803</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77024)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 2 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>335</posX>
+      <posY>803</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77024)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 2 Submenu Button 1</description>
+      <type>button</type>
+      <id>77024</id>
+      <posX>335</posX>
+      <posY>803</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>Radio</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <hyperlink>30</hyperlink>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77012</onleft>
+      <onright>77032</onright>
+      <textureFocus>-</textureFocus>
+      <onup>77023</onup>
+      <ondown>77025</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77022)|Control.HasFocus(77023)|Control.HasFocus(77024)|Control.HasFocus(77025)|Control.HasFocus(77026)|Control.HasFocus(77027)|Control.HasFocus(77028)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 2 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>335</posX>
+      <posY>836</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77025)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 2 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>335</posX>
+      <posY>836</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77025)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 2 Submenu Button 2</description>
+      <type>button</type>
+      <id>77025</id>
+      <posX>335</posX>
+      <posY>836</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>RadioTime</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <hyperlink>25650</hyperlink>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77012</onleft>
+      <onright>77032</onright>
+      <textureFocus>-</textureFocus>
+      <onup>77024</onup>
+      <ondown>77026</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77022)|Control.HasFocus(77023)|Control.HasFocus(77024)|Control.HasFocus(77025)|Control.HasFocus(77026)|Control.HasFocus(77027)|Control.HasFocus(77028)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 2 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>335</posX>
+      <posY>869</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77026)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 2 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>335</posX>
+      <posY>869</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77026)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 2 Submenu Button 3</description>
+      <type>button</type>
+      <id>77026</id>
+      <posX>335</posX>
+      <posY>869</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>Last FM</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <hyperlink>7890</hyperlink>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77012</onleft>
+      <onright>77032</onright>
+      <textureFocus>-</textureFocus>
+      <onup>77025</onup>
+      <ondown>77027</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77022)|Control.HasFocus(77023)|Control.HasFocus(77024)|Control.HasFocus(77025)|Control.HasFocus(77026)|Control.HasFocus(77027)|Control.HasFocus(77028)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 2 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>335</posX>
+      <posY>902</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo_right.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77027)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 2 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>335</posX>
+      <posY>902</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo_right.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77027)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 2 Submenu Button 4</description>
+      <type>button</type>
+      <id>77027</id>
+      <posX>335</posX>
+      <posY>902</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>Playlist</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <hyperlink>500</hyperlink>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77012</onleft>
+      <onright>91919997</onright>
+      <textureFocus>-</textureFocus>
+      <onup>77026</onup>
+      <ondown>77028</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77022)|Control.HasFocus(77023)|Control.HasFocus(77024)|Control.HasFocus(77025)|Control.HasFocus(77026)|Control.HasFocus(77027)|Control.HasFocus(77028)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 2 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>335</posX>
+      <posY>935</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo_right.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77028)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 2 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>335</posX>
+      <posY>935</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo_right.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77028)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 2 Submenu Button 5</description>
+      <type>button</type>
+      <id>77028</id>
+      <posX>335</posX>
+      <posY>935</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>Now Playing</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <hyperlink>510</hyperlink>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77012</onleft>
+      <onright>91919997</onright>
+      <textureFocus>-</textureFocus>
+      <onup>77027</onup>
+      <ondown>91111</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77022)|Control.HasFocus(77023)|Control.HasFocus(77024)|Control.HasFocus(77025)|Control.HasFocus(77026)|Control.HasFocus(77027)|Control.HasFocus(77028)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 3 Submenu Background Top</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>636</posX>
+      <posY>741</posY>
+      <width>333</width>
+      <height>236</height>
+      <shouldCache>true</shouldCache>
+      <texture>menu_selected_bg_top.png</texture>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77032)|Control.HasFocus(77033)|Control.HasFocus(77034)|Control.HasFocus(77035)|Control.HasFocus(77036)|Control.HasFocus(77037)|Control.HasFocus(77038)]+!Control.isvisible(93761234)</visible>
+      <animation effect="zoom" start="90,10" end="100,100" acceleration="-1.3" center="802,977" time="320" reversible="true">visible</animation>
+      <animation effect="fade" start="0" end="100" time="120" acceleration="-1.2" reversible="true">hidden</animation>
+      <animation effect="zoom" start="100,100" end="100,10" center="802,977" time="120" acceleration="-1.2" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>Menu 3 Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>636</posX>
+      <posY>982</posY>
+      <width>333</width>
+      <height>52</height>
+      <shouldCache>true</shouldCache>
+      <texture>menu.selected.png</texture>
+      <visible allowhiddenfocus="true">Control.isvisible(93761254)+[Control.HasFocus(77032)|Control.HasFocus(77033)|Control.HasFocus(77034)|Control.HasFocus(77035)|Control.HasFocus(77036)|Control.HasFocus(77037)|Control.HasFocus(77038)]+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="-333,0" end="0,0" time="200" acceleration="-0.9" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 3 Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>636</posX>
+      <posY>982</posY>
+      <width>333</width>
+      <height>52</height>
+      <shouldCache>true</shouldCache>
+      <texture>menu.selected.png</texture>
+      <visible allowhiddenfocus="true">[Control.HasFocus(77032)|Control.HasFocus(77033)|Control.HasFocus(77034)|Control.HasFocus(77035)|Control.HasFocus(77036)|Control.HasFocus(77037)|Control.HasFocus(77038)]+!Control.isvisible(93761234)+!Control.isvisible(93761254)</visible>
+      <animation effect="slide" start="333,0" end="0,0" time="200" acceleration="-0.9" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 3 Submenu</description>
+      <type>button</type>
+      <id>77032</id>
+      <posX>636</posX>
+      <posY>966</posY>
+      <width>321</width>
+      <height>76</height>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <textalign>center</textalign>
+      <label>Movies</label>
+      <textcolor>00ffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <disabledcolor>00ffffff</disabledcolor>
+      <textcolorNoFocus>00ffffff</textcolorNoFocus>
+      <font>font10</font>
+      <hyperlink>96742</hyperlink>
+      <hover>-</hover>
+      <onleft>77022</onleft>
+      <onright>77042</onright>
+      <onup>77038</onup>
+      <ondown>77038</ondown>
+    </control>
+    <control>
+      <description>Menu 3 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>656</posX>
+      <posY>770</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo_right.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77033)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 3 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>656</posX>
+      <posY>770</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo_right.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77033)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 3 Submenu Button 0</description>
+      <type>button</type>
+      <id>77033</id>
+      <posX>656</posX>
+      <posY>770</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>Movies</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <hyperlink>96742</hyperlink>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77022</onleft>
+      <onright>91919991</onright>
+      <textureFocus>-</textureFocus>
+      <onup>991899</onup>
+      <ondown>77034</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77032)|Control.HasFocus(77033)|Control.HasFocus(77034)|Control.HasFocus(77035)|Control.HasFocus(77036)|Control.HasFocus(77037)|Control.HasFocus(77038)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 3 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>656</posX>
+      <posY>803</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo_right.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77034)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 3 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>656</posX>
+      <posY>803</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo_right.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77034)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 3 Submenu Button 1</description>
+      <type>button</type>
+      <id>77034</id>
+      <posX>656</posX>
+      <posY>803</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>DVD</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <hyperlink>3001</hyperlink>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77022</onleft>
+      <onright>91919991</onright>
+      <textureFocus>-</textureFocus>
+      <onup>77033</onup>
+      <ondown>77035</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77032)|Control.HasFocus(77033)|Control.HasFocus(77034)|Control.HasFocus(77035)|Control.HasFocus(77036)|Control.HasFocus(77037)|Control.HasFocus(77038)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 3 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>656</posX>
+      <posY>836</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77035)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 3 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>656</posX>
+      <posY>836</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77035)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 3 Submenu Button 2</description>
+      <type>button</type>
+      <id>77035</id>
+      <posX>656</posX>
+      <posY>836</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>Now Playing</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <action>18</action>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77022</onleft>
+      <onright>77042</onright>
+      <textureFocus>-</textureFocus>
+      <onup>77034</onup>
+      <ondown>77036</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77032)|Control.HasFocus(77033)|Control.HasFocus(77034)|Control.HasFocus(77035)|Control.HasFocus(77036)|Control.HasFocus(77037)|Control.HasFocus(77038)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 3 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>656</posX>
+      <posY>869</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77036)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 3 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>656</posX>
+      <posY>869</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77036)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 3 Submenu Button 3</description>
+      <type>button</type>
+      <id>77036</id>
+      <posX>656</posX>
+      <posY>869</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>OnlineVideos</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <hyperlink>4755</hyperlink>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77022</onleft>
+      <onright>77042</onright>
+      <textureFocus>-</textureFocus>
+      <onup>77035</onup>
+      <ondown>77037</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77032)|Control.HasFocus(77033)|Control.HasFocus(77034)|Control.HasFocus(77035)|Control.HasFocus(77036)|Control.HasFocus(77037)|Control.HasFocus(77038)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 3 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>656</posX>
+      <posY>902</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77037)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 3 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>656</posX>
+      <posY>902</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77037)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 3 Submenu Button 4</description>
+      <type>button</type>
+      <id>77037</id>
+      <posX>656</posX>
+      <posY>902</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>Movie Trailers</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <hyperlink>5900</hyperlink>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77022</onleft>
+      <onright>77042</onright>
+      <textureFocus>-</textureFocus>
+      <onup>77036</onup>
+      <ondown>77038</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77032)|Control.HasFocus(77033)|Control.HasFocus(77034)|Control.HasFocus(77035)|Control.HasFocus(77036)|Control.HasFocus(77037)|Control.HasFocus(77038)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 3 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>656</posX>
+      <posY>935</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77038)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 3 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>656</posX>
+      <posY>935</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77038)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 3 Submenu Button 5</description>
+      <type>button</type>
+      <id>77038</id>
+      <posX>656</posX>
+      <posY>935</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>Showtimes</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <hyperlink>7111992</hyperlink>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77022</onleft>
+      <onright>77042</onright>
+      <textureFocus>-</textureFocus>
+      <onup>77037</onup>
+      <ondown>91111</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77032)|Control.HasFocus(77033)|Control.HasFocus(77034)|Control.HasFocus(77035)|Control.HasFocus(77036)|Control.HasFocus(77037)|Control.HasFocus(77038)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 4 Submenu Background Top</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>957</posX>
+      <posY>741</posY>
+      <width>333</width>
+      <height>236</height>
+      <shouldCache>true</shouldCache>
+      <texture>menu_selected_bg_top.png</texture>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77042)|Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)|Control.HasFocus(77046)|Control.HasFocus(77047)]+!Control.isvisible(93761234)</visible>
+      <animation effect="zoom" start="90,10" end="100,100" acceleration="-1.3" center="1123,977" time="320" reversible="true">visible</animation>
+      <animation effect="fade" start="0" end="100" time="120" acceleration="-1.2" reversible="true">hidden</animation>
+      <animation effect="zoom" start="100,100" end="100,10" center="1123,977" time="120" acceleration="-1.2" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>Menu 4 Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>957</posX>
+      <posY>982</posY>
+      <width>333</width>
+      <height>52</height>
+      <shouldCache>true</shouldCache>
+      <texture>menu.selected.png</texture>
+      <visible allowhiddenfocus="true">Control.isvisible(93761254)+[Control.HasFocus(77042)|Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)|Control.HasFocus(77046)|Control.HasFocus(77047)]+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="-333,0" end="0,0" time="200" acceleration="-0.9" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 4 Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>957</posX>
+      <posY>982</posY>
+      <width>333</width>
+      <height>52</height>
+      <shouldCache>true</shouldCache>
+      <texture>menu.selected.png</texture>
+      <visible allowhiddenfocus="true">[Control.HasFocus(77042)|Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)|Control.HasFocus(77046)|Control.HasFocus(77047)]+!Control.isvisible(93761234)+!Control.isvisible(93761254)</visible>
+      <animation effect="slide" start="333,0" end="0,0" time="200" acceleration="-0.9" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 4 Submenu</description>
+      <type>button</type>
+      <id>77042</id>
+      <posX>957</posX>
+      <posY>966</posY>
+      <width>321</width>
+      <height>76</height>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <textalign>center</textalign>
+      <label>TV</label>
+      <textcolor>00ffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <disabledcolor>00ffffff</disabledcolor>
+      <textcolorNoFocus>00ffffff</textcolorNoFocus>
+      <font>font10</font>
+      <hyperlink>1</hyperlink>
+      <hover>-</hover>
+      <onleft>77032</onleft>
+      <onright>77052</onright>
+      <onup>77047</onup>
+      <ondown>77047</ondown>
+    </control>
+    <control>
+      <description>Menu 4 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>977</posX>
+      <posY>770</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo_right.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77043)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 4 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>977</posX>
+      <posY>770</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo_right.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77043)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 4 Submenu Button 0</description>
+      <type>button</type>
+      <id>77043</id>
+      <posX>977</posX>
+      <posY>770</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>TV</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <hyperlink>1</hyperlink>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77032</onleft>
+      <onright>91919984</onright>
+      <textureFocus>-</textureFocus>
+      <onup>991899</onup>
+      <ondown>77044</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77042)|Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)|Control.HasFocus(77046)|Control.HasFocus(77047)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 4 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>977</posX>
+      <posY>803</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo_right.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77044)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 4 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>977</posX>
+      <posY>803</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo_right.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77044)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 4 Submenu Button 1</description>
+      <type>button</type>
+      <id>77044</id>
+      <posX>977</posX>
+      <posY>803</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>TV Guide</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <hyperlink>600</hyperlink>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77032</onleft>
+      <onright>91919984</onright>
+      <textureFocus>-</textureFocus>
+      <onup>77043</onup>
+      <ondown>77045</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77042)|Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)|Control.HasFocus(77046)|Control.HasFocus(77047)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 4 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>977</posX>
+      <posY>836</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo_right.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77045)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 4 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>977</posX>
+      <posY>836</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo_right.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77045)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 4 Submenu Button 2</description>
+      <type>button</type>
+      <id>77045</id>
+      <posX>977</posX>
+      <posY>836</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>TV Recordings</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <hyperlink>603</hyperlink>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77032</onleft>
+      <onright>91919984</onright>
+      <textureFocus>-</textureFocus>
+      <onup>77044</onup>
+      <ondown>77046</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77042)|Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)|Control.HasFocus(77046)|Control.HasFocus(77047)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 4 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>977</posX>
+      <posY>869</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo_right.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77046)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 4 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>977</posX>
+      <posY>869</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo_right.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77046)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 4 Submenu Button 3</description>
+      <type>button</type>
+      <id>77046</id>
+      <posX>977</posX>
+      <posY>869</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>TV Series</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <hyperlink>9811</hyperlink>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77032</onleft>
+      <onright>91919994</onright>
+      <textureFocus>-</textureFocus>
+      <onup>77045</onup>
+      <ondown>77047</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77042)|Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)|Control.HasFocus(77046)|Control.HasFocus(77047)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 4 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>977</posX>
+      <posY>902</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77047)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 4 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>977</posX>
+      <posY>902</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77047)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 4 Submenu Button 4</description>
+      <type>button</type>
+      <id>77047</id>
+      <posX>977</posX>
+      <posY>902</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>Now Playing</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <action>18</action>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77032</onleft>
+      <onright>77052</onright>
+      <textureFocus>-</textureFocus>
+      <onup>77046</onup>
+      <ondown>91111</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77042)|Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)|Control.HasFocus(77046)|Control.HasFocus(77047)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 5 Submenu Background Top</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1278</posX>
+      <posY>741</posY>
+      <width>333</width>
+      <height>236</height>
+      <shouldCache>true</shouldCache>
+      <texture>menu_selected_bg_top.png</texture>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77052)|Control.HasFocus(77053)|Control.HasFocus(77054)|Control.HasFocus(77055)]+!Control.isvisible(93761234)</visible>
+      <animation effect="zoom" start="90,10" end="100,100" acceleration="-1.3" center="1444,977" time="320" reversible="true">visible</animation>
+      <animation effect="fade" start="0" end="100" time="120" acceleration="-1.2" reversible="true">hidden</animation>
+      <animation effect="zoom" start="100,100" end="100,10" center="1444,977" time="120" acceleration="-1.2" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>Menu 5 Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1278</posX>
+      <posY>982</posY>
+      <width>333</width>
+      <height>52</height>
+      <shouldCache>true</shouldCache>
+      <texture>menu.selected.png</texture>
+      <visible allowhiddenfocus="true">Control.isvisible(93761254)+[Control.HasFocus(77052)|Control.HasFocus(77053)|Control.HasFocus(77054)|Control.HasFocus(77055)]+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="-333,0" end="0,0" time="200" acceleration="-0.9" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 5 Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1278</posX>
+      <posY>982</posY>
+      <width>333</width>
+      <height>52</height>
+      <shouldCache>true</shouldCache>
+      <texture>menu.selected.png</texture>
+      <visible allowhiddenfocus="true">[Control.HasFocus(77052)|Control.HasFocus(77053)|Control.HasFocus(77054)|Control.HasFocus(77055)]+!Control.isvisible(93761234)+!Control.isvisible(93761254)</visible>
+      <animation effect="slide" start="333,0" end="0,0" time="200" acceleration="-0.9" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 5 Submenu</description>
+      <type>button</type>
+      <id>77052</id>
+      <posX>1278</posX>
+      <posY>966</posY>
+      <width>321</width>
+      <height>76</height>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <textalign>center</textalign>
+      <label>Sudoku</label>
+      <textcolor>00ffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <disabledcolor>00ffffff</disabledcolor>
+      <textcolorNoFocus>00ffffff</textcolorNoFocus>
+      <font>font10</font>
+      <hyperlink>7777</hyperlink>
+      <hover>-</hover>
+      <onleft>77042</onleft>
+      <onright>77062</onright>
+      <onup>77055</onup>
+      <ondown>77055</ondown>
+    </control>
+    <control>
+      <description>Menu 5 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1298</posX>
+      <posY>770</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77053)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 5 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1298</posX>
+      <posY>770</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77053)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 5 Submenu Button 0</description>
+      <type>button</type>
+      <id>77053</id>
+      <posX>1298</posX>
+      <posY>770</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>Sudoku</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <hyperlink>7777</hyperlink>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77042</onleft>
+      <onright>77062</onright>
+      <textureFocus>-</textureFocus>
+      <onup>991899</onup>
+      <ondown>77054</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77052)|Control.HasFocus(77053)|Control.HasFocus(77054)|Control.HasFocus(77055)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 5 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1298</posX>
+      <posY>803</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77054)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 5 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1298</posX>
+      <posY>803</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77054)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 5 Submenu Button 1</description>
+      <type>button</type>
+      <id>77054</id>
+      <posX>1298</posX>
+      <posY>803</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>Tetris</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <hyperlink>7776</hyperlink>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77042</onleft>
+      <onright>77062</onright>
+      <textureFocus>-</textureFocus>
+      <onup>77053</onup>
+      <ondown>77055</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77052)|Control.HasFocus(77053)|Control.HasFocus(77054)|Control.HasFocus(77055)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 5 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1298</posX>
+      <posY>836</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77055)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 5 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1298</posX>
+      <posY>836</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77055)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 5 Submenu Button 2</description>
+      <type>button</type>
+      <id>77055</id>
+      <posX>1298</posX>
+      <posY>836</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>Sport Results</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <hyperlink>42000</hyperlink>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77042</onleft>
+      <onright>77062</onright>
+      <textureFocus>-</textureFocus>
+      <onup>77054</onup>
+      <ondown>91111</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77052)|Control.HasFocus(77053)|Control.HasFocus(77054)|Control.HasFocus(77055)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 6 Submenu Background Top</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1599</posX>
+      <posY>741</posY>
+      <width>333</width>
+      <height>236</height>
+      <shouldCache>true</shouldCache>
+      <texture>menu_selected_bg_top.png</texture>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77062)|Control.HasFocus(77063)|Control.HasFocus(77064)|Control.HasFocus(77065)|Control.HasFocus(77066)|Control.HasFocus(77067)]+!Control.isvisible(93761234)</visible>
+      <animation effect="zoom" start="90,10" end="100,100" acceleration="-1.3" center="1765,977" time="320" reversible="true">visible</animation>
+      <animation effect="fade" start="0" end="100" time="120" acceleration="-1.2" reversible="true">hidden</animation>
+      <animation effect="zoom" start="100,100" end="100,10" center="1765,977" time="120" acceleration="-1.2" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>Menu 6 Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1599</posX>
+      <posY>982</posY>
+      <width>333</width>
+      <height>52</height>
+      <shouldCache>true</shouldCache>
+      <texture>menu.selected.png</texture>
+      <visible allowhiddenfocus="true">Control.isvisible(93761254)+[Control.HasFocus(77062)|Control.HasFocus(77063)|Control.HasFocus(77064)|Control.HasFocus(77065)|Control.HasFocus(77066)|Control.HasFocus(77067)]+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="-333,0" end="0,0" time="200" acceleration="-0.9" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 6 Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1599</posX>
+      <posY>982</posY>
+      <width>333</width>
+      <height>52</height>
+      <shouldCache>true</shouldCache>
+      <texture>menu.selected.png</texture>
+      <visible allowhiddenfocus="true">[Control.HasFocus(77062)|Control.HasFocus(77063)|Control.HasFocus(77064)|Control.HasFocus(77065)|Control.HasFocus(77066)|Control.HasFocus(77067)]+!Control.isvisible(93761234)+!Control.isvisible(93761254)</visible>
+      <animation effect="slide" start="333,0" end="0,0" time="200" acceleration="-0.9" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 6 Submenu</description>
+      <type>button</type>
+      <id>77062</id>
+      <posX>1599</posX>
+      <posY>966</posY>
+      <width>321</width>
+      <height>76</height>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <textalign>center</textalign>
+      <label>Weather Forecast</label>
+      <textcolor>00ffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <disabledcolor>00ffffff</disabledcolor>
+      <textcolorNoFocus>00ffffff</textcolorNoFocus>
+      <font>font10</font>
+      <hyperlink>2600</hyperlink>
+      <hover>-</hover>
+      <onleft>77052</onleft>
+      <onright>77012</onright>
+      <onup>77067</onup>
+      <ondown>77067</ondown>
+    </control>
+    <control>
+      <description>Menu 6 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1619</posX>
+      <posY>770</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77063)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 6 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1619</posX>
+      <posY>770</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77063)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 6 Submenu Button 0</description>
+      <type>button</type>
+      <id>77063</id>
+      <posX>1619</posX>
+      <posY>770</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>Weather Forecast</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <hyperlink>2600</hyperlink>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77052</onleft>
+      <onright>77012</onright>
+      <textureFocus>-</textureFocus>
+      <onup>991899</onup>
+      <ondown>77064</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77062)|Control.HasFocus(77063)|Control.HasFocus(77064)|Control.HasFocus(77065)|Control.HasFocus(77066)|Control.HasFocus(77067)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 6 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1619</posX>
+      <posY>803</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77064)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 6 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1619</posX>
+      <posY>803</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77064)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 6 Submenu Button 1</description>
+      <type>button</type>
+      <id>77064</id>
+      <posX>1619</posX>
+      <posY>803</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>Settings</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <hyperlink>4</hyperlink>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77052</onleft>
+      <onright>77012</onright>
+      <textureFocus>-</textureFocus>
+      <onup>77063</onup>
+      <ondown>77065</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77062)|Control.HasFocus(77063)|Control.HasFocus(77064)|Control.HasFocus(77065)|Control.HasFocus(77066)|Control.HasFocus(77067)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 6 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1619</posX>
+      <posY>836</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77065)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 6 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1619</posX>
+      <posY>836</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77065)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 6 Submenu Button 2</description>
+      <type>button</type>
+      <id>77065</id>
+      <posX>1619</posX>
+      <posY>836</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>Plugins</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <hyperlink>34</hyperlink>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77052</onleft>
+      <onright>77012</onright>
+      <textureFocus>-</textureFocus>
+      <onup>77064</onup>
+      <ondown>77066</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77062)|Control.HasFocus(77063)|Control.HasFocus(77064)|Control.HasFocus(77065)|Control.HasFocus(77066)|Control.HasFocus(77067)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 6 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1619</posX>
+      <posY>869</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77066)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 6 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1619</posX>
+      <posY>869</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77066)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 6 Submenu Button 3</description>
+      <type>button</type>
+      <id>77066</id>
+      <posX>1619</posX>
+      <posY>869</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>Shutdown</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <action>99</action>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77052</onleft>
+      <onright>77012</onright>
+      <textureFocus>-</textureFocus>
+      <onup>77065</onup>
+      <ondown>77067</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77062)|Control.HasFocus(77063)|Control.HasFocus(77064)|Control.HasFocus(77065)|Control.HasFocus(77066)|Control.HasFocus(77067)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Menu 6 Submenu Button Selected - Nevigating from left</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1619</posX>
+      <posY>902</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77067)+Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,-34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 6 Submenu Button Selected - Nevigating from right</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1619</posX>
+      <posY>902</posY>
+      <width>291</width>
+      <height>34</height>
+      <shouldCache>true</shouldCache>
+      <texture>hiddenmenu_button_fo.png</texture>
+      <visible>control.isvisible(93761236)+Control.HasFocus(77067)+!Control.isvisible(93761264)+!Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,34" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+    </control>
+    <control>
+      <description>Menu 6 Submenu Button 4</description>
+      <type>button</type>
+      <id>77067</id>
+      <posX>1619</posX>
+      <posY>902</posY>
+      <width>291</width>
+      <height>34</height>
+      <label>Exit</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <disabledcolor>FF7d7d7d</disabledcolor>
+      <textalign>center</textalign>
+      <action>97</action>
+      <hover>-</hover>
+      <textYOff>0</textYOff>
+      <textXOff>0</textXOff>
+      <onleft>77052</onleft>
+      <onright>77012</onright>
+      <textureFocus>-</textureFocus>
+      <onup>77066</onup>
+      <ondown>91111</ondown>
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
+      <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77062)|Control.HasFocus(77063)|Control.HasFocus(77064)|Control.HasFocus(77065)|Control.HasFocus(77066)|Control.HasFocus(77067)]+!Control.isvisible(93761234)</visible>
+    </control>
+    <import>common.overlays.xml</import>
+    <import>common.time.xml</import>
+    <import>basichome.overlay.WolPowerManager.xml</import>
+    <import>Backdrop.version.xml</import>
+  </controls>
+  <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+  <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+</window>

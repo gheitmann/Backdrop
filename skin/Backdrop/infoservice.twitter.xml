@@ -1,0 +1,455 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <id>16003</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>no</disabletopbar>
+  <controls>
+    <control>
+      <description>DUMMY CONTROLL FOR NAVIGATION CONDITION</description>
+      <type>label</type>
+      <id>93761254</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>2</width>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>DUMMY CONTROLL FOR NAVIGATION CONDITION</description>
+      <type>label</type>
+      <id>93761264</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>2</width>
+      <visible>no</visible>
+    </control>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>default.png</texture>
+    </control>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>overlay.transparent23.png</texture>
+    </control>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>overlay.default.png</texture>
+    </control>
+    <control>
+      <description>Channel name label</description>
+      <type>fadelabel</type>
+      <id>12</id>
+      <posX>50</posX>
+      <posY>45</posY>
+      <width>1350</width>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <font>font50BC</font>
+      <label>InfoService - Twitter</label>
+      <scrollStartDelaySec>5</scrollStartDelaySec>
+      <visible>Control.HasFocus(50)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">Hidden</animation>
+    </control>
+    <control>
+      <description>Selected item Label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>50</posX>
+      <posY>105</posY>
+      <width>1350</width>
+      <textcolor>ff7FB1E5</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <font>font14</font>
+      <label>#infoservice.twitter.selected.username</label>
+      <visible>Control.HasFocus(50)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">Hidden</animation>
+    </control>
+    <control>
+      <description>Feed Item Logo</description>
+      <type>image</type>
+      <id>101</id>
+      <posX>20</posX>
+      <posY>754</posY>
+      <width>254</width>
+      <height>254</height>
+      <texture>#infoservice.twitter.selected.userpicture</texture>
+      <keepaspectratio>no</keepaspectratio>
+      <visible>Control.HasFocus(50)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">Hidden</animation>
+    </control>
+    <control>
+      <description>Chosen Story description</description>
+      <type>textboxscrollup</type>
+      <id>506</id>
+      <posX>50</posX>
+      <posY>480</posY>
+      <width>1200</width>
+      <height>600</height>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <seperator>_______________________________________________________________________________________________________________</seperator>
+      <label>-</label>
+      <font>font14</font>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">Hidden</animation>
+    </control>
+    <control>
+      <type>image</type>
+      <description>Dim background</description>
+      <id>0</id>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>overlay.dim.png</texture>
+      <visible>Control.IsVisible(50)+[Control.HasFocus(991799)|Control.HasFocus(991899)|Control.HasFocus(2)|Control.HasFocus(4)|Control.HasFocus(5)]</visible>
+      <animation effect="fade" time="450">visible</animation>
+      <animation effect="fade" time="400">hidden</animation>
+    </control>
+    <control>
+      <description>Menu Image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>390</posY>
+      <width>45</width>
+      <height>142</height>
+      <texture>button.menu.left.png</texture>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">Hidden</animation>
+    </control>
+    <control>
+      <type>actiongroup</type>
+      <description>action menu</description>
+      <defaultcontrol>2</defaultcontrol>
+      <onexit>50</onexit>
+      <visible>Control.IsVisible(50)+[Control.HasFocus(991799)|Control.HasFocus(991899)|Control.HasFocus(2)|Control.HasFocus(4)|Control.HasFocus(5)]</visible>
+      <control>
+        <type>group</type>
+        <animation effect="zoom" delay="20" tween="back" easing="out" start="1,1" end="100,100" center="960,461" time="550" reversible="true">Visible</animation>
+        <animation effect="zoom" delay="250" start="100,100" end="1,1" center="960,300" time="250" reversible="true">Hidden</animation>
+        <animation effect="rotatex" start="0" end="65" center="960,291" time="550" reversible="true">Hidden</animation>
+        <animation effect="fade" delay="500" start="100" end="0" time="50" reversible="true">Hidden</animation>
+        <control>
+          <type>image</type>
+          <id>0</id>
+          <posX>720</posX>
+          <posY>274</posY>
+          <width>480</width>
+          <height>435</height>
+          <texture>dialog_290_400.png</texture>
+          <animation effect="zoom" delay="20" tween="back" easing="out" start="1,1" end="100,100" center="960,461" time="550" reversible="true">Visible</animation>
+          <animation effect="zoom" delay="250" start="100,100" end="1,1" center="960,300" time="250" reversible="true">Hidden</animation>
+          <animation effect="rotatex" start="0" end="65" center="960,291" time="550" reversible="true">Hidden</animation>
+          <animation effect="fade" delay="500" start="100" end="0" time="50" reversible="true">Hidden</animation>
+          <visible>Control.IsVisible(50)+[Control.HasFocus(991799)|Control.HasFocus(991899)|Control.HasFocus(2)|Control.HasFocus(4)|Control.HasFocus(5)]</visible>
+        </control>
+        <control>
+          <description>Heading text label</description>
+          <type>label</type>
+          <id>0</id>
+          <posX>517</posX>
+          <posY>480</posY>
+          <width>510</width>
+          <label>924</label>
+          <font>font16BCB</font>
+          <align>center</align>
+          <textcolor>ff7FB1E5</textcolor>
+          <visible>!Control.IsVisible(51)+Control.IsVisible(50)</visible>
+          <animation effect="fade" start="100" end="0" time="1">Hidden</animation>
+          <animation effect="fade" start="0" end="100" delay="500" time="250">Visible</animation>
+          <animation effect="rotate" start="90" end="90" time="1" condition="true">Conditional</animation>
+        </control>
+        <control>
+          <description>Now Playing Button</description>
+          <type>button</type>
+          <id>991899</id>
+          <posX>932</posX>
+          <posY>300</posY>
+          <width>70</width>
+          <height>27</height>
+          <textureFocus>play.now.button.focus.png</textureFocus>
+          <textureNoFocus>play.now.button.nofocus.png</textureNoFocus>
+          <hyperlink>510</hyperlink>
+          <onup>2</onup>
+          <ondown>2</ondown>
+          <onleft>50</onleft>
+          <onright>50</onright>
+          <animation effect="fade" delay="500" start="100" end="0" time="50" reversible="true">Hidden</animation>
+          <visible>control.isvisible(3337)+Player.HasAudio+Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+        </control>
+        <control>
+          <description>Now Playing Button Animation</description>
+          <type>image</type>
+          <id>0</id>
+          <posX>932</posX>
+          <posY>300</posY>
+          <width>70</width>
+          <height>27</height>
+          <shouldCache>true</shouldCache>
+          <texture>play.now.button.back.png</texture>
+          <animation effect="fade" time="450" delay="100" tween="cubic" easing="inout" condition="true" pulse="true">Conditional</animation>
+          <visible>control.isvisible(3337)+Player.HasAudio+Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+        </control>
+        <control>
+          <description>Video Window Button</description>
+          <type>button</type>
+          <id>991799</id>
+          <posX>932</posX>
+          <posY>300</posY>
+          <width>70</width>
+          <height>27</height>
+          <textureFocus>play.now.button.focus.png</textureFocus>
+          <textureNoFocus>play.now.button.nofocus.png</textureNoFocus>
+          <action>18</action>
+          <onup>991899</onup>
+          <ondown>2</ondown>
+          <onleft>50</onleft>
+          <onright>50</onright>
+          <animation effect="fade" delay="500" start="100" end="0" time="50" reversible="true">Hidden</animation>
+          <visible>Player.HasVideo+!control.isvisible(3337)+Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+        </control>
+        <control>
+          <description>Now Playing Button Animation</description>
+          <type>image</type>
+          <id>0</id>
+          <posX>932</posX>
+          <posY>300</posY>
+          <width>70</width>
+          <height>27</height>
+          <shouldCache>true</shouldCache>
+          <texture>play.now.button.back.png</texture>
+          <animation effect="fade" time="450" delay="100" tween="cubic" easing="inout" condition="true" pulse="true">Conditional</animation>
+          <visible>Player.HasVideo+!control.isvisible(3337)+Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+        </control>
+        <control>
+          <type>group</type>
+          <description>group element</description>
+          <posX>800</posX>
+          <posY>340</posY>
+          <id>24</id>
+          <layout>StackLayout(0)</layout>
+          <control>
+            <description>Refresh Button</description>
+            <type>button</type>
+            <id>2</id>
+            <label>184</label>
+            <width>375</width>
+            <textureFocus>-</textureFocus>
+            <font>font14BC</font>
+            <textXOff>10</textXOff>
+            <textYOff>2</textYOff>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <onup>991799</onup>
+            <ondown>4</ondown>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+          </control>
+          <control>
+            <description>RSS feed select</description>
+            <type>button</type>
+            <id>4</id>
+            <label>706</label>
+            <width>375</width>
+            <textureFocus>-</textureFocus>
+            <font>font14BC</font>
+            <textXOff>10</textXOff>
+            <textYOff>2</textYOff>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <onup>2</onup>
+            <ondown>5</ondown>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+          </control>
+          <control>
+            <description>All feeds</description>
+            <type>button</type>
+            <id>5</id>
+            <label>Show all feeds on home</label>
+            <width>375</width>
+            <textureFocus>-</textureFocus>
+            <font>font14BC</font>
+            <textXOff>10</textXOff>
+            <textYOff>2</textYOff>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <onup>4</onup>
+            <ondown>2</ondown>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+          </control>
+        </control>
+      </control>
+      <control>
+        <description>Button 2 - Navigating from up</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>796</posX>
+        <posY>340</posY>
+        <width>380</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(2)+Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 2 - Navigating from down</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>796</posX>
+        <posY>340</posY>
+        <width>380</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(2)+!Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 4 - Navigating from up</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>796</posX>
+        <posY>382</posY>
+        <width>380</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(4)+Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 4 - Navigating from down</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>796</posX>
+        <posY>382</posY>
+        <width>380</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(4)+!Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 5 - Navigating from up</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>796</posX>
+        <posY>424</posY>
+        <width>380</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(5)+Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 5 - Navigating from down</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>796</posX>
+        <posY>424</posY>
+        <width>380</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(5)+!Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+    </control>
+    <control>
+      <type>group</type>
+      <description>group element</description>
+      <control>
+        <description>listcontrol</description>
+        <type>listcontrol</type>
+        <id>50</id>
+        <posY>555</posY>
+        <posX>1299</posX>
+        <height>562</height>
+        <width>615</width>
+        <font>font13</font>
+        <font2>font12</font2>
+        <font3>font12</font3>
+        <textXOff>15</textXOff>
+        <textYOff>2</textYOff>
+        <textXOff2>1110</textXOff2>
+        <textYOff2>30</textYOff2>
+        <textXOff3>1200</textXOff3>
+        <textYOff3>30</textYOff3>
+        <textureFocus>playlist_sub_focus1.png</textureFocus>
+        <textureNoFocus>playlist_sub_nofocus1.png</textureNoFocus>
+        <spinColor>FFFFFFFF</spinColor>
+        <PinIconXOff>698</PinIconXOff>
+        <PinIconYOff>36</PinIconYOff>
+        <PinIconWidth>50</PinIconWidth>
+        <PinIconHeight>50</PinIconHeight>
+        <IconXOff>2</IconXOff>
+        <IconYOff>2</IconYOff>
+        <itemWidth>48</itemWidth>
+        <itemHeight>48</itemHeight>
+        <keepaspectratio>no</keepaspectratio>
+        <textureHeight>51</textureHeight>
+        <textalign>right</textalign>
+        <spinPosX>1890</spinPosX>
+        <spinPosY>1028</spinPosY>
+        <onleft>2</onleft>
+        <onright>2</onright>
+        <shadowAngle>45</shadowAngle>
+        <shadowDistance>1</shadowDistance>
+        <shadowColor>FF000000</shadowColor>
+        <unfocusedAlpha>250</unfocusedAlpha>
+        <dimColor>ffffffff</dimColor>
+        <textcolor>ffffffff</textcolor>
+        <selectedColor>ffE5F5FF</selectedColor>
+        <shadedColor>ffffffff</shadedColor>
+        <playedColor>ffffffff</playedColor>
+        <textcolor2>ffffffff</textcolor2>
+        <textcolor3>ffffffff</textcolor3>
+        <colordiffuse>ffffffff</colordiffuse>
+        <textureNoFocus>-</textureNoFocus>
+        <spinAlign>Right</spinAlign>
+        <animation effect="slide" start="750,0" time="800" acceleration="-0.9" reversible="true">focus</animation>
+        <animation effect="slide" end="750,0" time="200" acceleration="0.5" reversible="true">unfocus</animation>
+      </control>
+    </control>
+    <import>common.time.xml</import>
+    <import>common.overlays.xml</import>
+  </controls>
+</window>

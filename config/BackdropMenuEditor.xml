@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<profile>
+  <section name="BackdropMenuEditor">
+    <entry name="menuText1Name">Photos</entry>
+    <entry name="menuText2Name">Music &amp; Radio</entry>
+    <entry name="menuText3Name">Movies</entry>
+    <entry name="menuText4Name">TV</entry>
+    <entry name="menuText5Name">Games &amp; Sports</entry>
+    <entry name="menuText6Name">Plugins</entry>
+    <entry name="menuUseRSS">
+    </entry>
+    <entry name="menuType">
+    </entry>
+    <entry name="menuText1Multiimage">Fanart Plugin</entry>
+    <entry name="useMenu1">True</entry>
+    <entry name="menuText1ImagePath">Random Pictures</entry>
+    <entry name="menuText2Multiimage">Fanart Plugin</entry>
+    <entry name="useMenu2">True</entry>
+    <entry name="menuText2ImagePath">Random Music Scraper</entry>
+    <entry name="menuText3Multiimage">Fanart Plugin</entry>
+    <entry name="useMenu3">True</entry>
+    <entry name="menuText3ImagePath">Random MovingPictures</entry>
+    <entry name="menuText4Multiimage">Fanart Plugin</entry>
+    <entry name="useMenu4">True</entry>
+    <entry name="menuText4ImagePath">Random TV</entry>
+    <entry name="menuText5Multiimage">Single Image</entry>
+    <entry name="useMenu5">True</entry>
+    <entry name="menuText5ImagePath">Animations\games\default.jpg</entry>
+    <entry name="menuText6Multiimage">Multiple Images</entry>
+    <entry name="useMenu6">True</entry>
+    <entry name="menuText6ImagePath">Animations\weatherbg</entry>
+    <entry name="doHideClock">False</entry>
+    <entry name="doCenterMenu">False</entry>
+    <entry name="menuDefaultMenu">Menu 3</entry>
+    <entry name="IdleTimeOther">4</entry>
+    <entry name="IdleTimeBasic">10</entry>
+    <entry name="menuItemNameA0">Photos</entry>
+    <entry name="menuItemBgA0">Random Pictures</entry>
+    <entry name="menuItemHyperlinkA0">2</entry>
+    <entry name="menuItemUseLatestMediaA0">Pictures</entry>
+    <entry name="menuItemMainCategoryA0">
+    </entry>
+    <entry name="menuItemSubCategoryA0">
+    </entry>
+    <entry name="menuItemNameB0">Music</entry>
+    <entry name="menuItemBgB0">Random Music Scraper</entry>
+    <entry name="menuItemHyperlinkB0">504</entry>
+    <entry name="menuItemUseLatestMediaB0">Music</entry>
+    <entry name="menuItemMainCategoryB0">Album Artists&lt;528&gt;</entry>
+    <entry name="menuItemNameB1">Radio</entry>
+    <entry name="menuItemBgB1">Random Music Scraper</entry>
+    <entry name="menuItemHyperlinkB1">30</entry>
+    <entry name="menuItemUseLatestMediaB1">No</entry>
+    <entry name="menuItemMainCategoryB1">
+    </entry>
+    <entry name="menuItemSubCategoryB1">
+    </entry>
+    <entry name="menuItemNameB2">RadioTime</entry>
+    <entry name="menuItemBgB2">Random Music Scraper</entry>
+    <entry name="menuItemHyperlinkB2">25650</entry>
+    <entry name="menuItemUseLatestMediaB2">No</entry>
+    <entry name="menuItemMainCategoryB2">
+    </entry>
+    <entry name="menuItemSubCategoryB2">
+    </entry>
+    <entry name="menuItemNameB3">Last FM</entry>
+    <entry name="menuItemBgB3">Random Music Scraper</entry>
+    <entry name="menuItemHyperlinkB3">7890</entry>
+    <entry name="menuItemUseLatestMediaB3">No</entry>
+    <entry name="menuItemMainCategoryB3">
+    </entry>
+    <entry name="menuItemSubCategoryB3">
+    </entry>
+    <entry name="menuItemNameB4">Playlist</entry>
+    <entry name="menuItemBgB4">Random Music Scraper</entry>
+    <entry name="menuItemHyperlinkB4">500</entry>
+    <entry name="menuItemUseLatestMediaB4">Music</entry>
+    <entry name="menuItemMainCategoryB4">
+    </entry>
+    <entry name="menuItemSubCategoryB4">
+    </entry>
+    <entry name="menuItemNameB5">Now Playing</entry>
+    <entry name="menuItemBgB5">Random Music Scraper</entry>
+    <entry name="menuItemHyperlinkB5">510</entry>
+    <entry name="menuItemUseLatestMediaB5">Music</entry>
+    <entry name="menuItemMainCategoryB5">
+    </entry>
+    <entry name="menuItemSubCategoryB5">
+    </entry>
+    <entry name="menuItemNameC0">Movies</entry>
+    <entry name="menuItemBgC0">Random MovingPictures</entry>
+    <entry name="menuItemHyperlinkC0">96742</entry>
+    <entry name="menuItemUseLatestMediaC0">Moving Pictures</entry>
+    <entry name="menuItemMainCategoryC0">
+    </entry>
+    <entry name="menuItemSubCategoryC0">
+    </entry>
+    <entry name="menuItemNameC1">DVD</entry>
+    <entry name="menuItemBgC1">Random MovingPictures</entry>
+    <entry name="menuItemHyperlinkC1">3001</entry>
+    <entry name="menuItemUseLatestMediaC1">Moving Pictures</entry>
+    <entry name="menuItemMainCategoryC1">
+    </entry>
+    <entry name="menuItemSubCategoryC1">
+    </entry>
+    <entry name="menuItemNameC2">Now Playing</entry>
+    <entry name="menuItemBgC2">Random MovingPictures</entry>
+    <entry name="menuItemHyperlinkC2">2005</entry>
+    <entry name="menuItemUseLatestMediaC2">No</entry>
+    <entry name="menuItemMainCategoryC2">
+    </entry>
+    <entry name="menuItemSubCategoryC2">
+    </entry>
+    <entry name="menuItemNameC3">OnlineVideos</entry>
+    <entry name="menuItemBgC3">Random MovingPictures</entry>
+    <entry name="menuItemHyperlinkC3">4755</entry>
+    <entry name="menuItemUseLatestMediaC3">No</entry>
+    <entry name="menuItemMainCategoryC3">
+    </entry>
+    <entry name="menuItemSubCategoryC3">
+    </entry>
+    <entry name="menuItemNameC4">Movie Trailers</entry>
+    <entry name="menuItemBgC4">Random MovingPictures</entry>
+    <entry name="menuItemHyperlinkC4">5900</entry>
+    <entry name="menuItemUseLatestMediaC4">No</entry>
+    <entry name="menuItemMainCategoryC4">
+    </entry>
+    <entry name="menuItemSubCategoryC4">
+    </entry>
+    <entry name="menuItemNameC5">Showtimes</entry>
+    <entry name="menuItemBgC5">Random MovingPictures</entry>
+    <entry name="menuItemHyperlinkC5">7111992</entry>
+    <entry name="menuItemUseLatestMediaC5">No</entry>
+    <entry name="menuItemMainCategoryC5">
+    </entry>
+    <entry name="menuItemSubCategoryC5">
+    </entry>
+    <entry name="menuItemNameD0">TV</entry>
+    <entry name="menuItemBgD0">Random TV</entry>
+    <entry name="menuItemHyperlinkD0">1</entry>
+    <entry name="menuItemUseLatestMediaD0">TV Recordings</entry>
+    <entry name="menuItemMainCategoryD0">
+    </entry>
+    <entry name="menuItemSubCategoryD0">
+    </entry>
+    <entry name="menuItemNameD1">TV Guide</entry>
+    <entry name="menuItemBgD1">Animations\tvguide\tvguide3_default.jpg</entry>
+    <entry name="menuItemHyperlinkD1">600</entry>
+    <entry name="menuItemUseLatestMediaD1">TV Recordings</entry>
+    <entry name="menuItemMainCategoryD1">
+    </entry>
+    <entry name="menuItemSubCategoryD1">
+    </entry>
+    <entry name="menuItemNameD2">TV Recordings</entry>
+    <entry name="menuItemBgD2">Random TVSeries</entry>
+    <entry name="menuItemHyperlinkD2">603</entry>
+    <entry name="menuItemUseLatestMediaD2">TV Recordings</entry>
+    <entry name="menuItemMainCategoryD2">
+    </entry>
+    <entry name="menuItemSubCategoryD2">
+    </entry>
+    <entry name="menuItemNameD3">TV Series</entry>
+    <entry name="menuItemBgD3">Random TVSeries</entry>
+    <entry name="menuItemHyperlinkD3">9811</entry>
+    <entry name="menuItemUseLatestMediaD3">TVSeries</entry>
+    <entry name="menuItemMainCategoryD3">
+    </entry>
+    <entry name="menuItemSubCategoryD3">
+    </entry>
+    <entry name="menuItemNameD4">Now Playing</entry>
+    <entry name="menuItemBgD4">Random TV</entry>
+    <entry name="menuItemHyperlinkD4">602</entry>
+    <entry name="menuItemUseLatestMediaD4">No</entry>
+    <entry name="menuItemMainCategoryD4">
+    </entry>
+    <entry name="menuItemSubCategoryD4">
+    </entry>
+    <entry name="menuItemNameE0">Sudoku</entry>
+    <entry name="menuItemBgE0">Animations\games\default.jpg</entry>
+    <entry name="menuItemHyperlinkE0">7777</entry>
+    <entry name="menuItemUseLatestMediaE0">No</entry>
+    <entry name="menuItemMainCategoryE0">
+    </entry>
+    <entry name="menuItemSubCategoryE0">
+    </entry>
+    <entry name="menuItemNameE1">Tetris</entry>
+    <entry name="menuItemBgE1">Animations\games\default.jpg</entry>
+    <entry name="menuItemHyperlinkE1">7776</entry>
+    <entry name="menuItemUseLatestMediaE1">No</entry>
+    <entry name="menuItemMainCategoryE1">
+    </entry>
+    <entry name="menuItemSubCategoryE1">
+    </entry>
+    <entry name="menuItemNameE2">Sport Results</entry>
+    <entry name="menuItemBgE2">Animations\games\default.jpg</entry>
+    <entry name="menuItemHyperlinkE2">42000</entry>
+    <entry name="menuItemUseLatestMediaE2">No</entry>
+    <entry name="menuItemMainCategoryE2">
+    </entry>
+    <entry name="menuItemSubCategoryE2">
+    </entry>
+    <entry name="menuItemNameF0">Weather Forecast</entry>
+    <entry name="menuItemBgF0">Animations\weatherbg</entry>
+    <entry name="menuItemHyperlinkF0">2600</entry>
+    <entry name="menuItemUseLatestMediaF0">No</entry>
+    <entry name="menuItemMainCategoryF0">
+    </entry>
+    <entry name="menuItemSubCategoryF0">
+    </entry>
+    <entry name="menuItemNameF1">Settings</entry>
+    <entry name="menuItemBgF1">Animations\settings\default.jpg</entry>
+    <entry name="menuItemHyperlinkF1">4</entry>
+    <entry name="menuItemUseLatestMediaF1">No</entry>
+    <entry name="menuItemMainCategoryF1">
+    </entry>
+    <entry name="menuItemSubCategoryF1">
+    </entry>
+    <entry name="menuItemNameF2">Plugins</entry>
+    <entry name="menuItemBgF2">Animations\settings\default.jpg</entry>
+    <entry name="menuItemHyperlinkF2">34</entry>
+    <entry name="menuItemUseLatestMediaF2">No</entry>
+    <entry name="menuItemMainCategoryF2">
+    </entry>
+    <entry name="menuItemSubCategoryF2">
+    </entry>
+    <entry name="menuItemNameF3">Shutdown</entry>
+    <entry name="menuItemBgF3">Animations\shutdownbg\default.jpg</entry>
+    <entry name="menuItemHyperlinkF3">Shutdown</entry>
+    <entry name="menuItemUseLatestMediaF3">No</entry>
+    <entry name="menuItemMainCategoryF3">
+    </entry>
+    <entry name="menuItemSubCategoryF3">
+    </entry>
+    <entry name="menuItemNameF4">Exit</entry>
+    <entry name="menuItemBgF4">Animations\shutdownbg\default.jpg</entry>
+    <entry name="menuItemHyperlinkF4">Exit</entry>
+    <entry name="menuItemUseLatestMediaF4">No</entry>
+    <entry name="menuItemMainCategoryF4">
+    </entry>
+    <entry name="menuItemSubCategoryF4">
+    </entry>
+  </section>
+</profile>

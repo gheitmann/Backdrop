@@ -1,0 +1,1379 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>2003</id>
+  <defaultcontrol>54321</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#header.label:</define>
+  <define>#useSelectedFanart:Yes</define>
+  <controls>
+    <control>
+      <description>Background Image</description>
+      <type>image</type>
+      <id>1</id>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>MP139\BH Videos.jpg</texture>
+    </control>
+    <control>
+      <type>fadelabel</type>
+      <description>e.g. Setup TV</description>
+      <id>0</id>
+      <posX>45</posX>
+      <posY>54</posY>
+      <label>#currentmodule  ·  #title</label>
+      <width>1802</width>
+      <align>left</align>
+      <font>mp139.Label</font>
+      <shadowAngle>10</shadowAngle>
+      <shadowDistance>3</shadowDistance>
+      <shadowColor>ff000000</shadowColor>
+      <textcolor>lightgray</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <wrapString>  |  </wrapString>
+      <scrollStartDelaySec>5</scrollStartDelaySec>
+    </control>
+    <import>mp139.common.video.fanart.xml</import>
+    <import>mp139.common.window.xml</import>
+    <import>mp139.common.time.xml</import>
+    <control>
+      <description>General Overlay</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>45</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>MP139\general_overlay.png</texture>
+    </control>
+    <control>
+      <description>Dummy Button</description>
+      <type>button</type>
+      <id>55</id>
+      <label />
+      <posX>0</posX>
+      <posY>300</posY>
+      <width>75</width>
+      <height>75</height>
+      <textureFocus />
+      <textureNoFocus />
+      <onleft>2</onleft>
+      <onright>2</onright>
+      <textXOff>25</textXOff>
+      <textYOff>1</textYOff>
+      <textalign>left</textalign>
+      <textvalign>middle</textvalign>
+      <scrollStartDelaySec>5</scrollStartDelaySec>
+      <scrollWrapString>  |  </scrollWrapString>
+      <font>mp139.Label</font>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <disabledcolor>90ffffff</disabledcolor>
+      <textcolorNoFocus>ff00bfff</textcolorNoFocus>
+      <dimColor>90ffffff</dimColor>
+      <shadowAngle>0</shadowAngle>
+      <shadowDistance>0</shadowDistance>
+      <shadowColor />
+    </control>
+    <!--control>
+      <description>Overlay video info</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>45</posX>
+      <posY>234</posY>
+      <width>765</width>
+      <height>697</height>
+      <texture mask="MP139\musicfanart_mask.png">MP139\black.png</texture>
+      <colordiffuse>60ffffff</colordiffuse>
+    </control-->
+    <!--control>
+      <description>Overlay plot text</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>825</posX>
+      <posY>234</posY>
+      <width>645</width>
+      <height>697</height>
+      <texture mask="MP139\musicfanart_mask.png">MP139\black.png</texture>
+      <colordiffuse>60ffffff</colordiffuse>
+    </control-->
+    <!--     *******************************************************************************************  -->
+    <!--     **************************************  MENU BUTTONS  *************************************  -->
+    <!--     *******************************************************************************************  -->
+    <control>
+      <type>actiongroup</type>
+      <description>action menu</description>
+      <defaultcontrol>2</defaultcontrol>
+      <onexit>24</onexit>
+      <buttonX>0</buttonX>
+      <buttonY>-60</buttonY>
+      <buttonwidth>159</buttonwidth>
+      <buttonheight>1080</buttonheight>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>MP139\Action_nofocus.png</textureNoFocus>
+      <width>412</width>
+      <height>1350</height>
+      <dimColor>00ffffff</dimColor>
+      <control>
+        <type>image</type>
+        <id>0</id>
+        <width>1920</width>
+        <height>1080</height>
+        <texture>MP139\white.png</texture>
+        <colordiffuse>50005eef</colordiffuse>
+      </control>
+      <control>
+        <type>image</type>
+        <id>0</id>
+        <posX>39</posX>
+        <posY>117</posY>
+        <width>480</width>
+        <height>886</height>
+        <texture>MP139\Backslide.png</texture>
+        <visible>!Control.HasFocus(24)|!control.hasfocus(54321)</visible>
+        <animation effect="slide" time="70" start="-300,0" reversible="false">visible</animation>
+        <animation effect="slide" time="70" end="-300,0" reversible="false">hidden</animation>
+      </control>
+      <control>
+        <description>group element</description>
+        <type>group</type>
+        <animation effect="slide" time="70" start="-300,0" reversible="false">visible</animation>
+        <animation effect="slide" time="70" end="-300,0" reversible="false">hidden</animation>
+        <visible>!Control.HasFocus(24)|!control.hasfocus(54321)</visible>
+        <layout>StackLayout</layout>
+        <posX>75</posX>
+        <posY>181</posY>
+        <control>
+          <description>Play Button</description>
+          <type>button</type>
+          <id>2</id>
+          <label>208</label>
+          <font>mp139.font13</font>
+          <onleft>55</onleft>
+          <onright>55</onright>
+          <onup>11</onup>
+          <ondown>3</ondown>
+          <posX>799</posX>
+          <posY>375</posY>
+          <width>390</width>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureFocus>MP139\button_focus.png</textureFocus>
+          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff00bfff</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>Plot Button</description>
+          <type>checkbutton</type>
+          <id>3</id>
+          <label>207</label>
+          <font>mp139.font13</font>
+          <onleft>55</onleft>
+          <onright>55</onright>
+          <onup>2</onup>
+          <ondown>4</ondown>
+          <width>390</width>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>9</textYOff>
+          <textpadding>30</textpadding>
+          <textureFocus>MP139\button_focus.png</textureFocus>
+          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff00bfff</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+          <markWidth>43</markWidth>
+          <markHeight>42</markHeight>
+          <markXOff>20</markXOff>
+          <markYOff>10</markYOff>
+          <markalign>right</markalign>
+          <markvalign>middle</markvalign>
+          <textureCheckmark>MP139\check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>MP139\check-boxNF.png</textureCheckmarkNoFocus>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+        </control>
+        <control>
+          <description>Cast Button</description>
+          <type>checkbutton</type>
+          <id>4</id>
+          <label>206</label>
+          <font>mp139.font13</font>
+          <onright>24</onright>
+          <onleft>55</onleft>
+          <onup>3</onup>
+          <ondown>7</ondown>
+          <width>390</width>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>9</textYOff>
+          <textpadding>30</textpadding>
+          <textureFocus>MP139\button_focus.png</textureFocus>
+          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff00bfff</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+          <markWidth>43</markWidth>
+          <markHeight>42</markHeight>
+          <markXOff>20</markXOff>
+          <markYOff>10</markYOff>
+          <markalign>right</markalign>
+          <markvalign>middle</markvalign>
+          <textureCheckmark>MP139\check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>MP139\check-boxNF.png</textureCheckmarkNoFocus>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+        </control>
+        <control>
+          <description>User Review Button</description>
+          <type>checkbutton</type>
+          <id>7</id>
+          <label>183</label>
+          <font>mp139.font13</font>
+          <onleft>55</onleft>
+          <onright>55</onright>
+          <onup>4</onup>
+          <ondown>5</ondown>
+          <width>390</width>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>9</textYOff>
+          <textpadding>30</textpadding>
+          <textureFocus>MP139\button_focus.png</textureFocus>
+          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff00bfff</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+          <markWidth>43</markWidth>
+          <markHeight>42</markHeight>
+          <markXOff>20</markXOff>
+          <markYOff>10</markYOff>
+          <markalign>right</markalign>
+          <markvalign>middle</markvalign>
+          <textureCheckmark>MP139\check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>MP139\check-boxNF.png</textureCheckmarkNoFocus>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+        </control>
+        <control>
+          <description>Refresh Button</description>
+          <type>button</type>
+          <id>5</id>
+          <label>184</label>
+          <onleft>55</onleft>
+          <onright>55</onright>
+          <onup>7</onup>
+          <ondown>26</ondown>
+          <posX>799</posX>
+          <posY>375</posY>
+          <width>390</width>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureFocus>MP139\button_focus.png</textureFocus>
+          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>mp139.Label</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff00bfff</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>Rename Title Button</description>
+          <type>button</type>
+          <id>26</id>
+          <onleft>55</onleft>
+          <onright>55</onright>
+          <label>118</label>
+          <onup>5</onup>
+          <ondown>6</ondown>
+          <posX>799</posX>
+          <posY>375</posY>
+          <width>390</width>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureFocus>MP139\button_focus.png</textureFocus>
+          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>mp139.Label</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff00bfff</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>Watched Button</description>
+          <type>checkbutton</type>
+          <id>6</id>
+          <label>1010</label>
+          <onleft>55</onleft>
+          <onright>55</onright>
+          <onright>24</onright>
+          <onup>26</onup>
+          <ondown>11899</ondown>
+          <width>390</width>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>9</textYOff>
+          <textpadding>30</textpadding>
+          <textureFocus>MP139\button_focus.png</textureFocus>
+          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+          <font>mp139.Label</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff00bfff</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+          <markWidth>43</markWidth>
+          <markHeight>42</markHeight>
+          <markXOff>20</markXOff>
+          <markYOff>10</markYOff>
+          <markalign>right</markalign>
+          <markvalign>middle</markvalign>
+          <textureCheckmark>MP139\check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>MP139\check-boxNF.png</textureCheckmarkNoFocus>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+        </control>
+        <control>
+          <description>Trailers</description>
+          <type>button</type>
+          <id>11899</id>
+          <label>#Trailers.Translation.Trailers.Label...</label>
+          <onup>6</onup>
+          <ondown>50</ondown>
+          <visible>plugin.isenabled(Trailers)</visible>
+          <posX>799</posX>
+          <posY>375</posY>
+          <width>390</width>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureFocus>MP139\button_focus.png</textureFocus>
+          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>mp139.Label</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff00bfff</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>Awards Button</description>
+          <type>checkbutton</type>
+          <id>50</id>
+          <label>#SkinTranslation.Translations.Awards.Label</label>
+          <onleft>55</onleft>
+          <onright>55</onright>
+          <onup>11899</onup>
+          <ondown>52</ondown>
+          <width>390</width>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>9</textYOff>
+          <textpadding>30</textpadding>
+          <textureFocus>MP139\button_focus.png</textureFocus>
+          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+          <font>mp139.Label</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff00bfff</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+          <markWidth>43</markWidth>
+          <markHeight>42</markHeight>
+          <markXOff>20</markXOff>
+          <markYOff>10</markYOff>
+          <markalign>right</markalign>
+          <markvalign>middle</markvalign>
+          <textureCheckmark>MP139\check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>MP139\check-boxNF.png</textureCheckmarkNoFocus>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+        </control>
+        <control>
+          <description>MPAA Button</description>
+          <type>checkbutton</type>
+          <id>52</id>
+          <label>MPAA</label>
+          <onleft>55</onleft>
+          <onright>55</onright>
+          <onup>50</onup>
+          <ondown>2</ondown>
+          <width>390</width>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>9</textYOff>
+          <textpadding>30</textpadding>
+          <textureFocus>MP139\button_focus.png</textureFocus>
+          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+          <font>mp139.Label</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff00bfff</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+          <markWidth>43</markWidth>
+          <markHeight>42</markHeight>
+          <markXOff>20</markXOff>
+          <markYOff>10</markYOff>
+          <markalign>right</markalign>
+          <markvalign>middle</markvalign>
+          <textureCheckmark>MP139\check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>MP139\check-boxNF.png</textureCheckmarkNoFocus>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+        </control>
+        <dimColor>ffffffff</dimColor>
+      </control>
+      <!--     *******************************************************************************************  -->
+      <!--     **************************************  SELECT BUTTONS  ***********************************  -->
+      <!--     *******************************************************************************************  -->
+      <control>
+        <description>Select cover label</description>
+        <type>label</type>
+        <id>30</id>
+        <posX>100</posX>
+        <posY>810</posY>
+        <label>734</label>
+        <font>mp139.font12</font>
+        <align>left</align>
+        <textcolor>ff00bfff</textcolor>
+        <visible>control.isvisible(10)</visible>
+        <disabledcolor>90ffffff</disabledcolor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>Select cover spin control</description>
+        <type>spincontrol</type>
+        <id>10</id>
+        <posX>110</posX>
+        <posY>860</posY>
+        <onup>8</onup>
+        <ondown>11</ondown>
+        <width>42</width>
+        <height>30</height>
+        <textureUp>MP139\page_up_nofocus.png</textureUp>
+        <textureDown>MP139\page_down_nofocus.png</textureDown>
+        <textureUpFocus>MP139\page_up_focus.png</textureUpFocus>
+        <textureDownFocus>MP139\page_down_focus.png</textureDownFocus>
+        <align>left</align>
+        <font>mp139.Label</font>
+        <reverse>yes</reverse>
+        <textcolor>lightgray</textcolor>
+        <disabledcolor>90ffffff</disabledcolor>
+        <spintype>text</spintype>
+        <animation effect="zoom" start="100,100" end="110,110" time="50">focus</animation>
+      </control>
+      <control>
+        <description>Select disc label</description>
+        <type>label</type>
+        <id>100</id>
+        <posX>100</posX>
+        <posY>900</posY>
+        <label>427</label>
+        <font>mp139.font12</font>
+        <textcolor>ff00bfff</textcolor>
+        <visible>Control.IsVisible(11)</visible>
+        <disabledcolor>90ffffff</disabledcolor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>Select Disc spin control</description>
+        <type>spincontrol</type>
+        <id>11</id>
+        <posX>110</posX>
+        <posY>950</posY>
+        <onup>10</onup>
+        <ondown>2</ondown>
+        <onleft>5</onleft>
+        <onright>5</onright>
+        <textcolor>lightgray</textcolor>
+        <buddycontrolid>100</buddycontrolid>
+        <showrange>no</showrange>
+        <width>42</width>
+        <height>30</height>
+        <textureUp>MP139\page_up_nofocus.png</textureUp>
+        <textureDown>MP139\page_down_nofocus.png</textureDown>
+        <textureUpFocus>MP139\page_up_focus.png</textureUpFocus>
+        <textureDownFocus>MP139\page_down_focus.png</textureDownFocus>
+        <align>left</align>
+        <font>mp139.Label</font>
+        <reverse>yes</reverse>
+        <disabledcolor>90ffffff</disabledcolor>
+        <spintype>text</spintype>
+        <animation effect="zoom" start="100,100" end="110,110" time="50">focus</animation>
+      </control>
+    </control>
+    <!--     *******************************************************************************************  -->
+    <!--     **************************************  RATING STARS  *************************************  -->
+    <!--     *******************************************************************************************  -->
+    <control>
+      <description>Star Rating</description>
+      <type>imagelist</type>
+      <id>1</id>
+      <posX>1552</posX>
+      <posY>795</posY>
+      <width>426</width>
+      <height>60</height>
+      <textureWidth>25</textureWidth>
+      <textureHeight>25</textureHeight>
+      <subitems>
+        <subitem>MP139\starbad_small.png</subitem>
+        <subitem>MP139\star_small.png</subitem>
+      </subitems>
+      <orientation>horizontal</orientation>
+      <percentage>#rating</percentage>
+      <imagesToDraw>10</imagesToDraw>
+      <visible>!control.isvisible(24)</visible>
+    </control>
+    <!--<control>
+    <description>Text Rating Value</description>
+    <type>label</type>
+    <id>1</id>
+    <posX>870</posX>
+    <posY>104</posY>
+    <label>#strrating (#(L(205)) #votes)</label>
+    <font>font10</font>
+    <align>left</align>
+    <textcolor>lightgray</textcolor>
+  </control>-->
+    <!--     *******************************************************************************************  -->
+    <!--     **************************************  MOVIE INFOS  **************************************  -->
+    <!--     *******************************************************************************************  -->
+    <control>
+      <description>Watched icon</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1875</posX>
+      <posY>277</posY>
+      <width>30</width>
+      <height>30</height>
+      <texture>MP139\overlaywatched.png</texture>
+      <colordiffuse>ff33aaff</colordiffuse>
+      <visible>!string.equals(#watchedcount,0)+!control.isvisible(24)</visible>
+    </control>
+    <control>
+      <description>Unwatched icon</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1875</posX>
+      <posY>277</posY>
+      <width>30</width>
+      <height>30</height>
+      <texture>MP139\overlayunwatched.png</texture>
+      <visible>string.equals(#watchedcount,0)+!control.isvisible(24)</visible>
+    </control>
+    <control>
+      <description>Genre images</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>1875</posX>
+      <posY>317</posY>
+      <width>30</width>
+      <height>335</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <texture>#fanarthandler.movie.genres.selected.verticalall</texture>
+      <visible>!control.isvisible(24)</visible>
+    </control>
+    <control>
+      <description>Award images</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>1552</posX>
+      <posY>865</posY>
+      <width>510</width>
+      <height>50</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <texture>#fanarthandler.movie.awards.selected.all</texture>
+      <animation effect="fade" start="0" end="100" time="300">visible</animation>
+    </control>
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <layout>StackLayout(0, Vertical, True)</layout>
+      <posX>75</posX>
+      <posY>270</posY>
+      <control>
+        <description>Genre Label</description>
+        <type>label</type>
+        <id>1</id>
+        <height>36</height>
+        <posY>195</posY>
+        <label>174</label>
+        <font>mp139.font10</font>
+        <textcolor>ff00bfff</textcolor>
+        <posX>213</posX>
+        <disabledcolor>90ffffff</disabledcolor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>Genre Value</description>
+        <type>fadelabel</type>
+        <id>1</id>
+        <height>36</height>
+        <posY>225</posY>
+        <width>720</width>
+        <label>#genre</label>
+        <font>mp139.font11</font>
+        <textcolor>lightgray</textcolor>
+        <posX>145</posX>
+        <align>left</align>
+        <wrapString>  |  </wrapString>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>Director Label</description>
+        <type>label</type>
+        <id>1</id>
+        <height>36</height>
+        <posY>264</posY>
+        <label>199</label>
+        <font>mp139.font10</font>
+        <textcolor>ff00bfff</textcolor>
+        <posX>213</posX>
+        <disabledcolor>90ffffff</disabledcolor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>Director Value</description>
+        <type>fadelabel</type>
+        <id>1</id>
+        <height>36</height>
+        <posY>294</posY>
+        <width>720</width>
+        <label>#director</label>
+        <font>mp139.font11</font>
+        <textcolor>lightgray</textcolor>
+        <posX>145</posX>
+        <align>left</align>
+        <wrapString>  |  </wrapString>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>Writers Label</description>
+        <type>label</type>
+        <id>1</id>
+        <height>36</height>
+        <posY>333</posY>
+        <label>200</label>
+        <font>mp139.font10</font>
+        <textcolor>ff00bfff</textcolor>
+        <posX>213</posX>
+        <disabledcolor>90ffffff</disabledcolor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>Writers Value</description>
+        <type>fadelabel</type>
+        <id>1</id>
+        <height>36</height>
+        <posY>363</posY>
+        <width>720</width>
+        <label>#credits</label>
+        <font>mp139.font11</font>
+        <textcolor>lightgray</textcolor>
+        <posX>145</posX>
+        <align>left</align>
+        <wrapString>  |  </wrapString>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>Studios Label</description>
+        <type>label</type>
+        <id>1</id>
+        <height>36</height>
+        <posY>402</posY>
+        <label>1274</label>
+        <font>mp139.font10</font>
+        <textcolor>ff00bfff</textcolor>
+        <posX>213</posX>
+        <disabledcolor>90ffffff</disabledcolor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>Studios Value</description>
+        <type>fadelabel</type>
+        <id>1</id>
+        <height>36</height>
+        <posY>432</posY>
+        <width>720</width>
+        <label>#studios</label>
+        <font>mp139.font11</font>
+        <textcolor>lightgray</textcolor>
+        <posX>145</posX>
+        <align>left</align>
+        <wrapString>  |  </wrapString>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>Year Label</description>
+        <type>label</type>
+        <id>1</id>
+        <height>36</height>
+        <posY>478</posY>
+        <label>201</label>
+        <font>mp139.font10</font>
+        <textcolor>ff00bfff</textcolor>
+        <posX>213</posX>
+        <disabledcolor>90ffffff</disabledcolor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>Year Value</description>
+        <type>label</type>
+        <id>1</id>
+        <height>36</height>
+        <posY>508</posY>
+        <label>#year</label>
+        <font>mp139.font11</font>
+        <textcolor>lightgray</textcolor>
+        <posX>213</posX>
+        <disabledcolor>90ffffff</disabledcolor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>Language txt</description>
+        <type>label</type>
+        <id>1</id>
+        <height>36</height>
+        <posY>547</posY>
+        <label>1275</label>
+        <font>mp139.font10</font>
+        <textcolor>ff00bfff</textcolor>
+        <posX>213</posX>
+        <disabledcolor>90ffffff</disabledcolor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>Language value</description>
+        <type>label</type>
+        <id>1</id>
+        <height>36</height>
+        <posY>577</posY>
+        <label>#language</label>
+        <font>mp139.font11</font>
+        <textcolor>lightgray</textcolor>
+        <posX>213</posX>
+        <disabledcolor>90ffffff</disabledcolor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>Runtime Label</description>
+        <type>label</type>
+        <id>1</id>
+        <height>36</height>
+        <posY>616</posY>
+        <label>299</label>
+        <font>mp139.font10</font>
+        <textcolor>ff00bfff</textcolor>
+        <posX>213</posX>
+        <disabledcolor>90ffffff</disabledcolor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>Runtime Value</description>
+        <type>label</type>
+        <id>1</id>
+        <height>36</height>
+        <posY>646</posY>
+        <label>#runtime</label>
+        <font>mp139.font11</font>
+        <textcolor>lightgray</textcolor>
+        <posX>213</posX>
+        <disabledcolor>90ffffff</disabledcolor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>Watched count Label</description>
+        <type>label</type>
+        <id>1</id>
+        <height>36</height>
+        <posY>685</posY>
+        <label>1278</label>
+        <font>mp139.font10</font>
+        <textcolor>ff00bfff</textcolor>
+        <posX>213</posX>
+        <disabledcolor>90ffffff</disabledcolor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>Watched count Value</description>
+        <type>label</type>
+        <id>1</id>
+        <height>36</height>
+        <posY>715</posY>
+        <label>#watchedcountx</label>
+        <font>mp139.font11</font>
+        <textcolor>lightgray</textcolor>
+        <posX>213</posX>
+        <disabledcolor>90ffffff</disabledcolor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <dimColor>ffffffff</dimColor>
+    </control>
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <layout>StackLayout(0, Vertical, True)</layout>
+      <posX>425</posX>
+      <posY>557</posY> 561
+      <control><description>MPAA Rating Label</description><type>label</type><id>1</id><height>36</height><posY>570</posY> 547
+        <label>173</label><font>mp139.font10</font><textcolor>ff00bfff</textcolor><posX>213</posX><disabledcolor>90ffffff</disabledcolor><shadowAngle>0</shadowAngle><shadowDistance>0</shadowDistance><shadowColor /></control><control><description>MPAA Rating Value</description><type>fadelabel</type><id>1</id><height>36</height><posY>577</posY><width>300</width><label>#mpaarating</label><font>mp139.font11</font><textcolor>lightgray</textcolor><posX>145</posX><align>left</align><wrapString>  |  </wrapString><scrollStartDelaySec>5</scrollStartDelaySec><shadowAngle>0</shadowAngle><shadowDistance>0</shadowDistance><shadowColor /></control><control><description>Country Label</description><type>label</type><id>1</id><height>36</height><posY>607</posY><label>1276</label><font>mp139.font10</font><textcolor>ff00bfff</textcolor><posX>213</posX><disabledcolor>90ffffff</disabledcolor><shadowAngle>0</shadowAngle><shadowDistance>0</shadowDistance><shadowColor /></control><control><description>Country Value</description><type>fadelabel</type><id>1</id><height>36</height><posY>637</posY><label>#country</label><font>mp139.font11</font><width>350</width><textcolor>lightgray</textcolor><posX>145</posX><align>left</align><wrapString>  |  </wrapString><scrollStartDelaySec>5</scrollStartDelaySec><shadowAngle>0</shadowAngle><shadowDistance>0</shadowDistance><shadowColor /></control><control><description>Video Runtime Label</description><type>label</type><id>1</id><height>36</height><posY>675</posY><label>#(L(291))-#(L(299))</label><font>mp139.font10</font><textcolor>ff00bfff</textcolor><posX>213</posX><disabledcolor>90ffffff</disabledcolor><shadowAngle>0</shadowAngle><shadowDistance>0</shadowDistance><shadowColor /></control><control><description>Video Runtime Value</description><type>label</type><id>1</id><height>36</height><posY>712</posY><label>#videoruntime</label><font>mp139.font11</font><textcolor>lightgray</textcolor><posX>213</posX><disabledcolor>90ffffff</disabledcolor><shadowAngle>0</shadowAngle><shadowDistance>0</shadowDistance><shadowColor /></control><control><description>Last watched Label</description><type>label</type><id>1</id><height>36</height><posY>744</posY><label>#SkinTranslation.Translations.LastWatched.Label (%):</label><font>mp139.font10</font><textcolor>ff00bfff</textcolor><posX>213</posX><disabledcolor>90ffffff</disabledcolor><shadowAngle>0</shadowAngle><shadowDistance>0</shadowDistance><shadowColor /></control><control><description>Last watched Value</description><type>label</type><id>1</id><height>36</height><posY>774</posY><label>#watchedpercent%</label><font>mp139.font11</font><textcolor>lightgray</textcolor><posX>213</posX><disabledcolor>90ffffff</disabledcolor><shadowAngle>0</shadowAngle><shadowDistance>0</shadowDistance><shadowColor /></control><dimColor>ffffffff</dimColor></control>
+    <!--     *******************************************************************************************  -->
+    <!--     ********************************  LAST UPDATE  ********************************************  -->
+    <!--     *******************************************************************************************  -->
+    <control>
+      <description>Last update Label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>75</posX>
+      <posY>865</posY>
+      <label>1279</label>
+      <font>mp139.font10</font>
+      <align>left</align>
+      <textcolor>ff00bfff</textcolor>
+      <disabledcolor>90ffffff</disabledcolor>
+      <shadowAngle>0</shadowAngle>
+      <shadowDistance>0</shadowDistance>
+      <shadowColor />
+    </control>
+    <control>
+      <description>Last update Value Movie</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>260</posX>
+      <posY>865</posY>
+      <label>#lastupdate</label>
+      <font>mp139.font10</font>
+      <align>left</align>
+      <textcolor>lightgray</textcolor>
+      <disabledcolor>90ffffff</disabledcolor>
+      <shadowAngle>0</shadowAngle>
+      <shadowDistance>0</shadowDistance>
+      <shadowColor />
+    </control>
+    <!--     *******************************************************************************************  -->
+    <!--     ********************************  PLOT / USERREVIEW TEXT   **********************************  -->
+    <!--     *******************************************************************************************  -->
+    <control Style="mp139.NoShadow">
+      <description>Plot value</description>
+      <type>textboxscrollup</type>
+      <id>20</id>
+      <posX>855</posX>
+      <posY>270</posY>
+      <width>600</width>
+      <height>570</height>
+      <label>#(iif(eq(#fanarthandler.movie.awards.selected.text,''),'#plot','#plot 
+
+ **** #fanarthandler.movie.awards.selected.text ****'))</label>
+      <font>mp139.font10</font>
+      <textcolor>lightgray</textcolor>
+      <visible>plugin.isenabled(Fanart Handler)</visible>
+      <seperator>. . . . . . .  . . . . . . . . . . . . . . . .  . . . . . . . . . . . . . . . . . . . .</seperator>
+      <textalign>left</textalign>
+      <scrollStartDelaySec>10</scrollStartDelaySec>
+      <spaceBetweenItems>3</spaceBetweenItems>
+      <shadowAngle>0</shadowAngle>
+      <shadowDistance>0</shadowDistance>
+      <shadowColor>0</shadowColor>
+    </control>
+    <control Style="mp139.NoShadow">
+      <description>Plot value</description>
+      <type>textboxscrollup</type>
+      <id>20</id>
+      <posX>855</posX>
+      <posY>270</posY>
+      <width>600</width>
+      <height>570</height>
+      <label>#plot</label>
+      <font>mp139.font10</font>
+      <textcolor>lightgray</textcolor>
+      <visible>!plugin.isenabled(Fanart Handler)</visible>
+      <seperator>. . . . . . .  . . . . . . . . . . . . . . . .  . . . . . . . . . . . . . . . . . . . .</seperator>
+      <textalign>left</textalign>
+      <scrollStartDelaySec>10</scrollStartDelaySec>
+      <spaceBetweenItems>3</spaceBetweenItems>
+      <shadowAngle>0</shadowAngle>
+      <shadowDistance>0</shadowDistance>
+      <shadowColor>0</shadowColor>
+    </control>
+    <control Style="mp139.NoShadow">
+      <description>Review value</description>
+      <type>textboxscrollup</type>
+      <id>23</id>
+      <posX>855</posX>
+      <posY>270</posY>
+      <width>600</width>
+      <height>570</height>
+      <label>#userreview</label>
+      <font>mp139.font10</font>
+      <seperator>. . . . . . .  . . . . . . . . . . . . . . . .  . . . . . . . . . . . . . . . . . . . .</seperator>
+      <textalign>left</textalign>
+      <textcolor>lightgray</textcolor>
+      <scrollStartDelaySec>10</scrollStartDelaySec>
+      <spaceBetweenItems>3</spaceBetweenItems>
+      <shadowAngle>0</shadowAngle>
+      <shadowDistance>0</shadowDistance>
+      <shadowColor>0</shadowColor>
+    </control>
+    <control Style="mp139.NoShadow">
+      <description>Awards value</description>
+      <type>textboxscrollup</type>
+      <id>51</id>
+      <posX>855</posX>
+      <posY>270</posY>
+      <width>600</width>
+      <height>570</height>
+      <label>#awards</label>
+      <font>mp139.font10</font>
+      <seperator>. . . . . . .  . . . . . . . . . . . . . . . .  . . . . . . . . . . . . . . . . . . . .</seperator>
+      <textalign>left</textalign>
+      <textcolor>lightgray</textcolor>
+      <scrollStartDelaySec>10</scrollStartDelaySec>
+      <spaceBetweenItems>3</spaceBetweenItems>
+      <shadowAngle>0</shadowAngle>
+      <shadowDistance>0</shadowDistance>
+      <shadowColor>0</shadowColor>
+    </control>
+    <control Style="mp139.NoShadow">
+      <description>MPAA value</description>
+      <type>textboxscrollup</type>
+      <id>53</id>
+      <posX>855</posX>
+      <posY>270</posY>
+      <width>600</width>
+      <height>570</height>
+      <label>#mpaatext</label>
+      <font>mp139.font10</font>
+      <seperator>. . . . . . .  . . . . . . . . . . . . . . . .  . . . . . . . . . . . . . . . . . . . .</seperator>
+      <textalign>left</textalign>
+      <textcolor>lightgray</textcolor>
+      <scrollStartDelaySec>10</scrollStartDelaySec>
+      <spaceBetweenItems>3</spaceBetweenItems>
+      <shadowAngle>0</shadowAngle>
+      <shadowDistance>0</shadowDistance>
+      <shadowColor>0</shadowColor>
+    </control>
+    <!--     *******************************************************************************************  -->
+    <!--     **************************************  MOVIE COVER  **************************************  -->
+    <!--     *******************************************************************************************  -->
+    <control>
+      <description>DefaultVideoBig</description>
+      <id>1</id>
+      <type>image</type>
+      <posX>1500</posX>
+      <posY>270</posY>
+      <width>360</width>
+      <height>510</height>
+      <texture mask="MP139\Videothumbmask.png">MP139\defaultVideoBig.png</texture>
+      <visible>!control.isvisible(24)+!control.hasthumb(21)</visible>
+    </control>
+    <control>
+      <description>DefaultVideoSeenBig</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>1500</posX>
+      <posY>270</posY>
+      <width>360</width>
+      <height>510</height>
+      <texture mask="MP139\Videothumbmask.png">MP139\defaultVideoSeenBig.png</texture>
+      <visible>!control.isvisible(24)+!string.equals(#watchedcount,0)+!control.hasthumb(21)</visible>
+    </control>
+    <control>
+      <description>Movie Cover Image</description>
+      <type>image</type>
+      <id>21</id>
+      <posX>1500</posX>
+      <posY>270</posY>
+      <width>360</width>
+      <height>510</height>
+      <!--<colorkey>FFFF00FF</colorkey>-->
+      <keepaspectratio>no</keepaspectratio>
+      <texture mask="MP139\Videothumbmask.png">#thumb</texture>
+      <colordiffuse>fff1f1f1</colordiffuse>
+      <visible>!control.isvisible(24)</visible>
+    </control>
+    <!--<control>
+      <description>Glass overlay</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>1500</posX>
+      <posY>270</posY>
+      <width>360</width>
+      <height>510</height>
+      <texture mask="MP139\Videothumbmask.png">glass_overlay_long.png</texture>
+      <visible>!control.isvisible(24)+control.hasthumb(21)</visible>
+    </control>-->
+    <control>
+      <description>Dummy button to be able to activate action menu</description>
+      <type>button</type>
+      <id>54321</id>
+      <posX>1500</posX>
+      <posY>270</posY>
+      <width>360</width>
+      <height>510</height>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <onleft>2</onleft>
+      <action>68</action>
+      <visible>!control.isvisible(24)</visible>
+      <textXOff>25</textXOff>
+      <textYOff>1</textYOff>
+      <textalign>left</textalign>
+      <textvalign>middle</textvalign>
+      <scrollStartDelaySec>5</scrollStartDelaySec>
+      <scrollWrapString>  |  </scrollWrapString>
+      <font>mp139.Label</font>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <disabledcolor>90ffffff</disabledcolor>
+      <textcolorNoFocus>ff00bfff</textcolorNoFocus>
+      <dimColor>90ffffff</dimColor>
+      <shadowAngle>0</shadowAngle>
+      <shadowDistance>0</shadowDistance>
+      <shadowColor />
+    </control>
+    <!--     *******************************************************************************************  -->
+    <!--     **************************************  ACTOR INFOS  **************************************  -->
+    <!--     *******************************************************************************************  -->
+    <control>
+      <description>Actors/Cast Image</description>
+      <type>image</type>
+      <id>25</id>
+      <posX>1500</posX>
+      <posY>270</posY>
+      <width>360</width>
+      <height>510</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <texture mask="MP139\Videothumbmask.png">#actorThumb</texture>
+      <visible>control.isvisible(24)+!string.equals(#actorThumb,MP139\defaultActor.png)</visible>
+    </control>
+    <control>
+      <description>Actors/Cast default image</description>
+      <id>1</id>
+      <type>image</type>
+      <posX>1500</posX>
+      <posY>270</posY>
+      <width>360</width>
+      <height>510</height>
+      <keepaspectratio>no</keepaspectratio>
+      <texture mask="MP139\Videothumbmask.png">MP139\defaultActorBIG.png</texture>
+      <visible>control.isvisible(24)+string.equals(#actorThumb,MP139\defaultActor.png)</visible>
+    </control>
+    <control>
+      <description>Actors/Cast List</description>
+      <type>listcontrol</type>
+      <id>24</id>
+      <posX>855</posX>
+      <posY>262</posY>
+      <width>555</width>
+      <height>670</height>
+      <onleft>2</onleft>
+      <onright>2</onright>
+      <scrollOffset>2</scrollOffset>
+      <scrollbarXOff>22</scrollbarXOff>
+      <spinPosX>3405</spinPosX>
+      <spinPosY>1020</spinPosY>
+      <spinCanFocus>no</spinCanFocus>
+      <unfocusedAlpha>160</unfocusedAlpha>
+      <font>mp139.font12</font>
+      <textvisible2>no</textvisible2>
+      <textvisible3>no</textvisible3>
+      <keepaspectratio>yes</keepaspectratio>
+      <scrollbarHeight>400</scrollbarHeight>
+      <scrollbarbg>MP139\bar_vert.png</scrollbarbg>
+      <scrollbartop>MP139\mouse_left_horizontal.png</scrollbartop>
+      <scrollbarbottom>MP139\mouse_right_horizontal.png</scrollbarbottom>
+      <scrollbarYOff>0</scrollbarYOff>
+      <showScrollbar>yes</showScrollbar>
+      <scrollbarwidth>20</scrollbarwidth>
+      <spinWidth>49</spinWidth>
+      <spinHeight>49</spinHeight>
+      <spinAlign>Right</spinAlign>
+      <spinColor>ffffffff</spinColor>
+      <textureUp>MP139\page_up_nofocus.png</textureUp>
+      <textureDown>MP139\page_down_nofocus.png</textureDown>
+      <textureUpFocus>MP139\page_up_focus.png</textureUpFocus>
+      <textureDownFocus>MP139\page_down_focus.png</textureDownFocus>
+      <textureFocus>MP139\list_sub_focus.png</textureFocus>
+      <textureNoFocus>MP139\list_sub_nofocus.png</textureNoFocus>
+      <textureHeight>48</textureHeight>
+      <spaceBetweenItems />
+      <shadedColor>20ffffff</shadedColor>
+      <selectedColor3>ff00ff00</selectedColor3>
+      <selectedColor2>ff00ff00</selectedColor2>
+      <selectedColor>ff00ff00</selectedColor>
+      <playedColor>ffffffff</playedColor>
+      <playedColor2>ffffffff</playedColor2>
+      <textcolor>ffffffff</textcolor>
+      <textcolorNoFocus>ffffffff</textcolorNoFocus>
+      <textcolor2>ffffffff</textcolor2>
+      <textcolor3>ffffffff</textcolor3>
+      <colordiffuse>ffffffff</colordiffuse>
+      <remoteColor>ff99f9ff</remoteColor>
+      <remoteColor2>ff99f9ff</remoteColor2>
+      <downloadColor>ff666666</downloadColor>
+      <downloadColor2>ff80ff80</downloadColor2>
+      <dimColor>ffffffff</dimColor>
+      <scrollStartDelaySec>1</scrollStartDelaySec>
+      <textXOff>15</textXOff>
+      <textYOff>2</textYOff>
+      <textXOff2>0</textXOff2>
+      <textYOff2>2</textYOff2>
+      <itemWidth>44</itemWidth>
+      <itemHeight>44</itemHeight>
+      <IconXOff>10</IconXOff>
+      <IconYOff>2</IconYOff>
+      <PinIconXOff>1177</PinIconXOff>
+      <PinIconYOff>9</PinIconYOff>
+      <PinIconWidth>35</PinIconWidth>
+      <PinIconHeight>25</PinIconHeight>
+      <folderPrefix />
+      <folderSuffix />
+      <shadowAngle>0</shadowAngle>
+      <shadowDistance>0</shadowDistance>
+      <shadowColor>0</shadowColor>
+    </control>
+    <!-- ********** Actors list (Old style for Non EN Scrapers)  ********** -->
+    <control Style="mp139.NoShadow">
+      <description>Actors list</description>
+      <type>textbox</type>
+      <id>22</id>
+      <posX>855</posX>
+      <posY>262</posY>
+      <width>600</width>
+      <height>540</height>
+      <onleft>2</onleft>
+      <onright>2</onright>
+      <onup>2</onup>
+      <ondown>2</ondown>
+      <label>#cast</label>
+      <font>mp139.font11</font>
+      <spinWidth>42</spinWidth>
+      <spinHeight>30</spinHeight>
+      <spinPosX>3126</spinPosX>
+      <spinPosY>993</spinPosY>
+      <spinColor>ffffffff</spinColor>
+      <textureUp>MP139\page_up_nofocus.png</textureUp>
+      <textureDown>MP139\page_down_nofocus.png</textureDown>
+      <textureUpFocus>MP139\page_up_focus.png</textureUpFocus>
+      <textureDownFocus>MP139\page_down_focus.png</textureDownFocus>
+      <image>emtpy.png</image>
+      <textcolor>lightgray</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <shadowAngle>0</shadowAngle>
+      <shadowDistance>0</shadowDistance>
+      <shadowColor>0</shadowColor>
+    </control>
+    <!--     *******************************************************************************************  -->
+    <!--     **************************************  MEDIA LOGOS  **************************************  -->
+    <!--     *******************************************************************************************  -->
+    <control>
+      <description>Separator Line</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>830</posX>
+      <posY>856</posY>
+      <width>650</width>
+      <height>1</height>
+      <texture>MP139\horizontalbar.png</texture>
+      <colordiffuse>90ffffff</colordiffuse>
+      <visible>
+      </visible>
+    </control>
+    <control>
+      <description>Logos group</description>
+      <type>group</type>
+      <posX>825</posX>
+      <posY>877</posY>
+      <layout>StackLayout(0, Horizontal, true)</layout>
+      <control>
+        <description>Certification (MPAA) Logo</description>
+        <type>image</type>
+        <id>0</id>
+        <width>85</width>
+        <height>55</height>
+        <texture>logos\#mpaarating.png</texture>
+        <keepaspectratio>yes</keepaspectratio>
+      </control>
+      <!-- Studio -->
+      <control>
+        <description>Studio Logo</description>
+        <type>image</type>
+        <id>0</id>
+        <width>85</width>
+        <height>50</height>
+        <texture>#fanarthandler.movie.studios.selected.single</texture>
+        <keepaspectratio>yes</keepaspectratio>
+      </control>
+      <control>
+        <description>Video codec</description>
+        <type>image</type>
+        <id>0</id>
+        <width>85</width>
+        <height>55</height>
+        <texture>logos\video\#VideoCodec.png</texture>
+        <keepaspectratio>yes</keepaspectratio>
+      </control>
+      <control>
+        <description>Video resolution</description>
+        <type>image</type>
+        <id>0</id>
+        <width>85</width>
+        <height>55</height>
+        <texture>logos\resolution\#VideoResolution.png</texture>
+        <keepaspectratio>yes</keepaspectratio>
+      </control>
+      <control>
+        <description>Aspect ratio</description>
+        <type>image</type>
+        <id>0</id>
+        <width>85</width>
+        <height>55</height>
+        <texture>logos\aspectratio\#AspectRatio.png</texture>
+        <keepaspectratio>yes</keepaspectratio>
+      </control>
+      <control>
+        <description>Audio codec</description>
+        <type>image</type>
+        <id>0</id>
+        <width>85</width>
+        <height>55</height>
+        <texture>logos\audio\#AudioCodec.png</texture>
+        <keepaspectratio>yes</keepaspectratio>
+      </control>
+      <control>
+        <description>Audio channels</description>
+        <type>image</type>
+        <id>0</id>
+        <width>85</width>
+        <height>55</height>
+        <texture>logos\audio\#AudioChannels.png</texture>
+        <keepaspectratio>yes</keepaspectratio>
+      </control>
+      <control>
+        <description>Subtitles</description>
+        <type>image</type>
+        <id>0</id>
+        <width>85</width>
+        <height>55</height>
+        <texture>#(iif(eq(#HasSubtitles,'true'),'MP139\Logos\Subtitles.png','MP139\Logos\nosubtitles.png'))</texture>
+        <keepaspectratio>yes</keepaspectratio>
+        <visible>
+        </visible>
+      </control>
+      <dimColor>ffffffff</dimColor>
+    </control>
+  </controls>
+</window>

@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <id>600</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <!--define>#header.label:#(iif(neq(#TV.Guide.ChangeGroup,' '),'#(L(605))  ·  #(L(4))  ·  #TV.Guide.ChangeGroup','#(L(605))  ·  #(L(4))'))</define-->
+  <define>#header.hover:MP139\hover_tvprogram.png</define>
+  <controls>
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background.tvguide.png</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+    </control>
+    <!--import>common.window.xml</import-->
+    <!--import>common.time.xml</import-->
+    <include>mp139.mytvguide.12lines.xml</include>
+    <include>mp139.mytvguide.nocolors.xml</include>
+    <!--include condition="!#skin.tvguide.usecolorsforbuttons">mytvguide.nocolors.xml</include-->
+    <control>
+      <type>fadelabel</type>
+      <description>e.g. Setup TV</description>
+      <id>0</id>
+      <posX>45</posX>
+      <posY>54</posY>
+      <label>#(iif(neq(#TV.Guide.ChangeGroup,' '),'#(L(605))  ·  #(L(4))  ·  #TV.Guide.ChangeGroup','#(L(605))  ·  #(L(4))'))</label>
+      <width>1802</width>
+      <align>left</align>
+      <font>font13</font>
+      <shadowAngle>0</shadowAngle>
+      <shadowDistance>
+      </shadowDistance>
+      <shadowColor>
+      </shadowColor>
+      <textcolor>lightgray</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <wrapString>  |  </wrapString>
+      <scrollStartDelaySec>5</scrollStartDelaySec>
+    </control>
+    <control>
+      <description>Date Time Weather</description>
+      <type>group</type>
+      <layout>StackLayout(5, Horizontal, true)</layout>
+      <posX>45</posX>
+      <posY>16</posY>
+      <align>left</align>
+      <width>1270</width>
+      <height>58</height>
+      <visible>[plugin.isenabled(World Weather)|plugin.isenabled(World Weather Lite)]+[[plugin.isenabled(Sleep Control)+string.equals(#SleepControl.Start, )]|!plugin.isenabled(Sleep Control)]</visible>
+      <control>
+        <type>fadelabel</type>
+        <description>Date Time Weather Label</description>
+        <id>0</id>
+        <label>#time  ·  #date  ·  #WorldWeather.Location: #WorldWeather.TodayCondition</label>
+        <width>50</width>
+        <maxWidth>1270</maxWidth>
+        <textcolor>fff5deb3</textcolor>
+        <shadowAngle>10</shadowAngle>
+        <shadowDistance>2</shadowDistance>
+        <shadowColor>ff000000</shadowColor>
+        <align>left</align>
+        <font>font13</font>
+        <posX>145</posX>
+        <posY>993</posY>
+        <wrapString>  |  </wrapString>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+      </control>
+      <control>
+        <type>image</type>
+        <description>Weather Icon</description>
+        <id>0</id>
+        <texture>#WorldWeather.TodayIconImage</texture>
+        <width>55</width>
+        <height>35</height>
+        <align>left</align>
+      </control>
+      <control>
+        <type>fadelabel</type>
+        <description>Temperature Label</description>
+        <id>0</id>
+        <label> #WorldWeather.TodayTemperature</label>
+        <width>20</width>
+        <maxWidth>1450</maxWidth>
+        <textcolor>fff5deb3</textcolor>
+        <shadowAngle>10</shadowAngle>
+        <shadowDistance>2</shadowDistance>
+        <shadowColor>ff000000</shadowColor>
+        <align>left</align>
+        <font>font13</font>
+        <posX>145</posX>
+        <posY>993</posY>
+        <wrapString>  |  </wrapString>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+      </control>
+      <dimColor>ffffffff</dimColor>
+    </control>
+    <control>
+      <description>Date</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>80</posX>
+      <posY>16</posY>
+      <label>#time  ·  #date</label>
+      <font>font13</font>
+      <align>left</align>
+      <textcolor>fff5deb3</textcolor>
+      <shadowAngle>10</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff000000</shadowColor>
+      <visible>!plugin.isenabled(World Weather)+!plugin.isenabled(World Weather Lite)+[[plugin.isenabled(Sleep Control)+string.equals(#SleepControl.Start, )]|!plugin.isenabled(Sleep Control)]</visible>
+      <disabledcolor>90ffffff</disabledcolor>
+    </control>
+    <control>
+      <description>Sleep Start/End</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>80</posX>
+      <posY>16</posY>
+      <label>#time  ·  SleepControl #SleepControl.Method: #SleepControl.Counter  (#SleepControl.Start - #SleepControl.End)</label>
+      <align>left</align>
+      <font>font13</font>
+      <textcolor>ffff0033</textcolor>
+      <shadowAngle>10</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff000000</shadowColor>
+      <visible>plugin.isenabled(Sleep Control)+!string.equals(#SleepControl.Start, )</visible>
+      <disabledcolor>90ffffff</disabledcolor>
+    </control>
+  </controls>
+</window>

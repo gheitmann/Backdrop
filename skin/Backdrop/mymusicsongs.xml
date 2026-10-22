@@ -1,0 +1,1366 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <id>501</id>
+  <defaultcontrol>50</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#header.label:134</define>
+  <define>#header.image:-</define>
+  <disabletopbar>no</disabletopbar>
+  <controls>
+    <control>
+      <description>DUMMY CONTROLL FOR VISIBILITY CONDITION</description>
+      <type>button</type>
+      <id>93761234</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <label>-</label>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>DUMMY CONTROLL FOR NAVIGATION CONDITION</description>
+      <type>label</type>
+      <id>93761264</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>2</width>
+      <visible>no</visible>
+    </control>
+    <import>common.fanart.selected.music.xml</import>
+    <control>
+      <description>Episode Details</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>overlay.mini.logo.png</texture>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>string.contains(#music.filetype)+Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Episode Details</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>overlay.mini.nologo.png</texture>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>!string.contains(#music.filetype)+Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Line separator</description>
+      <type>image</type>
+      <id>0</id>
+      <posY>503</posY>
+      <posX>1015</posX>
+      <height>25</height>
+      <width>905</width>
+      <shouldCache>true</shouldCache>
+      <texture>playlist_sub_nofocus4_end.png</texture>
+      <visible>[facadeview.list|facadeview.album]+Control.hasfocus(50)+!Control.isvisible(93761234)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="500,0" time="900" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" end="500,0" time="50" acceleration="0.5" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>Line separator</description>
+      <type>image</type>
+      <id>0</id>
+      <posY>528</posY>
+      <posX>1015</posX>
+      <height>552</height>
+      <width>905</width>
+      <shouldCache>true</shouldCache>
+      <texture>playlist_sub_nofocus2_bg.png</texture>
+      <visible>[facadeview.list|facadeview.album]+Control.hasfocus(50)+!Control.isvisible(93761234)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="500,0" time="900" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" end="500,0" time="50" acceleration="0.5" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>Header Background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background.header.png</texture>
+      <visible>Control.IsVisible(50)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">Hidden</animation>
+    </control>
+    <control>
+      <description>Title</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>30</posX>
+      <posY>45</posY>
+      <width>1350</width>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <font>font50BC</font>
+      <label>#selecteditem</label>
+      <scrollStartDelaySec>5</scrollStartDelaySec>
+      <visible>Control.IsVisible(50)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Genre</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>30</posX>
+      <posY>105</posY>
+      <width>1350</width>
+      <textcolor>ff7FB1E5</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <font>font14</font>
+      <label>#ArtistInfo.Genres</label>
+      <visible>Control.IsVisible(50)+string.equals(#ArtistInfo.Genres)+!string.equals(#AlbumInfo.Genre)+!string.equals(#genre)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Genre</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>30</posX>
+      <posY>105</posY>
+      <width>1350</width>
+      <textcolor>ff7FB1E5</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <font>font14</font>
+      <label>#AlbumInfo.Genre</label>
+      <visible>Control.IsVisible(50)+string.equals(#AlbumInfo.Genre)+!string.equals(#genre)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Genre</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>30</posX>
+      <posY>105</posY>
+      <width>1350</width>
+      <textcolor>ff7FB1E5</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <font>font14</font>
+      <label>#genre</label>
+      <visible>Control.IsVisible(50)+string.equals(#genre)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <import>common.facade.music.xml</import>
+    <control>
+      <description>Horizon Overlay - Filmstrip</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>1019</posY>
+      <width>1920</width>
+      <height>61</height>
+      <texture>horizon.overlay.png</texture>
+      <visible>facadeview.filmstrip+Control.HasFocus(50)+!Control.isvisible(93761234)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Horizon Bg - Filmstrip</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>1010</posY>
+      <width>1920</width>
+      <height>33</height>
+      <texture>horizon.png</texture>
+      <visible>facadeview.filmstrip+Control.HasFocus(50)+!Control.isvisible(93761234)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Music Thumb Default</description>
+      <id>600</id>
+      <type>image</type>
+      <posX>3</posX>
+      <posY>833</posY>
+      <width>245</width>
+      <height>242</height>
+      <keepaspectratio>no</keepaspectratio>
+      <centered>yes</centered>
+      <zoom>yes</zoom>
+      <shouldCache>true</shouldCache>
+      <texture mask="music_frame_rounder_corners_background1.png">nothumb.png</texture>
+      <visible>Control.isvisible(93761234)+!Control.hasthumb(987896)</visible>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Music Thumb Default</description>
+      <id>987896</id>
+      <type>image</type>
+      <posX>3</posX>
+      <posY>833</posY>
+      <width>245</width>
+      <height>242</height>
+      <keepaspectratio>no</keepaspectratio>
+      <centered>yes</centered>
+      <zoom>yes</zoom>
+      <shouldCache>true</shouldCache>
+      <texture mask="music_frame_rounder_corners_background1.png">#selectedthumb</texture>
+      <visible>Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Music Thumb Default</description>
+      <id>987896</id>
+      <type>image</type>
+      <posX>3</posX>
+      <posY>833</posY>
+      <width>245</width>
+      <height>242</height>
+      <keepaspectratio>no</keepaspectratio>
+      <centered>yes</centered>
+      <zoom>yes</zoom>
+      <shouldCache>true</shouldCache>
+      <texture>music_frame_rounder_corners.png</texture>
+      <visible>Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Description</description>
+      <type>textboxscrollup</type>
+      <id>0</id>
+      <posX>300</posX>
+      <posY>845</posY>
+      <width>950</width>
+      <height>220</height>
+      <textalign>left</textalign>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <textcolor>ffffffff</textcolor>
+      <shadowColor>FF333333</shadowColor>
+      <seperator>_______________________________________________________________________________________________________________</seperator>
+      <label>#ArtistInfo.Bio</label>
+      <font>font14</font>
+      <visible>Control.isvisible(93761234)+!string.equals(#AlbumInfo.Review)+!string.equals(#comment)</visible>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Description</description>
+      <type>textboxscrollup</type>
+      <id>15</id>
+      <posX>300</posX>
+      <posY>845</posY>
+      <width>950</width>
+      <height>220</height>
+      <textalign>left</textalign>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <textcolor>ffffffff</textcolor>
+      <shadowColor>FF333333</shadowColor>
+      <seperator>_______________________________________________________________________________________________________________</seperator>
+      <label>#AlbumInfo.Review</label>
+      <font>font14</font>
+      <visible>Control.isvisible(93761234)+!string.equals(#comment)</visible>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Description</description>
+      <type>textboxscrollup</type>
+      <id>0</id>
+      <posX>300</posX>
+      <posY>845</posY>
+      <width>950</width>
+      <height>220</height>
+      <textalign>left</textalign>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <textcolor>ffffffff</textcolor>
+      <shadowColor>FF333333</shadowColor>
+      <seperator>_______________________________________________________________________________________________________________</seperator>
+      <label>#comment</label>
+      <font>font14</font>
+      <visible>Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Genre Title</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1320</posX>
+      <posY>850</posY>
+      <label>Genre</label>
+      <font>font13BCB</font>
+      <align>left</align>
+      <width>585</width>
+      <textcolor>ff7FB1E5</textcolor>
+      <visible>[string.equals(#music.genre)|string.equals(#ArtistInfo.Genres)]+Control.isvisible(93761234)+!string.contains(#music.filetype)</visible>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Genre Value</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1510</posX>
+      <posY>850</posY>
+      <label>#ArtistInfo.Genres</label>
+      <font>font14</font>
+      <align>left</align>
+      <width>400</width>
+      <textcolor>ffcccccc</textcolor>
+      <visible>string.equals(#ArtistInfo.Genres)+!string.equals(#AlbumInfo.Genre)+!string.equals(#music.genre)+Control.isvisible(93761234)+!string.contains(#music.filetype)</visible>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Genre Value</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1510</posX>
+      <posY>850</posY>
+      <label>#AlbumInfo.Genre</label>
+      <font>font14</font>
+      <align>left</align>
+      <width>400</width>
+      <textcolor>ffcccccc</textcolor>
+      <visible>string.equals(#AlbumInfo.Genre)+!string.equals(#music.genre)+Control.isvisible(93761234)+!string.contains(#music.filetype)</visible>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Genre Value</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1560</posX>
+      <posY>850</posY>
+      <label>#music.genre</label>
+      <font>font14</font>
+      <align>left</align>
+      <width>350</width>
+      <textcolor>ffcccccc</textcolor>
+      <visible>string.equals(#music.genre)+Control.isvisible(93761234)+!string.contains(#music.filetype)</visible>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Album Title</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1320</posX>
+      <posY>890</posY>
+      <label>Album</label>
+      <font>font13BCB</font>
+      <align>left</align>
+      <width>585</width>
+      <textcolor>ff7FB1E5</textcolor>
+      <visible>string.equals(#music.album)+Control.isvisible(93761234)+!string.contains(#music.filetype)</visible>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Album Value</description>
+      <type>label</type>
+      <id>909080</id>
+      <posX>1560</posX>
+      <posY>890</posY>
+      <label>#music.album</label>
+      <font>font14</font>
+      <align>left</align>
+      <width>350</width>
+      <textcolor>ffcccccc</textcolor>
+      <visible>string.equals(#music.album)+Control.isvisible(93761234)+!string.contains(#music.filetype)</visible>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Genre Title</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1320</posX>
+      <posY>910</posY>
+      <label>Genre</label>
+      <font>font13BCB</font>
+      <align>left</align>
+      <width>585</width>
+      <textcolor>ff7FB1E5</textcolor>
+      <visible>[string.equals(#music.genre)|string.equals(#ArtistInfo.Genres)]+Control.isvisible(93761234)+string.contains(#music.filetype)</visible>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Genre Value</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1510</posX>
+      <posY>910</posY>
+      <label>#ArtistInfo.Genres</label>
+      <font>font14</font>
+      <align>left</align>
+      <width>400</width>
+      <textcolor>ffcccccc</textcolor>
+      <visible>string.equals(#ArtistInfo.Genres)+!string.equals(#AlbumInfo.Genre)+!string.equals(#music.genre)+Control.isvisible(93761234)+string.contains(#music.filetype)</visible>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Genre Value</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1510</posX>
+      <posY>910</posY>
+      <label>#AlbumInfo.Genre</label>
+      <font>font14</font>
+      <align>left</align>
+      <width>400</width>
+      <textcolor>ffcccccc</textcolor>
+      <visible>string.equals(#AlbumInfo.Genre)+!string.equals(#music.genre)+Control.isvisible(93761234)+string.contains(#music.filetype)</visible>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Genre Value</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1560</posX>
+      <posY>910</posY>
+      <label>#music.genre</label>
+      <font>font14</font>
+      <align>left</align>
+      <width>350</width>
+      <textcolor>ffcccccc</textcolor>
+      <visible>string.equals(#music.genre)+Control.isvisible(93761234)+string.contains(#music.filetype)</visible>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Album Title</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1320</posX>
+      <posY>947</posY>
+      <label>Album</label>
+      <font>font13BCB</font>
+      <align>left</align>
+      <width>585</width>
+      <textcolor>ff7FB1E5</textcolor>
+      <visible>string.equals(#music.album)+Control.isvisible(93761234)+string.contains(#music.filetype)</visible>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Album Value</description>
+      <type>label</type>
+      <id>909080</id>
+      <posX>1560</posX>
+      <posY>947</posY>
+      <label>#music.album</label>
+      <font>font14</font>
+      <align>left</align>
+      <width>350</width>
+      <textcolor>ffcccccc</textcolor>
+      <visible>string.equals(#music.album)+Control.isvisible(93761234)+string.contains(#music.filetype)</visible>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Channels Title</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1320</posX>
+      <posY>985</posY>
+      <label>Channels</label>
+      <font>font13BCB</font>
+      <align>left</align>
+      <width>585</width>
+      <textcolor>ff7FB1E5</textcolor>
+      <visible>string.equals(#music.channels)+Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Channels Value</description>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>1560</posX>
+      <posY>985</posY>
+      <width>350</width>
+      <textcolor>ffcccccc</textcolor>
+      <font>font14</font>
+      <label>#music.channels</label>
+      <visible>Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Samplerate Title</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1320</posX>
+      <posY>1022</posY>
+      <label>Samplerate</label>
+      <font>font13BCB</font>
+      <align>left</align>
+      <width>585</width>
+      <textcolor>ff7FB1E5</textcolor>
+      <visible>string.equals(#music.samplerate)+Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>samplerate Value</description>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>1560</posX>
+      <posY>1022</posY>
+      <width>350</width>
+      <textcolor>ffcccccc</textcolor>
+      <font>font14</font>
+      <label>#music.samplerate</label>
+      <visible>Control.isvisible(93761234)</visible>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>MP3</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1305</posX>
+      <posY>836</posY>
+      <width>80</width>
+      <height>40</height>
+      <colordiffuse>FF000000</colordiffuse>
+      <texture>Logos\AudioCodecs\MP3.png</texture>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>string.contains(#music.filetype,MP3)+Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>FLAC</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1305</posX>
+      <posY>836</posY>
+      <width>80</width>
+      <height>40</height>
+      <colordiffuse>FF000000</colordiffuse>
+      <texture>Logos\AudioCodecs\FLAC.png</texture>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>string.contains(#music.filetype,FLAC)+Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>VORBIS/OGG</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1305</posX>
+      <posY>836</posY>
+      <width>80</width>
+      <height>40</height>
+      <colordiffuse>FF000000</colordiffuse>
+      <texture>Logos\AudioCodecs\ogg.png</texture>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>[string.contains(#music.filetype,VORBIS)|string.contains(#music.filetype,OGG)]+Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>WMA</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1305</posX>
+      <posY>836</posY>
+      <width>80</width>
+      <height>40</height>
+      <colordiffuse>FF000000</colordiffuse>
+      <texture>Logos\AudioCodecs\wms.png</texture>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>string.contains(#music.filetype,WMA)+Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>WMA</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1305</posX>
+      <posY>836</posY>
+      <width>80</width>
+      <height>40</height>
+      <colordiffuse>FF000000</colordiffuse>
+      <texture>Logos\AudioCodecs\dts.png</texture>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>string.contains(#music.filetype,DTS)+Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Audio Channels</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1390</posX>
+      <posY>836</posY>
+      <width>80</width>
+      <height>40</height>
+      <colordiffuse>FF000000</colordiffuse>
+      <texture>Logos\AudioChannels\stereo.png</texture>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>string.contains(#music.channels,2)+Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Audio Channels</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1390</posX>
+      <posY>836</posY>
+      <width>80</width>
+      <height>40</height>
+      <colordiffuse>FF000000</colordiffuse>
+      <texture>Logos\AudioChannels\mono.png</texture>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>string.contains(#music.channels,1)+Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <type>imagelist</type>
+      <id>0</id>
+      <posX>1705</posX>
+      <posY>836</posY>
+      <textureWidth>38</textureWidth>
+      <textureHeight>38</textureHeight>
+      <subitems>
+        <subitem>star_empty.png</subitem>
+        <subitem>star_yellow.png</subitem>
+      </subitems>
+      <orientation>horizontal</orientation>
+      <align>left</align>
+      <imagesToDraw>5</imagesToDraw>
+      <percentage>#rating</percentage>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>string.contains(#music.rating)+Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <type>image</type>
+      <description>Dim background</description>
+      <id>0</id>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>overlay.dim.png</texture>
+      <visible>Control.IsVisible(50)+[Control.HasFocus(991799)|Control.HasFocus(991899)|Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(5)|Control.HasFocus(9)|Control.HasFocus(10)|Control.HasFocus(9876561)|Control.HasFocus(12)|Control.HasFocus(18)|Control.HasFocus(14)|Control.HasFocus(16)]</visible>
+      <animation effect="fade" time="450">visible</animation>
+      <animation effect="fade" time="400">hidden</animation>
+    </control>
+    <control>
+      <description>Menu Image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>890</posX>
+      <posY>0</posY>
+      <width>142</width>
+      <height>45</height>
+      <texture>button.menu.top.png</texture>
+      <visible>[facadeview.filmstrip|facadeview.coverflow]+Control.isvisible(50)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">Hidden</animation>
+    </control>
+    <control>
+      <description>Menu Image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>390</posY>
+      <width>45</width>
+      <height>142</height>
+      <texture>button.menu.left.png</texture>
+      <visible>Control.isvisible(50)+![facadeview.filmstrip|facadeview.coverflow]</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">Hidden</animation>
+    </control>
+    <control>
+      <type>actiongroup</type>
+      <description>action menu</description>
+      <defaultcontrol>2</defaultcontrol>
+      <onexit>50</onexit>
+      <visible>Control.IsVisible(50)+[Control.HasFocus(991799)|Control.HasFocus(991899)|Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(5)|Control.HasFocus(9)|Control.HasFocus(10)|Control.HasFocus(9876561)|Control.HasFocus(12)|Control.HasFocus(18)|Control.HasFocus(14)|Control.HasFocus(16)]</visible>
+      <control>
+        <type>group</type>
+        <animation effect="zoom" delay="20" tween="back" easing="out" start="1,1" end="100,100" center="960,461" time="550" reversible="true">Visible</animation>
+        <animation effect="zoom" delay="250" start="100,100" end="1,1" center="960,300" time="250" reversible="true">Hidden</animation>
+        <animation effect="rotatex" start="0" end="65" center="960,291" time="550" reversible="true">Hidden</animation>
+        <animation effect="fade" delay="500" start="100" end="0" time="50" reversible="true">Hidden</animation>
+        <control>
+          <type>image</type>
+          <id>0</id>
+          <posX>720</posX>
+          <posY>274</posY>
+          <width>540</width>
+          <height>562</height>
+          <texture>dialog_290_400.png</texture>
+          <animation effect="zoom" delay="20" tween="back" easing="out" start="1,1" end="100,100" center="960,461" time="550" reversible="true">Visible</animation>
+          <animation effect="zoom" delay="250" start="100,100" end="1,1" center="960,300" time="250" reversible="true">Hidden</animation>
+          <animation effect="rotatex" start="0" end="65" center="960,291" time="550" reversible="true">Hidden</animation>
+          <animation effect="fade" delay="500" start="100" end="0" time="50" reversible="true">Hidden</animation>
+          <visible>Control.IsVisible(50)+[Control.HasFocus(991799)|Control.HasFocus(991899)|Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(5)|Control.HasFocus(9)|Control.HasFocus(10)|Control.HasFocus(9876561)|Control.HasFocus(12)|Control.HasFocus(18)|Control.HasFocus(14)|Control.HasFocus(16)]</visible>
+        </control>
+        <control>
+          <description>Heading text label</description>
+          <type>label</type>
+          <id>0</id>
+          <posX>520</posX>
+          <posY>555</posY>
+          <width>510</width>
+          <label>924</label>
+          <font>font16BCB</font>
+          <align>center</align>
+          <textcolor>ff7FB1E5</textcolor>
+          <visible>Control.IsVisible(50)</visible>
+          <animation effect="fade" start="100" end="0" time="1">Hidden</animation>
+          <animation effect="fade" start="0" end="100" delay="500" time="250">Visible</animation>
+          <animation effect="rotate" start="90" end="90" time="1" condition="true">Conditional</animation>
+        </control>
+        <control>
+          <description>Now Playing Button</description>
+          <type>button</type>
+          <id>991899</id>
+          <posX>962</posX>
+          <posY>303</posY>
+          <width>70</width>
+          <height>27</height>
+          <textureFocus>play.now.button.focus.png</textureFocus>
+          <textureNoFocus>play.now.button.nofocus.png</textureNoFocus>
+          <hyperlink>510</hyperlink>
+          <onup>2</onup>
+          <ondown>2</ondown>
+          <onleft>50</onleft>
+          <onright>50</onright>
+          <animation effect="fade" delay="500" start="100" end="0" time="50" reversible="true">Hidden</animation>
+          <visible>control.isvisible(3337)+Player.HasAudio+Control.IsVisible(50)</visible>
+        </control>
+        <control>
+          <description>Now Playing Button Animation</description>
+          <type>image</type>
+          <id>0</id>
+          <posX>962</posX>
+          <posY>303</posY>
+          <width>70</width>
+          <height>27</height>
+          <shouldCache>true</shouldCache>
+          <texture>play.now.button.back.png</texture>
+          <animation effect="fade" time="450" delay="100" tween="cubic" easing="inout" condition="true" pulse="true">Conditional</animation>
+          <visible>control.isvisible(3337)+Player.HasAudio+Control.IsVisible(50)</visible>
+        </control>
+        <control>
+          <description>Video Window Button</description>
+          <type>button</type>
+          <id>991799</id>
+          <posX>962</posX>
+          <posY>303</posY>
+          <width>70</width>
+          <height>27</height>
+          <textureFocus>play.now.button.focus.png</textureFocus>
+          <textureNoFocus>play.now.button.nofocus.png</textureNoFocus>
+          <action>18</action>
+          <onup>991899</onup>
+          <ondown>2</ondown>
+          <onleft>50</onleft>
+          <onright>50</onright>
+          <animation effect="fade" delay="500" start="100" end="0" time="50" reversible="true">Hidden</animation>
+          <visible>Player.HasVideo+!control.isvisible(3337)+Control.IsVisible(50)</visible>
+        </control>
+        <control>
+          <description>Now Playing Button Animation</description>
+          <type>image</type>
+          <id>0</id>
+          <posX>962</posX>
+          <posY>303</posY>
+          <width>70</width>
+          <height>27</height>
+          <shouldCache>true</shouldCache>
+          <texture>play.now.button.back.png</texture>
+          <animation effect="fade" time="450" delay="100" tween="cubic" easing="inout" condition="true" pulse="true">Conditional</animation>
+          <visible>Player.HasVideo+!control.isvisible(3337)+Control.IsVisible(50)</visible>
+        </control>
+        <control>
+          <type>group</type>
+          <description>group element</description>
+          <posX>810</posX>
+          <posY>345</posY>
+          <id>0</id>
+          <layout>StackLayout(0)</layout>
+          <control>
+            <description>Menu Button 0</description>
+            <type>menubutton</type>
+            <id>2</id>
+            <width>420</width>
+            <label>
+            </label>
+            <textYOff>0</textYOff>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <textureFocus>-</textureFocus>
+            <font>font16BC</font>
+            <hover>-</hover>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>991899</onup>
+            <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+            <mode>dialoglist</mode>
+            <dialogTitle>792</dialogTitle>
+            <valueTextInButton>yes</valueTextInButton>
+            <valuePrefixText>95</valuePrefixText>
+          </control>
+          <control>
+            <description>Menu Button 1</description>
+            <type>sortbutton</type>
+            <id>3</id>
+            <width>420</width>
+            <label>103</label>
+            <textYOff>0</textYOff>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <textureFocus>-</textureFocus>
+            <font>font16BC</font>
+            <textYOff>0</textYOff>
+            <offsetSortButtonX>390</offsetSortButtonX>
+            <offsetSortButtonY>6</offsetSortButtonY>
+            <offsetSortButtonWidth>30</offsetSortButtonWidth>
+            <offsetSortButtonHeight>30</offsetSortButtonHeight>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>2</onup>
+            <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+          </control>
+          <control>
+            <description>Menu Button 2</description>
+            <type>menubutton</type>
+            <id>5</id>
+            <width>420</width>
+            <label>
+            </label>
+            <textYOff>0</textYOff>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <textureFocus>-</textureFocus>
+            <font>font16BC</font>
+            <hover>-</hover>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>3</onup>
+            <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+            <mode>dialoglist</mode>
+            <dialogTitle>499</dialogTitle>
+            <valueTextInButton>yes</valueTextInButton>
+            <valuePrefixText>97</valuePrefixText>
+          </control>
+          <control>
+            <description>Menu Button 3</description>
+            <type>button</type>
+            <id>9</id>
+            <width>420</width>
+            <label>4555</label>
+            <textYOff>0</textYOff>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <textureFocus>-</textureFocus>
+            <action>33</action>
+            <font>font16BC</font>
+            <hover>-</hover>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>5</onup>
+            <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+          </control>
+          <control>
+            <description>Menu Button 4</description>
+            <type>button</type>
+            <id>10</id>
+            <width>420</width>
+            <label>983</label>
+            <textYOff>0</textYOff>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <textureFocus>-</textureFocus>
+            <font>font16BC</font>
+            <hover>-</hover>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>9</onup>
+            <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+          </control>
+          <control>
+            <description>Menu Button 5</description>
+            <type>button</type>
+            <id>9876561</id>
+            <width>420</width>
+            <label>4540</label>
+            <textYOff>0</textYOff>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <textureFocus>-</textureFocus>
+            <font>font16BC</font>
+            <hyperlink>510</hyperlink>
+            <hover>-</hover>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>10</onup>
+            <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+          </control>
+          <control>
+            <description>Menu Button 6</description>
+            <type>button</type>
+            <id>12</id>
+            <width>420</width>
+            <textYOff>0</textYOff>
+            <label>#SkinTranslation.Translations.MusicSettings.Label</label>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <textureFocus>-</textureFocus>
+            <font>font16BC</font>
+            <hyperlink>14</hyperlink>
+            <hover>-</hover>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>9876561</onup>
+            <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+          </control>
+          <control>
+            <description>Menu Button 7</description>
+            <type>checkbutton</type>
+            <id>18</id>
+            <width>420</width>
+            <label>665</label>
+            <textYOff>0</textYOff>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <textureFocus>-</textureFocus>
+            <font>font16BC</font>
+            <hyperlink>30</hyperlink>
+            <hover>-</hover>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>12</onup>
+            <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+            <textureCheckmark>check-box.png</textureCheckmark>
+            <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+            <markWidth>30</markWidth>
+            <markHeight>30</markHeight>
+            <markalign>right</markalign>
+            <markXOff>12</markXOff>
+          </control>
+          <control>
+            <description>Menu Button 8</description>
+            <type>button</type>
+            <id>14</id>
+            <width>420</width>
+            <textYOff>0</textYOff>
+            <label>#SkinTranslation.Translations.MusicSearch.Label</label>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <textureFocus>-</textureFocus>
+            <font>font16BC</font>
+            <hyperlink>30885</hyperlink>
+            <hover>-</hover>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>18</onup>
+            <visible>plugin.isenabled(Search music)</visible>
+            <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+          </control>
+          <control>
+            <description>Menu Button 9</description>
+            <type>button</type>
+            <id>16</id>
+            <width>420</width>
+            <textYOff>0</textYOff>
+            <label>#SkinTranslation.Translations.Lyrics.Label</label>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <textureFocus>-</textureFocus>
+            <font>font16BC</font>
+            <hyperlink>90478</hyperlink>
+            <hover>-</hover>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>14</onup>
+            <ondown>2</ondown>
+            <visible>plugin.isenabled(My Lyrics)</visible>
+            <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+          </control>
+        </control>
+      </control>
+      <control>
+        <description>Button 2 - Navigating from up</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>810</posX>
+        <posY>345</posY>
+        <width>420</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(2)+Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 2 - Navigating from down</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>810</posX>
+        <posY>345</posY>
+        <width>420</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(2)+!Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 3 - Navigating from up</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>810</posX>
+        <posY>387</posY>
+        <width>420</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(3)+Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 3 - Navigating from down</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>810</posX>
+        <posY>387</posY>
+        <width>420</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(3)+!Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 5 - Navigating from up</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>810</posX>
+        <posY>429</posY>
+        <width>420</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(5)+Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 5 - Navigating from down</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>810</posX>
+        <posY>429</posY>
+        <width>420</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(5)+!Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 9 - Navigating from up</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>810</posX>
+        <posY>471</posY>
+        <width>420</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(9)+Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 9 - Navigating from down</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>810</posX>
+        <posY>471</posY>
+        <width>420</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(9)+!Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 10 - Navigating from up</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>810</posX>
+        <posY>513</posY>
+        <width>420</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(10)+Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 10 - Navigating from down</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>810</posX>
+        <posY>513</posY>
+        <width>420</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(10)+!Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 9876561 - Navigating from up</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>810</posX>
+        <posY>555</posY>
+        <width>420</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(9876561)+Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 9876561 - Navigating from down</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>810</posX>
+        <posY>555</posY>
+        <width>420</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(9876561)+!Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 12 - Navigating from up</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>810</posX>
+        <posY>597</posY>
+        <width>420</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(12)+Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 12 - Navigating from down</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>810</posX>
+        <posY>597</posY>
+        <width>420</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(12)+!Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 18 - Navigating from up</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>810</posX>
+        <posY>639</posY>
+        <width>420</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(18)+Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 18 - Navigating from down</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>810</posX>
+        <posY>639</posY>
+        <width>420</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(18)+!Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 14 - Navigating from up</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>810</posX>
+        <posY>681</posY>
+        <width>420</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(14)+Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 14 - Navigating from down</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>810</posX>
+        <posY>681</posY>
+        <width>420</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(14)+!Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 16 - Navigating from up</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>810</posX>
+        <posY>723</posY>
+        <width>420</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(16)+Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 16 - Navigating from down</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>810</posX>
+        <posY>723</posY>
+        <width>420</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(16)+!Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+    </control>
+    <control>
+      <description>Dummy Button...</description>
+      <type>button</type>
+      <id>8</id>
+      <posX>-200</posX>
+      <posY>0</posY>
+      <width>150</width>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <label />
+      <visible>no</visible>
+    </control>
+    <import>common.window.xml</import>
+    <import>common.overlays.xml</import>
+    <import>common.time.xml</import>
+  </controls>
+</window>

@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <id>7776</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>no</disabletopbar>
+  <define>#header.label:7776</define>
+  <controls>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>default.png</texture>
+    </control>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>overlay.transparent23.png</texture>
+    </control>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>overlay.default.png</texture>
+    </control>
+    <control>
+      <id>204</id>
+      <type>image</type>
+      <posX>685</posX>
+      <posY>428</posY>
+      <width>298</width>
+      <height>298</height>
+      <texture>#selectedthumb</texture>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+    </control>
+    <!--MENU **********************************************-->
+    <control>
+      <description>Menu Button 0</description>
+      <type>button</type>
+      <id>2</id>
+      <posX>30</posX>
+      <posY>170</posY>
+      <width>200</width>
+      <font>font14BC</font>
+      <textXOff>10</textXOff>
+      <textYOff>2</textYOff>
+      <label>19002</label>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <textcolorNoFocus>90cccccc</textcolorNoFocus>
+      <textalign>center</textalign>
+      <hover>-</hover>
+      <onup>991799</onup>
+      <ondown>4</ondown>
+      <onleft>10</onleft>
+      <onright>10</onright>
+      <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+    </control>
+    <control>
+      <description>Menu Button 1</description>
+      <type>checkbutton</type>
+      <id>4</id>
+      <posX>30</posX>
+      <posY>220</posY>
+      <width>200</width>
+      <textureFocus>-</textureFocus>
+      <font>font14BC</font>
+      <textXOff>10</textXOff>
+      <textYOff>2</textYOff>
+      <label>19004</label>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <textcolorNoFocus>90cccccc</textcolorNoFocus>
+      <textureFocus>dropdown_togglebutton_on.png</textureFocus>
+      <textureNoFocus>dropdown_togglebutton_nof_on.png</textureNoFocus>
+      <textalign>center</textalign>
+      <onup>2</onup>
+      <ondown>2</ondown>
+      <onleft>10</onleft>
+      <onright>10</onright>
+      <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+      <textureCheckmark>check-box.png</textureCheckmark>
+      <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+      <markWidth>30</markWidth>
+      <markHeight>30</markHeight>
+      <markalign>right</markalign>
+      <markvalign>middle</markvalign>
+      <markXOff>12</markXOff>
+    </control>
+    <control>
+      <description>Highscore Menu label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>60</posX>
+      <posY>300</posY>
+      <label>Results</label>
+      <font>font22</font>
+      <textcolor>ffffffff</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+    </control>
+    <control>
+      <description>info group</description>
+      <type>group</type>
+      <control>
+        <description>Score: label</description>
+        <type>label</type>
+        <id>201</id>
+        <posX>60</posX>
+        <posY>360</posY>
+        <label>19005</label>
+        <font>font12</font>
+        <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+        <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+        <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+      </control>
+      <control>
+        <description>Score</description>
+        <type>label</type>
+        <id>202</id>
+        <posX>480</posX>
+        <posY>360</posY>
+        <width>432</width>
+        <align>right</align>
+        <font>font12</font>
+        <label>#tetris_score</label>
+        <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+        <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+        <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+      </control>
+      <control>
+        <description>Level: label</description>
+        <type>label</type>
+        <id>203</id>
+        <posX>60</posX>
+        <posY>405</posY>
+        <label>19006</label>
+        <font>font12</font>
+        <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+        <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+        <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+      </control>
+      <control>
+        <description>Level</description>
+        <type>label</type>
+        <id>204</id>
+        <posX>480</posX>
+        <posY>405</posY>
+        <width>432</width>
+        <align>right</align>
+        <label>#tetris_level</label>
+        <font>font12</font>
+        <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+        <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+        <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+      </control>
+      <control>
+        <description>Lines: label</description>
+        <type>label</type>
+        <id>205</id>
+        <posX>60</posX>
+        <posY>450</posY>
+        <label>19007</label>
+        <font>font12</font>
+        <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+        <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+        <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+      </control>
+      <control>
+        <description>Lines</description>
+        <type>label</type>
+        <id>206</id>
+        <posX>480</posX>
+        <posY>450</posY>
+        <width>432</width>
+        <align>right</align>
+        <label>#tetris_lines</label>
+        <font>font12</font>
+        <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+        <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+        <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+      </control>
+      <control>
+        <description>Highscore: label</description>
+        <type>label</type>
+        <id>205</id>
+        <posX>60</posX>
+        <posY>495</posY>
+        <label>19008</label>
+        <font>font12</font>
+        <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+        <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+        <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+      </control>
+      <control>
+        <description>Highscore</description>
+        <type>label</type>
+        <id>206</id>
+        <posX>480</posX>
+        <posY>495</posY>
+        <width>432</width>
+        <align>right</align>
+        <label>#tetris_highscore</label>
+        <font>font12</font>
+        <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+        <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+        <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+      </control>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+    </control>
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <control>
+        <description>Tetris control</description>
+        <type>tetris</type>
+        <id>10</id>
+        <posX>572</posX>
+        <posY>210</posY>
+        <width>1053</width>
+        <height>843</height>
+        <font>font14</font>
+        <textcolor>ffffffff</textcolor>
+        <onback>2</onback>
+        <onleft>2</onleft>
+        <onright>10</onright>
+        <onup>10</onup>
+        <ondown>10</ondown>
+        <texture>no99.png</texture>
+        <texturefocus>no99.png</texturefocus>
+        <textureLeft>tetris\guide.png</textureLeft>
+        <textureRight>tetris\guide.png</textureRight>
+        <nextblockx>820</nextblockx>
+        <nextblocky>300</nextblocky>
+      </control>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+    </control>
+    <!--<import>common.overlays.xml</import>-->
+    <import>common.time.xml</import>
+    <import>common.overlays.xml</import>
+    <control>
+      <description>Header</description>
+      <type>fadelabel</type>
+      <id>12</id>
+      <posX>30</posX>
+      <posY>45</posY>
+      <width>1350</width>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <font>font50BC</font>
+      <label>Tetris</label>
+      <scrollStartDelaySec>5</scrollStartDelaySec>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+    </control>
+  </controls>
+</window>

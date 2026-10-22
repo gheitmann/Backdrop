@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <id>34</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>no</disabletopbar>
+  <controls>
+    <control>
+      <description>background image</description>
+      <type>image</type>
+      <id>1</id>
+      <width>1920</width>
+      <height>1080</height>
+    </control>
+    <control>
+      <description>template for panel in which all buttons should b fitted</description>
+      <type>image</type>
+      <id>1002</id>
+      <posX>1066</posX>
+      <posY>320</posY>
+      <width>600</width>
+      <height>549</height>
+      <texture>-</texture>
+    </control>
+    <control>
+      <description>template for hover image</description>
+      <type>image</type>
+      <id>1000</id>
+      <posX>3242</posX>
+      <posY>399</posY>
+      <align>center</align>
+      <texture>-</texture>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>template for button</description>
+      <type>button</type>
+      <id>1001</id>
+      <posX>1137</posX>
+      <posY>320</posY>
+      <width>450</width>
+      <textYOff>15</textYOff>
+      <height>98</height>
+      <label>605</label>
+      <font>font16BC</font>
+      <texture>hp_selectionbar.png</texture>
+      <textureFocus>hp_selectionbar.png</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <visible>no</visible>
+      <textcolor>ffffffff</textcolor>
+    </control>
+    <control>
+      <description>template label for small font</description>
+      <type>label</type>
+      <id>1003</id>
+      <posX>1508</posX>
+      <posY>980</posY>
+      <align>left</align>
+      <font>font16BC</font>
+      <visible>no</visible>
+      <textcolor>ffffffff</textcolor>
+    </control>
+    <control>
+      <description>Date</description>
+      <type>label</type>
+      <id>200</id>
+      <posX>654</posX>
+      <posY>339</posY>
+      <label>#date</label>
+      <align>right</align>
+      <font>font13</font>
+      <textcolor>ff7FB1E5</textcolor>
+    </control>
+    <control>
+      <description>Time</description>
+      <type>label</type>
+      <id>201</id>
+      <posX>682</posX>
+      <posY>339</posY>
+      <label>#time</label>
+      <align>left</align>
+      <font>font13</font>
+      <textcolor>ffffffff</textcolor>
+    </control>
+  </controls>
+  <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+  <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+</window>

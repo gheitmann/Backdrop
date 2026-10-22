@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>7900</id>
+  <defaultcontrol>3</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>yes</disabletopbar>
+  <controls>
+    <control>
+      <type>image</type>
+      <id>1</id>
+      <posX>309</posX>
+      <posY>120</posY>
+      <width>1455</width>
+      <height>686</height>
+      <texture>dialog_743_336.png</texture>
+    </control>
+    <control>
+      <description>Heading text label</description>
+      <type>label</type>
+      <id>4</id>
+      <posX>639</posX>
+      <posY>156</posY>
+      <label>181</label>
+      <font>font16BCB</font>
+      <textcolor>ff7FB1E5</textcolor>
+    </control>
+    <control>
+      <type>image</type>
+      <id>1</id>
+      <posX>294</posX>
+      <posY>141</posY>
+      <width>1365</width>
+      <height>75</height>
+      <texture>glasstitlebar.png</texture>
+    </control>
+    <control>
+      <description>Exit button</description>
+      <type>button</type>
+      <id>2</id>
+      <posX>1640</posX>
+      <posY>156</posY>
+      <width>38</width>
+      <height>38</height>
+      <textureFocus>button_close_focus.png</textureFocus>
+      <textureNoFocus>button_close_nofocus.png</textureNoFocus>
+      <label>-</label>
+      <onleft>3</onleft>
+      <onright>3</onright>
+      <onup>3</onup>
+      <ondown>3</ondown>
+      <textcolor>ffffffff</textcolor>
+    </control>
+    <control>
+      <description>textarea</description>
+      <type>textbox</type>
+      <id>3</id>
+      <posX>426</posX>
+      <posY>220</posY>
+      <width>1200</width>
+      <height>608</height>
+      <onleft>2</onleft>
+      <onright>2</onright>
+      <onup>2</onup>
+      <ondown>2</ondown>
+      <textcolor>ffffffff</textcolor>
+      <textureUp>arrow_round_up_nofocus.png</textureUp>
+      <textureDown>arrow_round_down_nofocus.png</textureDown>
+      <textureUpFocus>arrow_round_up_focus.png</textureUpFocus>
+      <textureDownFocus>arrow_round_down_focus.png</textureDownFocus>
+      <spinPosX>1500</spinPosX>
+      <spinPosY>693</spinPosY>
+    </control>
+  </controls>
+  <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="960,600" time="550">WindowOpen</animation>
+  <animation effect="zoom" start="100,100" end="1,1" center="960,600" time="350">WindowClose</animation>
+</window>

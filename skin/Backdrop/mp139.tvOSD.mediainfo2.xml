@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+    <control>
+      <type>group</type>
+      <description>group element</description>
+      <layout>GridLayout(2, 4, 0, 10, 1)</layout>
+      <posX>1545</posX>
+      <posY>825</posY>
+      <visible>!control.hasfocus(1237)+!control.hasfocus(1238)</visible>
+      <animation effect="fade" start="0" end="100" time="50" reversible="true">visiblechange</animation>
+      <control>
+        <description>Video resolution</description>
+        <type>image</type>
+        <id>0</id>
+        <width>102</width>
+        <height>40</height>
+        <texture>Logos\resolution\#Play.Current.VideoResolution.png</texture>
+        <keepaspectratio>yes</keepaspectratio>
+      </control>
+      <control>
+        <description>Video codec</description>
+        <type>image</type>
+        <id>0</id>
+        <width>102</width>
+        <height>40</height>
+        <texture>Logos\video\#Play.Current.VideoCodec.Texture.png</texture>
+        <keepaspectratio>yes</keepaspectratio>
+      </control>
+      <control>
+        <description>Audio codec</description>
+        <type>image</type>
+        <id>0</id>
+        <width>102</width>
+        <height>40</height>
+        <texture>Logos\audio\#Play.Current.AudioCodec.Texture.png</texture>
+        <keepaspectratio>yes</keepaspectratio>
+      </control>
+      <control>
+        <description>Audio channels</description>
+        <type>image</type>
+        <id>0</id>
+        <width>102</width>
+        <height>40</height>
+        <texture>#(iif(eq(#Play.Current.AudioChannels,'true'),'Logos\audio\#Play.Current.AudioChannels.png','MP139\Logos\audio\stereo.png'))</texture>
+        <keepaspectratio>yes</keepaspectratio>
+      </control>
+      <control>
+        <description>AspectRatio</description>
+        <type>image</type>
+        <id>0</id>
+        <width>102</width>
+        <height>40</height>
+        <texture>Logos\aspectratio\#Play.Current.AspectRatio.png</texture>
+        <keepaspectratio>yes</keepaspectratio>
+      </control>
+      <control>
+        <description>Teletext</description>
+        <type>image</type>
+        <id>0</id>
+        <width>102</width>
+        <height>40</height>
+        <texture>#(iif(eq(#TV.View.HasTeletext,'true'),'MP139\Logos\teletext.png','MP139\Logos\noteletext.png'))</texture>
+        <keepaspectratio>yes</keepaspectratio>
+      </control>
+      <control>
+        <description>Subtitles</description>
+        <type>image</type>
+        <id>0</id>
+        <width>102</width>
+        <height>40</height>
+        <texture>#(iif(eq(#Play.Current.HasSubtitles,'true'),'MP139\Logos\Subtitles.png','MP139\Logos\nosubtitles.png'))</texture>
+        <keepaspectratio>yes</keepaspectratio>
+      </control>
+      <control>
+        <description>FTA</description>
+        <type>image</type>
+        <id>0</id>
+        <width>102</width>
+        <height>40</height>
+        <texture>#(iif(eq(#TV.TuningDetails.FreeToAir,'TRUE'),'MP139\Logos\fta.png','MP139\Logos\nofta.png'))</texture>
+        <keepaspectratio>yes</keepaspectratio>
+      </control>
+    </control>
+    <control>
+      <description>Signal level</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1755</posX>
+      <posY>825</posY>
+      <label>Signal: #TV.TuningDetails.SignalLevel</label>
+      <font>mp139.font10</font>
+      <textcolor>white</textcolor>
+      <animation effect="fade" start="0" end="100" time="50" reversible="true">visiblechange</animation>
+      <visible>!control.hasfocus(1237)+!control.hasfocus(1238)</visible>
+    </control>
+    <control>
+      <description>Signal Quality</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1755</posX>
+      <posY>919</posY>
+      <label>Quality: #TV.TuningDetails.SignalQuality</label>
+      <font>mp139.font10</font>
+      <textcolor>white</textcolor>
+      <animation effect="fade" start="0" end="100" time="50" reversible="true">visiblechange</animation>
+      <visible>!control.hasfocus(1237)+!control.hasfocus(1238)</visible>
+    </control>
+    <control>
+      <description>Progress background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1755</posX>
+      <posY>865</posY>
+      <width>110</width>
+      <height>18</height>
+      <texture>MP139\osd_progress_background.png</texture>
+      <animation effect="fade" start="0" end="100" time="50" reversible="true">visiblechange</animation>
+      <visible>!control.hasfocus(1237)+!control.hasfocus(1238)</visible>
+    </control>
+    <control>
+      <description>Signal level progress bar</description>
+      <type>progress</type>
+      <id>0</id>
+      <posX>1744</posX>
+      <posY>867</posY>
+      <width>139</width>
+      <height>14</height>
+      <label>#TV.TuningDetails.SignalLevel</label>
+      <texturebg>-</texturebg>
+      <lefttexture>MP139\osd_progress_left.png</lefttexture>
+      <midtexture>MP139\osd_progress_mid.png</midtexture>
+      <righttexture>MP139\osd_progress_right.png</righttexture>
+      <animation effect="fade" start="0" end="100" time="50" reversible="true">visiblechange</animation>
+      <visible>!control.hasfocus(1237)+!control.hasfocus(1238)</visible>
+    </control>
+    <control>
+      <description>Progress background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1755</posX>
+      <posY>895</posY>
+      <width>110</width>
+      <height>18</height>
+      <texture>MP139\osd_progress_background.png</texture>
+      <animation effect="fade" start="0" end="100" time="50" reversible="true">visiblechange</animation>
+      <visible>!control.hasfocus(1237)+!control.hasfocus(1238)</visible>
+    </control>
+    <control>
+      <description>Signal level progress bar</description>
+      <type>progress</type>
+      <id>0</id>
+      <posX>1744</posX>
+      <posY>897</posY>
+      <width>139</width>
+      <height>14</height>
+      <label>#TV.TuningDetails.SignalQuality</label>
+      <texturebg>-</texturebg>
+      <lefttexture>MP139\osd_progress_left.png</lefttexture>
+      <midtexture>MP139\osd_progress_mid.png</midtexture>
+      <righttexture>MP139\osd_progress_right.png</righttexture>
+      <animation effect="fade" start="0" end="100" time="50" reversible="true">visiblechange</animation>
+      <visible>!control.hasfocus(1237)+!control.hasfocus(1238)</visible>
+    </control>
+    <control>
+      <description>Bitrate GIF</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1745</posX>
+      <posY>972</posY>
+      <width>102</width>
+      <height>40</height>
+      <texture>MP139\Logos\satellite.gif</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>!control.hasfocus(1237)+!control.hasfocus(1238)</visible>
+    </control>
+    <control>
+      <description>Bitrate</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1788</posX>
+      <posY>979</posY>
+      <label>#Play.Current.TSBitRate Mbit/s</label>
+      <align>left</align>
+      <font>mp139.font9</font>
+      <textcolor>white</textcolor>
+      <animation effect="fade" start="0" end="100" time="50" reversible="true">visiblechange</animation>
+      <visible>!control.hasfocus(1237)+!control.hasfocus(1238)</visible>
+    </control>
+    <control>
+      <description>divider</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1515</posX>
+      <posY>810</posY>
+      <height>230</height>
+      <width>2</width>
+      <texture>MP139\verticalbar.png</texture>
+      <visible>!control.hasfocus(1237)+!control.hasfocus(1238)</visible>
+    </control>
+  </controls>
+</window>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<window>
+  <controls>
+    <control>
+      <type>image</type>
+      <id>500</id>
+      <posX>885</posX>
+      <posY>60</posY>
+      <width>148</width>
+      <height>66</height>
+      <texture>volume.states.mute.png</texture>
+      <visible>no</visible>
+    </control>
+    <control>
+      <type>volumebar</type>
+      <id>501</id>
+      <posX>960</posX>
+      <posY>28</posY>
+      <align>center</align>
+      <height>36</height>
+      <width>15</width>
+      <imageHeight>3</imageHeight>
+      <texture>volume.states.png</texture>
+      <colordiffuse>White</colordiffuse>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>row 1 label</description>
+      <type>label</type>
+      <id>10</id>
+      <posX>0</posX>
+      <posY>1006</posY>
+      <width>1920</width>
+      <height>38</height>
+      <align>center</align>
+      <visible>no</visible>
+      <label>-</label>
+      <font>font12BC</font>
+    </control>
+    <control>
+      <description>row 2 label</description>
+      <type>label</type>
+      <id>11</id>
+      <posX>0</posX>
+      <posY>1006</posY>
+      <width>1920</width>
+      <height>38</height>
+      <label>-</label>
+      <font>font12BC</font>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>row 3 label</description>
+      <type>label</type>
+      <id>12</id>
+      <posX>0</posX>
+      <posY>1006</posY>
+      <width>1920</width>
+      <height>38</height>
+      <align>center</align>
+      <visible>no</visible>
+      <label>-</label>
+      <font>font12BC</font>
+    </control>
+  </controls>
+</window>

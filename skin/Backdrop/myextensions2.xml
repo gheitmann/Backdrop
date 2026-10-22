@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>801</id>
+  <defaultcontrol>50</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#header.label:14001</define>
+  <define>#header.image:-</define>
+  <define>#header.hover:-</define>
+  <controls>
+    <control>
+      <description>BACKGROUND</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>Animations\settings\default.jpg</texture>
+      <visible>[facadeview.filmstrip|facadeview.list|facadeview.album]</visible>
+    </control>
+    <control>
+      <description>music overlay image</description>
+      <type>image</type>
+      <id>9789671</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>overlay.default.logo.png</texture>
+      <visible>Control.IsVisible(50)+![facadeview.list|facadeview.album]</visible>
+    </control>
+    <control>
+      <description>music overlay image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>overlay.default.logo.list.png</texture>
+      <visible>[facadeview.list|facadeview.album]+Control.IsVisible(50)</visible>
+    </control>
+    <!--MENU **********************************************-->
+    <control>
+      <description>Dummy Basichome Button</description>
+      <type>button</type>
+      <id>12398755</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>2</width>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <label>-</label>
+      <font>font12</font>
+      <onleft>2</onleft>
+      <onright>2</onright>
+      <onup>2</onup>
+      <ondown>2</ondown>
+    </control>
+    <control clrtype="Menu">
+      <description>Menu Button 0</description>
+      <type>button</type>
+      <id>2</id>
+      <posX>45</posX>
+      <posY>102</posY>
+      <width>285</width>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <label>100</label>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <textcolorNoFocus>90cccccc</textcolorNoFocus>
+      <font>font16BC</font>
+      <hover>-</hover>
+      <onleft>8</onleft>
+      <onright>3</onright>
+      <onup>61700</onup>
+      <ondown>50</ondown>
+      <animation effect="fade" time="450" acceleration="-0.9" reversible="true">visiblechange</animation>
+      <visible allowhiddenfocus="true">Control.HasFocus(50)|Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(6)|Control.HasFocus(5)|Control.HasFocus(7)|Control.HasFocus(8)|Control.HasFocus(12398755)+!Control.IsVisible(12398756)</visible>
+    </control>
+    <control clrtype="Menu">
+      <description>Menu Button 1</description>
+      <type>sortbutton</type>
+      <id>3</id>
+      <posX>375</posX>
+      <posY>102</posY>
+      <width>210</width>
+      <label>
+      </label>
+      <onleft>2</onleft>
+      <onright>6</onright>
+      <onup>2</onup>
+      <ondown>50</ondown>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <textcolorNoFocus>90cccccc</textcolorNoFocus>
+      <font>font16BC</font>
+      <textYOff>8</textYOff>
+      <offsetSortButtonX>225</offsetSortButtonX>
+      <offsetSortButtonY>16</offsetSortButtonY>
+      <offsetSortButtonWidth>30</offsetSortButtonWidth>
+      <offsetSortButtonHeight>30</offsetSortButtonHeight>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <animation effect="fade" time="450" acceleration="-0.9" reversible="true">visiblechange</animation>
+      <visible allowhiddenfocus="true">Control.HasFocus(50)|Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(6)|Control.HasFocus(5)|Control.HasFocus(7)|Control.HasFocus(8)|Control.HasFocus(12398755)+!Control.IsVisible(12398756)</visible>
+    </control>
+    <control clrtype="Menu">
+      <description>Menu Button 2</description>
+      <type>button</type>
+      <id>6</id>
+      <posX>630</posX>
+      <posY>102</posY>
+      <width>153</width>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <label>14002</label>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <textcolorNoFocus>90cccccc</textcolorNoFocus>
+      <font>font16BC</font>
+      <hover>-</hover>
+      <onleft>3</onleft>
+      <onright>5</onright>
+      <onup>61700</onup>
+      <ondown>50</ondown>
+      <animation effect="fade" time="450" acceleration="-0.9" reversible="true">visiblechange</animation>
+      <visible allowhiddenfocus="true">Control.HasFocus(50)|Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(6)|Control.HasFocus(5)|Control.HasFocus(7)|Control.HasFocus(8)|Control.HasFocus(12398755)+!Control.IsVisible(12398756)</visible>
+    </control>
+    <control clrtype="Menu">
+      <description>Menu Button 3</description>
+      <type>button</type>
+      <id>5</id>
+      <posX>831</posX>
+      <posY>102</posY>
+      <width>273</width>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <label>Restart MP</label>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <textcolorNoFocus>90cccccc</textcolorNoFocus>
+      <font>font16BC</font>
+      <hover>-</hover>
+      <onleft>6</onleft>
+      <onright>7</onright>
+      <onup>61700</onup>
+      <ondown>50</ondown>
+      <animation effect="fade" time="450" acceleration="-0.9" reversible="true">visiblechange</animation>
+      <visible allowhiddenfocus="true">Control.HasFocus(50)|Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(6)|Control.HasFocus(5)|Control.HasFocus(7)|Control.HasFocus(8)|Control.HasFocus(12398755)+!Control.IsVisible(12398756)</visible>
+    </control>
+    <control clrtype="Menu">
+      <description>Menu Button 4</description>
+      <type>button</type>
+      <id>7</id>
+      <posX>1149</posX>
+      <posY>102</posY>
+      <width>297</width>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <label>Update Info</label>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <textcolorNoFocus>90cccccc</textcolorNoFocus>
+      <font>font16BC</font>
+      <hover>-</hover>
+      <onleft>5</onleft>
+      <onright>8</onright>
+      <onup>61700</onup>
+      <ondown>50</ondown>
+      <animation effect="fade" time="450" acceleration="-0.9" reversible="true">visiblechange</animation>
+      <visible allowhiddenfocus="true">Control.HasFocus(50)|Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(6)|Control.HasFocus(5)|Control.HasFocus(7)|Control.HasFocus(8)|Control.HasFocus(12398755)+!Control.IsVisible(12398756)</visible>
+    </control>
+    <control clrtype="Menu">
+      <description>Menu Button 5</description>
+      <type>button</type>
+      <id>8</id>
+      <posX>1506</posX>
+      <posY>102</posY>
+      <width>273</width>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <label>Update all</label>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <textcolorNoFocus>90cccccc</textcolorNoFocus>
+      <font>font16BC</font>
+      <hover>-</hover>
+      <onleft>7</onleft>
+      <onright>2</onright>
+      <onup>61700</onup>
+      <ondown>50</ondown>
+      <animation effect="fade" time="450" acceleration="-0.9" reversible="true">visiblechange</animation>
+      <visible allowhiddenfocus="true">Control.HasFocus(50)|Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(6)|Control.HasFocus(5)|Control.HasFocus(7)|Control.HasFocus(8)|Control.HasFocus(12398755)+!Control.IsVisible(12398756)</visible>
+    </control>
+    <control>
+      <description>Next Button</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>1881</posX>
+      <posY>111</posY>
+      <width>39</width>
+      <height>42</height>
+      <texture>next.arrow.png</texture>
+      <visible>Control.HasFocus(50)|Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(6)|Control.HasFocus(5)|Control.HasFocus(7)|Control.HasFocus(8)</visible>
+    </control>
+    <control>
+      <description>Previous Button</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>111</posY>
+      <width>39</width>
+      <height>42</height>
+      <texture>previous.arrow.png</texture>
+      <visible>Control.HasFocus(50)|Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(6)|Control.HasFocus(5)|Control.HasFocus(7)|Control.HasFocus(8)</visible>
+    </control>
+    <control>
+      <description>Extension Title shadow</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>632</posX>
+      <posY>729</posY>
+      <width>645</width>
+      <font>font22</font>
+      <align>left</align>
+      <textcolor>FF333333</textcolor>
+      <label>#selecteditem</label>
+    </control>
+    <control>
+      <description>Extension Title</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>633</posX>
+      <posY>730</posY>
+      <width>645</width>
+      <font>font22</font>
+      <align>left</align>
+      <textcolor>FFffffff</textcolor>
+      <label>#selecteditem</label>
+    </control>
+    <control>
+      <description>Extension Description</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>45</posX>
+      <posY>315</posY>
+      <label>Extension Description</label>
+      <font>font14</font>
+      <align>left</align>
+      <textcolor>ff7F9EB2</textcolor>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>Summary</description>
+      <type>textboxscrollup</type>
+      <id>0</id>
+      <posX>630</posX>
+      <posY>796</posY>
+      <width>645</width>
+      <height>273</height>
+      <seperator>_______________________________________________________________________________________________________________</seperator>
+      <label>#comment</label>
+      <font>font14</font>
+      <label>#MPE.Selected.Description</label>
+    </control>
+    <control>
+      <description>Extension Version Description</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1322</posX>
+      <posY>804</posY>
+      <width>720</width>
+      <textcolor>FF333333</textcolor>
+      <font>font16</font>
+      <label>Extension Version Description</label>
+    </control>
+    <control>
+      <description>Extension Version Description</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1320</posX>
+      <posY>802</posY>
+      <width>720</width>
+      <textcolor>ffffffff</textcolor>
+      <font>font16</font>
+      <label>Extension Version Description</label>
+    </control>
+    <control>
+      <description>Summary</description>
+      <type>textboxscrollup</type>
+      <id>0</id>
+      <posX>1320</posX>
+      <posY>852</posY>
+      <font>font14</font>
+      <height>213</height>
+      <width>585</width>
+      <textcolor>ffcccccc</textcolor>
+      <seperator>---------------------------------------------------</seperator>
+      <label>#MPE.Selected.VersionDescription</label>
+    </control>
+    <control>
+      <description>Extensions label</description>
+      <type>label</type>
+      <id>13</id>
+      <posX>1185</posX>
+      <posY>248</posY>
+      <width>1050</width>
+      <label>Extensions</label>
+      <font>font22</font>
+      <textcolor>ff7F9EB2</textcolor>
+      <align>left</align>
+      <visible>no</visible>
+    </control>
+    <import>common.facade.music.xml</import>
+    <import>common.time.xml</import>
+    <import>common.overlays.xml</import>
+    <control>
+      <description>Horizon Bg - Filmstrip</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>542</posY>
+      <width>1920</width>
+      <height>33</height>
+      <texture>horizon.png</texture>
+      <visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <id>0</id>
+      <type>image</type>
+      <posX>6</posX>
+      <posY>10</posY>
+      <width>56</width>
+      <height>42</height>
+      <texture>MPLogo.png</texture>
+    </control>
+    <control>
+      <description>Window Header Shadow</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>69</posX>
+      <posY>3</posY>
+      <width>600</width>
+      <height>75</height>
+      <align>left</align>
+      <font>font22</font>
+      <textcolor>FF333333</textcolor>
+      <label>#SkinTranslation.Translations.Extensions.Label</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Window Header</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>68</posX>
+      <posY>2</posY>
+      <width>600</width>
+      <height>75</height>
+      <align>left</align>
+      <font>font22</font>
+      <textcolor>ffcccccc</textcolor>
+      <label>#SkinTranslation.Translations.Extensions.Label</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+  </controls>
+</window>

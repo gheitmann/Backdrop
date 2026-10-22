@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+    <!-- ::::::::::::: LOGO SUPPORT :::::::::::::: -->
+    <!-- Video Codecs -->
+    <control>
+      <description>Video Codecs</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1551</posX>
+      <posY>900</posY>
+      <width>72</width>
+      <height>40</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+      <colordiffuse>95FFFFFF</colordiffuse>
+      <texture>Logos_W\VideoCodecs\#Play.Current.VideoCodec.Texture.png</texture>
+      <visible>Control.IsVisible(1700)</visible>
+      <!--<animation effect="fade" time="400" reversible="true">VisibleChange</animation>	-->
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="false">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="false">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <!--Video Resolutions-->
+    <control>
+      <description>Video Resolutions</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1623</posX>
+      <posY>900</posY>
+      <width>72</width>
+      <height>40</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+      <colordiffuse>95FFFFFF</colordiffuse>
+      <texture>Logos_W\VideoAspectRatio\#Play.Current.VideoResolution.png</texture>
+      <visible>Control.IsVisible(1700)</visible>
+      <!--<animation effect="fade" time="400" reversible="true">VisibleChange</animation>	-->
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="false">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="false">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <!--Video AspectRatio-->
+    <control>
+      <description>Video AspectRatio</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1695</posX>
+      <posY>900</posY>
+      <width>72</width>
+      <height>40</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+      <colordiffuse>95FFFFFF</colordiffuse>
+      <texture>Logos_W\VideoAspectRatio\#Play.Current.AspectRatio.png</texture>
+      <visible>Control.IsVisible(1700)</visible>
+      <!--<animation effect="fade" time="400" reversible="true">VisibleChange</animation>	-->
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="false">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="false">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <!-- Audio Codecs-->
+    <control>
+      <description>Audio Codecs</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1551</posX>
+      <posY>945</posY>
+      <width>72</width>
+      <height>40</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+      <colordiffuse>95FFFFFF</colordiffuse>
+      <texture>Logos_W\AudioCodecs\#Play.Current.AudioCodec.Texture.png</texture>
+      <visible>Control.IsVisible(1700)</visible>
+      <!--<animation effect="fade" time="400" reversible="true">VisibleChange</animation>	-->
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="false">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="false">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <!-- Audio Channels-->
+    <control>
+      <description>5.1 Audio Channels</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1623</posX>
+      <posY>945</posY>
+      <width>72</width>
+      <height>40</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+      <colordiffuse>95FFFFFF</colordiffuse>
+      <texture>Logos_W\AudioChannels\5.1.png</texture>
+      <visible>Control.IsVisible(1700)+[string.contains(#Play.Current.AudioChannels,5.1)|string.contains(#Play.Current.AudioChannels,5)]</visible>
+      <!--<animation effect="fade" time="400" reversible="true">VisibleChange</animation>	-->
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="false">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="false">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>7.1 Audio Channels</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1623</posX>
+      <posY>945</posY>
+      <width>72</width>
+      <height>40</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+      <colordiffuse>95FFFFFF</colordiffuse>
+      <texture>Logos_W\AudioChannels\7.1.png</texture>
+      <visible>Control.IsVisible(1700)+[string.contains(#Play.Current.AudioChannels,7.1)|string.contains(#Play.Current.AudioChannels,8)|string.contains(#Play.Current.AudioChannels,7)]</visible>
+      <!--<animation effect="fade" time="400" reversible="true">VisibleChange</animation>	-->
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="false">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="false">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Stereo Audio Channels</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1623</posX>
+      <posY>945</posY>
+      <width>72</width>
+      <height>40</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+      <colordiffuse>95FFFFFF</colordiffuse>
+      <texture>Logos_W\AudioChannels\stereo.png</texture>
+      <visible>Control.IsVisible(1700)+[string.contains(#Play.Current.AudioChannels,stereo)|string.contains(#Play.Current.AudioChannels,2)]</visible>
+      <!--<animation effect="fade" time="400" reversible="true">VisibleChange</animation>	-->
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="false">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="false">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Mono Audio Channels</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1623</posX>
+      <posY>945</posY>
+      <width>72</width>
+      <height>40</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+      <colordiffuse>95FFFFFF</colordiffuse>
+      <texture>Logos_W\AudioChannels\mono.png</texture>
+      <visible>Control.IsVisible(1700)+[string.contains(#Play.Current.AudioChannels,mono)]</visible>
+      <!--<animation effect="fade" time="400" reversible="true">VisibleChange</animation>	-->
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="false">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="false">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <!-- Has Subtitles -->
+    <control>
+      <description>Subtitles</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1695</posX>
+      <posY>945</posY>
+      <width>72</width>
+      <height>40</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+      <colordiffuse>95FFFFFF</colordiffuse>
+      <texture>Logos_W\Misc\subtitles.png</texture>
+      <visible>Control.IsVisible(1700)+[string.equals(#Play.Current.HasSubtitles,true)|string.equals(#Play.Current.HasSubtitles,1)]</visible>
+      <!--<animation effect="fade" time="400" reversible="true">VisibleChange</animation>	-->
+      <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="false">visible</animation>
+      <animation effect="fade" start="100" end="0" time="30" reversible="false">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+  </controls>
+</window>

@@ -1,0 +1,10 @@
+/dist/
+/Source/menu.resources
+**/bin/
+**/obj/
+*.user
+*.suo
+__pycache__/
+Thumbs.db
+/skin/Backdrop/SkinSettings.xml
+/skin/Backdrop/SkinSettings.xml.bak

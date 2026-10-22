@@ -1,0 +1,1275 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <id>2600</id>
+  <defaultcontrol>991999</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>no</disabletopbar>
+  <define>#header.label:8</define>
+  <controls>
+    <control>
+      <description>DUMMY CONTROLL FOR NAVIGATION CONDITION</description>
+      <type>label</type>
+      <id>93761254</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>2</width>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>DUMMY CONTROLL FOR NAVIGATION CONDITION</description>
+      <type>label</type>
+      <id>93761264</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>2</width>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>VADER BACKGROUND</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>Animations//weatherbg//#infoservice.weather.today.img.small.filenamewithoutext//weather.jpg</texture>
+    </control>
+    <control>
+      <description>Weather bg</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>200</posX>
+      <posY>0</posY>
+      <height>1080</height>
+      <width>1920</width>
+      <texture>weather_bg.png</texture>
+      <visible>Control.isvisible(42)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Weather Details bg</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>-220</posX>
+      <posY>0</posY>
+      <height>1080</height>
+      <width>1920</width>
+      <texture>weather_bg_details.png</texture>
+      <visible>!Control.isvisible(42) | Control.isvisible(42) </visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Details Label</description>
+      <type>label</type>
+      <id>0</id>
+      <align>left</align>
+      <posX>350</posX>
+      <posY>258</posY>
+      <width>502</width>
+      <font>font18</font>
+      <label>#SkinTranslation.Translations.Details.Label</label>
+      <visible>Control.isvisible(23)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Forecast Label</description>
+      <type>label</type>
+      <id>0</id>
+      <align>left</align>
+      <posX>1314</posX>
+      <posY>258</posY>
+      <width>502</width>
+      <font>font18</font>
+      <label>#SkinTranslation.Translations.WeatherForecast.Label</label>
+      <visible>Control.isvisible(42)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Weather Location</description>
+      <type>label</type>
+      <id>10</id>
+      <width>502</width>
+      <align>left</align>
+      <posX>162</posX>
+      <posY>300</posY>
+      <font>font14</font>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Last updated</description>
+      <type>label</type>
+      <id>11</id>
+      <width>502</width>
+      <align>left</align>
+      <posX>162</posX>
+      <posY>338</posY>
+      <textcolor>ff7F9EB2</textcolor>
+      <font>font11</font>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Dummu Button</description>
+      <type>button</type>
+      <id>991999</id>
+      <posX>3000</posX>
+      <posY>0</posY>
+      <width>2</width>
+      <height>2</height>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <onup>3</onup>
+      <ondown>3</ondown>
+      <onleft>3</onleft>
+      <onright>3</onright>
+    </control>
+    <control>
+      <description>Menu Image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>390</posY>
+      <width>45</width>
+      <height>142</height>
+      <texture>button.menu.left.png</texture>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+    </control>
+    <control>
+      <type>actiongroup</type>
+      <description>action menu</description>
+      <defaultcontrol>2</defaultcontrol>
+      <onexit>50</onexit>
+      <visible>[Control.HasFocus(991799)|Control.HasFocus(991899)|Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(4)|Control.HasFocus(5)]</visible>
+      <control>
+        <type>group</type>
+        <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="960,461" time="550" reversible="false">Visible</animation>
+        <animation effect="zoom" delay="250" start="100,100" end="1,1" center="960,300 " time="250" reversible="false">Hidden</animation>
+        <animation effect="rotatex" start="0" end="65" center="960,291" time="550">Hidden</animation>
+        <animation effect="fade" delay="500" start="100" end="0" time="50" reversible="false">Hidden</animation>
+        <control>
+          <type>image</type>
+          <id>0</id>
+          <posX>720</posX>
+          <posY>274</posY>
+          <width>480</width>
+          <height>435</height>
+          <texture>dialog_290_400.png</texture>
+        </control>
+        <control>
+          <description>Heading text label</description>
+          <type>label</type>
+          <id>0</id>
+          <posX>518</posX>
+          <posY>480</posY>
+          <width>510</width>
+          <label>924</label>
+          <font>font16BCB</font>
+          <align>center</align>
+          <textcolor>ff7FB1E5</textcolor>
+          <animation effect="fade" start="100" end="0" time="1">Hidden</animation>
+          <animation effect="fade" start="0" end="100" delay="100" time="250">Visible</animation>
+          <animation effect="rotate" start="90" end="90" time="1" condition="true">Conditional</animation>
+        </control>
+        <control>
+          <description>Now Playing Button</description>
+          <type>button</type>
+          <id>991899</id>
+          <posX>932</posX>
+          <posY>294</posY>
+          <width>70</width>
+          <height>27</height>
+          <textureFocus>play.now.button.focus.png</textureFocus>
+          <textureNoFocus>play.now.button.nofocus.png</textureNoFocus>
+          <hyperlink>510</hyperlink>
+          <onup>2</onup>
+          <ondown>2</ondown>
+          <onleft>50</onleft>
+          <onright>50</onright>
+          <visible>Player.HasAudio</visible>
+        </control>
+        <control>
+          <description>Now Playing Button Animation</description>
+          <type>image</type>
+          <id>0</id>
+          <posX>932</posX>
+          <posY>294</posY>
+          <width>70</width>
+          <height>27</height>
+          <shouldCache>true</shouldCache>
+          <texture>play.now.button.back.png</texture>
+          <animation effect="fade" time="450" delay="100" tween="cubic" easing="inout" condition="true" pulse="true">Conditional</animation>
+          <visible>Player.HasAudio</visible>
+        </control>
+        <control>
+          <description>Video Window Button</description>
+          <type>button</type>
+          <id>991799</id>
+          <posX>932</posX>
+          <posY>294</posY>
+          <width>70</width>
+          <height>27</height>
+          <textureFocus>play.now.button.focus.png</textureFocus>
+          <textureNoFocus>play.now.button.nofocus.png</textureNoFocus>
+          <action>18</action>
+          <onup>991899</onup>
+          <ondown>2</ondown>
+          <onleft>50</onleft>
+          <onright>50</onright>
+          <visible>Player.HasVideo+!control.isvisible(3337)</visible>
+        </control>
+        <control>
+          <description>Now Playing Button Animation</description>
+          <type>image</type>
+          <id>0</id>
+          <posX>932</posX>
+          <posY>294</posY>
+          <width>70</width>
+          <height>27</height>
+          <shouldCache>true</shouldCache>
+          <texture>play.now.button.back.png</texture>
+          <animation effect="fade" time="450" delay="100" tween="cubic" easing="inout" condition="true" pulse="true">Conditional</animation>
+          <visible>Player.HasVideo+!control.isvisible(3337)</visible>
+        </control>
+        <control>
+          <type>group</type>
+          <description>group element</description>
+          <posX>800</posX>
+          <posY>340</posY>
+          <id>24</id>
+          <layout>StackLayout(0)</layout>
+          <control>
+            <description>Refresh Button</description>
+            <type>button</type>
+            <id>3</id>
+            <label>184</label>
+            <textYOff>2</textYOff>
+            <onup>991799</onup>
+            <onleft>991999</onleft>
+            <onright>991999</onright>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90ffffff</textcolorNoFocus>
+            <textureFocus>-</textureFocus>
+            <font>font14BC</font>
+            <textXOff>10</textXOff>
+            <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+          </control>
+          <control>
+            <description>Switch Button</description>
+            <type>button</type>
+            <id>2</id>
+            <label>716</label>
+            <onup>3</onup>
+            <textYOff>2</textYOff>
+            <onleft>991999</onleft>
+            <onright>991999</onright>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90ffffff</textcolorNoFocus>
+            <textureFocus>-</textureFocus>
+            <font>font14BC</font>
+            <textXOff>10</textXOff>
+            <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+          </control>
+          <control>
+            <description>View Button</description>
+            <type>button</type>
+            <id>4</id>
+            <label>185</label>
+            <onup>2</onup>
+            <textYOff>2</textYOff>
+            <onleft>991999</onleft>
+            <onright>991999</onright>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90ffffff</textcolorNoFocus>
+            <textureFocus>-</textureFocus>
+            <font>font14BC</font>
+            <textXOff>10</textXOff>
+            <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+          </control>
+          <control>
+            <description>weather location select</description>
+            <type>button</type>
+            <id>5</id>
+            <label>1028</label>
+            <onup>4</onup>
+            <ondown>3</ondown>
+            <textYOff>2</textYOff>
+            <onleft>991999</onleft>
+            <onright>991999</onright>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90ffffff</textcolorNoFocus>
+            <textureFocus>-</textureFocus>
+            <font>font14BC</font>
+            <textXOff>10</textXOff>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+          </control>
+        </control>
+      </control>
+      <control>
+        <description>Button 3 - Navigating from up</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>800</posX>
+        <posY>340</posY>
+        <width>375</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(3)+Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,0" end="0,0" delay="100" time="900" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 3 - Navigating from down</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>800</posX>
+        <posY>340</posY>
+        <width>375</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(3)+!Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 2 - Navigating from up</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>800</posX>
+        <posY>382</posY>
+        <width>375</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(2)+Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 2 - Navigating from down</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>800</posX>
+        <posY>382</posY>
+        <width>375</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(2)+!Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 4 - Navigating from up</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>800</posX>
+        <posY>424</posY>
+        <width>375</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(4)+Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 4 - Navigating from down</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>800</posX>
+        <posY>424</posY>
+        <width>375</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(4)+!Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 5 - Navigating from up</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>800</posX>
+        <posY>466</posY>
+        <width>375</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(5)+Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 5 - Navigating from down</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>800</posX>
+        <posY>466</posY>
+        <width>375</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(5)+!Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+    </control>
+    <control>
+      <description>TWC Logo</description>
+      <type>image</type>
+      <id>101</id>
+      <posX>358</posX>
+      <posY>375</posY>
+      <width>171</width>
+      <height>128</height>
+      <texture>-</texture>
+      <visible>Control.HasFocus(12345)</visible>
+    </control>
+    <control>
+      <description>Thermometer image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>200</posX>
+      <posY>435</posY>
+      <height>68</height>
+      <width>18</width>
+      <centered>yes</centered>
+      <texture>thermometer.png</texture>
+      <visible>Control.isvisible(23)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Current Temp static label</description>
+      <type>label</type>
+      <id>223</id>
+      <posX>-2000</posX>
+      <posY>480</posY>
+      <label>Temp</label>
+      <font>font11</font>
+      <textcolor>White</textcolor>
+      <visible>no</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Feels Like Label</description>
+      <type>label</type>
+      <id>224</id>
+      <width>502</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>162</posX>
+      <posY>675</posY>
+      <font>font14</font>
+      <textcolor>ff7F9EB2</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Humidity Label</description>
+      <type>label</type>
+      <id>228</id>
+      <width>502</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>162</posX>
+      <posY>712</posY>
+      <font>font14</font>
+      <textcolor>ff7F9EB2</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Wind Label</description>
+      <type>label</type>
+      <id>227</id>
+      <width>502</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>162</posX>
+      <posY>825</posY>
+      <font>font14</font>
+      <textcolor>ff7F9EB2</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>UV Index Label</description>
+      <type>label</type>
+      <id>225</id>
+      <width>502</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>162</posX>
+      <posY>750</posY>
+      <font>font14</font>
+      <textcolor>ff7F9EB2</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Wind Label</description>
+      <type>label</type>
+      <id>226</id>
+      <width>502</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>162</posX>
+      <posY>788</posY>
+      <font>font14</font>
+      <textcolor>ff7F9EB2</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>sun rise static label</description>
+      <type>label</type>
+      <id>201</id>
+      <posX>162</posX>
+      <posY>864</posY>
+      <label>-</label>
+      <font>font14</font>
+      <textcolor>ff7F9EB2</textcolor>
+      <visible>no</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>sun set static label</description>
+      <type>label</type>
+      <id>203</id>
+      <posX>162</posX>
+      <posY>902</posY>
+      <label>-</label>
+      <font>font14</font>
+      <textcolor>ff7F9EB2</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>sun rise label</description>
+      <type>label</type>
+      <id>200</id>
+      <posX>380</posX>
+      <posY>864</posY>
+      <label>-</label>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>sun set label</description>
+      <type>label</type>
+      <id>202</id>
+      <posX>380</posX>
+      <posY>902</posY>
+      <label>-</label>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <visible>no</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>current weather icon</description>
+      <type>image</type>
+      <id>21</id>
+      <posX>455</posX>
+      <posY>360</posY>
+      <height>192</height>
+      <width>192</width>
+      <centered>yes</centered>
+      <texture>-</texture>
+      <colorkey>FFFF00FF</colorkey>
+      <colordiffuse>White:#20</colordiffuse>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Weather Condition</description>
+      <type>label</type>
+      <id>22</id>
+      <width>502</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>162</posX>
+      <posY>532</posY>
+      <font>font14</font>
+      <scrollStartDelaySec>7200</scrollStartDelaySec>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Weather Temperature</description>
+      <type>label</type>
+      <id>23</id>
+      <width>600</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>230</posX>
+      <posY>420</posY>
+      <font>font32</font>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Feels Like Value</description>
+      <type>label</type>
+      <id>24</id>
+      <width>300</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>380</posX>
+      <posY>675</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Humidity Value</description>
+      <type>label</type>
+      <id>28</id>
+      <width>300</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>380</posX>
+      <posY>712</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Wind Value</description>
+      <type>label</type>
+      <id>27</id>
+      <width>300</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>380</posX>
+      <posY>825</posY>
+      <font>font14</font>
+      <scrollStartDelaySec>1</scrollStartDelaySec>
+      <textcolor>ffffffff</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>UV Index Value</description>
+      <type>label</type>
+      <id>25</id>
+      <width>300</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>380</posX>
+      <posY>750</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Wind Value</description>
+      <type>label</type>
+      <id>26</id>
+      <width>300</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>380</posX>
+      <posY>788</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 0 Header</description>
+      <type>label</type>
+      <id>31</id>
+      <width>502</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>-2000</posX>
+      <posY>300</posY>
+      <font>font14</font>
+      <textcolor>ff7F9EB2</textcolor>
+      <label>-</label>
+      <visible>no</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 0 High</description>
+      <type>label</type>
+      <id>0</id>
+      <width>390</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>-2000</posX>
+      <posY>345</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>High:</label>
+      <visible>no</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 0 High</description>
+      <type>label</type>
+      <id>32</id>
+      <width>390</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>-2000</posX>
+      <posY>345</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>-</label>
+      <visible>no</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 0 Low</description>
+      <type>label</type>
+      <id>0</id>
+      <width>390</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>-2000</posX>
+      <posY>345</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>Low: </label>
+      <visible>no</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 0 Low</description>
+      <type>label</type>
+      <id>33</id>
+      <width>390</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>4425</posX>
+      <posY>345</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>-</label>
+      <visible>no</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 0 Condition</description>
+      <type>label</type>
+      <id>34</id>
+      <width>390</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>-2000</posX>
+      <posY>382</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>-</label>
+      <visible>no</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 0 image</description>
+      <type>image</type>
+      <id>35</id>
+      <posX>-2000</posX>
+      <posY>338</posY>
+      <height>96</height>
+      <width>96</width>
+      <centered>yes</centered>
+      <texture>-</texture>
+      <visible>no</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 1 Header</description>
+      <type>label</type>
+      <id>41</id>
+      <width>502</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>1232</posX>
+      <posY>300</posY>
+      <font>font14</font>
+      <textcolor>ff7F9EB2</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 1 High</description>
+      <type>label</type>
+      <id>0</id>
+      <width>390</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>1430</posX>
+      <posY>300</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>H:</label>
+      <visible>Control.isvisible(42)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 1 High</description>
+      <type>label</type>
+      <id>42</id>
+      <width>390</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>1468</posX>
+      <posY>300</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 1 Low</description>
+      <type>label</type>
+      <id>0</id>
+      <width>390</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>1595</posX>
+      <posY>300</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>L: </label>
+      <visible>Control.isvisible(43)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 1 Low</description>
+      <type>label</type>
+      <id>43</id>
+      <width>390</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>1625</posX>
+      <posY>300</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 1 Condition</description>
+      <type>label</type>
+      <id>44</id>
+      <width>345</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>1430</posX>
+      <posY>345</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 1 image</description>
+      <type>image</type>
+      <id>45</id>
+      <posX>1232</posX>
+      <posY>338</posY>
+      <height>96</height>
+      <width>96</width>
+      <centered>yes</centered>
+      <texture>-</texture>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 2 Header</description>
+      <type>label</type>
+      <id>51</id>
+      <width>502</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>1232</posX>
+      <posY>480</posY>
+      <font>font14</font>
+      <textcolor>ff7F9EB2</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 2 High</description>
+      <type>label</type>
+      <id>0</id>
+      <width>390</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>1430</posX>
+      <posY>480</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>H:</label>
+      <visible>Control.isvisible(52)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 2 High</description>
+      <type>label</type>
+      <id>52</id>
+      <width>390</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>1468</posX>
+      <posY>480</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 2 Low</description>
+      <type>label</type>
+      <id>0</id>
+      <width>390</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>1595</posX>
+      <posY>480</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>L: </label>
+      <visible>Control.isvisible(53)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 2 Low</description>
+      <type>label</type>
+      <id>53</id>
+      <width>390</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>1625</posX>
+      <posY>480</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 2 Condition</description>
+      <type>label</type>
+      <id>54</id>
+      <width>390</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>1430</posX>
+      <posY>525</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 2 image</description>
+      <type>image</type>
+      <id>55</id>
+      <posX>1232</posX>
+      <posY>518</posY>
+      <height>96</height>
+      <width>96</width>
+      <centered>yes</centered>
+      <texture>-</texture>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 3 Header</description>
+      <type>label</type>
+      <id>61</id>
+      <width>502</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>1232</posX>
+      <posY>660</posY>
+      <font>font14</font>
+      <textcolor>ff7F9EB2</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 3 High</description>
+      <type>label</type>
+      <id>0</id>
+      <width>390</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>1430</posX>
+      <posY>660</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>H:</label>
+      <visible>Control.isvisible(62)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 3 High</description>
+      <type>label</type>
+      <id>62</id>
+      <width>390</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>1468</posX>
+      <posY>660</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 3 Low</description>
+      <type>label</type>
+      <id>0</id>
+      <width>390</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>1595</posX>
+      <posY>660</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>L: </label>
+      <visible>Control.isvisible(63)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 3 Low</description>
+      <type>label</type>
+      <id>63</id>
+      <width>390</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>1625</posX>
+      <posY>660</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 3 Condition</description>
+      <type>label</type>
+      <id>64</id>
+      <width>390</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>1430</posX>
+      <posY>705</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 3 image</description>
+      <type>image</type>
+      <id>65</id>
+      <posX>1232</posX>
+      <posY>698</posY>
+      <height>96</height>
+      <width>96</width>
+      <centered>yes</centered>
+      <texture>-</texture>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 4 Header</description>
+      <type>label</type>
+      <id>71</id>
+      <width>502</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>1232</posX>
+      <posY>840</posY>
+      <font>font14</font>
+      <textcolor>ff7F9EB2</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 4 High</description>
+      <type>label</type>
+      <id>0</id>
+      <width>390</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>1430</posX>
+      <posY>840</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>H:</label>
+      <visible>Control.isvisible(72)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 4 High</description>
+      <type>label</type>
+      <id>72</id>
+      <width>390</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>1468</posX>
+      <posY>840</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 4 Low</description>
+      <type>label</type>
+      <id>0</id>
+      <width>390</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>1595</posX>
+      <posY>840</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>L: </label>
+      <visible>Control.isvisible(73)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 4 Low</description>
+      <type>label</type>
+      <id>73</id>
+      <width>390</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>1625</posX>
+      <posY>840</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 4 Condition</description>
+      <type>label</type>
+      <id>74</id>
+      <width>990</width>
+      <height>75</height>
+      <align>left</align>
+      <posX>1430</posX>
+      <posY>885</posY>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>-</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Day 4 image</description>
+      <type>image</type>
+      <id>75</id>
+      <posX>1232</posX>
+      <posY>878</posY>
+      <height>96</height>
+      <width>96</width>
+      <centered>yes</centered>
+      <texture>-</texture>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Satellite image</description>
+      <type>image</type>
+      <id>1000</id>
+      <posX>0</posX>
+      <posY>51</posY>
+      <width>1920</width>
+      <height>1029</height>
+      <texture />
+      <visible>no</visible>
+      <colorkey>00000000</colorkey>
+      <colordiffuse>White</colordiffuse>
+      <centered>yes</centered>
+      <keepaspectratio>no</keepaspectratio>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Sunclock image</description>
+      <type>image</type>
+      <keepaspectratio>no</keepaspectratio>
+      <id>1200</id>
+      <label>-</label>
+      <posY>225</posY>
+      <posX>12</posX>
+      <width>1893</width>
+      <height>670</height>
+      <onleft>3</onleft>
+      <onright>3</onright>
+      <onup>3</onup>
+      <ondown>3</ondown>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <import>common.time.xml</import>
+  </controls>
+</window>

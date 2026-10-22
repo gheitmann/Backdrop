@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>562</posX>
+      <posY>342</posY>
+      <width>870</width>
+      <height>390</height>
+      <texture>dialog_550_247.png</texture>
+    </control>
+    <control>
+      <description>dialog Heading</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>611</posX>
+      <posY>374</posY>
+      <width>698</width>
+      <label>-</label>
+      <font>font16BCB</font>
+      <textcolor>ff7FB1E5</textcolor>
+      <align>left</align>
+      <textalign>center</textalign>
+    </control>
+    <control>
+      <description>dialog line 1</description>
+      <type>fadelabel</type>
+      <id>2</id>
+      <posX>608</posX>
+      <posY>428</posY>
+      <label>-</label>
+      <width>690</width>
+      <font>font14BC</font>
+      <textcolor>ffffffff</textcolor>
+    </control>
+    <control>
+      <description>dialog line 2</description>
+      <type>label</type>
+      <id>3</id>
+      <posX>608</posX>
+      <posY>458</posY>
+      <label>-</label>
+      <width>690</width>
+      <font>font14BC</font>
+      <textcolor>ffffffff</textcolor>
+    </control>
+    <control>
+      <description>dialog line 3</description>
+      <type>label</type>
+      <id>4</id>
+      <posX>608</posX>
+      <posY>488</posY>
+      <label>-</label>
+      <width>690</width>
+      <font>font14BC</font>
+      <textcolor>ffffffff</textcolor>
+    </control>
+    <control>
+      <description>dialog line 4</description>
+      <type>label</type>
+      <id>5</id>
+      <posX>608</posX>
+      <posY>518</posY>
+      <label>-</label>
+      <width>690</width>
+      <font>font14BC</font>
+      <textcolor>ffffffff</textcolor>
+    </control>
+  </controls>
+  <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="960,600" time="550">WindowOpen</animation>
+  <animation effect="zoom" start="100,100" end="1,1" center="960,600" time="350">WindowClose</animation>
+</window>

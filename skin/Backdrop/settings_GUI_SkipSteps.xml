@@ -1,0 +1,1050 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <id>708</id>
+  <defaultcontrol>19</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <rememberLastFocusedControl>no</rememberLastFocusedControl>
+  <controls>
+    <import>mp139.common.settings.xml</import>
+    <import>mp139.common.time.xml</import>
+    <control>
+      <description>buttons</description>
+      <type>group</type>
+      <control>
+        <description>buttons</description>
+        <type>group</type>
+        <posX>92</posX>
+        <posY>305</posY>
+        <dimColor>ffffffff</dimColor>
+        <layout>StackLayout(0, Vertical, true)</layout>
+        <control>
+          <description>General Main setttings</description>
+          <type>button</type>
+          <id>9991</id>
+          <label>128</label>
+          <width>410</width>
+          <onup>17</onup>
+          <onright>2</onright>
+          <hyperlink>1016</hyperlink>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>General Skin settings</description>
+          <type>button</type>
+          <id>9992</id>
+          <label>101021</label>
+          <width>410</width>
+          <hyperlink>1021</hyperlink>
+          <onup>9991</onup>
+          <onright>19</onright>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>Screen</description>
+          <type>button</type>
+          <id>9993</id>
+          <label>6023</label>
+          <width>410</width>
+          <hyperlink>9</hyperlink>
+          <onup>9992</onup>
+          <onright>2</onright>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>TV</description>
+          <type>button</type>
+          <id>9994</id>
+          <label>605</label>
+          <width>410</width>
+          <hyperlink>700</hyperlink>
+          <onup>9993</onup>
+          <onright>2</onright>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>My Pictures</description>
+          <type>button</type>
+          <id>9995</id>
+          <label>1</label>
+          <width>410</width>
+          <hyperlink>12</hyperlink>
+          <onup>9994</onup>
+          <onright>2</onright>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>Movies</description>
+          <type>button</type>
+          <id>9996</id>
+          <label>3</label>
+          <width>410</width>
+          <hyperlink>703</hyperlink>
+          <onup>9995</onup>
+          <onright>2</onright>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>My DVD</description>
+          <type>button</type>
+          <id>9997</id>
+          <label>1027</label>
+          <width>410</width>
+          <hyperlink>704</hyperlink>
+          <onup>9996</onup>
+          <onright>2</onright>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>BluRay</description>
+          <type>button</type>
+          <id>9998</id>
+          <label>300217</label>
+          <width>410</width>
+          <hyperlink>1024</hyperlink>
+          <onup>9997</onup>
+          <onright>2</onright>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>My Music</description>
+          <type>button</type>
+          <id>9999</id>
+          <label>2</label>
+          <width>410</width>
+          <hyperlink>14</hyperlink>
+          <ondown>99910</ondown>
+          <onup>9998</onup>
+          <onright>2</onright>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>MiniDisplay</description>
+          <type>button</type>
+          <id>99910</id>
+          <label>9100</label>
+          <width>410</width>
+          <hyperlink>9000</hyperlink>
+          <ondown>9991</ondown>
+          <onup>9999</onup>
+          <onright>2</onright>
+          <visible>plugin.isenabled(MiniDisplay)</visible>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+      </control>
+      <control>
+        <description>add button</description>
+        <type>button</type>
+        <id>19</id>
+        <posX>655</posX>
+        <posY>305</posY>
+        <width>550</width>
+        <textureFocus>listbg_fo.png</textureFocus>
+        <label>200039</label>
+        <onup>127</onup>
+        <onright>2</onright>
+        <onleft>9992</onleft>
+        <height>60</height>
+        <textXOff>25</textXOff>
+        <textYOff>1</textYOff>
+        <textalign>left</textalign>
+        <textvalign>middle</textvalign>
+        <textureNoFocus>listbg_nf.png</textureNoFocus>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <scrollWrapString>  |  </scrollWrapString>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <colordiffuse>ffffffff</colordiffuse>
+        <disabledcolor>90ffffff</disabledcolor>
+        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <dimColor>90ffffff</dimColor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>remove button</description>
+        <type>button</type>
+        <id>20</id>
+        <posX>655</posX>
+        <posY>360</posY>
+        <width>550</width>
+        <textureFocus>listbg_fo.png</textureFocus>
+        <label>200040</label>
+        <onright>3</onright>
+        <onleft>9992</onleft>
+        <height>60</height>
+        <textXOff>25</textXOff>
+        <textYOff>1</textYOff>
+        <textalign>left</textalign>
+        <textvalign>middle</textvalign>
+        <textureNoFocus>listbg_nf.png</textureNoFocus>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <scrollWrapString>  |  </scrollWrapString>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <colordiffuse>ffffffff</colordiffuse>
+        <disabledcolor>90ffffff</disabledcolor>
+        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <dimColor>90ffffff</dimColor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>reset button</description>
+        <type>button</type>
+        <id>18</id>
+        <posX>655</posX>
+        <posY>415</posY>
+        <width>550</width>
+        <textureFocus>listbg_fo.png</textureFocus>
+        <label>886</label>
+        <ondown>22</ondown>
+        <onright>5</onright>
+        <onleft>9992</onleft>
+        <height>60</height>
+        <textXOff>25</textXOff>
+        <textYOff>1</textYOff>
+        <textalign>left</textalign>
+        <textvalign>middle</textvalign>
+        <textureNoFocus>listbg_nf.png</textureNoFocus>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <scrollWrapString>  |  </scrollWrapString>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <colordiffuse>ffffffff</colordiffuse>
+        <disabledcolor>90ffffff</disabledcolor>
+        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <dimColor>90ffffff</dimColor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <type>label</type>
+        <description>timeout label</description>
+        <id>1</id>
+        <posX>685</posX>
+        <posY>485</posY>
+        <width>550</width>
+        <label>300139</label>
+        <font>font12</font>
+        <textcolor>dodgerblue</textcolor>
+        <disabledcolor>90ffffff</disabledcolor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>Timeout button</description>
+        <type>button</type>
+        <id>22</id>
+        <posX>655</posX>
+        <posY>545</posY>
+        <width>550</width>
+        <textureFocus>listbg_fo.png</textureFocus>
+        <label>300140</label>
+        <ondown>23</ondown>
+        <onright>22</onright>
+        <onleft>9992</onleft>
+        <height>60</height>
+        <textXOff>25</textXOff>
+        <textYOff>1</textYOff>
+        <textalign>left</textalign>
+        <textvalign>middle</textvalign>
+        <textureNoFocus>listbg_nf.png</textureNoFocus>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <scrollWrapString>  |  </scrollWrapString>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <colordiffuse>ffffffff</colordiffuse>
+        <disabledcolor>90ffffff</disabledcolor>
+        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <dimColor>90ffffff</dimColor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <type>label</type>
+        <description>timeout value label</description>
+        <id>1</id>
+        <label>#timeoutValue</label>
+        <posX>1120</posX>
+        <posY>552</posY>
+        <font>font12</font>
+        <textcolor>FFdddddd</textcolor>
+        <disabledcolor>90ffffff</disabledcolor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <type>label</type>
+        <description>skip type label</description>
+        <id>1</id>
+        <posX>685</posX>
+        <posY>625</posY>
+        <width>550</width>
+        <label>300141</label>
+        <font>font12</font>
+        <textcolor>dodgerblue</textcolor>
+        <disabledcolor>90ffffff</disabledcolor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>skip type relative button</description>
+        <type>checkbutton</type>
+        <id>23</id>
+        <posX>655</posX>
+        <posY>685</posY>
+        <width>550</width>
+        <textureFocus>listbg_fo.png</textureFocus>
+        <label>300142</label>
+        <ondown>24</ondown>
+        <onright>23</onright>
+        <onleft>9992</onleft>
+        <height>60</height>
+        <textXOff>25</textXOff>
+        <textYOff>9</textYOff>
+        <textpadding>30</textpadding>
+        <textureNoFocus>listbg_nf.png</textureNoFocus>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <colordiffuse>ffffffff</colordiffuse>
+        <disabledcolor>90ffffff</disabledcolor>
+        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <dimColor>90ffffff</dimColor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+        <markWidth>43</markWidth>
+        <markHeight>42</markHeight>
+        <markXOff>20</markXOff>
+        <markYOff>10</markYOff>
+        <markalign>right</markalign>
+        <markvalign>middle</markvalign>
+        <textureCheckmark>check-box.png</textureCheckmark>
+        <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+        <textalign>left</textalign>
+        <textvalign>middle</textvalign>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <scrollWrapString>  |  </scrollWrapString>
+      </control>
+      <control>
+        <description>skip type constant button</description>
+        <type>checkbutton</type>
+        <id>24</id>
+        <posX>655</posX>
+        <posY>740</posY>
+        <width>550</width>
+        <textureFocus>listbg_fo.png</textureFocus>
+        <label>300143</label>
+        <ondown>25</ondown>
+        <onright>24</onright>
+        <onleft>9992</onleft>
+        <height>60</height>
+        <textXOff>25</textXOff>
+        <textYOff>9</textYOff>
+        <textpadding>30</textpadding>
+        <textureNoFocus>listbg_nf.png</textureNoFocus>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <colordiffuse>ffffffff</colordiffuse>
+        <disabledcolor>90ffffff</disabledcolor>
+        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <dimColor>90ffffff</dimColor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+        <markWidth>43</markWidth>
+        <markHeight>42</markHeight>
+        <markXOff>20</markXOff>
+        <markYOff>10</markYOff>
+        <markalign>right</markalign>
+        <markvalign>middle</markvalign>
+        <textureCheckmark>check-box.png</textureCheckmark>
+        <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+        <textalign>left</textalign>
+        <textvalign>middle</textvalign>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <scrollWrapString>  |  </scrollWrapString>
+      </control>
+      <control>
+        <description>Skip value button</description>
+        <type>button</type>
+        <id>25</id>
+        <posX>655</posX>
+        <posY>795</posY>
+        <width>550</width>
+        <textureFocus>listbg_fo.png</textureFocus>
+        <label>300144</label>
+        <ondown>19</ondown>
+        <onright>25</onright>
+        <onleft>9992</onleft>
+        <height>60</height>
+        <textXOff>25</textXOff>
+        <textYOff>1</textYOff>
+        <textalign>left</textalign>
+        <textvalign>middle</textvalign>
+        <textureNoFocus>listbg_nf.png</textureNoFocus>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <scrollWrapString>  |  </scrollWrapString>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <colordiffuse>ffffffff</colordiffuse>
+        <disabledcolor>90ffffff</disabledcolor>
+        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <dimColor>90ffffff</dimColor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <type>label</type>
+        <description>Skip value label</description>
+        <id>1</id>
+        <posX>1120</posX>
+        <posY>804</posY>
+        <label>#skipValue</label>
+        <font>font12</font>
+        <textcolor>FFdddddd</textcolor>
+        <disabledcolor>90ffffff</disabledcolor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>skip steps seconds</description>
+        <type>group</type>
+        <posX>1256</posX>
+        <posY>305</posY>
+        <layout>StackLayout(40)</layout>
+        <control>
+          <type>label</type>
+          <description>skip steps seconds</description>
+          <id>1</id>
+          <label>9997</label>
+          <font>font12</font>
+          <height>40</height>
+          <textcolor>dodgerblue</textcolor>
+          <posX>213</posX>
+          <posY>112</posY>
+          <disabledcolor>90ffffff</disabledcolor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>Step 1</description>
+          <type>checkmark</type>
+          <id>2</id>
+          <label> 5</label>
+          <onleft>19</onleft>
+          <onright>6</onright>
+          <onup>5</onup>
+          <ondown>3</ondown>
+          <posX>553</posX>
+          <posY>310</posY>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textureCheckmark>check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+          <MarkWidth>42</MarkWidth>
+          <MarkHeight>42</MarkHeight>
+          <align>right</align>
+          <shadow>no</shadow>
+        </control>
+        <control>
+          <description>Step 2</description>
+          <type>checkmark</type>
+          <id>3</id>
+          <label> 15</label>
+          <onleft>20</onleft>
+          <onright>7</onright>
+          <onup>2</onup>
+          <ondown>4</ondown>
+          <posX>553</posX>
+          <posY>310</posY>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textureCheckmark>check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+          <MarkWidth>42</MarkWidth>
+          <MarkHeight>42</MarkHeight>
+          <align>right</align>
+          <shadow>no</shadow>
+        </control>
+        <control>
+          <description>Step 3</description>
+          <type>checkmark</type>
+          <id>4</id>
+          <label> 30</label>
+          <onleft>20</onleft>
+          <onright>8</onright>
+          <onup>3</onup>
+          <ondown>5</ondown>
+          <posX>553</posX>
+          <posY>310</posY>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textureCheckmark>check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+          <MarkWidth>42</MarkWidth>
+          <MarkHeight>42</MarkHeight>
+          <align>right</align>
+          <shadow>no</shadow>
+        </control>
+        <control>
+          <description>Step 4</description>
+          <type>checkmark</type>
+          <id>5</id>
+          <label> 45</label>
+          <onleft>18</onleft>
+          <onright>9</onright>
+          <onup>4</onup>
+          <ondown>2</ondown>
+          <posX>553</posX>
+          <posY>310</posY>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textureCheckmark>check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+          <MarkWidth>42</MarkWidth>
+          <MarkHeight>42</MarkHeight>
+          <align>right</align>
+          <shadow>no</shadow>
+        </control>
+        <dimColor>ffffffff</dimColor>
+      </control>
+      <control>
+        <description>skip steps minutes</description>
+        <type>group</type>
+        <posX>1456</posX>
+        <posY>305</posY>
+        <layout>StackLayout(40)</layout>
+        <control>
+          <description>skip steps minutes</description>
+          <type>label</type>
+          <id>1</id>
+          <label>9998</label>
+          <height>40</height>
+          <font>font12</font>
+          <textcolor>dodgerblue</textcolor>
+          <posX>213</posX>
+          <posY>112</posY>
+          <disabledcolor>90ffffff</disabledcolor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>Step 5</description>
+          <type>checkmark</type>
+          <id>6</id>
+          <label> 1</label>
+          <onleft>2</onleft>
+          <onright>14</onright>
+          <onup>13</onup>
+          <ondown>7</ondown>
+          <posX>553</posX>
+          <posY>310</posY>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textureCheckmark>check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+          <MarkWidth>42</MarkWidth>
+          <MarkHeight>42</MarkHeight>
+          <align>right</align>
+          <shadow>no</shadow>
+        </control>
+        <control>
+          <description>Step 6</description>
+          <type>checkmark</type>
+          <id>7</id>
+          <label> 3</label>
+          <onleft>3</onleft>
+          <onright>15</onright>
+          <onup>6</onup>
+          <ondown>8</ondown>
+          <posX>553</posX>
+          <posY>310</posY>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textureCheckmark>check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+          <MarkWidth>42</MarkWidth>
+          <MarkHeight>42</MarkHeight>
+          <align>right</align>
+          <shadow>no</shadow>
+        </control>
+        <control>
+          <description>Step 7</description>
+          <type>checkmark</type>
+          <id>8</id>
+          <label> 5</label>
+          <onleft>4</onleft>
+          <onright>16</onright>
+          <onup>7</onup>
+          <ondown>9</ondown>
+          <posX>553</posX>
+          <posY>310</posY>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textureCheckmark>check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+          <MarkWidth>42</MarkWidth>
+          <MarkHeight>42</MarkHeight>
+          <align>right</align>
+          <shadow>no</shadow>
+        </control>
+        <control>
+          <description>Step 8</description>
+          <type>checkmark</type>
+          <id>9</id>
+          <label> 7</label>
+          <onleft>5</onleft>
+          <onright>17</onright>
+          <onup>8</onup>
+          <ondown>10</ondown>
+          <posX>553</posX>
+          <posY>310</posY>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textureCheckmark>check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+          <MarkWidth>42</MarkWidth>
+          <MarkHeight>42</MarkHeight>
+          <align>right</align>
+          <shadow>no</shadow>
+        </control>
+        <control>
+          <description>Step 9</description>
+          <type>checkmark</type>
+          <id>10</id>
+          <label> 10</label>
+          <onleft>5</onleft>
+          <onright>17</onright>
+          <onup>9</onup>
+          <ondown>11</ondown>
+          <posX>553</posX>
+          <posY>310</posY>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textureCheckmark>check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+          <MarkWidth>42</MarkWidth>
+          <MarkHeight>42</MarkHeight>
+          <align>right</align>
+          <shadow>no</shadow>
+        </control>
+        <control>
+          <description>Step 10</description>
+          <type>checkmark</type>
+          <id>11</id>
+          <label> 15</label>
+          <onleft>5</onleft>
+          <onright>17</onright>
+          <onup>10</onup>
+          <ondown>12</ondown>
+          <posX>553</posX>
+          <posY>310</posY>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textureCheckmark>check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+          <MarkWidth>42</MarkWidth>
+          <MarkHeight>42</MarkHeight>
+          <align>right</align>
+          <shadow>no</shadow>
+        </control>
+        <control>
+          <description>Step 11</description>
+          <type>checkmark</type>
+          <id>12</id>
+          <label> 30</label>
+          <onleft>5</onleft>
+          <onright>17</onright>
+          <onup>11</onup>
+          <ondown>13</ondown>
+          <posX>553</posX>
+          <posY>310</posY>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textureCheckmark>check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+          <MarkWidth>42</MarkWidth>
+          <MarkHeight>42</MarkHeight>
+          <align>right</align>
+          <shadow>no</shadow>
+        </control>
+        <control>
+          <description>Step 12</description>
+          <type>checkmark</type>
+          <id>13</id>
+          <label> 45</label>
+          <onleft>5</onleft>
+          <onright>17</onright>
+          <onup>12</onup>
+          <ondown>6</ondown>
+          <posX>553</posX>
+          <posY>310</posY>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textureCheckmark>check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+          <MarkWidth>42</MarkWidth>
+          <MarkHeight>42</MarkHeight>
+          <align>right</align>
+          <shadow>no</shadow>
+        </control>
+        <dimColor>ffffffff</dimColor>
+      </control>
+      <control>
+        <description>skip steps hours</description>
+        <type>group</type>
+        <posX>1656</posX>
+        <posY>305</posY>
+        <layout>StackLayout(40)</layout>
+        <control>
+          <description>skip steps hours</description>
+          <type>label</type>
+          <id>1</id>
+          <label>9999</label>
+          <font>font12</font>
+          <height>40</height>
+          <textcolor>dodgerblue</textcolor>
+          <posX>213</posX>
+          <posY>112</posY>
+          <disabledcolor>90ffffff</disabledcolor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>Step 13</description>
+          <type>checkmark</type>
+          <id>14</id>
+          <label> 1</label>
+          <onleft>6</onleft>
+          <onright>14</onright>
+          <onup>17</onup>
+          <ondown>15</ondown>
+          <posX>553</posX>
+          <posY>310</posY>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textureCheckmark>check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+          <MarkWidth>42</MarkWidth>
+          <MarkHeight>42</MarkHeight>
+          <align>right</align>
+          <shadow>no</shadow>
+        </control>
+        <control>
+          <description>Step 14</description>
+          <type>checkmark</type>
+          <id>15</id>
+          <label> 1.5</label>
+          <onleft>7</onleft>
+          <onright>15</onright>
+          <onup>14</onup>
+          <ondown>16</ondown>
+          <posX>553</posX>
+          <posY>310</posY>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textureCheckmark>check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+          <MarkWidth>42</MarkWidth>
+          <MarkHeight>42</MarkHeight>
+          <align>right</align>
+          <shadow>no</shadow>
+        </control>
+        <control>
+          <description>Step 15</description>
+          <type>checkmark</type>
+          <id>16</id>
+          <label> 2</label>
+          <onleft>8</onleft>
+          <onright>16</onright>
+          <onup>15</onup>
+          <ondown>17</ondown>
+          <posX>553</posX>
+          <posY>310</posY>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textureCheckmark>check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+          <MarkWidth>42</MarkWidth>
+          <MarkHeight>42</MarkHeight>
+          <align>right</align>
+          <shadow>no</shadow>
+        </control>
+        <control>
+          <description>Step 16</description>
+          <type>checkmark</type>
+          <id>17</id>
+          <label> 3</label>
+          <onleft>9</onleft>
+          <onright>17</onright>
+          <onup>16</onup>
+          <ondown>14</ondown>
+          <posX>553</posX>
+          <posY>310</posY>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textureCheckmark>check-box.png</textureCheckmark>
+          <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+          <MarkWidth>42</MarkWidth>
+          <MarkHeight>42</MarkHeight>
+          <align>right</align>
+          <shadow>no</shadow>
+        </control>
+        <dimColor>ffffffff</dimColor>
+      </control>
+      <control>
+        <description>skip steps labels</description>
+        <type>group</type>
+        <dimColor>0xFFFFFFFF</dimColor>
+        <control>
+          <description>Current config static</description>
+          <type>label</type>
+          <id>1</id>
+          <posX>-2000</posX>
+          <posY>537</posY>
+          <label>143</label>
+          <font>font12</font>
+          <textcolor>FFdddddd</textcolor>
+          <disabledcolor>90ffffff</disabledcolor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+        <control>
+          <description>Current config dynamic</description>
+          <type>label</type>
+          <id>21</id>
+          <posX>-2000</posX>
+          <posY>587</posY>
+          <label>15,30,60,300</label>
+          <font>font12</font>
+          <textcolor>FFdddddd</textcolor>
+          <disabledcolor>90ffffff</disabledcolor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        </control>
+      </control>
+      <dimColor>ffffffff</dimColor>
+    </control>
+  </controls>
+</window>

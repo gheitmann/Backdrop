@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>2000</id>
+  <defaultcontrol>3</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>yes</disabletopbar>
+  <controls>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>622</posX>
+      <posY>124</posY>
+      <width>675</width>
+      <height>675</height>
+      <texture>dialog_290_400.png</texture>
+    </control>
+    <control>
+      <description>GFX-Heading "menu" text label</description>
+      <type>label</type>
+      <id>5</id>
+      <posX>638</posX>
+      <posY>158</posY>
+      <width>735</width>
+      <label>924</label>
+      <font>font16BC</font>
+      <textcolor>White</textcolor>
+      <align>left</align>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>Heading text label</description>
+      <type>label</type>
+      <id>4</id>
+      <posX>438</posX>
+      <posY>442</posY>
+      <width>510</width>
+      <label>181</label>
+      <font>font16BCB</font>
+      <align>center</align>
+      <textcolor>ff7FB1E5</textcolor>
+      <animation effect="rotate" end="90" time="0">WindowOpen</animation>
+      <animation effect="rotate" end="90" time="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>options listcontrol</description>
+      <type>listcontrol</type>
+      <id>3</id>
+      <posX>734</posX>
+      <posY>160</posY>
+      <width>522</width>
+      <height>645</height>
+      <textXOff2>450</textXOff2>
+      <spinPosX>4310</spinPosX>
+      <spinPosY>3742</spinPosY>
+      <textXOff>45</textXOff>
+      <textYOff>8</textYOff>
+      <PinIconXOff>3368</PinIconXOff>
+      <PinIconYOff>3340</PinIconYOff>
+      <font2>font14BC</font2>
+      <font>font14BC</font>
+      <textureFocus>list_background_focus_transp.png</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <onleft>3</onleft>
+      <onright>3</onright>
+      <shadedColor>60ffffff</shadedColor>
+      <selectedColor>ff999999</selectedColor>
+      <playedColor>ff808080</playedColor>
+      <unfocusedAlpha>140</unfocusedAlpha>
+      <dimColor>ffffffff</dimColor>
+      <textcolor>ffffffff</textcolor>
+      <textcolor2>ff999999</textcolor2>
+      <textcolor3>ff999999</textcolor3>
+      <colordiffuse>ff999999</colordiffuse>
+      <remoteColor>ffFFA075</remoteColor>
+      <downloadColor>ff80ff80</downloadColor>
+      <textureHeight>58</textureHeight>
+      <spaceBetweenItems>-1</spaceBetweenItems>
+      <spinPosX>1233</spinPosX>
+      <spinPosY>705</spinPosY>
+      <spinAlign>Right</spinAlign>
+      <spinColor>ffffffff</spinColor>
+      <!--<spinWidth>45</spinWidth>
+			<spinHeight>45</spinHeight>
+			<textureUp>arrow_round_right_nofocus.png</textureUp>
+			<textureDown>arrow_round_left_nofocus.png</textureDown>
+			<textureUpFocus>arrow_round_right_focus.png</textureUpFocus>
+			<textureDownFocus>arrow_round_left_focus.png</textureDownFocus>	-->
+      <spinCanFocus>no</spinCanFocus>
+    </control>
+  </controls>
+  <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="960,600" time="550">WindowOpen</animation>
+  <animation effect="zoom" start="100,100" end="1,1" center="960,600" time="350">WindowClose</animation>
+</window>

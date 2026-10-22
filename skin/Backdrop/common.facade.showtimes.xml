@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+This file should contain the facade view
+-->
+<window>
+  <controls>
+    <control>
+      <description>composite control consisting of a list control and a thumbnail panel</description>
+      <type>facadeview</type>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <id>50</id>
+      <control>
+        <description>Movie List</description>
+        <type>listcontrol</type>
+        <id>50</id>
+        <posY>555</posY>
+        <posX>1299</posX>
+        <height>562</height>
+        <width>615</width>
+        <spinPosY>1200</spinPosY>
+        <spinPosX>2100</spinPosX>
+        <textXOff>24</textXOff>
+        <textYOff>0</textYOff>
+        <textureFocus>playlist_sub_focus1.png</textureFocus>
+        <textureNoFocus>playlist_sub_nofocus1.png</textureNoFocus>
+        <textureUp>-</textureUp>
+        <textureDown>-</textureDown>
+        <spinCanFocus>no</spinCanFocus>
+        <font>font16</font>
+        <textureHeight>52</textureHeight>
+        <textalign>right</textalign>
+        <onleft>2</onleft>
+        <onright>2</onright>
+        <shadowAngle>45</shadowAngle>
+        <shadowDistance>1</shadowDistance>
+        <shadowColor>FF000000</shadowColor>
+        <unfocusedAlpha>255</unfocusedAlpha>
+        <dimColor>ffffffff</dimColor>
+        <textcolor>ffffffff</textcolor>
+        <selectedColor>ff335266</selectedColor>
+        <shadedColor>ffffffff</shadedColor>
+        <playedColor>ffffffff</playedColor>
+        <textcolor2>ffffffff</textcolor2>
+        <textcolor3>ffffffff</textcolor3>
+        <colordiffuse>ffffffff</colordiffuse>
+        <remoteColor>ffcccccc</remoteColor>
+        <spaceBetweenItems>-1</spaceBetweenItems>
+        <visible>!Control.isvisible(93761234)</visible>
+        <animation effect="slide" start="750,0" time="800" acceleration="-0.9" reversible="true">focus</animation>
+        <animation effect="slide" end="750,0" time="200" acceleration="0.5" reversible="true">unfocus</animation>
+        <animation effect="slide" start="750,0" time="800" acceleration="-0.9" reversible="true">visible</animation>
+        <animation effect="slide" end="750,0" time="200" acceleration="0.5" reversible="true">hidden</animation>
+      </control>
+      <control>
+        <description>Thumbnail Panel</description>
+        <type>thumbnailpanel</type>
+        <id>50</id>
+        <posX>20</posX>
+        <posY>664</posY>
+        <width>1900</width>
+        <height>864</height>
+        <spinPosX>3000</spinPosX>
+        <spinPosY>1080</spinPosY>
+        <spinColor>ffcccccc</spinColor>
+        <thumbWidth>258</thumbWidth>
+        <thumbHeight>354</thumbHeight>
+        <thumbPosX>0</thumbPosX>
+        <thumbPosY>0</thumbPosY>
+        <itemWidth>296</itemWidth>
+        <itemHeight>354</itemHeight>
+        <textureWidth>258</textureWidth>
+        <textureHeight>354</textureHeight>
+        <imageFolderFocus>-</imageFolderFocus>
+        <imageFolder>-</imageFolder>
+        <imageFolderFocus>-</imageFolderFocus>
+        <imageFolder>-</imageFolder>
+        <font>font14</font>
+        <downloadColor>ffFFFFFFFF</downloadColor>
+        <remoteColor>ffFFFFFFFF</remoteColor>
+        <textureWidthBig>258</textureWidthBig>
+        <textureHeightBig>354</textureHeightBig>
+        <itemWidthBig>296</itemWidthBig>
+        <itemHeightBig>354</itemHeightBig>
+        <thumbWidthBig>258</thumbWidthBig>
+        <thumbHeightBig>354</thumbHeightBig>
+        <thumbPosXBig>0</thumbPosXBig>
+        <thumbPosYBig>0</thumbPosYBig>
+        <thumbZoom>no</thumbZoom>
+        <keepaspectratio>no</keepaspectratio>
+        <centered>yes</centered>
+        <enableFocusZoom>no</enableFocusZoom>
+        <zoomXPixels>45</zoomXPixels>
+        <zoomYPixels>56</zoomYPixels>
+        <keepaspectratio>no</keepaspectratio>
+        <centered>yes</centered>
+        <showFrame>true</showFrame>
+        <frameNoFocus>coverflow.poster.glass.png</frameNoFocus>
+        <frameFocus>coverflow.poster.glass.png</frameFocus>
+        <textureMask>coverflow.poster.background1.png</textureMask>
+        <onleft>2</onleft>
+        <onright>50</onright>
+        <unfocusedAlpha>255</unfocusedAlpha>
+        <scrollOffset>1</scrollOffset>
+        <visible>!Control.isvisible(93761234)</visible>
+        <!--				<animation effect="fade" start="100" end="0" time="700" acceleration="0.5" reversible="true">unfocus</animation>		-->
+        <animation effect="fade" start="0" end="100" time="1200" acceleration="-0.9" reversible="true">focus</animation>
+        <animation effect="fade" start="0" end="100" time="1200" acceleration="-0.9" reversible="true">visible</animation>
+        <!--				<animation effect="slide" start="-1350,0" time="1200" acceleration="-0.9" reversible="true">focus</animation>
+				<animation effect="slide" end="1350,0" time="700" acceleration="0.5" reversible="true">unfocus</animation>	-->
+      </control>
+      <control>
+        <description>Filmstrip view</description>
+        <type>filmstrip</type>
+        <id>50</id>
+        <onrigth>50</onrigth>
+        <onleft>50</onleft>
+        <onup>2</onup>
+        <ondown>2</ondown>
+        <dimColor>90ffffff</dimColor>
+        <posX>2</posX>
+        <posY>664</posY>
+        <spinPosX>2100</spinPosX>
+        <spinPosY>1020</spinPosY>
+        <scrollOffset>3</scrollOffset>
+        <width>1950</width>
+        <height>864</height>
+        <thumbWidth>240</thumbWidth>
+        <thumbHeight>344</thumbHeight>
+        <thumbPosX>9</thumbPosX>
+        <thumbPosY>8</thumbPosY>
+        <itemWidth>276</itemWidth>
+        <itemHeight>354</itemHeight>
+        <textureWidth>258</textureWidth>
+        <textureHeight>354</textureHeight>
+        <imageFolderFocus>-</imageFolderFocus>
+        <frame>poster_frame_rounder_corners_filmstrip.png</frame>
+        <frameFocus>poster_frame_rounder_corners_filmstrip.png</frameFocus>
+        <thumbs mask="coverflow.poster.background1.png" flipY="true" diffuse="diffuseoverlay.png" />
+        <InfoImage>-</InfoImage>
+        <background>-</background>
+        <showFrame>yes</showFrame>
+        <showFolder>no</showFolder>
+        <showBackGround>no</showBackGround>
+        <showInfoImage>no</showInfoImage>
+        <unfocusedAlpha>255</unfocusedAlpha>
+        <visible>!Control.isvisible(93761234)</visible>
+        <thumbAnimation effect="zoom" tween="back" acceleration="-1.1" easing="out" start="100,100" reversible="true" end="118,125" center="0,1013" time="450">focus</thumbAnimation>
+        <thumbAnimation effect="zoom" start="118,125" reversible="true" end="100,100" center="0,1013" time="200">unfocus</thumbAnimation>
+        <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="960,461" time="450" reversible="true">focus</animation>
+        <animation effect="zoom" delay="250" start="100,100" end="1,1" center="960,300" time="200" reversible="true">unfocus</animation>
+        <animation effect="fade" delay="400" start="100" end="0" time="50" reversible="true">unfocus</animation>
+        <animation effect="rotatex" start="0" end="65" center="960,293" time="450">unfocus</animation>
+        <!--				<animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="960,461" time="450" reversible="true">visible</animation>  
+				<animation effect="zoom" delay="250" start="100,100" end="1,1" center="960,300" time="200" reversible="true">hidden</animation> 
+				<animation effect="fade" delay="400" start="100" end="0" time="50" reversible="true">hidden</animation> 
+				<animation effect="rotatex" start="0" end="65" center="960,293" time="450">hidden</animation>	-->
+      </control>
+      <control>
+        <description>playlist listcontrol</description>
+        <type>playlistcontrol</type>
+        <id>50</id>
+        <posY>608</posY>
+        <posX>1000</posX>
+        <height>562</height>
+        <width>920</width>
+        <onleft>2</onleft>
+        <onright>2</onright>
+        <textureHeight>69</textureHeight>
+        <textXOff>10</textXOff>
+        <textXOff2>800</textXOff2>
+        <font>font14</font>
+        <font2>font14</font2>
+        <textYOff>10</textYOff>
+        <textYOff2>10</textYOff2>
+        <PinIconYOff>2</PinIconYOff>
+        <spinPosX>3300</spinPosX>
+        <spinPosY>722</spinPosY>
+        <spinAlign>Right</spinAlign>
+        <spinColor>ffffffff</spinColor>
+        <spinWidth>52</spinWidth>
+        <spinHeight>52</spinHeight>
+        <textureUp>arrow_round_right_nofocus.png</textureUp>
+        <textureDown>arrow_round_left_nofocus.png</textureDown>
+        <textureUpFocus>arrow_round_right_focus.png</textureUpFocus>
+        <textureDownFocus>arrow_round_left_focus.png</textureDownFocus>
+        <textureFocus>list_background_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <spaceBetweenItems>-2</spaceBetweenItems>
+        <upBtnYOffset>0</upBtnYOffset>
+        <downBtnYOffset>0</downBtnYOffset>
+        <deleteBtnYOffset>0</deleteBtnYOffset>
+        <shadedColor>90cccccc</shadedColor>
+        <selectedColor>ff7FB1E5</selectedColor>
+        <playedColor>90cccccc</playedColor>
+        <textcolor>ffffffff</textcolor>
+        <textcolor2>ffffffff</textcolor2>
+        <textcolor3>ffffffff</textcolor3>
+        <colordiffuse>90cccccc</colordiffuse>
+        <remoteColor>90cccccc</remoteColor>
+        <downloadColor>90cccccc</downloadColor>
+        <scrollOffset>2</scrollOffset>
+        <shadowAngle>45</shadowAngle>
+        <shadowDistance>1</shadowDistance>
+        <shadowColor>FF000000</shadowColor>
+        <unfocusedAlpha>255</unfocusedAlpha>
+        <upBtnWidth>31</upBtnWidth>
+        <downBtnWidth>31</downBtnWidth>
+        <deleteBtnWidth>36</deleteBtnWidth>
+        <upBtnHeight>70</upBtnHeight>
+        <downBtnHeight>70</downBtnHeight>
+        <deleteBtnHeight>70</deleteBtnHeight>
+        <upBtnXOffset>825</upBtnXOffset>
+        <upBtnYOffset>0</upBtnYOffset>
+        <downBtnXOffset>853</downBtnXOffset>
+        <downBtnYOffset>-1</downBtnYOffset>
+        <deleteBtnXOffset>881</deleteBtnXOffset>
+        <deleteBtnYOffset>-1</deleteBtnYOffset>
+        <dimColor>ffffffff</dimColor>
+        <animation effect="slide" start="950,0" time="800" acceleration="-0.9" reversible="true">unfocus</animation>
+        <animation effect="slide" end="950,0" time="200" acceleration="0.5" reversible="true">focus</animation>
+        <visible>!Control.isvisible(93761234)</visible>
+      </control>
+      <control>
+        <description>Cover Flow view</description>
+        <type>coverflow</type>
+        <colordiffuse>90ffffff</colordiffuse>
+        <dimColor>90ffffff</dimColor>
+        <id>50</id>
+        <posX>0</posX>
+        <posY>705</posY>
+        <width>1920</width>
+        <height>1080</height>
+        <onup>2</onup>
+        <ondown>2</ondown>
+        <onleft>50</onleft>
+        <onright>50</onright>
+        <selectedCard>0</selectedCard>
+        <cardWidth>303</cardWidth>
+        <cardHeight>450</cardHeight>
+        <angle>60</angle>
+        <sideShift>375</sideShift>
+        <sideGap>105</sideGap>
+        <sideDepth>450</sideDepth>
+        <offsetY>0</offsetY>
+        <selectedOffsetY>-125</selectedOffsetY>
+        <speed>8</speed>
+        <backgroundHeight>303</backgroundHeight>
+        <backgroundWidth>1920</backgroundWidth>
+        <backgroundX>0</backgroundX>
+        <backgroundY>705</backgroundY>
+        <backgroundDiffuse>FF000000</backgroundDiffuse>
+        <background>-</background>
+        <showBackground>no</showBackground>
+        <foregroundHeight>1080</foregroundHeight>
+        <foregroundWidth>1920</foregroundWidth>
+        <foregroundX>0</foregroundX>
+        <foregroundY>0</foregroundY>
+        <foregroundDiffuse>FF000000</foregroundDiffuse>
+        <foreground>-</foreground>
+        <showForeground>no</showForeground>
+        <showFrame>yes</showFrame>
+        <frame>coverflow.poster.glass.png</frame>
+        <frameFocus>coverflow.poster.glass.png</frameFocus>
+        <frameWidth>303</frameWidth>
+        <frameHeight>450</frameHeight>
+        <spinSpeed>6</spinSpeed>
+        <unfocusedAlpha>FF</unfocusedAlpha>
+        <folderPrefix />
+        <folderSuffix />
+        <font1>font13</font1>
+        <font2>font10</font2>
+        <label1>#title</label1>
+        <label2>#genre</label2>
+        <textColor>FFFFFFFF</textColor>
+        <remoteColor>FFFF0000</remoteColor>
+        <playedColor>ff7FB1E5</playedColor>
+        <downloadColor>FF00FF00</downloadColor>
+        <selectedColor>FFFFFFFF</selectedColor>
+        <shadowAngle>45</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor>FF000000</shadowColor>
+        <label1YOff>2108</label1YOff>
+        <label2YOff>2145</label2YOff>
+        <pageSize>5</pageSize>
+        <scrollbarBackground>osdprogressback.png</scrollbarBackground>
+        <scrollbarLeft>osdprogressleft.png</scrollbarLeft>
+        <scrollbarRight>osdprogressright.png</scrollbarRight>
+        <scrollbarYOff>355</scrollbarYOff>
+        <showScrollbar>yes</showScrollbar>
+        <keepaspectratio>no</keepaspectratio>
+        <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow.poster.background.png" />
+        <subitems>
+          <subitem><![CDATA[
+                <controls>
+                  <control>
+                    <description>background</description>
+                    <type>image</type>
+                    <posX>0</posX>
+                    <posY>0</posY>
+                    <width>303</width>
+                    <height>450</height>
+                    <texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow.poster.background.png">background.png</texture>					
+                  </control>
+
+
+                  <control>
+                    <description>Movie Details</description>
+                    <type>label</type>
+                    <posX>15</posX>
+                    <posY>15</posY>
+                    <width>270</width>
+                    <label>Movie Details</label>
+                    <font>font13</font>
+                    <textcolor>ff7F9EB2</textcolor>
+                  </control>
+
+
+                  <control>
+                    <description>genre</description>
+                    <type>label</type>
+                    <posX>15</posX>
+                    <posY>45</posY>
+                    <width>270</width>
+                    <label>#genre</label>
+                    <font>font11</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>year</description>
+                    <type>label</type>
+                    <posX>15</posX>
+                    <posY>75</posY>
+                    <width>270</width>
+                    <label>#year</label>
+                    <font>font11</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>runtime</description>
+                    <type>label</type>
+                    <posX>15</posX>
+                    <posY>105</posY>
+                    <width>270</width>
+                    <label>#runtime min</label>
+                    <font>font11</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>rating</description>
+                    <type>label</type>
+                    <posX>15</posX>
+                    <posY>135</posY>
+                    <width>270</width>
+                    <label>#rating</label>
+                    <font>font11</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>votes</description>
+                    <type>label</type>
+                    <posX>75</posX>
+                    <posY>135</posY>
+                    <width>270</width>
+                    <label>(#votes votes)</label>
+                    <font>font11</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+                  <control>
+                    <description>Director</description>
+                    <type>label</type>
+                    <posX>15</posX>
+                    <posY>165</posY>
+                    <width>270</width>
+                    <label>Director</label>
+                    <font>font11</font>
+                    <textcolor>FF999999</textcolor>
+                  </control>
+
+                  <control>
+                    <description>director</description>
+                    <type>label</type>
+                    <posX>15</posX>
+                    <posY>195</posY>
+                    <width>270</width>
+                    <label>#director</label>
+                    <font>font11</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+				  
+					<control>
+						<description>Line separator</description>
+						<type>image</type>
+						<posX>15</posX>
+						<posY>225</posY>
+						<width>270</width>
+						<height>12</height>
+						<texture>default.line.separator.png</texture>
+					</control>				  
+
+                  <control>
+                    <description>plot</description>
+                    <type>textboxscrollup</type>
+                    <posX>15</posX>
+                    <posY>243</posY>
+                    <width>285</width>
+                    <height>82</height>
+                    <label>#plot</label>
+                    <font>font11</font>
+                    <lineSpacing>2</lineSpacing>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+                  <control>
+                    <description>mpaa G</description>
+                    <type>image</type>
+                    <posX>15</posX>
+                    <posY>410</posY>
+                    <width>270</width>
+                    <keepaspectratio>yes</keepaspectratio>
+                    <texture>Logos/G.png</texture>
+                    <visible>string.contains(#mpaarating, Rated G)</visible>
+                  </control>
+                  <control>
+                    <description>mpaa PG</description>
+                    <type>image</type>
+                    <posX>15</posX>
+                    <posY>410</posY>
+                    <width>270</width>
+                    <keepaspectratio>yes</keepaspectratio>
+                    <texture>Logos/PG.png</texture>
+                    <visible>string.contains(#mpaarating, Rated PG)+!string.contains(#mpaarating, Rated PG-13)</visible>
+                  </control>
+                  <control>
+                    <description>mpaa PG-13</description>
+                    <type>image</type>
+                    <posX>15</posX>
+                    <posY>410</posY>
+                    <width>270</width>
+                    <keepaspectratio>yes</keepaspectratio>
+                    <texture>Logos/PG-13.png</texture>
+                    <visible>string.contains(#mpaarating, Rated PG-13)</visible>
+                  </control>
+                  <control>
+                    <description>mpaa R</description>
+                    <type>image</type>
+                    <posX>15</posX>
+                    <posY>410</posY>
+                    <width>270</width>
+                    <keepaspectratio>yes</keepaspectratio>
+                    <texture>Logos/R.png</texture>
+                    <visible>string.contains(#mpaarating, Rated R)</visible>
+                  </control>
+                  <control>
+                    <description>mpaa NC17</description>
+                    <type>image</type>
+                    <posX>15</posX>
+                    <posY>410</posY>
+                    <width>270</width>
+                    <keepaspectratio>yes</keepaspectratio>
+                    <texture>Logos/NC-17.png</texture>
+                    <visible>string.contains(#mpaarating, Rated NC-17)</visible>
+                  </control>
+
+                </controls>
+              ]]></subitem>
+        </subitems>
+        <visible>!Control.isvisible(93761234)</visible>
+        <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="960,461" time="450" reversible="true">focus</animation>
+        <animation effect="zoom" delay="250" start="100,100" end="1,1" center="960,300 " time="200" reversible="true">unfocus</animation>
+        <animation effect="rotatex" start="0" end="65" center="960,293" time="450">unfocus</animation>
+        <animation effect="fade" delay="400" start="100" end="0" time="50" reversible="true">unfocus</animation>
+        <!--				<animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="960,461" time="450" reversible="true">visible</animation>  
+				<animation effect="zoom" delay="250" start="100,100" end="1,1" center="960,300 " time="200" reversible="true">hidden</animation> 
+				<animation effect="rotatex" start="0" end="65" center="960,293" time="450">hidden</animation>	
+				<animation effect="fade" delay="400" start="100" end="0" time="50" reversible="true">hidden</animation>	-->
+        <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+        <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      </control>
+    </control>
+  </controls>
+</window>

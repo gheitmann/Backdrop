@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>102</id>
+  <defaultcontrol>10</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>yes</disabletopbar>
+  <controls>
+    <import>common.dialog.xml</import>
+    <control>
+      <description>Play button</description>
+      <type>button</type>
+      <id>10</id>
+      <posX>765</posX>
+      <posY>585</posY>
+      <textXOff>45</textXOff>
+      <textYOff>4</textYOff>
+      <font>font14BC</font>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <disabledcolor>80ffffff</disabledcolor>
+      <textcolorNoFocus>80ffffff</textcolorNoFocus>
+      <textureFocus>button.focus.png</textureFocus>
+      <textureNoFocus>button.focus.png</textureNoFocus>
+      <width>180</width>
+      <height>52</height>
+      <label>2553</label>
+      <onleft>11</onleft>
+      <onright>11</onright>
+      <onup>10</onup>
+      <ondown>10</ondown>
+    </control>
+    <control>
+      <description>Stop button</description>
+      <type>button</type>
+      <id>11</id>
+      <posX>957</posX>
+      <posY>585</posY>
+      <textXOff>45</textXOff>
+      <textYOff>4</textYOff>
+      <font>font14BC</font>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <disabledcolor>80ffffff</disabledcolor>
+      <textcolorNoFocus>80ffffff</textcolorNoFocus>
+      <textureFocus>button.focus.png</textureFocus>
+      <textureNoFocus>button.focus.png</textureNoFocus>
+      <width>180</width>
+      <height>52</height>
+      <label>2552</label>
+      <onleft>10</onleft>
+      <onright>10</onright>
+      <onup>11</onup>
+      <ondown>11</ondown>
+    </control>
+  </controls>
+  <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="960,600" time="550">WindowOpen</animation>
+  <animation effect="zoom" start="100,100" end="1,1" center="960,600" time="350">WindowClose</animation>
+</window>

@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <id>759</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>no</disabletopbar>
+  <define>#header.label:652</define>
+  <define>#header.image:-</define>
+  <define>#header.hover:hover_my tv.png</define>
+  <controls>
+    <control>
+      <description>dummy (visible when music is playing)</description>
+      <type>label</type>
+      <id>3337</id>
+      <posX>3000</posX>
+      <label>#Play.Current.Album</label>
+      <visible>player.hasmedia+control.hastext(3337)</visible>
+    </control>
+    <import>common.fanart.selected.movie.xml</import>
+    <control>
+      <description>overlay image</description>
+      <type>image</type>
+      <id>9789671</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>overlay.default.logo.list.png</texture>
+    </control>
+    <!--MENU **********************************************-->
+    <control>
+      <description>Dummy Basichome Button</description>
+      <type>button</type>
+      <id>12398755</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>2</width>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <label>-</label>
+      <font>font12</font>
+      <onleft>2</onleft>
+      <onright>2</onright>
+      <onup>2</onup>
+      <ondown>2</ondown>
+    </control>
+    <control clrtype="Menu">
+      <description>Menu Button 0</description>
+      <type>button</type>
+      <id>2</id>
+      <posX>45</posX>
+      <posY>102</posY>
+      <width>705</width>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <label>1042</label>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <!--<disabledcolor>ffffffff</disabledcolor>-->
+      <textcolorNoFocus>90cccccc</textcolorNoFocus>
+      <font>font16BC</font>
+      <hover>-</hover>
+      <onleft>2</onleft>
+      <onright>2</onright>
+      <onup>61700</onup>
+      <ondown>10</ondown>
+      <animation effect="fade" time="300" acceleration="-0.9" reversible="false">visiblechange</animation>
+      <animation effect="zoom" start="100,100" end="100,1" center="640,100" time="250">hidden</animation>
+      <animation effect="slide" start="0,0" end="0,15" time="300">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible allowhiddenfocus="true">Control.HasFocus(10)|Control.HasFocus(2)|Control.HasFocus(12398755)+!Control.IsVisible(12398756)</visible>
+    </control>
+    <control>
+      <description>Next Button</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>1881</posX>
+      <posY>111</posY>
+      <width>39</width>
+      <height>42</height>
+      <texture>next.arrow.png</texture>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible allowhiddenfocus="true">Control.HasFocus(10)|Control.HasFocus(2)|Control.HasFocus(12398755)+!Control.IsVisible(12398756)</visible>
+    </control>
+    <control>
+      <description>Previous Button</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>111</posY>
+      <width>39</width>
+      <height>42</height>
+      <texture>previous.arrow.png</texture>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible allowhiddenfocus="true">Control.HasFocus(10)|Control.HasFocus(2)|Control.HasFocus(12398755)+!Control.IsVisible(12398756)</visible>
+    </control>
+    <!--MEDIA IS PLAYING*********************************************-->
+    <control>
+      <description>Current program title shadow</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <label>#TV.RecordedTV.Title</label>
+      <posX>564</posX>
+      <posY>729</posY>
+      <textcolor>FF333333</textcolor>
+      <font>font22</font>
+      <width>705</width>
+      <scrollStartDelaySec>5</scrollStartDelaySec>
+      <visible>player.hasmedia</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Current program title</description>
+      <type>fadelabel</type>
+      <id>27</id>
+      <label>#TV.RecordedTV.Title</label>
+      <posX>562</posX>
+      <posY>728</posY>
+      <textcolor>ffFFFFFF</textcolor>
+      <font>font22</font>
+      <width>705</width>
+      <scrollStartDelaySec>5</scrollStartDelaySec>
+      <visible>player.hasmedia</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Current program time</description>
+      <type>label</type>
+      <id>26</id>
+      <label>#TV.RecordedTV.Time</label>
+      <posX>652</posX>
+      <posY>788</posY>
+      <width>705</width>
+      <font>font12</font>
+      <align>left</align>
+      <visible>player.hasmedia</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>genre</description>
+      <type>label</type>
+      <id>24</id>
+      <posX>652</posX>
+      <posY>825</posY>
+      <width>705</width>
+      <font>font12</font>
+      <align>left</align>
+      <label>#TV.RecordedTV.Genre</label>
+      <visible>player.hasmedia</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Description1</description>
+      <type>textboxscrollup</type>
+      <id>25</id>
+      <posX>562</posX>
+      <posY>870</posY>
+      <width>1335</width>
+      <height>202</height>
+      <seperator>_______________________________________________________________________________________________________________</seperator>
+      <font>font14</font>
+      <label>#TV.RecordedTV.Description</label>
+      <visible>player.hasmedia</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Current program title shadow</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <label>-</label>
+      <posX>564</posX>
+      <posY>729</posY>
+      <textcolor>FF333333</textcolor>
+      <font>font22</font>
+      <width>705</width>
+      <visible>player.hasmedia</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Current program title</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <label>-</label>
+      <posX>562</posX>
+      <posY>728</posY>
+      <textcolor>ffFFFFFF</textcolor>
+      <font>font22</font>
+      <width>705</width>
+      <visible>player.hasmedia</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Current program time</description>
+      <type>label</type>
+      <id>0</id>
+      <label>-</label>
+      <posX>652</posX>
+      <posY>788</posY>
+      <width>705</width>
+      <font>font12</font>
+      <align>left</align>
+      <visible>player.hasmedia</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>channel</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>652</posX>
+      <posY>825</posY>
+      <width>705</width>
+      <font>font12</font>
+      <align>left</align>
+      <label>-</label>
+      <visible>player.hasmedia</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Description1</description>
+      <type>textboxscrollup</type>
+      <id>0</id>
+      <posX>562</posX>
+      <posY>870</posY>
+      <width>1335</width>
+      <height>202</height>
+      <seperator>_______________________________________________________________________________________________________________</seperator>
+      <font>font14</font>
+      <label>-</label>
+      <visible>player.hasmedia</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <!--NO MEDIA IS PLAYING*********************************************-->
+    <control>
+      <description>Current program title shadow</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <label>-</label>
+      <posX>16</posX>
+      <posY>729</posY>
+      <textcolor>FF333333</textcolor>
+      <font>font22</font>
+      <width>900</width>
+      <visible>!player.hasmedia</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Current program title</description>
+      <type>fadelabel</type>
+      <id>13</id>
+      <label>-</label>
+      <posX>15</posX>
+      <posY>728</posY>
+      <textcolor>ffFFFFFF</textcolor>
+      <font>font22</font>
+      <width>900</width>
+      <visible>!player.hasmedia</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Current program time</description>
+      <type>label</type>
+      <id>14</id>
+      <label>-</label>
+      <posX>112</posX>
+      <posY>788</posY>
+      <width>900</width>
+      <font>font12</font>
+      <align>left</align>
+      <visible>!player.hasmedia</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>channel</description>
+      <type>label</type>
+      <id>17</id>
+      <posX>112</posX>
+      <posY>825</posY>
+      <width>900</width>
+      <font>font12</font>
+      <align>left</align>
+      <label>-</label>
+      <visible>!player.hasmedia</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Description1</description>
+      <type>textboxscrollup</type>
+      <id>15</id>
+      <posX>15</posX>
+      <posY>870</posY>
+      <width>1800</width>
+      <height>202</height>
+      <seperator>_______________________________________________________________________________________________________________</seperator>
+      <font>font14</font>
+      <label>-</label>
+      <visible>!player.hasmedia</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <import>common.time.xml</import>
+    <import>common.overlays.xml</import>
+    <control>
+      <id>0</id>
+      <type>image</type>
+      <posX>6</posX>
+      <posY>10</posY>
+      <width>56</width>
+      <height>42</height>
+      <texture>MPLogo.png</texture>
+    </control>
+    <control>
+      <description>Window Header Shadow</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>69</posX>
+      <posY>3</posY>
+      <width>600</width>
+      <height>75</height>
+      <align>left</align>
+      <font>font22</font>
+      <textcolor>FF333333</textcolor>
+      <label>#SkinTranslation.Translations.ProgramInfo.Label</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Window Header</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>68</posX>
+      <posY>2</posY>
+      <width>600</width>
+      <height>75</height>
+      <align>left</align>
+      <font>font22</font>
+      <textcolor>ffcccccc</textcolor>
+      <label>#SkinTranslation.Translations.ProgramInfo.Label</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+  </controls>
+</window>

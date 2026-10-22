@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<window>
+  <controls>
+    <control>
+      <description>Progress Bar</description>
+      <type>progress</type>
+      <id>1</id>
+      <posX>136</posX>
+      <posY>986</posY>
+      <width>1645</width>
+      <height>21</height>
+      <label>#percentage</label>
+      <texturebg>-</texturebg>
+      <onlymidtexture>yes</onlymidtexture>
+      <midwidth>1645</midwidth>
+      <midheight>21</midheight>
+      <midoffsetX>0</midoffsetX>
+      <midoffsetY>0</midoffsetY>
+      <midtexture>osdprogress.png</midtexture>
+      <visible>[window.isosdvisible|player.paused|player.rewinding|player.forwarding|Control.IsVisible(10)|player.seeking]+!Control.IsVisible(1256891)</visible>
+    </control>
+    <control>
+      <description>Start Time Info</description>
+      <type>label</type>
+      <id>101</id>
+      <posX>165</posX>
+      <posY>1005</posY>
+      <label>#currentplaytime</label>
+      <align>left</align>
+      <font>font13</font>
+      <textcolor>ffcccccc</textcolor>
+      <visible>window.isosdvisible|player.paused|player.rewinding|player.forwarding|Control.IsVisible(10)|player.seeking</visible>
+    </control>
+    <control>
+      <description>End Time Info</description>
+      <type>label</type>
+      <id>102</id>
+      <posX>1748</posX>
+      <posY>1005</posY>
+      <label>#currentremaining</label>
+      <align>right</align>
+      <font>font13</font>
+      <textcolor>ffcccccc</textcolor>
+      <visible>window.isosdvisible|player.paused|player.rewinding|player.forwarding|Control.IsVisible(10)|player.seeking</visible>
+    </control>
+    <control>
+      <id>0</id>
+      <type>image</type>
+      <posX>891</posX>
+      <posY>975</posY>
+      <width>140</width>
+      <height>66</height>
+      <keepaspectratio>no</keepaspectratio>
+      <texture>clock.png</texture>
+      <visible>player.forwarding|player.rewinding</visible>
+    </control>
+    <control>
+      <description>Time</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>1005</posY>
+      <width>1920</width>
+      <height>38</height>
+      <align>center</align>
+      <font>font13</font>
+      <label>#time</label>
+      <visible>player.forwarding|player.rewinding</visible>
+    </control>
+  </controls>
+</window>

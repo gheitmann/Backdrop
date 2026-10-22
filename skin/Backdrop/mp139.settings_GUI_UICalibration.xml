@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <id>10</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#header.label:6023</define>
+  <define>#header.hover:MP139\hover_settings.png</define>
+  <define>#itemcount:</define>
+  <controls>
+    <control>
+      <type>image</type>
+      <description>BG</description>
+      <id>1</id>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>testbild.jpg</texture>
+      <colordiffuse>90ffffff</colordiffuse>
+    </control>
+    <import>mp139.common.window.xml</import>
+    <import>mp139.common.time.xml</import>
+    <control>
+      <description>rectangle image</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>584</posX>
+      <posY>366</posY>
+      <width>742</width>
+      <height>250</height>
+      <texture>settingsbg.png</texture>
+    </control>
+    <control>
+      <description>coordinates label</description>
+      <type>label</type>
+      <id>2</id>
+      <posX>843</posX>
+      <posY>471</posY>
+      <label>5</label>
+      <font>font12</font>
+      <textcolor>dodgerblue</textcolor>
+      <disabledcolor>90ffffff</disabledcolor>
+      <shadowAngle>0</shadowAngle>
+      <shadowDistance>0</shadowDistance>
+      <shadowColor />
+    </control>
+  </controls>
+</window>

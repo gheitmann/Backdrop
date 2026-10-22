@@ -1,0 +1,439 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <controls>
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+      <control>
+        <description>composite control consisting of a list control and a thumbnail panel</description>
+        <type>facadeview</type>
+        <id>50</id>
+        <control>
+          <description>listcontrol</description>
+          <type>listcontrol</type>
+          <id>50</id>
+          <width>875</width>
+          <shadedColor>20ffffff</shadedColor>
+          <selectedColor3>FF00CC00</selectedColor3>
+          <selectedColor2>FF00CC00</selectedColor2>
+          <selectedColor>FF00CC00</selectedColor>
+          <playedColor>FFffffff</playedColor>
+          <playedColor2>FFffffff</playedColor2>
+          <playedColor3>FFffffff</playedColor3>
+          <textcolor>ffffcc00</textcolor>
+          <textcolorNoFocus>ffffcc00</textcolorNoFocus>
+          <textcolor2>ffffcc00</textcolor2>
+          <colordiffuse>ffffffff</colordiffuse>
+          <remoteColor>ff00ffff</remoteColor>
+          <remoteColor2>ff00ffff</remoteColor2>
+          <downloadColor>ff666666</downloadColor>
+          <downloadColor2>ff80ff80</downloadColor2>
+          <dimColor>90ffffff</dimColor>
+          <textXOff2>875</textXOff2>
+          <textYOff2>1</textYOff2>
+          <textXOff3>3817</textXOff3>
+          <textYOff3>12</textYOff3>
+          <textalign2>right</textalign2>
+          <textpadding>100</textpadding>
+          <font3>font9</font3>
+          <scrollOffset>2</scrollOffset>
+          <spinCanFocus>no</spinCanFocus>
+          <unfocusedAlpha>160</unfocusedAlpha>
+          <folderPrefix />
+          <folderSuffix />
+          <textureFocus>#(iif(eq(#watchedcount,'0'),'MP139\listfocus_notwatched.png','MP139\listfocus.png'))</textureFocus>
+          <texturebg>videobar.png</texturebg>
+          <lefttexture>now_playing_progress_peach2.png</lefttexture>
+          <midtexture>now_playing_progress_peach2.png</midtexture>
+          <righttexture>now_playing_progress_peach2.png</righttexture>
+          <ProgressBarWidth>755</ProgressBarWidth>
+          <ProgressBarHeight>5</ProgressBarHeight>
+          <ProgressBarXOffset>45</ProgressBarXOffset>
+          <ProgressBarYOffset>46</ProgressBarYOffset>
+          <SelectedProgressOnly>Yes</SelectedProgressOnly>
+          <visible>!string.contains(#header.label, Genre)</visible>
+        </control>
+        <control>
+          <description>album view listcontrol</description>
+          <type>listcontrol</type>
+          <subtype>album</subtype>
+          <id>50</id>
+          <posX>903</posX>
+          <posY>300</posY>
+          <width>963</width>
+          <height>750</height>
+          <font>mp139.font16</font>
+          <font2>font14</font2>
+          <selectedColor>ff009900</selectedColor>
+          <textcolor>ffffffff</textcolor>
+          <selectedColor2>ff009900</selectedColor2>
+          <textcolor2>ffffffff</textcolor2>
+          <textXOff>3</textXOff>
+          <textYOff>15</textYOff>
+          <textXOff2>300</textXOff2>
+          <textYOff2>82</textYOff2>
+          <itemWidth>135</itemWidth>
+          <itemHeight>135</itemHeight>
+          <IconXOff>18</IconXOff>
+          <IconYOff>13</IconYOff>
+          <spaceBetweenItems>0</spaceBetweenItems>
+          <textureHeight>168</textureHeight>
+          <scrollOffset>1</scrollOffset>
+          <textureFocus>MP139\list_sub_focus.png</textureFocus>
+          <textureNoFocus>MP139\list_sub_nofocus.png</textureNoFocus>
+          <onleft>2</onleft>
+          <onright>50</onright>
+          <onup>2</onup>
+          <ondown>2</ondown>
+        </control>
+        <control>
+          <description>Thumbnail Panel</description>
+          <type>thumbnailpanel</type>
+          <id>50</id>
+          <posX>120</posX>
+          <posY>247</posY>
+          <width>1800</width>
+          <height>882</height>
+          <scrollOffset>1</scrollOffset>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <itemWidth>190</itemWidth>
+          <itemHeight>228</itemHeight>
+          <textureWidth>157</textureWidth>
+          <textureHeight>217</textureHeight>
+          <thumbWidth>157</thumbWidth>
+          <thumbHeight>217</thumbHeight>
+          <thumbPosX>0</thumbPosX>
+          <thumbPosY>0</thumbPosY>
+          <itemWidthBig>255</itemWidthBig>
+          <itemHeightBig>337</itemHeightBig>
+          <thumbWidthBig>217</thumbWidthBig>
+          <thumbHeightBig>307</thumbHeightBig>
+          <textureWidthBig>217</textureWidthBig>
+          <textureHeightBig>307</textureHeightBig>
+          <thumbPosXBig>0</thumbPosXBig>
+          <thumbPosYBig>0</thumbPosYBig>
+          <zoomXPixels>30</zoomXPixels>
+          <zoomYPixels>30</zoomYPixels>
+          <keepaspectratio>no</keepaspectratio>
+          <hideUnfocusTexture>yes</hideUnfocusTexture>
+          <renderFocusText>no</renderFocusText>
+          <renderUnfocusText>no</renderUnfocusText>
+          <showFrame>true</showFrame>
+          <textureMask>MP139\Videothumbmask.png</textureMask>
+          <frameNoFocus>MP139\Videothumbframe.png</frameNoFocus>
+          <frameFocus>MP139\Videothumbframe.png</frameFocus>
+          <imageFolder>-</imageFolder>
+          <imageFolderFocus>-</imageFolderFocus>
+          <dimColor>ffffffff</dimColor>
+          <folderPrefix />
+          <folderSuffix />
+        </control>
+        <control>
+          <description>Filmstrip view</description>
+          <type>filmstrip</type>
+          <id>50</id>
+          <posX>120</posX>
+          <posY>360</posY>
+          <width>1770</width>
+          <height>750</height>
+          <spinPosX>-800</spinPosX>
+          <spinPosY>832</spinPosY>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <onup>2</onup>
+          <ondown>2</ondown>
+          <frame>MP139\Videothumbframe.png</frame>
+          <frameFocus>MP139\Videothumbframe.png</frameFocus>
+          <itemWidth>240</itemWidth>
+          <itemHeight>600</itemHeight>
+          <textureWidth>250</textureWidth>
+          <textureHeight>361</textureHeight>
+          <thumbWidth>250</thumbWidth>
+          <thumbHeight>361</thumbHeight>
+          <thumbPosX>0</thumbPosX>
+          <thumbPosY>0</thumbPosY>
+          <showFrame>yes</showFrame>
+          <showFolder>no</showFolder>
+          <showBackGround>no</showBackGround>
+          <showInfoImage>no</showInfoImage>
+          <enableFocusZoom>no</enableFocusZoom>
+          <scrollOffset>5</scrollOffset>
+          <keepaspectratio>no</keepaspectratio>
+          <suffix>|</suffix>
+          <folderPrefix />
+          <folderSuffix />
+          <spinCanFocus>no</spinCanFocus>
+          <scrollbarBackground>MP139\bar_hor.png</scrollbarBackground>
+          <scrollbarLeft>MP139\mouse_left_vertical.png</scrollbarLeft>
+          <scrollbarRight>MP139\mouse_right_vertical.png</scrollbarRight>
+          <scrollbarYOff>480</scrollbarYOff>
+          <showScrollbar>yes</showScrollbar>
+          <thumbs mask="MP139\Videothumbmask.png">
+          </thumbs>
+          <thumbAnimation effect="zoom" start="100,100" end="150,150" time="200" tween="circle" ease="inout">focus</thumbAnimation>
+          <thumbAnimation effect="zoom" start="150,150" end="100,100" time="200" tween="back" ease="inout">unfocus</thumbAnimation>
+        </control>
+        <control>
+          <description>Cover Flow view</description>
+          <type>coverflow</type>
+          <colordiffuse>90ffffff</colordiffuse>
+          <dimColor>90ffffff</dimColor>
+          <id>50</id>
+          <posX>0</posX>
+          <posY>300</posY>
+          <width>1920</width>
+          <height>1080</height>
+          <onup>2</onup>
+          <onleft>2</onleft>
+          <selectedCard>0</selectedCard>
+          <cardWidth>375</cardWidth>
+          <cardHeight>540</cardHeight>
+          <angle>65</angle>
+          <sideShift>300</sideShift>
+          <sideGap>100</sideGap>
+          <sideDepth>550</sideDepth>
+          <offsetY>0</offsetY>
+          <selectedOffsetY>0</selectedOffsetY>
+          <speed>8</speed>
+          <backgroundColor>000000FF</backgroundColor>
+          <backgroundHeight>150</backgroundHeight>
+          <backgroundWidth>2049</backgroundWidth>
+          <backgroundX>0</backgroundX>
+          <backgroundY>600</backgroundY>
+          <backgroundDiffuse>60000000</backgroundDiffuse>
+          <background>MP139\roof.png</background>
+          <showBackground>yes</showBackground>
+          <foregroundHeight>720</foregroundHeight>
+          <foregroundWidth>1280</foregroundWidth>
+          <foregroundX>0</foregroundX>
+          <foregroundY>0</foregroundY>
+          <foregroundDiffuse>FF000000</foregroundDiffuse>
+          <foreground>-</foreground>
+          <showForeground>no</showForeground>
+          <showFrame>yes</showFrame>
+          <frame>MP139\Videothumbframe.png</frame>
+          <frameFocus>MP139\Videothumbframe.png</frameFocus>
+          <frameWidth>375</frameWidth>
+          <frameHeight>540</frameHeight>
+          <spinSpeed>8</spinSpeed>
+          <unfocusedAlpha>FF</unfocusedAlpha>
+          <folderPrefix>[</folderPrefix>
+          <folderSuffix>]</folderSuffix>
+          <font1>font13</font1>
+          <font2>font10</font2>
+          <label1>
+          </label1>
+          <label2>
+          </label2>
+          <textColor>FFFFFFFF</textColor>
+          <remoteColor>ffcc9900</remoteColor>
+          <playedColor>ff6FAFE1</playedColor>
+          <downloadColor>ff6FAFE1</downloadColor>
+          <selectedColor>ff6FAFE1</selectedColor>
+          <shadowAngle>45</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor>FF000000</shadowColor>
+          <label1YOff>2405</label1YOff>
+          <label2YOff>2430</label2YOff>
+          <pageSize>5</pageSize>
+          <keepaspectratio>no</keepaspectratio>
+          <scrollbarBackground>MP139\bar_hor.png</scrollbarBackground>
+          <scrollbarLeft>MP139\mouse_left_vertical.png</scrollbarLeft>
+          <scrollbarRight>MP139\mouse_right_vertical.png</scrollbarRight>
+          <scrollbarYOff>577</scrollbarYOff>
+          <showScrollbar>yes</showScrollbar>
+          <cards mask="MP139\Videothumbmask.png">MP139\Videothumbframe.png</cards>
+          <folderPrefix />
+          <folderSuffix />
+          <subitems>
+            <subitem>                 &lt;controls&gt;
+              &lt;control&gt;
+                &lt;description&gt;background&lt;/description&gt;
+                &lt;type&gt;image&lt;/type&gt;
+                &lt;posX&gt;0&lt;/posX&gt;
+                &lt;posY&gt;0&lt;/posY&gt;
+                &lt;width&gt;375&lt;/width&gt;
+                &lt;height&gt;540&lt;/height&gt;
+                &lt;texture mask="MP139\Videothumbmask.png"&gt;MP139\blue.png&lt;/texture&gt;
+              &lt;/control&gt;
+              &lt;control&gt;
+                &lt;description&gt;Movie Details&lt;/description&gt;
+                &lt;type&gt;fadelabel&lt;/type&gt;
+                &lt;posX&gt;30&lt;/posX&gt;
+                &lt;posY&gt;10&lt;/posY&gt;
+                &lt;width&gt;340&lt;/width&gt;
+                &lt;label&gt; ·  #title  · &lt;/label&gt;
+                &lt;font&gt;font11&lt;/font&gt;
+                &lt;textcolor&gt;ff00bfff&lt;/textcolor&gt;
+                &lt;shadowAngle&gt;0&lt;/shadowAngle&gt;
+                &lt;shadowDistance&gt;0&lt;/shadowDistance&gt;
+                &lt;visible&gt;string.equals(#hideinfo, true)&lt;/visible&gt;
+              &lt;/control&gt;
+              &lt;control&gt;
+                &lt;description&gt;User group movie list&lt;/description&gt;
+                &lt;type&gt;textboxscrollup&lt;/type&gt;
+                &lt;posX&gt;30&lt;/posX&gt;
+                &lt;posY&gt;50&lt;/posY&gt;
+                &lt;width&gt;340&lt;/width&gt;
+                &lt;height&gt;480&lt;/height&gt;
+                &lt;label&gt;#groupmovielist&lt;/label&gt;
+                &lt;font&gt;font10&lt;/font&gt;
+                &lt;lineSpacing&gt;3&lt;/lineSpacing&gt;
+                &lt;textcolor&gt;lightgray&lt;/textcolor&gt;
+                &lt;shadowAngle&gt;0&lt;/shadowAngle&gt;
+                &lt;shadowDistance&gt;0&lt;/shadowDistance&gt;
+                &lt;visible&gt;string.equals(#hideinfo, True)&lt;/visible&gt;
+              &lt;/control&gt;
+              &lt;control&gt;
+                &lt;description&gt;Movie Details&lt;/description&gt;
+                &lt;type&gt;fadelabel&lt;/type&gt;
+                &lt;posX&gt;20&lt;/posX&gt;
+                &lt;posY&gt;10&lt;/posY&gt;
+                &lt;width&gt;340&lt;/width&gt;
+                &lt;label&gt; ·  #title  · &lt;/label&gt;
+                &lt;font&gt;font11&lt;/font&gt;
+                &lt;textcolor&gt;ff00bfff&lt;/textcolor&gt;
+                &lt;shadowAngle&gt;0&lt;/shadowAngle&gt;
+                &lt;shadowDistance&gt;0&lt;/shadowDistance&gt;
+                &lt;visible&gt;string.equals(#hideinfo, False)&lt;/visible&gt;
+              &lt;/control&gt;
+              &lt;control&gt;
+                &lt;type&gt;imagelist&lt;/type&gt;
+                &lt;id&gt;1&lt;/id&gt;
+                &lt;posX&gt;20&lt;/posX&gt;
+                &lt;posY&gt;45&lt;/posY&gt;
+                &lt;width&gt;230&lt;/width&gt;
+                &lt;height&gt;37&lt;/height&gt;
+                &lt;textureWidth&gt;22&lt;/textureWidth&gt;
+                &lt;textureHeight&gt;22&lt;/textureHeight&gt;
+                &lt;subitems&gt;
+                  &lt;subitem&gt;MP139\starbad.png&lt;/subitem&gt;
+                  &lt;subitem&gt;MP139\star.png&lt;/subitem&gt;
+                &lt;/subitems&gt;
+                &lt;orientation&gt;horizontal&lt;/orientation&gt;
+                &lt;align&gt;left&lt;/align&gt;
+                &lt;imagesToDraw&gt;10&lt;/imagesToDraw&gt;
+                &lt;percentage&gt;#rating&lt;/percentage&gt;
+                &lt;visible&gt;string.equals(#hideinfo, False)&lt;/visible&gt;
+              &lt;/control&gt;
+              &lt;control&gt;
+                &lt;description&gt;genre&lt;/description&gt;
+                &lt;type&gt;fadelabel&lt;/type&gt;
+                &lt;posX&gt;10&lt;/posX&gt;
+                &lt;posY&gt;70&lt;/posY&gt;
+                &lt;width&gt;365&lt;/width&gt;
+                &lt;label&gt;#genre&lt;/label&gt;
+                &lt;font&gt;font9&lt;/font&gt;
+                &lt;textcolor&gt;lightgray&lt;/textcolor&gt;
+                &lt;shadowAngle&gt;0&lt;/shadowAngle&gt;
+                &lt;shadowDistance&gt;0&lt;/shadowDistance&gt;
+                &lt;visible&gt;string.equals(#hideinfo, False)&lt;/visible&gt;
+              &lt;/control&gt;
+              &lt;control&gt;
+                &lt;description&gt;year runtime&lt;/description&gt;
+                &lt;type&gt;fadelabel&lt;/type&gt;
+                &lt;posX&gt;10&lt;/posX&gt;
+                &lt;posY&gt;95&lt;/posY&gt;
+                &lt;width&gt;365&lt;/width&gt;
+                &lt;label&gt;#year  /  #runtime&lt;/label&gt;
+                &lt;font&gt;font9&lt;/font&gt;
+                &lt;textcolor&gt;lightgray&lt;/textcolor&gt;
+                &lt;shadowAngle&gt;0&lt;/shadowAngle&gt;
+                &lt;shadowDistance&gt;0&lt;/shadowDistance&gt;
+                &lt;visible&gt;string.equals(#hideinfo, False)&lt;/visible&gt;
+              &lt;/control&gt;
+              &lt;control&gt;
+                &lt;description&gt;director&lt;/description&gt;
+                &lt;type&gt;fadelabel&lt;/type&gt;
+                &lt;posX&gt;10&lt;/posX&gt;
+                &lt;posY&gt;120&lt;/posY&gt;
+                &lt;width&gt;365&lt;/width&gt;
+                &lt;label&gt;#(L(199)) #director&lt;/label&gt;
+                &lt;font&gt;font9&lt;/font&gt;
+                &lt;textcolor&gt;lightgray&lt;/textcolor&gt;
+                &lt;shadowAngle&gt;0&lt;/shadowAngle&gt;
+                &lt;shadowDistance&gt;0&lt;/shadowDistance&gt;
+                &lt;visible&gt;string.equals(#hideinfo, False)&lt;/visible&gt;
+              &lt;/control&gt;
+              &lt;control&gt;
+                &lt;description&gt;mpaarating&lt;/description&gt;
+                &lt;type&gt;fadelabel&lt;/type&gt;
+                &lt;posX&gt;10&lt;/posX&gt;
+                &lt;posY&gt;145&lt;/posY&gt;
+                &lt;width&gt;365&lt;/width&gt;
+                &lt;label&gt;#(L(173)) #mpaarating&lt;/label&gt;
+                &lt;font&gt;font9&lt;/font&gt;
+                &lt;textcolor&gt;lightgray&lt;/textcolor&gt;
+                &lt;shadowAngle&gt;0&lt;/shadowAngle&gt;
+                &lt;shadowDistance&gt;0&lt;/shadowDistance&gt;
+                &lt;visible&gt;string.equals(#hideinfo, False)&lt;/visible&gt;
+              &lt;/control&gt;
+              &lt;control&gt;
+                &lt;description&gt;plot&lt;/description&gt;
+                &lt;type&gt;textboxscrollup&lt;/type&gt;
+                &lt;posX&gt;10&lt;/posX&gt;
+                &lt;posY&gt;180&lt;/posY&gt;
+                &lt;width&gt;365&lt;/width&gt;
+                &lt;height&gt;350&lt;/height&gt;
+                &lt;label&gt;#plot&lt;/label&gt;
+                &lt;font&gt;font9&lt;/font&gt;
+                &lt;lineSpacing&gt;2.5&lt;/lineSpacing&gt;
+                &lt;textcolor&gt;lightgray&lt;/textcolor&gt;
+                &lt;shadowAngle&gt;0&lt;/shadowAngle&gt;
+                &lt;shadowDistance&gt;0&lt;/shadowDistance&gt;
+                &lt;visible&gt;string.equals(#hideinfo, False)&lt;/visible&gt;
+              &lt;/control&gt;
+            &lt;/controls&gt;</subitem>
+          </subitems>
+        </control>
+        <control>
+          <description>playlist listcontrol</description>
+          <type>playlistcontrol</type>
+          <id>50</id>
+          <posX>100</posX>
+          <posY>247</posY>
+          <width>875</width>
+          <height>770</height>
+          <textXOff>15</textXOff>
+          <textYOff>7</textYOff>
+          <textcontent3>#duration</textcontent3>
+          <upBtnXOffset>721</upBtnXOffset>
+          <downBtnXOffset>775</downBtnXOffset>
+          <deleteBtnXOffset>830</deleteBtnXOffset>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <selectedColor3>ff00ff00</selectedColor3>
+          <selectedColor2>ff00ff00</selectedColor2>
+          <selectedColor>ff00ff00</selectedColor>
+          <scrollOffset>2</scrollOffset>
+          <unfocusedAlpha>160</unfocusedAlpha>
+          <scrollbarHeight>400</scrollbarHeight>
+          <scrollbarbg>MP139\bar_vert.png</scrollbarbg>
+          <scrollbartop>MP139\mouse_left_horizontal.png</scrollbartop>
+          <scrollbarbottom>MP139\mouse_right_horizontal.png</scrollbarbottom>
+          <scrollbarXOff>32</scrollbarXOff>
+          <scrollbarYOff>0</scrollbarYOff>
+          <showScrollbar>yes</showScrollbar>
+          <scrollbarwidth>20</scrollbarwidth>
+          <itemWidth>48</itemWidth>
+          <itemHeight>48</itemHeight>
+          <IconXOff>10</IconXOff>
+          <IconYOff>2</IconYOff>
+          <keepaspectratio>yes</keepaspectratio>
+          <upBtnWidth>52</upBtnWidth>
+          <downBtnWidth>52</downBtnWidth>
+          <deleteBtnWidth>48</deleteBtnWidth>
+          <upBtnHeight>52</upBtnHeight>
+          <downBtnHeight>52</downBtnHeight>
+          <deleteBtnHeight>48</deleteBtnHeight>
+          <upBtnYOffset>0</upBtnYOffset>
+          <downBtnYOffset>-4</downBtnYOffset>
+          <deleteBtnYOffset>1</deleteBtnYOffset>
+        </control>
+      </control>
+    </control>
+  </controls>
+</window>

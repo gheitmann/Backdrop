@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+    <control>
+      <description>DUMMY CONTROLL FOR VISIBILITY CONDITION FOR CLOCK</description>
+      <type>label</type>
+      <id>93761232</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>DUMMY CONTROLL FOR FANART HANDLER IS SCRAPING VISIBILITY CONDITION</description>
+      <type>label</type>
+      <id>91919280</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>2</width>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>Scraping Header Shadow</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>812</posX>
+      <posY>358</posY>
+      <width>300</width>
+      <textcolor>90000000</textcolor>
+      <!--<textcolor>ff000000</textcolor>-->
+      <font>font14</font>
+      <label>scraping fanart</label>
+      <align>center</align>
+      <visible>control.isvisible(91919280)</visible>
+    </control>
+    <control>
+      <description>Scraping Header</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>810</posX>
+      <posY>357</posY>
+      <width>300</width>
+      <textcolor>90ffffff</textcolor>
+      <!--<textcolor>ffffffff</textcolor>-->
+      <font>font14</font>
+      <label>scraping fanart</label>
+      <align>center</align>
+      <visible>control.isvisible(91919280)</visible>
+    </control>
+    <control>
+      <description>music background image</description>
+      <id>0</id>
+      <type>multiimage</type>
+      <posX>888</posX>
+      <posY>195</posY>
+      <width>144</width>
+      <height>144</height>
+      <imagepath>../FanartHandler</imagepath>
+      <timeperimage>150</timeperimage>
+      <fadetime>20</fadetime>
+      <loop>yes</loop>
+      <randomize>no</randomize>
+      <visible>control.isvisible(91919280)</visible>
+    </control>
+    <control>
+      <description>Scraping Percent Complete Shadow</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>890</posX>
+      <posY>268</posY>
+      <width>144</width>
+      <textcolor>90000000</textcolor>
+      <!--<textcolor>ff000000</textcolor>-->
+      <font>font14</font>
+      <label>#fanarthandler.scraper.percent.completed %</label>
+      <align>center</align>
+      <visible>control.isvisible(91919280)</visible>
+    </control>
+    <control>
+      <description>Scraping Percent Complete</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>888</posX>
+      <posY>267</posY>
+      <width>144</width>
+      <textcolor>90ffffff</textcolor>
+      <!--<textcolor>ffffffff</textcolor>-->
+      <font>font14</font>
+      <label>#fanarthandler.scraper.percent.completed %</label>
+      <align>center</align>
+      <visible>control.isvisible(91919280)</visible>
+    </control>
+    <control>
+      <description>Header Background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>time.header.png</texture>
+      <visible>!control.isvisible(93761232)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Date and Time</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1912</posX>
+      <posY>6</posY>
+      <width>900</width>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <textcolor>ffffffff</textcolor>
+      <shadowColor>ff191919</shadowColor>
+      <font>font13</font>
+      <label>#date | #time</label>
+      <align>right</align>
+      <visible>!control.isvisible(93761232)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Weather Condition</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1912</posX>
+      <posY>45</posY>
+      <width>900</width>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <textcolor>ffffffff</textcolor>
+      <shadowColor>ff191919</shadowColor>
+      <font>font13</font>
+      <label>#infoservice.weather.today.temp - #infoservice.weather.today.condition</label>
+      <align>right</align>
+      <visible>plugin.isenabled(InfoService)+[!control.isvisible(93761232)]</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+  </controls>
+</window>

@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>2014</id>
+  <defaultcontrol>6</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>yes</disabletopbar>
+  <controls>
+    <import>common.time.xml</import>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>279</posX>
+      <posY>86</posY>
+      <width>1425</width>
+      <height>675</height>
+      <texture>dialog_743_336.png</texture>
+    </control>
+    <control>
+      <description>Image Title value</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>390</posX>
+      <posY>142</posY>
+      <align>center</align>
+      <width>1350</width>
+      <font>font18BC</font>
+      <textcolor>ffcccccc</textcolor>
+      <label>Image Properties</label>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>Image Title value</description>
+      <type>label</type>
+      <id>20</id>
+      <font>font16BC</font>
+      <posX>345</posX>
+      <posY>150</posY>
+      <font>font18BC</font>
+      <textcolor>ff7FB1E5</textcolor>
+      <label>-</label>
+    </control>
+    <control>
+      <description>Dimensions txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>345</posX>
+      <posY>232</posY>
+      <label>9000</label>
+      <textcolor>ff7FB1E5</textcolor>
+    </control>
+    <control>
+      <description>Resolution txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>345</posX>
+      <posY>270</posY>
+      <label>9001</label>
+      <textcolor>ff7FB1E5</textcolor>
+    </control>
+    <control>
+      <description>Flash txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>345</posX>
+      <posY>308</posY>
+      <label>9002</label>
+      <textcolor>ff7FB1E5</textcolor>
+    </control>
+    <control>
+      <description>Metering mode txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>345</posX>
+      <posY>345</posY>
+      <label>9003</label>
+      <textcolor>ff7FB1E5</textcolor>
+    </control>
+    <control>
+      <description>Exposure Compensation txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>345</posX>
+      <posY>382</posY>
+      <label>9004</label>
+      <textcolor>ff7FB1E5</textcolor>
+    </control>
+    <control>
+      <description>Shutterspeed txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>345</posX>
+      <posY>420</posY>
+      <label>9005</label>
+      <textcolor>ff7FB1E5</textcolor>
+    </control>
+    <control>
+      <description>Date Taken txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>345</posX>
+      <posY>458</posY>
+      <label>9006</label>
+      <textcolor>ff7FB1E5</textcolor>
+    </control>
+    <control>
+      <description>Fstop txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>345</posX>
+      <posY>495</posY>
+      <label>9007</label>
+      <textcolor>ff7FB1E5</textcolor>
+    </control>
+    <control>
+      <description>Exposure Time txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>345</posX>
+      <posY>532</posY>
+      <label>9008</label>
+      <textcolor>ff7FB1E5</textcolor>
+    </control>
+    <control>
+      <description>Camera Model txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>345</posX>
+      <posY>570</posY>
+      <label>9009</label>
+      <textcolor>ff7FB1E5</textcolor>
+    </control>
+    <control>
+      <description>Equipment make txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>345</posX>
+      <posY>608</posY>
+      <label>9010</label>
+      <textcolor>ff7FB1E5</textcolor>
+    </control>
+    <control>
+      <description>View Comment txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>345</posX>
+      <posY>645</posY>
+      <label>9011</label>
+      <textcolor>ff7FB1E5</textcolor>
+    </control>
+    <control>
+      <description>Image Dimensions value</description>
+      <type>label</type>
+      <id>21</id>
+      <posX>615</posX>
+      <posY>232</posY>
+      <label>-</label>
+      <textcolor>ffffffff</textcolor>
+      <font>font12</font>
+    </control>
+    <control>
+      <description>Resolutions value</description>
+      <type>label</type>
+      <id>22</id>
+      <posX>615</posX>
+      <posY>270</posY>
+      <label>-</label>
+      <textcolor>ffffffff</textcolor>
+      <font>font12</font>
+    </control>
+    <control>
+      <description>Flash value</description>
+      <type>fadelabel</type>
+      <id>23</id>
+      <posX>615</posX>
+      <posY>308</posY>
+      <width>450</width>
+      <label>-</label>
+      <textcolor>ffffffff</textcolor>
+      <font>font12</font>
+    </control>
+    <control>
+      <description>Metering Mode value</description>
+      <type>fadelabel</type>
+      <id>24</id>
+      <posX>615</posX>
+      <posY>345</posY>
+      <width>450</width>
+      <label>-</label>
+      <textcolor>ffffffff</textcolor>
+      <font>font12</font>
+    </control>
+    <control>
+      <description>Exposure Compensation value</description>
+      <type>fadelabel</type>
+      <id>25</id>
+      <posX>615</posX>
+      <posY>382</posY>
+      <width>450</width>
+      <label>-</label>
+      <textcolor>ffffffff</textcolor>
+      <font>font12</font>
+    </control>
+    <control>
+      <description>Shutter Speed value</description>
+      <type>fadelabel</type>
+      <id>26</id>
+      <posX>615</posX>
+      <posY>420</posY>
+      <width>450</width>
+      <label>-</label>
+      <textcolor>ffffffff</textcolor>
+      <font>font12</font>
+    </control>
+    <control>
+      <description>Date Taken value</description>
+      <type>label</type>
+      <id>27</id>
+      <posX>615</posX>
+      <posY>458</posY>
+      <label>-</label>
+      <textcolor>ffffffff</textcolor>
+      <font>font12</font>
+    </control>
+    <control>
+      <description>Fstop value</description>
+      <type>label</type>
+      <id>28</id>
+      <posX>615</posX>
+      <posY>495</posY>
+      <label>-</label>
+      <textcolor>ffffffff</textcolor>
+      <font>font12</font>
+    </control>
+    <control>
+      <description>Exposure Time value</description>
+      <type>label</type>
+      <id>29</id>
+      <posX>615</posX>
+      <posY>532</posY>
+      <label>-</label>
+      <textcolor>ffffffff</textcolor>
+      <font>font12</font>
+    </control>
+    <control>
+      <description>Camera Model value</description>
+      <type>fadelabel</type>
+      <id>30</id>
+      <posX>615</posX>
+      <posY>570</posY>
+      <width>450</width>
+      <label>-</label>
+      <textcolor>ffffffff</textcolor>
+      <font>font12</font>
+    </control>
+    <control>
+      <description>Equipment Make value</description>
+      <type>fadelabel</type>
+      <id>31</id>
+      <posX>615</posX>
+      <posY>608</posY>
+      <width>608</width>
+      <label>-</label>
+      <textcolor>ffffffff</textcolor>
+      <font>font12</font>
+    </control>
+    <control>
+      <description>View Comments value</description>
+      <type>label</type>
+      <id>32</id>
+      <posX>615</posX>
+      <posY>645</posY>
+      <label>-</label>
+      <textcolor>ffffffff</textcolor>
+      <font>font12</font>
+    </control>
+    <control>
+      <description>Image</description>
+      <type>image</type>
+      <id>3</id>
+      <posX>945</posX>
+      <posY>232</posY>
+      <width>630</width>
+      <height>450</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <zoom>yes</zoom>
+      <zoomfromtop>yes</zoomfromtop>
+      <centered>yes</centered>
+    </control>
+  </controls>
+  <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="960,600" time="550">WindowOpen</animation>
+  <animation effect="zoom" start="100,100" end="1,1" center="960,600" time="350">WindowClose</animation>
+</window>

@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<window>
+  <id>747</id>
+  <defaultcontrol>7</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#header.label:</define>
+  <controls>
+    <control>
+      <description>BG</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>MP139\blue.png</texture>
+      <width>1920</width>
+      <height>1080</height>
+    </control>
+    <control>
+      <description>BG</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>MP139\BH TVtimer.jpg</texture>
+      <width>1920</width>
+      <height>1080</height>
+      <colordiffuse>90ffffff</colordiffuse>
+    </control>
+    <import>mp139.common.window.xml</import>
+    <import>mp139.common.time.xml</import>
+    <control>
+      <type>fadelabel</type>
+      <description>e.g. Setup TV</description>
+      <id>0</id>
+      <posX>45</posX>
+      <posY>54</posY>
+      <label>#currentmodule  ·  #highlightedbutton</label>
+      <width>1802</width>
+      <align>left</align>
+      <font>mp139.Label</font>
+      <shadowAngle>10</shadowAngle>
+      <shadowDistance>3</shadowDistance>
+      <shadowColor>ff000000</shadowColor>
+      <textcolor>lightgray</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <visible>
+      </visible>
+      <wrapString>  |  </wrapString>
+      <scrollStartDelaySec>5</scrollStartDelaySec>
+    </control>
+    <control>
+      <description>General Overlay</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>45</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>MP139\general_overlay.png</texture>
+    </control>
+    <control>
+      <description>listcontrol</description>
+      <type>listcontrol</type>
+      <id>50</id>
+      <posX>525</posX>
+      <onleft>7</onleft>
+      <onright>7</onright>
+      <onup>7</onup>
+      <ondown>7</ondown>
+      <posY>247</posY>
+      <width>1250</width>
+      <height>750</height>
+      <scrollOffset>2</scrollOffset>
+      <unfocusedAlpha>160</unfocusedAlpha>
+      <scrollbarHeight>400</scrollbarHeight>
+      <scrollbarbg>MP139\bar_vert.png</scrollbarbg>
+      <scrollbartop>MP139\mouse_left_horizontal.png</scrollbartop>
+      <scrollbarbottom>MP139\mouse_right_horizontal.png</scrollbarbottom>
+      <scrollbarXOff>52</scrollbarXOff>
+      <scrollbarYOff>0</scrollbarYOff>
+      <showScrollbar>yes</showScrollbar>
+      <scrollbarwidth>20</scrollbarwidth>
+      <spinWidth>49</spinWidth>
+      <spinHeight>49</spinHeight>
+      <spinPosX>3270</spinPosX>
+      <spinPosY>993</spinPosY>
+      <spinAlign>Right</spinAlign>
+      <spinColor>ffffffff</spinColor>
+      <textureUp>MP139\page_up_nofocus.png</textureUp>
+      <textureDown>MP139\page_down_nofocus.png</textureDown>
+      <textureUpFocus>MP139\page_up_focus.png</textureUpFocus>
+      <textureDownFocus>MP139\page_down_focus.png</textureDownFocus>
+      <textureFocus>MP139\list_sub_focus.png</textureFocus>
+      <textureNoFocus>MP139\list_sub_nofocus.png</textureNoFocus>
+      <textureHeight>48</textureHeight>
+      <spaceBetweenItems />
+      <font>mp139.font12</font>
+      <shadedColor>20ffffff</shadedColor>
+      <selectedColor3>ff00ff00</selectedColor3>
+      <selectedColor2>ff00ff00</selectedColor2>
+      <selectedColor>ff00ff00</selectedColor>
+      <playedColor>ffffffff</playedColor>
+      <playedColor2>ffffffff</playedColor2>
+      <textcolor>ffffffff</textcolor>
+      <textcolorNoFocus>ffffffff</textcolorNoFocus>
+      <textcolor2>ffffffff</textcolor2>
+      <textcolor3>ffffffff</textcolor3>
+      <colordiffuse>ffffffff</colordiffuse>
+      <remoteColor>ff99f9ff</remoteColor>
+      <remoteColor2>ff99f9ff</remoteColor2>
+      <downloadColor>ff666666</downloadColor>
+      <downloadColor2>ff80ff80</downloadColor2>
+      <dimColor>ffffffff</dimColor>
+      <scrollStartDelaySec>1</scrollStartDelaySec>
+      <textXOff>15</textXOff>
+      <textYOff>2</textYOff>
+      <textXOff2>0</textXOff2>
+      <textYOff2>2</textYOff2>
+      <itemWidth>44</itemWidth>
+      <itemHeight>44</itemHeight>
+      <IconXOff>10</IconXOff>
+      <IconYOff>2</IconYOff>
+      <PinIconXOff>1177</PinIconXOff>
+      <PinIconYOff>9</PinIconYOff>
+      <PinIconWidth>35</PinIconWidth>
+      <PinIconHeight>25</PinIconHeight>
+      <folderPrefix />
+      <folderSuffix />
+      <keepaspectratio>yes</keepaspectratio>
+      <shadowAngle>0</shadowAngle>
+      <shadowDistance>0</shadowDistance>
+      <shadowColor>0</shadowColor>
+    </control>
+    <control>
+      <type>group</type>
+      <layout>StackLayout</layout>
+      <description>group element</description>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <posX>75</posX>
+      <posY>255</posY>
+      <control>
+        <description>Search Title</description>
+        <type>button</type>
+        <id>7</id>
+        <label>6032</label>
+        <onup>17</onup>
+        <ondown>8</ondown>
+        <onright>50</onright>
+        <posX>799</posX>
+        <posY>375</posY>
+        <width>390</width>
+        <height>60</height>
+        <textXOff>25</textXOff>
+        <textYOff>1</textYOff>
+        <textalign>left</textalign>
+        <textvalign>middle</textvalign>
+        <textureFocus>MP139\button_focus.png</textureFocus>
+        <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <scrollWrapString>  |  </scrollWrapString>
+        <font>mp139.Label</font>
+        <textcolor>ffffffff</textcolor>
+        <colordiffuse>ffffffff</colordiffuse>
+        <disabledcolor>90ffffff</disabledcolor>
+        <textcolorNoFocus>ff00bfff</textcolorNoFocus>
+        <dimColor>90ffffff</dimColor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>Search by keyword</description>
+        <type>button</type>
+        <id>8</id>
+        <label>6033</label>
+        <onup>7</onup>
+        <ondown>9</ondown>
+        <onright>50</onright>
+        <posX>799</posX>
+        <posY>375</posY>
+        <width>390</width>
+        <height>60</height>
+        <textXOff>25</textXOff>
+        <textYOff>1</textYOff>
+        <textalign>left</textalign>
+        <textvalign>middle</textvalign>
+        <textureFocus>MP139\button_focus.png</textureFocus>
+        <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <scrollWrapString>  |  </scrollWrapString>
+        <font>mp139.Label</font>
+        <textcolor>ffffffff</textcolor>
+        <colordiffuse>ffffffff</colordiffuse>
+        <disabledcolor>90ffffff</disabledcolor>
+        <textcolorNoFocus>ff00bfff</textcolorNoFocus>
+        <dimColor>90ffffff</dimColor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <control>
+        <description>Search by genre</description>
+        <type>button</type>
+        <id>9</id>
+        <label>6034</label>
+        <onup>8</onup>
+        <ondown>10</ondown>
+        <onright>50</onright>
+        <posX>799</posX>
+        <posY>375</posY>
+        <width>390</width>
+        <height>60</height>
+        <textXOff>25</textXOff>
+        <textYOff>1</textYOff>
+        <textalign>left</textalign>
+        <textvalign>middle</textvalign>
+        <textureFocus>MP139\button_focus.png</textureFocus>
+        <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <scrollWrapString>  |  </scrollWrapString>
+        <font>mp139.Label</font>
+        <textcolor>ffffffff</textcolor>
+        <colordiffuse>ffffffff</colordiffuse>
+        <disabledcolor>90ffffff</disabledcolor>
+        <textcolorNoFocus>ff00bfff</textcolorNoFocus>
+        <dimColor>90ffffff</dimColor>
+        <shadowAngle>0</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor />
+      </control>
+      <dimColor>ffffffff</dimColor>
+    </control>
+  </controls>
+</window>

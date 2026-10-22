@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<window>
+  <controls>
+    <control>
+      <description>TV Progress Bar</description>
+      <type>tvprogress</type>
+      <id>101</id>
+      <posX>115</posX>
+      <posY>986</posY>
+      <width>1686</width>
+      <height>51</height>
+      <!--<toptexture>osd_progress_indicatorTV.png</toptexture>  -->
+      <TextureOffsetY>16</TextureOffsetY>
+      <bottomtexture>-</bottomtexture>
+      <texturetick>-</texturetick>
+      <lefttexture>-</lefttexture>
+      <midtexture>-</midtexture>
+      <righttexture>-</righttexture>
+      <logotexture>-</logotexture>
+      <fillbackgroundtexture>-</fillbackgroundtexture>
+      <fillbgxoff>17</fillbgxoff>
+      <fillbgyoff>11</fillbgyoff>
+      <filltexture1>osdprogress.png</filltexture1>
+      <filltexture2>osdprogress.png</filltexture2>
+      <filltexture3>osdprogress.png</filltexture3>
+      <fillheight>21</fillheight>
+      <label>#TV.Record.percent1</label>
+      <label1>#TV.Record.percent2</label1>
+      <label2>#TV.Record.percent3</label2>
+      <font>font10</font>
+      <textcolor>ff888888</textcolor>
+      <visible>[window.isosdvisible|player.paused|player.rewinding|player.forwarding|Control.IsVisible(10)|player.seeking]+!Control.IsVisible(1256891)</visible>
+    </control>
+    <control>
+      <description>Start Time Info</description>
+      <type>label</type>
+      <id>101</id>
+      <posX>165</posX>
+      <posY>1005</posY>
+      <label>#currentplaytime</label>
+      <align>left</align>
+      <font>font13</font>
+      <textcolor>ffcccccc</textcolor>
+      <visible>window.isosdvisible|player.paused|player.rewinding|player.forwarding|Control.IsVisible(10)|player.seeking</visible>
+    </control>
+    <control>
+      <description>End Time Info</description>
+      <type>label</type>
+      <id>102</id>
+      <posX>1748</posX>
+      <posY>1005</posY>
+      <label>#currentremaining</label>
+      <align>right</align>
+      <font>font13</font>
+      <textcolor>ffcccccc</textcolor>
+      <visible>window.isosdvisible|player.paused|player.rewinding|player.forwarding|Control.IsVisible(10)|player.seeking</visible>
+    </control>
+    <control>
+      <id>0</id>
+      <type>image</type>
+      <posX>891</posX>
+      <posY>975</posY>
+      <width>140</width>
+      <height>66</height>
+      <keepaspectratio>no</keepaspectratio>
+      <texture>clock.png</texture>
+      <visible>player.forwarding|player.rewinding</visible>
+    </control>
+    <control>
+      <description>Time</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>1005</posY>
+      <width>1920</width>
+      <height>38</height>
+      <align>center</align>
+      <font>font13</font>
+      <label>#time</label>
+      <visible>player.forwarding|player.rewinding</visible>
+    </control>
+  </controls>
+</window>

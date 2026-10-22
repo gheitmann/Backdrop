@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<window>
+  <id>3007</id>
+  <defaultcontrol>213</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>yes</disabletopbar>
+  <controls>
+    <control>
+      <description>background</description>
+      <type>image</type>
+      <id>300</id>
+      <posX>0</posX>
+      <posY>766</posY>
+      <width>1920</width>
+      <height>314</height>
+      <texture>osdbackground.png</texture>
+      <!--<animation effect="fade" time="300" reversible="true">VisibleChange</animation>	  -->
+    </control>
+    <control>
+      <description>TV Logo</description>
+      <type>image</type>
+      <id>10</id>
+      <posX>150</posX>
+      <posY>786</posY>
+      <width>135</width>
+      <height>135</height>
+      <texture flipY="true" diffuse="diffusemirrorwide.png">#TV.View.thumb</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+    </control>
+    <!--								                <control>
+                        <description>Progress Bar Background</description>
+                        <type>image</type>
+						<posX>148</posX>
+						<posY>978</posY>
+						<width>1620</width>
+						<height>45</height>
+                        <texture>osdprogressback.png</texture>
+                        <keepaspectratio>no</keepaspectratio>
+                </control>					
+-->
+    <control>
+      <description>TV Progress Bar</description>
+      <type>tvprogress</type>
+      <id>1</id>
+      <posX>115</posX>
+      <posY>986</posY>
+      <width>1686</width>
+      <height>51</height>
+      <!--<toptexture>osd_progress_indicatorTV.png</toptexture>  -->
+      <TextureOffsetY>16</TextureOffsetY>
+      <bottomtexture>-</bottomtexture>
+      <texturetick>-</texturetick>
+      <lefttexture>-</lefttexture>
+      <midtexture>-</midtexture>
+      <righttexture>-</righttexture>
+      <logotexture>-</logotexture>
+      <fillbackgroundtexture>-</fillbackgroundtexture>
+      <fillbgxoff>17</fillbgxoff>
+      <fillbgyoff>11</fillbgyoff>
+      <filltexture1>osdprogress.png</filltexture1>
+      <filltexture2>osdprogress.png</filltexture2>
+      <filltexture3>osdprogress.png</filltexture3>
+      <fillheight>21</fillheight>
+      <label>#TV.Record.percent1</label>
+      <label1>#TV.Record.percent2</label1>
+      <label2>#TV.Record.percent3</label2>
+      <font>font10</font>
+      <textcolor>ff888888</textcolor>
+    </control>
+    <control>
+      <description>Start Time Info</description>
+      <type>label</type>
+      <id>101</id>
+      <posX>165</posX>
+      <posY>1005</posY>
+      <label>#currentplaytime</label>
+      <align>left</align>
+      <font>font13</font>
+      <textcolor>ffcccccc</textcolor>
+    </control>
+    <control>
+      <description>End Time Info</description>
+      <type>label</type>
+      <id>102</id>
+      <posX>1748</posX>
+      <posY>1005</posY>
+      <label>#currentremaining</label>
+      <align>right</align>
+      <font>font13</font>
+      <textcolor>ffcccccc</textcolor>
+    </control>
+    <control>
+      <description>Channel Name</description>
+      <id>35</id>
+      <type>label</type>
+      <posX>308</posX>
+      <posY>780</posY>
+      <width>960</width>
+      <font>font18</font>
+      <textcolor>ffffffff</textcolor>
+      <label>#TV.View.channel</label>
+    </control>
+    <control>
+      <description>On tv NOW label</description>
+      <id>0</id>
+      <type>label</type>
+      <width>800</width>
+      <posX>308</posX>
+      <posY>840</posY>
+      <font>font12</font>
+      <label>789</label>
+      <textcolor>ff7FB1E5</textcolor>
+    </control>
+    <control>
+      <description>On tv NOW</description>
+      <id>36</id>
+      <type>textbox</type>
+      <width>800</width>
+      <height>30</height>
+      <posX>308</posX>
+      <posY>865</posY>
+      <font>font14</font>
+      <label>#TV.View.title</label>
+      <textcolor>ffFFFFFF</textcolor>
+    </control>
+    <control>
+      <description>On tv Next label</description>
+      <id>0</id>
+      <type>label</type>
+      <width>800</width>
+      <posX>308</posX>
+      <posY>915</posY>
+      <font>font12</font>
+      <label>790</label>
+      <textcolor>ff7FB1E5</textcolor>
+    </control>
+    <control>
+      <description>On tv NEXT</description>
+      <id>37</id>
+      <type>textbox</type>
+      <width>800</width>
+      <height>30</height>
+      <posX>308</posX>
+      <posY>940</posY>
+      <font>font14</font>
+      <label>#TV.Next.title</label>
+      <textcolor>ffffffff</textcolor>
+    </control>
+    <control>
+      <description>Zap to channel no</description>
+      <type>label</type>
+      <id>38</id>
+      <posX>800</posX>
+      <posY>840</posY>
+      <label>-</label>
+      <align>left</align>
+      <font>font22</font>
+      <textcolor>white</textcolor>
+      <animation effect="zoom" start="100,100" end="160,160" time="10">visiblechange</animation>
+    </control>
+    <!--                <control>
+                        <description>Plot</description>
+                        <type>textboxscrollup</type>
+                        <id>38</id>
+      <posX>300</posX>
+      <posY>885</posY>
+      <width>1208</width>
+      <height>93</height>
+	  <textcolor>ffFFFFFF</textcolor>                        
+                        <label>#TV.View.description</label>
+                        <font>font14</font>
+                </control>				-->
+    <control>
+      <description>rec background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>120</posX>
+      <posY>30</posY>
+      <width>138</width>
+      <height>50</height>
+      <texture>diffusemirrorwide.png</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>Control.HasThumb(39)</visible>
+      <!--						<animation effect="fade" time="400" reversible="true">VisibleChange</animation>	-->
+    </control>
+    <control>
+      <description>rec logo</description>
+      <type>image</type>
+      <id>39</id>
+      <posX>1840</posX>
+      <posY>85</posY>
+      <width>72</width>
+      <height>30</height>
+      <texture>rec_indicator.png</texture>
+      <animation effect="fade" start="100" end="40" time="600" delay="200" tween="cubic" easing="inout" condition="true" pulse="true">Conditional</animation>
+    </control>
+  </controls>
+</window>

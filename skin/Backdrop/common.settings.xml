@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>overlay.settings.png</texture>
+    </control>
+    <control>
+      <description>Listview separator line</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1275</posX>
+      <posY>60</posY>
+      <width>15</width>
+      <height>960</height>
+      <texture>line.listview.png</texture>
+    </control>
+    <control>
+      <description>Settings Text</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1905</posX>
+      <posY>180</posY>
+      <width>1350</width>
+      <align>right</align>
+      <textcolor>ff7FB1E5</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <font>font32</font>
+      <label>settings</label>
+      <scrollStartDelaySec>5</scrollStartDelaySec>
+    </control>
+    <control>
+      <description>Settings Text</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1905</posX>
+      <posY>975</posY>
+      <width>1350</width>
+      <align>right</align>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <font>font22</font>
+      <label>backdrop</label>
+      <scrollStartDelaySec>5</scrollStartDelaySec>
+    </control>
+    <control>
+      <description>Settings Text</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1905</posX>
+      <posY>1035</posY>
+      <width>1350</width>
+      <align>right</align>
+      <textcolor>ff7FB1E5</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <font>font14</font>
+      <label>by cul8er</label>
+      <scrollStartDelaySec>5</scrollStartDelaySec>
+    </control>
+    <import>common.time.xml</import>
+  </controls>
+</window>

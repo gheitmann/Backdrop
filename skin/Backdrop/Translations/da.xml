@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Skin translation file -->
+<!-- English (US) -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+<strings>
+  <!-- # -->
+  <!-- A -->
+  <string Field="AlbumInformation">Album Information</string>
+  <string Field="ArtistInfo">Artist Information</string>
+  <string Field="AudioMenu">Audio Menu</string>
+  <!-- B -->
+  <string Field="Bookmarks">Bookmarks</string>
+  <!-- C -->
+  <string Field="Cast">Cast</string>
+  <!-- D -->
+  <string Field="Details">Details</string>
+  <string Field="Director">Director</string>
+  <!-- E -->
+  <string Field="EpisodeDetails">Episode Details</string>
+  <string Field="Extensions">Extensions</string>
+  <!-- F -->
+  <string Field="FirstAired">First Aired</string>
+  <!-- G -->
+  <string Field="Genre">Genre</string>
+  <!-- H -->
+  <string Field="Home">Home</string>
+  <!-- I -->
+  <!-- L -->
+  <string Field="LastFMLove">Last.FM - Love</string>
+  <string Field="LastFMBan">Last.FM - Ban</string>
+  <string Field="LatestMovies">Latest Movies</string>
+  <string Field="LatestMusic">Latest Music</string>
+  <string Field="LatestPictures">Latest Pictures</string>
+  <string Field="LatestRecordings">Latest Recordings</string>
+  <string Field="LatestSeries">Latest Series</string>
+  <string Field="List">List</string>
+  <string Field="Lyrics">Lyrics</string>
+  <!-- M -->
+  <string Field="MovieDetails">Movie Details</string>
+  <string Field="MovieLibrary">Movie Library</string>
+  <string Field="MusicDetails">Music Details</string>
+  <string Field="MusicLibrary">Music Library</string>
+  <string Field="MusicNowPlaying">Music Now Playing</string>
+  <string Field="MusicPlaylist">Music Playlist</string>
+  <string Field="MusicSearch">Music Search</string>
+  <string Field="MusicSearchDetails">Music Search Details</string>
+  <string Field="MusicSettings">Music Settings</string>
+  <!-- N -->
+  <string Field="NewEpisodes">Only new episodes</string>
+  <!-- O -->
+  <!-- P -->
+  <string Field="PictureLibrary">Picture Library</string>
+  <string Field="Plugins">Plugins</string>
+  <string Field="PressUp">Press Up to view more details.</string>
+  <string Field="ProgramInfo">Program Info</string>
+  <!-- R -->
+  <string Field="Radio">Radio</string>
+  <string Field="RadioGuide">Radio Guide</string>
+  <string Field="RadioGuideSearch">Radio Guide Search</string>
+  <string Field="RadioRecordings">Radio Recordings</string>
+  <string Field="Rating">Rating</string>
+  <string Field="Record">Record</string>
+  <string Field="ReleaseDate">Release Date</string>
+  <string Field="Results">Results</string>
+  <string Field="Runtime">Runtime</string>
+  <!-- S -->
+  <string Field="Search">Search</string>
+  <string Field="SeriesDetails">Series Details</string>
+  <string Field="SeasonDetails">Season Details</string>
+  <string Field="SeriesLibrary">Series Library</string>
+  <string Field="SeriesPlaylist">Series - Playlist</string>
+  <string Field="SlideshowSettings">Slideshow Settings</string>
+  <string Field="Subtitles">Subtitles</string>
+  <string Field="SubtitlesMenu">SUBTITLES MENU</string>
+  <!-- T -->
+  <string Field="Teletext">Teletext</string>
+  <string Field="Television">Television</string>
+  <string Field="TVGuide">TV Guide</string>
+  <string Field="TVGuideSearch">TV Guide Search</string>
+  <string Field="TVRecordings">TV Recordings</string>
+  <!-- U -->
+  <string Field="UpcomingRecordings">Upcoming Recordings</string>
+  <!-- V -->
+  <string Field="VideoMenu">Video Menu</string>
+  <string Field="VideoSettings">Video Settings</string>
+  <string Field="VideoInfo">Video Information</string>
+  <!-- W -->
+  <string Field="WeatherForecast">Weather Forecast</string>
+  <!-- Y -->
+  <string Field="Year">Year</string>
+  <string Field="NoRecordingsFound">No recordings found</string>
+  <string Field="Listened">Listened</string>
+  <string Field="Design">Design</string>
+  <string Field="LastWatched">Last watched</string>
+  <string Field="Awards">Awards</string>
+  <string Field="EPGRows">Lines in TV/Radio EPGs</string>
+  <string Field="NumberEPGRows">Number of lines</string>
+  <string Field="Thumbsview">Thumbnail View</string>
+  <string Field="Thumbsview.Select">Normal</string>
+  <string Field="WorldNewsTicker">Activate WorldNews Ticker</string>
+  <string Field="AnalogClockOSD">Analog Clock in OSDs</string>
+  <string Field="MusicNowPlayingFanart">Music NowPlaying Fanart in BasicHome</string>
+  <string Field="MusicFanart">Random Music Fanart in BasicHome</string>
+  <string Field="VideoFanart">Random Video Fanart in BasicHome</string>
+  <string Field="TVGuideRows">Number of rows in TV guide</string>
+  <string Field="TVSeriesRows">Rows in TVSeries Wide Banner</string>
+  <string Field="DescriptionTopbar">Description of topbar buttons:</string>
+  <string Field="BackPrevious">Back to previous window</string>
+  <string Field="BackBasicHome">To BasicHome &lt;-&gt; ClassicHome</string>
+  <string Field="LiveTV">LiveTV/Video in background</string>
+  <string Field="PlayControls">Audio/Video play controls</string>
+  <string Field="SkinInfo">This screen</string>
+  <string Field="CloseExit">Close/Exit MP</string>
+  <string Field="ShutdownOptions">Shutdown Options</string>
+  <string Field="InfoButton">In list views: Pressing right (remote/keyboard) or hover with mouse shows extended information</string>
+  <string Field="SupportedPlugins">Supported plugins (in alphabetical order):</string>
+  <string Field="PluginsMP">... and of course all standard plugins of this MediaPortal version.</string>
+  <string Field="MPVersion">DefaultWideHD is designed for MP 1.7.x or newer versions.</string>
+  <string Field="Enjoy">Enjoy MediaPortal with DefaultWideHD!</string>
+  <string Field="Background">Background</string>
+  <string Field="Games">Games</string>
+  <string Field="NewRecordings">Recently added TV recordings</string>
+  <string Field="NewVideos">Recently added videos</string>
+  <string Field="NewYouTubeVideos">Recently added Online Videos</string>
+  <string Field="NewFilms">Recently added movies</string>
+  <string Field="LastPlayed">Last played</string>
+  <string Field="NewPictures">Recently added pictures</string>
+  <string Field="NowRecording">Active recordings</string>
+  <string Field="FullView">Infos always visible</string>
+  <string Field="ShowDVDArt">Show DVD-Art</string>
+  <string Field="NoClock">Deactivate Clock and Plugin Icons</string>
+  <string Field="Timer">#(L(603))</string>
+  <string Field="Update">DefaultWideHD available!</string>
+  <string Field="CategoryBackgrounds">Plugin BGs BasicHome</string>
+  <string Field="Fullscreen">Fullscreen</string>
+  <string Field="tvstreaminfo">TV OSD stream info always visible</string>
+  <string Field="tv2">I am watching you!</string>
+  <string Field="tv8">Goal!!!</string>
+  <string Field="tv9">I'm fed up!</string>
+  <string Field="tv10">Splash!</string>
+  <string Field="tv">No GIF</string>
+  <string Field="KeyboardShortcuts">Keyboard Shortcuts (General)</string>
+  <string Field="AudioOptions">Volume up/down</string>
+  <string Field="CategoryBG">Plugin-Poster BasicHome</string>
+  <string Field="EnlargeImage">Enlarge Image</string>
+  <string Field="Package">Package</string>
+  <string Field="Group">Group</string>
+  <string Field="GrabNow">Grab now</string>
+  <string Field="CancelGrab">Cancel grab</string>
+  <string Field="Multiple">Multiple</string>
+  <string Field="SelectPackage">Select package</string>
+  <string Field="SelectChannelGroup">Select channel group</string>
+  <string Field="SelectLayerDesign">Select layer design</string>
+  <string Field="ShowHighscore">Highscore Animation</string>
+  <string Field="PulsingSidelines">Pulsing sidelines on</string>
+  <string Field="TetrisHelpText">Tetris is a well-known computer puzzle game popularised by the Game Boy.
+The aim of the puzzle is to manipulate tetromino pieces (blocks) or shapes by moving each one sideways and rotating them 90 degrees, with the aim of creating a horizontal line of blocks with no gaps. 
+When such a line is created, it disappears and every block above the deleted line falls down.
+After every ten deleted lines, the game reaches a new level. 
+As the game progresses, the tetrominoes fall faster with each level, and the game ends when the stack of tetrominoes reaches the top of the board and no more new tetrominoes can move in.
+The game can also end if the player manages to get to level 15.
+
+How to play
+- To play - arrow right to enter the playground, then press Enter
+- Move blocks horizontal - left or right arrow
+- Rotate blocks - up arrow
+- Quick drop - down arrow
+- Instant drop - Enter
+- Pause or continue the game - Back remote control button, or Esc
+
+The next block is displayed as a hint in the arrow graphic at the top right of the playing field.
+The level number is also displayed there in the corresponding level colour.
+
+
+Smirnuff (author), catavolt and High_Five wish you lots of fun with Tetris ;)</string>
+  <string Field="About">What is Tetris?</string>
+  <string Field="Important">Important !</string>
+  <string Field="CloseBHE">Close BasicHome Editor</string>
+  <string Field="SaveBHE">to store your new settings !</string>
+  <string Field="EXIFDATA">EXIF DATA</string>
+  <string Field="ImageInfos">Image information</string>
+  <string Field="CameraSettings">Camera settings</string>
+</strings>

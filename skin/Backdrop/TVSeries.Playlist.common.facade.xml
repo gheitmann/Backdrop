@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+This file should contain the facade view
+-->
+<window>
+  <allowoverlay>no</allowoverlay>
+  <defaultcontrol>50</defaultcontrol>
+  <disabletopbar>yes</disabletopbar>
+  <controls>
+    <control>
+      <type>group</type>
+      <id>28</id>
+      <layout>StackLayout</layout>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <control>
+        <type>facadeview</type>
+        <id>50</id>
+        <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+        <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+        <control>
+          <description>graphical list (old)</description>
+          <type>listcontrol</type>
+          <subtype>album</subtype>
+          <id>50</id>
+        </control>
+        <control>
+          <description>Thumbnail Panel</description>
+          <type>thumbnailpanel</type>
+          <id>50</id>
+          <onleft>2</onleft>
+          <onright>50</onright>
+          <posX>34</posX>
+          <posY>600</posY>
+          <width>1875</width>
+          <height>600</height>
+          <spinPosX>3300</spinPosX>
+          <spinPosY>1028</spinPosY>
+          <textureUp>-</textureUp>
+          <textureDown>-</textureDown>
+          <textureUpFocus>-</textureUpFocus>
+          <textureDownFocus>-</textureDownFocus>
+          <imageFolder>-</imageFolder>
+          <!--		<imageFolderFocus>cd_glass_frame.png</imageFolderFocus> 		-->
+          <imageFolderFocus>-</imageFolderFocus>
+          <frameNoFocus>episode.frame.png</frameNoFocus>
+          <frameFocus>episode.frame.focus.png</frameFocus>
+          <textureMask>episode.frame.background.png</textureMask>
+          <textureWidth>216</textureWidth>
+          <textureHeight>146</textureHeight>
+          <itemWidth>232</itemWidth>
+          <itemHeight>160</itemHeight>
+          <thumbWidth>216</thumbWidth>
+          <thumbHeight>146</thumbHeight>
+          <thumbPosX>0</thumbPosX>
+          <thumbPosY>0</thumbPosY>
+          <font>font14</font>
+          <suffix>|</suffix>
+          <textureWidthBig>296</textureWidthBig>
+          <textureHeightBig>195</textureHeightBig>
+          <itemWidthBig>310</itemWidthBig>
+          <itemHeightBig>270</itemHeightBig>
+          <thumbWidthBig>296</thumbWidthBig>
+          <thumbHeightBig>195</thumbHeightBig>
+          <thumbPosXBig>0</thumbPosXBig>
+          <thumbPosYBig>0</thumbPosYBig>
+          <thumbZoom>yes</thumbZoom>
+          <keepaspectratio>yes</keepaspectratio>
+          <centered>yes</centered>
+          <enableFocusZoom>no</enableFocusZoom>
+          <unfocusedAlpha>160</unfocusedAlpha>
+          <scrollOffset>1</scrollOffset>
+          <!--<zoomXPixels>60</zoomXPixels>
+					<zoomYPixels>40</zoomYPixels>	-->
+          <hideUnfocusTexture>yes</hideUnfocusTexture>
+          <renderFocusText>no</renderFocusText>
+          <renderUnfocusText>no</renderUnfocusText>
+          <animation effect="slide" start="1350,0" time="1200" acceleration="-0.9" reversible="true">focus</animation>
+          <animation effect="slide" end="-1350,0" time="1400" acceleration="0.5" reversible="true">unfocus</animation>
+        </control>
+        <control>
+          <description>Filmstrip view</description>
+          <type>filmstrip</type>
+          <dimColor>90ffffff</dimColor>
+          <id>50</id>
+          <onrigth>50</onrigth>
+          <onleft>50</onleft>
+          <onup>2</onup>
+          <ondown>2</ondown>
+          <dimColor>90ffffff</dimColor>
+          <posX>70</posX>
+          <posY>795</posY>
+          <spinPosX>3300</spinPosX>
+          <spinPosY>1028</spinPosY>
+          <scrollOffset>3</scrollOffset>
+          <width>1860</width>
+          <height>864</height>
+          <thumbWidth>330</thumbWidth>
+          <thumbHeight>218</thumbHeight>
+          <thumbPosX>0</thumbPosX>
+          <thumbPosY>0</thumbPosY>
+          <itemWidth>362</itemWidth>
+          <itemHeight>195</itemHeight>
+          <textureWidth>330</textureWidth>
+          <textureHeight>218</textureHeight>
+          <imageFolderFocus>-</imageFolderFocus>
+          <frame mask="episode.frame2.background.png">episode.frame2.png</frame>
+          <frameFocus mask="episode.frame2.background.png">episode.frame2.png</frameFocus>
+          <!--<frame>thumb.frame.small.png</frame>
+					<frameFocus>thumb.frame.small.png</frameFocus>-->
+          <thumbs mask="episode.frame2.background.png" flipY="true" diffuse="diffuseoverlay.png" />
+          <InfoImage>-</InfoImage>
+          <background>-</background>
+          <showFrame>yes</showFrame>
+          <keepaspectratio>yes</keepaspectratio>
+          <centered>yes</centered>
+          <showFolder>no</showFolder>
+          <showBackGround>no</showBackGround>
+          <showInfoImage>no</showInfoImage>
+          <unfocusedAlpha>255</unfocusedAlpha>
+          <thumbAnimation effect="zoom" tween="back" acceleration="-4" easing="out" start="100,100" reversible="true" end="115,122" center="0,673" time="450">focus</thumbAnimation>
+          <thumbAnimation effect="zoom" start="115,122" reversible="true" end="100,100" center="0,673" time="200">unfocus</thumbAnimation>
+          <!--<animation effect="slide" start="1350,0" time="1200" acceleration="-0.9" reversible="true">focus</animation>
+				<animation effect="slide" end="-1350,0" time="1400" acceleration="0.5" reversible="true">unfocus</animation>	-->
+          <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,307" time="450" reversible="true">focus</animation>
+          <animation effect="zoom" delay="250" start="100,100" end="1,1" center="640,200 " time="200" reversible="true">unfocus</animation>
+          <animation effect="rotatex" start="0" end="65" center="640,195" time="450">unfocus</animation>
+        </control>
+        <control>
+          <description>Textlist (series and/or seasons if set and Episodes)</description>
+          <type>listcontrol</type>
+          <id>50</id>
+          <posY>608</posY>
+          <posX>1299</posX>
+          <height>518</height>
+          <width>428</width>
+          <spinPosY>1200</spinPosY>
+          <spinPosX>2100</spinPosX>
+          <textXOff>24</textXOff>
+          <textYOff>0</textYOff>
+          <textureFocus>playlist_sub_focus2.png</textureFocus>
+          <textureNoFocus>playlist_sub_nofocus1.png</textureNoFocus>
+          <textureUp>-</textureUp>
+          <textureDown>-</textureDown>
+          <spinCanFocus>no</spinCanFocus>
+          <shadowAngle>45</shadowAngle>
+          <shadowDistance>1</shadowDistance>
+          <shadowColor>FF000000</shadowColor>
+          <unfocusedAlpha>180</unfocusedAlpha>
+          <dimColor>ffffffff</dimColor>
+          <textcolor>ffffffff</textcolor>
+          <selectedColor>ff335266</selectedColor>
+          <shadedColor>ffffffff</shadedColor>
+          <playedColor>ffffffff</playedColor>
+          <textcolor2>ffffffff</textcolor2>
+          <textcolor3>ffffffff</textcolor3>
+          <colordiffuse>ffffffff</colordiffuse>
+          <remoteColor>ffcccccc</remoteColor>
+          <spaceBetweenItems>-1</spaceBetweenItems>
+          <textureHeight>52</textureHeight>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <textXOff>-95</textXOff>
+          <textYOff>0</textYOff>
+          <textXOff2>382</textXOff2>
+          <textXOff3>480</textXOff3>
+          <textYOff3>9</textYOff3>
+          <IconYOff>6</IconYOff>
+          <IconXOff>430</IconXOff>
+          <font>font14</font>
+          <font2>font14</font2>
+          <font3>font11</font3>
+          <itemHeight>36</itemHeight>
+          <itemWidth>144</itemWidth>
+          <animation effect="slide" start="500,0" time="800" acceleration="-0.9" reversible="true">focus</animation>
+          <animation effect="slide" end="500,0" time="200" acceleration="0.5" reversible="true">unfocus</animation>
+        </control>
+        <control>
+          <description>Cover Flow view</description>
+          <type>coverflow</type>
+          <colordiffuse>90ffffff</colordiffuse>
+          <dimColor>90ffffff</dimColor>
+          <id>50</id>
+          <posX>0</posX>
+          <posY>675</posY>
+          <width>1920</width>
+          <height>1080</height>
+          <onup>2</onup>
+          <ondown>2</ondown>
+          <onleft>50</onleft>
+          <onright>50</onright>
+          <selectedCard>0</selectedCard>
+          <cardWidth>303</cardWidth>
+          <cardHeight>450</cardHeight>
+          <angle>60</angle>
+          <sideShift>375</sideShift>
+          <sideGap>105</sideGap>
+          <sideDepth>450</sideDepth>
+          <offsetY>0</offsetY>
+          <selectedOffsetY>-80</selectedOffsetY>
+          <speed>8</speed>
+          <backgroundHeight>303</backgroundHeight>
+          <backgroundWidth>1920</backgroundWidth>
+          <backgroundX>0</backgroundX>
+          <backgroundY>705</backgroundY>
+          <backgroundDiffuse>FF000000</backgroundDiffuse>
+          <background>-</background>
+          <showBackground>no</showBackground>
+          <foregroundHeight>1080</foregroundHeight>
+          <foregroundWidth>1920</foregroundWidth>
+          <foregroundX>0</foregroundX>
+          <foregroundY>0</foregroundY>
+          <foregroundDiffuse>FF000000</foregroundDiffuse>
+          <foreground>-</foreground>
+          <showForeground>no</showForeground>
+          <showFrame>yes</showFrame>
+          <frame>coverflow.poster.glass.png</frame>
+          <frameFocus>coverflow.poster.glass.png</frameFocus>
+          <frameWidth>303</frameWidth>
+          <frameHeight>450</frameHeight>
+          <spinSpeed>6</spinSpeed>
+          <unfocusedAlpha>FF</unfocusedAlpha>
+          <folderPrefix />
+          <folderSuffix />
+          <font1>font13</font1>
+          <font2>font10</font2>
+          <label1>#title</label1>
+          <label2>#genre</label2>
+          <textColor>FFFFFFFF</textColor>
+          <remoteColor>FFFF0000</remoteColor>
+          <playedColor>ff7FB1E5</playedColor>
+          <downloadColor>FF00FF00</downloadColor>
+          <selectedColor>FFFFFFFF</selectedColor>
+          <shadowAngle>45</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor>FF000000</shadowColor>
+          <label1YOff>2108</label1YOff>
+          <label2YOff>2145</label2YOff>
+          <pageSize>5</pageSize>
+          <scrollbarBackground>osdprogressback.png</scrollbarBackground>
+          <scrollbarLeft>osdprogressleft.png</scrollbarLeft>
+          <scrollbarRight>osdprogressright.png</scrollbarRight>
+          <scrollbarYOff>375</scrollbarYOff>
+          <showScrollbar>yes</showScrollbar>
+          <keepaspectratio>no</keepaspectratio>
+          <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow.poster.background.png" />
+          <subitems>
+            <subitem><![CDATA[
+                <controls>
+                  <control>
+                    <description>background</description>
+                    <type>image</type>
+                    <posX>0</posX>
+                    <posY>0</posY>
+                    <width>303</width>
+                    <height>450</height>
+                    <texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow.poster.background.png">background.png</texture>					
+                  </control>
+
+                  <control>
+                    <description>Movie Details</description>
+                    <type>label</type>
+                    <posX>15</posX>
+                    <posY>15</posY>
+                    <width>315</width>
+                    <label>#TVSeries.Translation.SeriesDetails.Label</label>
+                    <font>font13</font>
+                    <textcolor>ff7F9EB2</textcolor>
+                  </control>
+
+
+                  <control>
+                    <description>genre</description>
+                    <type>label</type>
+                    <posX>15</posX>
+                    <posY>45</posY>
+                    <width>270</width>
+                    <label>#TVSeries.Series.Genre</label>
+                    <font>font11</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>year</description>
+                    <type>label</type>
+                    <posX>15</posX>
+                    <posY>75</posY>
+                    <width>270</width>
+                    <label>#TVSeries.Series.FirstAired</label>
+                    <font>font11</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>runtime</description>
+                    <type>label</type>
+                    <posX>15</posX>
+                    <posY>105</posY>
+                    <width>270</width>
+                    <label>#TVSeries.Series.Runtime #TVSeries.Translation.Runtime.Label</label>
+                    <font>font11</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>rating</description>
+                    <type>label</type>
+                    <posX>15</posX>
+                    <posY>135</posY>
+                    <width>270</width>
+                    <label>#TVSeries.Series.DataPanelLine41Value (#TVSeries.Series.RatingCount #TVSeries.Translation.Votes.Label)</label>
+                    <font>font11</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>Network</description>
+                    <type>label</type>
+                    <posX>15</posX>
+                    <posY>165</posY>
+                    <width>270</width>
+                    <label>#TVSeries.Series.Network</label>
+                    <font>font11</font>
+                    <textcolor>ffffffff</textcolor>
+                  </control>
+				  
+					<control>
+						<description>Line separator</description>
+						<type>image</type>
+						<posX>15</posX>
+						<posY>212</posY>
+						<width>270</width>
+						<height>12</height>
+						<texture>default.line.separator.png</texture>
+					</control>				  
+
+                  <control>
+                    <description>plot</description>
+                    <type>textboxscrollup</type>
+                    <posX>15</posX>
+                    <posY>236</posY>
+                    <width>285</width>
+                    <height>90</height>
+                    <label>#TVSeries.Series.Summary</label>
+                    <font>font11</font>
+                    <lineSpacing>2</lineSpacing>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+                </controls>
+              ]]></subitem>
+          </subitems>
+          <animation effect="slide" start="1350,0" time="1200" acceleration="-0.9" reversible="true">focus</animation>
+          <animation effect="slide" end="-2000,0" time="1400" acceleration="0.5" reversible="true">unfocus</animation>
+          <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+          <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+        </control>
+        <control>
+          <description>playlist listcontrol</description>
+          <type>playlistcontrol</type>
+          <id>50</id>
+          <posY>608</posY>
+          <posX>1000</posX>
+          <height>562</height>
+          <width>920</width>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <textureHeight>69</textureHeight>
+          <textXOff>-10</textXOff>
+          <textXOff2>809</textXOff2>
+          <font>font14</font>
+          <font2>font14</font2>
+          <textYOff>10</textYOff>
+          <textYOff2>10</textYOff2>
+          <IconYOff>4</IconYOff>
+          <IconXOff>10</IconXOff>
+          <itemWidth>60</itemWidth>
+          <itemHeight>60</itemHeight>
+          <PinIconYOff>2</PinIconYOff>
+          <spinPosX>3300</spinPosX>
+          <spinPosY>722</spinPosY>
+          <spinAlign>Right</spinAlign>
+          <spinColor>ffffffff</spinColor>
+          <spinWidth>52</spinWidth>
+          <spinHeight>52</spinHeight>
+          <textureUp>arrow_round_right_nofocus.png</textureUp>
+          <textureDown>arrow_round_left_nofocus.png</textureDown>
+          <textureUpFocus>arrow_round_right_focus.png</textureUpFocus>
+          <textureDownFocus>arrow_round_left_focus.png</textureDownFocus>
+          <textureFocus>list_background_focus.png</textureFocus>
+          <textureNoFocus>-</textureNoFocus>
+          <spaceBetweenItems>-2</spaceBetweenItems>
+          <upBtnYOffset>0</upBtnYOffset>
+          <downBtnYOffset>0</downBtnYOffset>
+          <deleteBtnYOffset>0</deleteBtnYOffset>
+          <shadedColor>90cccccc</shadedColor>
+          <selectedColor>ff7FB1E5</selectedColor>
+          <playedColor>90cccccc</playedColor>
+          <textcolor>ffffffff</textcolor>
+          <textcolor2>ffffffff</textcolor2>
+          <textcolor3>ffffffff</textcolor3>
+          <colordiffuse>90cccccc</colordiffuse>
+          <remoteColor>90cccccc</remoteColor>
+          <downloadColor>90cccccc</downloadColor>
+          <scrollOffset>2</scrollOffset>
+          <shadowAngle>45</shadowAngle>
+          <shadowDistance>1</shadowDistance>
+          <shadowColor>FF000000</shadowColor>
+          <unfocusedAlpha>250</unfocusedAlpha>
+          <upBtnWidth>31</upBtnWidth>
+          <downBtnWidth>31</downBtnWidth>
+          <deleteBtnWidth>36</deleteBtnWidth>
+          <upBtnHeight>70</upBtnHeight>
+          <downBtnHeight>70</downBtnHeight>
+          <deleteBtnHeight>70</deleteBtnHeight>
+          <upBtnXOffset>825</upBtnXOffset>
+          <upBtnYOffset>0</upBtnYOffset>
+          <downBtnXOffset>853</downBtnXOffset>
+          <downBtnYOffset>-1</downBtnYOffset>
+          <deleteBtnXOffset>881</deleteBtnXOffset>
+          <deleteBtnYOffset>-1</deleteBtnYOffset>
+          <dimColor>ffffffff</dimColor>
+          <animation effect="slide" start="950,0" time="800" acceleration="-0.9" reversible="true">unfocus</animation>
+          <animation effect="slide" end="950,0" time="200" acceleration="0.5" reversible="true">focus</animation>
+        </control>
+      </control>
+    </control>
+  </controls>
+</window>

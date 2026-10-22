@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <id>12058177</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>no</disabletopbar>
+  <controls>
+    <control>
+      <description>background image</description>
+      <type>image</type>
+      <id>1</id>
+      <width>1080</width>
+      <height>864</height>
+    </control>
+    <control>
+      <type>image</type>
+      <id>1</id>
+      <posX>90</posX>
+      <posY>30</posY>
+      <texture>movieinfo_logo.png</texture>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+    </control>
+    <control>
+      <description>Movie Title value</description>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>300</posX>
+      <posY>60</posY>
+      <width>600</width>
+      <label>#title</label>
+      <font>font18</font>
+      <textcolor>FFFFFFFF</textcolor>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+    </control>
+    <control>
+      <description>Filename</description>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>300</posX>
+      <posY>105</posY>
+      <width>1500</width>
+      <label>(#filename)</label>
+      <font>font12</font>
+      <textcolor>FFFFFFFF</textcolor>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+    </control>
+    <control>
+      <description>Launch Button</description>
+      <type>button</type>
+      <id>2</id>
+      <posX>90</posX>
+      <posY>146</posY>
+      <width>180</width>
+      <label>Launch</label>
+      <font>font13</font>
+      <onleft>22</onleft>
+      <onright>22</onright>
+      <onup>10</onup>
+      <ondown>5</ondown>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+    </control>
+    <control>
+      <description>Refresh from AMG</description>
+      <type>button</type>
+      <id>5</id>
+      <posX>90</posX>
+      <posY>298</posY>
+      <width>180</width>
+      <label>Allgame import</label>
+      <onleft>22</onleft>
+      <onright>22</onright>
+      <onup>2</onup>
+      <ondown>10</ondown>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+    </control>
+    <control>
+      <description>image title:</description>
+      <type>label</type>
+      <id>30</id>
+      <posX>90</posX>
+      <posY>405</posY>
+      <label>734</label>
+      <font>font13</font>
+      <align>left</align>
+      <textcolor>FFB2D4F5</textcolor>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+    </control>
+    <control>
+      <description>spin control</description>
+      <type>spincontrol</type>
+      <id>10</id>
+      <posX>90</posX>
+      <posY>438</posY>
+      <onup>5</onup>
+      <ondown>2</ondown>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+    </control>
+    <control>
+      <type>imagelist</type>
+      <id>1</id>
+      <posX>600</posX>
+      <posY>150</posY>
+      <textureWidth>38</textureWidth>
+      <textureHeight>38</textureHeight>
+      <subitems>
+        <subitem>greystar.png</subitem>
+        <subitem>star.png</subitem>
+      </subitems>
+      <orientation>horizontal</orientation>
+      <percentage>#rating</percentage>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+    </control>
+    <control>
+      <description>Platform</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>600</posX>
+      <posY>172</posY>
+      <label>Platform</label>
+      <font>font13</font>
+      <textcolor>FFB2D4F5</textcolor>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+    </control>
+    <control>
+      <description>Platform value</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>600</posX>
+      <posY>195</posY>
+      <label>#platform</label>
+      <font>font13</font>
+      <textcolor>FFFFFFFF</textcolor>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+    </control>
+    <control>
+      <description>Genre</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>600</posX>
+      <posY>240</posY>
+      <label>Genre</label>
+      <font>font13</font>
+      <textcolor>FFB2D4F5</textcolor>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+    </control>
+    <control>
+      <description>Genre value</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>600</posX>
+      <posY>262</posY>
+      <label>#genre/#genrestyle</label>
+      <font>font13</font>
+      <textcolor>FFFFFFFF</textcolor>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+    </control>
+    <control>
+      <description>Year txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>600</posX>
+      <posY>375</posY>
+      <label>201</label>
+      <font>font13</font>
+      <textcolor>FFB2D4F5</textcolor>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+    </control>
+    <control>
+      <description>Year value</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>600</posX>
+      <posY>398</posY>
+      <label>#year</label>
+      <font>font13</font>
+      <textcolor>FFFFFFFF</textcolor>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+    </control>
+    <control>
+      <description>Manufacturer txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>600</posX>
+      <posY>442</posY>
+      <label>Manufacturer</label>
+      <font>font13</font>
+      <textcolor>FFB2D4F5</textcolor>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+    </control>
+    <control>
+      <description>Manufacturer value</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>600</posX>
+      <posY>465</posY>
+      <label>#manufacturer</label>
+      <font>font13</font>
+      <textcolor>FFFFFFFF</textcolor>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+    </control>
+    <control>
+      <description>OverView value</description>
+      <type>textboxscrollup</type>
+      <id>20</id>
+      <posX>300</posX>
+      <posY>600</posY>
+      <width>630</width>
+      <height>180</height>
+      <label>#plot</label>
+      <font>font13</font>
+      <textcolor>FFFFFFFF</textcolor>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="zoom" end="1,1" center="550,420" time="10">WindowClose</animation>
+    </control>
+    <control>
+      <description>Movie logo</description>
+      <type>image</type>
+      <id>21</id>
+      <posX>300</posX>
+      <posY>150</posY>
+      <width>270</width>
+      <height>412</height>
+      <texture>#thumb</texture>
+      <colorkey>FFFF00FF</colorkey>
+      <colordiffuse>FFFFFFFF</colordiffuse>
+      <keepaspectratio>yes</keepaspectratio>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+    </control>
+    <control>
+      <description>textarea</description>
+      <type>textbox</type>
+      <id>22</id>
+      <posX>300</posX>
+      <posY>600</posY>
+      <width>630</width>
+      <height>225</height>
+      <onleft>2</onleft>
+      <onright>2</onright>
+      <onup>2</onup>
+      <ondown>2</ondown>
+      <label>#cast</label>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+    </control>
+    <import>common.time.xml</import>
+  </controls>
+</window>

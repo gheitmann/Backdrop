@@ -1,0 +1,1160 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <id>90478</id>
+  <defaultcontrol>20</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#header.label:Lyrics</define>
+  <define>#header.BG.colordiffuse:70ffffff</define>
+  <disabletopbar>no</disabletopbar>
+  <controls>
+    <control>
+      <description>DUMMY CONTROLL FOR NAVIGATION CONDITION</description>
+      <type>label</type>
+      <id>93761254</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>2</width>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>DUMMY CONTROLL FOR NAVIGATION CONDITION</description>
+      <type>label</type>
+      <id>93761264</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>2</width>
+      <visible>no</visible>
+    </control>
+    <import>common.fanart.play.xml</import>
+    <control>
+      <description>Overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>black_transp_overlay2.png</texture>
+    </control>
+    <control>
+      <type>label</type>
+      <description>LrcPick status</description>
+      <id>1011</id>
+      <posX>705</posX>
+      <posY>2</posY>
+      <font>font12</font>
+      <align>right</align>
+      <textcolor>ffffffff</textcolor>
+      <label />
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>label</type>
+      <description>Top Title Extension</description>
+      <id>2</id>
+      <posX>22</posX>
+      <posY>69</posY>
+      <font>font12</font>
+      <align>left</align>
+      <label>Titel</label>
+      <visible>no</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Status</description>
+      <type>label</type>
+      <id>11</id>
+      <posX>30</posX>
+      <posY>90</posY>
+      <width>1920</width>
+      <align>center</align>
+      <font>font14</font>
+      <textcolor>ff7F9EB2</textcolor>
+      <label>No media playing</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>menu background image</description>
+      <type>image</type>
+      <id>34</id>
+      <posX>0</posX>
+      <posY>849</posY>
+      <width>1920</width>
+      <height>237</height>
+      <texture>-</texture>
+      <visible>no</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>The Lyric area basic</description>
+      <type>textbox</type>
+      <id>20</id>
+      <posX>30</posX>
+      <posY>225</posY>
+      <width>1125</width>
+      <height>840</height>
+      <onleft>1020</onleft>
+      <onright>1020</onright>
+      <onup>1020</onup>
+      <ondown>1020</ondown>
+      <label>-</label>
+      <seperator>----------------------------------------------------------------------------------------------</seperator>
+      <text>6</text>
+      <font>font14</font>
+      <spinPosX>3270</spinPosX>
+      <spinPosY>668</spinPosY>
+      <spinColor>ff909090</spinColor>
+      <spinAlign>Right</spinAlign>
+      <spinColor>ffffffff</spinColor>
+      <spinWidth>45</spinWidth>
+      <spinHeight>45</spinHeight>
+      <textureUp>arrow_round_right_nofocus.png</textureUp>
+      <textureDown>arrow_round_left_nofocus.png</textureDown>
+      <textureUpFocus>arrow_round_right_focus.png</textureUpFocus>
+      <textureDownFocus>arrow_round_left_focus.png</textureDownFocus>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>textboxscrollup</type>
+      <description>The Lyric area</description>
+      <id>1020</id>
+      <posX>30</posX>
+      <posY>225</posY>
+      <width>1868</width>
+      <height>840</height>
+      <onleft>957</onleft>
+      <onright>957</onright>
+      <onup>957</onup>
+      <ondown>957</ondown>
+      <seperator>----------------------------------------------------------------------------------------------</seperator>
+      <text>6</text>
+      <font>font14</font>
+      <spinPosX>3270</spinPosX>
+      <spinPosY>668</spinPosY>
+      <spinColor>ff909090</spinColor>
+      <spinAlign>Right</spinAlign>
+      <spinColor>ffffffff</spinColor>
+      <spinWidth>45</spinWidth>
+      <spinHeight>45</spinHeight>
+      <textureUp>arrow_round_right_nofocus.png</textureUp>
+      <textureDown>arrow_round_left_nofocus.png</textureDown>
+      <textureUpFocus>arrow_round_right_focus.png</textureUpFocus>
+      <textureDownFocus>arrow_round_left_focus.png</textureDownFocus>
+      <animation effect="zoom" end="1,1" center="550,420" time="10">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>image</type>
+      <description>title image</description>
+      <id>35</id>
+      <posX>170</posX>
+      <posY>39</posY>
+      <texture>-</texture>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>nowplaying background</description>
+      <type>image</type>
+      <id>31</id>
+      <posX>1347</posX>
+      <posY>168</posY>
+      <width>540</width>
+      <height>540</height>
+      <texture>-</texture>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>Music Thumb Default</description>
+      <id>78</id>
+      <type>image</type>
+      <posX>3000</posX>
+      <posY>846</posY>
+      <width>238</width>
+      <height>234</height>
+      <keepaspectratio>no</keepaspectratio>
+      <centered>yes</centered>
+      <zoom>yes</zoom>
+      <texture mask="music_frame_rounder_corners_background1.png">nothumb.png</texture>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>Music Thumb</description>
+      <id>112</id>
+      <type>image</type>
+      <posX>3000</posX>
+      <posY>846</posY>
+      <width>238</width>
+      <height>234</height>
+      <keepaspectratio>no</keepaspectratio>
+      <centered>yes</centered>
+      <zoom>yes</zoom>
+      <texture mask="music_frame_rounder_corners_background1.png">selectedthumb</texture>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>Header Background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background.header.png</texture>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+    </control>
+    <control>
+      <description>Series Title</description>
+      <type>fadelabel</type>
+      <id>32</id>
+      <posX>30</posX>
+      <posY>45</posY>
+      <width>1350</width>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <font>font50BC</font>
+      <label>#Play.Current.Artist</label>
+      <scrollStartDelaySec>5</scrollStartDelaySec>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Album Value</description>
+      <label>#Play.Current.Album - #Play.Current.Title</label>
+      <type>fadelabel</type>
+      <id>26</id>
+      <posX>30</posX>
+      <posY>105</posY>
+      <width>1350</width>
+      <textcolor>ff7FB1E5</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <font>font14</font>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Track Value</description>
+      <label>#Play.Current.Title</label>
+      <type>fadelabel</type>
+      <id>30</id>
+      <posX>30</posX>
+      <posY>150</posY>
+      <width>1350</width>
+      <textcolor>ff7FB1E5</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <font>font14</font>
+      <font>font16</font>
+      <visible>no</visible>
+    </control>
+    <control>
+      <type>imagelist</type>
+      <id>1337</id>
+      <posX>3400</posX>
+      <posY>896</posY>
+      <textureWidth>38</textureWidth>
+      <textureHeight>38</textureHeight>
+      <subitems>
+        <subitem>star_empty.png</subitem>
+        <subitem>star_yellow.png</subitem>
+      </subitems>
+      <orientation>horizontal</orientation>
+      <align>left</align>
+      <imagesToDraw>5</imagesToDraw>
+      <percentage>#Play.Current.Rating</percentage>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>Progressbar Background</description>
+      <type>image</type>
+      <id>117</id>
+      <posX>3240</posX>
+      <posY>1034</posY>
+      <width>219</width>
+      <height>15</height>
+      <texture>progressback.png</texture>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>progress bar</description>
+      <type>progress</type>
+      <id>118</id>
+      <posX>3219</posX>
+      <posY>1026</posY>
+      <width>258</width>
+      <height>15</height>
+      <label>#percentage</label>
+      <texturebg>-</texturebg>
+      <lefttexture>-</lefttexture>
+      <midtexture>progressbar_mid.png</midtexture>
+      <righttexture>-</righttexture>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>play time</description>
+      <type>label</type>
+      <id>24</id>
+      <width>270</width>
+      <height>60</height>
+      <posX>3238</posX>
+      <posY>1036</posY>
+      <align>left</align>
+      <label>#currentplaytime / #duration</label>
+      <textcolor>ffffffff</textcolor>
+      <font>font13</font>
+      <visible>no</visible>
+    </control>
+    <control>
+      <type>fadelabel</type>
+      <description>next artist label</description>
+      <id>123</id>
+      <posX>1740</posX>
+      <posY>975</posY>
+      <width>450</width>
+      <align>right</align>
+      <label>#Play.Next.Artist</label>
+      <font>font14</font>
+      <scrollStartDelaySec>7200</scrollStartDelaySec>
+      <visible>no</visible>
+    </control>
+    <control>
+      <type>fadelabel</type>
+      <description>next artist label</description>
+      <id>121</id>
+      <posX>1740</posX>
+      <posY>1020</posY>
+      <width>450</width>
+      <align>right</align>
+      <label>#Play.Next.Title</label>
+      <font>font14</font>
+      <scrollStartDelaySec>7200</scrollStartDelaySec>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>year label</description>
+      <type>fadelabel</type>
+      <id>27</id>
+      <posX>3675</posX>
+      <posY>180</posY>
+      <width>870</width>
+      <label>#Play.Current.Year</label>
+      <font>font12</font>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>track nr info label</description>
+      <type>fadelabel</type>
+      <id>33</id>
+      <posX>4368</posX>
+      <posY>855</posY>
+      <width>900</width>
+      <height>42</height>
+      <label>#Play.Current.Track</label>
+      <textcolor>ffffffff</textcolor>
+      <font>font12</font>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>track duration label</description>
+      <type>label</type>
+      <id>25</id>
+      <posX>3651</posX>
+      <posY>382</posY>
+      <label>#duration</label>
+      <font>font14</font>
+      <align>right</align>
+      <textcolor>80ffffff</textcolor>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>Lyrics Label</description>
+      <type>label</type>
+      <id>13</id>
+      <posX>3375</posX>
+      <posY>412</posY>
+      <width>1298</width>
+      <label>#SkinTranslation.Translations.Lyrics.Label</label>
+      <font>font18</font>
+      <textcolor>ff7F9EB2</textcolor>
+      <align>left</align>
+      <visible>no</visible>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 0</description>
+      <id>500</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>183</posY>
+      <label>line 0</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 1</description>
+      <id>501</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>230</posY>
+      <label>line 1</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 2</description>
+      <id>502</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>276</posY>
+      <label>line 2</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 3</description>
+      <id>503</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>322</posY>
+      <label>line 3</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 4</description>
+      <id>504</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>369</posY>
+      <label>line 4</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 5</description>
+      <id>505</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>416</posY>
+      <label>line 5</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 6</description>
+      <id>506</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>462</posY>
+      <label>line 6</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 7</description>
+      <id>507</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>508</posY>
+      <label>line 7</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 8</description>
+      <id>508</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>555</posY>
+      <label>line 8</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 9</description>
+      <id>509</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>602</posY>
+      <label>line 9</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 10</description>
+      <id>510</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>648</posY>
+      <label>line 10</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 11</description>
+      <id>511</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>694</posY>
+      <label>line 11</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 12</description>
+      <id>512</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>741</posY>
+      <label>line 12</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 0</description>
+      <id>300</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>183</posY>
+      <label>line 0</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 1</description>
+      <id>301</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>230</posY>
+      <label>line 1</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 2</description>
+      <id>302</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>276</posY>
+      <label>line 2</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 3</description>
+      <id>303</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>322</posY>
+      <label>line 3</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 4</description>
+      <id>304</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>369</posY>
+      <label>line 4</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 5</description>
+      <id>305</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>416</posY>
+      <label>line 5</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 6</description>
+      <id>306</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>462</posY>
+      <label>line 6</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 7</description>
+      <id>307</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>508</posY>
+      <label>line 7</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 8</description>
+      <id>308</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>555</posY>
+      <label>line 8</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 9</description>
+      <id>309</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>602</posY>
+      <label>line 9</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 10</description>
+      <id>310</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>648</posY>
+      <label>line 10</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 11</description>
+      <id>311</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>694</posY>
+      <label>line 11</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>line 12</description>
+      <id>312</id>
+      <width>1740</width>
+      <posX>30</posX>
+      <posY>741</posY>
+      <label>line 12</label>
+      <font>font12</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>FF333333</shadowColor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>time 0</description>
+      <id>600</id>
+      <width>150</width>
+      <posX>24</posX>
+      <posY>186</posY>
+      <label>(xx:xx:xx)</label>
+      <font>font14</font>
+      <textcolor>80ffffff</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>label</type>
+      <description>time 1</description>
+      <id>601</id>
+      <width>150</width>
+      <posX>24</posX>
+      <posY>234</posY>
+      <label>(xx:xx:xx)</label>
+      <font>font14</font>
+      <textcolor>80ffffff</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>label</type>
+      <description>time 2</description>
+      <id>602</id>
+      <width>150</width>
+      <posX>24</posX>
+      <posY>282</posY>
+      <label>(xx:xx:xx)</label>
+      <font>font14</font>
+      <textcolor>80ffffff</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>label</type>
+      <description>time 3</description>
+      <id>603</id>
+      <width>150</width>
+      <posX>24</posX>
+      <posY>330</posY>
+      <label>(xx:xx:xx)</label>
+      <font>font14</font>
+      <textcolor>80ffffff</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>label</type>
+      <description>time 4</description>
+      <id>604</id>
+      <width>150</width>
+      <posX>24</posX>
+      <posY>378</posY>
+      <label>(xx:xx:xx)</label>
+      <font>font14</font>
+      <textcolor>80ffffff</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>label</type>
+      <description>time 5</description>
+      <id>605</id>
+      <width>150</width>
+      <posX>24</posX>
+      <posY>426</posY>
+      <label>(xx:xx:xx)</label>
+      <font>font14</font>
+      <textcolor>80ffffff</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>label</type>
+      <description>time 6</description>
+      <id>606</id>
+      <width>150</width>
+      <posX>24</posX>
+      <posY>474</posY>
+      <label>(xx:xx:xx)</label>
+      <font>font14</font>
+      <textcolor>80ffffff</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>label</type>
+      <description>time 7</description>
+      <id>607</id>
+      <width>150</width>
+      <posX>24</posX>
+      <posY>522</posY>
+      <label>(xx:xx:xx)</label>
+      <font>font14</font>
+      <textcolor>80ffffff</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>label</type>
+      <description>time 8</description>
+      <id>608</id>
+      <width>150</width>
+      <posX>24</posX>
+      <posY>570</posY>
+      <label>(xx:xx:xx)</label>
+      <font>font14</font>
+      <textcolor>80ffffff</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>label</type>
+      <description>time 9</description>
+      <id>609</id>
+      <width>150</width>
+      <posX>24</posX>
+      <posY>618</posY>
+      <label>(xx:xx:xx)</label>
+      <font>font14</font>
+      <textcolor>80ffffff</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>label</type>
+      <description>time 10</description>
+      <id>610</id>
+      <width>150</width>
+      <posX>24</posX>
+      <posY>666</posY>
+      <label>(xx:xx:xx)</label>
+      <font>font14</font>
+      <textcolor>80ffffff</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>label</type>
+      <description>time 11</description>
+      <id>611</id>
+      <width>150</width>
+      <posX>24</posX>
+      <posY>714</posY>
+      <label>(xx:xx:xx)</label>
+      <font>font14</font>
+      <textcolor>80ffffff</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>label</type>
+      <description>time 12</description>
+      <id>612</id>
+      <width>150</width>
+      <posX>24</posX>
+      <posY>762</posY>
+      <label>(xx:xx:xx)</label>
+      <font>font14</font>
+      <textcolor>80ffffff</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>image</type>
+      <description>Dim background</description>
+      <id>0</id>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>overlay.dim.png</texture>
+      <visible>[Control.HasFocus(991799)|Control.HasFocus(991899)|Control.HasFocus(957)|Control.HasFocus(958)]</visible>
+      <animation effect="fade" time="450">visible</animation>
+      <animation effect="fade" time="400">hidden</animation>
+    </control>
+    <control>
+      <description>Menu Image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>890</posX>
+      <posY>0</posY>
+      <width>142</width>
+      <height>45</height>
+      <texture>button.menu.top.png</texture>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+    </control>
+    <control>
+      <type>actiongroup</type>
+      <description>action menu</description>
+      <defaultcontrol>957</defaultcontrol>
+      <onexit>20</onexit>
+      <visible>[Control.HasFocus(991799)|Control.HasFocus(991899)|Control.HasFocus(957)|Control.HasFocus(958)]</visible>
+      <control>
+        <type>group</type>
+        <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="960,461" time="550" reversible="false">Visible</animation>
+        <animation effect="zoom" delay="250" start="100,100" end="1,1" center="960,300 " time="250" reversible="false">Hidden</animation>
+        <animation effect="rotatex" start="0" end="65" center="960,291" time="550">Hidden</animation>
+        <animation effect="fade" delay="500" start="100" end="0" time="50" reversible="false">Hidden</animation>
+        <control>
+          <type>image</type>
+          <id>0</id>
+          <posX>720</posX>
+          <posY>274</posY>
+          <width>480</width>
+          <height>435</height>
+          <texture>dialog_290_400.png</texture>
+          <animation effect="zoom" delay="20" tween="back" easing="out" start="1,1" end="100,100" center="960,461" time="550" reversible="true">Visible</animation>
+          <animation effect="zoom" delay="250" start="100,100" end="1,1" center="960,300" time="250" reversible="true">Hidden</animation>
+          <animation effect="rotatex" start="0" end="65" center="960,291" time="550" reversible="true">Hidden</animation>
+          <animation effect="fade" delay="500" start="100" end="0" time="50" reversible="true">Hidden</animation>
+          <visible>[Control.HasFocus(991799)|Control.HasFocus(991899)|Control.HasFocus(957)|Control.HasFocus(958)]</visible>
+        </control>
+        <control>
+          <description>Heading text label</description>
+          <type>label</type>
+          <id>0</id>
+          <posX>518</posX>
+          <posY>480</posY>
+          <width>510</width>
+          <label>924</label>
+          <font>font16BCB</font>
+          <align>center</align>
+          <textcolor>ff7FB1E5</textcolor>
+          <animation effect="fade" start="100" end="0" time="1">Hidden</animation>
+          <animation effect="fade" start="0" end="100" delay="500" time="250">Visible</animation>
+          <animation effect="rotate" start="90" end="90" time="1" condition="true">Conditional</animation>
+        </control>
+        <control>
+          <description>Now Playing Button</description>
+          <type>button</type>
+          <id>991899</id>
+          <posX>932</posX>
+          <posY>294</posY>
+          <width>70</width>
+          <height>27</height>
+          <textureFocus>play.now.button.focus.png</textureFocus>
+          <textureNoFocus>play.now.button.nofocus.png</textureNoFocus>
+          <hyperlink>510</hyperlink>
+          <onup>957</onup>
+          <ondown>957</ondown>
+          <onleft>20</onleft>
+          <onright>20</onright>
+          <animation effect="fade" delay="500" start="100" end="0" time="50" reversible="true">Hidden</animation>
+          <visible>control.isvisible(3337)+Player.HasAudio</visible>
+        </control>
+        <control>
+          <description>Now Playing Button Animation</description>
+          <type>image</type>
+          <id>0</id>
+          <posX>932</posX>
+          <posY>294</posY>
+          <width>70</width>
+          <height>27</height>
+          <shouldCache>true</shouldCache>
+          <texture>play.now.button.back.png</texture>
+          <animation effect="fade" time="450" delay="100" tween="cubic" easing="inout" condition="true" pulse="true">Conditional</animation>
+          <visible>control.isvisible(3337)</visible>
+        </control>
+        <control>
+          <description>Video Window Button</description>
+          <type>button</type>
+          <id>991799</id>
+          <posX>932</posX>
+          <posY>294</posY>
+          <width>70</width>
+          <height>27</height>
+          <textureFocus>play.now.button.focus.png</textureFocus>
+          <textureNoFocus>play.now.button.nofocus.png</textureNoFocus>
+          <action>18</action>
+          <onup>991899</onup>
+          <ondown>957</ondown>
+          <onleft>20</onleft>
+          <onright>20</onright>
+          <animation effect="fade" delay="500" start="100" end="0" time="50" reversible="true">Hidden</animation>
+          <visible>Player.HasVideo+!control.isvisible(3337)</visible>
+        </control>
+        <control>
+          <description>Now Playing Button Animation</description>
+          <type>image</type>
+          <id>0</id>
+          <posX>932</posX>
+          <posY>294</posY>
+          <width>70</width>
+          <height>27</height>
+          <shouldCache>true</shouldCache>
+          <texture>play.now.button.back.png</texture>
+          <animation effect="fade" time="450" delay="100" tween="cubic" easing="inout" condition="true" pulse="true">Conditional</animation>
+          <visible>Player.HasVideo+!control.isvisible(3337)</visible>
+        </control>
+        <control>
+          <type>group</type>
+          <description>group element</description>
+          <posX>800</posX>
+          <posY>340</posY>
+          <id>0</id>
+          <layout>StackLayout(0)</layout>
+          <control>
+            <description>Menu Button 0</description>
+            <type>button</type>
+            <id>957</id>
+            <width>375</width>
+            <label>4555</label>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <textureFocus>-</textureFocus>
+            <textXOff>10</textXOff>
+            <textYOff>2</textYOff>
+            <font>font14BC</font>
+            <hyperlink>500</hyperlink>
+            <hover>-</hover>
+            <onup>991799</onup>
+            <ondown>958</ondown>
+            <onleft>20</onleft>
+            <onright>20</onright>
+            <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+          </control>
+          <control>
+            <description>Menu Button 1</description>
+            <type>button</type>
+            <id>958</id>
+            <width>375</width>
+            <label>4540</label>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <textureFocus>-</textureFocus>
+            <textXOff>10</textXOff>
+            <textYOff>2</textYOff>
+            <font>font14BC</font>
+            <hyperlink>510</hyperlink>
+            <hover>-</hover>
+            <onup>957</onup>
+            <ondown>957</ondown>
+            <onleft>20</onleft>
+            <onright>20</onright>
+            <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+          </control>
+        </control>
+      </control>
+      <control>
+        <description>Button 957 - Navigating from up</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>796</posX>
+        <posY>340</posY>
+        <width>380</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(957)+Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 957 - Navigating from down</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>796</posX>
+        <posY>340</posY>
+        <width>380</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(957)+!Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 958 - Navigating from up</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>796</posX>
+        <posY>382</posY>
+        <width>380</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(958)+Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 958 - Navigating from down</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>796</posX>
+        <posY>382</posY>
+        <width>380</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(958)+!Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+    </control>
+    <control>
+      <id>50</id>
+      <description>Find LRC</description>
+      <type>button</type>
+      <onleft>950</onleft>
+      <onright>950</onright>
+      <posX>150</posX>
+      <posY>188</posY>
+      <label>Tag</label>
+      <width>112</width>
+      <visible>yes</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>video window</description>
+      <type>videowindow</type>
+      <id>99</id>
+      <posX>2</posX>
+      <posY>2</posY>
+      <visible>no</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <import>TVSeries.common.facade.xml</import>
+    <import>common.time.xml</import>
+    <import>common.overlays.xml</import>
+  </controls>
+</window>

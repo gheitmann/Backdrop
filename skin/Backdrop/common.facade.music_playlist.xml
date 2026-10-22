@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <!--      <visible>!Control.HasFocus(50)</visible>-->
+      <control>
+        <description>composite control consisting of a list control and a thumbnail panel</description>
+        <type>facadeview</type>
+        <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+        <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+        <id>50</id>
+        <control>
+          <description>listcontrol</description>
+          <type>listcontrol</type>
+          <id>50</id>
+          <posY>0</posY>
+          <posX>1240</posX>
+          <height>1050</height>
+          <width>645</width>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <textureHeight>45</textureHeight>
+          <font>font14</font>
+          <font2>font14</font2>
+          <font3>font14</font3>
+          <textureFocus>selected_in_list_music.png</textureFocus>
+          <textureNoFocus>unselected_in_list_music.png</textureNoFocus>
+          <unfocusedAlpha>255</unfocusedAlpha>
+          <dimColor>0x99ffffff</dimColor>
+          <spinPosX>1874</spinPosX>
+          <spinPosY>1035</spinPosY>
+          <textXOff>33</textXOff>
+          <textYOff>0</textYOff>
+          <textXOff2>675</textXOff2>
+          <textYOff2>0</textYOff2>
+          <spinAlign>Right</spinAlign>
+          <spinColor>ff7F9EB2</spinColor>
+          <spinCanFocus>no</spinCanFocus>
+          <spinColor>ff7F9EB2</spinColor>
+          <shadedColor>ffffffff</shadedColor>
+          <selectedColor>ffffffff</selectedColor>
+          <textcolor>ff7F9EB2</textcolor>
+          <textcolor>ffffffff</textcolor>
+          <!--<shadowAngle>45</shadowAngle>
+          <shadowDistance>1</shadowDistance>
+          <shadowColor>FF000000</shadowColor>-->
+          <selectedColor>ffffffff</selectedColor>
+        </control>
+        <control>
+          <description>album view listcontrol</description>
+          <type>listcontrol</type>
+          <subtype>album</subtype>
+          <id>50</id>
+          <font>font14</font>
+          <font2>font14</font2>
+          <selectedColor>80000000</selectedColor>
+          <textcolor>ffffffff</textcolor>
+          <selectedColor2>ffffffff</selectedColor2>
+          <textcolor2>ffffffff</textcolor2>
+          <textXOff2>630</textXOff2>
+          <textYOff2>90</textYOff2>
+          <itemWidth>108</itemWidth>
+          <itemHeight>108</itemHeight>
+          <spaceBetweenItems>14</spaceBetweenItems>
+          <textureHeight>135</textureHeight>
+          <scrollOffset>1</scrollOffset>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <unfocusedAlpha>255</unfocusedAlpha>
+          <dimColor>0x99ffffff</dimColor>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <onup>2</onup>
+          <spinPosX>1874</spinPosX>
+          <spinPosY>1035</spinPosY>
+          <spinAlign>Right</spinAlign>
+          <spinColor>ff7F9EB2</spinColor>
+          <spinCanFocus>no</spinCanFocus>
+          <textcolor>ffffffff</textcolor>
+          <selectedColor>ffffffff</selectedColor>
+        </control>
+        <control>
+          <description>Thumbnail Panel</description>
+          <type>thumbnailpanel</type>
+          <id>50</id>
+          <onleft>2</onleft>
+          <onright>50</onright>
+          <posX>34</posX>
+          <posY>578</posY>
+          <width>1920</width>
+          <height>600</height>
+          <spinPosX>1950</spinPosX>
+          <spinPosY>1080</spinPosY>
+          <textureUp>-</textureUp>
+          <textureDown>-</textureDown>
+          <textureUpFocus>-</textureUpFocus>
+          <textureDownFocus>-</textureDownFocus>
+          <imageFolder>-</imageFolder>
+          <!--		<imageFolderFocus>cd_glass_frame.png</imageFolderFocus> 		-->
+          <imageFolderFocus>-</imageFolderFocus>
+          <frameNoFocus>music_frame_rounder_corners.png</frameNoFocus>
+          <!--<frameNoFocus mask="music.thumb.background.png">music.thumb.frame.png</frameNoFocus>-->
+          <frameFocus>music_frame_rounder_corners_focus1.png</frameFocus>
+          <!--<frameFocus mask="music.thumb.background.png">music.thumb.frame.png</frameFocus>-->
+          <textureMask>music_frame_rounder_corners_background1.png</textureMask>
+          <textureWidth>154</textureWidth>
+          <textureHeight>154</textureHeight>
+          <itemWidth>170</itemWidth>
+          <itemHeight>170</itemHeight>
+          <thumbWidth>154</thumbWidth>
+          <thumbHeight>154</thumbHeight>
+          <thumbPosX>0</thumbPosX>
+          <thumbPosY>0</thumbPosY>
+          <font>font13</font>
+          <suffix>|</suffix>
+          <textureWidthBig>231</textureWidthBig>
+          <textureHeightBig>236</textureHeightBig>
+          <itemWidthBig>231</itemWidthBig>
+          <itemHeightBig>248</itemHeightBig>
+          <thumbWidthBig>231</thumbWidthBig>
+          <thumbHeightBig>236</thumbHeightBig>
+          <thumbPosXBig>0</thumbPosXBig>
+          <thumbPosYBig>0</thumbPosYBig>
+          <thumbZoom>yes</thumbZoom>
+          <keepaspectratio>no</keepaspectratio>
+          <centered>yes</centered>
+          <enableFocusZoom>no</enableFocusZoom>
+          <unfocusedAlpha>255</unfocusedAlpha>
+          <scrollOffset>1</scrollOffset>
+          <zoomXPixels>0</zoomXPixels>
+          <zoomYPixels>0</zoomYPixels>
+          <hideUnfocusTexture>yes</hideUnfocusTexture>
+          <renderFocusText>no</renderFocusText>
+          <renderUnfocusText>no</renderUnfocusText>
+          <animation effect="slide" start="2025,0" time="1200" acceleration="-0.9" reversible="true">focus</animation>
+          <animation effect="slide" end="-2025,0" time="1400" acceleration="0.5" reversible="true">unfocus</animation>
+          <animation effect="slide" start="2025,0" time="1200" acceleration="-0.9" reversible="true">visible</animation>
+          <animation effect="slide" end="-2025,0" time="1400" acceleration="0.5" reversible="true">hidden</animation>
+        </control>
+        <control>
+          <description>Filmstrip view</description>
+          <type>filmstrip</type>
+          <dimColor>90ffffff</dimColor>
+          <id>50</id>
+          <posX>60</posX>
+          <posY>450</posY>
+          <spinPosX>1800</spinPosX>
+          <spinPosY>825</spinPosY>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <onup>2</onup>
+          <scrollOffset>2</scrollOffset>
+          <width>1800</width>
+          <height>864</height>
+          <thumbWidth>260</thumbWidth>
+          <thumbHeight>260</thumbHeight>
+          <thumbPosX>34</thumbPosX>
+          <thumbPosY>6</thumbPosY>
+          <itemWidth>300</itemWidth>
+          <itemHeight>273</itemHeight>
+          <textureWidth>300</textureWidth>
+          <textureHeight>273</textureHeight>
+          <imageFolderFocus>CDCase_small.png</imageFolderFocus>
+          <frame>CDCase_small.png</frame>
+          <frameFocus>CDCase_small.png</frameFocus>
+          <!--          <imageFolderFocus>CD_transparent.png</imageFolderFocus> 
+          <frame>CD_transparent.png</frame>
+          <frameFocus>CD_transparent.png</frameFocus>-->
+          <thumbs flipY="true" diffuse="Thumb_Mask.png" />
+          <InfoImage flipY="true" diffuse="Thumb_Mask.png" />
+          <showFrame>yes</showFrame>
+          <showFolder>yes</showFolder>
+          <showBackGround>no</showBackGround>
+          <showInfoImage>no</showInfoImage>
+          <thumbAnimation effect="zoom" start="100,100" end="130,130" time="100">focus</thumbAnimation>
+          <thumbAnimation effect="zoom" start="130,130" end="100,100" time="100">unfocus</thumbAnimation>
+        </control>
+        <control>
+          <description>playlist listcontrol</description>
+          <type>playlistcontrol</type>
+          <id>50</id>
+          <posY>525</posY>
+          <posX>1000</posX>
+          <height>615</height>
+          <width>920</width>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <textureHeight>69</textureHeight>
+          <textXOff>10</textXOff>
+          <textXOff2>809</textXOff2>
+          <font>font14</font>
+          <font2>font14</font2>
+          <textYOff>10</textYOff>
+          <textYOff2>10</textYOff2>
+          <IconYOff>4</IconYOff>
+          <IconXOff>10</IconXOff>
+          <itemWidth>60</itemWidth>
+          <itemHeight>60</itemHeight>
+          <PinIconYOff>2</PinIconYOff>
+          <spinPosX>3300</spinPosX>
+          <spinPosY>722</spinPosY>
+          <spinAlign>Right</spinAlign>
+          <spinColor>ffffffff</spinColor>
+          <spinWidth>52</spinWidth>
+          <spinHeight>52</spinHeight>
+          <textureUp>arrow_round_right_nofocus.png</textureUp>
+          <textureDown>arrow_round_left_nofocus.png</textureDown>
+          <textureUpFocus>arrow_round_right_focus.png</textureUpFocus>
+          <textureDownFocus>arrow_round_left_focus.png</textureDownFocus>
+          <textureFocus>list_background_focus.png</textureFocus>
+          <textureNoFocus>-</textureNoFocus>
+          <spaceBetweenItems>-2</spaceBetweenItems>
+          <upBtnYOffset>0</upBtnYOffset>
+          <downBtnYOffset>0</downBtnYOffset>
+          <deleteBtnYOffset>0</deleteBtnYOffset>
+          <shadedColor>90cccccc</shadedColor>
+          <selectedColor>ff7FB1E5</selectedColor>
+          <playedColor>90cccccc</playedColor>
+          <textcolor>ffffffff</textcolor>
+          <textcolor2>ffffffff</textcolor2>
+          <textcolor3>ffffffff</textcolor3>
+          <colordiffuse>90cccccc</colordiffuse>
+          <remoteColor>90cccccc</remoteColor>
+          <downloadColor>90cccccc</downloadColor>
+          <scrollOffset>2</scrollOffset>
+          <shadowAngle>45</shadowAngle>
+          <shadowDistance>1</shadowDistance>
+          <shadowColor>FF000000</shadowColor>
+          <unfocusedAlpha>255</unfocusedAlpha>
+          <upBtnWidth>31</upBtnWidth>
+          <downBtnWidth>31</downBtnWidth>
+          <deleteBtnWidth>36</deleteBtnWidth>
+          <upBtnHeight>70</upBtnHeight>
+          <downBtnHeight>70</downBtnHeight>
+          <deleteBtnHeight>70</deleteBtnHeight>
+          <upBtnXOffset>825</upBtnXOffset>
+          <upBtnYOffset>0</upBtnYOffset>
+          <downBtnXOffset>853</downBtnXOffset>
+          <downBtnYOffset>-1</downBtnYOffset>
+          <deleteBtnXOffset>881</deleteBtnXOffset>
+          <deleteBtnYOffset>-1</deleteBtnYOffset>
+          <dimColor>ffffffff</dimColor>
+          <animation effect="slide" start="950,0" time="800" acceleration="-0.9" reversible="true">unfocus</animation>
+          <animation effect="slide" end="950,0" time="200" acceleration="0.5" reversible="true">focus</animation>
+        </control>
+      </control>
+    </control>
+  </controls>
+</window>

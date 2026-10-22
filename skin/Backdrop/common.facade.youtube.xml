@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+This file should contain the facade view
+-->
+<window>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>yes</disabletopbar>
+  <controls>
+    <control>
+      <description>composite control consisting of a list control and a thumbnail panel</description>
+      <type>facadeview</type>
+      <id>50</id>
+      <control>
+        <description>Movie List</description>
+        <type>listcontrol</type>
+        <id>50</id>
+        <posY>68</posY>
+        <posX>1288</posX>
+        <height>1050</height>
+        <width>585</width>
+        <spinPosY>1200</spinPosY>
+        <spinPosX>2100</spinPosX>
+        <textXOff>24</textXOff>
+        <textYOff>0</textYOff>
+        <textureFocus>selected_in_list.png</textureFocus>
+        <textureNoFocus>unselected_in_list.png</textureNoFocus>
+        <textureUp>-</textureUp>
+        <textureDown>-</textureDown>
+        <unfocusedAlpha>200</unfocusedAlpha>
+        <dimColor>0x99ffffff</dimColor>
+        <spinCanFocus>no</spinCanFocus>
+        <font>font14</font>
+        <textureHeight>45</textureHeight>
+        <textcolor>D8D8BF</textcolor>
+        <onleft>3</onleft>
+        <onright>3</onright>
+        <!--<shadowAngle>45</shadowAngle>
+          <shadowDistance>1</shadowDistance>
+          <shadowColor>FF000000</shadowColor>-->
+        <unfocusedAlpha>250</unfocusedAlpha>
+        <dimColor>ffffffff</dimColor>
+        <textcolor>ffffffff</textcolor>
+        <selectedColor>ffE5F5FF</selectedColor>
+        <shadedColor>ffffffff</shadedColor>
+        <playedColor>ffffffff</playedColor>
+        <textcolor2>ffffffff</textcolor2>
+        <textcolor3>ffffffff</textcolor3>
+        <colordiffuse>ffffffff</colordiffuse>
+      </control>
+      <control>
+        <description>Thumbnail Panel</description>
+        <type>thumbnailpanel</type>
+        <id>50</id>
+        <posX>15</posX>
+        <posY>82</posY>
+        <width>1890</width>
+        <height>885</height>
+        <spinPosX>1950</spinPosX>
+        <spinPosY>1080</spinPosY>
+        <spinColor>ffcccccc</spinColor>
+        <textureUp>MovingPictures\page_up_nofocus.png</textureUp>
+        <textureDown>MovingPictures\page_down_nofocus.png</textureDown>
+        <textureUpFocus>MovingPictures\page_up_focus.png</textureUpFocus>
+        <textureDownFocus>MovingPictures\page_down_focus.png</textureDownFocus>
+        <itemWidth>114</itemWidth>
+        <itemHeight>154</itemHeight>
+        <textureWidth>114</textureWidth>
+        <textureHeight>154</textureHeight>
+        <thumbWidth>92</thumbWidth>
+        <thumbHeight>141</thumbHeight>
+        <thumbPosX>15</thumbPosX>
+        <thumbPosY>6</thumbPosY>
+        <imageFolderFocus>dvdframe_focus.png</imageFolderFocus>
+        <imageFolder>dvdframe_small.png</imageFolder>
+        <font>font14</font>
+        <suffix>|</suffix>
+        <textureWidthBig>202</textureWidthBig>
+        <textureHeightBig>273</textureHeightBig>
+        <itemWidthBig>202</itemWidthBig>
+        <itemHeightBig>273</itemHeightBig>
+        <thumbWidthBig>164</thumbWidthBig>
+        <thumbHeightBig>249</thumbHeightBig>
+        <thumbPosXBig>26</thumbPosXBig>
+        <thumbPosYBig>10</thumbPosYBig>
+        <thumbZoom>yes</thumbZoom>
+        <enableFocusZoom>no</enableFocusZoom>
+        <unfocusedAlpha>200</unfocusedAlpha>
+        <keepaspectratio>no</keepaspectratio>
+        <centered>yes</centered>
+        <onleft>3</onleft>
+        <onright>3</onright>
+        <animation effect="rotatex" start="0" end="3" center="720,0" tween="back" ease="easeout" time="0" reversible="true">focus</animation>
+        <thumbAnimation effect="rotatex" start="0" end="-3" center="720,0" tween="back" ease="easeout" time="0" reversible="true">focus</thumbAnimation>
+        <thumbAnimation effect="rotatex" start="-3" end="0" center="720,0" tween="back" ease="easeout" time="0" reversible="true">unfocus</thumbAnimation>
+      </control>
+      <control>
+        <description>Filmstrip view</description>
+        <type>filmstrip</type>
+        <dimColor>90ffffff</dimColor>
+        <id>50</id>
+        <posX>15</posX>
+        <posY>682</posY>
+        <spinPosX>2100</spinPosX>
+        <spinPosY>1020</spinPosY>
+        <onrigth>50</onrigth>
+        <onleft>50</onleft>
+        <onup>3</onup>
+        <ondown>3</ondown>
+        <scrollOffset>2</scrollOffset>
+        <width>1890</width>
+        <height>864</height>
+        <thumbWidth>172</thumbWidth>
+        <thumbHeight>243</thumbHeight>
+        <thumbPosX>28</thumbPosX>
+        <thumbPosY>9</thumbPosY>
+        <itemWidth>210</itemWidth>
+        <itemHeight>264</itemHeight>
+        <textureWidth>210</textureWidth>
+        <textureHeight>264</textureHeight>
+        <imageFolderFocus>dvdframe_small.png</imageFolderFocus>
+        <frame>dvdframe_small.png</frame>
+        <frameFocus>dvdframe_small.png</frameFocus>
+        <thumbs flipY="true" diffuse="Thumb_Mask.png" />
+        <InfoImage flipY="true" diffuse="Thumb_Mask.png" />
+        <showFrame>yes</showFrame>
+        <showFolder>no</showFolder>
+        <showBackGround>no</showBackGround>
+        <showInfoImage>no</showInfoImage>
+        <thumbAnimation effect="zoom" start="100,100" end="130,130" time="0">focus</thumbAnimation>
+        <thumbAnimation effect="zoom" start="130,130" end="100,100" time="0">unfocus</thumbAnimation>
+        <thumbAnimation effect="slide" end="0,-5" time="0">focus</thumbAnimation>
+        <thumbAnimation effect="slide" end="0,0" time="150">unfocus</thumbAnimation>
+        <thumbAnimation effect="rotatex" start="0" end="3" center="720,0" tween="back" ease="easeout" time="0" reversible="true">focus</thumbAnimation>
+        <thumbAnimation effect="rotatex" start="3" end="0" center="720,0" tween="back" ease="easeout" time="150" reversible="true">unfocus</thumbAnimation>
+      </control>
+    </control>
+  </controls>
+</window>

@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Skin translation file -->
+<!-- English (US) -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+<strings>
+  <!-- # -->
+  <!-- A -->
+  <string Field="AlbumInformation">Album Information</string>
+  <string Field="ArtistInfo">Artist Information</string>
+  <string Field="AudioMenu">Audio Menu</string>
+  <!-- B -->
+  <string Field="Bookmarks">Bookmarks</string>
+  <!-- C -->
+  <string Field="Cast">Cast</string>
+  <!-- D -->
+  <string Field="Details">Details</string>
+  <string Field="Director">Director</string>
+  <!-- E -->
+  <string Field="EpisodeDetails">Episode Details</string>
+  <string Field="Extensions">Extensions</string>
+  <!-- F -->
+  <string Field="FirstAired">First Aired</string>
+  <!-- G -->
+  <string Field="Genre">Genre</string>
+  <!-- H -->
+  <string Field="Home">Home</string>
+  <!-- I -->
+  <!-- L -->
+  <string Field="LastFMLove">Last.FM - Love</string>
+  <string Field="LastFMBan">Last.FM - Ban</string>
+  <string Field="LatestMovies">Latest Movies</string>
+  <string Field="LatestMusic">Latest Music</string>
+  <string Field="LatestPictures">Latest Pictures</string>
+  <string Field="LatestRecordings">Latest Recordings</string>
+  <string Field="LatestSeries">Latest Series</string>
+  <string Field="List">List</string>
+  <string Field="Lyrics">Lyrics</string>
+  <!-- M -->
+  <string Field="MovieDetails">Movie Details</string>
+  <string Field="MovieLibrary">Movie Library</string>
+  <string Field="MusicDetails">Music Details</string>
+  <string Field="MusicLibrary">Music Library</string>
+  <string Field="MusicNowPlaying">Music Now Playing</string>
+  <string Field="MusicPlaylist">Music Playlist</string>
+  <string Field="MusicSearch">Music Search</string>
+  <string Field="MusicSearchDetails">Music Search Details</string>
+  <string Field="MusicSettings">Music Settings</string>
+  <!-- N -->
+  <string Field="NewEpisodes">Only new episodes</string>
+  <!-- O -->
+  <!-- P -->
+  <string Field="PictureLibrary">Picture Library</string>
+  <string Field="Plugins">Plugins</string>
+  <string Field="PressUp">Press Up to view more details.</string>
+  <string Field="ProgramInfo">Program Info</string>
+  <!-- R -->
+  <string Field="Radio">Radio</string>
+  <string Field="RadioGuide">Radio Guide</string>
+  <string Field="RadioGuideSearch">Radio Guide Search</string>
+  <string Field="RadioRecordings">Radio Recordings</string>
+  <string Field="Rating">Rating</string>
+  <string Field="Record">Record</string>
+  <string Field="ReleaseDate">Release Date</string>
+  <string Field="Results">Results</string>
+  <string Field="Runtime">Runtime</string>
+  <!-- S -->
+  <string Field="Search">Search</string>
+  <string Field="SeriesDetails">Series Details</string>
+  <string Field="SeasonDetails">Season Details</string>
+  <string Field="SeriesLibrary">Series Library</string>
+  <string Field="SeriesPlaylist">Series - Playlist</string>
+  <string Field="SlideshowSettings">Slideshow Settings</string>
+  <string Field="Subtitles">Subtitles</string>
+  <string Field="SubtitlesMenu">SUBTITLES MENU</string>
+  <!-- T -->
+  <string Field="Teletext">Teletext</string>
+  <string Field="Television">Television</string>
+  <string Field="TVGuide">TV Guide</string>
+  <string Field="TVGuideSearch">TV Guide Search</string>
+  <string Field="TVRecordings">TV Recordings</string>
+  <!-- U -->
+  <string Field="UpcomingRecordings">Upcoming Recordings</string>
+  <!-- V -->
+  <string Field="VideoMenu">Video Menu</string>
+  <string Field="VideoSettings">Video Settings</string>
+  <string Field="VideoInfo">Video Information</string>
+  <!-- W -->
+  <string Field="WeatherForecast">Weather Forecast</string>
+  <!-- Y -->
+  <string Field="Year">Year</string>
+  <string Field="NoRecordingsFound">Keine Aufnahmen gefunden</string>
+  <string Field="Listened">Gehört</string>
+  <string Field="Design">Design</string>
+  <string Field="LastWatched">Zuletzt angesehen</string>
+  <string Field="Awards">Auszeichnungen</string>
+  <string Field="EPGRows">Zeilen in TV/Radio EPGs</string>
+  <string Field="NumberEPGRows">Anzahl der Zeilen</string>
+  <string Field="Thumbsview">Ansicht Miniaturbilder</string>
+  <string Field="Thumbsview.Select">Normal</string>
+  <string Field="WorldNewsTicker">WorldNews-Ticker aktivieren</string>
+  <string Field="AnalogClockOSD">Analoge Uhr in OSDs</string>
+  <string Field="MusicNowPlayingFanart">Fanart für aktuellen Titel in BasicHome</string>
+  <string Field="MusicFanart">Zufällige Musik-Fanart in BasicHome</string>
+  <string Field="VideoFanart">Zufällige Video-Fanart in BasicHome</string>
+  <string Field="TVGuideRows">Anzahl Zeilen im TV-EPG</string>
+  <string Field="TVSeriesRows">Zeilen in TVSeries Breite Banner</string>
+  <string Field="DescriptionTopbar">Beschreibung der Topbar-Elemente:</string>
+  <string Field="BackPrevious">Zurück zum vorherigen Fenster</string>
+  <string Field="BackBasicHome">Zum BasicHome &lt;-&gt; ClassicHome</string>
+  <string Field="LiveTV">LiveTV/Video im Hintergrund</string>
+  <string Field="PlayControls">Wiedergabe-Steuerung für Audio/Video</string>
+  <string Field="SkinInfo">Diese Anzeige</string>
+  <string Field="CloseExit">MP beenden/schließen</string>
+  <string Field="ShutdownOptions">Optionen zum Abschalten</string>
+  <string Field="InfoButton">In Listen: "Rechts" auf FB/Tastatur oder Markieren mit Maus zeigt erweiterte Informationen</string>
+  <string Field="SupportedPlugins">Unterstützte Erweiterungen (in alphabetischer Reihenfolge):</string>
+  <string Field="PluginsMP">... und natürlich alle Standard-Erweiterungen dieser MediaPortal-Version.</string>
+  <string Field="MPVersion">DefaultWideHD wurde für MP 1.7.x (oder höher) entwickelt.</string>
+  <string Field="Enjoy">Viel Spaß mit MediaPortal und DefaultWideHD!</string>
+  <string Field="Background">Hintergrund</string>
+  <string Field="Games">Spiele</string>
+  <string Field="NewRecordings">Neueste TV-Aufnahmen</string>
+  <string Field="NewVideos">Neueste Videos</string>
+  <string Field="NewYouTubeVideos">Neueste Online Videos</string>
+  <string Field="NewFilms">Neueste Filme</string>
+  <string Field="LastPlayed">Zuletzt gespielt</string>
+  <string Field="NewPictures">Neueste Fotos</string>
+  <string Field="NowRecording">Laufende Aufnahmen</string>
+  <string Field="FullView">Infos immer sichtbar</string>
+  <string Field="ShowDVDArt">Zeige DVD-Art</string>
+  <string Field="NoClock">Uhr und Plugin-Icons ausblenden</string>
+  <string Field="Timer">Aufnahme-Timer</string>
+  <string Field="Update">DefaultWideHD 12.3 verfügbar!</string>
+  <string Field="tvstreaminfo">TV OSD Stream-Info immer sichtbar</string>
+  <string Field="CategoryBackgrounds">Plugin-Hintergrund BasicHome</string>
+  <string Field="Fullscreen">Vollbildmodus</string>
+  <string Field="tv2">Ich sehe Dich!</string>
+  <string Field="tv8">Tooooor!</string>
+  <string Field="tv9">Habe fertig!</string>
+  <string Field="tv10">Platsch!</string>
+  <string Field="tv">Kein GIF</string>
+  <string Field="Ukraine">Zeige Flagge der Ukraine</string>
+  <string Field="KeyboardShortcuts">Tastatur-Kurzbefehle</string>
+  <string Field="AudioOptions">Lautstärke lauter/leiser</string>
+  <string Field="CategoryBG">Plugin-Poster BasicHome</string>
+  <string Field="EnlargeImage">Bild vergrößern</string>
+  <string Field="Package">Sender-Paket</string>
+  <string Field="Group">Kanal-Gruppe</string>
+  <string Field="GrabNow">Generieren</string>
+  <string Field="CancelGrab">Generieren abbrechen</string>
+  <string Field="Multiple">Mehrere</string>
+  <string Field="SelectPackage">Sender-Paket auswählen</string>
+  <string Field="SelectChannelGroup">Kanal-Gruppe auswählen</string>
+  <string Field="SelectLayerDesign">Design auswählen</string>
+  <string Field="ShowHighscore">Animation bei Rekord</string>
+  <string Field="PulsingSidelines">Pulsierende Seitenlinien</string>
+  <string Field="TetrisHelpText">Tetris ist ein bekanntes Computer-Puzzlespiel, das durch den Game Boy populär wurde.
+Ziel des Puzzles ist es, Tetromino-Steine (Blöcke) oder Formen zu manipulieren, indem man jeden einzelnen seitlich verschiebt und um 90 Grad dreht, mit dem Ziel, eine horizontale Linie von Blöcken ohne Lücken zu schaffen. 
+Wenn eine solche Linie entsteht, verschwindet sie, und jeder Block oberhalb der gelöschten Linie fällt herunter.
+Nach jeweils zehn gelöschten Linien erreicht das Spiel ein neues Level. 
+Im Laufe des Spiels fallen die Tetromino-Steine mit jedem Level schneller, und das Spiel endet, wenn der Stapel der Tetromino-Steine den oberen Rand des Spielfelds erreicht und keine neuen Tetromino-Steine mehr nachrücken können.
+Das Spiel kann auch enden, wenn es dem Spieler gelingt, bis zu Level 15 zu kommen.
+
+Wie man spielt
+· Spiel starten - Mit Pfeil rechts ins Spielfeld wechseln und Eingabe drücken.
+· Blöcke horizontal verschieben - Pfeil links oder rechts
+· Blöcke drehen - Pfeil nach oben
+· Schnelles Fallenlassen - Pfeil nach unten
+· Sofortiges Fallenlassen - Eingabe
+· Spiel anhalten oder fortsetzen - Zurück-Fernbedienungstaste, oder Esc
+
+In der Pfeilgrafik rechts oben neben dem Spielfeld wird der nächste Block als Hinweis angezeigt.
+Außerdem wird dort auch die Levelnummer in der entsprechenden Levelfarbe angezeigt.
+
+Viel Spaß mit Tetris wünschen Smirnuff (Autor) sowie catavolt und High_Five ;)</string>
+  <string Field="HighFive">Teile der Grafiken und Animationen stammen von High_Five :)</string>
+  <string Field="About">Was ist Tetris?</string>
+  <string Field="TetrisHelpText2">Wie man spielt
+· Spiel starten - Mit Pfeil rechts ins Spielfeld wechseln und Eingabe drücken.
+· Blöcke horizontal verschieben - Pfeil links oder rechts
+· Blöcke drehen - Pfeil nach oben
+· Schnelles Fallenlassen - Pfeil nach unten
+· Sofortiges Fallenlassen - Eingabe
+· Spiel anhalten oder fortsetzen - Zurück-Fernbedienungstaste, oder Esc</string>
+  <string Field="Highscore">***  Glückwunsch!  ***  Neuer Rekord!</string>
+  <string Field="WinAnimation">Gewinnanimation</string>
+  <string Field="Important">Wichtig !</string>
+  <string Field="CloseBHE">BasicHome Editor schliessen</string>
+  <string Field="SaveBHE">um die neuen Einstellungen zu speichern !</string>
+  <string Field="EXIFDATA">EXIF DATEN</string>
+  <string Field="ImageInfos">Bildinformationen</string>
+  <string Field="CameraSettings">Kameraeinstellungen</string>
+</strings>

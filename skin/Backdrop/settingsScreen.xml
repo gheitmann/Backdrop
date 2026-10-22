@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <id>9</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>no</disabletopbar>
+  <define>#header.label:6023</define>
+  <define>#header.hover:hover_settings.png</define>
+  <define>#defaultcontrol:2</define>
+  <define>#defaultcontrol.onright:9993</define>
+  <controls>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>overlay.default.solid.top.png</texture>
+    </control>
+    <import>common.settings1.xml</import>
+    <import>common.time.xml</import>
+    <control>
+      <description>Header</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>100</posX>
+      <posY>300</posY>
+      <width>1350</width>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <font>font50BC</font>
+      <label>6023</label>
+      <scrollStartDelaySec>5</scrollStartDelaySec>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+    </control>
+    <control>
+      <description>Menu Button 0</description>
+      <type>button</type>
+      <id>2</id>
+      <posX>98</posX>
+      <posY>390</posY>
+      <width>369</width>
+      <height>60</height>
+      <label>213</label>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <textcolorNoFocus>90cccccc</textcolorNoFocus>
+      <font>font16BC</font>
+      <hyperlink>10</hyperlink>
+      <hover>-</hover>
+      <onleft>9005</onleft>
+      <onright>9005</onright>
+      <onup>2</onup>
+      <ondown>3</ondown>
+    </control>
+    <control>
+      <description>Menu Button 1</description>
+      <type>button</type>
+      <id>3</id>
+      <posX>98</posX>
+      <posY>450</posY>
+      <width>345</width>
+      <height>60</height>
+      <label>214</label>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <textcolorNoFocus>90cccccc</textcolorNoFocus>
+      <font>font16BC</font>
+      <hyperlink>11</hyperlink>
+      <hover>-</hover>
+      <onleft>9005</onleft>
+      <onright>9005</onright>
+      <onup>2</onup>
+      <ondown>4</ondown>
+    </control>
+    <control>
+      <description>Menu Button 2</description>
+      <type>button</type>
+      <id>4</id>
+      <posX>98</posX>
+      <posY>510</posY>
+      <width>321</width>
+      <height>60</height>
+      <label>673</label>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <textcolorNoFocus>90cccccc</textcolorNoFocus>
+      <font>font16BC</font>
+      <hyperlink>31</hyperlink>
+      <hover>-</hover>
+      <onleft>9005</onleft>
+      <onright>9005</onright>
+      <onup>3</onup>
+      <ondown>2</ondown>
+    </control>
+  </controls>
+</window>

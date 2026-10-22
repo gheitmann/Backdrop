@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+This file should contain the facade view
+-->
+<window>
+  <allowoverlay>no</allowoverlay>
+  <defaultcontrol>50</defaultcontrol>
+  <disabletopbar>yes</disabletopbar>
+  <controls>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>660</posX>
+      <posY>124</posY>
+      <width>600</width>
+      <height>750</height>
+      <texture>dialog_290_400.png</texture>
+      <visible>Control.IsVisible(51)</visible>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="960,540" time="550">WindowOpen</animation>
+      <animation effect="zoom" start="100,100" end="1,1" center="960,540" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>690</posX>
+      <posY>375</posY>
+      <width>52</width>
+      <height>244</height>
+      <texture>text.categories.png</texture>
+      <visible>Control.IsVisible(51)</visible>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="960,360" time="550">WindowOpen</animation>
+      <animation effect="zoom" start="100,100" end="1,1" center="960,540" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>composite control consisting of a list control and a thumbnail panel</description>
+      <type>facadeview</type>
+      <id>51</id>
+      <control>
+        <description>Categories List</description>
+        <type>listcontrol</type>
+        <id>51</id>
+        <posX>753</posX>
+        <posY>179</posY>
+        <width>478</width>
+        <height>720</height>
+        <onleft>51</onleft>
+        <onright>51</onright>
+        <font2>font14BC</font2>
+        <font>font14BC</font>
+        <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+        <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
+        <unfocusedAlpha>110</unfocusedAlpha>
+        <dimColor>90ffffff</dimColor>
+        <textcolor>ffffffff</textcolor>
+        <textXOff2>750</textXOff2>
+        <spinPosX>4310</spinPosX>
+        <spinPosY>3742</spinPosY>
+        <textXOff>8</textXOff>
+        <textYOff>8</textYOff>
+        <PinIconXOff>3368</PinIconXOff>
+        <PinIconYOff>3340</PinIconYOff>
+        <textureHeight>60</textureHeight>
+        <spaceBetweenItems>-1</spaceBetweenItems>
+      </control>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="960,540" time="350">WindowOpen</animation>
+      <animation effect="zoom" start="100,100" end="1,1" center="960,540" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>composite control consisting of a list control and a thumbnail panel</description>
+      <type>facadeview</type>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <id>50</id>
+      <control>
+        <description>Movie List</description>
+        <type>listcontrol</type>
+        <id>50</id>
+        <posY>569</posY>
+        <posX>1279</posX>
+        <height>562</height>
+        <width>641</width>
+        <spinPosY>1200</spinPosY>
+        <spinPosX>2100</spinPosX>
+        <textXOff>24</textXOff>
+        <textYOff>0</textYOff>
+        <textureFocus>playlist_sub_focus1.png</textureFocus>
+        <textureNoFocus>playlist_sub_nofocus2.png</textureNoFocus>
+        <textureUp>-</textureUp>
+        <textureDown>-</textureDown>
+        <spinCanFocus>no</spinCanFocus>
+        <font>font16</font>
+        <textureHeight>52</textureHeight>
+        <textalign>right</textalign>
+        <onleft>2</onleft>
+        <onright>2</onright>
+        <shadowAngle>45</shadowAngle>
+        <shadowDistance>1</shadowDistance>
+        <shadowColor>FF000000</shadowColor>
+        <unfocusedAlpha>255</unfocusedAlpha>
+        <!--				<dimColor>ffffffff</dimColor>
+				<textcolor>ff7FB1E5</textcolor>				
+				<selectedColor>ffffffff</selectedColor>	
+				<shadedColor>ffffffff</shadedColor>
+				<playedColor>ffffffff</playedColor>
+				<textcolor2>ffffffff</textcolor2>
+				<textcolor3>ffffffff</textcolor3>
+				<colordiffuse>ffffffff</colordiffuse>
+				<remoteColor>ffcccccc</remoteColor>		-->
+        <shadedColor>ffffffff</shadedColor>
+        <selectedColor>ff7FB1E5</selectedColor>
+        <textcolor>ff7FB1E5</textcolor>
+        <textcolor2>ff7FB1E5</textcolor2>
+        <textcolor3>ff7FB1E5</textcolor3>
+        <colordiffuse>ffffffff</colordiffuse>
+        <remoteColor>ffFFC0A8</remoteColor>
+        <downloadColor>ff80ff80</downloadColor>
+        <playedColor>ffffffff</playedColor>
+        <dimColor>ffffffff</dimColor>
+        <spaceBetweenItems>0</spaceBetweenItems>
+        <visible allowhiddenfocus="true">!Control.isvisible(93761234)+Control.HasFocus(50)</visible>
+        <animation effect="slide" start="750,0" time="800" acceleration="-0.9" reversible="true">focus</animation>
+        <animation effect="slide" end="750,0" time="200" acceleration="0.5" reversible="true">unfocus</animation>
+      </control>
+      <control>
+        <description>Thumbnail Panel</description>
+        <type>thumbnailpanel</type>
+        <id>50</id>
+        <posX>0</posX>
+        <posY>0</posY>
+        <width>1920</width>
+        <height>1095</height>
+        <spinPosX>3000</spinPosX>
+        <spinPosY>1080</spinPosY>
+        <spinColor>ffcccccc</spinColor>
+        <textureWidth>192</textureWidth>
+        <textureHeight>270</textureHeight>
+        <itemWidth>192</itemWidth>
+        <itemHeight>270</itemHeight>
+        <thumbWidth>192</thumbWidth>
+        <thumbHeight>270</thumbHeight>
+        <thumbPosX>0</thumbPosX>
+        <thumbPosY>0</thumbPosY>
+        <imageFolderFocus>-</imageFolderFocus>
+        <imageFolder>-</imageFolder>
+        <imageFolderFocus>-</imageFolderFocus>
+        <imageFolder>-</imageFolder>
+        <font>font14</font>
+        <downloadColor>ffFFFFFFFF</downloadColor>
+        <remoteColor>ffFFFFFFFF</remoteColor>
+        <textureWidthBig>240</textureWidthBig>
+        <textureHeightBig>360</textureHeightBig>
+        <itemWidthBig>240</itemWidthBig>
+        <itemHeightBig>360</itemHeightBig>
+        <thumbWidthBig>240</thumbWidthBig>
+        <thumbHeightBig>360</thumbHeightBig>
+        <thumbPosXBig>0</thumbPosXBig>
+        <thumbPosYBig>0</thumbPosYBig>
+        <thumbZoom>yes</thumbZoom>
+        <keepaspectratio>no</keepaspectratio>
+        <centered>yes</centered>
+        <enableFocusZoom>no</enableFocusZoom>
+        <zoomXPixels>45</zoomXPixels>
+        <zoomYPixels>56</zoomYPixels>
+        <keepaspectratio>no</keepaspectratio>
+        <centered>yes</centered>
+        <showFrame>true</showFrame>
+        <frameNoFocus>thumb.frame.black.png</frameNoFocus>
+        <frameFocus>thumb.frame.black.focus.png</frameFocus>
+        <onleft>2</onleft>
+        <onright>50</onright>
+        <unfocusedAlpha>50</unfocusedAlpha>
+        <scrollOffset>1</scrollOffset>
+        <!--<animation effect="fade" start="0" end="100" time="1200" acceleration="-0.9" reversible="true">focus</animation>					-->
+      </control>
+      <control>
+        <description>Filmstrip view</description>
+        <type>filmstrip</type>
+        <id>50</id>
+        <onrigth>50</onrigth>
+        <onleft>50</onleft>
+        <onup>2</onup>
+        <ondown>2</ondown>
+        <dimColor>90ffffff</dimColor>
+        <posX>2</posX>
+        <posY>664</posY>
+        <spinPosX>2100</spinPosX>
+        <spinPosY>1020</spinPosY>
+        <scrollOffset>3</scrollOffset>
+        <width>1950</width>
+        <height>864</height>
+        <thumbWidth>240</thumbWidth>
+        <thumbHeight>344</thumbHeight>
+        <thumbPosX>9</thumbPosX>
+        <thumbPosY>8</thumbPosY>
+        <itemWidth>276</itemWidth>
+        <itemHeight>354</itemHeight>
+        <textureWidth>258</textureWidth>
+        <textureHeight>354</textureHeight>
+        <imageFolderFocus>-</imageFolderFocus>
+        <frame>poster_frame_rounder_corners_filmstrip.png</frame>
+        <frameFocus>poster_frame_rounder_corners_filmstrip.png</frameFocus>
+        <thumbs mask="coverflow.poster.background1.png" flipY="true" diffuse="diffuseoverlay.png" />
+        <InfoImage>-</InfoImage>
+        <background>-</background>
+        <showFrame>yes</showFrame>
+        <showFolder>no</showFolder>
+        <showBackGround>no</showBackGround>
+        <showInfoImage>no</showInfoImage>
+        <!--<unfocusedAlpha>255</unfocusedAlpha>	-->
+        <colordiffuse>ffffffff</colordiffuse>
+        <dimColor>ffffffff</dimColor>
+        <visible allowhiddenfocus="true">!Control.isvisible(93761234)+Control.HasFocus(50)</visible>
+        <thumbAnimation effect="zoom" tween="back" acceleration="-1.1" easing="out" start="100,100" reversible="true" end="118,125" center="0,1013" time="450">focus</thumbAnimation>
+        <thumbAnimation effect="zoom" start="118,125" reversible="true" end="100,100" center="0,1013" time="200">unfocus</thumbAnimation>
+        <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="960,461" time="450" reversible="true">focus</animation>
+        <animation effect="zoom" delay="250" start="100,100" end="1,1" center="960,300" time="200" reversible="true">unfocus</animation>
+        <animation effect="fade" delay="400" start="100" end="0" time="50" reversible="true">unfocus</animation>
+        <animation effect="rotatex" start="0" end="65" center="960,293" time="450">unfocus</animation>
+        <!--<thumbAnimation effect="zoom" tween="back" acceleration="-1.1" easing="out"  start="100,100" reversible="true" end="118,125" center="0,1013" time="450">focus</thumbAnimation>
+					<thumbAnimation effect="zoom" start="118,125"  reversible="true" end="100,100" center="0,1013" time="200">unfocus</thumbAnimation>		  
+					<animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="960,461" time="450" reversible="true">focus</animation>  
+					<animation effect="zoom" delay="250" start="100,100" end="1,1" center="960,300 " time="200" reversible="true">unfocus</animation> 
+					<animation effect="fade" delay="400" start="100" end="0" time="50" reversible="true">unfocus</animation>
+					<animation effect="rotatex" start="0" end="65" center="960,293" time="450">unfocus</animation>		
+					<animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="960,461" time="450" reversible="true">visible</animation>  
+					<animation effect="zoom" delay="250" start="100,100" end="1,1" center="960,300 " time="200" reversible="true">hidden</animation> 
+					<animation effect="fade" delay="400" start="100" end="0" time="50" reversible="true">hidden</animation>
+					<animation effect="rotatex" start="0" end="65" center="960,293" time="450">hidden</animation>					-->
+      </control>
+      <control>
+        <description>Cover Flow view</description>
+        <type>coverflow</type>
+        <colordiffuse>90ffffff</colordiffuse>
+        <dimColor>90ffffff</dimColor>
+        <id>50</id>
+        <posX>0</posX>
+        <posY>705</posY>
+        <width>1920</width>
+        <height>1080</height>
+        <onup>2</onup>
+        <ondown>2</ondown>
+        <onleft>50</onleft>
+        <onright>50</onright>
+        <selectedCard>0</selectedCard>
+        <cardWidth>303</cardWidth>
+        <cardHeight>450</cardHeight>
+        <angle>60</angle>
+        <sideShift>375</sideShift>
+        <sideGap>105</sideGap>
+        <sideDepth>450</sideDepth>
+        <offsetY>0</offsetY>
+        <selectedOffsetY>-125</selectedOffsetY>
+        <speed>8</speed>
+        <backgroundHeight>303</backgroundHeight>
+        <backgroundWidth>1920</backgroundWidth>
+        <backgroundX>0</backgroundX>
+        <backgroundY>705</backgroundY>
+        <backgroundDiffuse>FF000000</backgroundDiffuse>
+        <background>-</background>
+        <showBackground>no</showBackground>
+        <foregroundHeight>1080</foregroundHeight>
+        <foregroundWidth>1920</foregroundWidth>
+        <foregroundX>0</foregroundX>
+        <foregroundY>0</foregroundY>
+        <foregroundDiffuse>FF000000</foregroundDiffuse>
+        <foreground>-</foreground>
+        <showForeground>no</showForeground>
+        <showFrame>yes</showFrame>
+        <frame>coverflow.poster.glass.png</frame>
+        <frameFocus>coverflow.poster.glass.png</frameFocus>
+        <frameWidth>303</frameWidth>
+        <frameHeight>450</frameHeight>
+        <spinSpeed>6</spinSpeed>
+        <unfocusedAlpha>FF</unfocusedAlpha>
+        <folderPrefix />
+        <folderSuffix />
+        <font1>font13</font1>
+        <font2>font10</font2>
+        <label1>#title</label1>
+        <label2>#genre</label2>
+        <textColor>FFFFFFFF</textColor>
+        <remoteColor>FFFF0000</remoteColor>
+        <playedColor>ff7FB1E5</playedColor>
+        <downloadColor>FF00FF00</downloadColor>
+        <selectedColor>FFFFFFFF</selectedColor>
+        <shadowAngle>45</shadowAngle>
+        <shadowDistance>0</shadowDistance>
+        <shadowColor>FF000000</shadowColor>
+        <label1YOff>2108</label1YOff>
+        <label2YOff>2145</label2YOff>
+        <pageSize>5</pageSize>
+        <scrollbarBackground>osdprogressback.png</scrollbarBackground>
+        <scrollbarLeft>osdprogressleft.png</scrollbarLeft>
+        <scrollbarRight>osdprogressright.png</scrollbarRight>
+        <scrollbarYOff>355</scrollbarYOff>
+        <showScrollbar>yes</showScrollbar>
+        <keepaspectratio>no</keepaspectratio>
+        <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow.poster.background.png" />
+        <subitems>
+          <subitem><![CDATA[
+                <controls>
+                  <control>
+                    <description>background</description>
+                    <type>image</type>
+                    <posX>0</posX>
+                    <posY>0</posY>
+                    <width>303</width>
+                    <height>450</height>
+                    <texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow.poster.background.png">background.png</texture>					
+                  </control>
+
+                  <control>
+                    <description>Movie Details</description>
+                    <type>label</type>
+                    <posX>15</posX>
+                    <posY>15</posY>
+                    <width>270</width>
+                    <label>Movie Details</label>
+                    <font>font13</font>
+                    <textcolor>ff7F9EB2</textcolor>
+                  </control>
+
+                  <control>
+                    <description>year</description>
+                    <type>label</type>
+					<posX>15</posX>
+                    <posY>45</posY>
+                    <width>270</width>
+                    <label>#MovingPictures.SelectedMovie.year</label>
+                    <font>font11</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>				  
+				  
+                  <control>
+                    <description>genre</description>
+                    <type>label</type>
+                    <posX>15</posX>
+                    <posY>75</posY>
+                    <width>270</width>
+                    <label>#MovingPictures.SelectedMovie.genres</label>
+                    <font>font11</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>				 
+				  
+                  <control>
+                    <description>runtime</description>
+                    <type>label</type>
+                    <posX>15</posX>
+                    <posY>105</posY>
+                    <width>270</width>
+                    <label>#MovingPictures.Translation.Runtime.Label: #MovingPictures.SelectedMovie.runtime.localized.short</label>
+                    <font>font11</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+				  <control>
+					<type>imagelist</type>
+					<id>0</id>
+					<posX>15</posX>
+					<posY>137</posY>
+					<textureWidth>24</textureWidth>
+					<textureHeight>24</textureHeight>
+					<subitems>
+						<subitem>star_empty.png</subitem>
+						<subitem>star_yellow.png</subitem>
+					</subitems>
+					<orientation>horizontal</orientation>
+					<align>left</align>
+					<imagesToDraw>5</imagesToDraw>
+					<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>      
+				  </control>				  
+				  
+                  <control>
+                    <description>rating</description>
+                    <type>label</type>
+                    <posX>155</posX>
+                    <posY>135</posY>
+                    <width>270</width>
+                    <label>(#MovingPictures.SelectedMovie.score.rounded / 10)</label>
+                    <font>font11</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>               
+
+				  
+				  <control>
+						<description>Line separator</description>
+						<type>image</type>
+						<posX>15</posX>
+						<posY>170</posY>
+						<width>270</width>
+						<height>12</height>
+						<texture>default.line.separator.png</texture>
+			      </control>				  
+
+                  <control>
+                    <description>plot</description>
+                    <type>textboxscrollup</type>
+                    <posX>15</posX>
+                    <posY>190</posY>
+                    <width>285</width>
+                    <height>117</height>
+                    <label>#MovingPictures.SelectedMovie.summary</label>
+                    <font>font11</font>
+                    <lineSpacing>2</lineSpacing>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+
+                </controls>
+              ]]></subitem>
+        </subitems>
+        <visible allowhiddenfocus="true">!Control.isvisible(93761234)+Control.HasFocus(50)</visible>
+        <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="960,461" time="450" reversible="true">focus</animation>
+        <animation effect="zoom" delay="250" start="100,100" end="1,1" center="960,300" time="200" reversible="true">unfocus</animation>
+        <animation effect="fade" delay="400" start="100" end="0" time="50" reversible="true">unfocus</animation>
+        <animation effect="rotatex" start="0" end="65" center="960,293" time="450">unfocus</animation>
+        <!--								<animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="960,461" time="450" reversible="true">visible</animation>  
+				<animation effect="zoom" delay="250" start="100,100" end="1,1" center="960,300" time="200" reversible="true">hidden</animation> 
+				<animation effect="fade" delay="400" start="100" end="0" time="50" reversible="true">hidden</animation> 
+				<animation effect="rotatex" start="0" end="65" center="960,293" time="450">hidden</animation>	-->
+      </control>
+    </control>
+  </controls>
+</window>

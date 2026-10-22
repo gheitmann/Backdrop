@@ -1,0 +1,691 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <id>880</id>
+  <defaultcontrol>50</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>no</disabletopbar>
+  <controls>
+    <control>
+      <description>DUMMY CONTROLL FOR VISIBILITY CONDITION</description>
+      <type>button</type>
+      <id>93761234</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>2</width>
+      <label>-</label>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>DUMMY CONTROLL FOR NAVIGATION CONDITION</description>
+      <type>label</type>
+      <id>93761264</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>3</width>
+      <visible>no</visible>
+    </control>
+    <import>common.fanart.selected.music.xml</import>
+    <control>
+      <description>Line separator</description>
+      <type>image</type>
+      <id>0</id>
+      <posY>586</posY>
+      <posX>1279</posX>
+      <height>25</height>
+      <width>641</width>
+      <shouldCache>true</shouldCache>
+      <texture>playlist_sub_nofocus3_end.png</texture>
+      <visible>Control.hasfocus(50)+!Control.isvisible(93761234)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Line separator</description>
+      <type>image</type>
+      <id>0</id>
+      <posY>612</posY>
+      <posX>1279</posX>
+      <height>468</height>
+      <width>641</width>
+      <shouldCache>true</shouldCache>
+      <texture>list_bg_3.png</texture>
+      <visible>Control.hasfocus(50)+!Control.isvisible(93761234)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Header Background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background.header.png</texture>
+      <visible>Control.IsVisible(50)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">Hidden</animation>
+    </control>
+    <control>
+      <description>Title</description>
+      <type>fadelabel</type>
+      <id>11</id>
+      <posX>30</posX>
+      <posY>45</posY>
+      <width>1350</width>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <font>font50BC</font>
+      <label>#MusicVids.ArtistName</label>
+      <scrollStartDelaySec>5</scrollStartDelaySec>
+      <visible>Control.IsVisible(50)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">Hidden</animation>
+    </control>
+    <control>
+      <description>Episode Details</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>overlay.mini.nologo.png</texture>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Music Vids Hierachy shadow</description>
+      <type>label</type>
+      <id>10</id>
+      <posX>1200</posX>
+      <posY>845</posY>
+      <width>720</width>
+      <textcolor>ff7FB1E5</textcolor>
+      <font>font16</font>
+      <label>#MusicVids.Hierachy</label>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Media Count Label</description>
+      <type>label</type>
+      <label>Total Videos: #MusicVids.TotalVideos</label>
+      <id>15</id>
+      <posX>1320</posX>
+      <posY>890</posY>
+      <font>font14</font>
+      <align>left</align>
+      <width>450</width>
+      <textcolor>ffffffff</textcolor>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>Media Count Label</description>
+      <type>label</type>
+      <label>Total artists: #MusicVids.TotalArtists</label>
+      <id>16</id>
+      <posX>1320</posX>
+      <posY>927</posY>
+      <width>450</width>
+      <font>font14</font>
+      <align>left</align>
+      <textcolor>ffffffff</textcolor>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>Favorite Vid Static</description>
+      <type>fadelabel</type>
+      <label>Most Played Video: #MusicVids.MostPlayed</label>
+      <font>font14</font>
+      <id>17</id>
+      <posX>1320</posX>
+      <width>645</width>
+      <posY>914</posY>
+      <textcolor>ffffffff</textcolor>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Favorite Vid</description>
+      <id>18</id>
+      <type>image</type>
+      <posX>1200</posX>
+      <posY>890</posY>
+      <width>90</width>
+      <height>90</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <zoom>yes</zoom>
+      <zoomfromtop>yes</zoomfromtop>
+      <centered>yes</centered>
+      <texture mask="music_frame_rounder_corners_background1.png">#MusicVids.MostPlayedThumb</texture>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Frame Music</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1200</posX>
+      <posY>890</posY>
+      <width>90</width>
+      <height>90</height>
+      <texture>music_frame_rounder_corners.png</texture>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Favorite Artist Static</description>
+      <type>label</type>
+      <label>Most Played Artist: #MusicVids.FavArtist</label>
+      <font>font14</font>
+      <id>19</id>
+      <textcolor>ffffffff</textcolor>
+      <width>645</width>
+      <posX>1320</posX>
+      <posY>1010</posY>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Favorite Artist</description>
+      <id>20</id>
+      <type>image</type>
+      <posX>1200</posX>
+      <posY>985</posY>
+      <width>90</width>
+      <height>90</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <zoom>yes</zoom>
+      <zoomfromtop>yes</zoomfromtop>
+      <centered>yes</centered>
+      <texture mask="music_frame_rounder_corners_background1.png">#MusicVids.FavArtistThumb</texture>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Frame Music</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1200</posX>
+      <posY>985</posY>
+      <width>90</width>
+      <height>90</height>
+      <texture>music_frame_rounder_corners.png</texture>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Artist Biography</description>
+      <type>textboxscrollup</type>
+      <id>12</id>
+      <posX>450</posX>
+      <posY>845</posY>
+      <width>750</width>
+      <height>220</height>
+      <textalign>left</textalign>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <textcolor>ffffffff</textcolor>
+      <shadowColor>FF333333</shadowColor>
+      <seperator>--------------------------------------------------------------------------------------</seperator>
+      <font>font14</font>
+      <label>#MusicVids.ArtistBio</label>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Music Thumb</description>
+      <type>image</type>
+      <id>13</id>
+      <posX>0</posX>
+      <posY>835</posY>
+      <width>400</width>
+      <height>245</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <zoom>yes</zoom>
+      <zoomfromtop>yes</zoomfromtop>
+      <centered>yes</centered>
+      <texture mask="episode.frame.background.png">#MusicVids.ArtistImg</texture>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Music Thumb</description>
+      <id>14</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>835</posY>
+      <width>400</width>
+      <height>245</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <zoom>yes</zoom>
+      <zoomfromtop>yes</zoomfromtop>
+      <centered>yes</centered>
+      <texture mask="episode.frame.background.png">#MusicVids.VideoImg</texture>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>835</posY>
+      <width>400</width>
+      <height>245</height>
+      <texture>episode.frame.png</texture>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>Control.isvisible(93761234)</visible>
+    </control>
+    <control>
+      <description>Dummy label indicating artist/video view</description>
+      <type>label</type>
+      <id>99</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <label />
+    </control>
+    <control>
+      <description>Sort Label Overlay</description>
+      <type>label</type>
+      <id>22</id>
+      <posX>3375</posX>
+      <posY>825</posY>
+      <label>#MusicVids.Sort</label>
+      <align>right</align>
+      <font>font12</font>
+      <textcolor>20ffffff</textcolor>
+    </control>
+    <control>
+      <description>composite control consisting of a list control and a thumbnail panel</description>
+      <type>facadeview</type>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <id>50</id>
+      <control>
+        <description>Movie List</description>
+        <type>listcontrol</type>
+        <id>50</id>
+        <posY>612</posY>
+        <posX>1279</posX>
+        <height>518</height>
+        <width>641</width>
+        <spinPosY>1200</spinPosY>
+        <spinPosX>2100</spinPosX>
+        <textXOff>24</textXOff>
+        <textYOff>0</textYOff>
+        <textureFocus>playlist_sub_focus1.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <textureUp>-</textureUp>
+        <textureDown>-</textureDown>
+        <spinCanFocus>no</spinCanFocus>
+        <font>font16</font>
+        <textureHeight>52</textureHeight>
+        <textalign>right</textalign>
+        <onleft>2</onleft>
+        <onright>2</onright>
+        <shadowAngle>45</shadowAngle>
+        <shadowDistance>1</shadowDistance>
+        <shadowColor>FF000000</shadowColor>
+        <unfocusedAlpha>255</unfocusedAlpha>
+        <shadedColor>ffffffff</shadedColor>
+        <selectedColor>ff7FB1E5</selectedColor>
+        <textcolor>ff7FB1E5</textcolor>
+        <textcolor2>ff7FB1E5</textcolor2>
+        <textcolor3>ff7FB1E5</textcolor3>
+        <colordiffuse>ffffffff</colordiffuse>
+        <remoteColor>ffFFC0A8</remoteColor>
+        <downloadColor>ff80ff80</downloadColor>
+        <playedColor>ffffffff</playedColor>
+        <dimColor>ffffffff</dimColor>
+        <spaceBetweenItems>0</spaceBetweenItems>
+        <visible allowhiddenfocus="true">!Control.isvisible(93761234)+Control.HasFocus(50)</visible>
+        <animation effect="slide" start="750,0" time="800" acceleration="-0.9" reversible="true">focus</animation>
+        <animation effect="slide" end="750,0" time="200" acceleration="0.5" reversible="true">unfocus</animation>
+      </control>
+      <control>
+        <description>playlist listcontrol</description>
+        <type>playlistcontrol</type>
+        <id>50</id>
+        <scrollOffset>2</scrollOffset>
+      </control>
+    </control>
+    <control>
+      <type>image</type>
+      <description>Dim background</description>
+      <id>0</id>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>overlay.dim.png</texture>
+      <visible>Control.IsVisible(50)+[Control.HasFocus(991799)|Control.HasFocus(991899)|Control.HasFocus(2)|Control.HasFocus(5)|Control.HasFocus(3)|Control.HasFocus(20)|Control.HasFocus(9)|Control.HasFocus(4)|Control.HasFocus(66608)]</visible>
+      <animation effect="fade" time="450">visible</animation>
+      <animation effect="fade" time="400">hidden</animation>
+    </control>
+    <control>
+      <description>Menu Image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>890</posX>
+      <posY>0</posY>
+      <width>142</width>
+      <height>45</height>
+      <texture>button.menu.top.png</texture>
+      <visible>[facadeview.filmstrip|facadeview.coverflow]+Control.isvisible(50)</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">Hidden</animation>
+    </control>
+    <control>
+      <description>Menu Image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>390</posY>
+      <width>45</width>
+      <height>142</height>
+      <texture>button.menu.left.png</texture>
+      <visible>Control.isvisible(50)+![facadeview.filmstrip|facadeview.coverflow]</visible>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">Hidden</animation>
+    </control>
+    <control>
+      <type>actiongroup</type>
+      <description>action menu</description>
+      <defaultcontrol>2</defaultcontrol>
+      <onexit>50</onexit>
+      <visible>Control.IsVisible(50)+[Control.HasFocus(991799)|Control.HasFocus(991899)|Control.HasFocus(2)|Control.HasFocus(5)|Control.HasFocus(3)|Control.HasFocus(20)|Control.HasFocus(9)|Control.HasFocus(4)|Control.HasFocus(66608)]</visible>
+      <control>
+        <type>group</type>
+        <animation effect="zoom" delay="20" tween="back" easing="out" start="1,1" end="100,100" center="960,461" time="550" reversible="true">Visible</animation>
+        <animation effect="zoom" delay="250" start="100,100" end="1,1" center="960,300" time="250" reversible="true">Hidden</animation>
+        <animation effect="rotatex" start="0" end="65" center="960,291" time="550" reversible="true">Hidden</animation>
+        <animation effect="fade" delay="500" start="100" end="0" time="50" reversible="true">Hidden</animation>
+        <control>
+          <type>image</type>
+          <id>0</id>
+          <posX>720</posX>
+          <posY>274</posY>
+          <width>480</width>
+          <height>435</height>
+          <texture>dialog_290_400.png</texture>
+          <animation effect="zoom" delay="20" tween="back" easing="out" start="1,1" end="100,100" center="960,461" time="550" reversible="true">Visible</animation>
+          <animation effect="zoom" delay="250" start="100,100" end="1,1" center="960,300" time="250" reversible="true">Hidden</animation>
+          <animation effect="rotatex" start="0" end="65" center="960,291" time="550" reversible="true">Hidden</animation>
+          <animation effect="fade" delay="500" start="100" end="0" time="50" reversible="true">Hidden</animation>
+          <visible>Control.IsVisible(50)+[Control.HasFocus(991799)|Control.HasFocus(991899)|Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(4)]</visible>
+        </control>
+        <control>
+          <description>Heading text label</description>
+          <type>label</type>
+          <id>0</id>
+          <posX>516</posX>
+          <posY>480</posY>
+          <width>510</width>
+          <label>924</label>
+          <font>font16BCB</font>
+          <align>center</align>
+          <textcolor>ff7FB1E5</textcolor>
+          <visible>!Control.IsVisible(51)+Control.IsVisible(50)</visible>
+          <animation effect="fade" start="100" end="0" time="1">Hidden</animation>
+          <animation effect="fade" start="0" end="100" delay="500" time="250">Visible</animation>
+          <animation effect="rotate" start="90" end="90" time="1" condition="true">Conditional</animation>
+        </control>
+        <control>
+          <description>Now Playing Button</description>
+          <type>button</type>
+          <id>991899</id>
+          <posX>932</posX>
+          <posY>300</posY>
+          <width>70</width>
+          <height>27</height>
+          <textureFocus>play.now.button.focus.png</textureFocus>
+          <textureNoFocus>play.now.button.nofocus.png</textureNoFocus>
+          <hyperlink>510</hyperlink>
+          <onup>2</onup>
+          <ondown>2</ondown>
+          <onleft>50</onleft>
+          <onright>50</onright>
+          <animation effect="fade" delay="500" start="100" end="0" time="50" reversible="true">Hidden</animation>
+          <visible>control.isvisible(3337)+Player.HasAudio+Control.IsVisible(50)</visible>
+        </control>
+        <control>
+          <description>Now Playing Button Animation</description>
+          <type>image</type>
+          <id>0</id>
+          <posX>932</posX>
+          <posY>300</posY>
+          <width>70</width>
+          <height>27</height>
+          <shouldCache>true</shouldCache>
+          <texture>play.now.button.back.png</texture>
+          <animation effect="fade" time="450" delay="100" tween="cubic" easing="inout" condition="true" pulse="true">Conditional</animation>
+          <visible>control.isvisible(3337)+Player.HasAudio+Control.IsVisible(50)</visible>
+        </control>
+        <control>
+          <description>Video Window Button</description>
+          <type>button</type>
+          <id>991799</id>
+          <posX>932</posX>
+          <posY>300</posY>
+          <width>70</width>
+          <height>27</height>
+          <textureFocus>play.now.button.focus.png</textureFocus>
+          <textureNoFocus>play.now.button.nofocus.png</textureNoFocus>
+          <action>18</action>
+          <onup>991899</onup>
+          <ondown>2</ondown>
+          <onleft>50</onleft>
+          <onright>50</onright>
+          <animation effect="fade" delay="500" start="100" end="0" time="50" reversible="true">Hidden</animation>
+          <visible>Player.HasVideo+!control.isvisible(3337)+Control.IsVisible(50)</visible>
+        </control>
+        <control>
+          <description>Now Playing Button Animation</description>
+          <type>image</type>
+          <id>0</id>
+          <posX>932</posX>
+          <posY>300</posY>
+          <width>70</width>
+          <height>27</height>
+          <shouldCache>true</shouldCache>
+          <texture>play.now.button.back.png</texture>
+          <animation effect="fade" time="450" delay="100" tween="cubic" easing="inout" condition="true" pulse="true">Conditional</animation>
+          <visible>Player.HasVideo+!control.isvisible(3337)+Control.IsVisible(50)</visible>
+        </control>
+        <control>
+          <type>group</type>
+          <description>group element</description>
+          <posX>800</posX>
+          <posY>340</posY>
+          <id>0</id>
+          <layout>StackLayout(0)</layout>
+          <control>
+            <description>Menu Button 0</description>
+            <type>button</type>
+            <id>2</id>
+            <label>Play All (Random)</label>
+            <width>375</width>
+            <textXOff>10</textXOff>
+            <textYOff>2</textYOff>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <textureFocus>-</textureFocus>
+            <font>font14BC</font>
+            <hover>-</hover>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>991799</onup>
+            <ondown>3</ondown>
+            <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+          </control>
+          <control>
+            <description>Menu Button 1</description>
+            <type>button</type>
+            <id>3</id>
+            <label>Smart Playlist</label>
+            <width>375</width>
+            <textXOff>10</textXOff>
+            <textYOff>2</textYOff>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <textureFocus>-</textureFocus>
+            <font>font14BC</font>
+            <hover>-</hover>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>2</onup>
+            <ondown>4</ondown>
+            <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+          </control>
+          <control>
+            <description>Menu Button 2</description>
+            <type>button</type>
+            <id>4</id>
+            <label>Playlist</label>
+            <width>375</width>
+            <textXOff>10</textXOff>
+            <textYOff>2</textYOff>
+            <textcolor>ffffffff</textcolor>
+            <colordiffuse>ffffffff</colordiffuse>
+            <textcolorNoFocus>90cccccc</textcolorNoFocus>
+            <textureFocus>-</textureFocus>
+            <font>font14BC</font>
+            <hover>-</hover>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>3</onup>
+            <ondown>2</ondown>
+            <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+          </control>
+        </control>
+      </control>
+      <control>
+        <description>Button 2 - Navigating from up</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>796</posX>
+        <posY>340</posY>
+        <width>380</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(2)+Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 2 - Navigating from down</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>796</posX>
+        <posY>340</posY>
+        <width>380</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(2)+!Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 3 - Navigating from up</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>796</posX>
+        <posY>382</posY>
+        <width>380</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(3)+Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 3 - Navigating from down</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>796</posX>
+        <posY>382</posY>
+        <width>380</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(3)+!Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 4 - Navigating from up</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>796</posX>
+        <posY>424</posY>
+        <width>380</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(4)+Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Button 4 - Navigating from down</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>796</posX>
+        <posY>424</posY>
+        <width>380</width>
+        <height>42</height>
+        <shouldCache>true</shouldCache>
+        <texture>hiddenmenu_button_fo.png</texture>
+        <visible>Control.HasFocus(4)+!Control.isvisible(93761264)</visible>
+        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
+      </control>
+    </control>
+    <import>common.time.xml</import>
+    <import>common.overlays.xml</import>
+  </controls>
+</window>

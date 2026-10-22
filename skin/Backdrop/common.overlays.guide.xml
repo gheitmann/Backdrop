@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--
+Contains Music and Video Overlay
+same location everywhere
+-->
+<window>
+  <controls>
+    <!--                                    :: DUMMY / BACKGROUND ::                                    -->
+    <control>
+      <description>dummy (visible when music is playing)</description>
+      <type>label</type>
+      <id>3337</id>
+      <posX>3000</posX>
+      <label>#Play.Current.Artist</label>
+      <visible>Player.HasAudio+player.hasaudio</visible>
+    </control>
+    <control>
+      <description>dummy (visible when there is a next track)</description>
+      <type>label</type>
+      <id>3338</id>
+      <posX>3000</posX>
+      <label>#Play.Next.Title</label>
+      <visible>Player.HasAudio+control.hastext(3338)</visible>
+    </control>
+    <control>
+      <description>dummy (visible when tv is running)</description>
+      <type>label</type>
+      <id>3339</id>
+      <posX>3000</posX>
+      <label>#TV.View.channel</label>
+      <visible>Player.HasVideo+!control.hastext(3337)</visible>
+    </control>
+    <!-- MUSIC******************************************************************************************-->
+    <control>
+      <description>Line separator</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1365</posX>
+      <posY>189</posY>
+      <width>360</width>
+      <height>9</height>
+      <shouldCache>true</shouldCache>
+      <texture>line.separator.png</texture>
+      <visible>[[control.isvisible(3337)+Player.HasAudio]|[Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)]]+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>Music Thumb Default</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>1678</posX>
+      <posY>142</posY>
+      <width>238</width>
+      <height>238</height>
+      <keepaspectratio>no</keepaspectratio>
+      <centered>yes</centered>
+      <zoom>yes</zoom>
+      <shouldCache>true</shouldCache>
+      <texture mask="music_frame_rounder_corners_background1.png">nothumb.png</texture>
+      <visible>[[control.isvisible(3337)+Player.HasAudio+![Control.hasthumb(987896)|Control.hasthumb(987897)]]|[[Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)]]+![Control.hasthumb(987896)|Control.hasthumb(987897)]]+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>Music Thumb</description>
+      <id>987897</id>
+      <type>image</type>
+      <posX>1678</posX>
+      <posY>142</posY>
+      <width>238</width>
+      <height>238</height>
+      <keepaspectratio>no</keepaspectratio>
+      <centered>yes</centered>
+      <zoom>yes</zoom>
+      <!--<texture mask="music_frame_rounder_corners_background1.png">#Play.Current.ArtistThumb</texture>  -->
+      <texture mask="music_frame_rounder_corners_background1.png">#fanarthandler.music.artisthumb.play</texture>
+      <visible>[[control.isvisible(3337)+Player.HasAudio]|[Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)]]+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>Music Thumb</description>
+      <id>987896</id>
+      <type>image</type>
+      <posX>1678</posX>
+      <posY>142</posY>
+      <width>238</width>
+      <height>238</height>
+      <keepaspectratio>no</keepaspectratio>
+      <centered>yes</centered>
+      <zoom>yes</zoom>
+      <texture mask="music_frame_rounder_corners_background1.png">#Play.Current.Thumb</texture>
+      <visible>[[control.isvisible(3337)+Player.HasAudio]|[Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)]]+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>Frame Music</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1678</posX>
+      <posY>142</posY>
+      <width>238</width>
+      <height>238</height>
+      <texture>music_frame_rounder_corners.png</texture>
+      <visible>[[control.isvisible(3337)+Player.HasAudio]|[Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)]]+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>Artist label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <width>900</width>
+      <height>60</height>
+      <posX>1680</posX>
+      <posY>154</posY>
+      <label>#Play.Current.Artist</label>
+      <align>right</align>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <font>font13BCB</font>
+      <visible>control.isvisible(3337)+Player.HasAudio+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>Album label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <width>900</width>
+      <height>60</height>
+      <posX>1680</posX>
+      <posY>195</posY>
+      <label>#Play.Current.Album</label>
+      <align>right</align>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <font>font11</font>
+      <visible>control.isvisible(3337)+Player.HasAudio+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>now playing label</description>
+      <type>label</type>
+      <id>0</id>
+      <width>900</width>
+      <height>68</height>
+      <posX>1680</posX>
+      <posY>255</posY>
+      <label>4540</label>
+      <align>right</align>
+      <textcolor>ff7FB1E5</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <font>font11</font>
+      <visible>control.isvisible(3337)+Player.HasAudio+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>title label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <width>900</width>
+      <height>60</height>
+      <posX>1680</posX>
+      <posY>284</posY>
+      <label>#Play.Current.Title</label>
+      <align>right</align>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <font>font13</font>
+      <visible>control.isvisible(3337)+Player.HasAudio+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>Progressbar Background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1449</posX>
+      <posY>328</posY>
+      <width>231</width>
+      <height>15</height>
+      <shouldCache>true</shouldCache>
+      <texture>progressback.png</texture>
+      <visible>control.isvisible(3337)+Player.HasAudio+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>progress bar</description>
+      <type>progress</type>
+      <id>0</id>
+      <posX>1437</posX>
+      <posY>321</posY>
+      <width>258</width>
+      <height>15</height>
+      <label>#percentage</label>
+      <texturebg>-</texturebg>
+      <lefttexture>-</lefttexture>
+      <midtexture>progressbar_mid.png</midtexture>
+      <righttexture>-</righttexture>
+      <visible>control.isvisible(3337)+Player.HasAudio+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>play time / duration label</description>
+      <type>label</type>
+      <id>0</id>
+      <width>270</width>
+      <height>60</height>
+      <posX>1680</posX>
+      <posY>332</posY>
+      <align>right</align>
+      <label>#currentplaytime / #duration</label>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <font>font11</font>
+      <visible>control.isvisible(3337)+Player.HasAudio+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <!--Radio**********************************************************************************-->
+    <control>
+      <description>Artist label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <width>900</width>
+      <height>60</height>
+      <posX>1680</posX>
+      <posY>150</posY>
+      <label>#Play.Current.Title</label>
+      <align>right</align>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <font>font13</font>
+      <visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>Album label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <width>900</width>
+      <height>60</height>
+      <posX>1680</posX>
+      <posY>195</posY>
+      <label>#currentplaytime</label>
+      <align>right</align>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <font>font13</font>
+      <visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <!--Video**********************************************************************************-->
+    <control>
+      <description>video preview window</description>
+      <type>videowindow</type>
+      <id>0</id>
+      <posX>1537</posX>
+      <posY>162</posY>
+      <width>359</width>
+      <height>197</height>
+      <textureFocus>-</textureFocus>
+      <visible>Player.HasVideo+!control.isvisible(3337)+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <id>0</id>
+      <type>image</type>
+      <posX>1490</posX>
+      <posY>120</posY>
+      <width>450</width>
+      <height>278</height>
+      <shouldCache>true</shouldCache>
+      <texture>lcd_flat.png</texture>
+      <visible>Player.HasVideo+!control.isvisible(3337)+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>title label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <width>900</width>
+      <height>60</height>
+      <posX>1515</posX>
+      <posY>252</posY>
+      <label>#Play.Current.Title</label>
+      <align>right</align>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <font>font13</font>
+      <visible>Player.HasVideo+!control.isvisible(3337)+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>Progressbar Background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1279</posX>
+      <posY>297</posY>
+      <width>234</width>
+      <height>15</height>
+      <shouldCache>true</shouldCache>
+      <texture>progressback.png</texture>
+      <visible>Player.HasVideo+!control.isvisible(3337)+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>progress bar</description>
+      <type>progress</type>
+      <id>0</id>
+      <posX>1268</posX>
+      <posY>290</posY>
+      <width>258</width>
+      <height>15</height>
+      <label>#percentage</label>
+      <texturebg>-</texturebg>
+      <lefttexture>-</lefttexture>
+      <midtexture>progressbar_mid.png</midtexture>
+      <righttexture>-</righttexture>
+      <visible>Player.HasVideo+!control.isvisible(3337)+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>play time / duration label</description>
+      <type>label</type>
+      <id>0</id>
+      <width>270</width>
+      <height>60</height>
+      <posX>1515</posX>
+      <posY>300</posY>
+      <align>right</align>
+      <label>#currentplaytime / #duration</label>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <font>font13</font>
+      <visible>Player.HasVideo+!control.isvisible(3337)+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+  </controls>
+</window>

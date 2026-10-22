@@ -1,0 +1,772 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>4759</id>
+  <defaultcontrol>1800</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>yes</disabletopbar>
+  <controls>
+    <control>
+      <description>Dummy Label for show menu expand</description>
+      <type>button</type>
+      <id>1700</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>480</width>
+      <height>108</height>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <hover>-</hover>
+      <onup>218</onup>
+      <ondown>218</ondown>
+      <onleft>218</onleft>
+      <onright>218</onright>
+      <visible>Control.HasFocus(1900)|Control.HasFocus(218)|Control.HasFocus(219)|Control.HasFocus(220)|Control.HasFocus(221)|Control.IsVisible(302)|Control.IsVisible(304)|Control.IsVisible(305)|Control.IsVisible(300)</visible>
+    </control>
+    <control>
+      <description>Dummy Label for hide menu expand</description>
+      <type>button</type>
+      <id>1800</id>
+      <textureFocus>-</textureFocus>
+      <onup>1900</onup>
+      <ondown>1900</ondown>
+      <onleft>1900</onleft>
+      <onright>1900</onright>
+    </control>
+    <control>
+      <description>Dummy Label for show menu expand</description>
+      <type>button</type>
+      <id>1900</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>480</width>
+      <height>108</height>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <hover>-</hover>
+      <onup>218</onup>
+      <ondown>218</ondown>
+      <onleft>218</onleft>
+      <onright>218</onright>
+      <visible>yes</visible>
+    </control>
+    <control>
+      <description>dummy label for deciding DVD Cover</description>
+      <type>fadelabel</type>
+      <id>76586</id>
+      <posX>3000</posX>
+      <posY>300</posY>
+      <width>300</width>
+      <height>60</height>
+      <label>#Play.Current.Genre</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font10</font>
+      <visible>player.hasmedia</visible>
+    </control>
+    <control>
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>765</posY>
+      <width>1920</width>
+      <height>315</height>
+      <texture>osdbackground.png</texture>
+      <visible>Control.IsVisible(1700)</visible>
+      <animation effect="fade" time="400" reversible="true">VisibleChange</animation>
+    </control>
+    <control>
+      <description>background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>765</posY>
+      <width>1920</width>
+      <height>315</height>
+      <texture>osdbackground_small.png</texture>
+      <visible>!Control.IsVisible(1700)</visible>
+      <animation effect="fade" time="350" reversible="true">visible</animation>
+      <animation effect="fade" time="250" delay="100" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>OSD Help Label Shadow</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>2</posX>
+      <posY>924</posY>
+      <width>1922</width>
+      <height>30</height>
+      <label>Press Up to view more details.</label>
+      <textcolor>ff000000</textcolor>
+      <font>font12</font>
+      <align>center</align>
+      <visible>!Control.IsVisible(1700)</visible>
+      <animation effect="fade" start="100" end="0" time="1200" delay="100" reversible="false">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="1200" delay="100" reversible="false">VisibleChange</animation>
+    </control>
+    <control>
+      <description>OSD Help Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>922</posY>
+      <width>1920</width>
+      <height>30</height>
+      <label>Press Up to view more details.</label>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <align>center</align>
+      <visible>!Control.IsVisible(1700)</visible>
+      <animation effect="fade" start="100" end="0" time="1200" delay="100" reversible="false">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="1200" delay="100" reversible="false">VisibleChange</animation>
+    </control>
+    <control>
+      <description>DVD Cover</description>
+      <type>image</type>
+      <id>80099</id>
+      <texture mask="poster_frame_rounder_corners_background1.png">#Play.Current.Thumb</texture>
+      <posX>150</posX>
+      <posY>783</posY>
+      <width>140</width>
+      <height>204</height>
+      <align>left</align>
+      <centered>yes</centered>
+      <visible>Control.IsVisible(1700)+player.hasmedia</visible>
+      <animation effect="fade" time="400" reversible="true">VisibleChange</animation>
+    </control>
+    <control>
+      <description>ClearArt Cover</description>
+      <type>image</type>
+      <id>0</id>
+      <texture>#TVSeries.Play.ClearArt</texture>
+      <posX>1500</posX>
+      <posY>801</posY>
+      <width>300</width>
+      <height>168</height>
+      <align>left</align>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+      <visible>!Control.IsVisible(1700)</visible>
+      <animation effect="fade" time="350" reversible="true">visible</animation>
+      <animation effect="fade" time="250" delay="100" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <id>0</id>
+      <type>image</type>
+      <posX>150</posX>
+      <posY>783</posY>
+      <width>140</width>
+      <height>204</height>
+      <texture>poster_frame_rounder_corners.png</texture>
+      <visible>Control.IsVisible(1700)</visible>
+      <animation effect="fade" time="400" reversible="true">VisibleChange</animation>
+    </control>
+    <control>
+      <description>Movie Name</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>308</posX>
+      <posY>780</posY>
+      <width>960</width>
+      <font>font18</font>
+      <label>#Play.Current.Title</label>
+      <textcolor>ffffffff</textcolor>
+      <visible>Control.IsVisible(1700)</visible>
+      <animation effect="fade" time="400" reversible="true">VisibleChange</animation>
+    </control>
+    <!--    
+    <control>
+      <description>Movie Year</description> 
+      <id>0</id>
+      <type>fadelabel</type>
+      <width>368</width>
+      <posX>292</posX>
+      <posY>870</posY>
+      <font>font12BC</font>
+      <label>#Play.Current.Year </label>
+      <textcolor>ff909090</textcolor>
+      <visible>!player.paused</visible> 
+    </control>
+-->
+    <control>
+      <description>Plot</description>
+      <type>textboxscrollup</type>
+      <id>0</id>
+      <posX>300</posX>
+      <posY>843</posY>
+      <width>1102</width>
+      <height>135</height>
+      <seperator>------------------------------------</seperator>
+      <label>#Play.Current.Plot</label>
+      <font>font14</font>
+      <visible>Control.IsVisible(1700)</visible>
+      <animation effect="fade" time="300" reversible="true">VisibleChange</animation>
+    </control>
+    <!-- :::::::::: MENU (BECOMES VISIBLE WHEN YOU PRESS AN ARROW KEY) :::::::::: -->
+    <control>
+      <type>group</type>
+      <description>group element</description>
+      <posX>1515</posX>
+      <posY>774</posY>
+      <width>300</width>
+      <height>56</height>
+      <layout>GridLayout(4,0,0,0)</layout>
+      <visible>Control.IsVisible(1700)</visible>
+      <animation effect="fade" time="300" reversible="true">VisibleChange</animation>
+      <!--	  <animation effect="fade" time="400" reversible="true">visible</animation>	  	  
+	  <animation effect="fade" time="300" delay="200" reversible="true">hidden</animation>	-->
+      <control>
+        <description>Subtitles</description>
+        <type>checkbutton</type>
+        <id>218</id>
+        <width>56</width>
+        <height>56</height>
+        <textureFocus>osdvizfo.png</textureFocus>
+        <textureNoFocus>osdviznf.png</textureNoFocus>
+        <label>-</label>
+        <font>-</font>
+        <onleft>221</onleft>
+        <onright>219</onright>
+        <onup>1800</onup>
+        <ondown>1800</ondown>
+        <textureCheckmark>check-box.png</textureCheckmark>
+        <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+        <markWidth>30</markWidth>
+        <markHeight>30</markHeight>
+        <markalign>right</markalign>
+        <markvalign>middle</markvalign>
+        <markXOff>12</markXOff>
+      </control>
+      <control>
+        <description>Bookmarks Menu</description>
+        <type>checkbutton</type>
+        <id>219</id>
+        <width>56</width>
+        <height>56</height>
+        <textureFocus>osdbookmarksfo.png</textureFocus>
+        <textureNoFocus>osdbookmarksnf.png</textureNoFocus>
+        <label>-</label>
+        <font>-</font>
+        <onleft>218</onleft>
+        <onright>220</onright>
+        <onup>1800</onup>
+        <ondown>1800</ondown>
+        <textureCheckmark>check-box.png</textureCheckmark>
+        <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+        <markWidth>30</markWidth>
+        <markHeight>30</markHeight>
+        <markalign>right</markalign>
+        <markvalign>middle</markvalign>
+        <markXOff>12</markXOff>
+      </control>
+      <control>
+        <description>Video Menu</description>
+        <type>checkbutton</type>
+        <id>220</id>
+        <width>56</width>
+        <height>56</height>
+        <textureFocus>osdvideofo.png</textureFocus>
+        <textureNoFocus>osdvideonf.png</textureNoFocus>
+        <label>-</label>
+        <font>-</font>
+        <onleft>219</onleft>
+        <onright>221</onright>
+        <onup>1800</onup>
+        <ondown>1800</ondown>
+        <textureCheckmark>check-box.png</textureCheckmark>
+        <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+        <markWidth>30</markWidth>
+        <markHeight>30</markHeight>
+        <markalign>right</markalign>
+        <markvalign>middle</markvalign>
+        <markXOff>12</markXOff>
+      </control>
+      <control>
+        <description>Audio Menu</description>
+        <type>checkbutton</type>
+        <id>221</id>
+        <width>56</width>
+        <height>56</height>
+        <textureFocus>osdaudiofo.png</textureFocus>
+        <textureNoFocus>osdaudionf.png</textureNoFocus>
+        <label>-</label>
+        <font>-</font>
+        <onleft>220</onleft>
+        <onright>218</onright>
+        <onup>1800</onup>
+        <ondown>1800</ondown>
+        <textureCheckmark>check-box.png</textureCheckmark>
+        <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+        <markWidth>30</markWidth>
+        <markHeight>30</markHeight>
+        <markalign>right</markalign>
+        <markvalign>middle</markvalign>
+        <markXOff>12</markXOff>
+      </control>
+    </control>
+    <control>
+      <description>subtitles label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1748</posX>
+      <posY>843</posY>
+      <label>Subtitles</label>
+      <font>font12BC</font>
+      <align>right</align>
+      <textcolor>ffCCCCCC</textcolor>
+      <visible>Control.HasFocus(218)</visible>
+    </control>
+    <control>
+      <description>bookmarks label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1748</posX>
+      <posY>843</posY>
+      <width>210</width>
+      <label>Bookmarks</label>
+      <font>font12BC</font>
+      <align>right</align>
+      <textcolor>ffCCCCCC</textcolor>
+      <visible>Control.HasFocus(219)</visible>
+    </control>
+    <control>
+      <description>video menu label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1748</posX>
+      <posY>843</posY>
+      <width>210</width>
+      <label>Video Menu</label>
+      <font>font12BC</font>
+      <align>right</align>
+      <textcolor>ffCCCCCC</textcolor>
+      <visible>Control.HasFocus(220)</visible>
+    </control>
+    <control>
+      <description>audio menu label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1748</posX>
+      <posY>843</posY>
+      <width>210</width>
+      <label>Audio Menu</label>
+      <font>font12BC</font>
+      <align>right</align>
+      <textcolor>ffCCCCCC</textcolor>
+      <visible>Control.HasFocus(221)</visible>
+    </control>
+    <!-- :::::::::: SUBTITLES MENU :::::::::: -->
+    <control>
+      <description>Sub Menu Background (subtitles)</description>
+      <type>image</type>
+      <id>302</id>
+      <posX>0</posX>
+      <posY>3</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>osd_settings_bg.png</texture>
+      <visible>no</visible>
+      <animation effect="fade" time="350" reversible="true">visible</animation>
+      <animation effect="fade" time="350" delay="250" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>Menu Title Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>225</posX>
+      <posY>480</posY>
+      <label>SUBTITLES MENU</label>
+      <!-- no string available for this one? -->
+      <font>font16</font>
+      <textcolor>ffCCCCCC</textcolor>
+      <animation effect="fade" time="100" reversible="true">visiblechange</animation>
+      <visible>control.isvisible(302)+Control.IsVisible(1700)</visible>
+    </control>
+    <control>
+      <description>SubTitles On/Off Checkbox</description>
+      <type>checkmark</type>
+      <id>801</id>
+      <posX>225</posX>
+      <posY>562</posY>
+      <MarkWidth>30</MarkWidth>
+      <MarkHeight>30</MarkHeight>
+      <label>305</label>
+      <onup>800</onup>
+      <ondown>800</ondown>
+      <onleft>802</onleft>
+      <onright>802</onright>
+      <visible>no</visible>
+      <animation effect="fade" time="400" reversible="true">visible</animation>
+      <animation effect="fade" time="300" delay="200" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>SubTitle Delay label</description>
+      <type>label</type>
+      <id>850</id>
+      <posX>225</posX>
+      <posY>622</posY>
+      <label>303</label>
+      <visible>no</visible>
+      <animation effect="fade" time="400" reversible="true">visible</animation>
+      <animation effect="fade" time="300" delay="200" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>SubTitle Delay Slider</description>
+      <type>slider</type>
+      <id>800</id>
+      <posX>225</posX>
+      <posY>660</posY>
+      <spintype>float</spintype>
+      <showrange>no</showrange>
+      <textureSliderBar>sliderbackground.png</textureSliderBar>
+      <textureSliderNib>slidernibnf.png</textureSliderNib>
+      <textureSliderNibFocus>slidernibfo.png</textureSliderNibFocus>
+      <onup>801</onup>
+      <ondown>802</ondown>
+      <visible>no</visible>
+      <animation effect="fade" time="400" reversible="true">visible</animation>
+      <animation effect="fade" time="300" delay="200" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>Sub Titles List Control</description>
+      <type>listcontrol</type>
+      <id>802</id>
+      <posX>900</posX>
+      <posY>480</posY>
+      <width>600</width>
+      <height>270</height>
+      <textXOff>38</textXOff>
+      <onleft>800</onleft>
+      <onright>800</onright>
+      <visible>no</visible>
+      <spinPosX>1950</spinPosX>
+      <spinPosY>772</spinPosY>
+      <textureHeight>45</textureHeight>
+      <itemHeight>45</itemHeight>
+      <font>font14</font>
+      <textYOff>-2</textYOff>
+      <textureFocus>list_background_focus.png</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <spaceBetweenItems>-1</spaceBetweenItems>
+      <visible>no</visible>
+      <animation effect="fade" time="400" reversible="true">visible</animation>
+      <animation effect="fade" time="300" delay="200" reversible="true">hidden</animation>
+    </control>
+    <!-- :::::::::: VIDEO MENU :::::::::: -->
+    <control>
+      <description>Sub Menu Background (video)</description>
+      <type>image</type>
+      <id>304</id>
+      <posX>0</posX>
+      <posY>3</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>osd_settings_bg.png</texture>
+      <visible>no</visible>
+      <animation effect="fade" time="350" reversible="true">visible</animation>
+      <animation effect="fade" time="350" delay="250" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>Menu Title Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>225</posX>
+      <posY>480</posY>
+      <label>VIDEO MENU</label>
+      <!-- no string available for this one? -->
+      <font>font16</font>
+      <textcolor>ffCCCCCC</textcolor>
+      <visible>control.isvisible(304)+Control.IsVisible(1700)</visible>
+      <animation effect="fade" time="100" reversible="true">visiblechange</animation>
+    </control>
+    <control>
+      <description>Non-Interleaved Checkbox</description>
+      <type>checkmark</type>
+      <id>701</id>
+      <posX>225</posX>
+      <posY>578</posY>
+      <label>306</label>
+      <MarkWidth>30</MarkWidth>
+      <MarkHeight>30</MarkHeight>
+      <onup>703</onup>
+      <ondown>702</ondown>
+      <onleft>701</onleft>
+      <onright>700</onright>
+      <visible>no</visible>
+      <animation effect="fade" time="400" reversible="true">visible</animation>
+      <animation effect="fade" time="300" delay="200" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>No Cache Checkbox</description>
+      <type>checkmark</type>
+      <id>702</id>
+      <posX>225</posX>
+      <posY>622</posY>
+      <label>431</label>
+      <MarkWidth>30</MarkWidth>
+      <MarkHeight>30</MarkHeight>
+      <onup>701</onup>
+      <ondown>703</ondown>
+      <onleft>702</onleft>
+      <onright>700</onright>
+      <visible>no</visible>
+      <animation effect="fade" time="400" reversible="true">visible</animation>
+      <animation effect="fade" time="300" delay="200" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>Adjust Framerate Checkbox</description>
+      <type>checkmark</type>
+      <id>703</id>
+      <posX>225</posX>
+      <posY>668</posY>
+      <label>343</label>
+      <MarkWidth>30</MarkWidth>
+      <MarkHeight>30</MarkHeight>
+      <onup>702</onup>
+      <ondown>220</ondown>
+      <onleft>703</onleft>
+      <onright>700</onright>
+      <visible>no</visible>
+      <animation effect="fade" time="400" reversible="true">visible</animation>
+      <animation effect="fade" time="300" delay="200" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>Video Position label</description>
+      <type>label</type>
+      <id>750</id>
+      <posX>615</posX>
+      <posY>540</posY>
+      <label>298</label>
+      <font>font12</font>
+      <visible>no</visible>
+      <animation effect="fade" time="400" reversible="true">visible</animation>
+      <animation effect="fade" time="300" delay="200" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>Video Position Slider</description>
+      <type>slider</type>
+      <id>700</id>
+      <posX>615</posX>
+      <posY>578</posY>
+      <spintype>int</spintype>
+      <showrange>no</showrange>
+      <textureSliderBar>sliderbackground.png</textureSliderBar>
+      <textureSliderNib>slidernibnf.png</textureSliderNib>
+      <textureSliderNibFocus>slidernibfo.png</textureSliderNibFocus>
+      <onup>701</onup>
+      <ondown>704</ondown>
+      <visible>no</visible>
+      <animation effect="fade" time="400" reversible="true">visible</animation>
+      <animation effect="fade" time="300" delay="200" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>brightness label</description>
+      <type>label</type>
+      <id>752</id>
+      <posX>615</posX>
+      <posY>630</posY>
+      <label>464</label>
+      <font>font12</font>
+      <visible>no</visible>
+      <animation effect="fade" time="400" reversible="true">visible</animation>
+      <animation effect="fade" time="300" delay="200" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>brightness</description>
+      <type>slider</type>
+      <id>704</id>
+      <posX>615</posX>
+      <posY>668</posY>
+      <spintype>int</spintype>
+      <showrange>no</showrange>
+      <textureSliderBar>sliderbackground.png</textureSliderBar>
+      <textureSliderNib>slidernibnf.png</textureSliderNib>
+      <textureSliderNibFocus>slidernibfo.png</textureSliderNibFocus>
+      <onup>700</onup>
+      <ondown>705</ondown>
+      <visible>no</visible>
+      <animation effect="fade" time="400" reversible="true">visible</animation>
+      <animation effect="fade" time="300" delay="200" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>contrast label</description>
+      <type>label</type>
+      <id>753</id>
+      <posX>1140</posX>
+      <posY>540</posY>
+      <label>465</label>
+      <font>font12</font>
+      <visible>no</visible>
+      <animation effect="fade" time="400" reversible="true">visible</animation>
+      <animation effect="fade" time="300" delay="200" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>contrast</description>
+      <type>slider</type>
+      <id>705</id>
+      <posX>1140</posX>
+      <posY>578</posY>
+      <spintype>int</spintype>
+      <showrange>no</showrange>
+      <textureSliderBar>sliderbackground.png</textureSliderBar>
+      <textureSliderNib>slidernibnf.png</textureSliderNib>
+      <textureSliderNibFocus>slidernibfo.png</textureSliderNibFocus>
+      <onup>704</onup>
+      <ondown>706</ondown>
+      <visible>no</visible>
+      <animation effect="fade" time="400" reversible="true">visible</animation>
+      <animation effect="fade" time="300" delay="200" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>gamma label</description>
+      <type>label</type>
+      <id>754</id>
+      <posX>1140</posX>
+      <posY>630</posY>
+      <label>466</label>
+      <font>font12</font>
+      <visible>no</visible>
+      <animation effect="fade" time="400" reversible="true">visible</animation>
+      <animation effect="fade" time="300" delay="200" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>gamma</description>
+      <type>slider</type>
+      <id>706</id>
+      <posX>1140</posX>
+      <posY>668</posY>
+      <spintype>int</spintype>
+      <showrange>no</showrange>
+      <textureSliderBar>sliderbackground.png</textureSliderBar>
+      <textureSliderNib>slidernibnf.png</textureSliderNib>
+      <textureSliderNibFocus>slidernibfo.png</textureSliderNibFocus>
+      <onup>705</onup>
+      <ondown>704</ondown>
+      <visible>no</visible>
+      <animation effect="fade" time="400" reversible="true">visible</animation>
+      <animation effect="fade" time="300" delay="200" reversible="true">hidden</animation>
+    </control>
+    <!-- :::::::::: AUDIO MENU :::::::::: -->
+    <control>
+      <description>Sub Menu Background (audio)</description>
+      <type>image</type>
+      <id>305</id>
+      <posX>0</posX>
+      <posY>3</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>osd_settings_bg.png</texture>
+      <visible>no</visible>
+      <animation effect="fade" time="350" reversible="true">visible</animation>
+      <animation effect="fade" time="350" delay="250" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>Menu Title Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>225</posX>
+      <posY>480</posY>
+      <label>AUDIO MENU</label>
+      <!-- no string available for this one? -->
+      <font>font16</font>
+      <textcolor>ffCCCCCC</textcolor>
+      <visible>control.isvisible(305)+Control.IsVisible(1700)</visible>
+      <animation effect="fade" time="100" reversible="true">visiblechange</animation>
+    </control>
+    <control>
+      <description>A/v Delay label</description>
+      <type>label</type>
+      <id>550</id>
+      <posX>225</posX>
+      <posY>578</posY>
+      <label>297</label>
+      <font>font12BC</font>
+      <visible>no</visible>
+      <animation effect="fade" time="400" reversible="true">visible</animation>
+      <animation effect="fade" time="300" delay="200" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>A/V Delay Slider</description>
+      <type>slider</type>
+      <id>500</id>
+      <posX>225</posX>
+      <posY>622</posY>
+      <spintype>float</spintype>
+      <showrange>no</showrange>
+      <textureSliderBar>sliderbackground.png</textureSliderBar>
+      <textureSliderNib>slidernibnf.png</textureSliderNib>
+      <textureSliderNibFocus>slidernibfo.png</textureSliderNibFocus>
+      <onup>501</onup>
+      <ondown>501</ondown>
+      <visible>no</visible>
+      <animation effect="fade" time="400" reversible="true">visible</animation>
+      <animation effect="fade" time="300" delay="200" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>Audio Stream List Control</description>
+      <type>listcontrol</type>
+      <id>501</id>
+      <posX>900</posX>
+      <posY>480</posY>
+      <width>600</width>
+      <height>270</height>
+      <textXOff>38</textXOff>
+      <onleft>500</onleft>
+      <onright>500</onright>
+      <visible>no</visible>
+      <spinPosX>1950</spinPosX>
+      <spinPosY>772</spinPosY>
+      <textureHeight>45</textureHeight>
+      <itemHeight>45</itemHeight>
+      <font>font14</font>
+      <textYOff>-2</textYOff>
+      <textureFocus>list_background_focus.png</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <spaceBetweenItems>-1</spaceBetweenItems>
+      <animation effect="fade" time="400" reversible="true">visible</animation>
+      <animation effect="fade" time="300" delay="200" reversible="true">hidden</animation>
+    </control>
+    <!-- :::::::::: VOLUME CONTROL :::::::::: -->
+    <control>
+      <description>Sub Menu Background (volume)</description>
+      <type>image</type>
+      <id>300</id>
+      <posX>72</posX>
+      <posY>74</posY>
+      <width>428</width>
+      <height>750</height>
+      <texture>osd_dialog.png</texture>
+      <visible>no</visible>
+      <animation effect="fade" time="400" reversible="true">visible</animation>
+      <animation effect="fade" time="300" delay="200" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>Sub Menu Nib</description>
+      <type>image</type>
+      <id>350</id>
+      <texture>-</texture>
+      <visible>no</visible>
+      <animation effect="fade" time="400" reversible="true">visible</animation>
+      <animation effect="fade" time="300" delay="200" reversible="true">hidden</animation>
+    </control>
+    <control>
+      <description>Volume Slider</description>
+      <type>slider</type>
+      <id>400</id>
+      <posX>1160</posX>
+      <posY>134</posY>
+      <textureSliderBar>sliderbackground.png</textureSliderBar>
+      <textureSliderNib>slidernibnf.png</textureSliderNib>
+      <textureSliderNibFocus>slidernibfo.png</textureSliderNibFocus>
+      <onup>216</onup>
+      <ondown>216</ondown>
+      <onleft>400</onleft>
+      <onright>400</onright>
+      <visible>no</visible>
+      <animation effect="fade" time="400" reversible="true">visible</animation>
+      <animation effect="fade" time="300" delay="200" reversible="true">hidden</animation>
+    </control>
+    <import>common.player.xml</import>
+    <import>common.progressbar.xml</import>
+    <import>logoSupportVideoOSD.xml</import>
+  </controls>
+</window>

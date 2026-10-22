@@ -1,0 +1,358 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <id>88889</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>no</disabletopbar>
+  <define>#header.label:Indigo</define>
+  <define>#header.image:-</define>
+  <define>#itemcount:-</define>
+  <define>#header.hover:hover_skin info.png</define>
+  <define>#selecteditem:Release Information</define>
+  <controls>
+    <import>common.window.xml</import>
+    <import>common.time.xml</import>
+    <control>
+      <type>group</type>
+      <description>group element</description>
+      <animation effect="slide" time="10" end="-300,0">WindowClose</animation>
+      <animation effect="slide" time="10" start="-300,0">WindowOpen</animation>
+      <posX>30</posX>
+      <posY>120</posY>
+      <layout>StackLayout</layout>
+      <control>
+        <type>button</type>
+        <description>Back</description>
+        <id>2</id>
+        <action>10</action>
+        <label>712</label>
+      </control>
+    </control>
+    <control>
+      <description>auth txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>465</posX>
+      <posY>120</posY>
+      <label>Author:</label>
+      <textcolor>ff7FB1E5</textcolor>
+    </control>
+    <control>
+      <description>auth value</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>705</posX>
+      <posY>120</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>vers txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>465</posX>
+      <posY>165</posY>
+      <label>Version:</label>
+      <textcolor>ff7FB1E5</textcolor>
+    </control>
+    <control>
+      <description>vers value</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>705</posX>
+      <posY>165</posY>
+      <label>-</label>
+    </control>
+    <control>
+      <description>vers txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>465</posX>
+      <posY>210</posY>
+      <label>Resolution:</label>
+      <textcolor>ff7FB1E5</textcolor>
+    </control>
+    <control>
+      <description>vers value</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>705</posX>
+      <posY>210</posY>
+      <label>16:9 (1280x720)</label>
+    </control>
+    <control>
+      <description>desc txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>465</posX>
+      <posY>315</posY>
+      <label>Description:</label>
+      <textcolor>ff7FB1E5</textcolor>
+    </control>
+    <control>
+      <description>desc value line 1</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>705</posX>
+      <posY>315</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>desc value line 2</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>705</posX>
+      <posY>360</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>desc value line 3</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>705</posX>
+      <posY>405</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>desc value line 4</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>705</posX>
+      <posY>450</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>465</posX>
+      <posY>540</posY>
+      <label>Supported Plugins:</label>
+      <textcolor>ff7FB1E5</textcolor>
+    </control>
+    <control>
+      <description>plug value line 1</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>705</posX>
+      <posY>540</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 2</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>705</posX>
+      <posY>585</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 3</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>705</posX>
+      <posY>630</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 4</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>705</posX>
+      <posY>675</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 5</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>705</posX>
+      <posY>720</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 12</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>705</posX>
+      <posY>765</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 6</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>705</posX>
+      <posY>810</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 6</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>705</posX>
+      <posY>855</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 6</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>705</posX>
+      <posY>900</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 7</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1260</posX>
+      <posY>540</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 8</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1260</posX>
+      <posY>585</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 9</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1260</posX>
+      <posY>630</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 10</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1260</posX>
+      <posY>675</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 11</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1260</posX>
+      <posY>720</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 11</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1260</posX>
+      <posY>765</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 2</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1260</posX>
+      <posY>810</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 3</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1260</posX>
+      <posY>855</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 3</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1260</posX>
+      <posY>900</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 3</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1605</posX>
+      <posY>540</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 3</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1605</posX>
+      <posY>585</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 3</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1605</posX>
+      <posY>630</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 3</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1605</posX>
+      <posY>675</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 3</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1605</posX>
+      <posY>720</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 3</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1605</posX>
+      <posY>765</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 3</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1605</posX>
+      <posY>810</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>plug value line 3</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1605</posX>
+      <posY>855</posY>
+      <label>*</label>
+    </control>
+    <control>
+      <description>hist txt</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>465</posX>
+      <posY>990</posY>
+      <label>History:</label>
+      <textcolor>ff7FB1E5</textcolor>
+    </control>
+    <control>
+      <description>desc value line 1</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>705</posX>
+      <posY>990</posY>
+      <label>*</label>
+    </control>
+  </controls>
+</window>

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <control>
+        <description>composite control consisting of a list control and a thumbnail panel</description>
+        <type>facadeview</type>
+        <id>50</id>
+        <control>
+          <description>listcontrol</description>
+          <type>listcontrol</type>
+          <id>50</id>
+        </control>
+        <control>
+          <description>Thumbnail Panel</description>
+          <type>thumbnailpanel</type>
+          <id>50</id>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <posX>450</posX>
+          <posY>120</posY>
+          <width>1650</width>
+          <height>825</height>
+          <spinWidth>24</spinWidth>
+          <spinHeight>24</spinHeight>
+          <spinPosY>908</spinPosY>
+          <spinPosX>1827</spinPosX>
+          <spinColor>ffffffff</spinColor>
+          <textureUp>arrowupnf.png</textureUp>
+          <textureDown>arrowdownnf.png</textureDown>
+          <textureUpFocus>arrowupfo.png</textureUpFocus>
+          <textureDownFocus>arrowdownfo.png</textureDownFocus>
+          <itemWidth>154</itemWidth>
+          <itemHeight>198</itemHeight>
+          <textureWidth>154</textureWidth>
+          <textureHeight>198</textureHeight>
+          <thumbWidth>118</thumbWidth>
+          <thumbHeight>176</thumbHeight>
+          <thumbPosX>18</thumbPosX>
+          <thumbPosY>8</thumbPosY>
+          <imageFolder>movie_preview_thumb_background_nofocus.png</imageFolder>
+          <imageFolderFocus>movie_preview_thumb_background_focus.png</imageFolderFocus>
+          <font>font14</font>
+          <suffix>|</suffix>
+          <textureWidthBig>309</textureWidthBig>
+          <textureHeightBig>394</textureHeightBig>
+          <itemWidthBig>309</itemWidthBig>
+          <itemHeightBig>394</itemHeightBig>
+          <thumbWidthBig>237</thumbWidthBig>
+          <thumbHeightBig>350</thumbHeightBig>
+          <thumbPosXBig>36</thumbPosXBig>
+          <thumbPosYBig>15</thumbPosYBig>
+          <thumbZoom>no</thumbZoom>
+          <enableFocusZoom>no</enableFocusZoom>
+        </control>
+        <control>
+          <description>Filmstrip view</description>
+          <type>filmstrip</type>
+          <id>50</id>
+          <posX>90</posX>
+          <posY>195</posY>
+          <width>1950</width>
+          <onup>2</onup>
+          <spinPosY>945</spinPosY>
+          <spinPosX>1827</spinPosX>
+          <thumbWidth>364</thumbWidth>
+          <thumbHeight>540</thumbHeight>
+          <thumbPosX>20</thumbPosX>
+          <thumbPosY>16</thumbPosY>
+          <itemWidth>368</itemWidth>
+          <itemHeight>540</itemHeight>
+          <textureWidth>412</textureWidth>
+          <textureHeight>592</textureHeight>
+          <imageFolderFocus>Framefocus.png</imageFolderFocus>
+          <frame>-</frame>
+          <frameFocus>video_filmstrip_frame.png</frameFocus>
+          <background>Coverbig.png</background>
+          <thumbs flipY="true" diffuse="Thumb_Mask.png">
+          </thumbs>
+          <InfoImage flipY="true" diffuse="Thumb_Mask.png">
+          </InfoImage>
+          <showFrame>yes</showFrame>
+          <showFolder>no</showFolder>
+          <showBackGround>no</showBackGround>
+          <showInfoImage>no</showInfoImage>
+          <thumbAnimation effect="zoom" start="100,100" end="130,130" time="200">focus</thumbAnimation>
+          <thumbAnimation effect="zoom" start="130,130" end="100,100" time="200">unfocus</thumbAnimation>
+        </control>
+        <control>
+          <description>playlist listcontrol</description>
+          <type>playlistcontrol</type>
+          <id>50</id>
+          <scrollOffset>2</scrollOffset>
+        </control>
+      </control>
+    </control>
+  </controls>
+</window>

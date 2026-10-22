@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<window>
+  <id>602</id>
+  <defaultcontrol>1800</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>yes</disabletopbar>
+  <define>#percentage:#TV.View.Percentage</define>
+  <define>#currentplaytime:#TV.View.start</define>
+  <define>#currentremaining:#TV.View.stop</define>
+  <define>#duration:#TV.View.stop</define>
+  <controls>
+    <control>
+      <description>dummy to fix images disappearing on more than 2x seeking (MP BUG)</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>3000</posX>
+      <posY>3000</posY>
+      <width>15</width>
+      <height>15</height>
+      <texture>-</texture>
+      <visible>player.forwarding|player.rewinding</visible>
+    </control>
+    <control>
+      <description>background (default)</description>
+      <type>image</type>
+      <!--      <id>104</id>-->
+      <id>0</id>
+      <posX>0</posX>
+      <posY>765</posY>
+      <width>1920</width>
+      <height>315</height>
+      <texture>osdbackground_small.png</texture>
+      <!--	  <visible>no</visible>-->
+      <visible>[player.paused|player.rewinding|player.forwarding|Control.IsVisible(10)]+!window.isosdvisible</visible>
+    </control>
+    <control>
+      <description>channelname</description>
+      <type>label</type>
+      <id>14</id>
+      <posX>100</posX>
+      <posY>56</posY>
+      <width>506</width>
+      <label>-</label>
+      <align>left</align>
+      <font>font13</font>
+      <textcolor>White</textcolor>
+      <visible>no</visible>
+      <animation effect="fade" time="250">visiblechange</animation>
+    </control>
+    <control>
+      <description>TV Progress Bar</description>
+      <type>tvprogress</type>
+      <id>100</id>
+      <posX>264</posX>
+      <posY>56</posY>
+      <width>1068</width>
+      <height>38</height>
+      <toptexture>osd_progress_indicator.png</toptexture>
+      <TextureOffsetY>24</TextureOffsetY>
+      <bottomtexture>-</bottomtexture>
+      <texturetick>-</texturetick>
+      <lefttexture>-</lefttexture>
+      <midtexture>-</midtexture>
+      <righttexture>-</righttexture>
+      <logotexture>-</logotexture>
+      <fillbackgroundtexture>-</fillbackgroundtexture>
+      <fillbgxoff>17</fillbgxoff>
+      <fillbgyoff>12</fillbgyoff>
+      <filltexture1>osd_progress_mid_red.png</filltexture1>
+      <filltexture2>osd_progress_mid.png</filltexture2>
+      <filltexture3>osd_progress_mid_orange.png</filltexture3>
+      <fillheight>18</fillheight>
+      <label>#TV.Record.percent1</label>
+      <label1>#TV.Record.percent2</label1>
+      <label2>#TV.Record.percent3</label2>
+      <font>font13</font>
+      <textcolor>FF000000</textcolor>
+    </control>
+    <control>
+      <description>MSGBox</description>
+      <type>button</type>
+      <id>2</id>
+      <posX>0</posX>
+      <posY>693</posY>
+      <width>1920</width>
+      <height>338</height>
+      <label>-</label>
+      <textureFocus>bar_hor.png</textureFocus>
+      <textureNoFocus>bar_hor.png</textureNoFocus>
+      <animation effect="fade" time="250">visiblechange</animation>
+    </control>
+    <control>
+      <description>MSGBox label 1</description>
+      <type>label</type>
+      <id>3</id>
+      <posX>132</posX>
+      <posY>712</posY>
+      <width>1732</width>
+      <label>-</label>
+      <align>left</align>
+      <font>dingbats</font>
+      <textcolor>FFFFFFFF</textcolor>
+      <visible>yes</visible>
+      <animation effect="fade" time="250">visiblechange</animation>
+    </control>
+    <control>
+      <description>MSGBox label 2</description>
+      <type>label</type>
+      <id>4</id>
+      <posX>132</posX>
+      <posY>788</posY>
+      <width>1732</width>
+      <label>-</label>
+      <align>left</align>
+      <font>dingbats</font>
+      <textcolor>FFFFFFFF</textcolor>
+      <visible>yes</visible>
+      <animation effect="fade" time="250">visiblechange</animation>
+    </control>
+    <control>
+      <description>MSGBox label 3</description>
+      <type>label</type>
+      <id>5</id>
+      <posX>132</posX>
+      <posY>862</posY>
+      <width>1732</width>
+      <label>-</label>
+      <align>left</align>
+      <font>dingbats</font>
+      <textcolor>FFFFFFFF</textcolor>
+      <visible>yes</visible>
+      <animation effect="fade" time="250">visiblechange</animation>
+    </control>
+    <control>
+      <description>MSGBox label 2</description>
+      <type>label</type>
+      <id>6</id>
+      <posX>132</posX>
+      <posY>938</posY>
+      <width>1732</width>
+      <label>-</label>
+      <align>left</align>
+      <font>dingbats</font>
+      <textcolor>FFFFFFFF</textcolor>
+      <visible>yes</visible>
+      <animation effect="fade" time="250">visiblechange</animation>
+    </control>
+    <control>
+      <description>pause label</description>
+      <type>label</type>
+      <id>16</id>
+      <posX>0</posX>
+      <posY>1006</posY>
+      <width>1920</width>
+      <height>38</height>
+      <align>center</align>
+      <visible>no</visible>
+      <label>112</label>
+      <font>font12BC</font>
+      <colordiffuse>White</colordiffuse>
+      <visible>player.paused</visible>
+    </control>
+    <import>common.player.xml</import>
+    <import>common.play.fullscreen.xml</import>
+    <import>common.progressbar.tv.xml</import>
+  </controls>
+</window>

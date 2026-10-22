@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<window>
+  <id>2001</id>
+  <defaultcontrol>5</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>yes</disabletopbar>
+  <controls>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>279</posX>
+      <posY>86</posY>
+      <width>1200</width>
+      <height>750</height>
+      <texture>dialog_745_470.png</texture>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Album value</description>
+      <type>label</type>
+      <id>20</id>
+      <posX>318</posX>
+      <posY>110</posY>
+      <label>-</label>
+      <width>750</width>
+      <font>font32</font>
+      <textcolor>ff7FB1E5</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Artist</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>600</posX>
+      <posY>225</posY>
+      <width>232</width>
+      <label>171</label>
+      <font>font14BC</font>
+      <align>left</align>
+      <textcolor>ff7FB1E5</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Artist value</description>
+      <type>label</type>
+      <id>21</id>
+      <posX>848</posX>
+      <posY>225</posY>
+      <width>570</width>
+      <label>-</label>
+      <font>font14</font>
+      <textcolor>FFFFFFFF</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Date of Release</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>600</posX>
+      <posY>270</posY>
+      <width>232</width>
+      <label>201</label>
+      <font>font14BC</font>
+      <align>left</align>
+      <textcolor>ff7FB1E5</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Rating</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>600</posX>
+      <posY>315</posY>
+      <width>232</width>
+      <label>173</label>
+      <font>font14BC</font>
+      <align>left</align>
+      <textcolor>ff7FB1E5</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Genre</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>600</posX>
+      <posY>360</posY>
+      <width>232</width>
+      <label>174</label>
+      <font>font14BC</font>
+      <align>left</align>
+      <textcolor>ff7FB1E5</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Tones</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>600</posX>
+      <posY>405</posY>
+      <width>232</width>
+      <label>175</label>
+      <font>font14BC</font>
+      <align>left</align>
+      <textcolor>ff7FB1E5</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Styles</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>600</posX>
+      <posY>450</posY>
+      <width>232</width>
+      <label>176</label>
+      <font>font14BC</font>
+      <align>left</align>
+      <textcolor>ff7FB1E5</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Date of Release value</description>
+      <type>label</type>
+      <id>22</id>
+      <posX>848</posX>
+      <posY>270</posY>
+      <label>-</label>
+      <font>font14</font>
+      <width>570</width>
+      <textcolor>FFFFFFFF</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Rating value</description>
+      <type>label</type>
+      <id>23</id>
+      <posX>848</posX>
+      <posY>315</posY>
+      <label>-</label>
+      <font>font14</font>
+      <width>570</width>
+      <textcolor>FFFFFFFF</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Genre value</description>
+      <type>label</type>
+      <id>24</id>
+      <posX>848</posX>
+      <posY>360</posY>
+      <label>-</label>
+      <font>font14</font>
+      <width>570</width>
+      <textcolor>FFFFFFFF</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Tones value</description>
+      <type>fadelabel</type>
+      <id>25</id>
+      <posX>848</posX>
+      <posY>405</posY>
+      <width>330</width>
+      <label>-</label>
+      <font>font14</font>
+      <width>570</width>
+      <textcolor>FFFFFFFF</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Styles value</description>
+      <type>fadelabel</type>
+      <id>26</id>
+      <posX>848</posX>
+      <posY>450</posY>
+      <width>570</width>
+      <label>-</label>
+      <font>font14</font>
+      <textcolor>FFFFFFFF</textcolor>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <!--<control>
+	  <description>Music Thumb Default</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>52</posX>
+      <posY>276</posY>
+      <width>480</width>
+      <height>442</height>
+      <texture>nothumb.png</texture>      	  
+    </control>-->
+    <control>
+      <description>Music Thumb</description>
+      <id>3</id>
+      <type>image</type>
+      <posX>318</posX>
+      <posY>225</posY>
+      <width>270</width>
+      <height>270</height>
+      <keepaspectratio>no</keepaspectratio>
+      <texture>-</texture>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <!--	    <control>
+	  <description>Music Thumb Frame</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>15</posX>
+      <posY>238</posY>
+      <width>525</width>
+      <height>525</height>
+	  <texture>music_frame_shadow_big.png</texture> 
+    </control>-->
+    <control>
+      <description>textarea</description>
+      <type>textbox</type>
+      <id>4</id>
+      <posX>600</posX>
+      <posY>495</posY>
+      <width>810</width>
+      <height>330</height>
+      <seperator>_______________________________________________________________________________________________________________</seperator>
+      <font>font14</font>
+      <onleft>5</onleft>
+      <onright>5</onright>
+      <onup>5</onup>
+      <ondown>5</ondown>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Tracks/Review</description>
+      <type>button</type>
+      <id>5</id>
+      <posX>318</posX>
+      <posY>615</posY>
+      <font>font14</font>
+      <label>182</label>
+      <onleft>4</onleft>
+      <width>248</width>
+      <height>60</height>
+      <textalign>center</textalign>
+      <textureFocus>button.focus.png</textureFocus>
+      <textureNoFocus>button.focus.png</textureNoFocus>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <disabledcolor>80ffffff</disabledcolor>
+      <textcolorNoFocus>80ffffff</textcolorNoFocus>
+      <onright>4</onright>
+      <onup>6</onup>
+      <ondown>6</ondown>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Refresh</description>
+      <type>button</type>
+      <id>6</id>
+      <posX>318</posX>
+      <posY>690</posY>
+      <label>184</label>
+      <width>248</width>
+      <height>60</height>
+      <textalign>center</textalign>
+      <textureFocus>button.focus.png</textureFocus>
+      <textureNoFocus>button.focus.png</textureNoFocus>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <disabledcolor>80ffffff</disabledcolor>
+      <textcolorNoFocus>80ffffff</textcolorNoFocus>
+      <font>font14</font>
+      <onleft>4</onleft>
+      <onright>4</onright>
+      <onup>5</onup>
+      <ondown>5</ondown>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+  </controls>
+  <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="960,600" time="550">WindowOpen</animation>
+  <animation effect="zoom" start="100,100" end="1,1" center="960,600" time="350">WindowClose</animation>
+</window>

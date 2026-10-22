@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <id>508</id>
+  <defaultcontrol>21</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>no</disabletopbar>
+  <controls>
+    <control>
+      <description>music overlay image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background_default.png</texture>
+    </control>
+    <control>
+      <type>group</type>
+      <description>group element</description>
+      <animation effect="slide" time="10" end="-300,0">WindowClose</animation>
+      <animation effect="slide" time="10" start="-300,0">WindowOpen</animation>
+      <posX>30</posX>
+      <posY>120</posY>
+      <layout>StackLayout</layout>
+      <control>
+        <type>button</type>
+        <description>Cancel button</description>
+        <id>21</id>
+        <onleft>21</onleft>
+        <onright>25</onright>
+        <onup>21</onup>
+        <ondown>20</ondown>
+        <label>222</label>
+      </control>
+      <control>
+        <type>button</type>
+        <description>Skip button</description>
+        <id>20</id>
+        <onleft>20</onleft>
+        <onright>25</onright>
+        <onup>21</onup>
+        <ondown>21</ondown>
+        <label>4520</label>
+      </control>
+    </control>
+    <control>
+      <type>image</type>
+      <description>Title image</description>
+      <id>1</id>
+      <posX>22</posX>
+      <posY>370</posY>
+      <width>420</width>
+      <height>420</height>&gt;
+		<texture>album_preview_thumb_background.png</texture>
+    </control>
+    <control>
+      <type>image</type>
+      <description>Album Art image</description>
+      <id>10</id>
+      <posX>170</posX>
+      <posY>195</posY>
+      <width>336</width>
+      <height>236</height>
+      <texture>-</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <type>image</type>
+      <description>Amazon Logo image</description>
+      <id>30</id>
+      <posX>170</posX>
+      <posY>930</posY>
+      <width>250</width>
+      <height>84</height>
+      <texture>amazonlogo.png</texture>
+      <centered>yes</centered>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <type>label</type>
+      <description>Album Cover Art Label</description>
+      <id>11</id>
+      <posX>170</posX>
+      <posY>432</posY>
+      <label>4519</label>
+      <font>font10</font>
+      <textcolor>ffb2d4f5</textcolor>
+    </control>
+    <control>
+      <type>fadelabel</type>
+      <description>Artist value</description>
+      <id>12</id>
+      <posX>672</posX>
+      <posY>250</posY>
+      <width>1200</width>
+      <label>-</label>
+      <font>font16</font>
+      <textcolor>ffffffff</textcolor>
+    </control>
+    <control>
+      <type>fadelabel</type>
+      <description>Album value</description>
+      <id>13</id>
+      <posX>672</posX>
+      <posY>195</posY>
+      <width>1200</width>
+      <label>-</label>
+      <font>font16</font>
+      <textcolor>ffffffff</textcolor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>Release year value</description>
+      <id>14</id>
+      <posX>660</posX>
+      <posY>300</posY>
+      <label>-</label>
+      <font>font16</font>
+      <textcolor>ffffffff</textcolor>
+    </control>
+    <control>
+      <type>label</type>
+      <description>No matches label</description>
+      <id>15</id>
+      <posX>960</posX>
+      <posY>600</posY>
+      <label>4516</label>
+      <font>font18</font>
+      <textcolor>ffffffff</textcolor>
+    </control>
+    <control>
+      <type>listcontrol</type>
+      <description>album view listcontrol</description>
+      <id>25</id>
+      <posX>768</posX>
+      <posY>435</posY>
+      <height>634</height>
+      <onleft>20</onleft>
+      <onright>25</onright>
+      <onup>25</onup>
+      <ondown>25</ondown>
+      <textcolor>FFFFFFFF</textcolor>
+      <subtype>album</subtype>
+      <selectedColor2>FFFF6600</selectedColor2>
+      <font2>font14</font2>
+      <textXOff2>1092</textXOff2>
+      <font>font14</font>
+      <textXOff>15</textXOff>
+      <itemHeight>132</itemHeight>
+      <textureHeight>168</textureHeight>
+      <selectedColor>FFFF6600</selectedColor>
+      <itemWidth>189</itemWidth>
+      <IconXOff>26</IconXOff>
+      <spaceBetweenItems>17</spaceBetweenItems>
+      <suffix>   |   </suffix>
+      <textcolor2>FFFFFFFF</textcolor2>
+      <textYOff2>112</textYOff2>
+      <unfocusedAlpha>170</unfocusedAlpha>
+    </control>
+    <import>common.time.xml</import>
+  </controls>
+</window>

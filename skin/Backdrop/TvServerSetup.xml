@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <id>709</id>
+  <defaultcontrol>24</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>no</disabletopbar>
+  <define>#header.label:6014</define>
+  <define>#header.hover:hover_moving pictures.png</define>
+  <define>#header.BG.colordiffuse:ffffffff</define>
+  <!--Default ffffffff-->
+  <define>#header.BG.overlay:tvviewbg.png</define>
+  <!--Default tvviewbg.png filmstrip_overlay.png mainoverlay.png-->
+  <controls>
+    <import>common.window.xml</import>
+    <control>
+      <type>group</type>
+      <layout>GridLayout(2, 6, 52, 8, 1)</layout>
+      <posX>170</posX>
+      <posY>285</posY>
+      <control>
+        <type>button</type>
+        <textXOff>42</textXOff>
+        <id>24</id>
+        <label>6029</label>
+        <font>font12BC</font>
+        <textureFocus>list_background_focus.png</textureFocus>
+        <textureNoFocus>list_background_nofocus.png</textureNoFocus>
+      </control>
+    </control>
+    <control>
+      <type>group</type>
+      <layout>GridLayout(2, 6, 52, 8, 1)</layout>
+      <posX>170</posX>
+      <posY>360</posY>
+      <control>
+        <type>button</type>
+        <textXOff>42</textXOff>
+        <id>25</id>
+        <label>8008</label>
+        <font>font12BC</font>
+        <textureFocus>list_background_focus.png</textureFocus>
+        <textureNoFocus>list_background_nofocus.png</textureNoFocus>
+      </control>
+    </control>
+    <control>
+      <type>label</type>
+      <description>Please specify the IP address or hostname</description>
+      <id>1</id>
+      <posX>840</posX>
+      <posY>291</posY>
+      <label>6026</label>
+    </control>
+    <control>
+      <type>label</type>
+      <description>of the master TV-Server</description>
+      <id>1</id>
+      <posX>840</posX>
+      <posY>336</posY>
+      <label>6027</label>
+    </control>
+    <control>
+      <type>label</type>
+      <description>Current setting:</description>
+      <id>1</id>
+      <posX>840</posX>
+      <posY>450</posY>
+      <label>6028</label>
+    </control>
+    <control>
+      <type>label</type>
+      <description>:</description>
+      <id>30</id>
+      <posX>840</posX>
+      <posY>495</posY>
+      <textcolor>White</textcolor>
+      <font>font13</font>
+      <label>-</label>
+    </control>
+    <import>common.time.xml</import>
+  </controls>
+</window>

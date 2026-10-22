@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>4758</id>
+  <defaultcontrol>13</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>yes</disabletopbar>
+  <controls>
+    <control>
+      <description>dummy to fix images disappearing on more than 2x seeking (MP BUG)</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>3000</posX>
+      <posY>3000</posY>
+      <width>15</width>
+      <height>15</height>
+      <texture>-</texture>
+      <visible>player.forwarding|player.rewinding</visible>
+    </control>
+    <control>
+      <description>background (small)</description>
+      <type>image</type>
+      <!--      <id>104</id>-->
+      <id>0</id>
+      <posX>0</posX>
+      <posY>765</posY>
+      <width>1920</width>
+      <height>315</height>
+      <texture>osdbackground_small.png</texture>
+      <!--      <visible>[[player.paused|player.forwarding|player.rewinding]+!window.isosdvisible]|[control.isvisible(10)|control.isvisible(11)|control.isvisible(12)]</visible>-->
+      <visible>[player.paused|player.rewinding|player.forwarding|Control.IsVisible(10)]+!window.isosdvisible</visible>
+      <!--<visible>no</visible>-->
+    </control>
+    <control>
+      <type>image</type>
+      <id>502</id>
+      <posX>1650</posX>
+      <posY>18</posY>
+      <width>122</width>
+      <height>45</height>
+      <texture>video.action.forbidden.png</texture>
+      <colordiffuse>White</colordiffuse>
+      <visible>no</visible>
+    </control>
+    <import>common.player.xml</import>
+    <import>common.play.fullscreen.xml</import>
+    <import>common.progressbar.xml</import>
+  </controls>
+</window>

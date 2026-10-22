@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <id>4711</id>
+  <defaultcontrol>10</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>no</disabletopbar>
+  <define>#header.label:2516</define>
+  <controls>
+    <!--            :: BACKGROUND :: OVERLAY ::            -->
+    <control>
+      <type>image</type>
+      <description>BG</description>
+      <id>0</id>
+      <width>1920</width>
+      <height>1080</height>
+      <animation effect="fade" time="400" delay="0">WindowOpen</animation>
+    </control>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>overlay.default.solid.png</texture>
+      <animation effect="fade" time="400" delay="0">WindowOpen</animation>
+    </control>
+    <!--MENU **********************************************-->
+    <control>
+      <description>Dummy Basichome Button</description>
+      <type>button</type>
+      <id>12398755</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>2</width>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <label>-</label>
+      <font>font12</font>
+      <onleft>10</onleft>
+      <onright>10</onright>
+      <onup>10</onup>
+      <ondown>10</ondown>
+    </control>
+    <control clrtype="Menu">
+      <description>Menu Button 0</description>
+      <type>button</type>
+      <id>10</id>
+      <posX>45</posX>
+      <posY>102</posY>
+      <width>177</width>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <label>137</label>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <textcolorNoFocus>90cccccc</textcolorNoFocus>
+      <font>font16BC</font>
+      <hover>-</hover>
+      <onleft>13</onleft>
+      <onright>11</onright>
+      <onup>61700</onup>
+      <ondown>20</ondown>
+      <animation effect="fade" time="300" acceleration="-0.9" reversible="false">visiblechange</animation>
+      <animation effect="zoom" start="100,100" end="100,1" center="640,100" time="250">hidden</animation>
+      <animation effect="slide" start="0,0" end="0,15" time="300">hidden</animation>
+      <visible allowhiddenfocus="true">Control.HasFocus(20)|Control.HasFocus(10)|Control.HasFocus(11)|Control.HasFocus(14)|Control.HasFocus(12)|Control.HasFocus(13)|Control.HasFocus(12398755)+!Control.IsVisible(12398756)</visible>
+    </control>
+    <control clrtype="Menu">
+      <description>Menu Button 1</description>
+      <type>button</type>
+      <id>11</id>
+      <posX>267</posX>
+      <posY>102</posY>
+      <width>225</width>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <label>200025</label>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <textcolorNoFocus>90cccccc</textcolorNoFocus>
+      <font>font16BC</font>
+      <hover>-</hover>
+      <onleft>10</onleft>
+      <onright>14</onright>
+      <onup>61700</onup>
+      <ondown>20</ondown>
+      <animation effect="fade" time="300" acceleration="-0.9" reversible="false">visiblechange</animation>
+      <animation effect="zoom" start="100,100" end="100,1" center="640,100" time="250">hidden</animation>
+      <animation effect="slide" start="0,0" end="0,15" time="300">hidden</animation>
+      <visible allowhiddenfocus="true">Control.HasFocus(20)|Control.HasFocus(10)|Control.HasFocus(11)|Control.HasFocus(14)|Control.HasFocus(12)|Control.HasFocus(13)|Control.HasFocus(12398755)+!Control.IsVisible(12398756)</visible>
+    </control>
+    <control clrtype="Menu">
+      <description>Menu Button 2</description>
+      <type>button</type>
+      <id>14</id>
+      <posX>537</posX>
+      <posY>102</posY>
+      <width>417</width>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <label>2514</label>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <textcolorNoFocus>90cccccc</textcolorNoFocus>
+      <font>font16BC</font>
+      <hover>-</hover>
+      <onleft>11</onleft>
+      <onright>12</onright>
+      <onup>61700</onup>
+      <ondown>20</ondown>
+      <animation effect="fade" time="300" acceleration="-0.9" reversible="false">visiblechange</animation>
+      <animation effect="zoom" start="100,100" end="100,1" center="640,100" time="250">hidden</animation>
+      <animation effect="slide" start="0,0" end="0,15" time="300">hidden</animation>
+      <!--<visible allowhiddenfocus="true">Control.HasFocus(20)|Control.HasFocus(10)|Control.HasFocus(11)|Control.HasFocus(14)|Control.HasFocus(12)|Control.HasFocus(13)|Control.HasFocus(12398755)+!Control.IsVisible(12398756)</visible>-->
+      <visible>no</visible>
+    </control>
+    <control clrtype="Menu">
+      <description>Menu Button 3</description>
+      <type>button</type>
+      <id>12</id>
+      <posX>999</posX>
+      <posY>102</posY>
+      <width>153</width>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <label>2511</label>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <textcolorNoFocus>90cccccc</textcolorNoFocus>
+      <font>font16BC</font>
+      <hover>-</hover>
+      <onleft>14</onleft>
+      <onright>13</onright>
+      <onup>61700</onup>
+      <ondown>20</ondown>
+      <animation effect="fade" time="300" acceleration="-0.9" reversible="false">visiblechange</animation>
+      <animation effect="zoom" start="100,100" end="100,1" center="640,100" time="250">hidden</animation>
+      <animation effect="slide" start="0,0" end="0,15" time="300">hidden</animation>
+      <visible allowhiddenfocus="true">Control.HasFocus(20)|Control.HasFocus(10)|Control.HasFocus(11)|Control.HasFocus(14)|Control.HasFocus(12)|Control.HasFocus(13)|Control.HasFocus(12398755)+!Control.IsVisible(12398756)</visible>
+    </control>
+    <control clrtype="Menu">
+      <description>Menu Button 4</description>
+      <type>button</type>
+      <id>13</id>
+      <posX>1197</posX>
+      <posY>102</posY>
+      <width>177</width>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <label>2515</label>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <textcolorNoFocus>90cccccc</textcolorNoFocus>
+      <font>font16BC</font>
+      <hover>-</hover>
+      <onleft>12</onleft>
+      <onright>10</onright>
+      <onup>61700</onup>
+      <ondown>20</ondown>
+      <animation effect="fade" time="300" acceleration="-0.9" reversible="false">visiblechange</animation>
+      <animation effect="zoom" start="100,100" end="100,1" center="640,100" time="250">hidden</animation>
+      <animation effect="slide" start="0,0" end="0,15" time="300">hidden</animation>
+      <visible allowhiddenfocus="true">Control.HasFocus(20)|Control.HasFocus(10)|Control.HasFocus(11)|Control.HasFocus(14)|Control.HasFocus(12)|Control.HasFocus(13)|Control.HasFocus(12398755)+!Control.IsVisible(12398756)</visible>
+    </control>
+    <control>
+      <description>Next Button</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>1881</posX>
+      <posY>111</posY>
+      <width>39</width>
+      <height>42</height>
+      <texture>next.arrow.png</texture>
+      <visible>Control.HasFocus(20)|Control.HasFocus(10)|Control.HasFocus(11)|Control.HasFocus(14)|Control.HasFocus(12)|Control.HasFocus(13)</visible>
+    </control>
+    <control>
+      <description>Previous Button</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>111</posY>
+      <width>39</width>
+      <height>42</height>
+      <texture>previous.arrow.png</texture>
+      <visible>Control.HasFocus(20)|Control.HasFocus(10)|Control.HasFocus(11)|Control.HasFocus(14)|Control.HasFocus(12)|Control.HasFocus(13)</visible>
+    </control>
+    <!--            :: MAIN ::            -->
+    <control>
+      <description>Article title/searchterm</description>
+      <type>label</type>
+      <id>4</id>
+      <posX>75</posX>
+      <posY>195</posY>
+      <width>1425</width>
+      <font>font16BC</font>
+      <visible>no</visible>
+      <textcolor>FFffffff</textcolor>
+      <label>Article title/searchterm</label>
+    </control>
+    <control>
+      <description>Here is the article text displayed</description>
+      <type>textbox</type>
+      <id>20</id>
+      <posX>75</posX>
+      <posY>240</posY>
+      <width>1800</width>
+      <height>525</height>
+      <visible>no</visible>
+      <font>font14</font>
+      <spinWidth>56</spinWidth>
+      <spinHeight>56</spinHeight>
+      <spinPosX>1650</spinPosX>
+      <spinPosY>165</spinPosY>
+      <spinAlign>Right</spinAlign>
+      <spinColor>ffffffff</spinColor>
+      <textcolor>FFffffff</textcolor>
+      <textureUp>arrow_round_up_nofocus.png</textureUp>
+      <textureDown>arrow_round_down_nofocus.png</textureDown>
+      <textureUpFocus>arrow_round_up_focus.png</textureUpFocus>
+      <textureDownFocus>arrow_round_down_focus.png</textureDownFocus>
+    </control>
+    <control>
+      <description>Image description</description>
+      <type>label</type>
+      <id>5</id>
+      <posX>45</posX>
+      <posY>195</posY>
+      <width>1425</width>
+      <font>font16BC</font>
+      <visible>no</visible>
+      <textcolor>FFffffff</textcolor>
+      <label>Image description</label>
+      <align>left</align>
+    </control>
+    <control>
+      <description>Article Image</description>
+      <type>image</type>
+      <id>25</id>
+      <posX>45</posX>
+      <posY>240</posY>
+      <visible>no</visible>
+      <width>750</width>
+      <height>450</height>
+      <texture />
+      <colorkey>00000000</colorkey>
+      <colordiffuse>White</colordiffuse>
+      <centered>yes</centered>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <import>common.time.xml</import>
+    <import>common.overlays.xml</import>
+    <control>
+      <id>0</id>
+      <type>image</type>
+      <posX>6</posX>
+      <posY>10</posY>
+      <width>56</width>
+      <height>42</height>
+      <texture>MPLogo.png</texture>
+    </control>
+    <control>
+      <description>Window Header Shadow</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>69</posX>
+      <posY>3</posY>
+      <width>600</width>
+      <height>75</height>
+      <align>left</align>
+      <font>font22</font>
+      <textcolor>FF333333</textcolor>
+      <label>Wikipedia</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Window Header</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>68</posX>
+      <posY>2</posY>
+      <width>600</width>
+      <height>75</height>
+      <align>left</align>
+      <font>font22</font>
+      <textcolor>ffcccccc</textcolor>
+      <label>Wikipedia</label>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+  </controls>
+</window>

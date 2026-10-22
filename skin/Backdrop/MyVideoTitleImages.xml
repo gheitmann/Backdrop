@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+    <control>
+      <description>Actual cover/image</description>
+      <id>500</id>
+      <type>image</type>
+      <posX>1570</posX>
+      <posY>300</posY>
+      <width>270</width>
+      <height>375</height>
+      <texture mask="MP139\Videothumbmask.png">#selectedthumb</texture>
+      <visible>facadeview.list+!string.contains(#selectedthumb,MP139\defaultGenreBig.png)</visible>
+    </control>
+    <control>
+      <description>DefaultVideoSeenBig</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>1570</posX>
+      <posY>300</posY>
+      <width>270</width>
+      <height>375</height>
+      <texture mask="MP139\Videothumbmask.png">MP139\defaultVideoSeenBig.png</texture>
+      <visible>facadeview.list+string.contains(#selectedthumb,MP139\defaultVideoBig.png)+!string.equals(#watchedcount,0)</visible>
+    </control>
+    <control>
+      <description>DefaultDirectorBig</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>1570</posX>
+      <posY>300</posY>
+      <width>270</width>
+      <height>375</height>
+      <texture mask="MP139\Videothumbmask.png">MP139\DefaultDirectorBig.png</texture>
+      <visible>facadeview.list+string.contains(#selectedthumb,MP139\defaultActorBIG.png)+string.contains(#currentmodule,#(L(1269)))</visible>
+    </control>
+    <control>
+      <description>DefaultGroupBig</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>1570</posX>
+      <posY>300</posY>
+      <width>270</width>
+      <height>375</height>
+      <texture mask="MP139\Videothumbmask.png">MP139\defaultGroupBig.png</texture>
+      <visible>facadeview.list+[string.contains(#currentmodule,#(L(1265)))+string.contains(#selectedthumb,MP139\DefaultFolderBig.png)]</visible>
+    </control>
+    <control>
+      <description>DefaultCollectionBig</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>1570</posX>
+      <posY>300</posY>
+      <width>270</width>
+      <height>375</height>
+      <texture mask="MP139\Videothumbmask.png">MP139\DefaultCollectionBig.png</texture>
+      <visible>facadeview.list+[string.contains(#currentmodule,#(L(1331)))+string.contains(#selectedthumb,MP139\DefaultFolderBig.png)]</visible>
+    </control>
+    <control>
+      <description>DefaultLibraryBig</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>1570</posX>
+      <posY>300</posY>
+      <width>270</width>
+      <height>375</height>
+      <texture mask="MP139\Videothumbmask.png">MP139\defaultLibraryBig.png</texture>
+      <visible>facadeview.list+[string.contains(#currentmodule,#(L(1336)))+string.contains(#selectedthumb,MP139\DefaultFolderBig.png)]</visible>
+    </control>
+    <control>
+      <description>DefaultFolderBackBig in Library</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>1570</posX>
+      <posY>300</posY>
+      <width>270</width>
+      <height>375</height>
+      <texture mask="MP139\Videothumbmask.png">MP139\DefaultFolderBackBigVideo.png</texture>
+      <visible>facadeview.list+[string.contains(#currentmodule,#(L(1336)))+string.contains(#selectedthumb,MP139\DefaultFolderBackBig.png)]</visible>
+    </control>
+    <control>
+      <description>DefaultFolderBackBig in Title index, DefaultActorBig, DefaultDirectorBig, Genres, User groups, Years, Movie collection</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>1570</posX>
+      <posY>300</posY>
+      <width>270</width>
+      <height>375</height>
+      <texture mask="MP139\Videothumbmask.png">MP139\DefaultFolderBackBigVideo.png</texture>
+      <visible>facadeview.list+[string.contains(#currentmodule,#(L(1287)))|string.contains(#currentmodule,#(L(419)))|string.contains(#currentmodule,#(L(1269)))|string.contains(#currentmodule,#(L(1265)))|string.contains(#currentmodule,#(L(420)))|string.contains(#currentmodule,#(L(1331)))]+string.contains(#selectedthumb,MP139\DefaultFolderBackBig.png)]</visible>
+    </control>
+    <!--  The following control assigns the various genre names on the left to the corresponding genre images on the right in the "View by: Genres" screen view of myVideo.
+          You can add your own genre names in the available languages, replace the existing ones, or add genre names in another language.
+
+        Important: Before you make any changes, please save the original MyVideoTitleImages.xml!  
+
+        To make a new assignment, always edit an expression such as :::::  eq(#selecteditem,‘Action’),‘MP139\Logos\video\Videogenres\action_genre.png’,  ::::: 
+        where ‘Action’ is the genre name and ‘MP139\Logos\video\Videogenres\action_genre.png’ is the path of the corresponding genre image = action_genre.png!
+
+        Note: The genre name and the path of the genre image are enclosed in single quotation marks! 
+		      The genre name, e.g. Action, may only appear once within <texture mask="MP139\cdthumbmask.png">....</texture>!!!
+			  
+        In the "Videogenres" folder, path C:\ProgramData\Team MediaPortal\MediaPortal\skin\DefaultWideHD\Media\Logos\video\Videogenres, you will find  
+        existing genre images as well as a template for generating your own genre images!  -->
+    <control>
+      <description>Genre images multilingual</description>
+      <id>1</id>
+      <type>image</type>
+      <posX>1300</posX>
+      <posY>340</posY>
+      <width>300</width>
+      <height>387</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <texture mask="MP139\cdthumbmask.png">#(switch(
+	  
+	    <!-- ================================  English  ==================================== -->
+	  
+	    eq(#selecteditem,'Action'),'MP139\Logos\video\Videogenres\action_genre.png', 
+		eq(#selecteditem,'Adult'),'MP139\Logos\video\Videogenres\adult_genre.png', 
+		eq(#selecteditem,'Eroticism'),'MP139\Logos\video\Videogenres\adult_genre.png', 
+        eq(#selecteditem,'Adventure'),'MP139\Logos\video\Videogenres\adventure_genre.png',
+        eq(#selecteditem,'Animal'),'MP139\Logos\video\Videogenres\animal_genre.png',
+		eq(#selecteditem,'Animal film'),'MP139\Logos\video\Videogenres\animal_genre.png',
+        eq(#selecteditem,'Animation'),'MP139\Logos\video\Videogenres\animation_genre.png',
+		eq(#selecteditem,'Cartoon'),'MP139\Logos\video\Videogenres\animation_genre.png',
+        eq(#selecteditem,'Anime'),'MP139\Logos\video\Videogenres\anime_genre.png',
+        eq(#selecteditem,'Biography'),'MP139\Logos\video\Videogenres\biography_genre.png',
+        eq(#selecteditem,'Catastrophy'),'MP139\Logos\video\Videogenres\catastrophy_genre.png',
+		eq(#selecteditem,'Disaster'),'MP139\Logos\video\Videogenres\catastrophy_genre.png',
+		eq(#selecteditem,'Children'),'MP139\Logos\video\Videogenres\children_genre.png',
+        eq(#selecteditem,'Comedy'),'MP139\Logos\video\Videogenres\comedy_genre.png',
+        eq(#selecteditem,'Crime'),'MP139\Logos\video\Videogenres\crime_genre.png',
+        eq(#selecteditem,'Documentary'),'MP139\Logos\video\Videogenres\documentary_genre.png',
+		eq(#selecteditem,'Documentary film'),'MP139\Logos\video\Videogenres\documentary_genre.png',
+        eq(#selecteditem,'Drama'),'MP139\Logos\video\Videogenres\drama_genre.png',
+		eq(#selecteditem,'Eastern'),'MP139\Logos\video\Videogenres\eastern_genre.png',
+		eq(#selecteditem,'Kung Fu'),'MP139\Logos\video\Videogenres\eastern_genre.png',
+        eq(#selecteditem,'Family'),'MP139\Logos\video\Videogenres\family_genre.png',
+        eq(#selecteditem,'Fantasy'),'MP139\Logos\video\Videogenres\fantasy_genre.png',
+        eq(#selecteditem,'Film noir'),'MP139\Logos\video\Videogenres\film noir_genre.png',
+		eq(#selecteditem,'Game'),'MP139\Logos\video\Videogenres\game_genre.png',
+        eq(#selecteditem,'History'),'MP139\Logos\video\Videogenres\history_genre.png',
+		eq(#selecteditem,'Historical film'),'MP139\Logos\video\Videogenres\history_genre.png',
+        eq(#selecteditem,'Horror'),'MP139\Logos\video\Videogenres\horror_genre.png',
+        eq(#selecteditem,'Indie'),'MP139\Logos\video\Videogenres\indie_genre.png',
+        eq(#selecteditem,'Melodrama'),'MP139\Logos\video\Videogenres\melodrama_genre.png',
+        eq(#selecteditem,'Military'),'MP139\Logos\video\Videogenres\military_genre.png',
+		eq(#selecteditem,'Mini series'),'MP139\Logos\video\Videogenres\mini series_genre.png',
+		eq(#selecteditem,'Mini-series'),'MP139\Logos\video\Videogenres\mini series_genre.png',
+        eq(#selecteditem,'Music'),'MP139\Logos\video\Videogenres\music_genre.png',
+        eq(#selecteditem,'Musical'),'MP139\Logos\video\Videogenres\musical_genre.png',
+        eq(#selecteditem,'Mystery'),'MP139\Logos\video\Videogenres\mystery_genre.png',
+        eq(#selecteditem,'News'),'MP139\Logos\video\Videogenres\news_genre.png',
+        eq(#selecteditem,'Reality TV'),'MP139\Logos\video\Videogenres\reality_genre.png',
+        eq(#selecteditem,'Red carpet'),'MP139\Logos\video\Videogenres\red carpet_genre.png',
+		eq(#selecteditem,'Film festival'),'MP139\Logos\video\Videogenres\red carpet_genre.png',
+		eq(#selecteditem,'Romance'),'MP139\Logos\video\Videogenres\romance_genre.png',
+        eq(#selecteditem,'Sci-fi'),'MP139\Logos\video\Videogenres\sci-fi_genre.png',
+		eq(#selecteditem,'Science-fiction'),'MP139\Logos\video\Videogenres\sci-fi_genre.png',
+        eq(#selecteditem,'Short'),'MP139\Logos\video\Videogenres\short_genre.png',
+        eq(#selecteditem,'Special interests'),'MP139\Logos\video\Videogenres\special interests_genre.png',
+		eq(#selecteditem,'Special interest'),'MP139\Logos\video\Videogenres\special interests_genre.png',
+        eq(#selecteditem,'Sport'),'MP139\Logos\video\Videogenres\sport_genre.png',
+        eq(#selecteditem,'Sports film'),'MP139\Logos\video\Videogenres\sports film_genre.png',
+        eq(#selecteditem,'Suspense'),'MP139\Logos\video\Videogenres\suspense_genre.png',
+        eq(#selecteditem,'Talk show'),'MP139\Logos\video\Videogenres\talk show_genre.png',
+		eq(#selecteditem,'Thriller'),'MP139\Logos\video\Videogenres\thriller_genre.png',
+        eq(#selecteditem,'Tv'),'MP139\Logos\video\Videogenres\tv_genre.png',
+		eq(#selecteditem,'Game show'),'MP139\Logos\video\Videogenres\tv_genre.png',
+        eq(#selecteditem,'Tv-series'),'MP139\Logos\video\Videogenres\tv-series_genre.png',
+        eq(#selecteditem,'War'),'MP139\Logos\video\Videogenres\war_genre.png',
+		eq(#selecteditem,'War movie'),'MP139\Logos\video\Videogenres\war_genre.png',
+        eq(#selecteditem,'Western'),'MP139\Logos\video\Videogenres\western_genre.png',
+        eq(#selecteditem,'World'),'MP139\Logos\video\Videogenres\world_genre.png',
+		eq(#selecteditem,'Foreign'),'MP139\Logos\video\Videogenres\world_genre.png',
+
+        <!-- ================================  German  ==================================== -->
+		 
+		eq(#selecteditem,'Erwachsene'),'MP139\Logos\video\Videogenres\adult_genre.png',  
+		eq(#selecteditem,'Erotik'),'MP139\Logos\video\Videogenres\adult_genre.png',
+        eq(#selecteditem,'Abenteuer'),'MP139\Logos\video\Videogenres\adventure_genre.png',
+        eq(#selecteditem,'Tier'),'MP139\Logos\video\Videogenres\animal_genre.png',
+		eq(#selecteditem,'Tierfilm'),'MP139\Logos\video\Videogenres\animal_genre.png',
+		eq(#selecteditem,'Animationsfilm'),'MP139\Logos\video\Videogenres\animation_genre.png',
+		eq(#selecteditem,'Zeichentrick'),'MP139\Logos\video\Videogenres\animation_genre.png',
+        eq(#selecteditem,'Biographie'),'MP139\Logos\video\Videogenres\biography_genre.png',
+        eq(#selecteditem,'Katastrophe'),'MP139\Logos\video\Videogenres\catastrophy_genre.png',
+		eq(#selecteditem,'Katastrophen'),'MP139\Logos\video\Videogenres\catastrophy_genre.png',
+		eq(#selecteditem,'Katastrophenfilm'),'MP139\Logos\video\Videogenres\catastrophy_genre.png',
+		eq(#selecteditem,'Kinder'),'MP139\Logos\video\Videogenres\children_genre.png',
+		eq(#selecteditem,'Kinder-'),'MP139\Logos\video\Videogenres\children_genre.png',
+        eq(#selecteditem,'Komödie'),'MP139\Logos\video\Videogenres\comedy_genre.png',
+        eq(#selecteditem,'Krimi'),'MP139\Logos\video\Videogenres\crime_genre.png',
+		eq(#selecteditem,'Kriminalität'),'MP139\Logos\video\Videogenres\crime_genre.png',
+        eq(#selecteditem,'Dokumentation'),'MP139\Logos\video\Videogenres\documentary_genre.png',
+		eq(#selecteditem,'Dokumentarfilm'),'MP139\Logos\video\Videogenres\documentary_genre.png',
+        eq(#selecteditem,'Familie'),'MP139\Logos\video\Videogenres\family_genre.png',
+		eq(#selecteditem,'Familienfilm'),'MP139\Logos\video\Videogenres\family_genre.png',
+        eq(#selecteditem,'Fantasie'),'MP139\Logos\video\Videogenres\fantasy_genre.png',
+        eq(#selecteditem,'Spiel'),'MP139\Logos\video\Videogenres\game_genre.png',
+        eq(#selecteditem,'Geschichte'),'MP139\Logos\video\Videogenres\history_genre.png',
+		eq(#selecteditem,'Historie'),'MP139\Logos\video\Videogenres\history_genre.png',
+		eq(#selecteditem,'Historienfilm'),'MP139\Logos\video\Videogenres\history_genre.png',
+        eq(#selecteditem,'Militär'),'MP139\Logos\video\Videogenres\military_genre.png',
+		eq(#selecteditem,'Miniserie'),'MP139\Logos\video\Videogenres\mini series_genre.png',
+		eq(#selecteditem,'Musik'),'MP139\Logos\video\Videogenres\music_genre.png',
+		eq(#selecteditem,'Musikfilm'),'MP139\Logos\video\Videogenres\music_genre.png',
+        eq(#selecteditem,'Mysterium'),'MP139\Logos\video\Videogenres\mystery_genre.png',
+        eq(#selecteditem,'Nachrichten'),'MP139\Logos\video\Videogenres\news_genre.png',
+        eq(#selecteditem,'Reality-TV'),'MP139\Logos\video\Videogenres\reality_genre.png',
+        eq(#selecteditem,'Filmfestival'),'MP139\Logos\video\Videogenres\red carpet_genre.png',
+		eq(#selecteditem,'Romantik'),'MP139\Logos\video\Videogenres\romance_genre.png',
+		eq(#selecteditem,'Romanze'),'MP139\Logos\video\Videogenres\romance_genre.png',
+		eq(#selecteditem,'Liebe'),'MP139\Logos\video\Videogenres\romance_genre.png',
+		eq(#selecteditem,'Liebesfilm'),'MP139\Logos\video\Videogenres\romance_genre.png',
+		eq(#selecteditem,'Lovestory'),'MP139\Logos\video\Videogenres\romance_genre.png',
+		eq(#selecteditem,'Science Fiction'),'MP139\Logos\video\Videogenres\sci-fi_genre.png',
+        eq(#selecteditem,'Kurz'),'MP139\Logos\video\Videogenres\short_genre.png',
+        eq(#selecteditem,'Kurzfilm'),'MP139\Logos\video\Videogenres\short_genre.png',
+        eq(#selecteditem,'Lebensstil'),'MP139\Logos\video\Videogenres\special interests_genre.png',
+        eq(#selecteditem,'Sportfilm'),'MP139\Logos\video\Videogenres\sports film_genre.png',
+        eq(#selecteditem,'Spannung'),'MP139\Logos\video\Videogenres\suspense_genre.png',
+        eq(#selecteditem,'Talkshow'),'MP139\Logos\video\Videogenres\talk show_genre.png',
+		eq(#selecteditem,'Spielshow'),'MP139\Logos\video\Videogenres\tv_genre.png',
+		eq(#selecteditem,'TV-Film'),'MP139\Logos\video\Videogenres\tv_genre.png',
+        eq(#selecteditem,'Tv-Serie'),'MP139\Logos\video\Videogenres\tv-series_genre.png',
+		eq(#selecteditem,'Fernsehserie'),'MP139\Logos\video\Videogenres\tv-series_genre.png',
+		eq(#selecteditem,'Krieg'),'MP139\Logos\video\Videogenres\war_genre.png',
+        eq(#selecteditem,'Kriegsfilm'),'MP139\Logos\video\Videogenres\war_genre.png',
+        eq(#selecteditem,'Welt'),'MP139\Logos\video\Videogenres\world_genre.png',
+        eq(#selecteditem,'Ausland'),'MP139\Logos\video\Videogenres\world_genre.png',
+		
+		<!-- ================================  French  ==================================== -->
+		
+		eq(#selecteditem,'Adulte'),'MP139\Logos\video\Videogenres\adult_genre.png',  
+		eq(#selecteditem,'Érotisme'),'MP139\Logos\video\Videogenres\adult_genre.png',
+		eq(#selecteditem,'Aventure'),'MP139\Logos\video\Videogenres\adventure_genre.png',
+		eq(#selecteditem,'Film animalier'),'MP139\Logos\video\Videogenres\animal_genre.png',
+		eq(#selecteditem,'Catastrophe'),'MP139\Logos\video\Videogenres\catastrophy_genre.png',
+		eq(#selecteditem,'Film catastrophe'),'MP139\Logos\video\Videogenres\catastrophy_genre.png',
+		eq(#selecteditem,'Enfants'),'MP139\Logos\video\Videogenres\children_genre.png',
+        eq(#selecteditem,'Comédie'),'MP139\Logos\video\Videogenres\comedy_genre.png',
+		eq(#selecteditem,'Humour'),'MP139\Logos\video\Videogenres\comedy_genre.png',
+        eq(#selecteditem,'Policier'),'MP139\Logos\video\Videogenres\crime_genre.png',
+		eq(#selecteditem,'Criminalité'),'MP139\Logos\video\Videogenres\crime_genre.png',
+        eq(#selecteditem,'Documentaire'),'MP139\Logos\video\Videogenres\documentary_genre.png',
+		eq(#selecteditem,'Film documentaire'),'MP139\Logos\video\Videogenres\documentary_genre.png',
+        eq(#selecteditem,'Drame'),'MP139\Logos\video\Videogenres\drama_genre.png',
+		eq(#selecteditem,'Arts-martiaux'),'MP139\Logos\video\Videogenres\eastern_genre.png',
+		eq(#selecteditem,'Kung-Fu'),'MP139\Logos\video\Videogenres\eastern_genre.png',
+        eq(#selecteditem,'Famille'),'MP139\Logos\video\Videogenres\family_genre.png',
+        eq(#selecteditem,'Fantastique'),'MP139\Logos\video\Videogenres\fantasy_genre.png',
+		eq(#selecteditem,'Fantaisie'),'MP139\Logos\video\Videogenres\fantasy_genre.png',
+        eq(#selecteditem,'Jeu'),'MP139\Logos\video\Videogenres\game_genre.png',
+        eq(#selecteditem,'Histoire'),'MP139\Logos\video\Videogenres\history_genre.png',
+		eq(#selecteditem,'Film historique'),'MP139\Logos\video\Videogenres\history_genre.png',
+        eq(#selecteditem,'Horreur'),'MP139\Logos\video\Videogenres\horror_genre.png',
+        eq(#selecteditem,'Melodrame'),'MP139\Logos\video\Videogenres\melodrama_genre.png',
+        eq(#selecteditem,'Militaire'),'MP139\Logos\video\Videogenres\military_genre.png',
+		eq(#selecteditem,'Mini-série'),'MP139\Logos\video\Videogenres\mini series_genre.png',
+		eq(#selecteditem,'Musique'),'MP139\Logos\video\Videogenres\music_genre.png',
+        eq(#selecteditem,'Mystere'),'MP139\Logos\video\Videogenres\mystery_genre.png',
+        eq(#selecteditem,'Nouvelle'),'MP139\Logos\video\Videogenres\news_genre.png',
+        eq(#selecteditem,'Réalité TV'),'MP139\Logos\video\Videogenres\reality_genre.png',
+        eq(#selecteditem,'Télé-réalité'),'MP139\Logos\video\Videogenres\reality_genre.png',
+        eq(#selecteditem,'Tapis rouge'),'MP139\Logos\video\Videogenres\red carpet_genre.png',
+		eq(#selecteditem,'Festival du film'),'MP139\Logos\video\Videogenres\red carpet_genre.png',
+		eq(#selecteditem,'Film court'),'MP139\Logos\video\Videogenres\short_genre.png',
+        eq(#selecteditem,'Style de vie'),'MP139\Logos\video\Videogenres\special interests_genre.png',
+        eq(#selecteditem,'Film sportif'),'MP139\Logos\video\Videogenres\sports film_genre.png',
+        eq(#selecteditem,'Debat'),'MP139\Logos\video\Videogenres\talk show_genre.png',
+		eq(#selecteditem,'Série télévisée'),'MP139\Logos\video\Videogenres\tv-series_genre.png',
+        eq(#selecteditem,'Guerre'),'MP139\Logos\video\Videogenres\war_genre.png',
+		eq(#selecteditem,'Film de guerre'),'MP139\Logos\video\Videogenres\war_genre.png',
+        eq(#selecteditem,'Monde'),'MP139\Logos\video\Videogenres\world_genre.png',
+		eq(#selecteditem,'Étranger'),'MP139\Logos\video\Videogenres\world_genre.png',
+		
+		<!-- =============================================================================== -->
+		
+		eq(1,1),''))</texture>
+      <visible>facadeview.list+string.contains(#selectedthumb,MP139\defaultGenreBig.png)</visible>
+    </control>
+  </controls>
+</window>

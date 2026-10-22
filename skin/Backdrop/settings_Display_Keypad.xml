@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <id>9005</id>
+  <defaultcontrol>60</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>no</disabletopbar>
+  <define>#header.label:109005</define>
+  <define>#header.image:settings_logo.png</define>
+  <define>#header.hover:hover_settings.png</define>
+  <define>#defaultcontrol.onright:99910</define>
+  <define>#itemcount:-</define>
+  <define>#selecteditem:-</define>
+  <controls>
+    <control>
+      <description>Header</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>100</posX>
+      <posY>300</posY>
+      <width>1350</width>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <font>font50BC</font>
+      <label>Key Pad</label>
+      <scrollStartDelaySec>5</scrollStartDelaySec>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+    </control>
+    <import>common.settings1.xml</import>
+    <control>
+      <description>buttons</description>
+      <type>group</type>
+      <posX>98</posX>
+      <posY>380</posY>
+      <width>540</width>
+      <height>750</height>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <layout>StackLayout</layout>
+      <control>
+        <description>NO KEYPAD OPTIONS</description>
+        <type>label</type>
+        <id>50</id>
+        <width>450</width>
+        <label>9140</label>
+        <onup>17</onup>
+      </control>
+      <control>
+        <description>Enable Keypad</description>
+        <type>checkbutton</type>
+        <id>60</id>
+        <width>450</width>
+        <label>9141</label>
+        <onleft>#defaultcontrol.onright</onleft>
+        <onright>#defaultcontrol.onright</onright>
+        <textureCheckmark>check-box.png</textureCheckmark>
+        <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+        <markWidth>30</markWidth>
+        <markHeight>30</markHeight>
+        <markalign>right</markalign>
+        <markvalign>middle</markvalign>
+        <markXOff>12</markXOff>
+      </control>
+      <control>
+        <description>Custom Mapping</description>
+        <type>checkbutton</type>
+        <id>61</id>
+        <width>450</width>
+        <label>9142</label>
+        <onleft>#defaultcontrol.onright</onleft>
+        <onright>#defaultcontrol.onright</onright>
+        <textureCheckmark>check-box.png</textureCheckmark>
+        <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+        <markWidth>30</markWidth>
+        <markHeight>30</markHeight>
+        <markalign>right</markalign>
+        <markvalign>middle</markvalign>
+        <markXOff>12</markXOff>
+      </control>
+      <control Style="settingsmainbutton">
+        <textXOff>15</textXOff>
+        <textYOff>3</textYOff>
+        <onleft>#defaultcontrol.onright</onleft>
+        <onright>#defaultcontrol.onright</onright>
+        <description>Keypad Options</description>
+        <description>KeyPad Mapping</description>
+        <type>button</type>
+        <id>62</id>
+        <width>450</width>
+        <label>9143</label>
+      </control>
+    </control>
+    <import>common.time.xml</import>
+  </controls>
+</window>

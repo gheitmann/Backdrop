@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>100</id>
+  <defaultcontrol>10</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>yes</disabletopbar>
+  <controls>
+    <import>common.dialog.xml</import>
+    <control>
+      <description>Yes button</description>
+      <type>button</type>
+      <id>11</id>
+      <label>107</label>
+      <font>font14BC</font>
+      <textureFocus>button.focus.png</textureFocus>
+      <textureNoFocus>button.focus.png</textureNoFocus>
+      <width>180</width>
+      <height>52</height>
+      <posX>765</posX>
+      <posY>585</posY>
+      <textXOff>2</textXOff>
+      <textYOff>2</textYOff>
+      <textalign>center</textalign>
+      <onleft>10</onleft>
+      <onright>10</onright>
+      <onup>11</onup>
+      <ondown>11</ondown>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <disabledcolor>80ffffff</disabledcolor>
+      <textcolorNoFocus>80ffffff</textcolorNoFocus>
+    </control>
+    <control>
+      <description>No button</description>
+      <type>button</type>
+      <id>10</id>
+      <label>106</label>
+      <font>font14BC</font>
+      <textureFocus>button.focus.png</textureFocus>
+      <textureNoFocus>button.focus.png</textureNoFocus>
+      <width>180</width>
+      <height>52</height>
+      <posX>957</posX>
+      <posY>585</posY>
+      <textXOff>2</textXOff>
+      <textYOff>2</textYOff>
+      <textalign>center</textalign>
+      <onleft>11</onleft>
+      <onright>11</onright>
+      <onup>10</onup>
+      <ondown>10</ondown>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <disabledcolor>80ffffff</disabledcolor>
+      <textcolorNoFocus>80ffffff</textcolorNoFocus>
+    </control>
+  </controls>
+  <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="960,600" time="550">WindowOpen</animation>
+  <animation effect="zoom" start="100,100" end="1,1" center="960,600" time="350">WindowClose</animation>
+</window>

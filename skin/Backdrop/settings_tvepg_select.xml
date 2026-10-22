@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='utf-8'?>
+<window>
+  <id>707</id>
+  <defaultcontrol>24</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>no</disabletopbar>
+  <define>#header.label:200021</define>
+  <define>#header.hover:hover_settings.png</define>
+  <define>#defaultcontrol:24</define>
+  <define>#defaultcontrol.onright:9994</define>
+  <controls>
+    <control>
+      <description>Header</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>100</posX>
+      <posY>300</posY>
+      <width>1350</width>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <font>font50BC</font>
+      <label>EPG</label>
+      <scrollStartDelaySec>5</scrollStartDelaySec>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+    </control>
+    <import>common.settings1.xml</import>
+    <import>common.time.xml</import>
+    <control>
+      <type>group</type>
+      <description>group element</description>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <posX>98</posX>
+      <posY>380</posY>
+      <width>892</width>
+      <height>750</height>
+      <layout>StackLayout</layout>
+      <control Style="settingsmainbutton">
+        <type>button</type>
+        <description>Manual</description>
+        <id>27</id>
+        <ondown>24</ondown>
+        <onright>#defaultcontrol.onright</onright>
+        <label>6013</label>
+        <textureFocus>list_background_focus.png</textureFocus>
+        <textureNoFocus>list_background_nofocus.png</textureNoFocus>
+        <height>52</height>
+        <width>540</width>
+        <textXOff>15</textXOff>
+        <textYOff>3</textYOff>
+      </control>
+    </control>
+    <control>
+      <type>listcontrol</type>
+      <description>countryList</description>
+      <id>24</id>
+      <posX>525</posX>
+      <posY>262</posY>
+      <width>892</width>
+      <textXOff>-8</textXOff>
+      <textXOff2>832</textXOff2>
+      <textYOff2>14</textYOff2>
+      <onup>27</onup>
+      <onright>#defaultcontrol.onright</onright>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>label</type>
+      <description>Please select your EPG grabber. Note if your country is</description>
+      <id>2</id>
+      <posX>542</posX>
+      <posY>915</posY>
+      <label>200000</label>
+      <font>font12</font>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>label</type>
+      <description>not listed then you will need to supply the EPG manually</description>
+      <id>3</id>
+      <posX>542</posX>
+      <posY>960</posY>
+      <label>200001</label>
+      <font>font12</font>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+  </controls>
+</window>

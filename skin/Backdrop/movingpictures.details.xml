@@ -1,0 +1,820 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+This file should contain the details view
+-->
+<window>
+  <controls>
+    <control>
+      <description>dummy (visible when music is playing)</description>
+      <type>label</type>
+      <id>3337</id>
+      <posX>3000</posX>
+      <label>#Play.Current.Artist</label>
+      <visible>Player.HasAudio+player.hasaudio</visible>
+    </control>
+    <control>
+      <description>Summary Tab</description>
+      <type>button</type>
+      <id>9879876</id>
+      <posX>1425</posX>
+      <posY>790</posY>
+      <width>225</width>
+      <height>36</height>
+      <label>Summary</label>
+      <textureNoFocus>-</textureNoFocus>
+      <textureFocus>-</textureFocus>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <disabledcolor>60ffffff</disabledcolor>
+      <textcolorNoFocus>60ffffff</textcolorNoFocus>
+      <textXOff>0</textXOff>
+      <textYOff>3</textYOff>
+      <textalign>center</textalign>
+      <onup>6</onup>
+      <ondown>6</ondown>
+      <onleft>9879877</onleft>
+      <onright>9879877</onright>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+      <animation effect="fade" start="0" end="100" time="100" delay="550" reversible="false">visible</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Details Tab</description>
+      <type>button</type>
+      <id>9879877</id>
+      <posX>1665</posX>
+      <posY>790</posY>
+      <width>225</width>
+      <height>36</height>
+      <label>Details</label>
+      <textureNoFocus>-</textureNoFocus>
+      <textureFocus>-</textureFocus>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>ffffffff</colordiffuse>
+      <disabledcolor>60ffffff</disabledcolor>
+      <textcolorNoFocus>60ffffff</textcolorNoFocus>
+      <textXOff>0</textXOff>
+      <textYOff>3</textYOff>
+      <textalign>center</textalign>
+      <onup>6</onup>
+      <ondown>6</ondown>
+      <onleft>9879876</onleft>
+      <onright>9879876</onright>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+      <animation effect="fade" start="0" end="100" time="100" delay="550" reversible="false">visible</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Summary Tab Focus Image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1425</posX>
+      <posY>786</posY>
+      <width>225</width>
+      <height>39</height>
+      <texture>tab.png</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Details Tab Focus Image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1665</posX>
+      <posY>786</posY>
+      <width>225</width>
+      <height>39</height>
+      <texture>tab.png</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Summary Tab Focus Image Overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1432</posX>
+      <posY>795</posY>
+      <width>210</width>
+      <height>30</height>
+      <texture>menu.selected.png</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+!Control.HasFocus(9879877)</visible>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Details Tab Focus Image Overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1672</posX>
+      <posY>795</posY>
+      <width>210</width>
+      <height>30</height>
+      <texture>menu.selected.png</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+[Control.HasFocus(9879877)]</visible>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Movie Backdrop</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>overlay.mini.logo.png</texture>
+      <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="false">visible</animation>
+      <animation effect="slide" start="0,0" end="0,300" time="200" reversible="false">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+    </control>
+    <!-- ****************** GENERAL ************************ -->
+    <control>
+      <description>Title Label</description>
+      <type>label</type>
+      <posX>16</posX>
+      <posY>831</posY>
+      <width>1260</width>
+      <font>font18BC</font>
+      <textcolor>ffffffff</textcolor>
+      <!--			<shadowAngle>45</shadowAngle>
+			<shadowDistance>1</shadowDistance>
+			<shadowColor>FF333333</shadowColor> -->
+      <label>#MovingPictures.SelectedMovie.title (#MovingPictures.SelectedMovie.year)</label>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+[Control.HasFocus(9879877)]</visible>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Title Label</description>
+      <type>label</type>
+      <posX>16</posX>
+      <posY>831</posY>
+      <width>1260</width>
+      <font>font18BC</font>
+      <textcolor>ffffffff</textcolor>
+      <!--			<shadowAngle>45</shadowAngle>
+			<shadowDistance>1</shadowDistance>
+			<shadowColor>FF333333</shadowColor> -->
+      <label>#MovingPictures.SelectedMovie.title (#MovingPictures.SelectedMovie.year)</label>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+!Control.HasFocus(9879877)</visible>
+      <animation effect="fade" start="0" end="100" time="1" delay="200" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <type>imagelist</type>
+      <id>0</id>
+      <posX>15</posX>
+      <posY>882</posY>
+      <textureWidth>38</textureWidth>
+      <textureHeight>38</textureHeight>
+      <subitems>
+        <subitem>star_empty.png</subitem>
+        <subitem>star_yellow.png</subitem>
+      </subitems>
+      <orientation>horizontal</orientation>
+      <align>left</align>
+      <imagesToDraw>10</imagesToDraw>
+      <percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+!Control.HasFocus(9879877)</visible>
+      <animation effect="fade" start="0" end="100" time="1" delay="200" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Summary</description>
+      <type>textboxscrollup</type>
+      <id>0</id>
+      <posX>15</posX>
+      <posY>936</posY>
+      <width>1620</width>
+      <height>138</height>
+      <textcolor>ffFFFFFF</textcolor>
+      <seperator>-----------------------------------------------------------------------------------</seperator>
+      <font>font13</font>
+      <label>#MovingPictures.SelectedMovie.summary</label>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+!Control.HasFocus(9879877)</visible>
+      <animation effect="fade" start="0" end="100" time="1" delay="200" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <!-- MediaInfo Logos (Details View)-->
+    <control>
+      <description>Video Resolutions</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1305</posX>
+      <posY>836</posY>
+      <width>80</width>
+      <height>40</height>
+      <colordiffuse>FF000000</colordiffuse>
+      <texture>Logos\VideoAspectRatio\#MovingPictures.LocalMedia.videoresolution.png</texture>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+    </control>
+    <control>
+      <description>Video Codecs</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1390</posX>
+      <posY>836</posY>
+      <width>80</width>
+      <height>40</height>
+      <colordiffuse>FF000000</colordiffuse>
+      <texture>Logos\VideoCodecs\#MovingPictures.LocalMedia.videocodec.png</texture>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+    </control>
+    <control>
+      <description>Video AspectRatio</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1475</posX>
+      <posY>836</posY>
+      <width>80</width>
+      <height>40</height>
+      <colordiffuse>FF000000</colordiffuse>
+      <texture>Logos\VideoAspectRatio\#MovingPictures.LocalMedia.videoaspectratio.png</texture>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+    </control>
+    <control>
+      <description>Audio Codecs</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1565</posX>
+      <posY>836</posY>
+      <width>80</width>
+      <height>40</height>
+      <colordiffuse>FF000000</colordiffuse>
+      <texture>Logos\AudioCodecs\#MovingPictures.LocalMedia.audiocodec.png</texture>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+    </control>
+    <control>
+      <description>Audio Channels</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1655</posX>
+      <posY>836</posY>
+      <width>80</width>
+      <height>40</height>
+      <colordiffuse>FF000000</colordiffuse>
+      <texture>Logos\AudioChannels\#MovingPictures.LocalMedia.audiochannels.png</texture>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+    </control>
+    <!--MEDIA TYPE-->
+    <control>
+      <description>BluRay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1745</posX>
+      <posY>836</posY>
+      <width>80</width>
+      <height>40</height>
+      <colordiffuse>FF000000</colordiffuse>
+      <texture>Logos\MediaType\bluray.png</texture>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>string.equals(#MovingPictures.LocalMedia.videoresolution,1080p)+string.equals(#MovingPictures.LocalMedia.videocodec,H264)+!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+    </control>
+    <control>
+      <description>BluRay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1745</posX>
+      <posY>836</posY>
+      <width>80</width>
+      <height>40</height>
+      <colordiffuse>FF000000</colordiffuse>
+      <texture>Logos\MediaType\bluray.png</texture>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>string.equals(#MovingPictures.LocalMedia.videoresolution,720p)+string.equals(#MovingPictures.LocalMedia.videocodec,H264)+!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+    </control>
+    <control>
+      <description>DVD</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1745</posX>
+      <posY>836</posY>
+      <width>80</width>
+      <height>40</height>
+      <colordiffuse>FF000000</colordiffuse>
+      <texture>Logos\MediaType\dvd.png</texture>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>string.equals(#MovingPictures.LocalMedia.videoformat,DVD)+!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+    </control>
+    <control>
+      <description>DVD</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1745</posX>
+      <posY>836</posY>
+      <width>80</width>
+      <height>40</height>
+      <colordiffuse>FF000000</colordiffuse>
+      <texture>Logos\MediaType\dvd.png</texture>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>string.equals(#MovingPictures.LocalMedia.videoresolution,SD)+!string.equals(#MovingPictures.LocalMedia.videoformat,DVD)+!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+    </control>
+    <control>
+      <description>DVD</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1745</posX>
+      <posY>836</posY>
+      <width>80</width>
+      <height>40</height>
+      <colordiffuse>FF000000</colordiffuse>
+      <texture>Logos\MediaType\dvd.png</texture>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>string.contains(#MovingPictures.LocalMedia.FullPath,R5)+!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+    </control>
+    <control>
+      <description>DVD</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1745</posX>
+      <posY>836</posY>
+      <width>80</width>
+      <height>40</height>
+      <colordiffuse>FF000000</colordiffuse>
+      <texture>Logos\MediaType\dvd.png</texture>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>string.contains(#MovingPictures.LocalMedia.FullPath,screener)+!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+    </control>
+    <control>
+      <description>CAM</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1745</posX>
+      <posY>836</posY>
+      <width>80</width>
+      <height>40</height>
+      <colordiffuse>FF000000</colordiffuse>
+      <texture>Logos\MediaType\cam.png</texture>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>string.contains(#MovingPictures.LocalMedia.FullPath,cam)+!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+    </control>
+    <!--SUBTITLES-->
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>1835</posX>
+      <posY>836</posY>
+      <width>80</width>
+      <height>40</height>
+      <colordiffuse>FF000000</colordiffuse>
+      <texture>Logos\Misc\subtitles.png</texture>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>string.equals(#MovingPictures.LocalMedia.hassubtitles,True)+!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+    </control>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>1835</posX>
+      <posY>836</posY>
+      <width>80</width>
+      <height>40</height>
+      <colordiffuse>FF000000</colordiffuse>
+      <texture>Logos\Misc\nosubtitles.png</texture>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>string.equals(#MovingPictures.LocalMedia.hassubtitles,False)+!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+    </control>
+    <!--********************** DETAILS******************************-->
+    <control>
+      <description>runtime</description>
+      <type>label</type>
+      <label>#MovingPictures.Translation.Runtime.Label</label>
+      <id>0</id>
+      <posX>15</posX>
+      <posY>900</posY>
+      <width>1200</width>
+      <font>font13BCB</font>
+      <textcolor>ff7FB1E5</textcolor>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+[Control.HasFocus(9879877)]</visible>
+    </control>
+    <control>
+      <description>runtime</description>
+      <type>label</type>
+      <label>#MovingPictures.SelectedMovie.runtime.localized.short</label>
+      <id>0</id>
+      <posX>255</posX>
+      <posY>900</posY>
+      <width>1200</width>
+      <font>font14</font>
+      <textcolor>ffFFFFFF</textcolor>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+[Control.HasFocus(9879877)]</visible>
+    </control>
+    <control>
+      <description>Rating</description>
+      <type>label</type>
+      <label>#SkinTranslation.Translations.Rating.Label</label>
+      <id>0</id>
+      <posX>15</posX>
+      <posY>945</posY>
+      <width>1200</width>
+      <font>font13BCB</font>
+      <textcolor>ff7FB1E5</textcolor>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+[Control.HasFocus(9879877)]</visible>
+    </control>
+    <control>
+      <type>imagelist</type>
+      <id>0</id>
+      <posX>255</posX>
+      <posY>945</posY>
+      <textureWidth>38</textureWidth>
+      <textureHeight>38</textureHeight>
+      <subitems>
+        <subitem>star_empty.png</subitem>
+        <subitem>star_yellow.png</subitem>
+      </subitems>
+      <orientation>horizontal</orientation>
+      <align>left</align>
+      <imagesToDraw>5</imagesToDraw>
+      <percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+[Control.HasFocus(9879877)]</visible>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+    </control>
+    <control>
+      <description>Star Rating Value</description>
+      <id>0</id>
+      <type>label</type>
+      <label>(#MovingPictures.SelectedMovie.score.localized / 10)</label>
+      <posX>458</posX>
+      <posY>945</posY>
+      <width>480</width>
+      <align>left</align>
+      <font>font14</font>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+[Control.HasFocus(9879877)]</visible>
+    </control>
+    <control>
+      <description>watched title</description>
+      <type>label</type>
+      <label>Watched</label>
+      <id>0</id>
+      <posX>15</posX>
+      <posY>990</posY>
+      <width>1200</width>
+      <font>font13BCB</font>
+      <textcolor>ff7FB1E5</textcolor>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+[Control.HasFocus(9879877)]</visible>
+    </control>
+    <control>
+      <description>watched value</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>255</posX>
+      <posY>990</posY>
+      <width>405</width>
+      <font>font14</font>
+      <textcolor>ffFFFFFF</textcolor>
+      <label>Yes</label>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.IsVisible(9)+[Control.HasFocus(9879877)]</visible>
+    </control>
+    <control>
+      <description>watched value</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>255</posX>
+      <posY>990</posY>
+      <width>405</width>
+      <font>font14</font>
+      <textcolor>ffFFFFFF</textcolor>
+      <label>No</label>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+!Control.IsVisible(9)+[Control.HasFocus(9879877)]</visible>
+    </control>
+    <control>
+      <description>director</description>
+      <type>label</type>
+      <label>#MovingPictures.Translation.Directors.Label</label>
+      <id>0</id>
+      <posX>750</posX>
+      <posY>900</posY>
+      <width>210</width>
+      <font>font13BCB</font>
+      <textcolor>ff7FB1E5</textcolor>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+[Control.HasFocus(9879877)]</visible>
+    </control>
+    <control>
+      <description>director</description>
+      <type>label</type>
+      <label>#MovingPictures.SelectedMovie.directors</label>
+      <id>0</id>
+      <posX>975</posX>
+      <posY>900</posY>
+      <width>670</width>
+      <font>font14</font>
+      <textcolor>ffFFFFFF</textcolor>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+[Control.HasFocus(9879877)]</visible>
+    </control>
+    <control>
+      <description>writer</description>
+      <type>label</type>
+      <label>#MovingPictures.Translation.Writers.Label</label>
+      <id>0</id>
+      <posX>750</posX>
+      <posY>945</posY>
+      <width>210</width>
+      <font>font13BCB</font>
+      <textcolor>ff7FB1E5</textcolor>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+[Control.HasFocus(9879877)]</visible>
+    </control>
+    <control>
+      <description>writer</description>
+      <type>label</type>
+      <label>#MovingPictures.SelectedMovie.writers</label>
+      <id>0</id>
+      <posX>975</posX>
+      <posY>945</posY>
+      <width>670</width>
+      <font>font14</font>
+      <textcolor>ffFFFFFF</textcolor>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+[Control.HasFocus(9879877)]</visible>
+    </control>
+    <control>
+      <description>genre title</description>
+      <type>label</type>
+      <label>#MovingPictures.Translation.Genre.Label</label>
+      <id>0</id>
+      <posX>750</posX>
+      <posY>990</posY>
+      <width>210</width>
+      <font>font13BCB</font>
+      <textcolor>ff7FB1E5</textcolor>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+[Control.HasFocus(9879877)]</visible>
+    </control>
+    <control>
+      <description>genre below the movie title</description>
+      <type>label</type>
+      <label>#MovingPictures.SelectedMovie.genres</label>
+      <id>0</id>
+      <posX>975</posX>
+      <posY>990</posY>
+      <width>670</width>
+      <font>font14</font>
+      <textcolor>ffFFFFFF</textcolor>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+[Control.HasFocus(9879877)]</visible>
+    </control>
+    <control>
+      <description>actor</description>
+      <type>label</type>
+      <label>#SkinTranslation.Translations.Cast.Label</label>
+      <id>0</id>
+      <posX>15</posX>
+      <posY>1035</posY>
+      <width>1200</width>
+      <font>font13BCB</font>
+      <textcolor>ff7FB1E5</textcolor>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+[Control.HasFocus(9879877)]</visible>
+    </control>
+    <control>
+      <description>actor</description>
+      <type>fadelabel</type>
+      <label>#MovingPictures.SelectedMovie.actors</label>
+      <id>0</id>
+      <posX>255</posX>
+      <posY>1035</posY>
+      <width>1650</width>
+      <height>48</height>
+      <font>font14</font>
+      <scrollStartDelaySec>7200</scrollStartDelaySec>
+      <textcolor>ffFFFFFF</textcolor>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+[Control.HasFocus(9879877)]</visible>
+    </control>
+    <control>
+      <description>PLAY Button</description>
+      <type>button</type>
+      <id>6</id>
+      <posX>1670</posX>
+      <posY>890</posY>
+      <label>2553</label>
+      <width>230</width>
+      <height>48</height>
+      <textureFocus>drop_frame.png</textureFocus>
+      <textureNoFocus>drop_frame.png</textureNoFocus>
+      <font>font13BC</font>
+      <textXOff>0</textXOff>
+      <textYOff>3</textYOff>
+      <textalign>center</textalign>
+      <onup>9879876</onup>
+      <ondown>4755</ondown>
+      <onleft>9879876</onleft>
+      <onright>9879876</onright>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="zoom" start="100,100" end="103,103" time="150">Focus</animation>
+      <animation effect="zoom" start="103,103" end="100,100" time="150">UnFocus</animation>
+      <visible allowhiddenfocus="true">!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+    </control>
+    <control>
+      <description>Trailer (Online Videos)</description>
+      <type>button</type>
+      <id>4755</id>
+      <posX>1670</posX>
+      <posY>935</posY>
+      <label>5906</label>
+      <hyperlink>4755</hyperlink>
+      <hyperlinkParameter>site:iTunes Movie Trailers|search:#MovingPictures.SelectedMovie.title|return:Locked</hyperlinkParameter>
+      <width>230</width>
+      <height>48</height>
+      <textureFocus>drop_frame.png</textureFocus>
+      <textureNoFocus>drop_frame.png</textureNoFocus>
+      <font>font13BC</font>
+      <textXOff>0</textXOff>
+      <textYOff>3</textYOff>
+      <textalign>center</textalign>
+      <onup>6</onup>
+      <ondown>69999</ondown>
+      <onleft>9879876</onleft>
+      <onright>9879876</onright>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="zoom" start="100,100" end="103,103" time="150">Focus</animation>
+      <animation effect="zoom" start="103,103" end="100,100" time="150">UnFocus</animation>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+    </control>
+    <control>
+      <description>Subtitles</description>
+      <type>button</type>
+      <id>69999</id>
+      <posX>1670</posX>
+      <posY>980</posY>
+      <label>287</label>
+      <hyperlink>84623</hyperlink>
+      <width>230</width>
+      <height>48</height>
+      <textureFocus>drop_frame.png</textureFocus>
+      <textureNoFocus>drop_frame.png</textureNoFocus>
+      <font>font13BC</font>
+      <textXOff>0</textXOff>
+      <textYOff>3</textYOff>
+      <textalign>center</textalign>
+      <onup>4755</onup>
+      <ondown>992899</ondown>
+      <onleft>9879876</onleft>
+      <onright>9879876</onright>
+      <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
+      <animation effect="zoom" start="100,100" end="103,103" time="150">Focus</animation>
+      <animation effect="zoom" start="103,103" end="100,100" time="150">UnFocus</animation>
+      <visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+    </control>
+    <control>
+      <description>Now Playing Button</description>
+      <type>button</type>
+      <id>992899</id>
+      <posX>1670</posX>
+      <posY>1025</posY>
+      <label>4540</label>
+      <action>18</action>
+      <width>230</width>
+      <height>48</height>
+      <textureFocus>drop_frame.png</textureFocus>
+      <textureNoFocus>drop_frame.png</textureNoFocus>
+      <font>font13BC</font>
+      <textXOff>0</textXOff>
+      <textYOff>3</textYOff>
+      <textalign>center</textalign>
+      <onup>69999</onup>
+      <ondown>69999</ondown>
+      <onleft>9879876</onleft>
+      <onright>9879876</onright>
+      <visible>Player.HasVideo+!control.isvisible(3337)+!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+    </control>
+  </controls>
+</window>

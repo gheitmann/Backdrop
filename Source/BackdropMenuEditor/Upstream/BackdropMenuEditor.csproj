@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D6D2E916-8911-4300-86B7-5121104EDBE3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BackdropMenuEditor</RootNamespace>
+    <AssemblyName>BackdropMenuEditor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Utils, Version=1.1.6.27644, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Team MediaPortal\MediaPortal\Common.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Core, Version=1.0.0.29788, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Team MediaPortal\MediaPortal\Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Cornerstone, Version=1.2.1.1264, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External\MP12\Cornerstone.dll</HintPath>
+    </Reference>
+    <Reference Include="Dialogs, Version=0.9.4.31361, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Team MediaPortal\MediaPortal\plugins\Windows\Dialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="DirectShowLib, Version=2.0.0.21149, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Team MediaPortal\MediaPortal\DirectShowLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MovingPictures, Version=1.2.1.1264, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External\MP12\MovingPictures.dll</HintPath>
+    </Reference>
+    <Reference Include="MP-TVSeries, Version=3.0.3.1747, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External\MP12\MP-TVSeries.dll</HintPath>
+    </Reference>
+    <Reference Include="OnlineVideos, Version=0.28.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External\MP12\OnlineVideos.dll</HintPath>
+    </Reference>
+    <Reference Include="OnlineVideos.MediaPortal1, Version=0.29.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External\MP12\OnlineVideos.MediaPortal1.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Utils, Version=2.2.6.19030, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Team MediaPortal\MediaPortal\Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowPlugins, Version=1.1.7.27941, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External\MP12\WindowPlugins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackdropMenuEditorConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackdropMenuEditorConfig.Designer.cs">
+      <DependentUpon>BackdropMenuEditorConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BackdropMenuEditor.cs" />
+    <Compile Include="MusicHandler.cs" />
+    <Compile Include="TVSeriesHandler.cs" />
+    <Compile Include="OnlineVideoHandler.cs" />
+    <Compile Include="MovingPictureHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BackdropMenuEditorConfig.resx">
+      <DependentUpon>BackdropMenuEditorConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="logo_disabled.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
