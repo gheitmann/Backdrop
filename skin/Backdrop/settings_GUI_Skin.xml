@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <window>
   <id>705</id>
   <defaultcontrol>10</defaultcontrol>
@@ -344,7 +344,7 @@
           <width>550</width>
           <textureFocus>listbg_fo.png</textureFocus>
           <label>166</label>
-          <onup>10000</onup>
+          <onup>14</onup>
           <ondown>15</ondown>
           <onright>30</onright>
           <onleft>9992</onleft>
@@ -460,7 +460,7 @@
           <textureFocus>listbg_fo.png</textureFocus>
           <label>300137</label>
           <onup>11</onup>
-          <ondown>32</ondown>
+          <ondown>10</ondown>
           <onright>30</onright>
           <onleft>9992</onleft>
           <height>60</height>
@@ -615,7 +615,7 @@
         <label>#SkinTranslation.Translations.Thumbsview.Label</label>
         <textcolor>lightgray</textcolor>
         <font>font12</font>
-        <visible>plugin.isenabled(Moving Pictures)</visible>
+        <visible>no</visible>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -676,6 +676,7 @@
         <textureNoFocus>listbg_nf.png</textureNoFocus>
         <scrollStartDelaySec>5</scrollStartDelaySec>
         <scrollWrapString>  |  </scrollWrapString>
+        <visible>no</visible>
       </control>
       <control>
         <description>Facade Classic Home</description>
@@ -735,6 +736,7 @@
         <textureNoFocus>listbg_nf.png</textureNoFocus>
         <scrollStartDelaySec>5</scrollStartDelaySec>
         <scrollWrapString>  |  </scrollWrapString>
+        <visible>no</visible>
       </control>
       <control>
         <type>label</type>
@@ -745,7 +747,7 @@
         <label>Fanart BasicHome</label>
         <textcolor>lightgray</textcolor>
         <font>font12</font>
-        <visible>!skin.hassetting(#skin.basichome.editor)+[string.equals(#hedit.mode,Horizontal Text only)|string.equals(#hedit.mode,Horizontal (scroll))]</visible>
+        <visible>no</visible>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -771,7 +773,7 @@
           <ondown>31</ondown>
           <onright>30</onright>
           <onleft>10</onleft>
-          <visible>!skin.hassetting(#skin.basichome.editor)+[string.equals(#hedit.mode,Horizontal Text only)|string.equals(#hedit.mode,Horizontal (scroll))]</visible>
+          <visible>no</visible>
           <height>60</height>
           <textXOff>25</textXOff>
           <textYOff>9</textYOff>
@@ -812,7 +814,7 @@
           <ondown>37</ondown>
           <onright>31</onright>
           <onleft>10</onleft>
-          <visible>!skin.hassetting(#skin.basichome.editor)+[string.equals(#hedit.mode,Horizontal Text only)|string.equals(#hedit.mode,Horizontal (scroll))]</visible>
+          <visible>no</visible>
           <height>60</height>
           <textXOff>25</textXOff>
           <textYOff>9</textYOff>
@@ -853,7 +855,7 @@
           <ondown>10</ondown>
           <onright>37</onright>
           <onleft>10</onleft>
-          <visible>!skin.hassetting(#skin.basichome.editor)+[string.equals(#hedit.mode,Horizontal Text only)|string.equals(#hedit.mode,Horizontal (scroll))]</visible>
+          <visible>no</visible>
           <height>60</height>
           <textXOff>25</textXOff>
           <textYOff>9</textYOff>
@@ -891,7 +893,7 @@
         <width>552</width>
         <height>310</height>
         <keepaspectratio>no</keepaspectratio>
-        <visible>!control.hasfocus(32)+!control.hasfocus(33)+!control.hasfocus(3750)+!control.hasfocus(37)+!control.hasfocus(31)+!control.hasfocus(30)</visible>
+        <visible>yes</visible>
       </control>
       <control>
         <description>Plugin Poster BasicHome</description>
@@ -1057,7 +1059,7 @@
         <height>310</height>
         <keepaspectratio>no</keepaspectratio>
         <texture>Settings\thumnailview.png</texture>
-        <visible>control.hasfocus(3570)+string.contains(#skin.thumbsview, #SkinTranslation.Translations.Thumbsview.Select.Label)</visible>
+        <visible>no</visible>
       </control>
       <control>
         <description>Fanart Wall view</description>
@@ -1069,7 +1071,7 @@
         <height>310</height>
         <keepaspectratio>no</keepaspectratio>
         <texture>Settings\fanartwall.png</texture>
-        <visible>control.hasfocus(3570)+string.contains(#skin.thumbsview, Fanart Wall)</visible>
+        <visible>no</visible>
       </control>
       <control>
         <description>Video Fanart BasicHome disabled</description>

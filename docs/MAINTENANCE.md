@@ -15,6 +15,17 @@ Use this repository as the versioned source for future Backdrop changes. Keep re
 
 The skin settings page omits the DefaultWideHD BasicHome editor and the ineffective EPG row selector. Backdrop has its own external editor and the current guide uses 12 rows.
 
+## ALPHA6 lessons
+
+- Music artist/album dialogs now receive `#ArtistInfo.*` and `#AlbumInfo.*` properties. Legacy label IDs 20-27 and empty textbox/image controls no longer receive values automatically. Bind every value, image, biography/review, and discography/track-list field explicitly. Button 6 remains the native refresh binding; button 5 toggles the skin's alternate content.
+- Keep the existing Backdrop dialog graphics. Use `textboxscrollup` for the property-driven text and leave enough panel height for the body. Preserve aspect ratio for available artwork.
+- Now Playing settings should expose the native lookup switch and None/Analog/Led selector. The imported DWHD LED designs and spectrum options have no consumer in Backdrop's three active Now Playing pages. The copied, unused `mp139.MyMusicPlayingNowLedVU.xml` is not evidence that these options work in the active layout.
+- Classic Home layout and DWHD-specific thumbnail/fanart controls must not be exposed merely because they appear in an imported settings page. Check the actual rendering path before retaining each option. Native MediaPortal configuration and working settings-page help are separate from these skin-only choices.
+- Previous-track action 15 (topbar control 22) uses `top_skipback_*`, while navigation Back uses `top_back_*`.
+- Guide time headers use `tvguide_time_bg.png` with Backdrop typography. Keep the required `button3part` control 100; use `tv_group_bg_focus.png` and `tv_group_bg.png` in its middle textures with no DWHD overlay. Do not replace the bound control type with the old plain button. The group state still needs a populated EPG check.
+- TuneIn/RadioTime is not installed in the isolated runtime. Its legacy source has synchronous network/player work, but that alone does not identify the owner's freeze. Obtain the actual plugin version, reproduction details, and log/thread evidence before changing its binaries or claiming a fix. Keep any plugin repair separate from the skin package.
+- Persistent artist/album info fixtures are separate from immutable v1 media. The artist-only MP3 intentionally omits its album tag to exercise the F9 artist-information branch; ordinary album-tagged songs open album information first. Album track metadata uses `number@title@seconds|` format.
+
 ## Validation and release process
 
 - Check local and remote changes before synchronizing; never overwrite unrelated work or force-push the default branch.

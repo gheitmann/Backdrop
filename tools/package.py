@@ -9,9 +9,12 @@ ROOT = Path(__file__).resolve().parent.parent
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--output', type=Path, default=ROOT / 'dist' / 'Backdrop-MP139-AnyCPU-ALPHA5.mpe1')
+    parser.add_argument('--output', type=Path)
     args = parser.parse_args()
     root = ET.parse(ROOT / 'packaging' / 'MediaPortalExtension.template.xml').getroot()
+    if args.output is None:
+        revision = root.findtext('./GeneralInfo/Version/Revision')
+        args.output = ROOT / 'dist' / f'Backdrop-MP139-AnyCPU-ALPHA{revision}.mpe1'
     entries = root.findall('./Groups/Items/GroupItem/Files/Items/FileItem')
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(args.output, 'w', compression=zipfile.ZIP_DEFLATED) as archive:

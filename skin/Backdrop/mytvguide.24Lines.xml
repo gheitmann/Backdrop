@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <window>
   <controls>
     <control>
@@ -145,7 +145,7 @@
       <posY>153</posY>
       <width>215</width>
       <height>49</height>
-      <texture>MP139\tvpg.png</texture>
+      <texture>tvguide_time_bg.png</texture>
     </control>
     <control Style="mp139.NoShadow">
       <description>time header label template</description>
@@ -153,8 +153,8 @@
       <id>40</id>
       <posX>399</posX>
       <posY>156</posY>
-      <font>font13</font>
-      <textcolor>darkgray</textcolor>
+      <font>font16</font>
+      <textcolor>ff7FB1E5</textcolor>
     </control>
     <control>
       <description>day spin control</description>
@@ -487,7 +487,7 @@
       <posY>205</posY>
       <width>56</width>
       <height>838</height>
-      <texture>white.png</texture>
+      <texture>-</texture>
       <colordiffuse>994682b4</colordiffuse>
       <visible>control.isvisible(100)</visible>
     </control>
@@ -499,12 +499,12 @@
       <posY>206</posY>
       <width>54</width>
       <height>836</height>
-      <textureFocusedLeft overlay="MP139\tvguide_channelgroup_overlay.png">white.png</textureFocusedLeft>
-      <textureNonFocusedLeft overlay="MP139\tvguide_channelgroup_overlay.png">white.png</textureNonFocusedLeft>
-      <textureFocusedMid overlay="MP139\tvguide_channelgroup_overlay.png">white.png</textureFocusedMid>
-      <textureNonFocusedMid overlay="MP139\tvguide_channelgroup_overlay.png">white.png</textureNonFocusedMid>
-      <textureFocusedRight overlay="MP139\tvguide_channelgroup_overlay.png">white.png</textureFocusedRight>
-      <textureNonFocusedRight overlay="MP139\tvguide_channelgroup_overlay.png">white.png</textureNonFocusedRight>
+      <textureFocusedLeft>-</textureFocusedLeft>
+      <textureNonFocusedLeft>-</textureNonFocusedLeft>
+      <textureFocusedMid>tv_group_bg_focus.png</textureFocusedMid>
+      <textureNonFocusedMid>tv_group_bg.png</textureNonFocusedMid>
+      <textureFocusedRight>-</textureFocusedRight>
+      <textureNonFocusedRight>-</textureNonFocusedRight>
       <textureIcon>-</textureIcon>
       <textureIcon2>-</textureIcon2>
       <label />

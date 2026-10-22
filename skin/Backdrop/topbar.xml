@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <window>
   <id>3005</id>
   <defaultcontrol>21</defaultcontrol>
@@ -48,15 +48,15 @@
       <ondown>2</ondown>
     </control>
     <control>
-      <description>back button</description>
+      <description>Previous track button</description>
       <type>button</type>
       <id>22</id>
       <posX>651</posX>
       <posY>4</posY>
       <width>75</width>
       <height>78</height>
-      <textureFocus>top_back_enabled.png</textureFocus>
-      <textureNoFocus>top_back_disabled.png</textureNoFocus>
+      <textureFocus>top_skipback_enabled.png</textureFocus>
+      <textureNoFocus>top_skipback_disabled.png</textureNoFocus>
       <action>15</action>
       <label>-</label>
       <onleft>26</onleft>
