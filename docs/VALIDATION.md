@@ -1,33 +1,29 @@
-# ALPHA12 validation
+# ALPHA13 validation
 
-Target: MediaPortal 1.39 x64, Windows 11, 23 October 2026. Unchanged AnyCPU editor 1.39.0.11. Skin-only update based on ALPHA11.
+Target: MediaPortal 1.39 x64, Windows 11, 23 October 2026. Skin-only update; AnyCPU editor 1.39.0.11 unchanged.
 
-## Original TV guide restoration
+## Vertical captions
 
-The two active TV guide definitions now use the verified original 1920 x 1080 coordinates. They no longer include the DWHD 12-row replacement. Grid Y=612 and row height=64 produce seven visible channel rows. Programme details are above the grid on the left, the clock is right-aligned at X=1912/Y=6, and the sole native video window 99 occupies X=1537/Y=162, 359 x 197.
+The original rotation used an automatic control centre, while the ALPHA12 guide used a mixed absolute/automatic centre. Left-aligned text then extended below its frame, and the centred guide caption extended above its strip. Local inspection of the installed MP 1.39 Core.dll VisualEffect.Create/SetCenter confirms that `center` is absolute and a zero component falls back to the automatically supplied centre. Nonzero absolute text anchors are required here.
 
-Targeted runtime checklist: **8/9 passed (88.9%), one blocked**. This is the following finite TV guide checklist, not overall skin compatibility:
+Four dialog definitions now use persistent 90-degree rotation about the lower-left text anchor. DialogMenu uses X=664/Y=730, while DialogSelect, DialogSelect2 and DialogMultiSelect use X=664/Y=775. Each has a 400 x 38 text viewport. The two active TV guides use X=12/Y=1050, width=320, height=34 and left alignment. Long group names scroll after three seconds within that bounded viewport. No group prefix or translation was removed. Grid, channel names, programme cells and their original coordinate anchors are unchanged.
 
-| Check | Result | Evidence |
-| --- | --- | --- |
-| Populated lower guide | Passed | Seven rows render at the bottom with fictional programmes and original time-header artwork. |
-| Upper-left programme details | Passed | Title, time, genre and wrapped long description update between Underwater Cities, Quiet Roads and Orbit Nine without crossing into the grid. |
-| Upper-right clock | Passed | Original date/time string renders at the right edge. |
-| Mouse programme selection | Passed | Clicking the second-row programme focuses it and updates details. Clicking an already selected current programme invokes native tuning; the expected no-free-card notice occurs because fixtures have no tuner. |
-| Keyboard selection | Passed | Down selects the next channel programme and refreshes title, time, genre and description. |
-| Channel pagination | Passed | Next advances the channel list beyond the first seven channels, including Summit Sports, Lantern Mystery and Horizon Travel. |
-| Group switching | Passed | Group control 100 opens the native selector; choosing Backdrop Test Highlights displays its four channels and updates the vertical group caption. |
-| Single-channel schedule | Passed | Selecting Studio One HD opens its chronological seven-row schedule, including programmes after midnight. |
-| Active Live TV preview | Blocked | The fictional channels have no tuner mappings. Placement and native control binding pass static checks; actual live video is not runtime-certified. |
+Targeted runtime caption checklist: **3/3 passed (100%)**, limited to these checks:
 
-Observed at 3440 x 1440 fullscreen using the native skin scaler; no separate 16:9 output or DPI matrix was rerun. Cursor auto-hide can consume the first mouse click. No immediate single-click certification is claimed. The guide shows one original sofa-to-black background when playback is stopped. Duplicate background under active playback remains unverified. Empty guide, channel logos, day/interval changes and other aspect ratios need separate follow-up.
+| Check | Evidence |
+| --- | --- |
+| Lower-left EPG group caption | The long Backdrop Test Highlights caption remains inside the lower left group strip while scrolling; it no longer overlaps the date selector/time-heading band. The text origin is near the grid bottom. |
+| Group selection dialog | Opening native DialogSelect 2000 shows GRUPPE fully inside the left frame strip, above its bottom border. Selection remains populated. |
+| Shared action-menu dialog | Guide F9 opens native GUIDialogMenu 2012; the vertical MENÜ title stays inside the frame. The log confirms route 600 -> GUIDialogMenu 2012. This exercises the same DialogMenu.xml/control 4 used by the owner's music Actions dialog, but does not newly certify the music-specific command list or every caption language. |
 
-Compatibility adaptations preserve native group button3part 100 and keyed-channel label 34. The preview is inlined once and bound as 99. Channel labels are widened to fit current names; the single-channel logo is moved into the header; timeline height is clipped to the original grid bottom. These are intentional departures from legacy overflow geometry. Radio guide layout is unchanged.
+Runtime observation was at 3440 x 1440 fullscreen. The shared music side-menu and playlist remained accessible, but their F9 paths did not expose the owner's Actions list in this test session; the shared menu was therefore checked through TV guide F9. No recording, tuning, deletion or online metadata action was selected. DialogSelect2 and MultiSelect received the equivalent correction and static containment checks; their runtime variants remain untested.
 
-## Structural and delivery checks
+`python tools/check_guide_layout.py` now checks rotated text viewport containment in the intended left strip for six definitions at 1920 x 1080 and 3440 x 1440: **12/12 static geometry cases passed (100%)**. It also preserves all nine original guide anchors in both active definitions, one guide background, one preview and native group binding. Static geometry is not a second runtime certification.
 
-`python tools/check_guide_layout.py` checks all nine original anchors in both active definitions, including the imported right-aligned clock, one full-screen background, one preview and modern group binding. CI runs this check to prevent fallback layout drift. Native MP 1.39 binding audit: 139 windows, zero incompatible bound types, 69 absent fields unchanged. Payload validation: 2,393 files, 557 skin XML files and valid AnyCPU editor flags. The native metadata serializer and reopened MPE1 payload are checked separately.
+## Delivery and inherited limits
 
-Historical 37-case checklist remains **36/37 passed (97.3%), one blocked**, carried forward without a full rerun. See REGRESSION-ALPHA12.json and VALIDATION-ALPHA11.md for inherited evidence and topbar/music/installer limitations. ALPHA12 does not rebuild the editor or change the separate ALPHA11 installer helper. No fixtures, databases, personal SkinSettings.xml or credentials are packaged.
+Native binding audit: 139 windows, zero incompatible bound types, 69 absent fields unchanged. Payload checks cover 2,393 files, 557 skin XML files and AnyCPU editor flags. Native MP metadata serialization and byte-for-byte reopened MPE1 payload are checked during packaging. No test media, databases, personal SkinSettings.xml or credentials are shipped.
 
-Only the isolated candidate skin was changed during runtime testing. The test application is closed and its startup screen restored after testing. Normal installed skin files are delivered through the versioned MPE1.
+The ALPHA12 nine-case TV guide checklist remains 8/9 passed (88.9%), carried forward without a complete rerun; actual Live TV preview remains blocked by missing tuner mappings. The historical 37-case checklist remains 36/37 passed (97.3%), also carried forward. See VALIDATION-ALPHA12.md and VALIDATION-ALPHA11.md for complete inherited evidence and topbar/music/installer limitations. Full x86, locale/DPI/aspect-ratio matrices and active-playback duplicate backgrounds remain unverified. Radio guide captions and other dialog families are outside this update.
+
+The isolated test application is closed and its startup screen restored. Normal installed skin files are delivered through the MPE1; they were not overwritten during this session. The separate optional InstallerUI helper remains ALPHA11.

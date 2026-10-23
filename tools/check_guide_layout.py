@@ -12,6 +12,24 @@ def require(condition, message):
         raise ValueError(message)
 
 
+def check_caption(control, region, name):
+    """Rotate the scaled text viewport, then check containment in its visible strip."""
+    x, y, width, height = [float(control.findtext(f)) for f in ('posX', 'posY', 'width', 'height')]
+    rotations = [a for a in control.findall('animation') if a.get('effect') == 'rotate']
+    require(len(rotations) == 1, f'{name}: ambiguous caption rotation')
+    rotation = rotations[0]
+    require(rotation.get('center') == f'{int(x)},{int(y)}' and x > 0 and y > 0,
+            f'{name}: rotation must use the absolute lower-left text anchor; zero means automatic centre')
+    require(rotation.text == 'Conditional' and rotation.get('start') == rotation.get('end') == '90'
+            and control.findtext('align') == 'left', f'{name}: caption must remain bottom anchored')
+    for output in ((1920, 1080), (3440, 1440)):
+        sx, sy = output[0] / 1920, output[1] / 1080
+        left, top, right, bottom = region
+        require(left * sx <= x * sx and x * sx + height * sy <= right * sx
+                and top * sy <= y * sy - width * sx and y * sy <= bottom * sy,
+                f'{name}: rotated caption escapes its strip at {output}')
+
+
 def check():
     reference = json.loads((ROOT / 'docs/ORIGINAL-TVGUIDE-LAYOUT.json').read_text())
     for name in ('mytvguide.xml', 'mp139.mytvguide.xml'):
@@ -44,9 +62,19 @@ def check():
         groups = [c for c in controls if c.findtext('id') == '100']
         require(len(groups) == 1 and groups[0].findtext('type') == 'button3part',
                 f'{name}: incompatible native group binding')
+        caption = [c for c in controls if c.findtext('description') == 'TvGroup button label']
+        require(len(caption) == 1, f'{name}: missing guide caption')
+        check_caption(caption[0], (7, 612, 59, 1060), name)
     require((SKIN / 'mytvguide.xml').read_bytes() == (SKIN / 'mp139.mytvguide.xml').read_bytes(),
             'Active guide definitions differ')
-    print('Original TV guide regions, single background/preview and native group binding: 2/2 definitions passed.')
+    for name in ('DialogMenu.xml', 'DialogSelect.xml', 'DialogSelect2.xml', 'DialogMultiSelect.xml'):
+        root = ET.parse(SKIN / name).getroot()
+        controls = root.findall('.//control')
+        panel = next(c for c in controls if c.findtext('texture') == 'dialog_290_400.png')
+        caption = next(c for c in controls if c.findtext('description') == 'Heading text label')
+        x, y, height = [float(panel.findtext(f)) for f in ('posX', 'posY', 'height')]
+        check_caption(caption, (x, y, x + 100, y + height), name)
+    print('Original TV guide regions: 2/2 definitions passed. Rotated caption containment: 6 definitions x 2 output sizes passed.')
 
 
 if __name__ == '__main__':

@@ -2,7 +2,7 @@
 
 Experimental port of cul8er's **Backdrop 1.0.1** skin to **MediaPortal 1.39**.
 
-Current version on this branch: **ALPHA12**, menu editor **1.39.0.11**. The editor and installer target AnyCPU. Runtime checks were performed on MediaPortal 1.39 x64; a complete x86 runtime test is still pending.
+Current version on this branch: **ALPHA13**, menu editor **1.39.0.11**. The editor and installer target AnyCPU. Runtime checks were performed on MediaPortal 1.39 x64; a complete x86 runtime test is still pending.
 
 ## Install
 
@@ -19,6 +19,7 @@ Use architecture-compatible versions of Fanart Handler, Latest Media Handler, an
 - Consistent standard, analog VU, and LED VU music Now Playing pages.
 - Corrected lower-menu mouse hit areas and submenu wake-up behavior.
 - Enabled the topbar on regular pages and fixed vertical side-menu captions.
+- Anchored dialog titles inside their frames and TV guide group captions at the lower left.
 - Replaced visible `#scroll.wrap` placeholders with a static separator.
 - Removed unused DWHD-specific Now Playing design and classic-home settings.
 - Corrected the previous-track topbar icon, guide time-header artwork, and group-button textures.
@@ -32,7 +33,7 @@ Use architecture-compatible versions of Fanart Handler, Latest Media Handler, an
 - Added an optional, separate installer presentation helper for readable buttons and reduced repainting.
 - Added click and drag seeking to the native music Now Playing progress bar.
 
-See [validation and limitations](docs/VALIDATION.md) and [maintenance guidance](docs/MAINTENANCE.md). The existing checklist remains 36/37 passed (97.3%) and one blocked, carried forward from ALPHA9. The separate [V6 feedback review](docs/V6-FEEDBACK-REVIEW.md) records new settings/guide checks and user-confirmed TuneIn operation. New targeted topbar evidence and remaining input limits are documented. See the optional [installer UI helper](docs/INSTALLER-UI.md); the ordinary MPE1 does not change the installed Extension Installer. The separate original-TVGuide checklist has 8/9 passed (88.9%), with active Live TV preview blocked by missing test tuners. This is **not** an overall compatibility percentage.
+See [validation and limitations](docs/VALIDATION.md) and [maintenance guidance](docs/MAINTENANCE.md). The existing checklist remains 36/37 passed (97.3%) and one blocked, carried forward from ALPHA9. The separate [V6 feedback review](docs/V6-FEEDBACK-REVIEW.md) records new settings/guide checks and user-confirmed TuneIn operation. New targeted topbar evidence and remaining input limits are documented. See the optional [installer UI helper](docs/INSTALLER-UI.md); the ordinary MPE1 does not change the installed Extension Installer. The original-TVGuide checklist remains 8/9 passed (88.9%), carried forward, with active Live TV preview blocked by missing test tuners. New caption checks pass 3/3; exact scope is recorded in validation. This is **not** an overall compatibility percentage.
 
 ## Repository layout
 
@@ -60,7 +61,7 @@ python tools/package.py
 
 Review the rebuilt DLL and assembly version before refreshing the payload hashes. The refresh records an intentional payload change; it is not a compatibility test. To package the unchanged checked-in reference DLL, skip the editor build and hash refresh.
 
-The installer is written to `dist/Backdrop-MP139-AnyCPU-ALPHA12.mpe1`. Packaging can also use the checked-in reference DLL. GitHub Actions validates the payload and builds an installer artifact; it does not run the MediaPortal GUI or compile the editor against MediaPortal binaries.
+The installer is written to `dist/Backdrop-MP139-AnyCPU-ALPHA13.mpe1`. Packaging can also use the checked-in reference DLL. GitHub Actions validates the payload and builds an installer artifact; it does not run the MediaPortal GUI or compile the editor against MediaPortal binaries.
 
 ## Credits
 

@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
 <window>
   <id>2100</id>
   <defaultcontrol>3</defaultcontrol>
@@ -30,15 +31,15 @@
       <description>Heading text label</description>
       <type>label</type>
       <id>4</id>
-      <posX>438</posX>
-      <posY>442</posY>
-      <width>510</width>
+      <posX>664</posX>
+      <posY>775</posY>
+      <width>400</width>
       <label>181</label>
       <font>font14BC</font>
-      <align>center</align>
+      <align>left</align>
       <textcolor>ff7FB1E5</textcolor>
-      <animation effect="rotate" end="90" time="0">WindowOpen</animation>
-      <animation effect="rotate" end="90" time="0">WindowClose</animation>
+      <height>38</height>
+      <animation effect="rotate" start="90" end="90" center="664,775" time="0" condition="true">Conditional</animation>
     </control>
     <control>
       <description>Exit button</description>

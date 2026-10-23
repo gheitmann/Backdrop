@@ -16954,10 +16954,10 @@
       <Major>1</Major>
       <Minor>39</Minor>
       <Build>0</Build>
-      <Revision>12</Revision>
+      <Revision>13</Revision>
     </Version>
     <ExtensionDescription>Experimental Backdrop 1.0.1 port for MediaPortal 1.39. Includes an AnyCPU menu editor. Tested on x64; full x86 runtime testing remains pending. Requires compatible external Fanart Handler and Latest Media Handler plugins. See README.md and docs/VALIDATION.md.</ExtensionDescription>
-    <VersionDescription>ALPHA12: original lower TV guide layout, upper-left programme details and upper-right preview/clock. AnyCPU editor 1.39.0.11 unchanged.</VersionDescription>
+    <VersionDescription>ALPHA13: corrected dialog title pivots and lower-left TV guide group captions. AnyCPU editor 1.39.0.11 unchanged.</VersionDescription>
     <DevelopmentStatus>Alpha</DevelopmentStatus>
     <OnlineLocation>
     </OnlineLocation>
