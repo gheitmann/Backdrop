@@ -27,3 +27,13 @@ Native binding audit: 139 windows, zero incompatible bound types, 69 absent fiel
 The ALPHA12 nine-case TV guide checklist remains 8/9 passed (88.9%), carried forward without a complete rerun; actual Live TV preview remains blocked by missing tuner mappings. The historical 37-case checklist remains 36/37 passed (97.3%), also carried forward. See VALIDATION-ALPHA12.md and VALIDATION-ALPHA11.md for complete inherited evidence and topbar/music/installer limitations. Full x86, locale/DPI/aspect-ratio matrices and active-playback duplicate backgrounds remain unverified. Radio guide captions and other dialog families are outside this update.
 
 The isolated test application is closed and its startup screen restored. Normal installed skin files are delivered through the MPE1; they were not overwritten during this session. The separate optional InstallerUI helper remains ALPHA11.
+
+## Owner follow-up after publication
+
+The owner's subsequent report confirms the intended EPG position, working Live TV in the upper-right preview and channel changes by clicking the guide. These are owner observations on their installation, not new local tuner tests; the precise installed alpha was not restated. Retain the local missing-tuner limitation separately.
+
+The owner reports a progress bar moving backwards in small steps while paused and advancing unevenly during normal Live TV. Investigation was explicitly deferred; no playback or progress implementation is changed here. The optional installer helper has not yet been assessed by the owner.
+
+The reported quarter-screen room background is present in the artwork itself: Media/background.tvguide.png is byte-identical to the retained original package resource (SHA256 e1acee2327d6a8f12953f5e5c51ca451c9a5bac1f81d15dcfde856c336962721). It is a 1920 x 1080 image containing a room in the upper-left area fading to black, and the guide draws it at 0,0 with width1920/height1080. This source inspection does not certify every playback overlay state. No artwork was replaced.
+
+An original mytvguide.xml is not self-contained: it imports common.time.xml and common.overlays.guide.xml. Original group control100 is a plain button; the current native binding requires button3part. The old preview99 block in the main XML is commented out and the visible preview comes from the imported file. Copying or renaming the main XML to an mp139 filename does not adapt these bindings or dependencies. Without the earlier failed run's logs, its exact failure cannot be assigned retroactively.
