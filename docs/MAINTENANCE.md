@@ -106,3 +106,8 @@ Local maintenance history and immutable fixtures remain under the owner's `Docum
 
 - Inspect the actual source pixels before changing layout dimensions: background.tvguide.png already contains a quarter-screen room fading into black. The full original room is available as Media/default.png. Reuse it at 1920 x 1080 with ff505050 diffuse darkening, preserving the original guide anchors and a single backdrop control. Retain the original resource for other pages.
 - Keep release work on hold when requested. See UNRELEASED-GUIDE-BACKGROUND.md for three scoped runtime checks and remaining active-playback/progress limitations; do not advance package metadata or publish an alpha merely to save local work.
+
+## Integrated installer bundle lessons
+
+- Do not assume the client lives under 64-bit Program Files. Resolve both standard program roots and uninstall InstallLocation values, require MpeCore.dll plus MpeInstaller.exe, and offer a folder picker for custom or ambiguous installs. Preserve explicit path support and report the full missing filename.
+- Package the UI helper and skin together using package-installer-ui.py --package. Install Backdrop.cmd invokes automatic initialization and native binding verification before launching the bundled MPE1. Keep VerifyOnly and Preview paths free of package installation. Do not ship installed core DLLs or overwrite them; retain the exact 1.39 unsigned assembly guard.
