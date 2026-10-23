@@ -1,41 +1,37 @@
-# ALPHA8 validation
+# ALPHA9 validation
 
-Target: MediaPortal 1.39 x64, 23 October 2026. The AnyCPU menu editor remains unchanged at 1.39.0.5; no DLL rebuild or core/plugin replacement is included.
+Target: MediaPortal 1.39 x64, 23 October 2026. The AnyCPU menu editor is rebuilt as 1.39.0.9. No core or third-party plugin binary is bundled.
 
 ## Follow-up results
 
-The existing 37-case checklist now contains **34 passed (91.9%), two partial and one blocked**. This pass revisited the four cases below; other results are explicitly carried forward from [ALPHA7](VALIDATION-ALPHA7.md), not rerun or newly certified. See [REGRESSION-ALPHA8.json](REGRESSION-ALPHA8.json) for all cases. The percentage is specific to that checklist, not overall compatibility.
+The existing 37-case checklist contains **36 passed (97.3%) and one blocked**. P01 and M09 were revisited; the remaining 35 cases are explicitly carried forward from [ALPHA8](VALIDATION-ALPHA8.md), not rerun or newly certified. This percentage measures that finite checklist, not overall skin/plugin compatibility. See [case evidence](REGRESSION-ALPHA9.json).
 
-| ID | Check | Result | Evidence and limits |
+| ID | Check | Result | Evidence |
 | --- | --- | --- | --- |
-| P01 | Moving Pictures views | partial | List, normal thumbnail and large thumbnail views render the three synthetic movies. The corrected 60-pixel grid margin keeps the first zoomed cover fully visible. Filmstrip was also opened and still clips its first cover at the left edge; coverflow remains unverified. |
-| TB05 | Play | passed | With the synthetic track paused at 1:28 using the native shortcut, a mouse click on Play resolved its dynamic action to 12 and BASS resumed the same stream. The position advanced to 1:30 and 1:48 without restarting. When not paused, Play retains action 68; existing playlist start/restart semantics remain. |
-| M08 | Right-click context menu | passed | With general/autohidemouse temporarily disabled only in the isolated profile, right-click opened the populated Moving Pictures context menu from list and thumbnail views. This verifies context-menu support with a visible cursor, not every first click after native cursor auto-hide. The temporary setting was restored. |
-| M09 | Progress drag/seek | partial | Now Playing progress displays and advances. MP 1.39 GUIProgressControl.CanFocus explicitly returns false and has no seek input handler. Required bound progress control 118 is retained; drag seeking is not implemented by this skin-only update. |
+| P01 | Moving Pictures views | passed | List and both thumbnail checks carried forward. Filmstrip first-cover zoom now fits inside the left edge; Right changes selection/title. Coverflow displays three synthetic covers and Right changes its centered cover/title. |
+| M09 | Progress click/drag seeking | passed | A paused 180-second local music fixture seeks forward to 147.86s (2:27), backward to 45.03s (0:45), and by midpoint click to 89.95s (1:29). Runtime logs record seek start and release positions. Twelve geometry checks pass. |
+| P06 | TVSeries rating | blocked, inherited | Synthetic offline series ID -1 does not expose online rating; no online account action was attempted. |
 
-## Changes and source evidence
+## Implementation
 
-Play uses `#(iif(eq(#playlogo,'logo_pause.png'),12,68))`. MP publishes `#playlogo` as `logo_pause.png` while paused; GUIButtonControl supports property/expression-based action IDs. Choosing native Pause/Resume action 12 in that state avoids the playlist's global Play handler, which starts the selected item again. Cold Play and Play during ordinary playback retain action 68. The running application logged both resolved values, and the resume check advanced from the held position without a new stream start.
+Filmstrip retains native facade/control 50 and its existing cover sizes/zoom. X=60 and width=1800 reserve horizontal zoom margins; `onrigth` is corrected to `onright`.
 
-- [MP 1.39 playback state publication](https://github.com/MediaPortal/MediaPortal-1/blob/Release_1.39.0/mediaportal/MediaPortal.Application/MediaPortal.cs)
-- [GUIButtonControl action parsing](https://github.com/MediaPortal/MediaPortal-1/blob/Release_1.39.0/mediaportal/Core/guilib/GUIButtonControl.cs)
-- [Playlist global Play handler](https://github.com/MediaPortal/MediaPortal-1/blob/Release_1.39.0/mediaportal/WindowPlugins/Common.GUIPlugins/Music/GUIMusicPlaylist.cs)
-- [Native progress control](https://github.com/MediaPortal/MediaPortal-1/blob/Release_1.39.0/mediaportal/Core/guilib/GUIProgressControl.cs)
+Required native GUIProgressControl 118 remains unchanged. The existing process plugin installs an application-local WinForms message filter. It maps client coordinates to MediaPortal render coordinates, accepts only the visible Now Playing progress rectangle with eight pixels vertical padding, and requires seekable music on window 510 with Backdrop active and no routed dialog. It arms on left-button down inside the bar, seeks during held movement with a 200ms throttle, and commits the release inside the bar. Leaving the bar does not seek outside its bounds. The right edge stops 0.25 seconds before duration to avoid accidental end-of-track. Input exceptions are contained, and native messages continue through the application. No global hooks or OS input changes are installed.
 
-The thumbnail panel retains Y=210/height=810 and now uses X=60/width=1800, reserving space for focus zoom at both edges. Normal and large thumbnails were inspected with three synthetic covers. Filmstrip edge clipping remains a separate layout issue; it is not silently declared fixed.
+Run `powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools/test-pointer-seek.ps1` with the installed MP references to reproduce the 12 geometry/boundary checks.
 
-## Mouse diagnosis and limits
+## Populated guide supplement
 
-The right-click test succeeds when the cursor remains visible. MP's native MouseClickEvent deliberately suppresses a first click when its cursor is hidden. This explains a reproducible test precondition; it does not prove every previous-focus topbar activation has the same cause. Immediate topbar focus/click timing remains a limitation from ALPHA7. No global mouse setting is changed by the package; the isolated temporary change was restored and startup returned to BasicHome.
+A separate fixture pass now verifies the 12-row TV guide with 16 fictional TV channels, programme cells/time headings/current-time marker, selected programme descriptions and TV group selection. Four radio channels and a total of 4,200 programmes are retained locally. See [EPG fixtures](EPG-FIXTURES.md). This supplement is not silently added to the historical 37-case denominator. Live tuning, recordings, reminders and radio guide rendering are not claimed tested.
 
-Dragging the existing progress display cannot be enabled by changing its skin rectangle: its native type is non-focusable. Replacing required control 118 with a slider would break the native binding. A future interactive seek control needs its own input implementation and separate runtime validation.
+## Remaining limits
 
-TVSeries online rating remains blocked for the offline test fixture. TuneIn/RadioTime DLLs are absent from both the isolated and normal plugin directories inspected here; the reported build and freeze remain unknown. Populated EPG, ARD HLS playback, additional themes and full x86 runtime remain unverified. Full locale coverage is unchanged from the ALPHA7 static inventory and five representative rendering checks.
+Immediate topbar mouse focus/click timing remains an input limitation; functional command results from earlier passes do not certify every rapid pointer gesture. TuneIn/RadioTime remains absent and its reported freeze is unresolved. ARD HLS playback, full x86 runtime, all locale renderings and additional themes remain unverified. Only the default theme is shipped. Local BASS/radio/Latest Media Handler experiments remain outside this installer.
 
 ## Delivery checks
 
-- Payload XML/hashes and AnyCPU flags validated; 2,393 payload files and 557 skin XML files.
-- Integration audit checks all 37 translation files, English property fallback, installed themes and topbar mappings.
-- Installed MP metadata serializer and 139-window binding audit checked; zero incompatible control types, 69 absent optional/required fields remain.
-- All 62 immutable v1 media hashes checked unchanged. Synthetic fixtures and diagnostic knowledge remain outside the repository.
-- Packaging verifies archived payload bytes against their sources. Only the reviewed topbar and thumbnail XML are deployed to the normal skin directory after an ALPHA7 comparison and backup.
+- Built AnyCPU editor 1.39.0.9; geometry checks 12/12 pass. The final guarded build also seeks during playback from 89.95s to 45.03s by drag.
+- Validated 2,393 payload files, 557 skin XML files and AnyCPU assembly flags. Installed MPE serializer accepts the package and platform metadata.
+- Binding audit: 139 windows inspected, zero incompatible bound control types; 69 absent optional/required fields remain as before.
+- All 62 immutable v1 media hashes remain unchanged. Locale/theme/topbar static inventory passes with the previously documented fallback limitations.
+- Reviewed filmstrip XML is backed up and deployed to the normal skin folder. The isolated runtime contains the new editor DLL. Copying the DLL to the normal Program Files plugin folder was denied by Windows permissions, so that installation needs the ALPHA9 installer to enable pointer seeking. This local deployment limit does not change the isolated runtime evidence.

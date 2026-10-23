@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- 
 This file should contain the facade view
 -->
@@ -176,17 +176,17 @@ This file should contain the facade view
         <description>Filmstrip view</description>
         <type>filmstrip</type>
         <id>50</id>
-        <onrigth>50</onrigth>
+        <onright>50</onright>
         <onleft>50</onleft>
         <onup>2</onup>
         <ondown>2</ondown>
         <dimColor>90ffffff</dimColor>
-        <posX>2</posX>
+        <posX>60</posX>
         <posY>664</posY>
         <spinPosX>2100</spinPosX>
         <spinPosY>1020</spinPosY>
         <scrollOffset>3</scrollOffset>
-        <width>1950</width>
+        <width>1800</width>
         <height>864</height>
         <thumbWidth>240</thumbWidth>
         <thumbHeight>344</thumbHeight>

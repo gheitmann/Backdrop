@@ -62,3 +62,10 @@ Local maintenance history and immutable fixtures remain under the owner's `Docum
 - Right-click context menus work with a visible cursor. Native MouseClickEvent suppresses the first click after auto-hide; temporarily disabling autohidemouse isolates that behavior. Restore the test setting and keep it out of the installer. Immediate topbar focus/click timing remains separately unverified.
 - Required progress control 118 is GUIProgressControl, whose CanFocus returns false. Skin geometry cannot add drag seeking; preserve the binding and treat interactive seek as separate functionality.
 - Follow-up regression counts must distinguish newly assessed cases from inherited passes. ALPHA8 revisits four cases and carries forward unchanged ALPHA7 evidence.
+
+## ALPHA9 lessons
+- Keep GUIProgressControl 118 bound to Now Playing. Interactive seeking lives in PointerSeek.cs in the existing AnyCPU plugin, with a WinForms IMessageFilter installed/removed on the app thread. Exclude routed dialogs, other skins/pages, radio and non-seekable playback. Preserve the exception boundary and end-of-track margin.
+- Use tools/test-pointer-seek.ps1 for the twelve pointer geometry checks. Runtime click and forward/backward drag still need a real local music fixture; geometry alone is not input validation.
+- Filmstrip X=60/width=1800 reserves first-cover zoom space. Correct onright spelling; coverflow must be checked separately. Three-cover fixtures confirmed both layouts and selection changes.
+- Refresh retained v4-epg fixture dates before future guide testing. TV and radio use separate group tables; ChannelNavigator requires the standard radio All Channels group even for TV. See EPG-FIXTURES.md.
+- The 37-case follow-up reaches 36 passed, one offline-rating blocker; topbar immediate pointer timing remains explicitly limited despite earlier functional command passes.
