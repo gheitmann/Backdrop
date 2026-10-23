@@ -2,7 +2,7 @@
 
 Experimental port of cul8er's **Backdrop 1.0.1** skin to **MediaPortal 1.39**.
 
-Current version on this branch: **ALPHA10**, menu editor **1.39.0.9**. The editor and installer target AnyCPU. Runtime checks were performed on MediaPortal 1.39 x64; a complete x86 runtime test is still pending.
+Current version on this branch: **ALPHA11**, menu editor **1.39.0.11**. The editor and installer target AnyCPU. Runtime checks were performed on MediaPortal 1.39 x64; a complete x86 runtime test is still pending.
 
 ## Install
 
@@ -26,16 +26,19 @@ Use architecture-compatible versions of Fanart Handler, Latest Media Handler, an
 - Added locale/theme/topbar auditing to validation and CI.
 - Fixed paused-track Play/Resume and thumbnail/filmstrip focus-zoom edge clipping.
 - Removed inherited guide row-count captions and General settings shortcut/drive-space panels.
+- Added direct hit-tested topbar mouse gestures in the AnyCPU plugin.
+- Shortened artist/album toggle captions to the current target view.
+- Added an optional, separate installer presentation helper for readable buttons and reduced repainting.
 - Added click and drag seeking to the native music Now Playing progress bar.
 
-See [validation and limitations](docs/VALIDATION.md) and [maintenance guidance](docs/MAINTENANCE.md). The existing checklist remains 36/37 passed (97.3%) and one blocked, carried forward from ALPHA9. The separate [V6 feedback review](docs/V6-FEEDBACK-REVIEW.md) records new settings/guide checks and user-confirmed TuneIn operation. Topbar input timing and other unverified behavior remain documented. A separate populated EPG check is documented without changing the checklist denominator. This is **not** an overall compatibility percentage.
+See [validation and limitations](docs/VALIDATION.md) and [maintenance guidance](docs/MAINTENANCE.md). The existing checklist remains 36/37 passed (97.3%) and one blocked, carried forward from ALPHA9. The separate [V6 feedback review](docs/V6-FEEDBACK-REVIEW.md) records new settings/guide checks and user-confirmed TuneIn operation. New targeted topbar evidence and remaining input limits are documented. See the optional [installer UI helper](docs/INSTALLER-UI.md); the ordinary MPE1 does not change the installed Extension Installer. A separate populated EPG check is documented without changing the checklist denominator. This is **not** an overall compatibility percentage.
 
 ## Repository layout
 
 | Path | Contents |
 | --- | --- |
 | `skin/Backdrop/` | Complete installable skin, including images, sounds, and translations |
-| `Source/` | Menu editor source, build script, and 1.39.0.9 reference DLL |
+| `Source/` | Menu editor source, build script, and 1.39.0.11 reference DLL |
 | `fonts/` | Fonts carried over from the original installer |
 | `config/` | Default menu editor configuration |
 | `packaging/` | Portable installer template and payload checksums |
@@ -56,7 +59,7 @@ python tools/package.py
 
 Review the rebuilt DLL and assembly version before refreshing the payload hashes. The refresh records an intentional payload change; it is not a compatibility test. To package the unchanged checked-in reference DLL, skip the editor build and hash refresh.
 
-The installer is written to `dist/Backdrop-MP139-AnyCPU-ALPHA10.mpe1`. Packaging can also use the checked-in reference DLL. GitHub Actions validates the payload and builds an installer artifact; it does not run the MediaPortal GUI or compile the editor against MediaPortal binaries.
+The installer is written to `dist/Backdrop-MP139-AnyCPU-ALPHA11.mpe1`. Packaging can also use the checked-in reference DLL. GitHub Actions validates the payload and builds an installer artifact; it does not run the MediaPortal GUI or compile the editor against MediaPortal binaries.
 
 ## Credits
 

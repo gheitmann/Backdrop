@@ -17,6 +17,7 @@ $argsList+='/resource:'+(Join-Path $src 'logo_disabled.png')+',BackdropMenuEdito
 foreach($file in @('BackdropMenuEditor.cs','BackdropMenuEditorConfig.cs','BackdropMenuEditorConfig.Designer.cs','MusicHandler.cs','Properties\AssemblyInfo.cs')){$argsList+=Join-Path $src $file}
 $argsList+=Join-Path $PSScriptRoot 'OptionalPluginAdapters.cs'
 $argsList+=Join-Path $PSScriptRoot 'PointerSeek.cs'
+$argsList+=Join-Path $PSScriptRoot 'PointerTopbar.cs'
 & 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe' @argsList
 if($LASTEXITCODE -ne 0){throw 'Compilation failed'}
 

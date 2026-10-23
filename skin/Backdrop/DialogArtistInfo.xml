@@ -264,7 +264,7 @@
       <width>248</width>
       <height>60</height>
       <font>font14</font>
-      <label>#(L(689)) / #(L(132))</label>
+      <label></label>
       <onleft>4</onleft>
       <textalign>center</textalign>
       <textureFocus>button.focus.png</textureFocus>
@@ -281,6 +281,34 @@
       <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
       <onclick>#(skin.togglesetting('#ArtistInfo.ShowAlbums'))</onclick>
+    </control>
+    <control>
+      <description>Current information toggle target</description>
+      <type>label</type>
+      <id>506</id>
+      <posX>318</posX>
+      <posY>625</posY>
+      <width>248</width>
+      <height>45</height>
+      <font>font14</font>
+      <label>132</label>
+      <align>center</align>
+      <textcolor>ffffffff</textcolor>
+      <visible>!skin.hassetting(#ArtistInfo.ShowAlbums)</visible>
+    </control>
+    <control>
+      <description>Current information toggle target</description>
+      <type>label</type>
+      <id>505</id>
+      <posX>318</posX>
+      <posY>625</posY>
+      <width>248</width>
+      <height>45</height>
+      <font>font14</font>
+      <label>689</label>
+      <align>center</align>
+      <textcolor>ffffffff</textcolor>
+      <visible>skin.hassetting(#ArtistInfo.ShowAlbums)</visible>
     </control>
     <control>
       <description>Refresh</description>

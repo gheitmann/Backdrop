@@ -16954,10 +16954,10 @@
       <Major>1</Major>
       <Minor>39</Minor>
       <Build>0</Build>
-      <Revision>10</Revision>
+      <Revision>11</Revision>
     </Version>
     <ExtensionDescription>Experimental Backdrop 1.0.1 port for MediaPortal 1.39. Includes an AnyCPU menu editor. Tested on x64; full x86 runtime testing remains pending. Requires compatible external Fanart Handler and Latest Media Handler plugins. See README.md and docs/VALIDATION.md.</ExtensionDescription>
-    <VersionDescription>ALPHA10: remove inherited guide row captions and General settings extras; retain native navigation. AnyCPU editor 1.39.0.9 unchanged.</VersionDescription>
+    <VersionDescription>ALPHA11: direct topbar pointer gestures and shorter music information toggles. AnyCPU editor 1.39.0.11. Separate optional installer presentation helper.</VersionDescription>
     <DevelopmentStatus>Alpha</DevelopmentStatus>
     <OnlineLocation>
     </OnlineLocation>
