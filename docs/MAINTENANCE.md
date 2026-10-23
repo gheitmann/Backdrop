@@ -94,3 +94,10 @@ Local maintenance history and immutable fixtures remain under the owner's `Docum
 - Preserve the original 1920 x 1080 canvas without scaling coordinates again. Current control bindings still take precedence over legacy control types: group 100 is button3part, preview is videowindow 99 and keyed-channel label 34 remains present.
 - Inline the preview overlay exactly once. Retain common.time.xml for the original right-aligned clock. Channel label width, header logo position and clipped timeline are documented compatibility adjustments.
 - Seven visible rows require pagination testing. Retained fixtures exercised selection, long descriptions, keyboard pagination, group switching and single-channel mode. Actual Live TV remains unverified without a tuner mapping.
+
+## ALPHA13 lessons
+
+- Rotation `center` is an absolute skin-coordinate pivot. A zero component invokes the native automatic centre; it is not a local zero offset. Use an explicit nonzero lower-left anchor for bottom-to-top captions, and keep left text alignment.
+- Account for native scaling before rotation: horizontal text width becomes vertical extent, so ultrawide output needs a shorter bounded viewport. check_guide_layout.py verifies containment at 1920 x 1080 and 3440 x 1440.
+- Keep guide group captions inside X=7..59/Y=612..1060. Active definitions use X=12/Y=1050 and a 320 x 34 viewport; long names scroll within it. Do not use the old centred 417-pixel label or mixed pivot 35,0.
+- Shared dialog corrections retain IDs and actions. DialogMenu title 4 is also used by music Actions; verify the actual runtime route when testing an equivalent context menu.

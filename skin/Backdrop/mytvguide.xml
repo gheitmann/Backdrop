@@ -362,18 +362,19 @@
       <description>TvGroup button label</description>
       <type>fadelabel</type>
       <id>0</id>
-      <posX>42</posX>
-      <posY>1046</posY>
-      <width>417</width>
-      <align>center</align>
-      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <posX>12</posX>
+      <posY>1050</posY>
+      <width>320</width>
+      <align>left</align>
+      <scrollStartDelaySec>3</scrollStartDelaySec>
       <label>#TV.Guide.ChangeGroup</label>
       <font>font14BC</font>
       <shadowAngle>45</shadowAngle>
       <shadowDistance>1</shadowDistance>
       <shadowColor>ff333333</shadowColor>
       <textcolor>FFFFFFFF</textcolor>
-      <animation effect="rotate" start="90" end="90" center="35,0" time="0" condition="true">Conditional</animation>
+      <height>34</height>
+      <animation effect="rotate" start="90" end="90" center="12,1050" time="0" condition="true">Conditional</animation>
     </control>
     <control>
       <description>record pin</description>
