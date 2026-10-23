@@ -1,5 +1,5 @@
 {
-  "scope": "Original package geometry reference for correction of V11; not implemented or runtime-validated by this reference update.",
+  "scope": "Verified original package geometry; implemented in ALPHA12 with current native bindings. Runtime evidence and limits are in VALIDATION.md.",
   "source_package": "351320_Backdrop_v_1_0_1.mpe1",
   "guide_byte_match_verified": true,
   "coordinate_canvas": {

@@ -13,7 +13,7 @@ Use this repository as the versioned source for future Backdrop changes. Keep re
 7. Keep regular-page topbar changes selective. Dialog, fullscreen, OSD, calibration, and screensaver behavior needs separate review.
 8. Preserve fixed separators instead of unsupported `#scroll.wrap` tokens.
 
-The skin settings page omits the DefaultWideHD BasicHome editor and the ineffective EPG row selector. Backdrop has its own external editor and the current guide uses 12 rows.
+The skin settings page omits the DefaultWideHD BasicHome editor and the ineffective EPG row selector. Backdrop has its own external editor. The TV guide uses the original lower seven-row layout from ALPHA12; the radio guide retains its prior layout.
 
 ## ALPHA6 lessons
 
@@ -87,3 +87,10 @@ Local maintenance history and immutable fixtures remain under the owner's `Docum
 
 - Before the next guide update, read ORIGINAL-TVGUIDE-LAYOUT.md and its JSON anchors. The original guide is in the lower screen area (panel Y=612); description Y=225 and preview X=1537/Y=162 are above it. The original clock uses a right anchor X=1912/Y=6. Do not preserve the active DWHD 12-row template geometry as Backdrop's final layout.
 - Original mytvguide.xml byte-matches the supplied MPE1. Its coordinate canvas is already 1920 x 1080; no second 1.5 scaling. Resolve imports and row-relative coordinates, and preserve modern required bindings such as group button3part 100.
+
+## ALPHA12 lessons
+
+- Enforce ORIGINAL-TVGUIDE-LAYOUT.json anchors with tools/check_guide_layout.py. Keep the two active TV guide definitions identical; do not reintroduce mp139.mytvguide.12lines.xml as their template.
+- Preserve the original 1920 x 1080 canvas without scaling coordinates again. Current control bindings still take precedence over legacy control types: group 100 is button3part, preview is videowindow 99 and keyed-channel label 34 remains present.
+- Inline the preview overlay exactly once. Retain common.time.xml for the original right-aligned clock. Channel label width, header logo position and clipped timeline are documented compatibility adjustments.
+- Seven visible rows require pagination testing. Retained fixtures exercised selection, long descriptions, keyboard pagination, group switching and single-channel mode. Actual Live TV remains unverified without a tuner mapping.

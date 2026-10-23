@@ -3,11 +3,18 @@
   <id>600</id>
   <defaultcontrol>2</defaultcontrol>
   <allowoverlay>no</allowoverlay>
-  <!--define>#header.label:#(iif(neq(#TV.Guide.ChangeGroup,' '),'#(L(605))  ·  #(L(4))  ·  #TV.Guide.ChangeGroup','#(L(605))  ·  #(L(4))'))</define-->
-  <define>#header.hover:MP139\hover_tvprogram.png</define>
+  <disabletopbar>no</disabletopbar>
   <controls>
     <control>
-      <description>Default Background</description>
+      <description>dummy (visible when music is playing)</description>
+      <type>label</type>
+      <id>3337</id>
+      <posX>3000</posX>
+      <label>#Play.Current.Album</label>
+      <visible>player.hasmedia+control.hastext(3337)</visible>
+    </control>
+    <control>
+      <description>Overlay</description>
       <type>image</type>
       <id>0</id>
       <posX>0</posX>
@@ -15,121 +22,700 @@
       <width>1920</width>
       <height>1080</height>
       <texture>background.tvguide.png</texture>
-      <colordiffuse>ffffffff</colordiffuse>
     </control>
-    <!--import>common.window.xml</import-->
-    <!--import>common.time.xml</import-->
-    <include>mp139.mytvguide.12lines.xml</include>
-    <include>mp139.mytvguide.nocolors.xml</include>
-    <!--include condition="!#skin.tvguide.usecolorsforbuttons">mytvguide.nocolors.xml</include-->
     <control>
+      <description>dummy (visible when music is playing)</description>
+      <type>label</type>
+      <id>678961</id>
+      <posX>3000</posX>
+      <label>#Play.Current.Album</label>
+      <visible>player.hasmedia</visible>
+    </control>
+    <control>
+      <description>TV background</description>
+      <type>image</type>
+      <id>98</id>
+      <posX>3117</posX>
+      <posY>830</posY>
+      <width>328</width>
+      <height>186</height>
+      <texture>Picture_cover.png</texture>
+      <visible>no</visible>
+    </control>
+    <control>
+      <type>label</type>
+      <description>Guide Group Label</description>
+      <id>11</id>
+      <posX>825</posX>
+      <posY>2</posY>
+      <width>600</width>
+      <font>font12</font>
+      <align>left</align>
+      <textcolor>ffffffff</textcolor>
+      <label>#TV.Guide.Group</label>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>TVGUIDE Panel</description>
+      <type>image</type>
+      <id>2</id>
+      <posX>30</posX>
+      <posY>612</posY>
+      <width>1882</width>
+      <height>453</height>
+      <colordiffuse>ffffffff</colordiffuse>
+      <texture>-</texture>
+    </control>
+    <control>
+      <description>Single Channel Label</description>
+      <type>label</type>
+      <id>32</id>
+      <posX>458</posX>
+      <posY>552</posY>
+      <font>font20</font>
+      <align>left</align>
+    </control>
+    <control>
+      <description>Single Channel Image</description>
+      <type>image</type>
+      <id>33</id>
+      <posX>350</posX>
+      <posY>555</posY>
+      <width>50</width>
+      <height>50</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+      <texture>defaultVideoBig.png</texture>
+    </control>
+    <control>
+      <description>time header background image template</description>
+      <type>image</type>
+      <id>90</id>
+      <posX>356</posX>
+      <posY>555</posY>
+      <width>244</width>
+      <height>51</height>
+      <texture>tvguide_time_bg.png</texture>
+    </control>
+    <control>
+      <description>time header label template</description>
+      <type>label</type>
+      <id>40</id>
+      <posX>458</posX>
+      <posY>555</posY>
+      <font>font16</font>
+      <textcolor>ff7FB1E5</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+    </control>
+    <control>
+      <description>day spin control</description>
+      <type>spincontrol</type>
+      <id>6</id>
+      <width>52</width>
+      <height>52</height>
+      <posX>50</posX>
+      <posY>555</posY>
+      <showrange>no</showrange>
+      <orientation>horizontal</orientation>
+      <align>center</align>
+      <onleft>6</onleft>
+      <onright>8</onright>
+      <textcolor>ff7FB1E5</textcolor>
+      <textureUp>arrow_round_right_nofocus.png</textureUp>
+      <textureDown>arrow_round_left_nofocus.png</textureDown>
+      <textureUpFocus>arrow_round_right_focus.png</textureUpFocus>
+      <textureDownFocus>arrow_round_left_focus.png</textureDownFocus>
+    </control>
+    <control>
+      <description>time interval spin control</description>
+      <type>spincontrol</type>
+      <id>8</id>
+      <width>52</width>
+      <height>52</height>
+      <posX>363</posX>
+      <posY>555</posY>
+      <showrange>no</showrange>
+      <orientation>horizontal</orientation>
+      <align>center</align>
+      <textureUp>arrow_round_right_nofocus.png</textureUp>
+      <textureDown>arrow_round_left_nofocus.png</textureDown>
+      <textureUpFocus>arrow_round_right_focus.png</textureUpFocus>
+      <textureDownFocus>arrow_round_left_focus.png</textureDownFocus>
+      <onleft>6</onleft>
+      <onright>8</onright>
+    </control>
+    <control>
+      <description>Channel template</description>
+      <type>image</type>
+      <id>20</id>
+      <posX>63</posX>
+      <posY>612</posY>
+      <width>398</width>
+      <height>64</height>
+    </control>
+    <control>
+      <description>Channel image template</description>
+      <type>image</type>
+      <id>7</id>
+      <width>62</width>
+      <height>62</height>
+      <posX>3</posX>
+      <posY>2</posY>
+      <keepaspectratio>yes</keepaspectratio>
+      <zoom>no</zoom>
+      <centered>yes</centered>
+      <texture>defaultVideoBig.png</texture>
+    </control>
+    <control>
+      <description>channel Label template</description>
+      <type>label</type>
+      <id>18</id>
+      <posX>75</posX>
+      <posY>10</posY>
+      <width>310</width>
+      <height>40</height>
+      <font>font14</font>
+      <textcolor>FFFFFFFF</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+    </control>
+    <control>
+      <description>Current program logo</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>15</posX>
+      <posY>112</posY>
+      <width>105</width>
+      <height>105</height>
+      <texture>#TV.Guide.thumb</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+      <visible>!control.isvisible(33)</visible>
+    </control>
+    <control>
+      <description>Current program title</description>
+      <type>label</type>
+      <id>13</id>
+      <posX>30</posX>
+      <posY>45</posY>
+      <width>1350</width>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <font>font50BC</font>
+      <label>#TV.Guide.Title</label>
+    </control>
+    <control>
+      <description>Current program time</description>
+      <type>label</type>
+      <id>14</id>
+      <posX>150</posX>
+      <posY>120</posY>
+      <width>450</width>
+      <label>#TV.Guide.Time</label>
+      <align>left</align>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+    </control>
+    <control>
+      <description>Current program genre</description>
+      <type>label</type>
+      <id>27</id>
+      <posX>150</posX>
+      <posY>165</posY>
+      <width>405</width>
+      <label>#TV.Guide.Genre</label>
+      <align>left</align>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+    </control>
+    <control>
+      <description>Description1</description>
+      <type>textboxscrollup</type>
+      <id>15</id>
+      <posX>15</posX>
+      <posY>225</posY>
+      <width>1050</width>
+      <height>300</height>
+      <seperator>________________________________________________________________________________________________________________</seperator>
+      <label>#TV.Guide.Description</label>
+      <font>font14</font>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+    </control>
+    <control>
+      <description>template for program title light area</description>
+      <type>label</type>
+      <id>24</id>
+      <visible>no</visible>
+      <label>-</label>
+      <font>font13</font>
+      <textcolor>ff7FB1E5</textcolor>
+      <posX>10</posX>
+      <posY>12</posY>
+    </control>
+    <control>
+      <description>vertical timeline</description>
+      <type>image</type>
+      <id>25</id>
+      <posX>82</posX>
+      <posY>597</posY>
+      <height>468</height>
+      <colordiffuse>c0ffffff</colordiffuse>
+      <texture>tvguide_slider.png</texture>
+    </control>
+    <control>
+      <description>template for program title darkarea </description>
+      <type>label</type>
+      <visible>no</visible>
+      <id>26</id>
+      <label>-</label>
+      <font>font13</font>
+      <textcolor>FFFFFFFF</textcolor>
+      <posX>10</posX>
+      <posY>12</posY>
+    </control>
+    <control>
+      <description>template for program running button</description>
+      <type>button3part</type>
+      <id>35</id>
+      <textureFocusedLeft tileFill="no">tvguide_button_selected_left.png</textureFocusedLeft>
+      <textureNonFocusedLeft tileFill="no">tvguide_button_left.png</textureNonFocusedLeft>
+      <textureFocusedMid tileFill="no">tvguide_button_selected_middle.png</textureFocusedMid>
+      <textureNonFocusedMid tileFill="no">tvguide_button_middle.png</textureNonFocusedMid>
+      <textureFocusedRight tileFill="no">tvguide_button_selected_right.png</textureFocusedRight>
+      <textureNonFocusedRight tileFill="no">tvguide_button_right.png</textureNonFocusedRight>
+      <textureIcon>-</textureIcon>
+    </control>
+    <control>
+      <description>template for program not running button</description>
+      <type>button3part</type>
+      <id>36</id>
+      <textureFocusedLeft tileFill="no">tvguide_button_selected_left.png</textureFocusedLeft>
+      <textureNonFocusedLeft tileFill="no">tvguide_button_light_left.png</textureNonFocusedLeft>
+      <textureFocusedMid tileFill="no">tvguide_button_selected_middle.png</textureFocusedMid>
+      <textureNonFocusedMid tileFill="no">tvguide_button_light_middle.png</textureNonFocusedMid>
+      <textureFocusedRight tileFill="no">tvguide_button_selected_right.png</textureFocusedRight>
+      <textureNonFocusedRight tileFill="no">tvguide_button_light_right.png</textureNonFocusedRight>
+      <textureIcon>-</textureIcon>
+      <textureIcon2>tvguide_hd_program.png</textureIcon2>
+    </control>
+    <control>
+      <description>template for program notify button</description>
+      <type>button3part</type>
+      <id>37</id>
+      <textureFocusedLeft tileFill="no">tvguide_notifyButton_Focus_left.png</textureFocusedLeft>
+      <textureNonFocusedLeft tileFill="no">tvguide_notifyButton_noFocus_left.png</textureNonFocusedLeft>
+      <textureFocusedMid tileFill="no">tvguide_notifyButton_Focus_middle.png</textureFocusedMid>
+      <textureNonFocusedMid tileFill="no">tvguide_notifyButton_noFocus_middle.png</textureNonFocusedMid>
+      <textureFocusedRight tileFill="no">tvguide_notifyButton_Focus_right.png</textureFocusedRight>
+      <textureNonFocusedRight tileFill="no">tvguide_notifyButton_noFocus_right.png</textureNonFocusedRight>
+      <textureIcon>-</textureIcon>
+    </control>
+    <control>
+      <description>template for program record button</description>
+      <type>button3part</type>
+      <id>38</id>
+      <textureFocusedLeft tileFill="no">tvguide_recButton_Focus_left.png</textureFocusedLeft>
+      <textureNonFocusedLeft tileFill="no">tvguide_recButton_noFocus_left.png</textureNonFocusedLeft>
+      <textureFocusedMid tileFill="no">tvguide_recButton_Focus_middle.png</textureFocusedMid>
+      <textureNonFocusedMid tileFill="no">tvguide_recButton_noFocus_middle.png</textureNonFocusedMid>
+      <textureFocusedRight tileFill="no">tvguide_recButton_Focus_right.png</textureFocusedRight>
+      <textureNonFocusedRight tileFill="no">tvguide_recButton_Focus_right.png</textureNonFocusedRight>
+      <textureIcon>-</textureIcon>
+    </control>
+    <control>
+      <description>TvGroup button</description>
+      <type>button3part</type>
+      <id>100</id>
+      <posX>7</posX>
+      <posY>612</posY>
+      <width>52</width>
+      <height>448</height>
+      <textureFocusedLeft>-</textureFocusedLeft>
+      <textureNonFocusedLeft>-</textureNonFocusedLeft>
+      <textureFocusedMid>tv_group_bg_focus.png</textureFocusedMid>
+      <textureNonFocusedMid>tv_group_bg.png</textureNonFocusedMid>
+      <textureFocusedRight>-</textureFocusedRight>
+      <textureNonFocusedRight>-</textureNonFocusedRight>
+      <textureIcon>-</textureIcon>
+      <textureIcon2>-</textureIcon2>
+      <label/>
+      <onleft>60</onleft>
+      <onright>6</onright>
+      <onup>6</onup>
+      <ondown>6</ondown>
+    </control>
+    <control>
+      <description>TvGroup button label</description>
       <type>fadelabel</type>
-      <description>e.g. Setup TV</description>
       <id>0</id>
-      <posX>45</posX>
-      <posY>54</posY>
-      <label>#(iif(neq(#TV.Guide.ChangeGroup,' '),'#(L(605))  ·  #(L(4))  ·  #TV.Guide.ChangeGroup','#(L(605))  ·  #(L(4))'))</label>
-      <width>1802</width>
+      <posX>42</posX>
+      <posY>1046</posY>
+      <width>417</width>
+      <align>center</align>
+      <scrollStartDelaySec>3600</scrollStartDelaySec>
+      <label>#TV.Guide.ChangeGroup</label>
+      <font>font14BC</font>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>1</shadowDistance>
+      <shadowColor>ff333333</shadowColor>
+      <textcolor>FFFFFFFF</textcolor>
+      <animation effect="rotate" start="90" end="90" center="35,0" time="0" condition="true">Conditional</animation>
+    </control>
+    <control>
+      <description>record pin</description>
+      <type>image</type>
+      <id>31</id>
+      <posX>300</posX>
+      <posY>114</posY>
+      <width>450</width>
+      <height>50</height>
+      <texture>time_bg_big.png</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>no</visible>
+    </control>
+    <import>common.time.xml</import>
+    <control>
+      <description>Keyed channel number</description>
+      <type>label</type>
+      <id>34</id>
+      <posX>265</posX>
+      <posY>555</posY>
+      <width>60</width>
+      <height>60</height>
       <align>left</align>
       <font>font13</font>
+      <textcolor>ffffffff</textcolor>
+      <label>6</label>
+      <disabledcolor>90ffffff</disabledcolor>
       <shadowAngle>0</shadowAngle>
-      <shadowDistance>
-      </shadowDistance>
-      <shadowColor>
-      </shadowColor>
-      <textcolor>lightgray</textcolor>
-      <colordiffuse>ffffffff</colordiffuse>
-      <wrapString>  |  </wrapString>
-      <scrollStartDelaySec>5</scrollStartDelaySec>
+      <shadowDistance>0</shadowDistance>
+      <shadowColor/>
     </control>
     <control>
-      <description>Date Time Weather</description>
-      <type>group</type>
-      <layout>StackLayout(5, Horizontal, true)</layout>
-      <posX>45</posX>
-      <posY>16</posY>
-      <align>left</align>
-      <width>1270</width>
-      <height>58</height>
-      <visible>[plugin.isenabled(World Weather)|plugin.isenabled(World Weather Lite)]+[[plugin.isenabled(Sleep Control)+string.equals(#SleepControl.Start, )]|!plugin.isenabled(Sleep Control)]</visible>
-      <control>
-        <type>fadelabel</type>
-        <description>Date Time Weather Label</description>
-        <id>0</id>
-        <label>#time  ·  #date  ·  #WorldWeather.Location: #WorldWeather.TodayCondition</label>
-        <width>50</width>
-        <maxWidth>1270</maxWidth>
-        <textcolor>fff5deb3</textcolor>
-        <shadowAngle>10</shadowAngle>
-        <shadowDistance>2</shadowDistance>
-        <shadowColor>ff000000</shadowColor>
-        <align>left</align>
-        <font>font13</font>
-        <posX>145</posX>
-        <posY>993</posY>
-        <wrapString>  |  </wrapString>
-        <scrollStartDelaySec>5</scrollStartDelaySec>
-      </control>
-      <control>
-        <type>image</type>
-        <description>Weather Icon</description>
-        <id>0</id>
-        <texture>#WorldWeather.TodayIconImage</texture>
-        <width>55</width>
-        <height>35</height>
-        <align>left</align>
-      </control>
-      <control>
-        <type>fadelabel</type>
-        <description>Temperature Label</description>
-        <id>0</id>
-        <label> #WorldWeather.TodayTemperature</label>
-        <width>20</width>
-        <maxWidth>1450</maxWidth>
-        <textcolor>fff5deb3</textcolor>
-        <shadowAngle>10</shadowAngle>
-        <shadowDistance>2</shadowDistance>
-        <shadowColor>ff000000</shadowColor>
-        <align>left</align>
-        <font>font13</font>
-        <posX>145</posX>
-        <posY>993</posY>
-        <wrapString>  |  </wrapString>
-        <scrollStartDelaySec>5</scrollStartDelaySec>
-      </control>
-      <dimColor>ffffffff</dimColor>
+      <description>dummy (visible when there is a next track)</description>
+      <type>label</type>
+      <id>3338</id>
+      <posX>3000</posX>
+      <label>#Play.Next.Title</label>
+      <visible>Player.HasAudio+control.hastext(3338)</visible>
     </control>
     <control>
-      <description>Date</description>
+      <description>dummy (visible when tv is running)</description>
+      <type>label</type>
+      <id>3339</id>
+      <posX>3000</posX>
+      <label>#TV.View.channel</label>
+      <visible>Player.HasVideo+!control.hastext(3337)</visible>
+    </control>
+    <control>
+      <description>Line separator</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1365</posX>
+      <posY>189</posY>
+      <width>360</width>
+      <height>9</height>
+      <shouldCache>true</shouldCache>
+      <texture>line.separator.png</texture>
+      <visible>[[control.isvisible(3337)+Player.HasAudio]|[Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)]]+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>Music Thumb Default</description>
+      <id>0</id>
+      <type>image</type>
+      <posX>1678</posX>
+      <posY>142</posY>
+      <width>238</width>
+      <height>238</height>
+      <keepaspectratio>no</keepaspectratio>
+      <centered>yes</centered>
+      <zoom>yes</zoom>
+      <shouldCache>true</shouldCache>
+      <texture mask="music_frame_rounder_corners_background1.png">nothumb.png</texture>
+      <visible>[[control.isvisible(3337)+Player.HasAudio+![Control.hasthumb(987896)|Control.hasthumb(987897)]]|[[Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)]]+![Control.hasthumb(987896)|Control.hasthumb(987897)]]+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>Music Thumb</description>
+      <id>987897</id>
+      <type>image</type>
+      <posX>1678</posX>
+      <posY>142</posY>
+      <width>238</width>
+      <height>238</height>
+      <keepaspectratio>no</keepaspectratio>
+      <centered>yes</centered>
+      <zoom>yes</zoom>
+      <!--<texture mask="music_frame_rounder_corners_background1.png">#Play.Current.ArtistThumb</texture>  -->
+      <texture mask="music_frame_rounder_corners_background1.png">#fanarthandler.music.artisthumb.play</texture>
+      <visible>[[control.isvisible(3337)+Player.HasAudio]|[Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)]]+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>Music Thumb</description>
+      <id>987896</id>
+      <type>image</type>
+      <posX>1678</posX>
+      <posY>142</posY>
+      <width>238</width>
+      <height>238</height>
+      <keepaspectratio>no</keepaspectratio>
+      <centered>yes</centered>
+      <zoom>yes</zoom>
+      <texture mask="music_frame_rounder_corners_background1.png">#Play.Current.Thumb</texture>
+      <visible>[[control.isvisible(3337)+Player.HasAudio]|[Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)]]+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>Frame Music</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1678</posX>
+      <posY>142</posY>
+      <width>238</width>
+      <height>238</height>
+      <texture>music_frame_rounder_corners.png</texture>
+      <visible>[[control.isvisible(3337)+Player.HasAudio]|[Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)]]+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>Artist label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <width>900</width>
+      <height>60</height>
+      <posX>1680</posX>
+      <posY>154</posY>
+      <label>#Play.Current.Artist</label>
+      <align>right</align>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <font>font13BCB</font>
+      <visible>control.isvisible(3337)+Player.HasAudio+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>Album label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <width>900</width>
+      <height>60</height>
+      <posX>1680</posX>
+      <posY>195</posY>
+      <label>#Play.Current.Album</label>
+      <align>right</align>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <font>font11</font>
+      <visible>control.isvisible(3337)+Player.HasAudio+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>now playing label</description>
       <type>label</type>
       <id>0</id>
-      <posX>80</posX>
-      <posY>16</posY>
-      <label>#time  ·  #date</label>
-      <font>font13</font>
-      <align>left</align>
-      <textcolor>fff5deb3</textcolor>
-      <shadowAngle>10</shadowAngle>
+      <width>900</width>
+      <height>68</height>
+      <posX>1680</posX>
+      <posY>255</posY>
+      <label>4540</label>
+      <align>right</align>
+      <textcolor>ff7FB1E5</textcolor>
+      <shadowAngle>45</shadowAngle>
       <shadowDistance>2</shadowDistance>
-      <shadowColor>ff000000</shadowColor>
-      <visible>!plugin.isenabled(World Weather)+!plugin.isenabled(World Weather Lite)+[[plugin.isenabled(Sleep Control)+string.equals(#SleepControl.Start, )]|!plugin.isenabled(Sleep Control)]</visible>
-      <disabledcolor>90ffffff</disabledcolor>
+      <shadowColor>ff191919</shadowColor>
+      <font>font11</font>
+      <visible>control.isvisible(3337)+Player.HasAudio+![facadeview.smallicons|facadeview.largeicons]</visible>
     </control>
     <control>
-      <description>Sleep Start/End</description>
+      <description>title label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <width>900</width>
+      <height>60</height>
+      <posX>1680</posX>
+      <posY>284</posY>
+      <label>#Play.Current.Title</label>
+      <align>right</align>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <font>font13</font>
+      <visible>control.isvisible(3337)+Player.HasAudio+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>Progressbar Background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1449</posX>
+      <posY>328</posY>
+      <width>231</width>
+      <height>15</height>
+      <shouldCache>true</shouldCache>
+      <texture>progressback.png</texture>
+      <visible>control.isvisible(3337)+Player.HasAudio+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>progress bar</description>
+      <type>progress</type>
+      <id>0</id>
+      <posX>1437</posX>
+      <posY>321</posY>
+      <width>258</width>
+      <height>15</height>
+      <label>#percentage</label>
+      <texturebg>-</texturebg>
+      <lefttexture>-</lefttexture>
+      <midtexture>progressbar_mid.png</midtexture>
+      <righttexture>-</righttexture>
+      <visible>control.isvisible(3337)+Player.HasAudio+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>play time / duration label</description>
       <type>label</type>
       <id>0</id>
-      <posX>80</posX>
-      <posY>16</posY>
-      <label>#time  ·  SleepControl #SleepControl.Method: #SleepControl.Counter  (#SleepControl.Start - #SleepControl.End)</label>
-      <align>left</align>
-      <font>font13</font>
-      <textcolor>ffff0033</textcolor>
-      <shadowAngle>10</shadowAngle>
+      <width>270</width>
+      <height>60</height>
+      <posX>1680</posX>
+      <posY>332</posY>
+      <align>right</align>
+      <label>#currentplaytime / #duration</label>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
       <shadowDistance>2</shadowDistance>
-      <shadowColor>ff000000</shadowColor>
-      <visible>plugin.isenabled(Sleep Control)+!string.equals(#SleepControl.Start, )</visible>
-      <disabledcolor>90ffffff</disabledcolor>
+      <shadowColor>ff191919</shadowColor>
+      <font>font11</font>
+      <visible>control.isvisible(3337)+Player.HasAudio+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>Artist label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <width>900</width>
+      <height>60</height>
+      <posX>1680</posX>
+      <posY>150</posY>
+      <label>#Play.Current.Title</label>
+      <align>right</align>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <font>font13</font>
+      <visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>Album label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <width>900</width>
+      <height>60</height>
+      <posX>1680</posX>
+      <posY>195</posY>
+      <label>#currentplaytime</label>
+      <align>right</align>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <font>font13</font>
+      <visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>video preview window</description>
+      <type>videowindow</type>
+      <id>99</id>
+      <posX>1537</posX>
+      <posY>162</posY>
+      <width>359</width>
+      <height>197</height>
+      <textureFocus>-</textureFocus>
+      <visible>Player.HasVideo+!control.isvisible(3337)+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <id>0</id>
+      <type>image</type>
+      <posX>1490</posX>
+      <posY>120</posY>
+      <width>450</width>
+      <height>278</height>
+      <shouldCache>true</shouldCache>
+      <texture>lcd_flat.png</texture>
+      <visible>Player.HasVideo+!control.isvisible(3337)+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>title label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <width>900</width>
+      <height>60</height>
+      <posX>1515</posX>
+      <posY>252</posY>
+      <label>#Play.Current.Title</label>
+      <align>right</align>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <font>font13</font>
+      <visible>Player.HasVideo+!control.isvisible(3337)+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>Progressbar Background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1279</posX>
+      <posY>297</posY>
+      <width>234</width>
+      <height>15</height>
+      <shouldCache>true</shouldCache>
+      <texture>progressback.png</texture>
+      <visible>Player.HasVideo+!control.isvisible(3337)+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>progress bar</description>
+      <type>progress</type>
+      <id>0</id>
+      <posX>1268</posX>
+      <posY>290</posY>
+      <width>258</width>
+      <height>15</height>
+      <label>#percentage</label>
+      <texturebg>-</texturebg>
+      <lefttexture>-</lefttexture>
+      <midtexture>progressbar_mid.png</midtexture>
+      <righttexture>-</righttexture>
+      <visible>Player.HasVideo+!control.isvisible(3337)+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>play time / duration label</description>
+      <type>label</type>
+      <id>0</id>
+      <width>270</width>
+      <height>60</height>
+      <posX>1515</posX>
+      <posY>300</posY>
+      <align>right</align>
+      <label>#currentplaytime / #duration</label>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <font>font13</font>
+      <visible>Player.HasVideo+!control.isvisible(3337)+![facadeview.smallicons|facadeview.largeicons]</visible>
     </control>
   </controls>
 </window>
