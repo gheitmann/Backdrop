@@ -23,7 +23,7 @@ The skin settings page omits the DefaultWideHD BasicHome editor and the ineffect
 - Classic Home layout and DWHD-specific thumbnail/fanart controls must not be exposed merely because they appear in an imported settings page. Check the actual rendering path before retaining each option. Native MediaPortal configuration and working settings-page help are separate from these skin-only choices.
 - Previous-track action 15 (topbar control 22) uses `top_skipback_*`, while navigation Back uses `top_back_*`.
 - Guide time headers use `tvguide_time_bg.png` with Backdrop typography. Keep the required `button3part` control 100; use `tv_group_bg_focus.png` and `tv_group_bg.png` in its middle textures with no DWHD overlay. Do not replace the bound control type with the old plain button. The group state still needs a populated EPG check.
-- TuneIn/RadioTime is not installed in the isolated runtime. Its legacy source has synchronous network/player work, but that alone does not identify the owner's freeze. Obtain the actual plugin version, reproduction details, and log/thread evidence before changing its binaries or claiming a fix. Keep any plugin repair separate from the skin package.
+- TuneIn/RadioTime is not installed in the isolated runtime. The later V6 user report and screenshots confirm playback, search and virtual keyboard operation; the earlier freeze is not currently reproduced by the owner. No local runtime certification or binary fix is claimed. If a freeze returns, obtain the actual plugin version and log/thread evidence before changing binaries. Keep plugin repairs separate from the skin package.
 - Persistent artist/album info fixtures are separate from immutable v1 media. The artist-only MP3 intentionally omits its album tag to exercise the F9 artist-information branch; ordinary album-tagged songs open album information first. Album track metadata uses `number@title@seconds|` format.
 
 ## Validation and release process
@@ -69,3 +69,10 @@ Local maintenance history and immutable fixtures remain under the owner's `Docum
 - Filmstrip X=60/width=1800 reserves first-cover zoom space. Correct onright spelling; coverflow must be checked separately. Three-cover fixtures confirmed both layouts and selection changes.
 - Refresh retained v4-epg fixture dates before future guide testing. TV and radio use separate group tables; ChannelNavigator requires the standard radio All Channels group even for TV. See EPG-FIXTURES.md.
 - The 37-case follow-up reaches 36 passed, one offline-rating blocker; topbar immediate pointer timing remains explicitly limited despite earlier functional command passes.
+
+## ALPHA10 lessons
+
+- Apply the V6 feedback cleanup before future fallback-page updates: remove guide row-count captions in all 20 TV/radio variants and the static Skin settings caption in both definitions.
+- Do not reintroduce DWHD Keyboard Shortcuts or DriveFreeSpace panels into General settings. Keep native MP buttons 2–7, remove obsolete visibility conditions, and wrap focus 2 Up to 7 / 7 Down to 2. Saved flags may remain in personal settings and must not hide native options.
+- Keep current MP 1.39 category navigation vertical; restoring the entire old settings_general.xml would discard current native settings navigation.
+- Distinguish a second full-screen background from Backdrop's original sofa image fading to black. The populated TV guide check did not reproduce a second image; retain this as open rather than claiming a speculative fix.
