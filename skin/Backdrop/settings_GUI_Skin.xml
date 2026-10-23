@@ -533,20 +533,6 @@
         </control>
       </control>
       <control>
-        <type>label</type>
-        <id>1</id>
-        <posX>700</posX>
-        <posY>620</posY>
-        <width>500</width>
-        <label>#SkinTranslation.Translations.GuideRows.Label: 12 (Backdrop)</label>
-        <textcolor>lightgray</textcolor>
-        <font>font12</font>
-        <disabledcolor>90ffffff</disabledcolor>
-        <shadowAngle>0</shadowAngle>
-        <shadowDistance>0</shadowDistance>
-        <shadowColor />
-      </control>
-      <control>
         <description>tvguide rows</description>
         <type>menubutton</type>
         <id>33</id>
