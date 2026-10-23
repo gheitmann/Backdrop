@@ -2,7 +2,7 @@
 
 Experimental port of cul8er's **Backdrop 1.0.1** skin to **MediaPortal 1.39**.
 
-Current version on this branch: **ALPHA13**, menu editor **1.39.0.11**. The editor and installer target AnyCPU. Runtime checks were performed on MediaPortal 1.39 x64; a complete x86 runtime test is still pending.
+Current working version: **LOCAL14 (1.39.0.14)**, menu editor **1.39.0.14**. The last published release remains ALPHA13. Local build numbers advance when payloads change, even while publication is held. The editor and installer target AnyCPU. Runtime checks were performed on MediaPortal 1.39 x64; a complete x86 runtime test is still pending.
 
 ## Install
 
@@ -63,7 +63,7 @@ python tools/package.py
 
 Review the rebuilt DLL and assembly version before refreshing the payload hashes. The refresh records an intentional payload change; it is not a compatibility test. To package the unchanged checked-in reference DLL, skip the editor build and hash refresh.
 
-The installer is written to `dist/Backdrop-MP139-AnyCPU-ALPHA13.mpe1`. Packaging can also use the checked-in reference DLL. GitHub Actions validates the payload and builds an installer artifact; it does not run the MediaPortal GUI or compile the editor against MediaPortal binaries.
+The current installer is written to `dist/Backdrop-MP139-AnyCPU-LOCAL14.mpe1`. Packaging can also use the checked-in reference DLL. GitHub Actions validates the payload and builds an installer artifact; it does not run the MediaPortal GUI or compile the editor against MediaPortal binaries.
 
 ## Credits
 

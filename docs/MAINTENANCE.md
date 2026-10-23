@@ -113,3 +113,9 @@ Local maintenance history and immutable fixtures remain under the owner's `Docum
 - Package the UI helper and skin together using package-installer-ui.py --package. Install Backdrop.cmd invokes automatic initialization and native binding verification before launching the bundled MPE1. Keep VerifyOnly and Preview paths free of package installation. Do not ship installed core DLLs or overwrite them; retain the exact 1.39 unsigned assembly guard.
 - Final delivery must be a single EXE, as requested by the owner. build-setup.ps1 embeds the private ZIP; Setup.cs extracts and initializes internally, elevates only actual installation, waits for its child and cleans its own per-run files. A ZIP or scripts alone are not the final installer format.
 - Targeted status-label Refresh is insufficient with a transparent auto-sized label: old long text can remain on the parent. Keep lbl_curr_file fixed-size and opaque, with ellipsis, and verify long-to-short repainting before future presentation changes.
+
+## LOCAL14 lessons
+
+- A held alpha publication must not freeze package identity. Increment the native package revision whenever delivering changed installable payloads; identify local builds separately. Otherwise MPE reports identical old/new versions. Keep native replacement confirmation rather than bypassing it.
+- Music radio checkbuttons inherit a yellow-orb texture from references.xml when textureNoFocus is omitted. Override that texture explicitly; preserve the bound checkbutton and its native state.
+- Latest Media labels need explicit absolute pivots, bounded text height/width and a bottom anchor above the home bar. Apply the same geometry to BackdropMenuEditorConfig.cs and rebuild the editor, otherwise a menu save restores the overlap. check_guide_layout.py protects all nine definitions and generator geometry.

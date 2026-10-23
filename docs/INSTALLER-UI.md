@@ -6,19 +6,19 @@ This is separate from the skin MPE1. Installing the skin with the ordinary Exten
 
 ## Single EXE (preferred delivery)
 
-Run `Backdrop-Setup-LOCAL.exe` after closing MediaPortal. This is the complete distributable: no ZIP extraction, manual PowerShell command, Initialize.ps1 or companion DLL is required. It contains the skin and helper bundle, extracts into a private per-run directory under `%LOCALAPPDATA%\BackdropInstaller`, then removes that directory when the child installer exits. Logs remain in that parent directory. Installed MediaPortal core DLLs and MPE1 associations are not replaced.
+Run `Backdrop-Setup-LOCAL14.exe` after closing MediaPortal. This is the complete distributable: no ZIP extraction, manual PowerShell command, Initialize.ps1 or companion DLL is required. It contains the skin and helper bundle, extracts into a private per-run directory under `%LOCALAPPDATA%\BackdropInstaller`, then removes that directory when the child installer exits. Logs remain in that parent directory. Installed MediaPortal core DLLs and MPE1 associations are not replaced.
 
 Normal installation requests Windows administrator elevation. `--verify` initializes and probes without installing or elevating; `--preview` opens the harmless installer presentation preview. `--mediaportal "D:\MediaPortal"` selects a custom client folder. Otherwise automatic discovery and the folder picker are used. The existing unsigned MP 1.39 assembly compatibility guard remains enforced.
 
 The filename status label now has fixed bounds, an opaque background and ellipsis truncation. Refreshing a short name repaints the entire previous filename area. This addresses old long-name fragments without restoring per-file full-window repainting. Native file copying and registration are unchanged.
 
-Build the private bundle ZIP as described below, then run `powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools/build-setup.ps1 -BundlePath <bundle.zip> -OutputPath <setup.exe>`. Only the resulting EXE is required for installation; the SHA256 sidecar is optional verification material. The local build retains existing alpha metadata and is not published as a new release.
+Build the private bundle ZIP as described below, then run `powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools/build-setup.ps1 -BundlePath <bundle.zip> -OutputPath <setup.exe>`. Only the resulting EXE is required for installation; the SHA256 sidecar is optional verification material. LOCAL14 advances internal package, editor and setup versions to 1.39.0.14, without publishing a new alpha. Earlier LOCAL packages incorrectly retained 1.39.0.13; they are superseded. Native MPE may still ask to replace an installed package, but old/new versions now identify the actual builds.
 
 ## Integrated local bundle
 
 Extract `Backdrop-Installer-LOCAL.zip` into a writable folder, close MediaPortal and double-click `Install Backdrop.cmd`. The bundle contains the current local skin MPE1 and the presentation helper. The starter initializes the isolated installer automatically, verifies its assembly binding and opens the native installer with the included package. Review the native installer's package information and proceed there.
 
-The local bundle is not a new alpha release. Package metadata remains ALPHA13; the included working skin also contains the unreleased full-room guide background correction. No release or tag is published.
+The earlier ZIP bundle is superseded by the single EXE. LOCAL14 includes the full-room guide background and latest-caption/radio-menu corrections. No release or tag is published.
 
 MediaPortal is detected in both Program Files locations and registered uninstall locations. If no unique client folder is found, a folder picker asks for the directory containing both `MpeCore.dll` and `MpeInstaller.exe`. This fixes the earlier hard-coded-path failure. Select the client installation, not the TV Server folder. An explicit invalid path reports the complete missing filename. Multiple detected installations require selection.
 

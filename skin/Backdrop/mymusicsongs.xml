@@ -1029,6 +1029,7 @@
             <colordiffuse>ffffffff</colordiffuse>
             <textcolorNoFocus>90cccccc</textcolorNoFocus>
             <textureFocus>-</textureFocus>
+            <textureNoFocus>-</textureNoFocus>
             <font>font16BC</font>
             <hyperlink>30</hyperlink>
             <hover>-</hover>

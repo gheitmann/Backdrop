@@ -14,7 +14,8 @@ def main():
     root = ET.parse(ROOT / 'packaging' / 'MediaPortalExtension.template.xml').getroot()
     if args.output is None:
         revision = root.findtext('./GeneralInfo/Version/Revision')
-        args.output = ROOT / 'dist' / f'Backdrop-MP139-AnyCPU-ALPHA{revision}.mpe1'
+        kind = 'LOCAL' if root.findtext('./GeneralInfo/VersionDescription', '').startswith('LOCAL') else 'ALPHA'
+        args.output = ROOT / 'dist' / f'Backdrop-MP139-AnyCPU-{kind}{revision}.mpe1'
     entries = root.findall('./Groups/Items/GroupItem/Files/Items/FileItem')
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(args.output, 'w', compression=zipfile.ZIP_DEFLATED) as archive:

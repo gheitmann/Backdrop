@@ -76,6 +76,28 @@ def check():
         x, y, height = [float(panel.findtext(f)) for f in ('posX', 'posY', 'height')]
         check_caption(caption, (x, y, x + 100, y + height), name)
     print('Original TV guide regions: 2/2 definitions passed. Rotated caption containment: 6 definitions x 2 output sizes passed.')
+    latest = ET.parse(SKIN / 'common.basichome.latest.xml').getroot()
+    captions = [c for c in latest.findall('.//control') if c.findtext('description') == 'Latest Label']
+    require(len(captions) == 9, 'Missing latest-media captions')
+    for c in captions:
+        x = float(c.findtext('posX'))
+        check_caption(c, (x, 400, x + 100, 980), c.findtext('label'))
+    source = (ROOT / 'Source/BackdropMenuEditor/BackdropMenuEditorConfig.cs').read_text(encoding='utf-8-sig')
+    import re
+    generated = re.findall(r'<description>Latest Label</description>.*?<label>(#SkinTranslation[^<]+)</label>', source, re.S)
+    require(len(generated) == 9, 'Latest caption generator count drifted')
+    # The generator uses literal geometry for each definition; protect its persisted output too.
+    blocks = re.findall(r'<description>Latest Label</description>.*?<label>#SkinTranslation[^<]+</label>.*?>Conditional</animation>', source, re.S)
+    require(len(blocks) == 9, 'Latest caption generator rotation drifted')
+    for c, block in zip(captions, blocks):
+        for field in ('posX', 'posY', 'width', 'height'):
+            require(f'<{field}>{c.findtext(field)}</{field}>' in block, 'Latest caption generator geometry differs')
+        require('center=\\"' + c.findtext('posX') + ',970\\"' in block, 'Latest caption generator pivot differs')
+    for name in ('mymusicgenres.xml', 'mymusicsongs.xml'):
+        radio = next(c for c in ET.parse(SKIN / name).getroot().findall('.//control') if c.findtext('id') == '18')
+        require(radio.findtext('type') == 'checkbutton' and radio.findtext('hyperlink') == '30'
+                and radio.findtext('textureNoFocus') == '-', f'{name}: inherited yellow radio texture returned')
+    print('Latest captions: 9 definitions x 2 output sizes passed; generator geometry and 2 radio-menu overrides passed.')
 
 
 if __name__ == '__main__':
