@@ -8,7 +8,7 @@ Current version on this branch: **ALPHA13**, menu editor **1.39.0.11**. The edit
 
 Download the `.mpe1` installer from [Releases](https://github.com/gheitmann/Backdrop/releases), close MediaPortal, and install it using the Extension Installer supplied with your MediaPortal installation. Back up any existing Backdrop installation first.
 
-The unreleased integrated installer bundle combines the skin MPE1 with the buffered installer UI: extract the ZIP and double-click `Install Backdrop.cmd`. Initialization and client-folder discovery run automatically. See [installer instructions](docs/INSTALLER-UI.md). This local bundle does not advance the alpha version or replace the installed Extension Installer.
+The unreleased `Backdrop-Setup-LOCAL.exe` combines the skin MPE1 with the buffered installer UI in one executable. Initialization and client-folder discovery run automatically; no companion files or manual PowerShell steps are required. See [installer instructions](docs/INSTALLER-UI.md). This local setup does not advance the alpha version or replace the installed Extension Installer.
 
 Use architecture-compatible versions of Fanart Handler, Latest Media Handler, and any other external plugins. This repository does not bundle third-party plugin installers or modified MediaPortal core binaries.
 

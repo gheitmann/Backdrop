@@ -1,8 +1,18 @@
-# Backdrop installer bundle
+# Backdrop single-file setup
 
 The MediaPortal 1.39 Extension Installer redraws its full installation window after each file and uses fixed white button text. The optional Backdrop installer helper uses buffered panels, Windows button colours and targeted progress repaints, limited to one per 100 ms with a final completion flush.
 
 This is separate from the skin MPE1. Installing the skin with the ordinary Extension Installer does not update that installer's own appearance.
+
+## Single EXE (preferred delivery)
+
+Run `Backdrop-Setup-LOCAL.exe` after closing MediaPortal. This is the complete distributable: no ZIP extraction, manual PowerShell command, Initialize.ps1 or companion DLL is required. It contains the skin and helper bundle, extracts into a private per-run directory under `%LOCALAPPDATA%\BackdropInstaller`, then removes that directory when the child installer exits. Logs remain in that parent directory. Installed MediaPortal core DLLs and MPE1 associations are not replaced.
+
+Normal installation requests Windows administrator elevation. `--verify` initializes and probes without installing or elevating; `--preview` opens the harmless installer presentation preview. `--mediaportal "D:\MediaPortal"` selects a custom client folder. Otherwise automatic discovery and the folder picker are used. The existing unsigned MP 1.39 assembly compatibility guard remains enforced.
+
+The filename status label now has fixed bounds, an opaque background and ellipsis truncation. Refreshing a short name repaints the entire previous filename area. This addresses old long-name fragments without restoring per-file full-window repainting. Native file copying and registration are unchanged.
+
+Build the private bundle ZIP as described below, then run `powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools/build-setup.ps1 -BundlePath <bundle.zip> -OutputPath <setup.exe>`. Only the resulting EXE is required for installation; the SHA256 sidecar is optional verification material. The local build retains existing alpha metadata and is not published as a new release.
 
 ## Integrated local bundle
 
