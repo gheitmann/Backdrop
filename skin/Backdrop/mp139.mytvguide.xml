@@ -21,7 +21,8 @@
       <posY>0</posY>
       <width>1920</width>
       <height>1080</height>
-      <texture>background.tvguide.png</texture>
+      <texture>default.png</texture>
+      <colordiffuse>ff505050</colordiffuse>
     </control>
     <control>
       <description>dummy (visible when music is playing)</description>

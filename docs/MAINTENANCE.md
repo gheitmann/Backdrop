@@ -101,3 +101,8 @@ Local maintenance history and immutable fixtures remain under the owner's `Docum
 - Account for native scaling before rotation: horizontal text width becomes vertical extent, so ultrawide output needs a shorter bounded viewport. check_guide_layout.py verifies containment at 1920 x 1080 and 3440 x 1440.
 - Keep guide group captions inside X=7..59/Y=612..1060. Active definitions use X=12/Y=1050 and a 320 x 34 viewport; long names scroll within it. Do not use the old centred 417-pixel label or mixed pivot 35,0.
 - Shared dialog corrections retain IDs and actions. DialogMenu title 4 is also used by music Actions; verify the actual runtime route when testing an equivalent context menu.
+
+## Unreleased guide background lesson
+
+- Inspect the actual source pixels before changing layout dimensions: background.tvguide.png already contains a quarter-screen room fading into black. The full original room is available as Media/default.png. Reuse it at 1920 x 1080 with ff505050 diffuse darkening, preserving the original guide anchors and a single backdrop control. Retain the original resource for other pages.
+- Keep release work on hold when requested. See UNRELEASED-GUIDE-BACKGROUND.md for three scoped runtime checks and remaining active-playback/progress limitations; do not advance package metadata or publish an alpha merely to save local work.
