@@ -222,6 +222,7 @@ namespace MediaPortal.Plugins
                 if (CheckSkinName())
                 {
                     PointerSeek.Install();
+                    PointerTopbar.Install();
                     using (MediaPortal.Profile.Settings xmlreader = new MediaPortal.Profile.Settings(Config.GetFile(Configuration.Config.Dir.Config, "BackdropMenuEditor.xml")))
                     {
                         readConfigFile(xmlreader);
@@ -387,6 +388,7 @@ namespace MediaPortal.Plugins
             try
             {
                 PointerSeek.Uninstall();
+                PointerTopbar.Uninstall();
                 if (refreshTimer != null && refreshTimer.Enabled)
                 {
                     refreshTimer.Stop();

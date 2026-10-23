@@ -1,29 +1,38 @@
-# ALPHA10 validation
+# ALPHA11 validation
 
-Target: MediaPortal 1.39 x64, 23 October 2026. Skin-only follow-up; the AnyCPU menu editor remains 1.39.0.9.
+Target: MediaPortal 1.39 x64, Windows 11, 23 October 2026. AnyCPU menu editor 1.39.0.11.
 
-The existing checklist remains **36/37 passed (97.3%) and one blocked**, carried forward from [ALPHA9](VALIDATION-ALPHA9.md), not rerun in full. This measures the historical finite checklist, not overall compatibility. See [case evidence](REGRESSION-ALPHA10.json). The targeted settings/guide checks are separate.
+Historical checklist: **36/37 passed (97.3%), one blocked**, carried forward from ALPHA10/ALPHA9, not rerun in full. It is not an overall compatibility percentage. See REGRESSION-ALPHA11.json and VALIDATION-ALPHA10.md. New evidence below has a separate scope.
 
-## Targeted V6 feedback checks
+## Topbar pointer handling
 
-- Viewed all 13 supplied full-size forum screenshots. See the [review matrix](V6-FEEDBACK-REVIEW.md).
-- Removed row-count captions from all 20 TV/radio guide variants and both Skin settings definitions. Guide geometry and native bindings are retained.
-- Removed inherited General settings controls 8–11 and their shortcut/DriveFreeSpace panels. Native buttons 2–7 remain, with first/last focus wrapping. Removed obsolete visibility conditions so saved legacy flags cannot hide the six buttons.
-- Isolated runtime: General displays six options, with Up from the first option focusing the last; Skin settings displays its four options without the guide-count caption.
-- Populated 12-row TV guide renders fictional channels, time headings and programme details without the upper-right row-count label. Only the original sofa/room background is visible in this run; the reported second image was not reproduced.
-- Binding audit: 139 windows inspected, zero incompatible control types; 69 absent fields remain unchanged.
+The plugin observes its own application's left-button messages, hit-tests the native visible enabled topbar button, and dispatches that button's existing action on release over the same button/window/receiver. Both halves are consumed to avoid duplicate native clicks. Routed dialogs, other skins, fullscreen video, disabled/hidden topbars, inactive forms and cancelled gestures are excluded. Hidden-bar wake-up still uses native behavior.
 
-## Remaining limits
+Six command cases passed in the isolated runtime during this development session: Home (26), Pause (25), Resume (24), Next (29), Previous (22), and player/Now Playing (30). Pause held position at 0:50, Play resumed without restarting; Next/Previous changed the synthetic track exactly once. Each produced one pointer activation entry. The final rebuild adds action/speed/position logging, restricts input to the MediaPortalApp renderer form and clears pending input on application deactivation. These six runtime cases were checked before those final guard/logging additions; they are not a fresh runtime certification of the final binary.
 
-TuneIn playback, station search and virtual keyboard are confirmed by the user's V6 report/screenshots. The plugin is absent locally, so this is not a local runtime certification or a new ALPHA10 plugin fix. Filled music information dialogs and Backdrop guide timeline artwork are also confirmed by the supplied V6 report.
+Forward/Rewind produced the intended native control activation in the initial run but speed/result verification remains partial. Do not count this as a complete transport pass. Later repeated clicks after the bar/cursor had auto-hidden did not consistently produce new activations. Final binary smoke checks additionally passed Home (one control 26/action 115 activation), Exit (one control 31/action 97 activation and clean process termination), and cross-button Home-to-Exit drag cancellation (no activation or exit). The command matrix therefore has 7/11 passed (63.6%), two partial (Forward/Rewind), two untested (Back/Stop); evidence before/after final guards is distinguished above. Modal guard behavior still needs targeted runtime certification. No claim that all 11 commands or every mouse action is fixed. The plugin retains native action IDs rather than implementing a second playback engine.
 
-The reported second EPG background remains unconfirmed: current TV guide XML has one opaque full-screen background matching the original Backdrop asset. Do not remove original artwork without reproducing a second layer. Topbar immediate focus/click timing, offline TVSeries rating, ARD HLS playback, full x86 runtime, all locale renderings and additional themes remain limited as documented in ALPHA9.
+## Music information
 
-The normal Program Files editor DLL could not be updated during ALPHA9 because Windows denied the copy. Installing the full package remains necessary there for ALPHA9 pointer seeking; ALPHA10 does not change the DLL.
+Button 5 remains the native toggle target, with two mutually exclusive translated label controls following the same skin-setting visibility conditions as the body. A label expression using skin.hassetting did not refresh after toggling and was replaced before release. Artist-only fixture: F9 information dialog displays seeded metadata, Unicode text and long biography; switching changes biography to discography and caption Alben to Bio. without clipping. Album uses the equivalent structure for Tracks/Review; a fresh final-layout album runtime check remains pending. Native refresh button 6 remains unchanged. No online metadata refresh was triggered.
 
-## Delivery checks
+## Installer presentation
 
-- Validated 2,393 payload files, 557 skin XML files and unchanged AnyCPU editor flags. All installer payload bytes were reopened and compared after packaging.
-- Installed MP 1.39 MPE serializer accepts the installer metadata and AnyCPU platform declaration.
-- Static inventory: 37 translation files, no missing English fallback properties, no additional themes, 11 topbar command definitions. This is not a fresh runtime check of all languages or actions.
-- All 24 changed XML files were backed up and deployed to the normal skin folder; no foreign edits were skipped. Candidate copies were tested in the isolated runtime.
+Separate optional helper; **not part of the MPE1 payload**. The installed MpeCore remains unchanged (SHA256 124cd3074e92c3dcc53f20f0ec6a1ab7d62eb3b53d5182ae0ae3ec9fa6ba670c). Original installation/dependency/registration methods are not patched.
+
+- Native preview visually shows readable standard Windows buttons.
+- Three of three button style checks pass; form double buffering is enabled.
+- All 2,393/2,393 synthetic native file events are preserved: **100% event accounting**. The short burst performs two targeted progress repaints and flushes completion. This is not an installation-speed measurement.
+- Assembly binding probe confirms the original MpeInstaller binds to isolated MpeCore without invoking its entry point.
+- Built ZIP was extracted and Initialize.ps1 successfully reproduced the local patch and both probes. No MediaPortal binaries are distributed in that ZIP.
+- Full real package installation through the helper, elevation behavior, other Windows themes/DPI and x86 are unverified. Ordinary MPE installation remains available. See INSTALLER-UI.md.
+
+## Structural checks and remaining work
+
+139 native windows audited: zero incompatible bound control types, 69 absent fields unchanged. Pointer seek geometry: 12/12 passed. No fixtures, databases, personal SkinSettings.xml or credentials are packaged. Payload and metadata are validated separately at packaging.
+
+The second EPG background remains unconfirmed; ALPHA10 populated TV guide evidence is retained. TuneIn is user-confirmed on V6 but absent in this isolated runtime. Offline TVSeries rating, ARD HLS, full x86, all locale renderings and additional themes retain their earlier limits. Only the default theme exists. Existing 37 translation files are statically audited; they are not newly runtime-certified.
+
+Normal installed skin/binaries were not overwritten during the owner's V10 installation. The candidate skin and plugin were staged only in the isolated test runtime. Temporary test profile input overrides are restored after testing.
+
+Delivery checks: validated 2,393 payload files and 557 skin XML files, AnyCPU flags, the installed MP 1.39 metadata serializer and byte-for-byte reopened installer payload. Translation inventory: 37 files, no missing English fallback properties.

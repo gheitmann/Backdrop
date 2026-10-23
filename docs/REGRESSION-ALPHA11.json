@@ -1,0 +1,227 @@
+{
+  "scope": "ALPHA11: historical 37-case regression carried forward, not rerun in full. New topbar, music-dialog and installer presentation checks are documented separately in VALIDATION.md.",
+  "cases": [
+    {
+      "id": "P01",
+      "name": "Moving Pictures views",
+      "status": "passed",
+      "evidence": "ALPHA8 list, normal and large thumbnail results carried forward. ALPHA9 filmstrip first selected cover is fully inside the left edge with X=60/width=1800. Right changes selected cover and title. Coverflow renders all three synthetic covers and Right changes the centered selection/title. Checked in isolated MP 1.39 x64."
+    },
+    {
+      "id": "P02",
+      "name": "Moving Pictures details",
+      "status": "passed",
+      "evidence": "Movie summary/details tabs switch by mouse; title, synopsis, score, watched flag, genre and media icons render from synthetic metadata. Blank cast/director match unseeded fixture fields."
+    },
+    {
+      "id": "P03",
+      "name": "Moving Pictures rating",
+      "status": "passed",
+      "evidence": "Rate Movie dialog opens; Right changes 3/5 to 4/5 with matching stars/caption. Cancelled without online submission."
+    },
+    {
+      "id": "P04",
+      "name": "TVSeries seasons",
+      "status": "passed",
+      "evidence": "With SkipSeasonViewOnSingleSeason disabled in the isolated profile, the Season 1 row, three episode count and series-season title render and open correctly."
+    },
+    {
+      "id": "P05",
+      "name": "TVSeries episode information",
+      "status": "passed",
+      "evidence": "After standard Home-to-TVSeries activation and four-second idle delay, episode info shows synthetic plot, thumbnail, aired date and media icon. Empty director/writer/rating are unseeded fixture fields."
+    },
+    {
+      "id": "P06",
+      "name": "TVSeries rating",
+      "status": "blocked",
+      "evidence": "The local synthetic series uses offline ID -1; the episode context and Actions menus do not expose a rating command. Online rating/account behavior remains unverified."
+    },
+    {
+      "id": "P07",
+      "name": "OnlineVideos category navigation",
+      "status": "passed",
+      "evidence": "OnlineVideos opens language groups, German site list and ARD Live TV/Sendungen A-Z/Programm categories with icons and description. Existing definitions retained; playback and automatic site updates are outside this check."
+    },
+    {
+      "id": "P08",
+      "name": "Sudoku page",
+      "status": "passed",
+      "evidence": "New Game populates all nine Sudoku columns while synthetic music continues. Removing the shared now-playing overlay prevents it covering the right-hand cells; title spelling corrected."
+    },
+    {
+      "id": "P09",
+      "name": "Tetris page",
+      "status": "passed",
+      "evidence": "Tetris New Game starts at level 1 with visible falling blocks and results. Widened New Game/Sounds captions fit; music overlay no longer covers gameplay."
+    },
+    {
+      "id": "L01",
+      "name": "German UI",
+      "status": "passed",
+      "evidence": "German music files, playlist and topbar render during input regression."
+    },
+    {
+      "id": "L02",
+      "name": "English UI",
+      "status": "passed",
+      "evidence": "English native Settings labels, date and navigation render correctly; fixture titles retain Unicode."
+    },
+    {
+      "id": "L03",
+      "name": "French UI",
+      "status": "passed",
+      "evidence": "French native labels render accents and fit Settings navigation; custom untranslated labels use English fallback."
+    },
+    {
+      "id": "L04",
+      "name": "Russian UI",
+      "status": "passed",
+      "evidence": "Russian Settings, date, navigation and translated GuideRows caption render Cyrillic correctly. Long native prefix caption scrolls/clips within its button."
+    },
+    {
+      "id": "L05",
+      "name": "Chinese UI",
+      "status": "passed",
+      "evidence": "Simplified Chinese Settings navigation and GuideRows caption render CJK characters using runtime fallback. Untranslated native/custom strings retain English."
+    },
+    {
+      "id": "T01",
+      "name": "Default theme render",
+      "status": "passed",
+      "evidence": "Default Backdrop assets render in the isolated MP 1.39 x64 runtime."
+    },
+    {
+      "id": "T02",
+      "name": "Installed theme selector inventory",
+      "status": "passed",
+      "evidence": "Theme selector opens and offers only Skin default, matching the absence of additional theme directories."
+    },
+    {
+      "id": "TB01",
+      "name": "Back",
+      "status": "passed",
+      "evidence": "Mouse Back returned from the playlist to BasicHome."
+    },
+    {
+      "id": "TB02",
+      "name": "Home",
+      "status": "passed",
+      "evidence": "Topbar Home returned from GUI/Skin settings to BasicHome after live language switching."
+    },
+    {
+      "id": "TB03",
+      "name": "Previous track",
+      "status": "passed",
+      "evidence": "Topbar Previous moved Input test 3 back to Input test 2, with the corrected skip-back artwork."
+    },
+    {
+      "id": "TB04",
+      "name": "Rewind",
+      "status": "passed",
+      "evidence": "Focused Rewind action 17 sets BASS speed -2; displayed position falls from 0:33 to 0:30. Immediate mouse focus and activation are not reliable in this automation session."
+    },
+    {
+      "id": "TB05",
+      "name": "Play",
+      "status": "passed",
+      "evidence": "With the synthetic track paused at 1:28 using the native shortcut, a mouse click on Play resolved its dynamic action to 12 and BASS resumed the same stream. The position advanced to 1:30 and 1:48 without restarting. When not paused, Play retains action 68; existing playlist start/restart semantics remain."
+    },
+    {
+      "id": "TB06",
+      "name": "Pause",
+      "status": "passed",
+      "evidence": "Topbar mouse pause held the playback position at 1:01 across later observations."
+    },
+    {
+      "id": "TB07",
+      "name": "Stop",
+      "status": "passed",
+      "evidence": "Focused Stop action ends playback and removes the now-playing overlay; the playlist and selected track remain visible."
+    },
+    {
+      "id": "TB08",
+      "name": "Fast forward",
+      "status": "passed",
+      "evidence": "Focused Fast forward action 16 produces BASS playback speed 2 and accelerated progress. Mouse focusing and keyboard activation were both exercised; video playback speed remains a separate check."
+    },
+    {
+      "id": "TB09",
+      "name": "Next track",
+      "status": "passed",
+      "evidence": "Topbar Next advanced the running multi-track fixture from Input test 2 to Input test 3."
+    },
+    {
+      "id": "TB10",
+      "name": "Fullscreen player toggle",
+      "status": "passed",
+      "evidence": "Topbar action 18 opened Music Now Playing from BasicHome during audio playback; Escape returned to the previous navigation screen."
+    },
+    {
+      "id": "TB11",
+      "name": "Exit button",
+      "status": "passed",
+      "evidence": "Native action 97 closed the isolated MediaPortal process normally. This is Exit, not operating-system shutdown; no OS power action was invoked."
+    },
+    {
+      "id": "M01",
+      "name": "Photos category mouse area",
+      "status": "passed",
+      "evidence": "Clicking the Photos caption focuses its category and opens its submenu."
+    },
+    {
+      "id": "M02",
+      "name": "Music category mouse area",
+      "status": "passed",
+      "evidence": "Clicking Music and Radio opens its vertical submenu at the visible caption."
+    },
+    {
+      "id": "M03",
+      "name": "Movies category mouse area",
+      "status": "passed",
+      "evidence": "Movies caption opens its category submenu; synthetic movie fanart and title render."
+    },
+    {
+      "id": "M04",
+      "name": "TV category mouse area",
+      "status": "passed",
+      "evidence": "TV caption click opens TV guide, recording and series submenu without entering a tuner page."
+    },
+    {
+      "id": "M05",
+      "name": "Games category mouse area",
+      "status": "passed",
+      "evidence": "Games and Sports mouse caption opens Sudoku and Tetris submenu."
+    },
+    {
+      "id": "M06",
+      "name": "Plugins category mouse area",
+      "status": "passed",
+      "evidence": "Plugins caption opens its vertical submenu at the visible label."
+    },
+    {
+      "id": "M07",
+      "name": "List mouse wheel",
+      "status": "passed",
+      "evidence": "Mouse wheel advances the selection and scroll position in the native language list."
+    },
+    {
+      "id": "M08",
+      "name": "Right-click context menu",
+      "status": "passed",
+      "evidence": "With general/autohidemouse temporarily disabled only in the isolated profile, right-click opened the populated Moving Pictures context menu from list and thumbnail views. This verifies context-menu support with a visible cursor, not every first click after native cursor auto-hide. The temporary setting was restored."
+    },
+    {
+      "id": "M09",
+      "name": "Progress drag/seek",
+      "status": "passed",
+      "evidence": "AnyCPU menu editor 1.39.0.9 handles application-local WinForms pointer messages while retaining bound GUIProgressControl 118. With a paused 180-second synthetic song, forward drag commits 147.86s (UI 2:27), backward drag commits 45.03s (UI 0:45), midpoint click commits 89.95s (UI 1:29). Geometry checks 12/12 pass. Other pages/skins, radio and modal dialogs are excluded."
+    },
+    {
+      "id": "M10",
+      "name": "List double click",
+      "status": "passed",
+      "evidence": "Mouse double-click entered the input fixture folder and started the first track after pointer wake-up."
+    }
+  ]
+}

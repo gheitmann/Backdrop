@@ -1,5 +1,5 @@
 {
-  "Source/BackdropMenuEditor.dll": "05b4e3680fcb7d85b96ff95ac0f4e945a7a6994dfd94a37f93c9131f8c39b53a",
+  "Source/BackdropMenuEditor.dll": "f12c50f7a0a1c68355cd347b7f4665066aafbc95b2fdd44351f3e801a2b033a7",
   "config/BackdropMenuEditor.xml": "59eeb018bff419448506cb8968056c9bcf16228107be14102185b9fcb16c945c",
   "fonts/2Level Body Caps.ttf": "176813cc736e0020a26354b45da30c235ae9f304d6f5a87c80918c1896290388",
   "fonts/menu.ttf": "adbfeca02971474de25a69f32177ec168cbcd61fff6673efe9526e1d12567c5b",
@@ -20,8 +20,8 @@
   "skin/Backdrop/Backdrop.logoRules": "0fcb83793f0792319e28bb0979dde907903e71a2b5f309deb9ca2c80a880d68a",
   "skin/Backdrop/Backdrop.version.xml": "b03187dc1000f95170655e354bb5f429a04560393b9f0ffbc7f02517c4ac054e",
   "skin/Backdrop/BasicHome.xml": "62efa525a44edfb5a9a5d9ad477f7e617d68aafedb72ab7c94fb8bfeb6c29e5a",
-  "skin/Backdrop/DialogAlbumInfo.xml": "2d9d30eaff78b75bdd2955b2291338b62a09e7e571d8b915f015a6ff2cf4015a",
-  "skin/Backdrop/DialogArtistInfo.xml": "67fe215c4f2910cb4a53f4d443c9e55e38fc689ac98ffc982c91440870e821df",
+  "skin/Backdrop/DialogAlbumInfo.xml": "f0ad570fb83a698151a46fac5330ad9231e30289924f29e194254e114db53952",
+  "skin/Backdrop/DialogArtistInfo.xml": "ca19125d19c81c9f3a9e38367e4b10bb89273e5bf88547711c89f56b5a8c63a1",
   "skin/Backdrop/DialogCIMenu.xml": "e6438822ce8cae7ce76ca1c8134cf7b2245fd629eabe5cfe9667585c0d0ddd01",
   "skin/Backdrop/DialogCheckList.xml": "9d6684a47facd21ca97617c3564351bc72c64019a71b5eae091848ec58bbd07d",
   "skin/Backdrop/DialogDateTime.xml": "aeeaa9a167d8dda69628b924c69923e792047c223c0d5b650a7ee2ea5e7066b1",
