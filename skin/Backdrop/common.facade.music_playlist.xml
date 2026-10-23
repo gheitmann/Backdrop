@@ -242,8 +242,6 @@
           <deleteBtnXOffset>881</deleteBtnXOffset>
           <deleteBtnYOffset>-1</deleteBtnYOffset>
           <dimColor>ffffffff</dimColor>
-          <animation effect="slide" start="950,0" time="800" acceleration="-0.9" reversible="true">unfocus</animation>
-          <animation effect="slide" end="950,0" time="200" acceleration="0.5" reversible="true">focus</animation>
         </control>
       </control>
     </control>

@@ -39,3 +39,17 @@ The skin settings page omits the DefaultWideHD BasicHome editor and the ineffect
 The recurring Codex check reviews official MediaPortal and relevant plugin releases plus local Backdrop changes weekly. It should stay quiet when nothing actionable has changed. New upstream versions do not by themselves establish compatibility or justify blind file replacement.
 
 Local maintenance history and immutable fixtures remain under the owner's `Documents/Codex/Testmedien/MediaPortal` directory. Local core BASS, radio, and Latest Media Handler experiments are separate projects and must not be silently bundled into Backdrop.
+
+
+## ALPHA7 lessons
+
+- Remove the playlist facade's opposing 950-pixel focus/unfocus slides; they pushed its loaded rows off the right edge while focused.
+- Shared music overlays must not cover Sudoku/Tetris gameplay. Preserve the games' native controls; widen translated buttons where necessary.
+- Reserve the title area above Moving Pictures thumbnails. Its first selected cover still zooms beyond the left edge; treat that as a remaining layout limitation.
+- Use general topbar actions 68/16/17 for Play/Forward/Rewind. The music-specific 77/78 depend on BASS skip-step configuration. Preserve required IDs; remove duplicate action tags. Playlist Play still restarts the track, so do not claim resume is fixed.
+- Distinguish a button's focused command from immediate mouse hit testing. Native first-click cursor gating and previous-focus activation affected automation; report this rather than counting all mouse commands as passed. Keep progress control 118's bound type.
+- Parse all 37 translations, verify English property fallback, and report untranslated values. Representative Latin/Cyrillic/CJK rendering is not complete translation certification. Only the default theme is present.
+- For language changes, investigate stale generated font caches before changing font ranges or rebuilding broad Unicode atlases.
+- Moving Pictures synthetic selected cover paths must also be listed in pipe-delimited AlternateCovers or the plugin clears them. Fixture repairs belong in the isolated database, never the skin package.
+- Direct plugin startup can bypass the menu editor's window activation timer. Test TVSeries delayed info after real Home-to-plugin navigation with the configured idle delay; offline ID -1 does not expose online rating.
+- Retain versioned input fixtures outside immutable v1 and keep exact case-level evidence. Run `python tools/audit_integrations.py` with payload validation before packaging.

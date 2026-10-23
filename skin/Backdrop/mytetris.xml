@@ -52,7 +52,7 @@
       <id>2</id>
       <posX>30</posX>
       <posY>170</posY>
-      <width>200</width>
+      <width>460</width>
       <font>font14BC</font>
       <textXOff>10</textXOff>
       <textYOff>2</textYOff>
@@ -74,7 +74,7 @@
       <id>4</id>
       <posX>30</posX>
       <posY>220</posY>
-      <width>200</width>
+      <width>460</width>
       <textureFocus>-</textureFocus>
       <font>font14BC</font>
       <textXOff>10</textXOff>
@@ -254,7 +254,7 @@
     </control>
     <!--<import>common.overlays.xml</import>-->
     <import>common.time.xml</import>
-    <import>common.overlays.xml</import>
+    <!-- Keep the game board clear while media continues playing. -->
     <control>
       <description>Header</description>
       <type>fadelabel</type>

@@ -188,4 +188,5 @@ Smirnuff (author), catavolt and High_Five wish you lots of fun with Tetris ;)</s
   <string Field="BasicHomeEditorModernUI">ATTENTION: Avec ce thème, vous ne devez pas placer les plugins de la télévision, de vidéo ou de musique dans Internet ou de jeux, sinon vous risquez de rencontrer des problèmes de navigation dans Internet ou Jeux!  catavolt :-D</string>
   <string Field="BasicHomeEditorHorizonUp">ATTENTION: Avec ce thème, vous devez définir les plugins que dans leur catégorie (par exemple TVSeries seulement dans Vidéos), sinon vous rencontrerez des problèmes d'affichage concernant derniers médias ajoutés!!  catavolt :-D</string>
   <string Field="BasicHomeEditorNoPlugin">ATTENTION: S'il vous plaît assurez-vous que chaque premier élément de chaque catégorie contient un plugin activé, sinon la navigation dans les catégories échouera! catavolt :-D</string>
+  <string Field="GuideRows">Lignes EPG</string>
 </strings>

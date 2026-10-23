@@ -190,4 +190,5 @@ Viel Spaß mit Tetris wünschen Smirnuff (Autor) sowie catavolt und High_Five ;)
   <string Field="EXIFDATA">EXIF DATEN</string>
   <string Field="ImageInfos">Bildinformationen</string>
   <string Field="CameraSettings">Kameraeinstellungen</string>
+  <string Field="GuideRows">EPG-Zeilen</string>
 </strings>

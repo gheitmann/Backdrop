@@ -538,7 +538,7 @@
         <posX>700</posX>
         <posY>620</posY>
         <width>500</width>
-        <label>TV/Radio-EPG: 12 Zeilen (Backdrop)</label>
+        <label>#SkinTranslation.Translations.GuideRows.Label: 12 (Backdrop)</label>
         <textcolor>lightgray</textcolor>
         <font>font12</font>
         <disabledcolor>90ffffff</disabledcolor>
