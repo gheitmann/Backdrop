@@ -125,9 +125,9 @@ This file should contain the facade view
         <description>Thumbnail Panel</description>
         <type>thumbnailpanel</type>
         <id>50</id>
-        <posX>0</posX>
+        <posX>60</posX>
         <posY>210</posY>
-        <width>1920</width>
+        <width>1800</width>
         <height>810</height>
         <spinPosX>3000</spinPosX>
         <spinPosY>1080</spinPosY>
