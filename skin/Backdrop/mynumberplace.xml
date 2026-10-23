@@ -2289,7 +2289,7 @@
     </control>
     <import>common.window.xml</import>
     <import>common.time.xml</import>
-    <import>common.overlays.xml</import>
+    <!-- Keep the game board clear while media continues playing. -->
     <control>
       <description>Header</description>
       <type>fadelabel</type>
@@ -2302,7 +2302,7 @@
       <shadowDistance>2</shadowDistance>
       <shadowColor>ff191919</shadowColor>
       <font>font50BC</font>
-      <label>Sodoku</label>
+      <label>Sudoku</label>
       <scrollStartDelaySec>5</scrollStartDelaySec>
       <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>

@@ -184,4 +184,5 @@ Smirnuff (author), catavolt and High_Five wish you lots of fun with Tetris ;)</s
   <string Field="EXIFDATA">EXIF DATA</string>
   <string Field="ImageInfos">Image information</string>
   <string Field="CameraSettings">Camera settings</string>
+  <string Field="GuideRows">EPG 行数</string>
 </strings>

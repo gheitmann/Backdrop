@@ -24,7 +24,6 @@
       <textureNoFocus>top_back_disabled.png</textureNoFocus>
       <action>10</action>
       <label>-</label>
-      <action>10</action>
       <onleft>31</onleft>
       <onright>26</onright>
       <onup>21</onup>
@@ -74,7 +73,7 @@
       <height>78</height>
       <textureFocus>top_rew_enabled.png</textureFocus>
       <textureNoFocus>top_rew_disabled.png</textureNoFocus>
-      <action>78</action>
+      <action>17</action>
       <label>-</label>
       <onleft>22</onleft>
       <onright>24</onright>
@@ -91,7 +90,7 @@
       <height>78</height>
       <textureFocus>top_play_enabled.png</textureFocus>
       <textureNoFocus>top_play_disabled.png</textureNoFocus>
-      <action>79</action>
+      <action>68</action>
       <label>-</label>
       <onleft>23</onleft>
       <onright>25</onright>
@@ -142,7 +141,7 @@
       <height>78</height>
       <textureFocus>top_fastforward_enabled.png</textureFocus>
       <textureNoFocus>top_fastforward_disabled.png</textureNoFocus>
-      <action>77</action>
+      <action>16</action>
       <label>-</label>
       <onleft>27</onleft>
       <onright>29</onright>
@@ -167,7 +166,7 @@
       <ondown>2</ondown>
     </control>
     <control>
-      <description>Minimize button</description>
+      <description>Fullscreen player button</description>
       <type>button</type>
       <id>30</id>
       <posX>1718</posX>
@@ -195,7 +194,6 @@
       <textureNoFocus>top_exit_disabled.png</textureNoFocus>
       <action>97</action>
       <label>-</label>
-      <action>97</action>
       <onleft>30</onleft>
       <onright>21</onright>
       <onup>31</onup>

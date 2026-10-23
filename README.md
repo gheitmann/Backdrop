@@ -2,7 +2,7 @@
 
 Experimental port of cul8er's **Backdrop 1.0.1** skin to **MediaPortal 1.39**.
 
-Current version on this branch: **ALPHA6**, menu editor **1.39.0.5** (unchanged). The editor and installer target AnyCPU. Runtime checks were performed on MediaPortal 1.39 x64; a complete x86 runtime test is still pending.
+Current version on this branch: **ALPHA7**, menu editor **1.39.0.5** (unchanged). The editor and installer target AnyCPU. Runtime checks were performed on MediaPortal 1.39 x64; a complete x86 runtime test is still pending.
 
 ## Install
 
@@ -22,8 +22,10 @@ Use architecture-compatible versions of Fanart Handler, Latest Media Handler, an
 - Removed unused DWHD-specific Now Playing design and classic-home settings.
 - Corrected the previous-track topbar icon, guide time-header artwork, and group-button textures.
 - Restored artist/album information using current MediaPortal properties, including biography/discography and review/track-list toggles.
+- Fixed off-screen playlist focus, game overlay collisions, and movie-grid title overlap.
+- Added locale/theme/topbar auditing to validation and CI.
 
-See [validation and limitations](docs/VALIDATION.md) and [maintenance guidance](docs/MAINTENANCE.md). For the latest five reported areas, three were verified in the running application, the guide is partially verified, and the TuneIn hang remains unresolved. This is **not** an overall compatibility percentage.
+See [validation and limitations](docs/VALIDATION.md) and [maintenance guidance](docs/MAINTENANCE.md). The expanded ALPHA7 checklist has 32/37 passed (86.5%), four partial and one blocked. Input limitations, movie-grid clipping, TuneIn and other unverified behavior are recorded explicitly. This is **not** an overall compatibility percentage.
 
 ## Repository layout
 
@@ -51,7 +53,7 @@ python tools/package.py
 
 Review the rebuilt DLL and assembly version before refreshing the payload hashes. The refresh records an intentional payload change; it is not a compatibility test. To package the unchanged checked-in reference DLL, skip the editor build and hash refresh.
 
-The installer is written to `dist/Backdrop-MP139-AnyCPU-ALPHA6.mpe1`. Packaging can also use the checked-in reference DLL. GitHub Actions validates the payload and builds an installer artifact; it does not run the MediaPortal GUI or compile the editor against MediaPortal binaries.
+The installer is written to `dist/Backdrop-MP139-AnyCPU-ALPHA7.mpe1`. Packaging can also use the checked-in reference DLL. GitHub Actions validates the payload and builds an installer artifact; it does not run the MediaPortal GUI or compile the editor against MediaPortal binaries.
 
 ## Credits
 
