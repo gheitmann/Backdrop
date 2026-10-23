@@ -16954,10 +16954,10 @@
       <Major>1</Major>
       <Minor>39</Minor>
       <Build>0</Build>
-      <Revision>7</Revision>
+      <Revision>8</Revision>
     </Version>
     <ExtensionDescription>Experimental Backdrop 1.0.1 port for MediaPortal 1.39. Includes an AnyCPU menu editor. Tested on x64; full x86 runtime testing remains pending. Requires compatible external Fanart Handler and Latest Media Handler plugins. See README.md and docs/VALIDATION.md.</ExtensionDescription>
-    <VersionDescription>ALPHA7: playlist, game overlays, movie grid, localized guide caption and general topbar commands. Expanded x64 checks: 32/37 passed; input and external-plugin limitations documented.</VersionDescription>
+    <VersionDescription>ALPHA8: resume paused tracks without playlist restart; reserve thumbnail focus-zoom margins. Existing checklist: 34/37 passed, with remaining input and plugin limits documented.</VersionDescription>
     <DevelopmentStatus>Alpha</DevelopmentStatus>
     <OnlineLocation>
     </OnlineLocation>

@@ -53,3 +53,12 @@ Local maintenance history and immutable fixtures remain under the owner's `Docum
 - Moving Pictures synthetic selected cover paths must also be listed in pipe-delimited AlternateCovers or the plugin clears them. Fixture repairs belong in the isolated database, never the skin package.
 - Direct plugin startup can bypass the menu editor's window activation timer. Test TVSeries delayed info after real Home-to-plugin navigation with the configured idle delay; offline ID -1 does not expose online rating.
 - Retain versioned input fixtures outside immutable v1 and keep exact case-level evidence. Run `python tools/audit_integrations.py` with payload validation before packaging.
+
+
+## ALPHA8 lessons
+
+- GUIButtonControl action IDs accept property expressions. Use the native `#playlogo` paused state to select action 12 for Resume and 68 otherwise; this avoids GUIMusicPlaylist.OnNewAction restarting the selected song while resuming. The x64 runtime confirmed resolved action 12 and continued position at 1:28, 1:30 and 1:48.
+- Thumbnail focus zoom needs horizontal margins as well as title clearance: X=60, width=1800 keeps the first cover visible in normal and large grids. The separate filmstrip still has edge clipping; do not claim every layout is fixed.
+- Right-click context menus work with a visible cursor. Native MouseClickEvent suppresses the first click after auto-hide; temporarily disabling autohidemouse isolates that behavior. Restore the test setting and keep it out of the installer. Immediate topbar focus/click timing remains separately unverified.
+- Required progress control 118 is GUIProgressControl, whose CanFocus returns false. Skin geometry cannot add drag seeking; preserve the binding and treat interactive seek as separate functionality.
+- Follow-up regression counts must distinguish newly assessed cases from inherited passes. ALPHA8 revisits four cases and carries forward unchanged ALPHA7 evidence.

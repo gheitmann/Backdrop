@@ -90,7 +90,7 @@
       <height>78</height>
       <textureFocus>top_play_enabled.png</textureFocus>
       <textureNoFocus>top_play_disabled.png</textureNoFocus>
-      <action>68</action>
+      <action>#(iif(eq(#playlogo,'logo_pause.png'),12,68))</action>
       <label>-</label>
       <onleft>23</onleft>
       <onright>25</onright>
