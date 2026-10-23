@@ -34,4 +34,8 @@ Both active TV guide wrappers explicitly include mp139.mytvguide.12lines.xml. Th
 6. Use one guide background and one preview video area. Diagnose full-screen imports and playback overlays before removing artwork. This coordinate comparison does not yet prove the reported duplicate background is fixed.
 7. Test empty and populated guides, long descriptions, no playback and active video, clock alignment, keyboard/mouse navigation and aspect-ratio scaling. Synthetic EPG channels have no tuner mappings; an actual live TV preview requires a separate playback test.
 
-This document records the reference and implementation constraints. It does not claim the V11 screen has already been corrected, or publish a new skin release.
+## ALPHA12 implementation
+
+Both active definitions now use these nine anchors. The preview is inlined once with required native ID 99. The original group position retains MP 1.39 button3part type 100. Channel label width is increased, the single-channel logo moved into the header and the timeline clipped at the grid bottom. Seven visible rows follow the original template geometry. Radio guide variants remain unchanged. See VALIDATION.md for the bounded runtime results and active-preview limitation.
+
+Run `python tools/check_guide_layout.py` before future guide updates. CI compares the active definitions with this reference rather than accepting replacement fallback coordinates.
