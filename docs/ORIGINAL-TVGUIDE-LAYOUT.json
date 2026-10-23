@@ -1,0 +1,122 @@
+{
+  "scope": "Original package geometry reference for correction of V11; not implemented or runtime-validated by this reference update.",
+  "source_package": "351320_Backdrop_v_1_0_1.mpe1",
+  "guide_byte_match_verified": true,
+  "coordinate_canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "source_sha256": {
+    "mytvguide.xml": "a5c20bd1a63385b1acda49dc4873f3bfbafbb5a1ebfb3da8a38dc7911d5f6a07",
+    "common.time.xml": "018c46b18b2919a66973fa3db6b13eb92c5918b089c8bac864b058a2584fd763",
+    "common.overlays.guide.xml": "9be9c640687a8ea452102f3fa541d6b213dd3a7226120f1f2fb672d8d112d9ed"
+  },
+  "anchors": [
+    {
+      "name": "guide_panel",
+      "source": "mytvguide.xml",
+      "id": "2",
+      "type": "image",
+      "coordinates": {
+        "posX": 30,
+        "posY": 612,
+        "width": 1882,
+        "height": 453
+      }
+    },
+    {
+      "name": "channel_row_template",
+      "source": "mytvguide.xml",
+      "id": "20",
+      "type": "image",
+      "coordinates": {
+        "posX": 63,
+        "posY": 612,
+        "width": 398,
+        "height": 64
+      }
+    },
+    {
+      "name": "time_header_background",
+      "source": "mytvguide.xml",
+      "id": "90",
+      "type": "image",
+      "coordinates": {
+        "posX": 356,
+        "posY": 555,
+        "width": 244,
+        "height": 51
+      }
+    },
+    {
+      "name": "programme_title",
+      "source": "mytvguide.xml",
+      "id": "13",
+      "type": "label",
+      "coordinates": {
+        "posX": 30,
+        "posY": 45,
+        "width": 1350
+      }
+    },
+    {
+      "name": "programme_time",
+      "source": "mytvguide.xml",
+      "id": "14",
+      "type": "label",
+      "coordinates": {
+        "posX": 150,
+        "posY": 120,
+        "width": 450
+      }
+    },
+    {
+      "name": "programme_genre",
+      "source": "mytvguide.xml",
+      "id": "27",
+      "type": "label",
+      "coordinates": {
+        "posX": 150,
+        "posY": 165,
+        "width": 405
+      }
+    },
+    {
+      "name": "programme_description",
+      "source": "mytvguide.xml",
+      "id": "15",
+      "type": "textboxscrollup",
+      "coordinates": {
+        "posX": 15,
+        "posY": 225,
+        "width": 1050,
+        "height": 300
+      }
+    },
+    {
+      "name": "clock",
+      "source": "common.time.xml",
+      "id": "0",
+      "type": "label",
+      "coordinates": {
+        "posX": 1912,
+        "posY": 6,
+        "width": 900
+      },
+      "align": "right"
+    },
+    {
+      "name": "video_preview",
+      "source": "common.overlays.guide.xml",
+      "id": "0",
+      "type": "videowindow",
+      "coordinates": {
+        "posX": 1537,
+        "posY": 162,
+        "width": 359,
+        "height": 197
+      },
+      "align": null
+    }
+  ]
+}

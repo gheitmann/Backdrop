@@ -82,3 +82,8 @@ Local maintenance history and immutable fixtures remain under the owner's `Docum
 - Preserve PointerTopbar installation/removal alongside PointerSeek. Handle only the native visible enabled topbar, capture down/up to avoid duplicate activation, keep modal/fullscreen/skin/form guards and preserve native dynamic ActionID. Do not certify speed controls from an activation log alone. Native cursor/bar auto-hide can consume wake-up clicks.
 - Use mutually exclusive translated label controls for music toggle targets. A skin.hassetting expression in a button label remained cached after clicking; visibility conditions update correctly. Preserve bound button IDs 5 and 6.
 - Installer repainting and white-on-light buttons originate in MpeCore, not skin XML. Keep the optional helper separate, version-guarded and local-copy-only. Do not ship modified MediaPortal DLLs in the helper ZIP or claim synthetic progress events prove a real install. Retest assembly binding for each supported native version.
+
+## Original-layout reference after ALPHA11 feedback
+
+- Before the next guide update, read ORIGINAL-TVGUIDE-LAYOUT.md and its JSON anchors. The original guide is in the lower screen area (panel Y=612); description Y=225 and preview X=1537/Y=162 are above it. The original clock uses a right anchor X=1912/Y=6. Do not preserve the active DWHD 12-row template geometry as Backdrop's final layout.
+- Original mytvguide.xml byte-matches the supplied MPE1. Its coordinate canvas is already 1920 x 1080; no second 1.5 scaling. Resolve imports and row-relative coordinates, and preserve modern required bindings such as group button3part 100.
