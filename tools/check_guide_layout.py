@@ -57,7 +57,7 @@ def check():
                 f'{name}: duplicate video area')
         backgrounds = [c for c in controls if c.findtext('type') == 'image'
                        and c.findtext('width') == '1920' and c.findtext('height') == '1080']
-        require(len(backgrounds) == 1 and backgrounds[0].findtext('texture') == 'default.png'
+        require(len(backgrounds) == 1 and backgrounds[0].findtext('texture') == 'Modern/home.jpg'
                 and backgrounds[0].findtext('colordiffuse') == 'ff505050',
                 f'{name}: duplicate or foreign full-screen background')
         groups = [c for c in controls if c.findtext('id') == '100']
@@ -65,6 +65,8 @@ def check():
                 f'{name}: incompatible native group binding')
         caption = [c for c in controls if c.findtext('description') == 'TvGroup button label']
         require(len(caption) == 1, f'{name}: missing guide caption')
+        require(caption[0].findtext('type') == 'label' and caption[0].find('scrollStartDelaySec') is None,
+                f'{name}: rotated marquee reintroduced; group caption must remain static')
         check_caption(caption[0], (7, 612, 59, 1060), name)
     require((SKIN / 'mytvguide.xml').read_bytes() == (SKIN / 'mp139.mytvguide.xml').read_bytes(),
             'Active guide definitions differ')
@@ -103,6 +105,10 @@ def check():
         radio = next(c for c in ET.parse(SKIN / name).getroot().findall('.//control') if c.findtext('id') == '18')
         require(radio.findtext('type') == 'checkbutton' and radio.findtext('hyperlink') == '30'
                 and radio.findtext('textureNoFocus') == '-', f'{name}: inherited yellow radio texture returned')
+        require(radio.findtext('textureFocus') == 'hiddenmenu_button_fo.png', f'{name}: radio focus must be drawn by its native control')
+        require(not any('Button 18 - Navigating' in c.findtext('description', '')
+                        for c in ET.parse(SKIN / name).getroot().findall('.//control')),
+                f'{name}: external radio focus images obscure the state mark')
     print('Latest captions: 9 definitions x 2 output sizes passed; generator geometry and 2 radio-menu overrides passed.')
     print('Focused music metadata captions: 6 definitions x 2 output sizes passed.')
 

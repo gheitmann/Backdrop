@@ -223,6 +223,7 @@ namespace MediaPortal.Plugins
                 {
                     PointerSeek.Install();
                     PointerTopbar.Install();
+                    PointerRadio.Install();
                     using (MediaPortal.Profile.Settings xmlreader = new MediaPortal.Profile.Settings(Config.GetFile(Configuration.Config.Dir.Config, "BackdropMenuEditor.xml")))
                     {
                         readConfigFile(xmlreader);
@@ -389,6 +390,7 @@ namespace MediaPortal.Plugins
             {
                 PointerSeek.Uninstall();
                 PointerTopbar.Uninstall();
+                PointerRadio.Uninstall();
                 if (refreshTimer != null && refreshTimer.Enabled)
                 {
                     refreshTimer.Stop();

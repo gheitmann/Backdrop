@@ -132,6 +132,7 @@
       <height>1080</height>
       <shouldCache>true</shouldCache>
       <texture>Animations\tvguide\tvguide3_default.jpg</texture>
+      <colordiffuse>ff707070</colordiffuse>
       <visible>Control.HasFocus(77044)|Control.HasFocus(91919984)|Control.HasFocus(91919985)|Control.HasFocus(91919986)</visible>
       <animation effect="fade" time="850">VisibleChange</animation>
     </control>
@@ -169,6 +170,7 @@
       <height>1080</height>
       <shouldCache>true</shouldCache>
       <texture>Animations\shutdownbg\default.jpg</texture>
+      <colordiffuse>ff707070</colordiffuse>
       <visible>Control.HasFocus(77066)|Control.HasFocus(77067)</visible>
       <animation effect="fade" time="850">VisibleChange</animation>
     </control>
@@ -230,6 +232,7 @@
       <height>1080</height>
       <shouldCache>true</shouldCache>
       <texture>Animations\settings\default.jpg</texture>
+      <colordiffuse>ff707070</colordiffuse>
       <visible>Control.HasFocus(77064)|Control.HasFocus(77065)</visible>
       <animation effect="fade" time="850">VisibleChange</animation>
     </control>
@@ -243,6 +246,7 @@
       <height>1080</height>
       <shouldCache>true</shouldCache>
       <texture>Animations\games\default.jpg</texture>
+      <colordiffuse>ff707070</colordiffuse>
       <visible>Control.HasFocus(77053)|Control.HasFocus(77054)|Control.HasFocus(77055)|Control.HasFocus(77052)</visible>
       <animation effect="fade" time="850">VisibleChange</animation>
     </control>
@@ -344,6 +348,7 @@
       <visible>Control.HasFocus(91111)</visible>
       <animation effect="fade" time="850">VisibleChange</animation>
     </control>
+    <import>common.basichome.categories.xml</import>
     <import>common.basichome.latest.xml</import>
     <control>
       <description>Menu Background</description>

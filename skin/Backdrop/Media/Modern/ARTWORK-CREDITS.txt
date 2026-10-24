@@ -1,0 +1,49 @@
+Backdrop modern artwork refresh
+
+Lucide icons: https://lucide.dev/
+Source revision: 7faf87628a1ad6175975bc595344337ce14a7db4
+ISC and Feather-derived MIT notices are included in LUCIDE-LICENSE.txt.
+Icons are rasterized as PNGs for MediaPortal 1; upstream SVGs are retained
+in the source repository. The surrounding matte focus surfaces are original.
+
+Home background: Marina Nazina / Unsplash
+https://unsplash.com/photos/modern-living-room-with-dark-sofa-and-bookshelf-XAyj4ATVE9g
+Designer: Alisa Katunina
+
+Music background: Shoham Avisrur / Unsplash
+https://unsplash.com/photos/a-recording-studio-with-a-keyboard-and-a-guitar-lVtrIFIKNZw
+
+Abstract background: Jack B / Unsplash
+https://unsplash.com/photos/blue-and-black-abstract-artwork-qnBMlkav-j8
+
+Photo license: https://unsplash.com/license
+Retrieved 24 October 2026. These are ordinary Unsplash images, not Unsplash+.
+Provider-rendered 1920x1080 renditions are used as part of the skin interface.
+Darkening is applied by the skin renderer; user-selected fanart is unchanged.
+
+Unsplash grants you an irrevocable, nonexclusive, worldwide copyright license
+to download, copy, modify, distribute, perform, and use images from Unsplash
+for free, including for commercial purposes, without permission from or
+attributing the photographer or Unsplash. This license does not include the
+right to compile images from Unsplash to replicate a similar or competing
+service.
+
+Home menu category photographs (Pexels)
+
+Photos: Caleb Oquendo
+https://www.pexels.com/photo/high-tech-camera-on-office-desk-35598858/
+
+Cinema: Stephen Leonardi
+https://www.pexels.com/photo/iconic-theater-at-night-with-neon-lights-35120842/
+
+Tv: Max Vakhtbovych
+https://www.pexels.com/photo/big-screen-television-11701160/
+
+Gaming: Peter Laskowski
+https://www.pexels.com/photo/black-gaming-controller-on-a-black-surface-5303957/
+
+Plugins: Sergei Starostin
+https://www.pexels.com/photo/blue-and-silver-circuit-board-6636476/
+
+License: https://www.pexels.com/license/
+Provider-rendered 1920x1080 crops. Home category photographs use full brightness.

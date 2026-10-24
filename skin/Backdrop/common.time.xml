@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
   <controls>
     <control>
@@ -99,7 +99,7 @@
       <width>1920</width>
       <height>1080</height>
       <texture>time.header.png</texture>
-      <visible>!control.isvisible(93761232)</visible>
+      <visible>!control.isvisible(93761232)+!window.isactive(35)</visible>
       <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
     </control>
@@ -135,7 +135,7 @@
       <font>font13</font>
       <label>#infoservice.weather.today.temp - #infoservice.weather.today.condition</label>
       <align>right</align>
-      <visible>plugin.isenabled(InfoService)+[!control.isvisible(93761232)]</visible>
+      <visible>plugin.isenabled(InfoService)+!control.isvisible(93761232)+!string.equals(#infoservice.weather.today.temp,)+!string.equals(#infoservice.weather.today.condition,)</visible>
       <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
     </control>

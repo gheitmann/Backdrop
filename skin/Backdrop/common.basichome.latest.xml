@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
   <controls>
     <!--MovingPicture 1 ******************************************************-->
@@ -57,7 +57,8 @@
       <posY>0</posY>
       <width>1920</width>
       <height>1080</height>
-      <texture>default.png</texture>
+      <texture>Modern/home.jpg</texture>
+      <colordiffuse>ff707070</colordiffuse>
       <visible>[Control.HasFocus(91919991)+!string.equals(#latestMediaHandler.movingpicture.latest1.fanart)]|[Control.HasFocus(91919992)+!string.equals(#latestMediaHandler.movingpicture.latest2.fanart)]|[Control.HasFocus(91919993)+!string.equals(#latestMediaHandler.movingpicture.latest3.fanart)]</visible>
     </control>
     <control>
@@ -469,7 +470,8 @@
       <posY>0</posY>
       <width>1920</width>
       <height>1080</height>
-      <texture>default.png</texture>
+      <texture>Modern/home.jpg</texture>
+      <colordiffuse>ff707070</colordiffuse>
       <visible>[Control.HasFocus(91919994)+!string.equals(#latestMediaHandler.tvseries.latest1.fanart)]|[Control.HasFocus(91919995)+!string.equals(#latestMediaHandler.tvseries.latest2.fanart)]|[Control.HasFocus(91919996)+!string.equals(#latestMediaHandler.tvseries.latest3.fanart)]</visible>
     </control>
     <control>
@@ -1060,7 +1062,8 @@
       <posY>0</posY>
       <width>1920</width>
       <height>1080</height>
-      <texture>default.png</texture>
+      <texture>Modern/home.jpg</texture>
+      <colordiffuse>ff707070</colordiffuse>
       <visible>[Control.HasFocus(91919997)+!string.equals(#latestMediaHandler.music.latest1.fanart)]|[Control.HasFocus(91919998)+!string.equals(#latestMediaHandler.music.latest2.fanart)]|[Control.HasFocus(91919999)+!string.equals(#latestMediaHandler.music.latest3.fanart)]</visible>
     </control>
     <control>

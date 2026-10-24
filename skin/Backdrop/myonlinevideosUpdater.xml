@@ -34,7 +34,8 @@
       <width>2880</width>
       <height>1620</height>
       <shouldCache>true</shouldCache>
-      <texture>default.png</texture>
+      <texture>Modern/home.jpg</texture>
+      <colordiffuse>ff707070</colordiffuse>
       <animation effect="fade" start="10" end="100" time="850" delay="80" reversible="true">Visible</animation>
       <animation effect="fade" start="100" end="0" time="700" reversible="true">Hidden</animation>
     </control>

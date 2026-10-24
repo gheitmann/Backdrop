@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
   <id>801</id>
   <defaultcontrol>50</defaultcontrol>
@@ -16,6 +16,7 @@
       <width>1920</width>
       <height>1080</height>
       <texture>Animations\settings\default.jpg</texture>
+      <colordiffuse>ff707070</colordiffuse>
       <visible>[facadeview.filmstrip|facadeview.list|facadeview.album]</visible>
     </control>
     <control>

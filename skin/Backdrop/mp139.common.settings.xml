@@ -8,7 +8,7 @@
       <texture>Animations\settings\default.jpg</texture>
       <width>1920</width>
       <height>1080</height>
-      <colordiffuse>ffffffff</colordiffuse>
+      <colordiffuse>ff707070</colordiffuse>
     </control>
     <control>
       <description>background top overlay</description>
