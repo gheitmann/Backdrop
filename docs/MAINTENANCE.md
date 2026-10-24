@@ -119,3 +119,8 @@ Local maintenance history and immutable fixtures remain under the owner's `Docum
 - A held alpha publication must not freeze package identity. Increment the native package revision whenever delivering changed installable payloads; identify local builds separately. Otherwise MPE reports identical old/new versions. Keep native replacement confirmation rather than bypassing it.
 - Music radio checkbuttons inherit a yellow-orb texture from references.xml when textureNoFocus is omitted. Override that texture explicitly; preserve the bound checkbutton and its native state.
 - Latest Media labels need explicit absolute pivots, bounded text height/width and a bottom anchor above the home bar. Apply the same geometry to BackdropMenuEditorConfig.cs and rebuild the editor, otherwise a menu save restores the overlap. check_guide_layout.py protects all nine definitions and generator geometry.
+
+## Focused Latest Music follow-up
+
+- An empty music database prevents a meaningful Latest Media visual test even when file playback fixtures exist. Seed the isolated database with retained synthetic file references and verify LatestMediaHandler reports populated results; preserve the fixture rows for future checks.
+- Check the focused artist/album labels as well as the Latest Music heading. The six music metadata viewports require the same explicit rotation-pivot correction; otherwise they can still cross the home bar after the heading itself is fixed. Keep generator definitions synchronized and version changed editor payloads separately from published ALPHA15.

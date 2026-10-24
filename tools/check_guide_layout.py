@@ -82,6 +82,12 @@ def check():
     for c in captions:
         x = float(c.findtext('posX'))
         check_caption(c, (x, 400, x + 100, 980), c.findtext('label'))
+    details = [c for c in latest.findall('.//control') if c.findtext('description') in ('Artist Label', 'Album Label')
+               and (c.findtext('label') or '').startswith('#latestMediaHandler.music.')]
+    require(len(details) == 6, 'Missing music metadata captions')
+    for c in details:
+        x = float(c.findtext('posX'))
+        check_caption(c, (x, 400, x + 100, 980), c.findtext('label'))
     source = (ROOT / 'Source/BackdropMenuEditor/BackdropMenuEditorConfig.cs').read_text(encoding='utf-8-sig')
     import re
     generated = re.findall(r'<description>Latest Label</description>.*?<label>(#SkinTranslation[^<]+)</label>', source, re.S)
@@ -98,6 +104,7 @@ def check():
         require(radio.findtext('type') == 'checkbutton' and radio.findtext('hyperlink') == '30'
                 and radio.findtext('textureNoFocus') == '-', f'{name}: inherited yellow radio texture returned')
     print('Latest captions: 9 definitions x 2 output sizes passed; generator geometry and 2 radio-menu overrides passed.')
+    print('Focused music metadata captions: 6 definitions x 2 output sizes passed.')
 
 
 if __name__ == '__main__':

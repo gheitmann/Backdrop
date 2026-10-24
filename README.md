@@ -2,7 +2,7 @@
 
 Experimental port of cul8er's **Backdrop 1.0.1** skin to **MediaPortal 1.39**.
 
-Current version: **ALPHA15 (1.39.0.15)**, menu editor **1.39.0.15**. Revision 14 was used for a local build; the public alpha advances to 15 to keep every delivered payload distinguishable. The editor and installer target AnyCPU. Runtime checks were performed on MediaPortal 1.39 x64; a complete x86 runtime test is still pending.
+Current working version: **LOCAL16 (1.39.0.16)**, menu editor **1.39.0.16**. The latest published release remains ALPHA15; LOCAL16 adds focused Latest Music metadata caption corrections. The editor and installer target AnyCPU. Runtime checks were performed on MediaPortal 1.39 x64; a complete x86 runtime test is still pending.
 
 ## Install
 
