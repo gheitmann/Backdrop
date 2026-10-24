@@ -1,5 +1,7 @@
 # ALPHA15 validation
 
+LOCAL17 visual follow-up: `LUCIDE-REFRESH.md` records 550 generated UI textures, modern stock backgrounds, static TV group caption, full-height selection rows and native checked/unchecked visual confirmation. Payload validation covers 2,398 files and 557 XML definitions; the single EXE passes VerifyOnly. These working changes do not replace the published ALPHA15 release.
+
 Current working follow-up: QUICKCHECK-LOCAL16.md records 5/6 fresh runtime cases passed (83.3%), complete static 11-command topbar coverage, a repaired Danish fallback key and the remaining transport/locale/x86 limits. LATEST-MUSIC-DETAILS.md supersedes the earlier Latest Music fixture blocker with 2/2 runtime layout passes. Published ALPHA15 remains unchanged.
 
 Completed real-install follow-up: INSTALLER-PATH-FIX.md records the corrected starter, owner-confirmed absence of flicker, **2,393/2,393 installed payload files matching**, native plugin destination/uninstall record and registered version 1.39.0.15. This closes the original setup-path defect; broader x86/display coverage remains open.

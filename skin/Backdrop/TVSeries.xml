@@ -54,7 +54,8 @@
       <width>1920</width>
       <height>1080</height>
       <shouldCache>true</shouldCache>
-      <texture>default.png</texture>
+      <texture>Modern/home.jpg</texture>
+      <colordiffuse>ff707070</colordiffuse>
       <visible>yes</visible>
     </control>
     <control>

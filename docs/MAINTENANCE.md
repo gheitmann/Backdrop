@@ -4,6 +4,8 @@ Use this repository as the versioned source for future Backdrop changes. Keep re
 
 ## Start every update here
 
+Current artwork baseline: read `LUCIDE-REFRESH.md` and retain its Lucide mappings, recorded native dimensions, separate native checkmarks and stock-background/editor consistency. Preserve raster aspect ratios and regenerate the test texture cache when dimensions change. The TV group caption is deliberately static to avoid rotated-marquee flicker.
+
 1. Read this file and `VALIDATION.md`, inspect the current branch and remote changes, then check the target MediaPortal release and matching plugin architecture.
 2. Preserve native required control types and IDs. Restyle compatible modern pages instead of restoring incompatible legacy XML wholesale.
 3. Keep the lower BasicHome category hit areas aligned with visible captions: Y=966, height=76. Preserve the matching editor generator and mouse-move wake-up changes.

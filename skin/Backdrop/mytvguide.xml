@@ -21,7 +21,7 @@
       <posY>0</posY>
       <width>1920</width>
       <height>1080</height>
-      <texture>default.png</texture>
+      <texture>Modern/home.jpg</texture>
       <colordiffuse>ff505050</colordiffuse>
     </control>
     <control>
@@ -361,15 +361,14 @@
     </control>
     <control>
       <description>TvGroup button label</description>
-      <type>fadelabel</type>
+      <type>label</type>
       <id>0</id>
       <posX>12</posX>
       <posY>1050</posY>
       <width>320</width>
       <align>left</align>
-      <scrollStartDelaySec>3</scrollStartDelaySec>
       <label>#TV.Guide.ChangeGroup</label>
-      <font>font14BC</font>
+      <font>font12BC</font>
       <shadowAngle>45</shadowAngle>
       <shadowDistance>1</shadowDistance>
       <shadowColor>ff333333</shadowColor>

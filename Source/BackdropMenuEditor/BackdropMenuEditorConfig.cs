@@ -5076,7 +5076,8 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <width>1920</width>");
                 rawXML.AppendLine("        <height>1080</height>");
                 rawXML.AppendLine("        <shouldCache>true</shouldCache>");
-                rawXML.AppendLine("        <texture>default.png</texture>");
+                rawXML.AppendLine("        <texture>Modern/home.jpg</texture>");
+                rawXML.AppendLine("        <colordiffuse>ff707070</colordiffuse>");
                 rawXML.AppendLine("        <visible>[Control.HasFocus(91919991)+!string.equals(#latestMediaHandler.movingpicture.latest1.fanart)]|[Control.HasFocus(91919992)+!string.equals(#latestMediaHandler.movingpicture.latest2.fanart)]|[Control.HasFocus(91919993)+!string.equals(#latestMediaHandler.movingpicture.latest3.fanart)]</visible>");
                 rawXML.AppendLine("    </control>");
 
@@ -5522,7 +5523,8 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <posY>0</posY>");
                 rawXML.AppendLine("        <width>1920</width>");
                 rawXML.AppendLine("        <height>1080</height>");
-                rawXML.AppendLine("        <texture>default.png</texture>");
+                rawXML.AppendLine("        <texture>Modern/home.jpg</texture>");
+                rawXML.AppendLine("        <colordiffuse>ff707070</colordiffuse>");
                 rawXML.AppendLine("        <visible>[Control.HasFocus(91919994)+!string.equals(#latestMediaHandler.tvseries.latest1.fanart)]|[Control.HasFocus(91919995)+!string.equals(#latestMediaHandler.tvseries.latest2.fanart)]|[Control.HasFocus(91919996)+!string.equals(#latestMediaHandler.tvseries.latest3.fanart)]</visible>");
                 rawXML.AppendLine("    </control>");
 
@@ -6161,7 +6163,8 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <posY>0</posY>");
                 rawXML.AppendLine("        <width>1920</width>");
                 rawXML.AppendLine("        <height>1080</height>");
-                rawXML.AppendLine("        <texture>default.png</texture>");
+                rawXML.AppendLine("        <texture>Modern/home.jpg</texture>");
+                rawXML.AppendLine("        <colordiffuse>ff707070</colordiffuse>");
                 rawXML.AppendLine("        <visible>[Control.HasFocus(91919997)+!string.equals(#latestMediaHandler.music.latest1.fanart)]|[Control.HasFocus(91919998)+!string.equals(#latestMediaHandler.music.latest2.fanart)]|[Control.HasFocus(91919999)+!string.equals(#latestMediaHandler.music.latest3.fanart)]</visible>");
                 rawXML.AppendLine("    </control>");
 
