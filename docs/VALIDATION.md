@@ -1,5 +1,7 @@
 # ALPHA15 validation
 
+Follow-up on 24 October: QUICKCHECK-ALPHA15.md records 3/4 scoped checks passed (75%): Radio nonfocused appearance, real isolated copy/progress I/O, and setup VerifyOnly. Latest Music runtime visibility remains blocked. This adds evidence without changing the published ALPHA15 payload.
+
 Target: MediaPortal 1.39 x64, Windows 11, 23 October 2026. Package, setup and AnyCPU editor version 1.39.0.15. Revision 14 was an unpublished local delivery.
 
 ## New evidence since ALPHA13
