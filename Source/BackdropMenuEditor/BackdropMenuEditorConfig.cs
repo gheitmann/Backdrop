@@ -865,7 +865,15 @@ namespace MediaPortal.Plugins
                         mycount++;
                     }
                 }
-                MessageBox.Show("Done saving your menu configuration (old is kept as backup). Settings is stored in memory. Make sure to press Ok when exiting MP Configuration. Pressing Cancel when exiting MP Configuration will result in these setting NOT being saved!");
+                if (Object.Equals(AppDomain.CurrentDomain.GetData("Backdrop.StandaloneEditor"), true))
+                {
+                    MediaPortal.Profile.Settings.SaveCache();
+                    MessageBox.Show("Your menu configuration has been saved. The previous configuration is kept as a backup. Restart MediaPortal to use the updated menu.", "Backdrop Menu Editor");
+                }
+                else
+                {
+                    MessageBox.Show("Done saving your menu configuration (old is kept as backup). Settings is stored in memory. Make sure to press Ok when exiting MP Configuration. Pressing Cancel when exiting MP Configuration will result in these setting NOT being saved!");
+                }
                 this.Close();
             }
             else
