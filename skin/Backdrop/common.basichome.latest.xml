@@ -74,9 +74,10 @@
       <description>Latest Label</description>
       <type>fadelabel</type>
       <id>0</id>
-      <posX>1482</posX>
-      <posY>674</posY>
-      <width>495</width>
+      <posX>1734</posX>
+      <posY>970</posY>
+      <width>400</width>
+      <height>40</height>
       <align>left</align>
       <scrollStartDelaySec>3600</scrollStartDelaySec>
       <label>#SkinTranslation.Translations.LatestMovies.Label</label>
@@ -85,7 +86,7 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>1</shadowDistance>
       <shadowColor>ff333333</shadowColor>
-      <animation effect="rotate" start="0" end="90" time="0" condition="true">conditional</animation>
+      <animation effect="rotate" start="90" end="90" center="1734,970" time="0" condition="true">Conditional</animation>
       <animation effect="fade" start="0" end="100" delay="350" time="50">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>[Control.isvisible(98345611)+[Control.HasFocus(77033)|Control.HasFocus(77034)]]+!Control.isvisible(93761234)</visible>
@@ -94,9 +95,10 @@
       <description>Latest Label</description>
       <type>fadelabel</type>
       <id>0</id>
-      <posX>1418</posX>
-      <posY>674</posY>
-      <width>495</width>
+      <posX>1670</posX>
+      <posY>970</posY>
+      <width>400</width>
+      <height>40</height>
       <align>left</align>
       <scrollStartDelaySec>3600</scrollStartDelaySec>
       <label>#SkinTranslation.Translations.LatestMovies.Label</label>
@@ -105,7 +107,7 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>1</shadowDistance>
       <shadowColor>ff333333</shadowColor>
-      <animation effect="rotate" start="0" end="90" time="0" condition="true">conditional</animation>
+      <animation effect="rotate" start="90" end="90" center="1670,970" time="0" condition="true">Conditional</animation>
       <animation effect="fade" start="0" end="100" time="350">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>[Control.HasFocus(91919991)|Control.HasFocus(91919992)|Control.HasFocus(91919993)]+!Control.isvisible(93761234)</visible>
@@ -484,9 +486,10 @@
       <description>Latest Label</description>
       <type>fadelabel</type>
       <id>0</id>
-      <posX>1372</posX>
-      <posY>635</posY>
-      <width>495</width>
+      <posX>1624</posX>
+      <posY>970</posY>
+      <width>400</width>
+      <height>40</height>
       <align>left</align>
       <scrollStartDelaySec>3600</scrollStartDelaySec>
       <label>#SkinTranslation.Translations.LatestSeries.Label</label>
@@ -495,7 +498,7 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>1</shadowDistance>
       <shadowColor>ff333333</shadowColor>
-      <animation effect="rotate" start="0" end="90" time="0" condition="true">conditional</animation>
+      <animation effect="rotate" start="90" end="90" center="1624,970" time="0" condition="true">Conditional</animation>
       <animation effect="fade" start="0" end="100" delay="350" time="50">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>[Control.isvisible(98345511)+[Control.HasFocus(77046)]]+!Control.isvisible(93761234)</visible>
@@ -504,9 +507,10 @@
       <description>Latest Label</description>
       <type>fadelabel</type>
       <id>0</id>
-      <posX>1302</posX>
-      <posY>635</posY>
-      <width>495</width>
+      <posX>1554</posX>
+      <posY>970</posY>
+      <width>400</width>
+      <height>40</height>
       <align>left</align>
       <scrollStartDelaySec>3600</scrollStartDelaySec>
       <label>#SkinTranslation.Translations.LatestSeries.Label</label>
@@ -515,7 +519,7 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>1</shadowDistance>
       <shadowColor>ff333333</shadowColor>
-      <animation effect="rotate" start="0" end="90" time="0" condition="true">conditional</animation>
+      <animation effect="rotate" start="90" end="90" center="1554,970" time="0" condition="true">Conditional</animation>
       <animation effect="fade" start="0" end="100" time="350">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>[Control.HasFocus(91919994)|Control.HasFocus(91919995)|Control.HasFocus(91919996)]+!Control.isvisible(93761234)</visible>
@@ -860,10 +864,11 @@
       <description>Latest Label</description>
       <type>fadelabel</type>
       <id>0</id>
-      <posX>1402</posX>
-      <posY>690</posY>
-      <width>495</width>
-      <align>center</align>
+      <posX>1654</posX>
+      <posY>970</posY>
+      <width>400</width>
+      <height>40</height>
+      <align>left</align>
       <scrollStartDelaySec>3600</scrollStartDelaySec>
       <label>#SkinTranslation.Translations.LatestPictures.Label</label>
       <font>font18</font>
@@ -871,7 +876,7 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>1</shadowDistance>
       <shadowColor>ff333333</shadowColor>
-      <animation effect="rotate" start="0" end="90" time="0" condition="true">conditional</animation>
+      <animation effect="rotate" start="90" end="90" center="1654,970" time="0" condition="true">Conditional</animation>
       <animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="350">Visible</animation>
       <animation effect="slide" start="0,0" end="0,450" tween="quadratic" easing="in" time="350">Hidden</animation>
       <animation effect="fade" start="0" end="100" time="350">Visible</animation>
@@ -1072,9 +1077,10 @@
       <description>Latest Label</description>
       <type>fadelabel</type>
       <id>0</id>
-      <posX>1428</posX>
-      <posY>693</posY>
-      <width>495</width>
+      <posX>1680</posX>
+      <posY>970</posY>
+      <width>400</width>
+      <height>40</height>
       <align>left</align>
       <scrollStartDelaySec>3600</scrollStartDelaySec>
       <label>#SkinTranslation.Translations.LatestMusic.Label</label>
@@ -1083,7 +1089,7 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>1</shadowDistance>
       <shadowColor>ff333333</shadowColor>
-      <animation effect="rotate" start="0" end="90" time="0" condition="true">conditional</animation>
+      <animation effect="rotate" start="90" end="90" center="1680,970" time="0" condition="true">Conditional</animation>
       <animation effect="fade" start="0" end="100" delay="350" time="50">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>[Control.isvisible(98345811)+[Control.HasFocus(77023)|Control.HasFocus(77027)|Control.HasFocus(77028)]]+!Control.isvisible(93761234)</visible>
@@ -1092,9 +1098,10 @@
       <description>Latest Label</description>
       <type>fadelabel</type>
       <id>0</id>
-      <posX>1362</posX>
-      <posY>693</posY>
-      <width>495</width>
+      <posX>1614</posX>
+      <posY>970</posY>
+      <width>400</width>
+      <height>40</height>
       <align>left</align>
       <scrollStartDelaySec>3600</scrollStartDelaySec>
       <label>#SkinTranslation.Translations.LatestMusic.Label</label>
@@ -1103,7 +1110,7 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>1</shadowDistance>
       <shadowColor>ff333333</shadowColor>
-      <animation effect="rotate" start="0" end="90" time="0" condition="true">conditional</animation>
+      <animation effect="rotate" start="90" end="90" center="1614,970" time="0" condition="true">Conditional</animation>
       <animation effect="fade" start="0" end="100" time="350">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>[Control.HasFocus(91919997)|Control.HasFocus(91919998)|Control.HasFocus(91919999)]+!Control.isvisible(93761234)</visible>
@@ -1424,9 +1431,10 @@
       <description>Latest Label</description>
       <type>fadelabel</type>
       <id>0</id>
-      <posX>1372</posX>
-      <posY>635</posY>
-      <width>495</width>
+      <posX>1624</posX>
+      <posY>970</posY>
+      <width>400</width>
+      <height>40</height>
       <align>left</align>
       <scrollStartDelaySec>3600</scrollStartDelaySec>
       <label>#SkinTranslation.Translations.LatestRecordings.Label</label>
@@ -1435,7 +1443,7 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>1</shadowDistance>
       <shadowColor>ff333333</shadowColor>
-      <animation effect="rotate" start="0" end="90" time="0" condition="true">conditional</animation>
+      <animation effect="rotate" start="90" end="90" center="1624,970" time="0" condition="true">Conditional</animation>
       <animation effect="fade" start="0" end="100" delay="350" time="50">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>[Control.isvisible(98345511)+[Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)]]]+!Control.isvisible(93761234)</visible>
@@ -1444,9 +1452,10 @@
       <description>Latest Label</description>
       <type>fadelabel</type>
       <id>0</id>
-      <posX>1302</posX>
-      <posY>635</posY>
-      <width>495</width>
+      <posX>1554</posX>
+      <posY>970</posY>
+      <width>400</width>
+      <height>40</height>
       <align>left</align>
       <scrollStartDelaySec>3600</scrollStartDelaySec>
       <label>#SkinTranslation.Translations.LatestRecordings.Label</label>
@@ -1455,7 +1464,7 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>1</shadowDistance>
       <shadowColor>ff333333</shadowColor>
-      <animation effect="rotate" start="0" end="90" time="0" condition="true">conditional</animation>
+      <animation effect="rotate" start="90" end="90" center="1554,970" time="0" condition="true">Conditional</animation>
       <animation effect="fade" start="0" end="100" time="350">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>[Control.HasFocus(91919984)|Control.HasFocus(91919985)|Control.HasFocus(91919986)]+!Control.isvisible(93761234)</visible>

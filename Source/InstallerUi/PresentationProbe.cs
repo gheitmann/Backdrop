@@ -31,6 +31,23 @@ class PresentationProbe
                 }
                 bool buffered = (bool)typeof(Control).GetProperty("DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(form, null);
                 if (!buffered) throw new Exception("Form buffering is disabled.");
+                Label current = (Label)InstallerPresentation.Find(form, "lbl_curr_file");
+                if (current.AutoSize || !current.AutoEllipsis || current.BackColor.A != 255
+                    || current.BackColor != System.Drawing.SystemColors.Window)
+                    throw new Exception("Current filename must use a fixed opaque ellipsis viewport.");
+                System.Drawing.Rectangle filenameBounds = current.Bounds;
+                current.Text = new string('W', 180) + ".png";
+                current.Refresh();
+                current.Text = "a.png";
+                current.Refresh();
+                if (current.Bounds != filenameBounds) throw new Exception("Filename viewport shrank after a shorter path.");
+                using (System.Drawing.Bitmap bitmap = new System.Drawing.Bitmap(current.Width, current.Height))
+                {
+                    current.DrawToBitmap(bitmap, new System.Drawing.Rectangle(0, 0, bitmap.Width, bitmap.Height));
+                    for (int x = bitmap.Width / 2; x < bitmap.Width - 2; x++)
+                        if (bitmap.GetPixel(x, bitmap.Height / 2).ToArgb() != current.BackColor.ToArgb())
+                            throw new Exception("Old filename pixels remain after short-path repaint.");
+                }
                 ProgressBar progress = (ProgressBar)InstallerPresentation.Find(form, "progressBar1");
                 progress.Maximum = 2393;
                 MethodInfo handler = form.GetType().GetMethod("packageClass_FileInstalled", BindingFlags.Instance | BindingFlags.NonPublic);
@@ -41,7 +58,7 @@ class PresentationProbe
                 int paints = InstallerPresentation.PaintCount(form);
                 if (progress.Value != 2393 || paints >= 2393 || paints < 2) throw new Exception("Progress throttling/completion check failed.");
                 File.WriteAllText(Path.Combine(local, "presentation-probe.txt"), string.Format(
-                    "PASS: {0}/3 readable buttons; buffered form; 2393/2393 synthetic events preserved; {1} targeted refreshes in {2}ms; final progress flushed. No installation performed.", buttons, paints, timer.ElapsedMilliseconds));
+                    "PASS: {0}/3 readable buttons; fixed opaque filename viewport and long-to-short repaint; buffered form; 2393/2393 synthetic events preserved; {1} targeted refreshes in {2}ms; final progress flushed. No installation performed.", buttons, paints, timer.ElapsedMilliseconds));
                 return 0;
             }
         }

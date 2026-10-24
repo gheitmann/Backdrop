@@ -1,24 +1,32 @@
-# Optional installer presentation fix
+# Backdrop ALPHA15 single-file setup
 
-The MediaPortal 1.39 Extension Installer redraws its full installation window after each file and uses fixed white button text. The optional Backdrop installer helper uses buffered panels, Windows button colours and targeted progress repaints, limited to one per 100 ms with a final completion flush.
+Download `Backdrop-Setup-ALPHA15.exe`, close MediaPortal and run the EXE. No companion files, manual ZIP extraction, PowerShell command or Initialize.ps1 step is required. Windows requests administrator elevation for installation. The native installer retains package information, dependency checks, replacement confirmation and registration. The alternative MPE1 can be opened with the ordinary MediaPortal Extension Installer.
 
-This is separate from the skin MPE1. Installing the skin with the ordinary Extension Installer does not update that installer's own appearance.
+Setup automatically searches both Program Files locations and registered uninstall InstallLocation values for the client folder containing MpeCore.dll and MpeInstaller.exe. If discovery is ambiguous or unsuccessful, select the client folder in the folder picker. Do not select the TV Server or download folder.
 
-## Use the optional ZIP
+Package, setup and editor report 1.39.0.15. Revision 14 was a local build, so the public alpha advances to 15. An installed older build can still trigger native MPE's replacement/uninstall prompt; the old/new versions now identify distinct payloads.
 
-1. Extract `Backdrop-InstallerUI-ALPHA11.zip` to a new writable folder.
-2. Run `powershell.exe -NoProfile -File .\Initialize.ps1`. For a different installation directory, pass `-MediaPortalDirectory 'D:\MediaPortal'`.
-3. Initialization copies and patches the installed **unsigned 1.39.0.0** MpeCore into the extracted folder's `Runtime` subdirectory and checks presentation and assembly binding. It never overwrites Program Files. Unsupported versions or unexpected code fail initialization.
-4. Double-click `Runtime\BackdropInstaller.exe` for a preview that installs nothing. To install, close MediaPortal and drag the desired `.mpe1` onto that executable. The original MediaPortal installer handles package checks, installation and registration using the separate presentation assembly.
+## Presentation and isolation
 
-The ZIP contains no MediaPortal binaries. It includes the helper, local patcher, Mono.Cecil 0.11.6 and its MIT notice, probes and complete helper sources. Remove the extracted folder to remove this optional helper; ordinary MPE1 file associations remain unchanged.
+The setup uses buffered panels, readable Windows button colours and progress repaints limited to one per 100 ms with a final completion flush. A fixed opaque filename viewport clears previous long filenames when shorter names appear; long text is truncated with ellipsis. Native file copying and registration methods are not patched.
 
-## Validation and limits
+The EXE contains a private bundle, extracted per run beneath `%LOCALAPPDATA%\BackdropInstaller`. It copies and patches only the installed unsigned **1.39.0.0** MpeCore into that private directory. Unsupported versions fail initialization. Installed core DLLs and MPE1 associations remain unchanged. No MediaPortal binaries are redistributed. Per-run files are removed after the child exits; diagnostic logs remain in the parent directory.
 
-On Windows 11 with MP 1.39 x64: native preview buttons are readable; three button styles and buffered form pass the probe. All 2,393 synthetic file events reach the native progress handler, with two targeted repaint calls during the short burst and a final completion flush. A separate probe confirms that the original installer assembly binds to the copied MpeCore without invoking its entry point. These probes do not install or register a package. A full real installation through this helper remains unverified; use the ordinary installer if the helper fails.
+## Diagnostic options
 
-## Build from source
+- `--verify`: initialize and run presentation/assembly binding probes without installation or elevation.
+- `--preview`: open the harmless presentation preview without installation.
+- `--mediaportal "D:\MediaPortal"`: choose an explicit client folder.
 
-Use `tools/build-installer-ui.ps1 -CecilPath <Mono.Cecil.dll> -OutputDirectory <new-folder>` with Windows PowerShell and the .NET Framework compiler. The native source inspected matches Team MediaPortal commit `d1f11e283bd918521b1613b3488fe417fa2e5157`: `Tools/MPE/MpeCore/Classes/SectionPanel/InstallSection.cs` and the base horizontal/vertical layouts. Native file copying, dependencies and registration methods are not patched.
+Logs: `last-verification.txt`, `last-run.txt`, and `setup-error.txt` beneath `%LOCALAPPDATA%\BackdropInstaller`.
 
-The source and exact validation limits are retained here for future maintenance. Do not apply this patch blindly to later MediaPortal versions.
+## Build and validation
+
+1. Build the helper with Windows PowerShell: `tools/build-installer-ui.ps1 -CecilPath <Mono.Cecil.dll> -OutputDirectory <new-folder>`.
+2. Validate and package the skin with `python tools/validate.py`, `python tools/check_guide_layout.py` and `python tools/package.py`.
+3. Build the private ZIP with `python tools/package-installer-ui.py --build <helper-folder> --cecil-license <license-file> --package <skin.mpe1> --output <private-bundle.zip>`.
+4. Embed it using `tools/build-setup.ps1 -BundlePath <private-bundle.zip> -OutputPath <setup.exe>`. Only the final EXE is required for installation; its SHA256 sidecar is optional verification material.
+
+The private bundle includes helper sources, Mono.Cecil 0.11.6 and its MIT notice. Native presentation source inspected matches Team MediaPortal commit d1f11e283bd918521b1613b3488fe417fa2e5157. Do not apply the patch blindly to later native versions. Linux CI builds the ordinary MPE1; native setup preparation requires Windows and an installed supported MediaPortal client.
+
+See VALIDATION.md and SETUP-EXE-VALIDATION.md for exact checks. Synthetic filename rendering, 2,393 progress events and VerifyOnly do not certify a complete real installation, elevation interaction or live-copy repainting. Full x86 execution remains unverified.

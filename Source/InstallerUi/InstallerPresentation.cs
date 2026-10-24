@@ -16,6 +16,20 @@ namespace Backdrop.InstallerUi
         public static void Apply(Form form)
         {
             Style(form);
+            Label current = Find(form, "lbl_curr_file") as Label;
+            if (current != null)
+            {
+                // A transparent, auto-sized label leaves the previous long filename on
+                // its parent when only the shorter new label is refreshed.
+                current.AutoSize = false;
+                current.AutoEllipsis = true;
+                current.BackColor = SystemColors.Window;
+                current.ForeColor = SystemColors.WindowText;
+                current.TextAlign = ContentAlignment.MiddleLeft;
+                current.Width = Math.Max(current.Width, current.Parent.ClientSize.Width - current.Left - 12);
+                current.Height = Math.Max(current.Height, current.Font.Height + 6);
+                current.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right;
+            }
         }
 
         private static void Style(Control control)

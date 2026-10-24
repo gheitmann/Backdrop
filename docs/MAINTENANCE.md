@@ -101,3 +101,21 @@ Local maintenance history and immutable fixtures remain under the owner's `Docum
 - Account for native scaling before rotation: horizontal text width becomes vertical extent, so ultrawide output needs a shorter bounded viewport. check_guide_layout.py verifies containment at 1920 x 1080 and 3440 x 1440.
 - Keep guide group captions inside X=7..59/Y=612..1060. Active definitions use X=12/Y=1050 and a 320 x 34 viewport; long names scroll within it. Do not use the old centred 417-pixel label or mixed pivot 35,0.
 - Shared dialog corrections retain IDs and actions. DialogMenu title 4 is also used by music Actions; verify the actual runtime route when testing an equivalent context menu.
+
+## Unreleased guide background lesson
+
+- Inspect the actual source pixels before changing layout dimensions: background.tvguide.png already contains a quarter-screen room fading into black. The full original room is available as Media/default.png. Reuse it at 1920 x 1080 with ff505050 diffuse darkening, preserving the original guide anchors and a single backdrop control. Retain the original resource for other pages.
+- Keep release work on hold when requested. See UNRELEASED-GUIDE-BACKGROUND.md for three scoped runtime checks and remaining active-playback/progress limitations; do not advance package metadata or publish an alpha merely to save local work.
+
+## Integrated installer bundle lessons
+
+- Do not assume the client lives under 64-bit Program Files. Resolve both standard program roots and uninstall InstallLocation values, require MpeCore.dll plus MpeInstaller.exe, and offer a folder picker for custom or ambiguous installs. Preserve explicit path support and report the full missing filename.
+- Package the UI helper and skin together using package-installer-ui.py --package. Install Backdrop.cmd invokes automatic initialization and native binding verification before launching the bundled MPE1. Keep VerifyOnly and Preview paths free of package installation. Do not ship installed core DLLs or overwrite them; retain the exact 1.39 unsigned assembly guard.
+- Final delivery must be a single EXE, as requested by the owner. build-setup.ps1 embeds the private ZIP; Setup.cs extracts and initializes internally, elevates only actual installation, waits for its child and cleans its own per-run files. A ZIP or scripts alone are not the final installer format.
+- Targeted status-label Refresh is insufficient with a transparent auto-sized label: old long text can remain on the parent. Keep lbl_curr_file fixed-size and opaque, with ellipsis, and verify long-to-short repainting before future presentation changes.
+
+## LOCAL14 lessons
+
+- A held alpha publication must not freeze package identity. Increment the native package revision whenever delivering changed installable payloads; identify local builds separately. Otherwise MPE reports identical old/new versions. Keep native replacement confirmation rather than bypassing it.
+- Music radio checkbuttons inherit a yellow-orb texture from references.xml when textureNoFocus is omitted. Override that texture explicitly; preserve the bound checkbutton and its native state.
+- Latest Media labels need explicit absolute pivots, bounded text height/width and a bottom anchor above the home bar. Apply the same geometry to BackdropMenuEditorConfig.cs and rebuild the editor, otherwise a menu save restores the overlap. check_guide_layout.py protects all nine definitions and generator geometry.

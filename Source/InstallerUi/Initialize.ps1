@@ -1,6 +1,7 @@
-param([string]$MediaPortalDirectory='C:\Program Files\Team MediaPortal\MediaPortal')
+param([string]$MediaPortalDirectory, [switch]$SelectDirectory)
 $ErrorActionPreference='Stop'
-$installed=[IO.Path]::GetFullPath($MediaPortalDirectory)
+. (Join-Path $PSScriptRoot 'Find-MediaPortal.ps1')
+$installed=Resolve-MediaPortalDirectory -Directory $MediaPortalDirectory -SelectDirectory:$SelectDirectory
 $runtime=Join-Path $PSScriptRoot 'Runtime'
 if(Test-Path -LiteralPath $runtime){throw 'Runtime already exists. Extract a fresh copy before initializing again.'}
 foreach($name in @('MpeCore.dll','MpeInstaller.exe')){
