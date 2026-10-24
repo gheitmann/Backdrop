@@ -90,6 +90,10 @@
       <textcolor>ffffffff</textcolor>
       <disabledcolor>80ffffff</disabledcolor>
       <textcolorNoFocus>80ffffff</textcolorNoFocus>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textalign>center</textalign>
+      <textXOff>0</textXOff>
     </control>
     <control>
       <description>Skip conflicting Recording</description>
@@ -106,6 +110,10 @@
       <textcolor>ffffffff</textcolor>
       <disabledcolor>80ffffff</disabledcolor>
       <textcolorNoFocus>80ffffff</textcolorNoFocus>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textalign>center</textalign>
+      <textXOff>0</textXOff>
     </control>
     <control>
       <description>Keep Conflict</description>
@@ -122,6 +130,10 @@
       <textcolor>ffffffff</textcolor>
       <disabledcolor>80ffffff</disabledcolor>
       <textcolorNoFocus>80ffffff</textcolorNoFocus>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textalign>center</textalign>
+      <textXOff>0</textXOff>
     </control>
     <control>
       <description>Skip conflicting Episode</description>
@@ -138,6 +150,10 @@
       <textcolor>ffffffff</textcolor>
       <disabledcolor>80ffffff</disabledcolor>
       <textcolorNoFocus>80ffffff</textcolorNoFocus>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textalign>center</textalign>
+      <textXOff>0</textXOff>
     </control>
   </controls>
   <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="960,600" time="550">WindowOpen</animation>

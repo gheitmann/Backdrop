@@ -111,8 +111,6 @@
       <type>button</type>
       <id>10</id>
       <label>186</label>
-      <textalign>center</textalign>
-      <textYOff>0</textYOff>
       <posX>480</posX>
       <posY>790</posY>
       <width>370</width>
@@ -123,14 +121,16 @@
       <ondown>3</ondown>
       <textureFocus>MP139\button_focus.png</textureFocus>
       <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textalign>center</textalign>
+      <textXOff>0</textXOff>
     </control>
     <control>
       <description>Cancel button</description>
       <type>button</type>
       <id>11</id>
       <label>510</label>
-      <textalign>center</textalign>
-      <textYOff>0</textYOff>
       <posX>990</posX>
       <posY>790</posY>
       <width>370</width>
@@ -141,6 +141,10 @@
       <ondown>3</ondown>
       <textureFocus>MP139\button_focus.png</textureFocus>
       <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textalign>center</textalign>
+      <textXOff>0</textXOff>
     </control>
   </controls>
 </window>

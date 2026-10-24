@@ -72,9 +72,10 @@
       <textureFocus>MP139\button_focus.png</textureFocus>
       <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
       <label>#(string.format(1903,#countdownseconds))</label>
-      <textalign>CENTER</textalign>
-      <textXOff>84</textXOff>
-      <textYOff>12</textYOff>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textalign>center</textalign>
+      <textXOff>0</textXOff>
     </control>
   </controls>
 </window>

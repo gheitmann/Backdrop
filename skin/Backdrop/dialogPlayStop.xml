@@ -12,15 +12,12 @@
       <id>10</id>
       <posX>765</posX>
       <posY>585</posY>
-      <textXOff>45</textXOff>
-      <textYOff>4</textYOff>
       <font>font14BC</font>
       <textcolor>ffffffff</textcolor>
       <colordiffuse>ffffffff</colordiffuse>
       <disabledcolor>80ffffff</disabledcolor>
       <textcolorNoFocus>80ffffff</textcolorNoFocus>
       <textureFocus>button.focus.png</textureFocus>
-      <textureNoFocus>button.focus.png</textureNoFocus>
       <width>180</width>
       <height>52</height>
       <label>2553</label>
@@ -28,6 +25,11 @@
       <onright>11</onright>
       <onup>10</onup>
       <ondown>10</ondown>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textalign>center</textalign>
+      <textXOff>0</textXOff>
+      <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
     </control>
     <control>
       <description>Stop button</description>
@@ -35,15 +37,12 @@
       <id>11</id>
       <posX>957</posX>
       <posY>585</posY>
-      <textXOff>45</textXOff>
-      <textYOff>4</textYOff>
       <font>font14BC</font>
       <textcolor>ffffffff</textcolor>
       <colordiffuse>ffffffff</colordiffuse>
       <disabledcolor>80ffffff</disabledcolor>
       <textcolorNoFocus>80ffffff</textcolorNoFocus>
       <textureFocus>button.focus.png</textureFocus>
-      <textureNoFocus>button.focus.png</textureNoFocus>
       <width>180</width>
       <height>52</height>
       <label>2552</label>
@@ -51,6 +50,11 @@
       <onright>10</onright>
       <onup>11</onup>
       <ondown>11</ondown>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textalign>center</textalign>
+      <textXOff>0</textXOff>
+      <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
     </control>
   </controls>
   <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="960,600" time="550">WindowOpen</animation>

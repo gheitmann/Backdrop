@@ -120,12 +120,13 @@
         <ondown>13</ondown>
         <height>52</height>
         <width>600</width>
-        <textXOff>15</textXOff>
-        <textYOff>3</textYOff>
         <onleft>#defaultcontrol.onright</onleft>
         <onright>#defaultcontrol.onright</onright>
         <textureFocus>list_background_focus.png</textureFocus>
         <textureNoFocus>list_background_nofocus.png</textureNoFocus>
+        <textvalign>middle</textvalign>
+        <textYOff>0</textYOff>
+        <textXOff>16</textXOff>
       </control>
       <control Style="settingsmainbutton">
         <description>delete album button</description>
@@ -136,12 +137,13 @@
         <ondown>10</ondown>
         <height>52</height>
         <width>600</width>
-        <textXOff>15</textXOff>
-        <textYOff>3</textYOff>
         <onleft>#defaultcontrol.onright</onleft>
         <onright>#defaultcontrol.onright</onright>
         <textureFocus>list_background_focus.png</textureFocus>
         <textureNoFocus>list_background_nofocus.png</textureNoFocus>
+        <textvalign>middle</textvalign>
+        <textYOff>0</textYOff>
+        <textXOff>16</textXOff>
       </control>
       <control Style="settingsmainbutton">
         <description>Delete Album Info</description>
@@ -152,12 +154,13 @@
         <ondown>2</ondown>
         <height>52</height>
         <width>600</width>
-        <textXOff>15</textXOff>
-        <textYOff>3</textYOff>
         <onleft>#defaultcontrol.onright</onleft>
         <onright>#defaultcontrol.onright</onright>
         <textureFocus>list_background_focus.png</textureFocus>
         <textureNoFocus>list_background_nofocus.png</textureNoFocus>
+        <textvalign>middle</textvalign>
+        <textYOff>0</textYOff>
+        <textXOff>16</textXOff>
       </control>
     </control>
   </controls>

@@ -75,14 +75,10 @@
       <id>4</id>
       <font>font14BC</font>
       <textureFocus>button.focus.png</textureFocus>
-      <textureNoFocus>button.focus.png</textureNoFocus>
       <width>180</width>
       <height>52</height>
       <posX>1434</posX>
       <posY>980</posY>
-      <textXOff>2</textXOff>
-      <textYOff>2</textYOff>
-      <textalign>center</textalign>
       <textcolor>ffffffff</textcolor>
       <colordiffuse>ffffffff</colordiffuse>
       <disabledcolor>80ffffff</disabledcolor>
@@ -92,6 +88,11 @@
       <onright>10</onright>
       <onup>10</onup>
       <ondown>10</ondown>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textalign>center</textalign>
+      <textXOff>0</textXOff>
+      <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
     </control>
   </controls>
   <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="1535,897" time="550">WindowOpen</animation>
