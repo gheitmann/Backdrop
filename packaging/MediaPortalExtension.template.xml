@@ -16734,6 +16734,13 @@
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
               <Param1 />
+              <UpdateOption>AlwaysOverwrite</UpdateOption>
+              <LocalFileName>Source/BackdropMenuEditor.exe</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{3bd73ee8-d2fc-44d4-a107-43e2f382a919}-BackdropMenuEditor.exe</ZipFileName>
+              <DestinationFilename>%Base%\BackdropMenuEditor.exe</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
+              <Param1 />
               <UpdateOption>NeverOverwrite</UpdateOption>
               <LocalFileName>config/BackdropMenuEditor.xml</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{82eacd2d-0201-40aa-af70-01bdc0a27263}-BackdropMenuEditor.xml</ZipFileName>
@@ -16955,7 +16962,7 @@
     </Items>
   </Dependencies>
   <GeneralInfo>
-    <Name>Backdrop MP 1.39 AnyCPU LOCAL18 Lucide</Name>
+    <Name>Backdrop MP 1.39 AnyCPU ALPHA19 Lucide</Name>
     <Id>7aec8315-531b-49b4-ac24-d6b285d039d0</Id>
     <Author>cul8er; local MP 1.39 AnyCPU adaptation</Author>
     <HomePage>https://github.com/gheitmann/Backdrop</HomePage>
@@ -16966,10 +16973,10 @@
       <Major>1</Major>
       <Minor>39</Minor>
       <Build>0</Build>
-      <Revision>18</Revision>
+      <Revision>19</Revision>
     </Version>
     <ExtensionDescription>Experimental Backdrop 1.0.1 port for MediaPortal 1.39. Includes an AnyCPU menu editor. Tested on x64; full x86 runtime testing remains pending. Requires compatible external Fanart Handler and Latest Media Handler plugins. See README.md and docs/VALIDATION.md.</ExtensionDescription>
-    <VersionDescription>LOCAL18: Lucide controls and modern stock backgrounds, with artwork credits. Includes focused Latest Music caption fixes. AnyCPU editor 1.39.0.18.</VersionDescription>
+    <VersionDescription>ALPHA19: dark Lucide redesign, category backgrounds, playback overlay and progress alignment corrections, standalone menu editor. AnyCPU editor 1.39.0.19.</VersionDescription>
     <DevelopmentStatus>Alpha</DevelopmentStatus>
     <OnlineLocation>
     </OnlineLocation>
@@ -33735,6 +33742,13 @@
         <LocalFileName>Source/BackdropMenuEditor.dll</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{f107f894-0d1a-4eb5-8611-5edd9d795fc0}-BackdropMenuEditor.dll</ZipFileName>
         <DestinationFilename>%Plugins%\process\BackdropMenuEditor.dll</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
+        <Param1 />
+        <UpdateOption>AlwaysOverwrite</UpdateOption>
+        <LocalFileName>Source/BackdropMenuEditor.exe</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{3bd73ee8-d2fc-44d4-a107-43e2f382a919}-BackdropMenuEditor.exe</ZipFileName>
+        <DestinationFilename>%Base%\BackdropMenuEditor.exe</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
         <Param1 />

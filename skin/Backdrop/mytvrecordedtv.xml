@@ -147,7 +147,7 @@
       <width>1920</width>
       <height>1080</height>
       <texture>overlay.dim.png</texture>
-      <visible>Control.IsVisible(50)+[Control.HasFocus(991799)|Control.HasFocus(991899)|Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(5)|Control.HasFocus(6)|Control.HasFocus(7)]</visible>
+      <visible>Control.IsVisible(50)+[Control.HasFocus(991799)|Control.HasFocus(991899)|Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(5)|Control.HasFocus(6)]</visible>
       <animation effect="fade" time="450">visible</animation>
       <animation effect="fade" time="400">hidden</animation>
     </control>
@@ -171,7 +171,7 @@
       <description>action menu</description>
       <defaultcontrol>2</defaultcontrol>
       <onexit>50</onexit>
-      <visible>Control.IsVisible(50)+[Control.HasFocus(991799)|Control.HasFocus(991899)|Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(5)|Control.HasFocus(6)|Control.HasFocus(7)]</visible>
+      <visible>Control.IsVisible(50)+[Control.HasFocus(991799)|Control.HasFocus(991899)|Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(5)|Control.HasFocus(6)]</visible>
       <control>
         <type>group</type>
         <animation effect="zoom" delay="20" tween="back" easing="out" start="1,1" end="100,100" center="960,461" time="550" reversible="true">Visible</animation>
@@ -190,7 +190,7 @@
           <animation effect="zoom" delay="250" start="100,100" end="1,1" center="960,300" time="250" reversible="true">Hidden</animation>
           <animation effect="rotatex" start="0" end="65" center="960,291" time="550" reversible="true">Hidden</animation>
           <animation effect="fade" delay="500" start="100" end="0" time="50" reversible="true">Hidden</animation>
-          <visible>Control.IsVisible(50)+[Control.HasFocus(991799)|Control.HasFocus(991899)|Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(5)|Control.HasFocus(6)|Control.HasFocus(7)]</visible>
+          <visible>Control.IsVisible(50)+[Control.HasFocus(991799)|Control.HasFocus(991899)|Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(5)|Control.HasFocus(6)]</visible>
         </control>
         <control>
           <description>Heading text label</description>
@@ -365,7 +365,7 @@
             <textYOff>2</textYOff>
             <hover>-</hover>
             <onup>5</onup>
-            <ondown>7</ondown>
+            <ondown>2</ondown>
             <onleft>50</onleft>
             <onright>50</onright>
             <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
@@ -374,6 +374,7 @@
             <description>Menu Button 4</description>
             <type>button</type>
             <id>7</id>
+            <visible>no</visible>
             <width>420</width>
             <label>896</label>
             <textcolor>ffffffff</textcolor>
@@ -383,7 +384,6 @@
             <font>font14BC</font>
             <textXOff>10</textXOff>
             <textYOff>2</textYOff>
-            <hyperlink>609</hyperlink>
             <hover>-</hover>
             <onup>6</onup>
             <ondown>2</ondown>
@@ -495,32 +495,6 @@
         <shouldCache>true</shouldCache>
         <texture>hiddenmenu_button_fo.png</texture>
         <visible>Control.HasFocus(6)+!Control.isvisible(93761264)</visible>
-        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
-      </control>
-      <control>
-        <description>Button 7 - Navigating from up</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>810</posX>
-        <posY>513</posY>
-        <width>420</width>
-        <height>42</height>
-        <shouldCache>true</shouldCache>
-        <texture>hiddenmenu_button_fo.png</texture>
-        <visible>Control.HasFocus(7)+Control.isvisible(93761264)</visible>
-        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
-      </control>
-      <control>
-        <description>Button 7 - Navigating from down</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>810</posX>
-        <posY>513</posY>
-        <width>420</width>
-        <height>42</height>
-        <shouldCache>true</shouldCache>
-        <texture>hiddenmenu_button_fo.png</texture>
-        <visible>Control.HasFocus(7)+!Control.isvisible(93761264)</visible>
         <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
       </control>
     </control>

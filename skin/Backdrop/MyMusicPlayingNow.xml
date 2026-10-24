@@ -189,29 +189,22 @@
       <visible>player.hasmedia</visible>
     </control>
     <control>
-      <description>Progressbar Background</description>
-      <type>image</type>
+      <description>progress bar</description>
+      <type>progress</type>
       <id>0</id>
       <posX>1439</posX>
       <posY>328</posY>
       <width>231</width>
       <height>15</height>
-      <shouldCache>true</shouldCache>
-      <texture>progressback.png</texture>
-      <visible>player.hasmedia</visible>
-    </control>
-    <control>
-      <description>progress bar</description>
-      <type>progress</type>
-      <id>0</id>
-      <posX>1427</posX>
-      <posY>321</posY>
-      <width>258</width>
-      <height>15</height>
       <label>#percentage</label>
-      <texturebg>-</texturebg>
+      <texturebg>progressback.png</texturebg>
       <lefttexture>-</lefttexture>
       <midtexture>progressbar_mid.png</midtexture>
+      <onlymidtexture>yes</onlymidtexture>
+      <midwidth>231</midwidth>
+      <midheight>15</midheight>
+      <midoffsetX>0</midoffsetX>
+      <midoffsetY>0</midoffsetY>
       <righttexture>-</righttexture>
       <visible>player.hasmedia</visible>
     </control>
@@ -999,16 +992,6 @@
       <textcolor>ff7FB1E5</textcolor>
     </control>
     <control>
-      <type>image</type>
-      <id>0</id>
-      <description>Backdrop progress track</description>
-      <posX>100</posX>
-      <posY>870</posY>
-      <width>850</width>
-      <height>15</height>
-      <texture>progressback.png</texture>
-    </control>
-    <control>
       <description>progress bar</description>
       <type>progress</type>
       <id>118</id>
@@ -1017,9 +1000,14 @@
       <width>850</width>
       <height>15</height>
       <label>#percentage</label>
-      <texturebg>-</texturebg>
+      <texturebg>progressback.png</texturebg>
       <lefttexture>-</lefttexture>
       <midtexture>progressbar_mid.png</midtexture>
+      <onlymidtexture>yes</onlymidtexture>
+      <midwidth>850</midwidth>
+      <midheight>15</midheight>
+      <midoffsetX>0</midoffsetX>
+      <midoffsetY>0</midoffsetY>
       <righttexture>-</righttexture>
       <visible>player.hasmedia</visible>
     </control>
