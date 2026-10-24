@@ -124,3 +124,9 @@ Local maintenance history and immutable fixtures remain under the owner's `Docum
 
 - An empty music database prevents a meaningful Latest Media visual test even when file playback fixtures exist. Seed the isolated database with retained synthetic file references and verify LatestMediaHandler reports populated results; preserve the fixture rows for future checks.
 - Check the focused artist/album labels as well as the Latest Music heading. The six music metadata viewports require the same explicit rotation-pivot correction; otherwise they can still cross the home bar after the heading itself is fixed. Keep generator definitions synchronized and version changed editor payloads separately from published ALPHA15.
+
+## Native installer path regression
+
+- Verify actual destination paths and installed bytes after a real native run. Assembly binding alone misses Config's cached temporary Base/Plugins defaults. Preserve the original UI application domain; the second-domain experiment was rejected after severe owner-observed flicker.
+- Set the version-specific Config Base/Plugins roots before MPE initializes providers, using the guarded nonpublic setter. Validate the target path in --verify and actual runs, retain native-run diagnostics, and keep --verify failures noninteractive. Check uninstall OriginalFile paths as well as the DLL version/hash.
+- ALPHA15 InstallerFix retains the original MPE1 bytes. Its setup executable is version 1.39.0.16, while the installed skin/editor remain 1.39.0.15. Do not confuse this starter correction with the separate LOCAL16 skin work. See INSTALLER-PATH-FIX.md.
