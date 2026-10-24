@@ -305,5 +305,6 @@
       "source": "https://images.unsplash.com/photo-1532896374032-fdffb11e2b8e?fm=jpg&fit=crop&crop=entropy&w=1920&h=1080&q=90",
       "sha256": "ad334078589b0dec77feb327870c56cf92eb9e59805264f148903204183fa03a"
     }
-  ]
+  ],
+  "topbar_style": "backdrop-classic"
 }

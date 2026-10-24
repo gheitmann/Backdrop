@@ -22,6 +22,18 @@ async function main(){
     ['hiddenmenu_button_no_fo.png','hiddenmenu_button_fo.png'],
     ['tvguide_button_middle.png','tvguide_button_selected_middle.png']];
   for(const [a,b] of pairs) if(fs.readFileSync(path.join(media,a)).equals(fs.readFileSync(path.join(media,b)))) throw new Error('Indistinguishable states: '+a+' / '+b);
+  const fidelity = JSON.parse(fs.readFileSync(path.join(root, 'Source/Artwork/native-fidelity.json')));
+  const crypto = require('node:crypto');
+  for (const [name, spec] of Object.entries(fidelity.files)) {
+    const data = fs.readFileSync(path.join(media, name));
+    if (crypto.createHash('sha256').update(data).digest('hex') !== spec.sha256) throw new Error('Native semantic artwork overwritten: ' + name);
+    const metadata = await sharp(data).metadata();
+    if (metadata.width !== spec.dimensions[0] || metadata.height !== spec.dimensions[1]) throw new Error('Native artwork dimensions changed: ' + name);
+  }
+  if (process.argv.includes('--verify-only')) {
+    console.log(`PASS: ${Object.keys(report).length} decoded textures, ${Object.keys(fidelity.files).length} preserved native assets; no preview generated.`);
+    return;
+  }
   const names=['check-boxNF.png','check-box.png','top_skipback_disabled.png','top_back_disabled.png',
     'hiddenmenu_togglebutton_off.png','hiddenmenu_togglebutton_on.png',
     'hiddenmenu_button_no_fo.png','hiddenmenu_button_fo.png',

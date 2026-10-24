@@ -48,6 +48,13 @@ def main():
     mapped = {p for p in actual if p.startswith('skin/')}
     if shipped != mapped:
         raise ValueError(f'Unmapped or missing skin files: {sorted(shipped ^ mapped)}')
+    fidelity_path = ROOT / 'Source/Artwork/native-fidelity.json'
+    if fidelity_path.is_file():
+        fidelity = json.loads(fidelity_path.read_text(encoding='utf-8'))
+        for name, record in fidelity['files'].items():
+            relative = 'skin/Backdrop/Media/' + name
+            if actual.get(relative) != record['sha256']:
+                raise ValueError(f'Native semantic artwork replaced or unmapped: {name}')
     dll = (ROOT / 'Source' / 'BackdropMenuEditor.dll').read_bytes()
     pe = struct.unpack_from('<I', dll, 0x3c)[0]
     assert dll[pe:pe+4] == b'PE\0\0', 'Invalid editor PE signature'

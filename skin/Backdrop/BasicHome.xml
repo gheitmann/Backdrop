@@ -598,6 +598,7 @@
       <onright>77022</onright>
       <onup>77013</onup>
       <ondown>77013</ondown>
+      <visible allowhiddenfocus="true">!Control.IsVisible(93761234)</visible>
     </control>
     <control>
       <description>Menu 1 Submenu Button Selected - Nevigating from left</description>
@@ -650,6 +651,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77012)|Control.HasFocus(77013)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 2 Submenu Background Top</description>
@@ -715,6 +717,7 @@
       <onright>77032</onright>
       <onup>77028</onup>
       <ondown>77028</ondown>
+      <visible allowhiddenfocus="true">!Control.IsVisible(93761234)</visible>
     </control>
     <control>
       <description>Menu 2 Submenu Button Selected - Nevigating from left</description>
@@ -768,6 +771,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77022)|Control.HasFocus(77023)|Control.HasFocus(77024)|Control.HasFocus(77025)|Control.HasFocus(77026)|Control.HasFocus(77027)|Control.HasFocus(77028)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 2 Submenu Button Selected - Nevigating from left</description>
@@ -820,6 +824,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77022)|Control.HasFocus(77023)|Control.HasFocus(77024)|Control.HasFocus(77025)|Control.HasFocus(77026)|Control.HasFocus(77027)|Control.HasFocus(77028)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 2 Submenu Button Selected - Nevigating from left</description>
@@ -872,6 +877,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77022)|Control.HasFocus(77023)|Control.HasFocus(77024)|Control.HasFocus(77025)|Control.HasFocus(77026)|Control.HasFocus(77027)|Control.HasFocus(77028)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 2 Submenu Button Selected - Nevigating from left</description>
@@ -924,6 +930,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77022)|Control.HasFocus(77023)|Control.HasFocus(77024)|Control.HasFocus(77025)|Control.HasFocus(77026)|Control.HasFocus(77027)|Control.HasFocus(77028)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 2 Submenu Button Selected - Nevigating from left</description>
@@ -976,6 +983,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77022)|Control.HasFocus(77023)|Control.HasFocus(77024)|Control.HasFocus(77025)|Control.HasFocus(77026)|Control.HasFocus(77027)|Control.HasFocus(77028)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 2 Submenu Button Selected - Nevigating from left</description>
@@ -1028,6 +1036,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77022)|Control.HasFocus(77023)|Control.HasFocus(77024)|Control.HasFocus(77025)|Control.HasFocus(77026)|Control.HasFocus(77027)|Control.HasFocus(77028)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 3 Submenu Background Top</description>
@@ -1093,6 +1102,7 @@
       <onright>77042</onright>
       <onup>77038</onup>
       <ondown>77038</ondown>
+      <visible allowhiddenfocus="true">!Control.IsVisible(93761234)</visible>
     </control>
     <control>
       <description>Menu 3 Submenu Button Selected - Nevigating from left</description>
@@ -1145,6 +1155,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77032)|Control.HasFocus(77033)|Control.HasFocus(77034)|Control.HasFocus(77035)|Control.HasFocus(77036)|Control.HasFocus(77037)|Control.HasFocus(77038)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 3 Submenu Button Selected - Nevigating from left</description>
@@ -1197,6 +1208,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77032)|Control.HasFocus(77033)|Control.HasFocus(77034)|Control.HasFocus(77035)|Control.HasFocus(77036)|Control.HasFocus(77037)|Control.HasFocus(77038)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 3 Submenu Button Selected - Nevigating from left</description>
@@ -1249,6 +1261,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77032)|Control.HasFocus(77033)|Control.HasFocus(77034)|Control.HasFocus(77035)|Control.HasFocus(77036)|Control.HasFocus(77037)|Control.HasFocus(77038)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 3 Submenu Button Selected - Nevigating from left</description>
@@ -1301,6 +1314,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77032)|Control.HasFocus(77033)|Control.HasFocus(77034)|Control.HasFocus(77035)|Control.HasFocus(77036)|Control.HasFocus(77037)|Control.HasFocus(77038)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 3 Submenu Button Selected - Nevigating from left</description>
@@ -1353,6 +1367,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77032)|Control.HasFocus(77033)|Control.HasFocus(77034)|Control.HasFocus(77035)|Control.HasFocus(77036)|Control.HasFocus(77037)|Control.HasFocus(77038)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 3 Submenu Button Selected - Nevigating from left</description>
@@ -1405,6 +1420,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77032)|Control.HasFocus(77033)|Control.HasFocus(77034)|Control.HasFocus(77035)|Control.HasFocus(77036)|Control.HasFocus(77037)|Control.HasFocus(77038)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 4 Submenu Background Top</description>
@@ -1470,6 +1486,7 @@
       <onright>77052</onright>
       <onup>77047</onup>
       <ondown>77047</ondown>
+      <visible allowhiddenfocus="true">!Control.IsVisible(93761234)</visible>
     </control>
     <control>
       <description>Menu 4 Submenu Button Selected - Nevigating from left</description>
@@ -1522,6 +1539,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77042)|Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)|Control.HasFocus(77046)|Control.HasFocus(77047)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 4 Submenu Button Selected - Nevigating from left</description>
@@ -1574,6 +1592,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77042)|Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)|Control.HasFocus(77046)|Control.HasFocus(77047)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 4 Submenu Button Selected - Nevigating from left</description>
@@ -1626,6 +1645,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77042)|Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)|Control.HasFocus(77046)|Control.HasFocus(77047)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 4 Submenu Button Selected - Nevigating from left</description>
@@ -1678,6 +1698,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77042)|Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)|Control.HasFocus(77046)|Control.HasFocus(77047)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 4 Submenu Button Selected - Nevigating from left</description>
@@ -1730,6 +1751,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77042)|Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)|Control.HasFocus(77046)|Control.HasFocus(77047)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 5 Submenu Background Top</description>
@@ -1795,6 +1817,7 @@
       <onright>77062</onright>
       <onup>77055</onup>
       <ondown>77055</ondown>
+      <visible allowhiddenfocus="true">!Control.IsVisible(93761234)</visible>
     </control>
     <control>
       <description>Menu 5 Submenu Button Selected - Nevigating from left</description>
@@ -1847,6 +1870,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77052)|Control.HasFocus(77053)|Control.HasFocus(77054)|Control.HasFocus(77055)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 5 Submenu Button Selected - Nevigating from left</description>
@@ -1899,6 +1923,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77052)|Control.HasFocus(77053)|Control.HasFocus(77054)|Control.HasFocus(77055)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 5 Submenu Button Selected - Nevigating from left</description>
@@ -1951,6 +1976,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77052)|Control.HasFocus(77053)|Control.HasFocus(77054)|Control.HasFocus(77055)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 6 Submenu Background Top</description>
@@ -2016,6 +2042,7 @@
       <onright>77012</onright>
       <onup>77067</onup>
       <ondown>77067</ondown>
+      <visible allowhiddenfocus="true">!Control.IsVisible(93761234)</visible>
     </control>
     <control>
       <description>Menu 6 Submenu Button Selected - Nevigating from left</description>
@@ -2068,6 +2095,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77062)|Control.HasFocus(77063)|Control.HasFocus(77064)|Control.HasFocus(77065)|Control.HasFocus(77066)|Control.HasFocus(77067)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 6 Submenu Button Selected - Nevigating from left</description>
@@ -2120,6 +2148,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77062)|Control.HasFocus(77063)|Control.HasFocus(77064)|Control.HasFocus(77065)|Control.HasFocus(77066)|Control.HasFocus(77067)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 6 Submenu Button Selected - Nevigating from left</description>
@@ -2172,6 +2201,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77062)|Control.HasFocus(77063)|Control.HasFocus(77064)|Control.HasFocus(77065)|Control.HasFocus(77066)|Control.HasFocus(77067)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 6 Submenu Button Selected - Nevigating from left</description>
@@ -2224,6 +2254,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77062)|Control.HasFocus(77063)|Control.HasFocus(77064)|Control.HasFocus(77065)|Control.HasFocus(77066)|Control.HasFocus(77067)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <control>
       <description>Menu 6 Submenu Button Selected - Nevigating from left</description>
@@ -2276,6 +2307,7 @@
       <animation effect="fade" start="0" end="100" time="100" delay="250" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="30" reversible="true">hidden</animation>
       <visible allowhiddenfocus="true">control.isvisible(93761236)+[Control.HasFocus(77062)|Control.HasFocus(77063)|Control.HasFocus(77064)|Control.HasFocus(77065)|Control.HasFocus(77066)|Control.HasFocus(77067)]+!Control.isvisible(93761234)</visible>
+      <textureNoFocus>-</textureNoFocus>
     </control>
     <import>common.overlays.xml</import>
     <import>common.time.xml</import>

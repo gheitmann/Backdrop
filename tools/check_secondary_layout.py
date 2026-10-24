@@ -86,4 +86,18 @@ for index, identifier in enumerate(order):
 for left, right in zip(rectangles, rectangles[1:]):
     assert left[1] + 20 <= right[0], (left, right)
 assert rectangles[0][0] == 1920 - rectangles[-1][1]
+
+# Focus stays on the native main button while the home menu idles. Its own
+# texture must obey the same hide condition as the surrounding menu artwork.
+home = controls('BasicHome.xml')
+for identifier in ('77012', '77022', '77032', '77042', '77052', '77062'):
+    button = next(c for c in home if c.findtext('id') == identifier)
+    assert button.findtext('visible') == '!Control.IsVisible(93761234)'
+    assert button.find('visible').get('allowhiddenfocus') == 'true'
+for button in home:
+    if button.findtext('type') == 'button' and button.findtext('textureFocus') == '-':
+        assert button.findtext('textureNoFocus') == '-'
+source = (SKIN.parents[1] / 'Source/BackdropMenuEditor/BackdropMenuEditorConfig.cs').read_text(encoding='utf-8-sig')
+assert '<visible allowhiddenfocus=\\"true\\">!Control.IsVisible(93761234)</visible>' in source
 print(f'PASS: {count} dialog/settings buttons, {states} distinct focus states, five bounded music tiles and closed horizontal navigation.')
+print('PASS: six home main-button idle guards; explicit transparent submenu defaults; generator idle guard retained.')

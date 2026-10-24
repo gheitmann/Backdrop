@@ -1,6 +1,9 @@
 using System;
 using System.IO;
 using System.Reflection;
+using System.Diagnostics;
+using System.Security.Cryptography;
+using System.Text;
 using System.Windows.Forms;
 
 public sealed class MenuEditorLauncher : MarshalByRefObject
@@ -38,6 +41,12 @@ public sealed class MenuEditorLauncher : MarshalByRefObject
             if (installation == null || !File.Exists(Path.Combine(installation, "MediaPortal.exe")))
                 throw new DirectoryNotFoundException("MediaPortal was not found. Use --mediaportal to specify its installation folder.");
             installation = Path.GetFullPath(installation);
+            // Inspect metadata before loading native-bitness MediaPortal assemblies.
+            ProcessorArchitecture architecture = AssemblyName.GetAssemblyName(Path.Combine(installation, "Utils.dll")).ProcessorArchitecture;
+            if (architecture == ProcessorArchitecture.X86 && Environment.Is64BitProcess)
+                return RunX86(installation, report);
+            if (architecture == ProcessorArchitecture.Amd64 && !Environment.Is64BitProcess)
+                throw new InvalidOperationException("This MediaPortal installation requires a 64-bit editor process.");
             AppDomain domain = AppDomain.CreateDomain("Backdrop menu editor", null, new AppDomainSetup {
                 ApplicationBase = installation,
                 ConfigurationFile = Path.Combine(installation, "Configuration.exe.config")
@@ -57,6 +66,49 @@ public sealed class MenuEditorLauncher : MarshalByRefObject
             else MessageBox.Show(error.GetBaseException().Message, "Backdrop Menu Editor", MessageBoxButtons.OK, MessageBoxIcon.Error);
             return 1;
         }
+    }
+
+    private static string Quote(string value)
+    {
+        // Windows command-line quoting, including trailing backslashes.
+        StringBuilder result = new StringBuilder("\"");
+        int slashes = 0;
+        foreach (char character in value)
+        {
+            if (character == '\\') { slashes++; continue; }
+            result.Append('\\', character == '"' ? slashes * 2 + 1 : slashes);
+            result.Append(character); slashes = 0;
+        }
+        result.Append('\\', slashes * 2);
+        return result.Append('"').ToString();
+    }
+
+    private static int RunX86(string installation, string report)
+    {
+        byte[] helper;
+        using (Stream resource = Assembly.GetExecutingAssembly().GetManifestResourceStream("BackdropMenuEditor.x86.exe"))
+        using (MemoryStream bytes = new MemoryStream())
+        {
+            if (resource == null) throw new InvalidOperationException("The embedded x86 editor is missing. Reinstall the complete Backdrop editor.");
+            resource.CopyTo(bytes); helper = bytes.ToArray();
+        }
+        string digest;
+        using (SHA256 hash = SHA256.Create()) digest = BitConverter.ToString(hash.ComputeHash(helper)).Replace("-", "");
+        string folder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "BackdropMenuEditor", digest);
+        Directory.CreateDirectory(folder);
+        string executable = Path.Combine(folder, "BackdropMenuEditor.x86.exe");
+        if (!File.Exists(executable) || !System.Linq.Enumerable.SequenceEqual(File.ReadAllBytes(executable), helper))
+        {
+            string temporary = Path.Combine(folder, Guid.NewGuid().ToString("N") + ".tmp");
+            File.WriteAllBytes(temporary, helper);
+            if (File.Exists(executable)) File.Delete(executable);
+            File.Move(temporary, executable);
+        }
+        string arguments = "--mediaportal " + Quote(installation);
+        if (report != null) arguments += " --verify " + Quote(report);
+        using (Process process = Process.Start(new ProcessStartInfo(executable, arguments) {
+            UseShellExecute = false, CreateNoWindow = true, WorkingDirectory = installation
+        })) { process.WaitForExit(); return process.ExitCode; }
     }
 
     public void Run(string installation, string report)
@@ -94,7 +146,7 @@ public sealed class MenuEditorLauncher : MarshalByRefObject
             {
                 // Run the actual Load event without displaying or saving the editor.
                 typeof(Form).GetMethod("OnLoad", BindingFlags.Instance | BindingFlags.NonPublic).Invoke(form, new object[] { EventArgs.Empty });
-                File.WriteAllText(report, "PASS: editor created and loaded\r\nInstallation: " + installation + "\r\nSettings: " + settings + "\r\nSkin: " + skin + "\r\nPlugins: " + plugins);
+                File.WriteAllText(report, "PASS: editor created and loaded\r\nProcess: " + (Environment.Is64BitProcess ? "x64" : "x86") + "\r\nInstallation: " + installation + "\r\nSettings: " + settings + "\r\nSkin: " + skin + "\r\nPlugins: " + plugins);
             }
             else Application.Run(form);
         }

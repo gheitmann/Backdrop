@@ -90,6 +90,14 @@ def check():
     for c in details:
         x = float(c.findtext('posX'))
         check_caption(c, (x, 400, x + 100, 980), c.findtext('label'))
+    recording_details = [c for c in latest.findall('.//control')
+                         if c.findtext('description') in ('Series Label', 'Episode Label')
+                         and c.findtext('label', '').startswith('#latestMediaHandler.tvrecordings.')]
+    require(len(recording_details) == 6, 'Missing TV recording metadata captions')
+    for c in recording_details:
+        require(c.findtext('posX') == ('1554' if c.findtext('description') == 'Series Label' else '1589'),
+                'TV title/genre strips overlap')
+        check_caption(c, (float(c.findtext('posX')), 400, float(c.findtext('posX')) + 30, 980), c.findtext('label'))
     source = (ROOT / 'Source/BackdropMenuEditor/BackdropMenuEditorConfig.cs').read_text(encoding='utf-8-sig')
     import re
     generated = re.findall(r'<description>Latest Label</description>.*?<label>(#SkinTranslation[^<]+)</label>', source, re.S)
@@ -97,6 +105,16 @@ def check():
     # The generator uses literal geometry for each definition; protect its persisted output too.
     blocks = re.findall(r'<description>Latest Label</description>.*?<label>#SkinTranslation[^<]+</label>.*?>Conditional</animation>', source, re.S)
     require(len(blocks) == 9, 'Latest caption generator rotation drifted')
+    native_blocks = re.findall(r'rawXML.AppendLine\("    <control>"\);(?:(?!rawXML.AppendLine\("    <control>"\);).)*?rawXML.AppendLine\("    </control>[^\n]*', source, re.S)
+    recording_blocks = [b for b in native_blocks if re.search(r'<description>(?:Series|Episode) Label</description>', b)
+                        and '#latestMediaHandler.tvrecordings.latest' in b]
+    require(len(recording_blocks) == 6, 'TV recording caption generator drifted')
+    for c, block in zip(recording_details, recording_blocks):
+        for field in ('posX', 'posY', 'width', 'height'):
+            require(f'<{field}>{c.findtext(field)}</{field}>' in block, 'TV recording caption generator geometry differs')
+        require('center=\\"' + c.findtext('posX') + ',970\\"' in block, 'TV recording caption generator pivot differs')
+        require(block.count('>Conditional</animation>') == 1 and 'end=\\"90\\" time=\\"0\\">Hidden' not in block,
+                'TV recording captions must not interpolate their rotation')
     for c, block in zip(captions, blocks):
         for field in ('posX', 'posY', 'width', 'height'):
             require(f'<{field}>{c.findtext(field)}</{field}>' in block, 'Latest caption generator geometry differs')
@@ -111,6 +129,7 @@ def check():
                 f'{name}: external radio focus images obscure the state mark')
     print('Latest captions: 9 definitions x 2 output sizes passed; generator geometry and 2 radio-menu overrides passed.')
     print('Focused music metadata captions: 6 definitions x 2 output sizes passed.')
+    print('Focused TV recording metadata: 6 definitions x 2 output sizes passed.')
 
 
 if __name__ == '__main__':

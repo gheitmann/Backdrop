@@ -1528,9 +1528,6 @@
       <description>Series Label</description>
       <type>fadelabel</type>
       <id>0</id>
-      <posX>1396</posX>
-      <posY>670</posY>
-      <width>420</width>
       <align>left</align>
       <scrollStartDelaySec>3600</scrollStartDelaySec>
       <label>#latestMediaHandler.tvrecordings.latest1.title</label>
@@ -1539,19 +1536,20 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>1</shadowDistance>
       <shadowColor>ff333333</shadowColor>
-      <animation effect="rotate" end="90" time="0">Visible</animation>
-      <animation effect="rotate" end="90" time="0">Hidden</animation>
+
       <animation effect="fade" start="0" end="100" time="350">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>Control.HasFocus(91919984)+!Control.isvisible(93761234)</visible>
+      <posX>1554</posX>
+      <posY>970</posY>
+      <width>400</width>
+      <height>30</height>
+      <animation effect="rotate" start="90" end="90" center="1554,970" time="0" condition="true">Conditional</animation>
     </control>
     <control>
       <description>Episode Label</description>
       <type>fadelabel</type>
       <id>0</id>
-      <posX>1425</posX>
-      <posY>670</posY>
-      <width>420</width>
       <align>left</align>
       <scrollStartDelaySec>3600</scrollStartDelaySec>
       <label>#latestMediaHandler.tvrecordings.latest1.genre</label>
@@ -1560,11 +1558,15 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>1</shadowDistance>
       <shadowColor>ff333333</shadowColor>
-      <animation effect="rotate" end="90" time="0">Visible</animation>
-      <animation effect="rotate" end="90" time="0">Hidden</animation>
+
       <animation effect="fade" start="0" end="100" time="350">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>Control.HasFocus(91919984)+!Control.isvisible(93761234)</visible>
+      <posX>1589</posX>
+      <posY>970</posY>
+      <width>400</width>
+      <height>30</height>
+      <animation effect="rotate" start="90" end="90" center="1589,970" time="0" condition="true">Conditional</animation>
     </control>
     <control>
       <description>Play Button</description>
@@ -1654,9 +1656,6 @@
       <description>Series Label</description>
       <type>fadelabel</type>
       <id>0</id>
-      <posX>1396</posX>
-      <posY>670</posY>
-      <width>420</width>
       <align>left</align>
       <scrollStartDelaySec>3600</scrollStartDelaySec>
       <label>#latestMediaHandler.tvrecordings.latest2.title</label>
@@ -1665,19 +1664,20 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>1</shadowDistance>
       <shadowColor>ff333333</shadowColor>
-      <animation effect="rotate" end="90" time="0">Visible</animation>
-      <animation effect="rotate" end="90" time="0">Hidden</animation>
+
       <animation effect="fade" start="0" end="100" time="350">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>Control.HasFocus(91919985)+!Control.isvisible(93761234)</visible>
+      <posX>1554</posX>
+      <posY>970</posY>
+      <width>400</width>
+      <height>30</height>
+      <animation effect="rotate" start="90" end="90" center="1554,970" time="0" condition="true">Conditional</animation>
     </control>
     <control>
       <description>Episode Label</description>
       <type>fadelabel</type>
       <id>0</id>
-      <posX>1425</posX>
-      <posY>670</posY>
-      <width>420</width>
       <align>left</align>
       <scrollStartDelaySec>3600</scrollStartDelaySec>
       <label>#latestMediaHandler.tvrecordings.latest2.genre</label>
@@ -1686,11 +1686,15 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>1</shadowDistance>
       <shadowColor>ff333333</shadowColor>
-      <animation effect="rotate" end="90" time="0">Visible</animation>
-      <animation effect="rotate" end="90" time="0">Hidden</animation>
+
       <animation effect="fade" start="0" end="100" time="350">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>Control.HasFocus(91919985)+!Control.isvisible(93761234)</visible>
+      <posX>1589</posX>
+      <posY>970</posY>
+      <width>400</width>
+      <height>30</height>
+      <animation effect="rotate" start="90" end="90" center="1589,970" time="0" condition="true">Conditional</animation>
     </control>
     <control>
       <description>Play Button</description>
@@ -1780,9 +1784,6 @@
       <description>Series Label</description>
       <type>fadelabel</type>
       <id>0</id>
-      <posX>1396</posX>
-      <posY>670</posY>
-      <width>420</width>
       <align>left</align>
       <scrollStartDelaySec>3600</scrollStartDelaySec>
       <label>#latestMediaHandler.tvrecordings.latest3.title</label>
@@ -1791,19 +1792,20 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>1</shadowDistance>
       <shadowColor>ff333333</shadowColor>
-      <animation effect="rotate" end="90" time="0">Visible</animation>
-      <animation effect="rotate" end="90" time="0">Hidden</animation>
+
       <animation effect="fade" start="0" end="100" time="350">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>Control.HasFocus(91919986)+!Control.isvisible(93761234)</visible>
+      <posX>1554</posX>
+      <posY>970</posY>
+      <width>400</width>
+      <height>30</height>
+      <animation effect="rotate" start="90" end="90" center="1554,970" time="0" condition="true">Conditional</animation>
     </control>
     <control>
       <description>Episode Label</description>
       <type>fadelabel</type>
       <id>0</id>
-      <posX>1425</posX>
-      <posY>670</posY>
-      <width>420</width>
       <align>left</align>
       <scrollStartDelaySec>3600</scrollStartDelaySec>
       <label>#latestMediaHandler.tvrecordings.latest3.genre</label>
@@ -1812,11 +1814,15 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>1</shadowDistance>
       <shadowColor>ff333333</shadowColor>
-      <animation effect="rotate" end="90" time="0">Visible</animation>
-      <animation effect="rotate" end="90" time="0">Hidden</animation>
+
       <animation effect="fade" start="0" end="100" time="350">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>Control.HasFocus(91919986)+!Control.isvisible(93761234)</visible>
+      <posX>1589</posX>
+      <posY>970</posY>
+      <width>400</width>
+      <height>30</height>
+      <animation effect="rotate" start="90" end="90" center="1589,970" time="0" condition="true">Conditional</animation>
     </control>
     <control>
       <description>Play Button</description>

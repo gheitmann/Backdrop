@@ -21,12 +21,21 @@ $argsList+=Join-Path $PSScriptRoot 'PointerTopbar.cs'
 $argsList+=Join-Path $PSScriptRoot 'PluginMenuLayout.cs'
 & 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe' @argsList
 if($LASTEXITCODE -ne 0){throw 'Compilation failed'}
-$launcherArgs=@('/nologo','/target:winexe','/platform:anycpu','/optimize+',('/out:'+(Join-Path $PSScriptRoot 'BackdropMenuEditor.exe')),
+$workerPath=Join-Path $PSScriptRoot 'BackdropMenuEditor.x86.exe'
+$workerArgs=@('/nologo','/target:winexe','/platform:x86','/optimize+',('/out:'+$workerPath),
     '/r:System.dll','/r:System.Core.dll','/r:System.Windows.Forms.dll',
     ('/resource:'+(Join-Path $PSScriptRoot 'BackdropMenuEditor.dll')+',BackdropMenuEditor.dll'),
     (Join-Path $PSScriptRoot 'MenuEditorLauncher.cs'))
+& 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe' @workerArgs
+if($LASTEXITCODE -ne 0){throw 'x86 menu editor compilation failed'}
+$launcherArgs=@('/nologo','/target:winexe','/platform:anycpu','/optimize+',('/out:'+(Join-Path $PSScriptRoot 'BackdropMenuEditor.exe')),
+    '/r:System.dll','/r:System.Core.dll','/r:System.Windows.Forms.dll',
+    ('/resource:'+(Join-Path $PSScriptRoot 'BackdropMenuEditor.dll')+',BackdropMenuEditor.dll'),
+    ('/resource:'+$workerPath+',BackdropMenuEditor.x86.exe'),
+    (Join-Path $PSScriptRoot 'MenuEditorLauncher.cs'))
 & 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe' @launcherArgs
 if($LASTEXITCODE -ne 0){throw 'Menu editor launcher compilation failed'}
+Remove-Item -LiteralPath $workerPath
 
 
 

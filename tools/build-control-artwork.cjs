@@ -5,6 +5,8 @@ const root = path.resolve(__dirname, '..'), media = path.join(root, 'skin/Backdr
 const inventory = JSON.parse(fs.readFileSync(path.join(root,'Source/Artwork/control-textures.json'),'utf8'));
 const reportPath = path.join(root,'Source/Artwork/control-render-report.json');
 const previous = fs.existsSync(reportPath) ? JSON.parse(fs.readFileSync(reportPath,'utf8')) : {};
+const fidelityPath = path.join(root, 'Source/Artwork/native-fidelity.json');
+const fidelity = fs.existsSync(fidelityPath) ? JSON.parse(fs.readFileSync(fidelityPath, 'utf8')) : {files:{}};
 const menuOnly = process.argv.includes('--menu-only');
 const report = menuOnly ? {...previous} : {};
 const isMenu = name => /^(?:hiddenmenu_|dropdown_|menu[._]|dialog_)/i.test(name);
@@ -15,6 +17,9 @@ function body(icon) {
 }
 async function main() {
   for (const [name, spec] of Object.entries(inventory)) {
+    // Texture names are not semantic icon assignments: e.g. nowplaying.overlay
+    // is a full-screen composition, and clock.png is a clock backing plate.
+    if (fidelity.files[name]) { report[name] = previous[name]; continue; }
     if (['content','topbar'].includes(spec.kind)) continue;
     if (menuOnly && !isMenu(name)) continue;
     const file = path.join(media,name);

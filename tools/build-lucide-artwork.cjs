@@ -44,4 +44,5 @@ async function main() {
   fs.writeFileSync(sizesPath,JSON.stringify(nativeSizes,null,2)+'\n');
   console.log(`Rendered ${count} Lucide focus-state PNGs at 4x resolution and topbar surface; original proportions retained.`);
 }
-main().catch(error => { console.error(error); process.exit(1); });
+if (sources.topbar_style === 'backdrop-classic') require('./build-classic-artwork.cjs');
+else main().catch(error => { console.error(error); process.exit(1); });

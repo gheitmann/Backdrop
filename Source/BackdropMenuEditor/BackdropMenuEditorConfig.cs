@@ -2562,6 +2562,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("  <height>76</height>");
                 rawXML.AppendLine("  <textureFocus>hiddenmenu_button_fo.png</textureFocus>");
                 rawXML.AppendLine("  <textureNoFocus>-</textureNoFocus>");
+                rawXML.AppendLine("  <visible allowhiddenfocus=\"true\">!Control.IsVisible(93761234)</visible>");
                 rawXML.AppendLine("  <textalign>center</textalign>");
                 rawXML.AppendLine("  <label>" + formatXMLChar(item.name) + "</label>");
                 rawXML.AppendLine("  <textcolor>00ffffff</textcolor>");
@@ -2796,6 +2797,7 @@ namespace MediaPortal.Plugins
                     rawXML.AppendLine("  <onright>770" + (itemNo + 1) + "2</onright>");
             }
             rawXML.AppendLine("  <textureFocus>-</textureFocus>");
+            rawXML.AppendLine("  <textureNoFocus>-</textureNoFocus>");
             string up = "";
             string down = "";
             if (z == 0)
@@ -6670,9 +6672,10 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <description>Series Label</description>");
                 rawXML.AppendLine("        <type>fadelabel</type>");
                 rawXML.AppendLine("        <id>0</id>");
-                rawXML.AppendLine("        <posX>1396</posX>");
-                rawXML.AppendLine("        <posY>670</posY>");
-                rawXML.AppendLine("        <width>420</width>");
+                rawXML.AppendLine("        <posX>1554</posX>");
+                rawXML.AppendLine("        <posY>970</posY>");
+                rawXML.AppendLine("        <width>400</width>");
+                rawXML.AppendLine("        <height>30</height>");
                 rawXML.AppendLine("        <align>left</align>");
                 rawXML.AppendLine("        <scrollStartDelaySec>3600</scrollStartDelaySec>");
                 rawXML.AppendLine("        <label>#latestMediaHandler.tvrecordings.latest1.title</label>");
@@ -6681,20 +6684,20 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <shadowAngle>45</shadowAngle>");
                 rawXML.AppendLine("        <shadowDistance>1</shadowDistance>");
                 rawXML.AppendLine("        <shadowColor>ff333333</shadowColor>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" end=\"90\" time=\"0\">Visible</animation>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" end=\"90\" time=\"0\">Hidden</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"0\" end=\"100\" time=\"350\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"100\" end=\"0\" time=\"50\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>Control.HasFocus(91919984)+!Control.isvisible(93761234)</visible>");
+                rawXML.AppendLine("        <animation effect=\"rotate\" start=\"90\" end=\"90\" center=\"1554,970\" time=\"0\" condition=\"true\">Conditional</animation>");
                 rawXML.AppendLine("    </control>	");
 
                 rawXML.AppendLine("    <control>");
                 rawXML.AppendLine("        <description>Episode Label</description>");
                 rawXML.AppendLine("        <type>fadelabel</type>");
                 rawXML.AppendLine("        <id>0</id>");
-                rawXML.AppendLine("        <posX>1425</posX>");
-                rawXML.AppendLine("        <posY>670</posY>");
-                rawXML.AppendLine("        <width>420</width>");
+                rawXML.AppendLine("        <posX>1589</posX>");
+                rawXML.AppendLine("        <posY>970</posY>");
+                rawXML.AppendLine("        <width>400</width>");
+                rawXML.AppendLine("        <height>30</height>");
                 rawXML.AppendLine("        <align>left</align>");
                 rawXML.AppendLine("        <scrollStartDelaySec>3600</scrollStartDelaySec>");
                 rawXML.AppendLine("        <label>#latestMediaHandler.tvrecordings.latest1.genre</label>");
@@ -6703,11 +6706,10 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <shadowAngle>45</shadowAngle>");
                 rawXML.AppendLine("        <shadowDistance>1</shadowDistance>");
                 rawXML.AppendLine("        <shadowColor>ff333333</shadowColor>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" end=\"90\" time=\"0\">Visible</animation>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" end=\"90\" time=\"0\">Hidden</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"0\" end=\"100\" time=\"350\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"100\" end=\"0\" time=\"50\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>Control.HasFocus(91919984)+!Control.isvisible(93761234)</visible>");
+                rawXML.AppendLine("        <animation effect=\"rotate\" start=\"90\" end=\"90\" center=\"1589,970\" time=\"0\" condition=\"true\">Conditional</animation>");
                 rawXML.AppendLine("    </control>");
 
                 rawXML.AppendLine("    <control>");
@@ -6804,9 +6806,10 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <description>Series Label</description>");
                 rawXML.AppendLine("        <type>fadelabel</type>");
                 rawXML.AppendLine("        <id>0</id>");
-                rawXML.AppendLine("        <posX>1396</posX>");
-                rawXML.AppendLine("        <posY>670</posY>");
-                rawXML.AppendLine("        <width>420</width>");
+                rawXML.AppendLine("        <posX>1554</posX>");
+                rawXML.AppendLine("        <posY>970</posY>");
+                rawXML.AppendLine("        <width>400</width>");
+                rawXML.AppendLine("        <height>30</height>");
                 rawXML.AppendLine("        <align>left</align>");
                 rawXML.AppendLine("        <scrollStartDelaySec>3600</scrollStartDelaySec>");
                 rawXML.AppendLine("        <label>#latestMediaHandler.tvrecordings.latest2.title</label>");
@@ -6815,20 +6818,20 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <shadowAngle>45</shadowAngle>");
                 rawXML.AppendLine("        <shadowDistance>1</shadowDistance>");
                 rawXML.AppendLine("        <shadowColor>ff333333</shadowColor>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" end=\"90\" time=\"0\">Visible</animation>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" end=\"90\" time=\"0\">Hidden</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"0\" end=\"100\" time=\"350\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"100\" end=\"0\" time=\"50\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>Control.HasFocus(91919985)+!Control.isvisible(93761234)</visible>");
+                rawXML.AppendLine("        <animation effect=\"rotate\" start=\"90\" end=\"90\" center=\"1554,970\" time=\"0\" condition=\"true\">Conditional</animation>");
                 rawXML.AppendLine("    </control>	");
 
                 rawXML.AppendLine("    <control>");
                 rawXML.AppendLine("        <description>Episode Label</description>");
                 rawXML.AppendLine("        <type>fadelabel</type>");
                 rawXML.AppendLine("        <id>0</id>");
-                rawXML.AppendLine("        <posX>1425</posX>");
-                rawXML.AppendLine("        <posY>670</posY>");
-                rawXML.AppendLine("        <width>420</width>");
+                rawXML.AppendLine("        <posX>1589</posX>");
+                rawXML.AppendLine("        <posY>970</posY>");
+                rawXML.AppendLine("        <width>400</width>");
+                rawXML.AppendLine("        <height>30</height>");
                 rawXML.AppendLine("        <align>left</align>");
                 rawXML.AppendLine("        <scrollStartDelaySec>3600</scrollStartDelaySec>");
                 rawXML.AppendLine("        <label>#latestMediaHandler.tvrecordings.latest2.genre</label>");
@@ -6837,11 +6840,10 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <shadowAngle>45</shadowAngle>");
                 rawXML.AppendLine("        <shadowDistance>1</shadowDistance>");
                 rawXML.AppendLine("        <shadowColor>ff333333</shadowColor>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" end=\"90\" time=\"0\">Visible</animation>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" end=\"90\" time=\"0\">Hidden</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"0\" end=\"100\" time=\"350\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"100\" end=\"0\" time=\"50\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>Control.HasFocus(91919985)+!Control.isvisible(93761234)</visible>");
+                rawXML.AppendLine("        <animation effect=\"rotate\" start=\"90\" end=\"90\" center=\"1589,970\" time=\"0\" condition=\"true\">Conditional</animation>");
                 rawXML.AppendLine("    </control>");
 
                 rawXML.AppendLine("    <control>");
@@ -6937,9 +6939,10 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <description>Series Label</description>");
                 rawXML.AppendLine("        <type>fadelabel</type>");
                 rawXML.AppendLine("        <id>0</id>");
-                rawXML.AppendLine("        <posX>1396</posX>");
-                rawXML.AppendLine("        <posY>670</posY>");
-                rawXML.AppendLine("        <width>420</width>");
+                rawXML.AppendLine("        <posX>1554</posX>");
+                rawXML.AppendLine("        <posY>970</posY>");
+                rawXML.AppendLine("        <width>400</width>");
+                rawXML.AppendLine("        <height>30</height>");
                 rawXML.AppendLine("        <align>left</align>");
                 rawXML.AppendLine("        <scrollStartDelaySec>3600</scrollStartDelaySec>");
                 rawXML.AppendLine("        <label>#latestMediaHandler.tvrecordings.latest3.title</label>");
@@ -6948,20 +6951,20 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <shadowAngle>45</shadowAngle>");
                 rawXML.AppendLine("        <shadowDistance>1</shadowDistance>");
                 rawXML.AppendLine("        <shadowColor>ff333333</shadowColor>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" end=\"90\" time=\"0\">Visible</animation>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" end=\"90\" time=\"0\">Hidden</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"0\" end=\"100\" time=\"350\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"100\" end=\"0\" time=\"50\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>Control.HasFocus(91919986)+!Control.isvisible(93761234)</visible>");
+                rawXML.AppendLine("        <animation effect=\"rotate\" start=\"90\" end=\"90\" center=\"1554,970\" time=\"0\" condition=\"true\">Conditional</animation>");
                 rawXML.AppendLine("    </control>	");
 
                 rawXML.AppendLine("    <control>");
                 rawXML.AppendLine("        <description>Episode Label</description>");
                 rawXML.AppendLine("        <type>fadelabel</type>");
                 rawXML.AppendLine("        <id>0</id>");
-                rawXML.AppendLine("        <posX>1425</posX>");
-                rawXML.AppendLine("        <posY>670</posY>");
-                rawXML.AppendLine("        <width>420</width>");
+                rawXML.AppendLine("        <posX>1589</posX>");
+                rawXML.AppendLine("        <posY>970</posY>");
+                rawXML.AppendLine("        <width>400</width>");
+                rawXML.AppendLine("        <height>30</height>");
                 rawXML.AppendLine("        <align>left</align>");
                 rawXML.AppendLine("        <scrollStartDelaySec>3600</scrollStartDelaySec>");
                 rawXML.AppendLine("        <label>#latestMediaHandler.tvrecordings.latest3.genre</label>");
@@ -6970,11 +6973,10 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <shadowAngle>45</shadowAngle>");
                 rawXML.AppendLine("        <shadowDistance>1</shadowDistance>");
                 rawXML.AppendLine("        <shadowColor>ff333333</shadowColor>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" end=\"90\" time=\"0\">Visible</animation>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" end=\"90\" time=\"0\">Hidden</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"0\" end=\"100\" time=\"350\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"100\" end=\"0\" time=\"50\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>Control.HasFocus(91919986)+!Control.isvisible(93761234)</visible>");
+                rawXML.AppendLine("        <animation effect=\"rotate\" start=\"90\" end=\"90\" center=\"1589,970\" time=\"0\" condition=\"true\">Conditional</animation>");
                 rawXML.AppendLine("    </control>");
 
                 rawXML.AppendLine("    <control>");
