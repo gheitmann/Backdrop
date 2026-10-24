@@ -557,32 +557,26 @@
       <font>font13</font>
       <visible>control.isvisible(3337)+Player.HasAudio+![facadeview.smallicons|facadeview.largeicons]</visible>
     </control>
-    <control>
-      <description>Progressbar Background</description>
-      <type>image</type>
-      <id>0</id>
-      <posX>1449</posX>
-      <posY>328</posY>
-      <width>231</width>
-      <height>15</height>
-      <shouldCache>true</shouldCache>
-      <texture>progressback.png</texture>
-      <visible>control.isvisible(3337)+Player.HasAudio+![facadeview.smallicons|facadeview.largeicons]</visible>
-    </control>
+
     <control>
       <description>progress bar</description>
       <type>progress</type>
       <id>0</id>
-      <posX>1437</posX>
-      <posY>321</posY>
-      <width>258</width>
-      <height>15</height>
       <label>#percentage</label>
-      <texturebg>-</texturebg>
       <lefttexture>-</lefttexture>
       <midtexture>progressbar_mid.png</midtexture>
       <righttexture>-</righttexture>
       <visible>control.isvisible(3337)+Player.HasAudio+![facadeview.smallicons|facadeview.largeicons]</visible>
+      <posX>1449</posX>
+      <posY>328</posY>
+      <width>231</width>
+      <height>15</height>
+      <texturebg>progressback.png</texturebg>
+      <onlymidtexture>yes</onlymidtexture>
+      <midwidth>231</midwidth>
+      <midheight>15</midheight>
+      <midoffsetX>0</midoffsetX>
+      <midoffsetY>0</midoffsetY>
     </control>
     <control>
       <description>play time / duration label</description>
@@ -674,32 +668,26 @@
       <font>font13</font>
       <visible>Player.HasVideo+!control.isvisible(3337)+![facadeview.smallicons|facadeview.largeicons]</visible>
     </control>
-    <control>
-      <description>Progressbar Background</description>
-      <type>image</type>
-      <id>0</id>
-      <posX>1279</posX>
-      <posY>297</posY>
-      <width>234</width>
-      <height>15</height>
-      <shouldCache>true</shouldCache>
-      <texture>progressback.png</texture>
-      <visible>Player.HasVideo+!control.isvisible(3337)+![facadeview.smallicons|facadeview.largeicons]</visible>
-    </control>
+
     <control>
       <description>progress bar</description>
       <type>progress</type>
       <id>0</id>
-      <posX>1268</posX>
-      <posY>290</posY>
-      <width>258</width>
-      <height>15</height>
       <label>#percentage</label>
-      <texturebg>-</texturebg>
       <lefttexture>-</lefttexture>
       <midtexture>progressbar_mid.png</midtexture>
       <righttexture>-</righttexture>
       <visible>Player.HasVideo+!control.isvisible(3337)+![facadeview.smallicons|facadeview.largeicons]</visible>
+      <posX>1279</posX>
+      <posY>297</posY>
+      <width>234</width>
+      <height>15</height>
+      <texturebg>progressback.png</texturebg>
+      <onlymidtexture>yes</onlymidtexture>
+      <midwidth>234</midwidth>
+      <midheight>15</midheight>
+      <midoffsetX>0</midoffsetX>
+      <midoffsetY>0</midoffsetY>
     </control>
     <control>
       <description>play time / duration label</description>

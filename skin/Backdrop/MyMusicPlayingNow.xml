@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <window>
   <id>510</id>
   <defaultcontrol>991899</defaultcontrol>
@@ -751,10 +751,7 @@
             <textcolor>ffffffff</textcolor>
             <colordiffuse>ffffffff</colordiffuse>
             <textcolorNoFocus>90cccccc</textcolorNoFocus>
-            <textureFocus>-</textureFocus>
             <font>font16BC</font>
-            <textXOff>10</textXOff>
-            <textYOff>0</textYOff>
             <hyperlink>500</hyperlink>
             <hover>-</hover>
             <onleft>9743291</onleft>
@@ -762,6 +759,12 @@
             <onup>987658</onup>
             <ondown>987657</ondown>
             <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+            <height>42</height>
+            <textvalign>middle</textvalign>
+            <textYOff>0</textYOff>
+            <textXOff>16</textXOff>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+            <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           </control>
           <control>
             <description>Menu Button 1</description>
@@ -772,17 +775,20 @@
             <textcolor>ffffffff</textcolor>
             <colordiffuse>ffffffff</colordiffuse>
             <textcolorNoFocus>90cccccc</textcolorNoFocus>
-            <textureFocus>-</textureFocus>
             <font>font16BC</font>
             <hyperlink>90478</hyperlink>
             <hover>-</hover>
-            <textXOff>10</textXOff>
-            <textYOff>0</textYOff>
             <onleft>9743291</onleft>
             <onright>9743291</onright>
             <ondown>987658</ondown>
             <onup>987656</onup>
             <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+            <height>42</height>
+            <textvalign>middle</textvalign>
+            <textYOff>0</textYOff>
+            <textXOff>16</textXOff>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+            <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           </control>
           <control>
             <description>Menu Button 2</description>
@@ -793,10 +799,7 @@
             <textcolor>ffffffff</textcolor>
             <colordiffuse>ffffffff</colordiffuse>
             <textcolorNoFocus>90cccccc</textcolorNoFocus>
-            <textureFocus>-</textureFocus>
             <font>font16BC</font>
-            <textXOff>10</textXOff>
-            <textYOff>0</textYOff>
             <hyperlink>30885</hyperlink>
             <hover>-</hover>
             <onleft>9743291</onleft>
@@ -804,6 +807,12 @@
             <ondown>30</ondown>
             <onup>987657</onup>
             <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+            <height>42</height>
+            <textvalign>middle</textvalign>
+            <textYOff>0</textYOff>
+            <textXOff>16</textXOff>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+            <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           </control>
           <control>
             <description>Menu Button 2</description>
@@ -814,16 +823,19 @@
             <textcolor>ffffffff</textcolor>
             <colordiffuse>ffffffff</colordiffuse>
             <textcolorNoFocus>90cccccc</textcolorNoFocus>
-            <textureFocus>-</textureFocus>
             <font>font16BC</font>
-            <textXOff>10</textXOff>
-            <textYOff>0</textYOff>
             <hover>-</hover>
             <onleft>9743291</onleft>
             <onright>9743291</onright>
             <ondown>31</ondown>
             <onup>987658</onup>
             <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+            <height>42</height>
+            <textvalign>middle</textvalign>
+            <textYOff>0</textYOff>
+            <textXOff>16</textXOff>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+            <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           </control>
           <control>
             <description>Menu Button 2</description>
@@ -834,149 +846,23 @@
             <textcolor>ffffffff</textcolor>
             <colordiffuse>ffffffff</colordiffuse>
             <textcolorNoFocus>90cccccc</textcolorNoFocus>
-            <textureFocus>-</textureFocus>
             <font>font16BC</font>
-            <textXOff>10</textXOff>
-            <textYOff>0</textYOff>
             <hover>-</hover>
             <onleft>9743291</onleft>
             <onright>9743291</onright>
             <ondown>987656</ondown>
             <onup>30</onup>
             <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+            <height>42</height>
+            <textvalign>middle</textvalign>
+            <textYOff>0</textYOff>
+            <textXOff>16</textXOff>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+            <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           </control>
         </control>
       </control>
-      <control>
-        <description>Button 987656 - Navigating from up</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>800</posX>
-        <posY>326</posY>
-        <width>375</width>
-        <height>42</height>
-        <shouldCache>true</shouldCache>
-        <texture>hiddenmenu_button_fo.png</texture>
-        <visible>Control.HasFocus(987656)+Control.isvisible(93761264)</visible>
-        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
-      </control>
-      <control>
-        <description>Button 987656 - Navigating from down</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>800</posX>
-        <posY>326</posY>
-        <width>375</width>
-        <height>42</height>
-        <shouldCache>true</shouldCache>
-        <texture>hiddenmenu_button_fo.png</texture>
-        <visible>Control.HasFocus(987656)+!Control.isvisible(93761264)</visible>
-        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
-      </control>
-      <control>
-        <description>Button 987657 - Navigating from up</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>800</posX>
-        <posY>368</posY>
-        <width>375</width>
-        <height>42</height>
-        <shouldCache>true</shouldCache>
-        <texture>hiddenmenu_button_fo.png</texture>
-        <visible>Control.HasFocus(987657)+Control.isvisible(93761264)</visible>
-        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
-      </control>
-      <control>
-        <description>Button 987657 - Navigating from down</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>800</posX>
-        <posY>368</posY>
-        <width>375</width>
-        <height>42</height>
-        <shouldCache>true</shouldCache>
-        <texture>hiddenmenu_button_fo.png</texture>
-        <visible>Control.HasFocus(987657)+!Control.isvisible(93761264)</visible>
-        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
-      </control>
-      <control>
-        <description>Button 987658 - Navigating from up</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>800</posX>
-        <posY>410</posY>
-        <width>375</width>
-        <height>42</height>
-        <shouldCache>true</shouldCache>
-        <texture>hiddenmenu_button_fo.png</texture>
-        <visible>Control.HasFocus(987658)+Control.isvisible(93761264)</visible>
-        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
-      </control>
-      <control>
-        <description>Button 987658 - Navigating from down</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>800</posX>
-        <posY>410</posY>
-        <width>375</width>
-        <height>42</height>
-        <shouldCache>true</shouldCache>
-        <texture>hiddenmenu_button_fo.png</texture>
-        <visible>Control.HasFocus(987658)+!Control.isvisible(93761264)</visible>
-        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
-      </control>
-      <control>
-        <description>Button 30 - Navigating from up</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>800</posX>
-        <posY>452</posY>
-        <width>375</width>
-        <height>42</height>
-        <shouldCache>true</shouldCache>
-        <texture>hiddenmenu_button_fo.png</texture>
-        <visible>Control.HasFocus(30)+Control.isvisible(93761264)</visible>
-        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
-      </control>
-      <control>
-        <description>Button 30 - Navigating from down</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>800</posX>
-        <posY>452</posY>
-        <width>375</width>
-        <height>42</height>
-        <shouldCache>true</shouldCache>
-        <texture>hiddenmenu_button_fo.png</texture>
-        <visible>Control.HasFocus(30)+!Control.isvisible(93761264)</visible>
-        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
-      </control>
-      <control>
-        <description>Button 31 - Navigating from up</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>800</posX>
-        <posY>494</posY>
-        <width>375</width>
-        <height>42</height>
-        <shouldCache>true</shouldCache>
-        <texture>hiddenmenu_button_fo.png</texture>
-        <visible>Control.HasFocus(31)+Control.isvisible(93761264)</visible>
-        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
-      </control>
-      <control>
-        <description>Button 987658 - Navigating from down</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>800</posX>
-        <posY>494</posY>
-        <width>375</width>
-        <height>42</height>
-        <shouldCache>true</shouldCache>
-        <texture>hiddenmenu_button_fo.png</texture>
-        <visible>Control.HasFocus(31)+!Control.isvisible(93761264)</visible>
-        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
-      </control>
+
     </control>
     <import>common.time.xml</import>
     <control>

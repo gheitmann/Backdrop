@@ -160,23 +160,28 @@
       <width>231</width>
       <height>15</height>
       <shouldCache>true</shouldCache>
-      <texture>progressback.png</texture>
       <visible>player.hasmedia</visible>
+      <texture>-</texture>
     </control>
     <control>
       <description>progress bar</description>
       <type>progress</type>
       <id>118</id>
-      <posX>1437</posX>
-      <posY>321</posY>
-      <width>258</width>
-      <height>15</height>
       <label>#percentage</label>
-      <texturebg>-</texturebg>
       <lefttexture>-</lefttexture>
       <midtexture>progressbar_mid.png</midtexture>
       <righttexture>-</righttexture>
       <visible>player.hasmedia</visible>
+      <posX>1449</posX>
+      <posY>328</posY>
+      <width>231</width>
+      <height>15</height>
+      <texturebg>progressback.png</texturebg>
+      <onlymidtexture>yes</onlymidtexture>
+      <midwidth>231</midwidth>
+      <midheight>15</midheight>
+      <midoffsetX>0</midoffsetX>
+      <midoffsetY>0</midoffsetY>
     </control>
     <control>
       <description>play time / duration label</description>

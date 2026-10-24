@@ -13,19 +13,33 @@ assert compress.findtext('type') == 'button' and compress.findtext('visible') ==
 assert compress.find('hyperlink') is None
 assert not any(c.findtext('ondown') == '7' for c in recordings)
 
-for c in controls('MyMusicPlayingNow.xml'):
-    if c.findtext('type') != 'progress':
-        continue
-    assert c.findtext('texturebg') == 'progressback.png'
-    assert c.findtext('onlymidtexture') == 'yes'
-    assert c.findtext('midwidth') == c.findtext('width')
-    assert c.findtext('midheight') == c.findtext('height')
-    assert c.findtext('midoffsetX') == c.findtext('midoffsetY') == '0'
-    # With native only-mid rendering, 0/50/100% stay within the track,
-    # starting at its left/top edge without legacy cap/centering offsets.
-    for percent in (0, 50, 100):
-        fill_width = int(c.findtext('midwidth')) * percent / 100
-        assert 0 <= fill_width <= int(c.findtext('width'))
+PROGRESS_PAGES = (
+    'MyMusicPlayingNow.xml', 'MyMusicPlayingNowAnVU.xml',
+    'MyMusicPlayingNowLedVU.xml', 'common.overlays.xml',
+    'common.overlays.guide.xml', 'mytvguide.xml', 'mp139.mytvguide.xml',
+    'radiotimenowplaying.xml',
+)
+progress_count = 0
+for name in PROGRESS_PAGES:
+    page_controls = controls(name)
+    for c in page_controls:
+        if c.findtext('type') != 'progress' or c.findtext('midtexture') != 'progressbar_mid.png':
+            continue
+        progress_count += 1
+        assert c.findtext('texturebg') == 'progressback.png'
+        assert c.findtext('onlymidtexture') == 'yes'
+        assert c.findtext('midwidth') == c.findtext('width')
+        assert c.findtext('midheight') == c.findtext('height')
+        assert c.findtext('midoffsetX') == c.findtext('midoffsetY') == '0'
+        # An independent image can drift and can have a different visibility rule.
+        assert not any(image.findtext('type') == 'image'
+                       and image.findtext('texture') == 'progressback.png'
+                       and image.findtext('visible') != 'no' for image in page_controls), name
+        # With native only-mid rendering, 0/50/100% stay within the track,
+        # starting at its left/top edge without legacy cap/centering offsets.
+        for percent in (0, 50, 100):
+            fill_width = int(c.findtext('midwidth')) * percent / 100
+            assert 0 <= fill_width <= int(c.findtext('width'))
 
 panel = next(c for c in controls('common.facade.recordings.xml') if c.findtext('type') == 'thumbnailpanel')
 assert int(panel.findtext('posY')) + int(panel.findtext('height')) <= 1080
@@ -36,6 +50,7 @@ weather = next(c for c in controls('common.time.xml') if c.findtext('description
 for value in ('temp', 'condition'):
     assert '!string.equals(#infoservice.weather.today.' + value + ',)' in weather.findtext('visible')
 
+assert progress_count == 15, progress_count
 preview = next(c for c in controls('common.overlays.xml') if c.findtext('type') == 'videowindow')
 assert '[window.isactive(35)|[' in preview.findtext('visible')
-print('PASS: hidden legacy Compress binding, two co-located music tracks, recording viewport, empty-weather guard and Home preview override.')
+print(f'PASS: hidden legacy Compress binding, {progress_count} co-located playback tracks, recording viewport, empty-weather guard and Home preview override.')
