@@ -16962,7 +16962,7 @@
     </Items>
   </Dependencies>
   <GeneralInfo>
-    <Name>Backdrop MP 1.39 AnyCPU ALPHA19 Lucide</Name>
+    <Name>Backdrop MP 1.39 AnyCPU ALPHA20 Lucide</Name>
     <Id>7aec8315-531b-49b4-ac24-d6b285d039d0</Id>
     <Author>cul8er; local MP 1.39 AnyCPU adaptation</Author>
     <HomePage>https://github.com/gheitmann/Backdrop</HomePage>
@@ -16973,10 +16973,10 @@
       <Major>1</Major>
       <Minor>39</Minor>
       <Build>0</Build>
-      <Revision>19</Revision>
+      <Revision>20</Revision>
     </Version>
     <ExtensionDescription>Experimental Backdrop 1.0.1 port for MediaPortal 1.39. Includes an AnyCPU menu editor. Tested on x64; full x86 runtime testing remains pending. Requires compatible external Fanart Handler and Latest Media Handler plugins. See README.md and docs/VALIDATION.md.</ExtensionDescription>
-    <VersionDescription>ALPHA19: dark Lucide redesign, category backgrounds, playback overlay and progress alignment corrections, standalone menu editor. AnyCPU editor 1.39.0.19.</VersionDescription>
+    <VersionDescription>ALPHA20: select x86/x64 installer helpers from native MediaPortal metadata; preserve failure diagnostics. Includes ALPHA19 dark Lucide redesign and standalone menu editor.</VersionDescription>
     <DevelopmentStatus>Alpha</DevelopmentStatus>
     <OnlineLocation>
     </OnlineLocation>

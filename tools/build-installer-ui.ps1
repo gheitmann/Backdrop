@@ -18,10 +18,17 @@ if($LASTEXITCODE -ne 0){throw 'Patcher build failed'}
 Copy-Item -LiteralPath $CecilPath -Destination (Join-Path $taskOutput 'Mono.Cecil.dll')
 & $patcher (Join-Path $MediaPortalDirectory 'MpeCore.dll') $helper (Join-Path $taskOutput 'MpeCore.dll')
 if($LASTEXITCODE -ne 0){throw 'Patching failed'}
-& $compiler /nologo /target:winexe /platform:anycpu /r:System.Windows.Forms.dll ("/out:"+(Join-Path $taskOutput 'BackdropInstaller.exe')) (Join-Path $taskSource 'BackdropInstaller.cs')
-if($LASTEXITCODE -ne 0){throw 'Launcher build failed'}
-& $compiler /nologo /target:exe /platform:anycpu /r:System.Windows.Forms.dll /r:System.Drawing.dll ("/r:"+$helper) ("/out:"+(Join-Path $taskOutput 'PresentationProbe.exe')) (Join-Path $taskSource 'PresentationProbe.cs')
-if($LASTEXITCODE -ne 0){throw 'Probe build failed'}
+foreach($architecture in @('x86','x64')){
+    & $compiler /nologo /target:winexe ("/platform:"+$architecture) /r:System.Windows.Forms.dll ("/out:"+(Join-Path $taskOutput ('BackdropInstaller.'+$architecture+'.exe'))) (Join-Path $taskSource 'BackdropInstaller.cs')
+    if($LASTEXITCODE -ne 0){throw "Launcher build failed: $architecture"}
+    & $compiler /nologo /target:exe ("/platform:"+$architecture) /r:System.Windows.Forms.dll /r:System.Drawing.dll ("/r:"+$helper) ("/out:"+(Join-Path $taskOutput ('PresentationProbe.'+$architecture+'.exe'))) (Join-Path $taskSource 'PresentationProbe.cs')
+    if($LASTEXITCODE -ne 0){throw "Probe build failed: $architecture"}
+}
+. (Join-Path $taskSource 'Get-MediaPortalArchitecture.ps1')
+$architecture=Get-MediaPortalArchitecture -Directory $MediaPortalDirectory
+foreach($name in @('BackdropInstaller','PresentationProbe')){
+    Copy-Item -LiteralPath (Join-Path $taskOutput ($name+'.'+$architecture+'.exe')) -Destination (Join-Path $taskOutput ($name+'.exe'))
+}
 [IO.File]::WriteAllText((Join-Path $taskOutput 'MediaPortalDirectory.txt'),[IO.Path]::GetFullPath($MediaPortalDirectory))
 & (Join-Path $taskOutput 'PresentationProbe.exe')
 if($LASTEXITCODE -ne 0){throw 'Presentation probe failed; inspect presentation-probe.txt'}

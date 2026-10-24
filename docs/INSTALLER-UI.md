@@ -1,16 +1,16 @@
-# Backdrop ALPHA15 single-file setup
+# Backdrop ALPHA20 single-file setup
 
-Download `Backdrop-Setup-ALPHA15.exe`, close MediaPortal and run the EXE. No companion files, manual ZIP extraction, PowerShell command or Initialize.ps1 step is required. Windows requests administrator elevation for installation. The native installer retains package information, dependency checks, replacement confirmation and registration. The alternative MPE1 can be opened with the ordinary MediaPortal Extension Installer.
+Download `Backdrop-Setup-ALPHA20.exe`, close MediaPortal and run the EXE. No companion files, manual ZIP extraction, PowerShell command or Initialize.ps1 step is required. Windows requests administrator elevation for installation. The native installer retains package information, dependency checks, replacement confirmation and registration. The alternative MPE1 can be opened with the ordinary MediaPortal Extension Installer.
 
 Setup automatically searches both Program Files locations and registered uninstall InstallLocation values for the client folder containing MpeCore.dll and MpeInstaller.exe. If discovery is ambiguous or unsuccessful, select the client folder in the folder picker. Do not select the TV Server or download folder.
 
-Package, setup and editor report 1.39.0.15. Revision 14 was a local build, so the public alpha advances to 15. An installed older build can still trigger native MPE's replacement/uninstall prompt; the old/new versions now identify distinct payloads.
+Package, setup and editor report 1.39.0.20. ALPHA20 fixes the helper process architecture selection introduced by the AnyCPU installer bootstrap. An installed older build can still trigger native MPE's replacement/uninstall prompt; the old/new versions now identify distinct payloads.
 
 ## Presentation and isolation
 
 The setup uses buffered panels, readable Windows button colours and progress repaints limited to one per 100 ms with a final completion flush. A fixed opaque filename viewport clears previous long filenames when shorter names appear; long text is truncated with ellipsis. Native file copying and registration methods are not patched.
 
-The EXE contains a private bundle, extracted per run beneath `%LOCALAPPDATA%\BackdropInstaller`. It copies and patches only the installed unsigned **1.39.0.0** MpeCore into that private directory. Unsupported versions fail initialization. Installed core DLLs and MPE1 associations remain unchanged. No MediaPortal binaries are redistributed. Per-run files are removed after the child exits; diagnostic logs remain in the parent directory.
+The EXE contains a private bundle, extracted per run beneath `%LOCALAPPDATA%\BackdropInstaller`. It reads MpeCore/MpeInstaller/Utils architecture metadata without loading those assemblies into PowerShell, and selects matching x86 or x64 launcher/probe executables. Both variants are embedded in the single Setup EXE. It copies and patches only the installed unsigned **1.39.0.0** MpeCore into that private directory. Unsupported versions fail initialization. Installed core DLLs and MPE1 associations remain unchanged. No MediaPortal binaries are redistributed. Per-run files are removed after the child exits; diagnostic logs remain in the parent directory.
 
 ## Diagnostic options
 
@@ -29,4 +29,6 @@ Logs: `last-verification.txt`, `last-run.txt`, and `setup-error.txt` beneath `%L
 
 The private bundle includes helper sources, Mono.Cecil 0.11.6 and its MIT notice. Native presentation source inspected matches Team MediaPortal commit d1f11e283bd918521b1613b3488fe417fa2e5157. Do not apply the patch blindly to later native versions. Linux CI builds the ordinary MPE1; native setup preparation requires Windows and an installed supported MediaPortal client.
 
-See VALIDATION.md and SETUP-EXE-VALIDATION.md for exact checks. Synthetic filename rendering, 2,393 progress events and VerifyOnly do not certify a complete real installation, elevation interaction or live-copy repainting. Full x86 execution remains unverified.
+See VALIDATION.md and SETUP-EXE-VALIDATION.md for exact checks. Synthetic filename rendering, 2,393 progress events and VerifyOnly do not certify a complete real installation, elevation interaction or live-copy repainting. The presentation and native binding probes pass against both the real x64 installation and official extracted x86 client binaries. A complete interactive x86 installation has not been performed.
+
+Failed setup runs retain their private working directory and write setup-error.txt plus last-run.txt (or last-verification.txt). Successful runs clean up their private working directory.
