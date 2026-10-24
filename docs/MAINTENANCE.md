@@ -28,6 +28,7 @@ The skin settings page omits the DefaultWideHD BasicHome editor and the ineffect
 
 ## Validation and release process
 
+- Read QUICKCHECK-LOCAL16.md for the latest scoped integration results. Do not carry historical Latest Music or installer blockers forward after their documented follow-ups. Structural language coverage is distinct from actual translations; keep the Danish HighFive fallback key. The integration audit guards all 11 topbar mappings, navigation edges and texture files.
 - Check local and remote changes before synchronizing; never overwrite unrelated work or force-push the default branch.
 - Rebuild the AnyCPU editor only when its source changes and matching MediaPortal references are available. Review the resulting assembly flags and version.
 - Refresh `packaging/baseline-sha256.json` intentionally after reviewing payload changes (`python tools/validate.py --refresh`). Refreshing hashes is not proof of compatibility.

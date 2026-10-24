@@ -1,8 +1,10 @@
 # ALPHA15 validation
 
+Current working follow-up: QUICKCHECK-LOCAL16.md records 5/6 fresh runtime cases passed (83.3%), complete static 11-command topbar coverage, a repaired Danish fallback key and the remaining transport/locale/x86 limits. LATEST-MUSIC-DETAILS.md supersedes the earlier Latest Music fixture blocker with 2/2 runtime layout passes. Published ALPHA15 remains unchanged.
+
 Completed real-install follow-up: INSTALLER-PATH-FIX.md records the corrected starter, owner-confirmed absence of flicker, **2,393/2,393 installed payload files matching**, native plugin destination/uninstall record and registered version 1.39.0.15. This closes the original setup-path defect; broader x86/display coverage remains open.
 
-Follow-up on 24 October: QUICKCHECK-ALPHA15.md records 3/4 scoped checks passed (75%): Radio nonfocused appearance, real isolated copy/progress I/O, and setup VerifyOnly. Latest Music runtime visibility remains blocked. This adds evidence without changing the published ALPHA15 payload.
+Historical follow-up on 24 October: QUICKCHECK-ALPHA15.md recorded 3/4 scoped checks passed (75%): Radio nonfocused appearance, real isolated copy/progress I/O, and setup VerifyOnly. Its Latest Music fixture blocker was subsequently resolved as documented above. Published ALPHA15 payload bytes are unchanged.
 
 Target: MediaPortal 1.39 x64, Windows 11, 23 October 2026. Package, setup and AnyCPU editor version 1.39.0.15. Revision 14 was an unpublished local delivery.
 
@@ -21,6 +23,6 @@ All nine original guide anchors in both active files and the earlier six caption
 
 ALPHA13 caption runtime results 3/3, ALPHA12 local guide 8/9 and historical regression 36/37 are carried forward without full reruns. The owner separately confirmed working upper-right Live TV and channel changes by clicking the EPG; local fixture channels still have no tuner mappings. See VALIDATION-ALPHA13.md, VALIDATION-ALPHA12.md and VALIDATION-ALPHA11.md for exact evidence and topbar/music/plugin limitations. Do not combine these denominators into a compatibility percentage.
 
-Open: fresh runtime confirmation of latest/radio overlays, real installation/elevation and file-copy repainting, complete x86/locale/DPI/aspect-ratio coverage, and deferred Live TV progress irregularities. The exact music Actions command list and some dialog variants remain unverified as described in ALPHA13 validation. TuneIn is owner-confirmed but absent in the isolated test installation.
+Open: complete topbar transport outcomes and immediate pointer/modal behavior, broader plugin/dialog coverage, complete x86/locale/DPI/aspect-ratio rendering, and deferred Live TV progress irregularities. Latest/radio overlay checks and the real installer follow-up have since been completed within their documented scopes. The exact music Actions command list and some dialog variants remain unverified as described in ALPHA13 validation. TuneIn is owner-confirmed but absent in the isolated test installation.
 
 The installed MpeCore hash remains 124cd3074e92c3dcc53f20f0ec6a1ab7d62eb3b53d5182ae0ae3ec9fa6ba670c. Setup extracts only into its private run directory, uses the guarded local presentation copy, and cleans up after the child exits. No credentials, personal settings, test media or databases are packaged. Normal installed skin files were not overwritten by development checks.
