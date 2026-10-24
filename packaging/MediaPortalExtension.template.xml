@@ -16943,7 +16943,7 @@
     </Items>
   </Dependencies>
   <GeneralInfo>
-    <Name>Backdrop MP 1.39 AnyCPU ALPHA 6</Name>
+    <Name>Backdrop MP 1.39 AnyCPU LOCAL16</Name>
     <Id>7aec8315-531b-49b4-ac24-d6b285d039d0</Id>
     <Author>cul8er; local MP 1.39 AnyCPU adaptation</Author>
     <HomePage>https://github.com/gheitmann/Backdrop</HomePage>
@@ -16954,10 +16954,10 @@
       <Major>1</Major>
       <Minor>39</Minor>
       <Build>0</Build>
-      <Revision>15</Revision>
+      <Revision>16</Revision>
     </Version>
     <ExtensionDescription>Experimental Backdrop 1.0.1 port for MediaPortal 1.39. Includes an AnyCPU menu editor. Tested on x64; full x86 runtime testing remains pending. Requires compatible external Fanart Handler and Latest Media Handler plugins. See README.md and docs/VALIDATION.md.</ExtensionDescription>
-    <VersionDescription>ALPHA15: full guide background, bounded latest captions, music radio menu texture and single EXE setup. AnyCPU editor 1.39.0.15.</VersionDescription>
+    <VersionDescription>LOCAL16: bounded focused Latest Music artist and album captions. AnyCPU editor 1.39.0.16.</VersionDescription>
     <DevelopmentStatus>Alpha</DevelopmentStatus>
     <OnlineLocation>
     </OnlineLocation>

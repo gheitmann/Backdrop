@@ -28,6 +28,7 @@ The skin settings page omits the DefaultWideHD BasicHome editor and the ineffect
 
 ## Validation and release process
 
+- Read QUICKCHECK-LOCAL16.md for the latest scoped integration results. Do not carry historical Latest Music or installer blockers forward after their documented follow-ups. Structural language coverage is distinct from actual translations; keep the Danish HighFive fallback key. The integration audit guards all 11 topbar mappings, navigation edges and texture files.
 - Check local and remote changes before synchronizing; never overwrite unrelated work or force-push the default branch.
 - Rebuild the AnyCPU editor only when its source changes and matching MediaPortal references are available. Review the resulting assembly flags and version.
 - Refresh `packaging/baseline-sha256.json` intentionally after reviewing payload changes (`python tools/validate.py --refresh`). Refreshing hashes is not proof of compatibility.
@@ -119,3 +120,14 @@ Local maintenance history and immutable fixtures remain under the owner's `Docum
 - A held alpha publication must not freeze package identity. Increment the native package revision whenever delivering changed installable payloads; identify local builds separately. Otherwise MPE reports identical old/new versions. Keep native replacement confirmation rather than bypassing it.
 - Music radio checkbuttons inherit a yellow-orb texture from references.xml when textureNoFocus is omitted. Override that texture explicitly; preserve the bound checkbutton and its native state.
 - Latest Media labels need explicit absolute pivots, bounded text height/width and a bottom anchor above the home bar. Apply the same geometry to BackdropMenuEditorConfig.cs and rebuild the editor, otherwise a menu save restores the overlap. check_guide_layout.py protects all nine definitions and generator geometry.
+
+## Focused Latest Music follow-up
+
+- An empty music database prevents a meaningful Latest Media visual test even when file playback fixtures exist. Seed the isolated database with retained synthetic file references and verify LatestMediaHandler reports populated results; preserve the fixture rows for future checks.
+- Check the focused artist/album labels as well as the Latest Music heading. The six music metadata viewports require the same explicit rotation-pivot correction; otherwise they can still cross the home bar after the heading itself is fixed. Keep generator definitions synchronized and version changed editor payloads separately from published ALPHA15.
+
+## Native installer path regression
+
+- Verify actual destination paths and installed bytes after a real native run. Assembly binding alone misses Config's cached temporary Base/Plugins defaults. Preserve the original UI application domain; the second-domain experiment was rejected after severe owner-observed flicker.
+- Set the version-specific Config Base/Plugins roots before MPE initializes providers, using the guarded nonpublic setter. Validate the target path in --verify and actual runs, retain native-run diagnostics, and keep --verify failures noninteractive. Check uninstall OriginalFile paths as well as the DLL version/hash.
+- ALPHA15 InstallerFix retains the original MPE1 bytes. Its setup executable is version 1.39.0.16, while the installed skin/editor remain 1.39.0.15. Do not confuse this starter correction with the separate LOCAL16 skin work. See INSTALLER-PATH-FIX.md.

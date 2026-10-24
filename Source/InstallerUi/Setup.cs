@@ -6,8 +6,8 @@ using System.Reflection;
 using System.Security.Principal;
 using System.Windows.Forms;
 
-[assembly: AssemblyVersion("1.39.0.15")]
-[assembly: AssemblyFileVersion("1.39.0.15")]
+[assembly: AssemblyVersion("1.39.0.16")]
+[assembly: AssemblyFileVersion("1.39.0.16")]
 
 // One distributable EXE. Dependencies are private temporary files, not user setup steps.
 class Setup
@@ -76,7 +76,7 @@ class Setup
                 System.Threading.Tasks.Task<string> errors = process.StandardError.ReadToEndAsync();
                 process.WaitForExit();
                 string report = output.Result + Environment.NewLine + errors.Result;
-                foreach (string probe in new[] { "presentation-probe.txt", "binding-probe.txt" })
+                foreach (string probe in new[] { "presentation-probe.txt", "binding-probe.txt", "native-run.txt", "preview-error.txt" })
                 {
                     string path = Path.Combine(run, "Runtime", probe);
                     if (File.Exists(path)) report += Environment.NewLine + File.ReadAllText(path);

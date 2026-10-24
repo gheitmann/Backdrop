@@ -1149,9 +1149,10 @@
       <description>Artist Label</description>
       <type>fadelabel</type>
       <id>0</id>
-      <posX>1407</posX>
-      <posY>693</posY>
-      <width>495</width>
+      <posX>1659</posX>
+      <posY>970</posY>
+      <width>400</width>
+      <height>30</height>
       <align>left</align>
       <scrollStartDelaySec>3600</scrollStartDelaySec>
       <label>#latestMediaHandler.music.latest1.artist</label>
@@ -1160,8 +1161,7 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>1</shadowDistance>
       <shadowColor>ff333333</shadowColor>
-      <animation effect="rotate" end="90" time="0">Visible</animation>
-      <animation effect="rotate" end="90" time="0">Hidden</animation>
+      <animation effect="rotate" start="90" end="90" center="1659,970" time="0" condition="true">Conditional</animation>
       <animation effect="fade" start="0" end="100" time="350">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>Control.HasFocus(91919997)+!Control.isvisible(93761234)</visible>
@@ -1170,9 +1170,10 @@
       <description>Album Label</description>
       <type>fadelabel</type>
       <id>0</id>
-      <posX>1445</posX>
-      <posY>693</posY>
-      <width>495</width>
+      <posX>1697</posX>
+      <posY>970</posY>
+      <width>400</width>
+      <height>30</height>
       <align>left</align>
       <scrollStartDelaySec>3600</scrollStartDelaySec>
       <label>#latestMediaHandler.music.latest1.album</label>
@@ -1181,8 +1182,7 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>1</shadowDistance>
       <shadowColor>ff333333</shadowColor>
-      <animation effect="rotate" end="90" time="0">Visible</animation>
-      <animation effect="rotate" end="90" time="0">Hidden</animation>
+      <animation effect="rotate" start="90" end="90" center="1697,970" time="0" condition="true">Conditional</animation>
       <animation effect="fade" start="0" end="100" time="350">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>Control.HasFocus(91919997)+!Control.isvisible(93761234)</visible>
@@ -1253,9 +1253,10 @@
       <description>Artist Label</description>
       <type>fadelabel</type>
       <id>0</id>
-      <posX>1407</posX>
-      <posY>693</posY>
-      <width>495</width>
+      <posX>1659</posX>
+      <posY>970</posY>
+      <width>400</width>
+      <height>30</height>
       <align>left</align>
       <scrollStartDelaySec>3600</scrollStartDelaySec>
       <label>#latestMediaHandler.music.latest2.artist</label>
@@ -1264,8 +1265,7 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>1</shadowDistance>
       <shadowColor>ff333333</shadowColor>
-      <animation effect="rotate" end="90" time="0">Visible</animation>
-      <animation effect="rotate" end="90" time="0">Hidden</animation>
+      <animation effect="rotate" start="90" end="90" center="1659,970" time="0" condition="true">Conditional</animation>
       <animation effect="fade" start="0" end="100" time="350">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>Control.HasFocus(91919998)+!Control.isvisible(93761234)</visible>
@@ -1274,9 +1274,10 @@
       <description>Album Label</description>
       <type>fadelabel</type>
       <id>0</id>
-      <posX>1445</posX>
-      <posY>693</posY>
-      <width>495</width>
+      <posX>1697</posX>
+      <posY>970</posY>
+      <width>400</width>
+      <height>30</height>
       <align>left</align>
       <scrollStartDelaySec>3600</scrollStartDelaySec>
       <label>#latestMediaHandler.music.latest2.album</label>
@@ -1285,8 +1286,7 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>1</shadowDistance>
       <shadowColor>ff333333</shadowColor>
-      <animation effect="rotate" end="90" time="0">Visible</animation>
-      <animation effect="rotate" end="90" time="0">Hidden</animation>
+      <animation effect="rotate" start="90" end="90" center="1697,970" time="0" condition="true">Conditional</animation>
       <animation effect="fade" start="0" end="100" time="350">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>Control.HasFocus(91919998)+!Control.isvisible(93761234)</visible>
@@ -1357,9 +1357,10 @@
       <description>Artist Label</description>
       <type>fadelabel</type>
       <id>0</id>
-      <posX>1407</posX>
-      <posY>693</posY>
-      <width>495</width>
+      <posX>1659</posX>
+      <posY>970</posY>
+      <width>400</width>
+      <height>30</height>
       <align>left</align>
       <scrollStartDelaySec>3600</scrollStartDelaySec>
       <label>#latestMediaHandler.music.latest3.artist</label>
@@ -1368,8 +1369,7 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>1</shadowDistance>
       <shadowColor>ff333333</shadowColor>
-      <animation effect="rotate" end="90" time="0">Visible</animation>
-      <animation effect="rotate" end="90" time="0">Hidden</animation>
+      <animation effect="rotate" start="90" end="90" center="1659,970" time="0" condition="true">Conditional</animation>
       <animation effect="fade" start="0" end="100" time="350">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>Control.HasFocus(91919999)+!Control.isvisible(93761234)</visible>
@@ -1378,9 +1378,10 @@
       <description>Album Label</description>
       <type>fadelabel</type>
       <id>0</id>
-      <posX>1445</posX>
-      <posY>693</posY>
-      <width>495</width>
+      <posX>1697</posX>
+      <posY>970</posY>
+      <width>400</width>
+      <height>30</height>
       <align>left</align>
       <scrollStartDelaySec>3600</scrollStartDelaySec>
       <label>#latestMediaHandler.music.latest3.album</label>
@@ -1389,8 +1390,7 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>1</shadowDistance>
       <shadowColor>ff333333</shadowColor>
-      <animation effect="rotate" end="90" time="0">Visible</animation>
-      <animation effect="rotate" end="90" time="0">Hidden</animation>
+      <animation effect="rotate" start="90" end="90" center="1697,970" time="0" condition="true">Conditional</animation>
       <animation effect="fade" start="0" end="100" time="350">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>Control.HasFocus(91919999)+!Control.isvisible(93761234)</visible>

@@ -10,7 +10,7 @@ class BackdropInstaller
     {
         try
         {
-            string local = AppDomain.CurrentDomain.BaseDirectory;
+            string local = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             string installed = File.ReadAllText(Path.Combine(local, "MediaPortalDirectory.txt")).Trim();
             AppDomain.CurrentDomain.AssemblyResolve += delegate(object sender, ResolveEventArgs e)
             {
@@ -18,6 +18,19 @@ class BackdropInstaller
                 string path = Path.Combine(installed, name);
                 return File.Exists(path) ? Assembly.LoadFrom(path) : null;
             };
+            // Config caches these defaults from our temporary EXE directory. Correct
+            // only the native base/plugin roots through the guarded 1.39 Config setter before MPE
+            // creates its path providers; keep the original WinForms application domain.
+            Type config = Assembly.LoadFrom(Path.Combine(installed, "Utils.dll")).GetType("MediaPortal.Configuration.Config", true);
+            Type dirs = config.GetNestedType("Dir");
+            MethodInfo setFolder = config.GetMethod("Set", BindingFlags.Static | BindingFlags.NonPublic,
+                null, new Type[] { dirs, typeof(string) }, null);
+            if (setFolder == null) throw new MissingMethodException("Unsupported MediaPortal Config directory setter.");
+            setFolder.Invoke(null, new object[] { Enum.Parse(dirs, "Base"), installed.TrimEnd('\\') + "\\" });
+            setFolder.Invoke(null, new object[] { Enum.Parse(dirs, "Plugins"), Path.Combine(installed, "plugins") + "\\" });
+            string plugins = (string)config.GetMethod("GetFolder").Invoke(null, new object[] { Enum.Parse(dirs, "Plugins") });
+            if (!Path.GetFullPath(plugins).TrimEnd('\\').Equals(Path.Combine(installed, "plugins"), StringComparison.OrdinalIgnoreCase))
+                throw new InvalidOperationException("Native plugin destination does not match the installed client: " + plugins);
             Assembly.LoadFrom(Path.Combine(local, "Backdrop.InstallerPresentation.dll"));
             Assembly patched = Assembly.LoadFrom(Path.Combine(local, "MpeCore.dll"));
             if (args.Length == 1 && args[0] == "--verify")
@@ -27,7 +40,7 @@ class BackdropInstaller
                     if (reference.Name == "MpeCore" && Assembly.Load(reference) != patched)
                         throw new InvalidOperationException("Native installer did not bind to the isolated MpeCore copy.");
                 File.WriteAllText(Path.Combine(local, "binding-probe.txt"),
-                    "PASS: native installer binds to isolated MpeCore; entry point was not invoked. No installation performed.");
+                    "PASS: native installer binds to isolated MpeCore; native plugin destination=" + plugins + "; entry point was not invoked. No installation performed.");
                 return 0;
             }
             if (args.Length == 0 || (args.Length == 1 && args[0] == "--preview"))
@@ -48,14 +61,21 @@ class BackdropInstaller
             if (args.Length != 1 || !File.Exists(args[0]) || !string.Equals(Path.GetExtension(args[0]), ".mpe1", StringComparison.OrdinalIgnoreCase))
                 throw new ArgumentException("Drag one .mpe1 package onto BackdropInstaller.exe, or use --preview.");
             Assembly native = Assembly.LoadFrom(Path.Combine(installed, "MpeInstaller.exe"));
+            foreach (AssemblyName reference in native.GetReferencedAssemblies())
+                if (reference.Name == "MpeCore" && Assembly.Load(reference) != patched)
+                    throw new InvalidOperationException("Native installation did not bind to the private presentation copy.");
+            File.WriteAllText(Path.Combine(local, "native-run.txt"),
+                "Native plugin destination=" + plugins + Environment.NewLine + "Presentation assembly=" + patched.Location);
             MethodInfo entry = native.EntryPoint;
             entry.Invoke(null, entry.GetParameters().Length == 0 ? null : new object[] { args });
+            File.AppendAllText(Path.Combine(local, "native-run.txt"), Environment.NewLine + "Native entry point returned.");
             return 0;
         }
         catch (Exception error)
         {
-            File.WriteAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "preview-error.txt"), error.ToString());
-            MessageBox.Show(error.GetBaseException().Message, "Backdrop installer", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            File.WriteAllText(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "preview-error.txt"), error.ToString());
+            if (!(args.Length == 1 && args[0] == "--verify"))
+                MessageBox.Show(error.GetBaseException().Message, "Backdrop installer", MessageBoxButtons.OK, MessageBoxIcon.Error);
             return 1;
         }
     }

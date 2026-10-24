@@ -1,5 +1,7 @@
 # ALPHA15 quick check — 24 October 2026
 
+Historical snapshot: LATEST-MUSIC-DETAILS.md resolves the music fixture blocker; INSTALLER-PATH-FIX.md records the completed real install, and QUICKCHECK-LOCAL16.md records the later integration sweep. The results below describe this earlier check only.
+
 Four scoped follow-up checks: **3 passed, 1 blocked (75% passed)**. No new alpha or payload change.
 
 | Check | Result | Scope |
