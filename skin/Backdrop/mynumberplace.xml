@@ -85,8 +85,6 @@
       <posY>500</posY>
       <width>350</width>
       <font>font14BC</font>
-      <textXOff>10</textXOff>
-      <textYOff>2</textYOff>
       <label>19102</label>
       <textcolor>ffffffff</textcolor>
       <colordiffuse>ffffffff</colordiffuse>
@@ -97,6 +95,12 @@
       <onup>2</onup>
       <ondown>3</ondown>
       <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+      <height>38</height>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textXOff>16</textXOff>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
     </control>
     <control>
       <description>Menu Button 1</description>
@@ -106,8 +110,6 @@
       <posY>540</posY>
       <width>350</width>
       <font>font14BC</font>
-      <textXOff>10</textXOff>
-      <textYOff>2</textYOff>
       <label>19118</label>
       <textcolor>ffffffff</textcolor>
       <colordiffuse>ffffffff</colordiffuse>
@@ -118,6 +120,12 @@
       <onup>2</onup>
       <ondown>4</ondown>
       <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+      <height>38</height>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textXOff>16</textXOff>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
     </control>
     <control>
       <description>Menu Button 2</description>
@@ -127,8 +135,6 @@
       <posY>580</posY>
       <width>350</width>
       <font>font14BC</font>
-      <textXOff>10</textXOff>
-      <textYOff>2</textYOff>
       <label>19119</label>
       <textcolor>ffffffff</textcolor>
       <colordiffuse>ffffffff</colordiffuse>
@@ -139,6 +145,12 @@
       <onup>3</onup>
       <ondown>5</ondown>
       <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+      <height>38</height>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textXOff>16</textXOff>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
     </control>
     <control>
       <description>Menu Button 3</description>
@@ -148,8 +160,6 @@
       <posY>620</posY>
       <width>350</width>
       <font>font14BC</font>
-      <textXOff>10</textXOff>
-      <textYOff>2</textYOff>
       <label>19103</label>
       <textcolor>ffffffff</textcolor>
       <colordiffuse>ffffffff</colordiffuse>
@@ -160,6 +170,12 @@
       <onup>4</onup>
       <ondown>6</ondown>
       <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+      <height>38</height>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textXOff>16</textXOff>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
     </control>
     <control>
       <description>Menu Button 4</description>
@@ -169,14 +185,10 @@
       <posY>660</posY>
       <width>350</width>
       <font>font14BC</font>
-      <textXOff>10</textXOff>
-      <textYOff>2</textYOff>
       <label>19105</label>
       <textcolor>ffffffff</textcolor>
       <colordiffuse>ffffffff</colordiffuse>
       <textcolorNoFocus>90cccccc</textcolorNoFocus>
-      <textureFocus>dropdown_togglebutton_on.png</textureFocus>
-      <textureNoFocus>dropdown_togglebutton_nof_on.png</textureNoFocus>
       <onleft>5004</onleft>
       <onright>5004</onright>
       <onup>5</onup>
@@ -189,6 +201,12 @@
       <markalign>right</markalign>
       <markvalign>middle</markvalign>
       <markXOff>12</markXOff>
+      <height>38</height>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textXOff>16</textXOff>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
     </control>
     <control>
       <description>Menu Button 5</description>
@@ -198,14 +216,10 @@
       <posY>700</posY>
       <width>350</width>
       <font>font14BC</font>
-      <textXOff>10</textXOff>
-      <textYOff>2</textYOff>
       <label>19106</label>
       <textcolor>ffffffff</textcolor>
       <colordiffuse>ffffffff</colordiffuse>
       <textcolorNoFocus>90cccccc</textcolorNoFocus>
-      <textureFocus>dropdown_togglebutton_on.png</textureFocus>
-      <textureNoFocus>dropdown_togglebutton_nof_on.png</textureNoFocus>
       <onleft>5004</onleft>
       <onright>5004</onright>
       <onup>6</onup>
@@ -218,6 +232,12 @@
       <markalign>right</markalign>
       <markvalign>middle</markvalign>
       <markXOff>12</markXOff>
+      <height>38</height>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textXOff>16</textXOff>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
     </control>
     <control>
       <description>Menu Button 6</description>
@@ -227,8 +247,6 @@
       <posY>740</posY>
       <width>350</width>
       <font>font14BC</font>
-      <textXOff>10</textXOff>
-      <textYOff>2</textYOff>
       <label>19107</label>
       <textcolor>ffffffff</textcolor>
       <colordiffuse>ffffffff</colordiffuse>
@@ -239,6 +257,12 @@
       <onup>7</onup>
       <ondown>9</ondown>
       <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+      <height>38</height>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textXOff>16</textXOff>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
     </control>
     <control>
       <description>Menu Button 7</description>
@@ -248,8 +272,6 @@
       <posY>780</posY>
       <width>350</width>
       <font>font14BC</font>
-      <textXOff>10</textXOff>
-      <textYOff>2</textYOff>
       <label>19104</label>
       <textcolor>ffffffff</textcolor>
       <colordiffuse>ffffffff</colordiffuse>
@@ -260,6 +282,12 @@
       <onup>8</onup>
       <ondown>2</ondown>
       <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+      <height>38</height>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textXOff>16</textXOff>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
     </control>
     <control>
       <description>Highscore Menu label</description>

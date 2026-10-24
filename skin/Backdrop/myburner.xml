@@ -104,8 +104,6 @@
       <posX>45</posX>
       <posY>102</posY>
       <width>297</width>
-      <textureFocus>-</textureFocus>
-      <textureNoFocus>-</textureNoFocus>
       <label>2101</label>
       <textcolor>ffffffff</textcolor>
       <colordiffuse>ffffffff</colordiffuse>
@@ -120,6 +118,12 @@
       <animation effect="zoom" start="100,100" end="100,1" center="640,100" time="250">hidden</animation>
       <animation effect="slide" start="0,0" end="0,15" time="300">hidden</animation>
       <visible allowhiddenfocus="true">Control.HasFocus(20)|Control.HasFocus(30)|Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(4)|Control.HasFocus(5)|Control.HasFocus(6)|Control.HasFocus(12398755)+!Control.IsVisible(12398756)</visible>
+      <height>42</height>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textXOff>16</textXOff>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
     </control>
     <control clrtype="Menu">
       <description>Menu Button 1</description>
@@ -128,8 +132,6 @@
       <posX>387</posX>
       <posY>102</posY>
       <width>393</width>
-      <textureFocus>-</textureFocus>
-      <textureNoFocus>-</textureNoFocus>
       <label>2102</label>
       <textcolor>ffffffff</textcolor>
       <colordiffuse>ffffffff</colordiffuse>
@@ -144,6 +146,12 @@
       <animation effect="zoom" start="100,100" end="100,1" center="640,100" time="250">hidden</animation>
       <animation effect="slide" start="0,0" end="0,15" time="300">hidden</animation>
       <visible allowhiddenfocus="true">Control.HasFocus(20)|Control.HasFocus(30)|Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(4)|Control.HasFocus(5)|Control.HasFocus(6)|Control.HasFocus(12398755)+!Control.IsVisible(12398756)</visible>
+      <height>42</height>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textXOff>16</textXOff>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
     </control>
     <control clrtype="Menu">
       <description>Menu Button 2</description>
@@ -152,8 +160,6 @@
       <posX>825</posX>
       <posY>102</posY>
       <width>393</width>
-      <textureFocus>-</textureFocus>
-      <textureNoFocus>-</textureNoFocus>
       <label>2103</label>
       <textcolor>ffffffff</textcolor>
       <colordiffuse>ffffffff</colordiffuse>
@@ -168,6 +174,12 @@
       <animation effect="zoom" start="100,100" end="100,1" center="640,100" time="250">hidden</animation>
       <animation effect="slide" start="0,0" end="0,15" time="300">hidden</animation>
       <visible allowhiddenfocus="true">Control.HasFocus(20)|Control.HasFocus(30)|Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(4)|Control.HasFocus(5)|Control.HasFocus(6)|Control.HasFocus(12398755)+!Control.IsVisible(12398756)</visible>
+      <height>42</height>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textXOff>16</textXOff>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
     </control>
     <control clrtype="Menu">
       <description>Menu Button 3</description>
@@ -176,8 +188,6 @@
       <posX>1263</posX>
       <posY>102</posY>
       <width>249</width>
-      <textureFocus>-</textureFocus>
-      <textureNoFocus>-</textureNoFocus>
       <label>2123</label>
       <textcolor>ffffffff</textcolor>
       <colordiffuse>ffffffff</colordiffuse>
@@ -192,6 +202,12 @@
       <animation effect="zoom" start="100,100" end="100,1" center="640,100" time="250">hidden</animation>
       <animation effect="slide" start="0,0" end="0,15" time="300">hidden</animation>
       <visible allowhiddenfocus="true">Control.HasFocus(20)|Control.HasFocus(30)|Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(4)|Control.HasFocus(5)|Control.HasFocus(6)|Control.HasFocus(12398755)+!Control.IsVisible(12398756)</visible>
+      <height>42</height>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textXOff>16</textXOff>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
     </control>
     <control clrtype="Menu">
       <description>Menu Button 4</description>
@@ -200,8 +216,6 @@
       <posX>1557</posX>
       <posY>102</posY>
       <width>273</width>
-      <textureFocus>-</textureFocus>
-      <textureNoFocus>-</textureNoFocus>
       <label>2114</label>
       <textcolor>ffffffff</textcolor>
       <colordiffuse>ffffffff</colordiffuse>
@@ -216,6 +230,12 @@
       <animation effect="zoom" start="100,100" end="100,1" center="640,100" time="250">hidden</animation>
       <animation effect="slide" start="0,0" end="0,15" time="300">hidden</animation>
       <visible allowhiddenfocus="true">Control.HasFocus(20)|Control.HasFocus(30)|Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(4)|Control.HasFocus(5)|Control.HasFocus(6)|Control.HasFocus(12398755)+!Control.IsVisible(12398756)</visible>
+      <height>42</height>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textXOff>16</textXOff>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
     </control>
     <control>
       <description>Next Button</description>
@@ -246,8 +266,6 @@
       <posX>45</posX>
       <posY>102</posY>
       <width>225</width>
-      <textureFocus>-</textureFocus>
-      <textureNoFocus>-</textureNoFocus>
       <label>2126</label>
       <textcolor>ffffffff</textcolor>
       <colordiffuse>ffffffff</colordiffuse>
@@ -262,6 +280,12 @@
       <animation effect="zoom" start="100,100" end="100,1" center="640,100" time="250">hidden</animation>
       <animation effect="slide" start="0,0" end="0,15" time="300">hidden</animation>
       <visible allowhiddenfocus="true">Control.HasFocus(7)+!Control.IsVisible(12398756)</visible>
+      <height>42</height>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textXOff>16</textXOff>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
     </control>
     <control>
       <description>Next Button</description>

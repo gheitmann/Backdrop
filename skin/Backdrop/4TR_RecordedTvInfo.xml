@@ -51,8 +51,6 @@
       <posX>45</posX>
       <posY>102</posY>
       <width>705</width>
-      <textureFocus>-</textureFocus>
-      <textureNoFocus>-</textureNoFocus>
       <label>1042</label>
       <textcolor>ffffffff</textcolor>
       <colordiffuse>ffffffff</colordiffuse>
@@ -70,6 +68,12 @@
       <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>
       <visible allowhiddenfocus="true">Control.HasFocus(10)|Control.HasFocus(2)|Control.HasFocus(12398755)+!Control.IsVisible(12398756)</visible>
+      <height>42</height>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textXOff>16</textXOff>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
     </control>
     <control>
       <description>Next Button</description>
