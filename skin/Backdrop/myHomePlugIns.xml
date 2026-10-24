@@ -48,7 +48,7 @@
       <textcolor>ffffffff</textcolor>
       <textColorNoFocus>ffc9c9c9</textColorNoFocus>
       <dimColor>0x99ffffff</dimColor>
-      <buttonTextXOff>0</buttonTextXOff>
+      <buttonTextXOff>24</buttonTextXOff>
       <buttonTextYOff>0</buttonTextYOff>
       <buttonOffset>0</buttonOffset>
       <buttonFont>font16</buttonFont>

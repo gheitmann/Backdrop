@@ -19,6 +19,7 @@ jobs:
       - run: python tools/audit_integrations.py
       - run: python tools/check_guide_layout.py
       - run: python tools/check_playback_layout.py
+      - run: python tools/check_menu_layout.py
       - run: python tools/package.py
       - uses: actions/upload-artifact@v4
         with:

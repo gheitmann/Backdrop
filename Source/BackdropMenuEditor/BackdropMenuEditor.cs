@@ -87,6 +87,7 @@ namespace MediaPortal.Plugins
                     refreshTimer.Stop();
                 }
                 ApplyOptionalMovieFallback(activeWindowId);
+                PluginMenuLayout.Apply(activeWindowId);
                 bool hasFacade = false;
                 GUIControlCollection gcg = GUIWindowManager.GetWindow(activeWindowId).controlList;
                 foreach (var _guicontrol in gcg)
@@ -224,6 +225,7 @@ namespace MediaPortal.Plugins
                     PointerSeek.Install();
                     PointerTopbar.Install();
                     PointerRadio.Install();
+                    PluginMenuLayout.Install();
                     using (MediaPortal.Profile.Settings xmlreader = new MediaPortal.Profile.Settings(Config.GetFile(Configuration.Config.Dir.Config, "BackdropMenuEditor.xml")))
                     {
                         readConfigFile(xmlreader);
@@ -391,6 +393,7 @@ namespace MediaPortal.Plugins
                 PointerSeek.Uninstall();
                 PointerTopbar.Uninstall();
                 PointerRadio.Uninstall();
+                PluginMenuLayout.Uninstall();
                 if (refreshTimer != null && refreshTimer.Enabled)
                 {
                     refreshTimer.Stop();

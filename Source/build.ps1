@@ -18,6 +18,7 @@ foreach($file in @('BackdropMenuEditor.cs','BackdropMenuEditorConfig.cs','Backdr
 $argsList+=Join-Path $PSScriptRoot 'OptionalPluginAdapters.cs'
 $argsList+=Join-Path $PSScriptRoot 'PointerSeek.cs'
 $argsList+=Join-Path $PSScriptRoot 'PointerTopbar.cs'
+$argsList+=Join-Path $PSScriptRoot 'PluginMenuLayout.cs'
 & 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe' @argsList
 if($LASTEXITCODE -ne 0){throw 'Compilation failed'}
 $launcherArgs=@('/nologo','/target:winexe','/platform:anycpu','/optimize+',('/out:'+(Join-Path $PSScriptRoot 'BackdropMenuEditor.exe')),

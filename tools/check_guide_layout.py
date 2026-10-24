@@ -104,7 +104,7 @@ def check():
     for name in ('mymusicgenres.xml', 'mymusicsongs.xml'):
         radio = next(c for c in ET.parse(SKIN / name).getroot().findall('.//control') if c.findtext('id') == '18')
         require(radio.findtext('type') == 'checkbutton' and radio.findtext('hyperlink') == '30'
-                and radio.findtext('textureNoFocus') == '-', f'{name}: inherited yellow radio texture returned')
+                and radio.findtext('textureNoFocus') == 'hiddenmenu_button_no_fo.png', f'{name}: radio must use the same neutral row frame as other music controls')
         require(radio.findtext('textureFocus') == 'hiddenmenu_button_fo.png', f'{name}: radio focus must be drawn by its native control')
         require(not any('Button 18 - Navigating' in c.findtext('description', '')
                         for c in ET.parse(SKIN / name).getroot().findall('.//control')),
