@@ -89,21 +89,33 @@ namespace MediaPortal.Plugins
 
         }
 
-        private void BackdropMenuEditorConfig_FormClosing(object sender, FormClosedEventArgs e)
+        protected virtual DialogResult ConfirmSaveOnClose()
         {
-            if (!DesignMode)
-            {
-                DialogResult result = MessageBox.Show("Do you want to save your changes?", "Save Changes?", MessageBoxButtons.YesNo);
-                if (result == DialogResult.No)
-                {
-                    //do nothing
-                }
+            return MessageBox.Show(this, "Do you want to save your changes?", "Save Changes?", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+        }
 
-                if (result == DialogResult.Yes)
-                {
-                    DoSave();
-                }
-                this.Close();                
+        protected virtual void ReportSaveError(Exception error)
+        {
+            MessageBox.Show(this, "Your changes could not be saved. The editor will remain open.\r\n\r\n" + error.Message,
+                "Backdrop Menu Editor", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void BackdropMenuEditorConfig_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (DesignMode || e.Cancel) return;
+            try
+            {
+                DialogResult result = ConfirmSaveOnClose();
+                // FormClosing already owns the close operation. Never call Close
+                // from this event or from the save routine it invokes.
+                if (result == DialogResult.No) return;
+                e.Cancel = result != DialogResult.Yes || !SaveMenuConfiguration();
+            }
+            catch (Exception error)
+            {
+                e.Cancel = true;
+                ReportSaveError(error);
             }
         }
 
@@ -621,7 +633,7 @@ namespace MediaPortal.Plugins
                 MessageBox.Show("No item is selected for removal", "Remove", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
 
-        private void DoSave()
+        protected virtual bool SaveMenuConfiguration()
         {
             if (checkFields() == true)
             {
@@ -874,11 +886,12 @@ namespace MediaPortal.Plugins
                 {
                     MessageBox.Show("Done saving your menu configuration (old is kept as backup). Settings is stored in memory. Make sure to press Ok when exiting MP Configuration. Pressing Cancel when exiting MP Configuration will result in these setting NOT being saved!");
                 }
-                this.Close();
+                return true;
             }
             else
             {
                 MessageBox.Show("ERROR!! Nothing was saved because of missing values!");
+                return false;
             }
         }
 
