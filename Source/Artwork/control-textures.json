@@ -3024,7 +3024,43 @@
       "texture"
     ]
   },
+  "Modern/cinema.jpg": {
+    "kind": "content",
+    "tags": [
+      "texture"
+    ]
+  },
+  "Modern/gaming.jpg": {
+    "kind": "content",
+    "tags": [
+      "texture"
+    ]
+  },
   "Modern/home.jpg": {
+    "kind": "content",
+    "tags": [
+      "texture"
+    ]
+  },
+  "Modern/photos.jpg": {
+    "kind": "content",
+    "tags": [
+      "texture"
+    ]
+  },
+  "Modern/plugins.jpg": {
+    "kind": "content",
+    "tags": [
+      "texture"
+    ]
+  },
+  "Modern/studio.jpg": {
+    "kind": "content",
+    "tags": [
+      "texture"
+    ]
+  },
+  "Modern/tv.jpg": {
     "kind": "content",
     "tags": [
       "texture"
@@ -6055,10 +6091,8 @@
     ]
   },
   "time.header.png": {
-    "focus": false,
-    "kind": "surface",
+    "kind": "content",
     "tags": [
-      "native-or-alternate-state",
       "texture"
     ]
   },

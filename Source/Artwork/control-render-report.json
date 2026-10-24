@@ -8222,22 +8222,6 @@
       270
     ]
   },
-  "time.header.png": {
-    "focus": false,
-    "kind": "surface",
-    "tags": [
-      "native-or-alternate-state",
-      "texture"
-    ],
-    "native": [
-      1920,
-      1080
-    ],
-    "rendered": [
-      1920,
-      1080
-    ]
-  },
   "togglebutton_off.png": {
     "focus": false,
     "kind": "surface",

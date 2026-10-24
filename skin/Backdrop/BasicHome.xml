@@ -348,6 +348,7 @@
       <visible>Control.HasFocus(91111)</visible>
       <animation effect="fade" time="850">VisibleChange</animation>
     </control>
+    <import>common.basichome.categories.xml</import>
     <import>common.basichome.latest.xml</import>
     <control>
       <description>Menu Background</description>

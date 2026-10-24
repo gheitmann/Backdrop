@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <controls>
+    <control>
+      <description>Home category 1: photos</description>
+      <type>image</type><id>0</id>
+      <posX>0</posX><posY>0</posY><width>1920</width><height>1080</height>
+      <texture>Modern/photos.jpg</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+      <shouldCache>true</shouldCache>
+      <visible>Control.HasFocus(77012)|Control.HasFocus(77013)|Control.HasFocus(77014)|Control.HasFocus(77015)|Control.HasFocus(77016)|Control.HasFocus(77017)|Control.HasFocus(77018)|Control.HasFocus(77019)</visible>
+    </control>
+    <control>
+      <description>Home category 2: studio</description>
+      <type>image</type><id>0</id>
+      <posX>0</posX><posY>0</posY><width>1920</width><height>1080</height>
+      <texture>Modern/studio.jpg</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+      <shouldCache>true</shouldCache>
+      <visible>Control.HasFocus(77022)|Control.HasFocus(77023)|Control.HasFocus(77024)|Control.HasFocus(77025)|Control.HasFocus(77026)|Control.HasFocus(77027)|Control.HasFocus(77028)|Control.HasFocus(77029)</visible>
+    </control>
+    <control>
+      <description>Home category 3: cinema</description>
+      <type>image</type><id>0</id>
+      <posX>0</posX><posY>0</posY><width>1920</width><height>1080</height>
+      <texture>Modern/cinema.jpg</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+      <shouldCache>true</shouldCache>
+      <visible>Control.HasFocus(77032)|Control.HasFocus(77033)|Control.HasFocus(77034)|Control.HasFocus(77035)|Control.HasFocus(77036)|Control.HasFocus(77037)|Control.HasFocus(77038)|Control.HasFocus(77039)</visible>
+    </control>
+    <control>
+      <description>Home category 4: tv</description>
+      <type>image</type><id>0</id>
+      <posX>0</posX><posY>0</posY><width>1920</width><height>1080</height>
+      <texture>Modern/tv.jpg</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+      <shouldCache>true</shouldCache>
+      <visible>Control.HasFocus(77042)|Control.HasFocus(77043)|Control.HasFocus(77044)|Control.HasFocus(77045)|Control.HasFocus(77046)|Control.HasFocus(77047)|Control.HasFocus(77048)|Control.HasFocus(77049)</visible>
+    </control>
+    <control>
+      <description>Home category 5: gaming</description>
+      <type>image</type><id>0</id>
+      <posX>0</posX><posY>0</posY><width>1920</width><height>1080</height>
+      <texture>Modern/gaming.jpg</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+      <shouldCache>true</shouldCache>
+      <visible>Control.HasFocus(77052)|Control.HasFocus(77053)|Control.HasFocus(77054)|Control.HasFocus(77055)|Control.HasFocus(77056)|Control.HasFocus(77057)|Control.HasFocus(77058)|Control.HasFocus(77059)</visible>
+    </control>
+    <control>
+      <description>Home category 6: plugins</description>
+      <type>image</type><id>0</id>
+      <posX>0</posX><posY>0</posY><width>1920</width><height>1080</height>
+      <texture>Modern/plugins.jpg</texture>
+      <colordiffuse>ffffffff</colordiffuse>
+      <shouldCache>true</shouldCache>
+      <visible>Control.HasFocus(77062)|Control.HasFocus(77063)|Control.HasFocus(77064)|Control.HasFocus(77065)|Control.HasFocus(77066)|Control.HasFocus(77067)|Control.HasFocus(77068)|Control.HasFocus(77069)</visible>
+    </control>
+  </controls>
+</window>

@@ -105,6 +105,10 @@ def check():
         radio = next(c for c in ET.parse(SKIN / name).getroot().findall('.//control') if c.findtext('id') == '18')
         require(radio.findtext('type') == 'checkbutton' and radio.findtext('hyperlink') == '30'
                 and radio.findtext('textureNoFocus') == '-', f'{name}: inherited yellow radio texture returned')
+        require(radio.findtext('textureFocus') == 'hiddenmenu_button_fo.png', f'{name}: radio focus must be drawn by its native control')
+        require(not any('Button 18 - Navigating' in c.findtext('description', '')
+                        for c in ET.parse(SKIN / name).getroot().findall('.//control')),
+                f'{name}: external radio focus images obscure the state mark')
     print('Latest captions: 9 definitions x 2 output sizes passed; generator geometry and 2 radio-menu overrides passed.')
     print('Focused music metadata captions: 6 definitions x 2 output sizes passed.')
 

@@ -4314,6 +4314,7 @@ namespace MediaPortal.Plugins
                     rawXML.AppendLine("  <animation effect=\"fade\" time=\"850\">VisibleChange</animation>");
                     rawXML.AppendLine("</control>");
                     rawXML.AppendLine(" ");
+                    rawXML.AppendLine("<import>common.basichome.categories.xml</import>");
                     rawXML.AppendLine("<import>common.basichome.latest.xml</import> ");
                     rawXML.AppendLine(" ");
                     rawXML.AppendLine("<control>");

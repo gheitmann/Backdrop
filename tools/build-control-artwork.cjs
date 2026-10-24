@@ -5,7 +5,9 @@ const root = path.resolve(__dirname, '..'), media = path.join(root, 'skin/Backdr
 const inventory = JSON.parse(fs.readFileSync(path.join(root,'Source/Artwork/control-textures.json'),'utf8'));
 const reportPath = path.join(root,'Source/Artwork/control-render-report.json');
 const previous = fs.existsSync(reportPath) ? JSON.parse(fs.readFileSync(reportPath,'utf8')) : {};
-const report = {};
+const menuOnly = process.argv.includes('--menu-only');
+const report = menuOnly ? {...previous} : {};
+const isMenu = name => /^(?:hiddenmenu_|dropdown_|menu[._]|dialog_)/i.test(name);
 const tracked = new Map(execFileSync('git',['ls-tree','-r','--name-only','HEAD'],{cwd:root}).toString().trim().split(/\r?\n/).map(name=>[name.toLowerCase(),name]));
 function body(icon) {
   const svg = fs.readFileSync(path.join(root,'Source/Artwork/lucide',icon+'.svg'),'utf8');
@@ -14,6 +16,7 @@ function body(icon) {
 async function main() {
   for (const [name, spec] of Object.entries(inventory)) {
     if (['content','topbar'].includes(spec.kind)) continue;
+    if (menuOnly && !isMenu(name)) continue;
     const file = path.join(media,name);
     const sourceName = tracked.get(('skin/Backdrop/Media/'+name).toLowerCase());
     if (!sourceName) throw new Error('No original texture for '+name);
@@ -47,6 +50,14 @@ async function main() {
       canvas=nativeCanvas;
       if(active) canvas=canvas.replace(/#101c2a/g,'#132d3f').replace(/#1b3b53/g,'#214760');
       if(spec.status==='red') canvas=canvas.replace(/#1b3b53|#101c2a/g,focus?'#59313f':'#35232e').replace(/#69cfff|#263748/g,'#ef6f7b');
+      if(isMenu(name)) {
+        // Backdrop's original menus are near-black with restrained grey focus,
+        // not cyan panels. Keep the new scalable artwork and separate state icons.
+        const panel=/menu_selected_bg|menu_bg|dialogmenu|dialog_background/i.test(name);
+        const selected=focus&&!panel;
+        const fill=selected?'url(#menuFocus)':active?'#181a1d':'#08090b';
+        canvas=`<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${nw} ${nh}"><defs><linearGradient id="menuFocus" x2="0" y2="1"><stop stop-color="${active?'#41464c':'#363b41'}"/><stop offset=".48" stop-color="#24282d"/><stop offset="1" stop-color="#141619"/></linearGradient></defs><rect x=".6" y=".6" width="${Math.max(1,nw-1.2)}" height="${Math.max(1,nh-1.2)}" rx="${Math.min(1,nh/12,nw/12)}" fill="${fill}" fill-opacity="${selected?'.98':'.94'}" stroke="${selected?'#92989f':panel?'#555a60':'#25272a'}" stroke-width="${selected?'1':'.65'}"/></svg>`;
+      }
     } else if(spec.kind==='track') {
       canvas=`<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}"><rect width="100%" height="100%" rx="2" fill="#142334" stroke="#3a5064"/></svg>`;
     } else if(spec.kind==='overlay') {

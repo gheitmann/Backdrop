@@ -9,7 +9,7 @@ MEDIA = ROOT / 'skin/Backdrop/Media'
 
 def classify(relative):
     name = Path(relative.replace('\\', '/')).name.lower()
-    if Path(name).suffix not in ('.png', '.gif') or name in ('default.png','defaultfanart.gif'):
+    if Path(name).suffix not in ('.png', '.gif') or name in ('default.png','defaultfanart.gif','time.header.png'):
         return {'kind': 'content'}
     if re.search(r'/settings/|/clickmania/|/hexxagon/|/minesweeper/|/pipes/|/yahtzee/|mask|border|drop_frame', '/'+relative.lower()):
         return {'kind': 'content'}
