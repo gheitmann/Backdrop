@@ -1540,11 +1540,11 @@
       <animation effect="fade" start="0" end="100" time="350">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>Control.HasFocus(91919984)+!Control.isvisible(93761234)</visible>
-      <posX>1554</posX>
+      <posX>1602</posX>
       <posY>970</posY>
       <width>400</width>
       <height>30</height>
-      <animation effect="rotate" start="90" end="90" center="1554,970" time="0" condition="true">Conditional</animation>
+      <animation effect="rotate" start="90" end="90" center="1602,970" time="0" condition="true">Conditional</animation>
     </control>
     <control>
       <description>Episode Label</description>
@@ -1562,11 +1562,11 @@
       <animation effect="fade" start="0" end="100" time="350">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>Control.HasFocus(91919984)+!Control.isvisible(93761234)</visible>
-      <posX>1589</posX>
+      <posX>1640</posX>
       <posY>970</posY>
       <width>400</width>
       <height>30</height>
-      <animation effect="rotate" start="90" end="90" center="1589,970" time="0" condition="true">Conditional</animation>
+      <animation effect="rotate" start="90" end="90" center="1640,970" time="0" condition="true">Conditional</animation>
     </control>
     <control>
       <description>Play Button</description>
@@ -1668,11 +1668,11 @@
       <animation effect="fade" start="0" end="100" time="350">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>Control.HasFocus(91919985)+!Control.isvisible(93761234)</visible>
-      <posX>1554</posX>
+      <posX>1602</posX>
       <posY>970</posY>
       <width>400</width>
       <height>30</height>
-      <animation effect="rotate" start="90" end="90" center="1554,970" time="0" condition="true">Conditional</animation>
+      <animation effect="rotate" start="90" end="90" center="1602,970" time="0" condition="true">Conditional</animation>
     </control>
     <control>
       <description>Episode Label</description>
@@ -1690,11 +1690,11 @@
       <animation effect="fade" start="0" end="100" time="350">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>Control.HasFocus(91919985)+!Control.isvisible(93761234)</visible>
-      <posX>1589</posX>
+      <posX>1640</posX>
       <posY>970</posY>
       <width>400</width>
       <height>30</height>
-      <animation effect="rotate" start="90" end="90" center="1589,970" time="0" condition="true">Conditional</animation>
+      <animation effect="rotate" start="90" end="90" center="1640,970" time="0" condition="true">Conditional</animation>
     </control>
     <control>
       <description>Play Button</description>
@@ -1796,11 +1796,11 @@
       <animation effect="fade" start="0" end="100" time="350">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>Control.HasFocus(91919986)+!Control.isvisible(93761234)</visible>
-      <posX>1554</posX>
+      <posX>1602</posX>
       <posY>970</posY>
       <width>400</width>
       <height>30</height>
-      <animation effect="rotate" start="90" end="90" center="1554,970" time="0" condition="true">Conditional</animation>
+      <animation effect="rotate" start="90" end="90" center="1602,970" time="0" condition="true">Conditional</animation>
     </control>
     <control>
       <description>Episode Label</description>
@@ -1818,11 +1818,11 @@
       <animation effect="fade" start="0" end="100" time="350">Visible</animation>
       <animation effect="fade" start="100" end="0" time="50">Hidden</animation>
       <visible>Control.HasFocus(91919986)+!Control.isvisible(93761234)</visible>
-      <posX>1589</posX>
+      <posX>1640</posX>
       <posY>970</posY>
       <width>400</width>
       <height>30</height>
-      <animation effect="rotate" start="90" end="90" center="1589,970" time="0" condition="true">Conditional</animation>
+      <animation effect="rotate" start="90" end="90" center="1640,970" time="0" condition="true">Conditional</animation>
     </control>
     <control>
       <description>Play Button</description>

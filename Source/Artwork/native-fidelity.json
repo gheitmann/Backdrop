@@ -2283,6 +2283,265 @@
         13,
         72
       ]
+    },
+    "top_back_disabled.png": {
+      "sha256": "5b96e051d4b5a1f0f7c4f6fd5df370b017457f7b8ca823ec2e05fd846af561cc",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_back_enabled.png": {
+      "sha256": "0fe4683a7282387b94a778c4cb64681e7f2bf0dada4a7fd10548bf4851c938ea",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_exit_disabled.png": {
+      "sha256": "4c384d945a28a0d2901e9396e2f6bc314a770b69ed5ef2d904c071bca2f1a6ee",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_exit_enabled.png": {
+      "sha256": "fc1e040d2adc709016d231aca3df1aa3a96a10af3df9bdbab221b74c5babbb74",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_fastforward_disabled.png": {
+      "sha256": "fe6e41ba21aa8b854945abc044007b023c3f741615ff7dd4666fdabeefaa02f1",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_fastforward_enabled.png": {
+      "sha256": "708caf39621d4ce916ecd53d864f707587ab0edeaf747f919715642a2ed5c5fd",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_full_screen_disabled.png": {
+      "sha256": "39c32054052fd775deaa8cdd07eb3b49e592f61003d68691fb10c70ed470d5d5",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_full_screen_enabled.png": {
+      "sha256": "51b6fa9ea226aae550176a3e870a67402906b385053199cca38febb77bd83706",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_home_disabled.png": {
+      "sha256": "b45e3119f57b4c41e902c95c2cc299fdedd2a6d96e420ce6ff2b8ffab09b69bc",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_home_enabled.png": {
+      "sha256": "ab173117ca8a6eab1c7f58dc1a98809b736148c05731cdf0c8208e9d370c7d80",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_lyrics_disabled.png": {
+      "sha256": "3e51e384aa0bbe84c78e40bac15bd7739262b255766d86c7c70f7f5851fe2600",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_lyrics_enabled.png": {
+      "sha256": "a89ec8634ce003ed6a328ccf386f06c5b40be593cdfd248a654e0a327f03778c",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_nowplaying_disabled.png": {
+      "sha256": "d9ac534f731d3252321cdbe56b866ae573d9b7b341b04368c007959fb4269c07",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_nowplaying_enabled.png": {
+      "sha256": "692e88c72e38c54ffc6f910b0a7120e2d7bd90a96a2bc9e9e8d19c4639bc6631",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_pause_disabled.png": {
+      "sha256": "bc3c73479bb1aef1bcbef4c76a64236a85e4b8eaac76c2d27cde863579b0179d",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_pause_enabled.png": {
+      "sha256": "72f99a7f561dee70ff19035566bb0fc4a6f01ef3bb531dcbf90e947b7f657e48",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_play_disabled.png": {
+      "sha256": "78a8d0902e80b774407e0bcd786ec4cd00b67a1d04fd13a8aa5ef95e9e580b48",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_play_enabled.png": {
+      "sha256": "a26875fda9c7d9f98227e402c6c64e84e749d72f31cb2d8f662bf9dc1f9f4501",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_playlist_disabled.png": {
+      "sha256": "ee852e66f1909d1bbab0748c79dff056d8d1e178cc5e67f2001ed9ef83ea29e6",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_playlist_enabled.png": {
+      "sha256": "f49a36cc79e28e005df956fe98408faf379f6acf2dd93217acce452019a4e677",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_rew_disabled.png": {
+      "sha256": "607c3111c36ce012ae8b0258f3c152ac6f273ff0877885dbfdf14de4558aca8a",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_rew_enabled.png": {
+      "sha256": "897e6120c5ad86195ed38869186318e7c20eff9332f340e5031580ee7c65dcc0",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_search_disabled.png": {
+      "sha256": "c380e1bfcea925d9e98d347c24c734a8c67d739e99304a1e3a897f8e7963283e",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_search_enabled.png": {
+      "sha256": "55ace72fee26256345508ed751051087a23c755978a3444ad83a5313300c8ea5",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_skipback_disabled.png": {
+      "sha256": "aeacc703a4bf8b2fd8c3bfaef3fb8bb5c369f34439b49931211b354b5fd6b800",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_skipback_enabled.png": {
+      "sha256": "8665afe1fb1d6025f6592d0da8431ab34449c9cd44b20f131ac6d8c49afe65b4",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_skipforward_disabled.png": {
+      "sha256": "8b0ac1ba3c1dafab5a01e4f632e1bdd6ae38714f23ef4f7f8ae49a465fd5cdde",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_skipforward_enabled.png": {
+      "sha256": "9beafef26c81e553d4447cd0a0caba53da3d2d94407532254662901f930cc82e",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_stop_disabled.png": {
+      "sha256": "699ab7598e1734c628a25371ae77a40d3dc66afa8b844569d03dbb3a69a93d32",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "top_stop_enabled.png": {
+      "sha256": "93c8a0f0e0c4da6cc06298f0a80767d90f07ac068a7c3dd0fa2e853e28bd3ed8",
+      "dimensions": [
+        50,
+        50
+      ]
+    },
+    "overlay_topbar.png": {
+      "sha256": "61e06a570d40cc43653feaa044096ed5aba78ca732b4bc7c73f26e91bd1de662",
+      "dimensions": [
+        1280,
+        51
+      ]
+    },
+    "default.line.separator.png": {
+      "sha256": "1ad527960f32cf4fd4c839517aaa25fd8ef1dcd6f25821fad732f80eb91483bb",
+      "dimensions": [
+        240,
+        10
+      ]
+    },
+    "playlist_sub_focus2.png": {
+      "sha256": "87fc7d263245d8e0f264bd2dea861c74a86f944479658adf0b9a4f14ee8a7066",
+      "dimensions": [
+        504,
+        40
+      ]
+    },
+    "playlist_sub_nofocus1.png": {
+      "sha256": "b649aed80161f27d437a459ac5aa1cab1eadee39807cf871fd9675618c05e851",
+      "dimensions": [
+        508,
+        40
+      ]
+    },
+    "listbg_fo.png": {
+      "sha256": "8a628cd4c5dc612072d1208be64baf75fcc6f8a05b7ecf5b64862f17df553b5d",
+      "dimensions": [
+        595,
+        42
+      ]
+    },
+    "listbg_nf.png": {
+      "sha256": "858d5c32a3e4ce452d8b1f8a24d9a763256f164544a865ad3baae0013a48dcca",
+      "dimensions": [
+        595,
+        42
+      ]
+    },
+    "dialog_290_400.png": {
+      "sha256": "1e24dd193ca4ccc690e1677431245db33b9269995a4cdc7a4ca54f423a4e9cb0",
+      "dimensions": [
+        290,
+        400
+      ]
     }
   }
 }

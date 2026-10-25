@@ -45,6 +45,14 @@ panel = next(c for c in controls('common.facade.recordings.xml') if c.findtext('
 assert int(panel.findtext('posY')) + int(panel.findtext('height')) <= 1080
 assert int(panel.findtext('posX')) + int(panel.findtext('width')) <= 1920
 assert int(panel.findtext('textYOff')) >= 0
+for name in ('common.facade.recordings.xml', 'common.facade.recordings2.xml'):
+    grid = next(c for c in controls(name) if c.findtext('type') == 'thumbnailpanel')
+    assert grid.findtext('enableFocusZoom') == 'no'
+    assert grid.findtext('zoomXPixels') == grid.findtext('zoomYPixels') == '0'
+    # Manual zoom uses an expanded clip rectangle even with automatic zoom off.
+    # With no expansion, the focused first row cannot extend above the viewport.
+    assert int(grid.findtext('textureHeight')) <= int(grid.findtext('itemHeight'))
+    assert int(grid.findtext('textureHeightBig')) <= int(grid.findtext('itemHeightBig'))
 
 weather = next(c for c in controls('common.time.xml') if c.findtext('description') == 'Weather Condition')
 for value in ('temp', 'condition'):

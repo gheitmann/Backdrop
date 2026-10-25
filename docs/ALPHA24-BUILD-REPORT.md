@@ -21,7 +21,9 @@
 - Live local x64 client: six category backgrounds verified; full-width horizontal
   BasicHome menu remains readable. Normal Alt+F4 exit completed, and a subsequent
   launch returned to BasicHome rather than the classic Home list.
-- Live startup splash capture and a full x86 runtime pass remain pending.
+- The user subsequently confirmed that actual startup looks correct. Direct
+  splash capture through the window inventory was unavailable; the visual
+  acceptance is user-confirmed. A full x86 runtime pass remains pending.
   Local display uses separate 3440x1440 artwork exports; distributable is 16:9.
 
 These counts describe their stated checks, not overall completion or compatibility.

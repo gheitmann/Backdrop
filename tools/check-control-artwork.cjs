@@ -2,6 +2,7 @@
 const fs=require('node:fs'), path=require('node:path'), sharp=require('sharp');
 const root=path.resolve(__dirname,'..'), media=path.join(root,'skin/Backdrop/Media');
 const report=JSON.parse(fs.readFileSync(path.join(root,'Source/Artwork/control-render-report.json')));
+const fidelity=JSON.parse(fs.readFileSync(path.join(root,'Source/Artwork/native-fidelity.json')));
 async function main(){
   for(const [name,entry] of Object.entries(report)){
     const data=fs.readFileSync(path.join(media,name)), metadata=await sharp(data).metadata();
@@ -13,7 +14,9 @@ async function main(){
   const topbar=JSON.parse(fs.readFileSync(path.join(root,'Source/Artwork/topbar-native-sizes.json')));
   for(const [name,[width,height]] of Object.entries(topbar)){
     const metadata=await sharp(path.join(media,'top_'+name+'.png')).metadata();
-    if(metadata.width!==width*4 || metadata.height!==height*4) throw new Error('Wrong topbar raster size: '+name);
+    const native = fidelity.files['top_'+name+'.png'];
+    const expected = native ? native.dimensions : [width*4,height*4];
+    if(metadata.width!==expected[0] || metadata.height!==expected[1]) throw new Error('Wrong topbar raster size: '+name);
   }
   const pairs=[['check-box.png','check-boxNF.png'],['togglebutton_on.png','togglebutton_off.png'],
     ['hiddenmenu_togglebutton_on.png','hiddenmenu_togglebutton_off.png'],
@@ -22,7 +25,6 @@ async function main(){
     ['hiddenmenu_button_no_fo.png','hiddenmenu_button_fo.png'],
     ['tvguide_button_middle.png','tvguide_button_selected_middle.png']];
   for(const [a,b] of pairs) if(fs.readFileSync(path.join(media,a)).equals(fs.readFileSync(path.join(media,b)))) throw new Error('Indistinguishable states: '+a+' / '+b);
-  const fidelity = JSON.parse(fs.readFileSync(path.join(root, 'Source/Artwork/native-fidelity.json')));
   const crypto = require('node:crypto');
   for (const [name, spec] of Object.entries(fidelity.files)) {
     const data = fs.readFileSync(path.join(media, name));

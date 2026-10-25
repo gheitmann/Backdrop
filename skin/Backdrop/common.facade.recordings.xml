@@ -189,10 +189,9 @@
           <enableFocusZoom>no</enableFocusZoom>
           <unfocusedAlpha>255</unfocusedAlpha>
           <scrollOffset>1</scrollOffset>
-          <!--<zoomXPixels>60</zoomXPixels>
-					<zoomYPixels>40</zoomYPixels>	-->
-          <zoomXPixels>65</zoomXPixels>
-          <zoomYPixels>65</zoomYPixels>
+          <!-- Manual zoom is applied by MP even when enableFocusZoom is false. -->
+          <zoomXPixels>0</zoomXPixels>
+          <zoomYPixels>0</zoomYPixels>
           <showFrame>true</showFrame>
           <hideUnfocusTexture>yes</hideUnfocusTexture>
           <renderFocusText>no</renderFocusText>

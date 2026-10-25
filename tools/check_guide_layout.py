@@ -95,9 +95,19 @@ def check():
                          and c.findtext('label', '').startswith('#latestMediaHandler.tvrecordings.')]
     require(len(recording_details) == 6, 'Missing TV recording metadata captions')
     for c in recording_details:
-        require(c.findtext('posX') == ('1554' if c.findtext('description') == 'Series Label' else '1589'),
+        require(c.findtext('posX') == ('1602' if c.findtext('description') == 'Series Label' else '1640'),
                 'TV title/genre strips overlap')
         check_caption(c, (float(c.findtext('posX')), 400, float(c.findtext('posX')) + 30, 980), c.findtext('label'))
+    # Focused heading occupies x=1554..1594; details follow it and must end
+    # before thumbnails at x=1678. Check all three focus states explicitly.
+    for slot in (1, 2, 3):
+        title, genre = [next(c for c in recording_details if c.findtext('label') ==
+                            f'#latestMediaHandler.tvrecordings.latest{slot}.{field}')
+                        for field in ('title', 'genre')]
+        require(1594 + 8 <= float(title.findtext('posX')) and
+                float(title.findtext('posX')) + float(title.findtext('height')) + 8 <= float(genre.findtext('posX')) and
+                float(genre.findtext('posX')) + float(genre.findtext('height')) + 8 <= 1678,
+                'Focused Latest Recordings heading/details/thumbnails overlap')
     source = (ROOT / 'Source/BackdropMenuEditor/BackdropMenuEditorConfig.cs').read_text(encoding='utf-8-sig')
     import re
     generated = re.findall(r'<description>Latest Label</description>.*?<label>(#SkinTranslation[^<]+)</label>', source, re.S)
