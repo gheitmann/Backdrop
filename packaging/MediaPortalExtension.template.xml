@@ -16962,7 +16962,7 @@
     </Items>
   </Dependencies>
   <GeneralInfo>
-    <Name>Backdrop MP 1.39 AnyCPU ALPHA21 Lucide</Name>
+    <Name>Backdrop MP 1.39 AnyCPU ALPHA22</Name>
     <Id>7aec8315-531b-49b4-ac24-d6b285d039d0</Id>
     <Author>cul8er; local MP 1.39 AnyCPU adaptation</Author>
     <HomePage>https://github.com/gheitmann/Backdrop</HomePage>
@@ -16973,14 +16973,14 @@
       <Major>1</Major>
       <Minor>39</Minor>
       <Build>0</Build>
-      <Revision>21</Revision>
+      <Revision>22</Revision>
     </Version>
     <ExtensionDescription>Experimental Backdrop 1.0.1 port for MediaPortal 1.39. Includes an AnyCPU menu editor. Tested on x64; full x86 runtime testing remains pending. Requires compatible external Fanart Handler and Latest Media Handler plugins. See README.md and docs/VALIDATION.md.</ExtensionDescription>
-    <VersionDescription>ALPHA21: consistent music menu frames and text alignment; padded plugin rows and one visible entry per plugin. Includes architecture-aware single EXE setup.</VersionDescription>
+    <VersionDescription>ALPHA22: broader menu and dialog layout corrections; classic icon styling; Home and Plugins show each entry once; standalone editor architecture and save/discard fixes. Architecture-aware single EXE setup.</VersionDescription>
     <DevelopmentStatus>Alpha</DevelopmentStatus>
     <OnlineLocation>
     </OnlineLocation>
-    <ReleaseDate>2026-10-23T00:00:00</ReleaseDate>
+    <ReleaseDate>2026-10-25T00:00:00</ReleaseDate>
     <Tags>skin,fanart,hd</Tags>
     <Location>
     </Location>
