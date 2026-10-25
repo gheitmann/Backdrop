@@ -6,8 +6,8 @@ using System.Reflection;
 using System.Security.Principal;
 using System.Windows.Forms;
 
-[assembly: AssemblyVersion("1.39.0.24")]
-[assembly: AssemblyFileVersion("1.39.0.24")]
+[assembly: AssemblyVersion("1.39.0.25")]
+[assembly: AssemblyFileVersion("1.39.0.25")]
 
 // One distributable EXE. Dependencies are private temporary files, not user setup steps.
 class Setup

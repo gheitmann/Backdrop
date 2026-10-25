@@ -16962,7 +16962,7 @@
     </Items>
   </Dependencies>
   <GeneralInfo>
-    <Name>Backdrop MP 1.39 AnyCPU ALPHA24</Name>
+    <Name>Backdrop MP 1.39 AnyCPU ALPHA25</Name>
     <Id>7aec8315-531b-49b4-ac24-d6b285d039d0</Id>
     <Author>cul8er; local MP 1.39 AnyCPU adaptation</Author>
     <HomePage>https://github.com/gheitmann/Backdrop</HomePage>
@@ -16973,10 +16973,10 @@
       <Major>1</Major>
       <Minor>39</Minor>
       <Build>0</Build>
-      <Revision>24</Revision>
+      <Revision>25</Revision>
     </Version>
     <ExtensionDescription>Experimental Backdrop 1.0.1 port for MediaPortal 1.39. Includes an AnyCPU menu editor. Tested on x64; full x86 runtime testing remains pending. Requires compatible external Fanart Handler and Latest Media Handler plugins. See README.md and docs/VALIDATION.md.</ExtensionDescription>
-    <VersionDescription>ALPHA24: coordinated cinematic startup and category backgrounds; retains version-tolerant setup and ALPHA22 skin/editor fixes.</VersionDescription>
+    <VersionDescription>ALPHA25: cinematic backgrounds, original Backdrop control artwork restored, Latest Recordings captions separated and vertical recording-menu headings corrected; version-tolerant setup retained.</VersionDescription>
     <DevelopmentStatus>Alpha</DevelopmentStatus>
     <OnlineLocation>
     </OnlineLocation>
