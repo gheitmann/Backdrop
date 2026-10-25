@@ -19,14 +19,12 @@
   },
   "photos": {
     "home": {
-      "author": "Marina Nazina",
-      "page": "https://unsplash.com/photos/modern-living-room-with-dark-sofa-and-bookshelf-XAyj4ATVE9g",
-      "license": "https://unsplash.com/license"
+      "provenance": "AI-generated cinematic night collection",
+      "manifest": "Source/Artwork/cinematic-night.json"
     },
     "studio": {
-      "author": "Shoham Avisrur",
-      "page": "https://unsplash.com/photos/a-recording-studio-with-a-keyboard-and-a-guitar-lVtrIFIKNZw",
-      "license": "https://unsplash.com/license"
+      "provenance": "AI-generated cinematic night collection",
+      "manifest": "Source/Artwork/cinematic-night.json"
     },
     "abstract": {
       "author": "Jack B",
@@ -292,13 +290,13 @@
     },
     {
       "file": "skin/Backdrop/Media/Modern/home.jpg",
-      "source": "https://images.unsplash.com/photo-1765766638330-a180e8a5a990?fm=jpg&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.65&w=1920&h=1080&q=90",
-      "sha256": "fc671acf6c29c428275faf89b8ec4707046826463a4e000a710969ef820f9b68"
+      "source": "OpenAI image_gen; Source/Artwork/cinematic-night.json",
+      "sha256": "5e82ab167b453d6c0e32b3a1f731b529d635d8c14c4564b798dd3fdf3dedc474"
     },
     {
       "file": "skin/Backdrop/Media/Modern/studio.jpg",
-      "source": "https://images.unsplash.com/photo-1708791783497-ad3ae07f9e69?fm=jpg&fit=crop&crop=entropy&w=1920&h=1080&q=90",
-      "sha256": "203eea82c46db7eb427cb01beef9bc40c1e687d0532158cb3a0acc6a286dddde"
+      "source": "OpenAI image_gen; Source/Artwork/cinematic-night.json",
+      "sha256": "8d2f6da15ef5ec1e366ccac4cc3e384137830d017b0b0fbe1b2aded707b21073"
     },
     {
       "file": "skin/Backdrop/Media/Modern/abstract.jpg",

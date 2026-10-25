@@ -1,31 +1,31 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
   <controls>
     <control>
-      <description>splashscreen background</description>
-      <type>image</type>
-      <id>1</id>
-      <texture>background.png</texture>
+      <description>Cinema night startup with vector-derived Backdrop wordmark</description>
+      <type>image</type><id>1</id><texture>splashscreen.png</texture>
+    </control>
+    <!-- FullScreenSplashScreen updates these labels; no simulated percentage. -->
+    <control>
+      <description>Live startup status at bottom right</description>
+      <type>label</type><id>2</id>
+      <posX>1320</posX><posY>950</posY><width>500</width><height>36</height>
+      <fontname>Segoe UI</fontname><fontstyle>Regular</fontstyle>
+      <textsize>12</textsize><textcolor>#e2e4e7</textcolor><align>MiddleRight</align>
     </control>
     <control>
-      <description>splashscreen background</description>
-      <type>image</type>
-      <id>1</id>
-      <height>1080</height>
-      <width>1920</width>
-      <posY>0</posY>
-      <posX>0</posX>
-      <texture>splashscreen.png</texture>
+      <description>Native version at bottom right</description>
+      <type>label</type><id>3</id>
+      <posX>1320</posX><posY>996</posY><width>500</width><height>22</height>
+      <fontname>Segoe UI</fontname><fontstyle>Regular</fontstyle>
+      <textsize>9</textsize><textcolor>#b9bec6</textcolor><align>MiddleRight</align>
     </control>
     <control>
-      <description>splashscreen text</description>
-      <type>label</type>
-      <id>2</id>
-      <textsize>16</textsize>
-      <textcolor>#ffffffff</textcolor>
-      <!--<shadowAngle>45</shadowAngle>
-          <shadowDistance>1</shadowDistance>
-          <shadowColor>FF000000</shadowColor>-->
+      <description>Native edition at bottom right</description>
+      <type>label</type><id>4</id>
+      <posX>1320</posX><posY>1020</posY><width>500</width><height>20</height>
+      <fontname>Segoe UI</fontname><fontstyle>Regular</fontstyle>
+      <textsize>8</textsize><textcolor>#b9bec6</textcolor><align>MiddleRight</align>
     </control>
   </controls>
 </window>

@@ -42,6 +42,8 @@ def fetch(item):
     return {'file': path.relative_to(ROOT).as_posix(), 'source': url, 'sha256': hashlib.sha256(data).hexdigest()}
 
 def main():
+    if (ROOT / 'Source/Artwork/cinematic-night.json').is_file():
+        raise SystemExit('Cinematic artwork is pinned. Use build-cinematic-artwork.cjs; legacy mixed icon/photo fetch would overwrite it.')
     source = ROOT / 'Source/Artwork/lucide'
     tasks = [(f'https://raw.githubusercontent.com/lucide-icons/lucide/{REVISION}/icons/{name}.svg', source / f'{name}.svg') for name in sorted(set(ICONS.values()) | set(CONTROL_ICONS))]
     tasks.append((f'https://raw.githubusercontent.com/lucide-icons/lucide/{REVISION}/LICENSE', ROOT / 'skin/Backdrop/Media/Modern/LUCIDE-LICENSE.txt'))

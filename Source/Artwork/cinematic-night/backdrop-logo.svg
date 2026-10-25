@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="180" viewBox="0 0 700 180">
+  <path d="M0 30 60 10V110L0 130Z" fill="#f3f5f7"/>
+  <path d="M36 56 96 36V136L36 156Z" fill="#8bbbd3"/>
+  <text x="122" y="118" fill="#f7f8fa" font-family="Segoe UI,Arial,sans-serif" font-size="94" font-weight="500">Backdrop</text>
+  <text x="128" y="160" fill="#d3d6da" font-family="Segoe UI,Arial,sans-serif" font-size="17" letter-spacing="10">MEDIAPORTAL</text>
+</svg>

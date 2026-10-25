@@ -38,6 +38,9 @@ def fetch(item):
                   'sha256': hashlib.sha256(data).hexdigest()}
 
 def main():
+    if (ROOT / 'Source/Artwork/cinematic-night.json').is_file():
+        print('Cinematic backgrounds are pinned. Use tools/build-cinematic-artwork.cjs; legacy downloads were skipped.')
+        return
     with ThreadPoolExecutor(max_workers=5) as pool:
         photos = dict(pool.map(fetch, PHOTOS.items()))
     write(ROOT / 'Source/Artwork/home-backgrounds.json', json.dumps(photos, indent=2) + '\n')
