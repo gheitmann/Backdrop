@@ -230,17 +230,18 @@
           <description>Heading text label</description>
           <type>label</type>
           <id>0</id>
-          <posX>520</posX>
-          <posY>442</posY>
-          <width>510</width>
+          <posX>744</posX>
+          <posY>580</posY>
+          <width>220</width>
+          <height>38</height>
           <label>924</label>
           <font>font16BCB</font>
-          <align>center</align>
+          <align>left</align>
           <textcolor>ff7FB1E5</textcolor>
           <visible>Control.IsVisible(50)</visible>
           <animation effect="fade" start="100" end="0" time="1">Hidden</animation>
           <animation effect="fade" start="0" end="100" delay="500" time="250">Visible</animation>
-          <animation effect="rotate" start="90" end="90" time="1" condition="true">Conditional</animation>
+          <animation effect="rotate" start="90" end="90" center="744,580" time="0" condition="true">Conditional</animation>
         </control>
         <control>
           <description>Now Playing Button</description>

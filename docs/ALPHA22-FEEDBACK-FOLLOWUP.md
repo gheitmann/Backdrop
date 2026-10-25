@@ -22,6 +22,12 @@ The user confirmed that actual startup looks correct, closing that visual item.
   lines in the original reading orientation.
 - The actual original separator PNG is restored for the two Now Playing lines;
   the corrected progress-track geometry is retained.
+- TV and radio recording action-menu headings now use an explicit lower-left
+  rotation anchor and a zero-duration 90-degree transform, matching the repaired
+  dialog captions. The previous centered, implicit-pivot one-millisecond
+  transform left MENU horizontal in the supplied TV Recordings screenshot.
+  Caption containment passed for both pages at 1920x1080 and 3440x1440; the
+  installed XMLs were backed up and replaced. Live appearance needs a recheck.
 
 ## Recording icon-row flash
 
