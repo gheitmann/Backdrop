@@ -1,24 +1,23 @@
 # Backdrop ALPHA25
 
-Version **1.39.0.25** vereint die neuen Hintergründe aus dem ALPHA24-Entwurf mit
-den aktuellen Korrekturen zu den Rückmeldungen von ALPHA22.
-Zur Installation MediaPortal schließen und **Backdrop-Setup-ALPHA25.exe** starten.
-Es wird nur diese eine EXE benötigt. Vorhandenen Skin vorher sichern.
+Version **1.39.0.25** combines the cinematic artwork from the ALPHA24 draft with
+the latest corrections following ALPHA22 feedback. Close MediaPortal and run
+**Backdrop-Setup-ALPHA25.exe**. Only this single executable is required.
+Back up your existing skin before installation.
 
-## Changelog – wichtigste Änderungen gegenüber ALPHA23
+## Changelog – highlights since ALPHA23
 
-- Neue, aufeinander abgestimmte Start- und Kategoriehintergründe im Kino-Stil.
-  Das waagerechte BasicHome-Menü über die gesamte untere Bildschirmbreite bleibt erhalten.
-- 37 Originalgrafiken wiederhergestellt: Topbar-Icons und Hintergrund, Listen in
-  Home und Einstellungen, Dialograhmen sowie Trennlinien bei Music Now Playing.
-- Titel und Genre unter Latest Recordings ohne Überlagerung angeordnet;
-  dieselbe Korrektur ist im Menüeditor enthalten.
-- Manuellen Fokus-Zoom in Aufnahme-Iconansichten entfernt, um Zeichnen über den
-  sichtbaren Bereich hinaus zu vermeiden. Das kurzzeitige Aufblitzen beim
-  Blättern gilt damit noch nicht als nachweislich behoben.
-- „MENU“ in den Menüs für TV- und Radioaufnahmen senkrecht verankert.
-- Versionsnummern von Skin, Editor und Setup auf 1.39.0.25 angehoben.
-  Die flexible MP-Kompatibilitätserkennung und der native Installer-Fallback bleiben erhalten.
+- Added coordinated cinematic startup and category backgrounds while retaining
+  the original horizontal BasicHome menu across the bottom of the screen.
+- Restored 37 original Backdrop graphics: topbar icons and backing, Home and
+  Settings list textures, dialog frame and Music Now Playing separators.
+- Separated Latest Recordings titles and genres from the heading to prevent
+  overlap. The menu editor generates the same corrected layout.
+- Removed manual focus zoom from recording icon grids to avoid drawing beyond
+  the viewport. The brief pagination flash is not confirmed resolved.
+- Anchored the MENU caption vertically in TV and radio recording menus.
+- Updated skin, editor and setup versions to 1.39.0.25. Flexible MediaPortal
+  compatibility detection and the native installer fallback are retained.
 
 ## Tested scope and remaining limits
 

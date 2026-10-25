@@ -100,7 +100,9 @@ Local maintenance history and immutable fixtures remain under the owner's `Docum
 
 ## Release news
 
-- For every GitHub Alpha/release, include a concise German changelog of the most
+- All GitHub content must be in English, including release news, changelogs,
+  issues and pull request descriptions. This is an explicit user preference.
+- For every GitHub Alpha/release, include a concise English changelog of the most
   important user-visible changes in the release body. State the comparison
   version, retain relevant known limitations, and publish the notes with the
   release rather than only in chat. This is an explicit user preference.
