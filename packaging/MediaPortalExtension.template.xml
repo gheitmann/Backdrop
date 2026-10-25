@@ -16904,18 +16904,18 @@
         <Id />
         <MinVersion>
           <Major>1</Major>
-          <Minor>39</Minor>
+          <Minor>4</Minor>
           <Build>0</Build>
           <Revision>0</Revision>
         </MinVersion>
         <MaxVersion>
           <Major>1</Major>
-          <Minor>39</Minor>
+          <Minor>999</Minor>
           <Build>999</Build>
           <Revision>999</Revision>
         </MaxVersion>
-        <WarnOnly>false</WarnOnly>
-        <Message>This experimental package targets MediaPortal 1.39 AnyCPU.</Message>
+        <WarnOnly>true</WarnOnly>
+        <Message>Backdrop targets MediaPortal 1.39. Other MP1 releases are unverified; continue only if the required APIs and skin engine are available.</Message>
         <Name>MediaPortal</Name>
         <Condition>None</Condition>
       </DependencyItem>
@@ -16924,18 +16924,18 @@
         <Id />
         <MinVersion>
           <Major>1</Major>
-          <Minor>39</Minor>
+          <Minor>4</Minor>
           <Build>0</Build>
           <Revision>0</Revision>
         </MinVersion>
         <MaxVersion>
           <Major>1</Major>
-          <Minor>39</Minor>
+          <Minor>999</Minor>
           <Build>999</Build>
           <Revision>999</Revision>
         </MaxVersion>
-        <WarnOnly>false</WarnOnly>
-        <Message>Use the AnyCPU Extension Installer included with MediaPortal 1.39.</Message>
+        <WarnOnly>true</WarnOnly>
+        <Message>Backdrop targets MediaPortal 1.39. Other MP1 releases are unverified; continue only if the required APIs and skin engine are available.</Message>
         <Name>Installer</Name>
         <Condition>None</Condition>
       </DependencyItem>
@@ -16962,7 +16962,7 @@
     </Items>
   </Dependencies>
   <GeneralInfo>
-    <Name>Backdrop MP 1.39 AnyCPU ALPHA22</Name>
+    <Name>Backdrop MP 1.39 AnyCPU ALPHA23</Name>
     <Id>7aec8315-531b-49b4-ac24-d6b285d039d0</Id>
     <Author>cul8er; local MP 1.39 AnyCPU adaptation</Author>
     <HomePage>https://github.com/gheitmann/Backdrop</HomePage>
@@ -16973,10 +16973,10 @@
       <Major>1</Major>
       <Minor>39</Minor>
       <Build>0</Build>
-      <Revision>22</Revision>
+      <Revision>23</Revision>
     </Version>
     <ExtensionDescription>Experimental Backdrop 1.0.1 port for MediaPortal 1.39. Includes an AnyCPU menu editor. Tested on x64; full x86 runtime testing remains pending. Requires compatible external Fanart Handler and Latest Media Handler plugins. See README.md and docs/VALIDATION.md.</ExtensionDescription>
-    <VersionDescription>ALPHA22: broader menu and dialog layout corrections; classic icon styling; Home and Plugins show each entry once; standalone editor architecture and save/discard fixes. Architecture-aware single EXE setup.</VersionDescription>
+    <VersionDescription>ALPHA23: capability-based installer compatibility; understandable warnings and optional original-installer fallback. Includes ALPHA22 skin and editor fixes.</VersionDescription>
     <DevelopmentStatus>Alpha</DevelopmentStatus>
     <OnlineLocation>
     </OnlineLocation>

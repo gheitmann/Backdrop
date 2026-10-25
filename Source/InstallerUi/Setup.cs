@@ -6,8 +6,8 @@ using System.Reflection;
 using System.Security.Principal;
 using System.Windows.Forms;
 
-[assembly: AssemblyVersion("1.39.0.22")]
-[assembly: AssemblyFileVersion("1.39.0.22")]
+[assembly: AssemblyVersion("1.39.0.23")]
+[assembly: AssemblyFileVersion("1.39.0.23")]
 
 // One distributable EXE. Dependencies are private temporary files, not user setup steps.
 class Setup
@@ -77,13 +77,13 @@ class Setup
                 System.Threading.Tasks.Task<string> errors = process.StandardError.ReadToEndAsync();
                 process.WaitForExit();
                 string report = output.Result + Environment.NewLine + errors.Result;
-                foreach (string probe in new[] { "architecture.txt", "presentation-probe.txt", "binding-probe.txt", "native-run.txt", "preview-error.txt" })
+                foreach (string probe in new[] { "architecture.txt", "presentation-probe.txt", "binding-probe.txt", "native-run.txt", "preview-error.txt", "native-fallback.txt", "patch-error.txt", "compatibility-warning.txt" })
                 {
                     string path = Path.Combine(run, "Runtime", probe);
                     if (File.Exists(path)) report += Environment.NewLine + File.ReadAllText(path);
                 }
                 File.WriteAllText(Path.Combine(cache, verify ? "last-verification.txt" : "last-run.txt"), report);
-                if (process.ExitCode != 0) throw new InvalidOperationException("Installer preparation failed. See " + Path.Combine(cache, verify ? "last-verification.txt" : "last-run.txt") + Environment.NewLine + report);
+                if (process.ExitCode != 0) throw new InvalidOperationException("Installer could not complete. See " + Path.Combine(cache, verify ? "last-verification.txt" : "last-run.txt") + Environment.NewLine + report);
                 completed = true;
                 return 0;
             }
