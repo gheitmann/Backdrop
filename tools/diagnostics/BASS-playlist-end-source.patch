@@ -1,0 +1,11 @@
+--- a/mediaportal/Core/MusicPlayer/BASS/MixerStream.cs
++++ b/mediaportal/Core/MusicPlayer/BASS/MixerStream.cs
+@@ -906,7 +906,7 @@
+           }
+         }
+ 
+-        bool newMixerNeeded = false;
++        bool newMixerNeeded = nextSong == null;
+         if (nextStream != null && nextStream.BassStream != 0)
+         {
+           if (_bassPlayer.NewMixerNeeded(nextStream))

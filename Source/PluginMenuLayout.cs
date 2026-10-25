@@ -29,7 +29,7 @@ namespace MediaPortal.Plugins
         // Preserve that control and its plugin routing, but clip to one cycle.
         internal static void Apply(int windowId)
         {
-            if (windowId != 34 || !String.Equals(GUIGraphicsContext.SkinName, "Backdrop", StringComparison.OrdinalIgnoreCase)) return;
+            if ((windowId != 0 && windowId != 34) || !String.Equals(GUIGraphicsContext.SkinName, "Backdrop", StringComparison.OrdinalIgnoreCase)) return;
             try
             {
                 GUIWindow window = GUIWindowManager.GetWindow(windowId);

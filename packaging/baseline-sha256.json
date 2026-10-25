@@ -1,6 +1,6 @@
 {
-  "Source/BackdropMenuEditor.dll": "ce7bf2c10ea98cf31fb8ffdbfee983eeac15252d32487ea10a50c95131591874",
-  "Source/BackdropMenuEditor.exe": "8a882198f20a994183680c7e398ce19d28b705039ad3ac98a76f9d02087c2c08",
+  "Source/BackdropMenuEditor.dll": "1a688d674b4ee74c0d0c5d675fb00ff91b38e92496b7d07c680b00fd2c045c5a",
+  "Source/BackdropMenuEditor.exe": "539427c2bfb30378c05afa7e1f47cf6448054584366c6a45812ddd7d7da01e14",
   "config/BackdropMenuEditor.xml": "59eeb018bff419448506cb8968056c9bcf16228107be14102185b9fcb16c945c",
   "fonts/2Level Body Caps.ttf": "176813cc736e0020a26354b45da30c235ae9f304d6f5a87c80918c1896290388",
   "fonts/menu.ttf": "adbfeca02971474de25a69f32177ec168cbcd61fff6673efe9526e1d12567c5b",
@@ -2244,7 +2244,7 @@
   "skin/Backdrop/musicOverlay.xml": "6a44f2a8058384c57a607b7601897d5757bc215db07b025635fa74f6f62bfc64",
   "skin/Backdrop/musicVisualisation.xml": "aaa51fdbfbe5ac130c588b2ca60426148a4531e99e0437e50ea094d93f047517",
   "skin/Backdrop/myClickMania.xml": "5f88a92c3ecaa2fda533d10d5b2898d1875119906609af36d5352b0f9539e89f",
-  "skin/Backdrop/myHome.xml": "b82fd9db46b4970a9ca96038cbd8c7db3c742824a0796ddb49f21bf655820605",
+  "skin/Backdrop/myHome.xml": "afc22e1e0467e8d787abb5db165f218310525ff89cbe903037b3448b202309ca",
   "skin/Backdrop/myHomePlugIns.xml": "660469bba86db08c91bede8ebde312aaf68a3e4350504051622a69f6ff15619a",
   "skin/Backdrop/myLyrics.common.play.fanart.xml": "d990de8965500c2a490cc7a907b8f12179304a3149a4e15186aba964d2c0451c",
   "skin/Backdrop/myLyrics.hiddenmenu.xml": "7ada4d9082df6b1191d5b0d67bf56946d3e435523c7a270141486c760084d076",
