@@ -40,3 +40,19 @@ scope). Six source/export hashes, six category bindings, a single splash image
 and three native status-label bounds/alignment checks also passed. Generated and
 composited images were inspected as artifacts; this does not certify the live
 startup or a complete runtime UI pass. No new release was built or published.
+
+
+## Live acceptance, 25 October 2026
+
+All six category backgrounds were observed in the running x64 client at
+3440x1440: Photos, Music/Radio, Movies, TV, Games/Sports and Plugins (6/6).
+Left/right navigation changes the associated photograph and keeps the six
+category labels readable across the bottom. These percentages refer only to
+this six-category check, not overall skin or MediaPortal compatibility.
+The ordinary Home window had been selected by saved local startup state;
+the local configuration now starts BasicHome (window 35) and uses one Home.
+BasicHome.xml remains byte-identical to ALPHA22, with the original horizontal
+coordinates. Personal MediaPortal.xml is not part of the release payload.
+The cinematic splash artifact/native label contract passed source inspection;
+a live startup splash screenshot is still pending. No full runtime regression
+pass or complete x86 runtime pass is claimed.

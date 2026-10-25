@@ -4,6 +4,14 @@ Experimental port of cul8er's **Backdrop 1.0.1** skin to **MediaPortal 1.39**.
 
 Current release: **ALPHA23 (1.39.0.23)**, including the standalone menu editor. The editor launcher and installer select the installed client architecture. A compact practical pass was completed on MediaPortal 1.39 x64; full x86 runtime coverage remains pending. See [release notes and remaining limitations](docs/RELEASE-ALPHA23.md).
 
+**Security notice:** ALPHA23 has reported Defender/VirusTotal detections. Local
+scans did not reproduce them; a false positive has not been established. See the
+[bounded investigation](docs/DEFENDER-ALPHA23-COMPARISON.md). **ALPHA24
+(1.39.0.24) is prepared as a draft**, with cinematic startup/category artwork and
+the original horizontal BasicHome menu. See [ALPHA24 notes](docs/RELEASE-ALPHA24.md)
+and [build verification](docs/ALPHA24-BUILD-REPORT.md). It is not a security-cleared
+replacement for ALPHA23.
+
 ## Install
 
 Download `Backdrop-Setup-ALPHA23.exe` from [Releases](https://github.com/gheitmann/Backdrop/releases), close MediaPortal and run the single executable. Back up any existing Backdrop installation first.
@@ -63,7 +71,7 @@ python tools/package.py
 
 Review the rebuilt DLL and assembly version before refreshing the payload hashes. The refresh records an intentional payload change; it is not a compatibility test. To package the unchanged checked-in reference DLL, skip the editor build and hash refresh.
 
-The current installer is written to `dist/Backdrop-MP139-AnyCPU-ALPHA23.mpe1`. Packaging can also use the checked-in reference DLL. GitHub Actions validates the payload and builds an installer artifact; it does not run the MediaPortal GUI or compile the editor against MediaPortal binaries.
+The current source builds `dist/Backdrop-MP139-AnyCPU-ALPHA24.mpe1`. Packaging can also use the checked-in reference DLL. GitHub Actions validates the payload and builds an installer artifact; it does not run the MediaPortal GUI or compile the editor against MediaPortal binaries.
 
 ## Credits
 
