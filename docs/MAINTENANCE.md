@@ -98,6 +98,14 @@ Local maintenance history and immutable fixtures remain under the owner's `Docum
 - Inline the preview overlay exactly once. Retain common.time.xml for the original right-aligned clock. Channel label width, header logo position and clipped timeline are documented compatibility adjustments.
 - Seven visible rows require pagination testing. Retained fixtures exercised selection, long descriptions, keyboard pagination, group switching and single-channel mode. Actual Live TV remains unverified without a tuner mapping.
 
+## Release news
+
+- For every GitHub Alpha/release, include a concise German changelog of the most
+  important user-visible changes in the release body. State the comparison
+  version, retain relevant known limitations, and publish the notes with the
+  release rather than only in chat. This is an explicit user preference.
+- Keep the checked-in release notes synchronized with GitHub release news.
+
 ## ALPHA13 lessons
 
 - Rotation `center` is an absolute skin-coordinate pivot. A zero component invokes the native automatic centre; it is not a local zero offset. Use an explicit nonzero lower-left anchor for bottom-to-top captions, and keep left text alignment.

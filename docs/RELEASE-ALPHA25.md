@@ -1,23 +1,24 @@
 # Backdrop ALPHA25
 
-Version 1.39.0.25 combines the cinematic artwork from the ALPHA24 draft with the
-latest corrections following ALPHA22 feedback. Close MediaPortal and run the
-single Backdrop-Setup-ALPHA25.exe. Back up your current skin first.
+Version **1.39.0.25** vereint die neuen Hintergründe aus dem ALPHA24-Entwurf mit
+den aktuellen Korrekturen zu den Rückmeldungen von ALPHA22.
+Zur Installation MediaPortal schließen und **Backdrop-Setup-ALPHA25.exe** starten.
+Es wird nur diese eine EXE benötigt. Vorhandenen Skin vorher sichern.
 
-## Changes
+## Changelog – wichtigste Änderungen gegenüber ALPHA23
 
-- Coordinated cinematic startup and category backgrounds, retaining the original
-  horizontal menu across the bottom of BasicHome.
-- Restored 37 original Backdrop graphics: topbar icons and backing, Home and
-  Settings list textures, dialog frame and Now Playing separators.
-- Latest Recordings title and genre now appear after the heading without overlap.
-  The menu editor generates the same corrected layout.
-- Recording grids no longer request manual focus zoom beyond the viewport.
-  This mitigates clipping; the reported brief pagination flash is not confirmed
-  resolved.
-- TV and radio recording menus use an explicit vertical MENU caption anchor.
-- Version-tolerant installer detection and explicit native fallback are retained.
-  A MediaPortal version number alone does not reject installation.
+- Neue, aufeinander abgestimmte Start- und Kategoriehintergründe im Kino-Stil.
+  Das waagerechte BasicHome-Menü über die gesamte untere Bildschirmbreite bleibt erhalten.
+- 37 Originalgrafiken wiederhergestellt: Topbar-Icons und Hintergrund, Listen in
+  Home und Einstellungen, Dialograhmen sowie Trennlinien bei Music Now Playing.
+- Titel und Genre unter Latest Recordings ohne Überlagerung angeordnet;
+  dieselbe Korrektur ist im Menüeditor enthalten.
+- Manuellen Fokus-Zoom in Aufnahme-Iconansichten entfernt, um Zeichnen über den
+  sichtbaren Bereich hinaus zu vermeiden. Das kurzzeitige Aufblitzen beim
+  Blättern gilt damit noch nicht als nachweislich behoben.
+- „MENU“ in den Menüs für TV- und Radioaufnahmen senkrecht verankert.
+- Versionsnummern von Skin, Editor und Setup auf 1.39.0.25 angehoben.
+  Die flexible MP-Kompatibilitätserkennung und der native Installer-Fallback bleiben erhalten.
 
 ## Tested scope and remaining limits
 
