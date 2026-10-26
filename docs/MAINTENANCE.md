@@ -4,7 +4,7 @@ Use this repository as the versioned source for future Backdrop changes. Keep re
 
 ## Start every update here
 
-Current artwork baseline: read `ALPHA25-FEEDBACK-FOLLOWUP.md` first. Original Backdrop control artwork protected by `Source/Artwork/native-fidelity.json` takes precedence over the historical `LUCIDE-REFRESH.md` generation guidance. Retain the new cinematic BasicHome/startup backgrounds, the restored classic Home/Settings mappings, current native dimensions and stock-background/editor consistency. Preserve raster aspect ratios and regenerate the test texture cache when dimensions change. Modern variant provenance is recorded separately; do not mix it into the classic baseline. The TV group caption remains static to avoid rotated-marquee flicker.
+Current artwork baseline: read `ALPHA25-FEEDBACK-FOLLOWUP.md` and `ALPHA26-BUILD-REPORT.md` first. Original Backdrop control artwork protected by `Source/Artwork/native-fidelity.json` takes precedence over the historical `LUCIDE-REFRESH.md` generation guidance. Retain the cinematic BasicHome/startup backgrounds and the ALPHA26 thematic Home/Settings backgrounds, current native dimensions and stock-background/editor consistency. Preserve raster aspect ratios and regenerate the test texture cache when dimensions change. Modern variant provenance is recorded separately; do not mix it into the classic baseline. The TV group caption remains static to avoid rotated-marquee flicker.
 
 1. Read this file and `VALIDATION.md`, inspect the current branch and remote changes, then check the target MediaPortal release and matching plugin architecture.
 2. Preserve native required control types and IDs. Restyle compatible modern pages instead of restoring incompatible legacy XML wholesale.

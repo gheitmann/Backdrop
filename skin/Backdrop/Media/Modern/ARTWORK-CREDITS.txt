@@ -7,6 +7,12 @@ TV: large-screen evening living room. Music: recording studio.
 Photos: camera workroom. Games/sports: controller and racing lounge.
 Plugins: home media equipment and modular AV cabinet.
 The generic home background uses the cinema scene.
+Home lounge and Settings control-console backgrounds (26 October 2026):
+AI-generated with OpenAI image_gen to match the cinematic startup palette.
+Both original outputs are 1672x941; see Source/Artwork/alpha26-backgrounds.json.
+Plugins browser background (26 October 2026): an AI-generated modular AV rack
+with film camera and speakers, matching the same amber/night palette. Original
+output is 1672x941; provenance is in alpha26-backgrounds.json.
 Sources, prompts and SHA256: Source/Artwork/cinematic-night/ and cinematic-night.json.
 Brand mark and wordmark: code-native SVG, rendered at target resolution.
 Original photographic tool outputs are 1672x941; larger exports are resampled,

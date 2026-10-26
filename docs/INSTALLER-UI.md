@@ -4,7 +4,7 @@ Download `Backdrop-Setup-ALPHA23.exe`, close MediaPortal and run the EXE. No com
 
 Setup automatically searches both Program Files locations and registered uninstall InstallLocation values for the client folder containing MpeCore.dll and MpeInstaller.exe. If discovery is ambiguous or unsuccessful, select the client folder in the folder picker. Do not select the TV Server or download folder.
 
-Package, setup and editor report 1.39.0.25. The ALPHA23 helper process architecture correction is retained. An installed older build can still trigger native MPE's replacement/uninstall prompt; the old/new versions identify distinct payloads.
+Package, setup and editor report 1.39.0.26. The ALPHA23 helper process architecture correction is retained. An installed older build can still trigger native MPE's replacement/uninstall prompt; the old/new versions identify distinct payloads.
 
 ## Presentation and isolation
 

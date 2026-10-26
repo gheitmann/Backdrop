@@ -14,7 +14,7 @@
       <width>1920</width>
       <height>1080</height>
       <shouldCache>true</shouldCache>
-      <texture>default.png</texture>
+      <texture>Modern/home-lounge.png</texture>
     </control>
     <control>
       <description>background</description>

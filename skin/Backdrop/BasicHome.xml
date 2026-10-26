@@ -231,7 +231,7 @@
       <width>1920</width>
       <height>1080</height>
       <shouldCache>true</shouldCache>
-      <texture>Animations\settings\default.jpg</texture>
+      <texture>Modern/settings-console.png</texture>
       <colordiffuse>ff707070</colordiffuse>
       <visible>Control.HasFocus(77064)|Control.HasFocus(77065)</visible>
       <animation effect="fade" time="850">VisibleChange</animation>

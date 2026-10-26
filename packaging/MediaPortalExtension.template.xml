@@ -16770,6 +16770,9 @@
           <FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Modern/abstract.jpg</LocalFileName><ZipFileName>Installer{CopyFile}\{8c8e6ea2-4f75-5319-bbdf-c7cb7c5daa03}-abstract.jpg</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Modern\abstract.jpg</DestinationFilename></FileItem>
 <FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Modern/ARTWORK-CREDITS.txt</LocalFileName><ZipFileName>Installer{CopyFile}\{5dd92d2d-1057-5cd1-bd6d-d52ea0540e03}-ARTWORK-CREDITS.txt</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Modern\ARTWORK-CREDITS.txt</DestinationFilename></FileItem>
 <FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Modern/home.jpg</LocalFileName><ZipFileName>Installer{CopyFile}\{4fe8d85e-69a0-590d-8fb6-d790c4e90238}-home.jpg</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Modern\home.jpg</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Modern/home-lounge.png</LocalFileName><ZipFileName>Installer{CopyFile}\{7d862125-32b8-558e-bee1-4c31c7a92b89}-home-lounge.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Modern\home-lounge.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Modern/settings-console.png</LocalFileName><ZipFileName>Installer{CopyFile}\{0e38e0e0-b6d6-55bd-91d3-737711e1b11e}-settings-console.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Modern\settings-console.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Modern/plugins-browser.png</LocalFileName><ZipFileName>Installer{CopyFile}\{70291b2c-24c9-5410-8f5e-d17ee5a8941a}-plugins-browser.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Modern\plugins-browser.png</DestinationFilename></FileItem>
 <FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Modern/LUCIDE-LICENSE.txt</LocalFileName><ZipFileName>Installer{CopyFile}\{5310330f-be8a-580e-a3b8-e10f4174524b}-LUCIDE-LICENSE.txt</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Modern\LUCIDE-LICENSE.txt</DestinationFilename></FileItem>
 <FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Modern/studio.jpg</LocalFileName><ZipFileName>Installer{CopyFile}\{32d69010-c952-5ea1-b6e3-b5dbb5af526a}-studio.jpg</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Modern\studio.jpg</DestinationFilename></FileItem>
 <FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/common.basichome.categories.xml</LocalFileName><ZipFileName>Installer{CopyFile}\{2d3e4de9-0b1a-509d-afc9-7c11152bc1fb}-common.basichome.categories.xml</ZipFileName><DestinationFilename>%Skin%\Backdrop\common.basichome.categories.xml</DestinationFilename></FileItem>
@@ -16962,7 +16965,7 @@
     </Items>
   </Dependencies>
   <GeneralInfo>
-    <Name>Backdrop MP 1.39 AnyCPU ALPHA25</Name>
+    <Name>Backdrop MP 1.39 AnyCPU ALPHA26</Name>
     <Id>7aec8315-531b-49b4-ac24-d6b285d039d0</Id>
     <Author>cul8er; local MP 1.39 AnyCPU adaptation</Author>
     <HomePage>https://github.com/gheitmann/Backdrop</HomePage>
@@ -16973,14 +16976,14 @@
       <Major>1</Major>
       <Minor>39</Minor>
       <Build>0</Build>
-      <Revision>25</Revision>
+      <Revision>26</Revision>
     </Version>
     <ExtensionDescription>Experimental Backdrop 1.0.1 port for MediaPortal 1.39. Includes an AnyCPU menu editor. Tested on x64; full x86 runtime testing remains pending. Requires compatible external Fanart Handler and Latest Media Handler plugins. See README.md and docs/VALIDATION.md.</ExtensionDescription>
-    <VersionDescription>ALPHA25: cinematic backgrounds, original Backdrop control artwork restored, Latest Recordings captions separated and vertical recording-menu headings corrected; version-tolerant setup retained.</VersionDescription>
+    <VersionDescription>ALPHA26: thematic Home, Settings and Plugins backgrounds; original Backdrop controls and prior recording/menu fixes retained.</VersionDescription>
     <DevelopmentStatus>Alpha</DevelopmentStatus>
     <OnlineLocation>
     </OnlineLocation>
-    <ReleaseDate>2026-10-25T00:00:00</ReleaseDate>
+    <ReleaseDate>2026-10-26T00:00:00</ReleaseDate>
     <Tags>skin,fanart,hd</Tags>
     <Location>
     </Location>
@@ -33781,6 +33784,9 @@
 <FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Modern/abstract.jpg</LocalFileName><ZipFileName>Installer{CopyFile}\{8c8e6ea2-4f75-5319-bbdf-c7cb7c5daa03}-abstract.jpg</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Modern\abstract.jpg</DestinationFilename></FileItem>
 <FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Modern/ARTWORK-CREDITS.txt</LocalFileName><ZipFileName>Installer{CopyFile}\{5dd92d2d-1057-5cd1-bd6d-d52ea0540e03}-ARTWORK-CREDITS.txt</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Modern\ARTWORK-CREDITS.txt</DestinationFilename></FileItem>
 <FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Modern/home.jpg</LocalFileName><ZipFileName>Installer{CopyFile}\{4fe8d85e-69a0-590d-8fb6-d790c4e90238}-home.jpg</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Modern\home.jpg</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Modern/home-lounge.png</LocalFileName><ZipFileName>Installer{CopyFile}\{7d862125-32b8-558e-bee1-4c31c7a92b89}-home-lounge.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Modern\home-lounge.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Modern/settings-console.png</LocalFileName><ZipFileName>Installer{CopyFile}\{0e38e0e0-b6d6-55bd-91d3-737711e1b11e}-settings-console.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Modern\settings-console.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Modern/plugins-browser.png</LocalFileName><ZipFileName>Installer{CopyFile}\{70291b2c-24c9-5410-8f5e-d17ee5a8941a}-plugins-browser.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Modern\plugins-browser.png</DestinationFilename></FileItem>
 <FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Modern/LUCIDE-LICENSE.txt</LocalFileName><ZipFileName>Installer{CopyFile}\{5310330f-be8a-580e-a3b8-e10f4174524b}-LUCIDE-LICENSE.txt</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Modern\LUCIDE-LICENSE.txt</DestinationFilename></FileItem>
 <FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Modern/studio.jpg</LocalFileName><ZipFileName>Installer{CopyFile}\{32d69010-c952-5ea1-b6e3-b5dbb5af526a}-studio.jpg</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Modern\studio.jpg</DestinationFilename></FileItem>
 

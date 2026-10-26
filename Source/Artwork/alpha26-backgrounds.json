@@ -1,0 +1,22 @@
+{
+  "generator": "OpenAI image_gen",
+  "style_reference": "skin/Backdrop/Media/splashscreen.png",
+  "reference_role": "Style reference only; no source pixels copied",
+  "files": {
+    "skin/Backdrop/Media/Modern/home-lounge.png": {
+      "sha256": "f2a70994c988998dc9ed574ed28d8764ec90be70c5cfa2813f4bc16d94b88b96",
+      "dimensions": [1672, 941],
+      "prompt_summary": "Cinematic home media lounge at night with large television, speakers, turntable, warm amber lamps and midnight-blue windows; no UI or text."
+    },
+    "skin/Backdrop/Media/Modern/plugins-browser.png": {
+      "sha256": "4890251f1e21288d3e795cd615dc984a38721bb67650d3f0fcc6fa5f3fb456ad",
+      "dimensions": [1672, 941],
+      "prompt_summary": "Cinematic modular AV rack with camera, speakers and connected media devices at night; objects on left and center, darker right for the plugin menu; no UI or text."
+    },
+    "skin/Backdrop/Media/Modern/settings-console.png": {
+      "sha256": "58b9c5db49d5708edc6526959f5e318aecd1babb32af69829463ec74e588c079",
+      "dimensions": [1672, 941],
+      "prompt_summary": "Cinematic professional audio-video control console at night, tactile faders and amber meters, warm gold and midnight-blue palette; no UI or text."
+    }
+  }
+}

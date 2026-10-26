@@ -1,12 +1,19 @@
 # Current validation and historical evidence
 
-Latest source/local follow-up (26 October 2026): see
+ALPHA26 (26 October 2026): three thematic Home/Settings/Plugins backgrounds are mapped
+across eight XML definitions. Six selected static commands passed (6/6); 2,408
+package files and 21 private bundle files were byte-compared. The single EXE
+passed VerifyOnly preparation on x64 and x86 (2/2). Live visual confirmation
+and full x86 runtime coverage remain open. See
+[ALPHA26 build verification](ALPHA26-BUILD-REPORT.md).
+
+Earlier source/local follow-up (26 October 2026): see
 [ALPHA25 artwork feedback](ALPHA25-FEEDBACK-FOLLOWUP.md). The reviewed changes
 restore 51 original textures while preserving cinematic BasicHome artwork.
 Six static commands passed (6/6); 518 textures decoded and 419 original hashes
 and dimensions checked. Local deployment verified 53/53 copied files. Live
 visual confirmation, recording pagination flash and full x86 runtime coverage
-remain open. These changes do not replace the published ALPHA25 installer.
+remain open. These reviewed changes are included in ALPHA26.
 Scheduled maintenance also revalidated and byte-compared all 2405 package files;
 see [26 October maintenance](MAINTENANCE-2026-10-26.md).
 
