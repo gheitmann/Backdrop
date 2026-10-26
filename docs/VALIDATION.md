@@ -1,3 +1,17 @@
+# Current validation and historical evidence
+
+Latest source/local follow-up (26 October 2026): see
+[ALPHA25 artwork feedback](ALPHA25-FEEDBACK-FOLLOWUP.md). The reviewed changes
+restore 51 original textures while preserving cinematic BasicHome artwork.
+Six static commands passed (6/6); 518 textures decoded and 419 original hashes
+and dimensions checked. Local deployment verified 53/53 copied files. Live
+visual confirmation, recording pagination flash and full x86 runtime coverage
+remain open. These changes do not replace the published ALPHA25 installer.
+Scheduled maintenance also revalidated and byte-compared all 2405 package files;
+see [26 October maintenance](MAINTENANCE-2026-10-26.md).
+
+The entries below are historical evidence, not the current release identity.
+
 # ALPHA15 validation
 
 LOCAL17 visual follow-up: `LUCIDE-REFRESH.md` records 550 generated UI textures, modern stock backgrounds, static TV group caption, full-height selection rows and native checked/unchecked visual confirmation. Payload validation covers 2,398 files and 557 XML definitions; the single EXE passes VerifyOnly. These working changes do not replace the published ALPHA15 release.
