@@ -1,6 +1,8 @@
 """Apply the reviewed artwork mappings without changing native controls or user fanart."""
 from pathlib import Path
 import re
+import json
+import hashlib
 import shutil
 import uuid
 import xml.etree.ElementTree as ET
@@ -10,6 +12,7 @@ SKIN = ROOT / 'skin/Backdrop'
 MEDIA = SKIN / 'Media'
 
 def main():
+    protected = json.loads((ROOT / 'Source/Artwork/native-fidelity.json').read_text())['files']
     copies = {
         'Animations/music/default.jpg': 'studio',
         'Animations/settings/default.jpg': 'abstract',
@@ -18,11 +21,16 @@ def main():
         **{f'Animations/tvguide/tvguide{n}_default.jpg': 'home' for n in (1, 2, 3)},
     }
     for target, source in copies.items():
+        if target in protected:
+            if hashlib.sha256((MEDIA / target).read_bytes()).hexdigest() != protected[target]['sha256']:
+                raise ValueError(f'Preserved original artwork differs: {target}')
+            continue
         shutil.copyfile(MEDIA / f'Modern/{source}.jpg', MEDIA / target)
     count = 0
     for path in SKIN.glob('*.xml'):
         text = path.read_text(encoding='utf-8-sig')
-        updated = text.replace('<texture>default.png</texture>', '<texture>Modern/home.jpg</texture>')
+        updated = (text if path.name in ('myHome.xml', 'myHomePlugIns.xml') else
+                   text.replace('<texture>default.png</texture>', '<texture>Modern/home.jpg</texture>'))
         # Keep existing dimmer guide/overlay settings; cap bright static images only.
         def dim(match):
             block = match.group(0)

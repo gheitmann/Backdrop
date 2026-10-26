@@ -14,8 +14,7 @@
       <width>1920</width>
       <height>1080</height>
       <shouldCache>true</shouldCache>
-      <texture>Modern/home.jpg</texture>
-      <colordiffuse>ff707070</colordiffuse>
+      <texture>default.png</texture>
     </control>
     <control>
       <description>background</description>

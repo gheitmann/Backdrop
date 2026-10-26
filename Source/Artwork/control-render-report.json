@@ -4641,9 +4641,10 @@
       35
     ],
     "rendered": [
-      329,
-      96
-    ]
+      120,
+      35
+    ],
+    "preserved_original": true
   },
   "button.livetv.left.png": {
     "focus": false,
@@ -4660,9 +4661,10 @@
       160
     ],
     "rendered": [
-      96,
-      512
-    ]
+      30,
+      160
+    ],
+    "preserved_original": true
   },
   "button.menu.left.png": {
     "focus": false,
@@ -4679,9 +4681,10 @@
       95
     ],
     "rendered": [
-      96,
-      304
-    ]
+      30,
+      95
+    ],
+    "preserved_original": true
   },
   "button.menu.top.png": {
     "focus": false,
@@ -4698,9 +4701,10 @@
       30
     ],
     "rendered": [
-      304,
-      96
-    ]
+      95,
+      30
+    ],
+    "preserved_original": true
   },
   "button.white.focus.png": {
     "focus": true,
@@ -5445,7 +5449,8 @@
     "rendered": [
       580,
       260
-    ]
+    ],
+    "preserved_original": true
   },
   "dialog_743_336.png": {
     "focus": false,
@@ -5461,7 +5466,8 @@
     "rendered": [
       773,
       350
-    ]
+    ],
+    "preserved_original": true
   },
   "dialog_745_470.png": {
     "focus": false,
@@ -5477,7 +5483,8 @@
     "rendered": [
       745,
       470
-    ]
+    ],
+    "preserved_original": true
   },
   "dialog_bottom.png": {
     "focus": false,
@@ -7905,9 +7912,10 @@
       69
     ],
     "rendered": [
-      1280,
-      96
-    ]
+      920,
+      69
+    ],
+    "preserved_original": true
   },
   "playlist_sub_focus1.png": {
     "focus": true,
@@ -7924,9 +7932,10 @@
       40
     ],
     "rendered": [
-      1210,
-      96
-    ]
+      504,
+      40
+    ],
+    "preserved_original": true
   },
   "playlist_sub_focus2.png": {
     "focus": true,
@@ -7946,7 +7955,8 @@
     "rendered": [
       504,
       40
-    ]
+    ],
+    "preserved_original": true
   },
   "playlist_sub_focus3.png": {
     "focus": true,
@@ -7962,9 +7972,10 @@
       40
     ],
     "rendered": [
-      1210,
-      96
-    ]
+      504,
+      40
+    ],
+    "preserved_original": true
   },
   "playlist_sub_focus4.png": {
     "focus": true,
@@ -7981,9 +7992,10 @@
       40
     ],
     "rendered": [
-      1210,
-      96
-    ]
+      504,
+      40
+    ],
+    "preserved_original": true
   },
   "playlist_sub_nofocus.png": {
     "focus": false,
@@ -8000,9 +8012,10 @@
       69
     ],
     "rendered": [
-      1280,
-      96
-    ]
+      920,
+      69
+    ],
+    "preserved_original": true
   },
   "playlist_sub_nofocus1.png": {
     "focus": false,
@@ -8022,7 +8035,8 @@
     "rendered": [
       508,
       40
-    ]
+    ],
+    "preserved_original": true
   },
   "playlist_sub_nofocus2.png": {
     "focus": false,
@@ -8039,9 +8053,10 @@
       40
     ],
     "rendered": [
-      1219,
-      96
-    ]
+      508,
+      40
+    ],
+    "preserved_original": true
   },
   "playlist_sub_nofocus2_bg.png": {
     "focus": false,
@@ -8060,7 +8075,8 @@
     "rendered": [
       508,
       600
-    ]
+    ],
+    "preserved_original": true
   },
   "playlist_sub_nofocus2_end.png": {
     "focus": false,
@@ -8077,9 +8093,10 @@
       39
     ],
     "rendered": [
-      1250,
-      96
-    ]
+      508,
+      39
+    ],
+    "preserved_original": true
   },
   "playlist_sub_nofocus3.png": {
     "focus": false,
@@ -8095,9 +8112,10 @@
       40
     ],
     "rendered": [
-      1219,
-      96
-    ]
+      508,
+      40
+    ],
+    "preserved_original": true
   },
   "playlist_sub_nofocus3_end.png": {
     "focus": false,
@@ -8114,9 +8132,10 @@
       40
     ],
     "rendered": [
-      1219,
-      96
-    ]
+      508,
+      40
+    ],
+    "preserved_original": true
   },
   "playlist_sub_nofocus4_end.png": {
     "focus": false,
@@ -8133,9 +8152,10 @@
       40
     ],
     "rendered": [
-      1219,
-      96
-    ]
+      508,
+      40
+    ],
+    "preserved_original": true
   },
   "playlist_up_fo.png": {
     "focus": true,
@@ -8297,9 +8317,10 @@
       30
     ],
     "rendered": [
-      1248,
-      96
-    ]
+      390,
+      30
+    ],
+    "preserved_original": true
   },
   "selected_in_list_music.png": {
     "focus": true,
@@ -8316,9 +8337,10 @@
       30
     ],
     "rendered": [
-      1376,
-      96
-    ]
+      430,
+      30
+    ],
+    "preserved_original": true
   },
   "selected_in_list_tvgemist.png": {
     "focus": true,
@@ -8334,9 +8356,10 @@
       30
     ],
     "rendered": [
-      2656,
-      96
-    ]
+      830,
+      30
+    ],
+    "preserved_original": true
   },
   "selected_in_list_wide.png": {
     "focus": true,
@@ -8353,9 +8376,10 @@
       30
     ],
     "rendered": [
-      2656,
-      96
-    ]
+      830,
+      30
+    ],
+    "preserved_original": true
   },
   "settingsbuttonfo.png": {
     "focus": true,
@@ -8701,7 +8725,8 @@
       24,
       51
     ],
-    "native_fidelity": true
+    "native_fidelity": true,
+    "preserved_original": true
   },
   "tvguide_arrow_light_left.png": {
     "focus": false,
@@ -8718,7 +8743,8 @@
       24,
       51
     ],
-    "native_fidelity": true
+    "native_fidelity": true,
+    "preserved_original": true
   },
   "tvguide_arrow_light_right.png": {
     "focus": false,
@@ -8735,7 +8761,8 @@
       24,
       51
     ],
-    "native_fidelity": true
+    "native_fidelity": true,
+    "preserved_original": true
   },
   "tvguide_arrow_right.png": {
     "focus": false,
@@ -8752,7 +8779,8 @@
       24,
       51
     ],
-    "native_fidelity": true
+    "native_fidelity": true,
+    "preserved_original": true
   },
   "tvguide_arrow_selected_left.png": {
     "focus": true,
@@ -8769,7 +8797,8 @@
       24,
       51
     ],
-    "native_fidelity": true
+    "native_fidelity": true,
+    "preserved_original": true
   },
   "tvguide_arrow_selected_right.png": {
     "focus": true,
@@ -8786,7 +8815,8 @@
       24,
       51
     ],
-    "native_fidelity": true
+    "native_fidelity": true,
+    "preserved_original": true
   },
   "tvguide_button_left.png": {
     "focus": false,
@@ -8803,9 +8833,10 @@
       52
     ],
     "rendered": [
-      8,
-      208
-    ]
+      2,
+      52
+    ],
+    "preserved_original": true
   },
   "tvguide_button_light_left.png": {
     "focus": false,
@@ -8822,9 +8853,10 @@
       52
     ],
     "rendered": [
-      8,
-      208
-    ]
+      2,
+      52
+    ],
+    "preserved_original": true
   },
   "tvguide_button_light_middle.png": {
     "focus": false,
@@ -8841,9 +8873,10 @@
       51
     ],
     "rendered": [
-      424,
-      96
-    ]
+      225,
+      51
+    ],
+    "preserved_original": true
   },
   "tvguide_button_light_right.png": {
     "focus": false,
@@ -8860,9 +8893,10 @@
       52
     ],
     "rendered": [
-      8,
-      208
-    ]
+      2,
+      52
+    ],
+    "preserved_original": true
   },
   "tvguide_button_middle.png": {
     "focus": false,
@@ -8879,9 +8913,10 @@
       51
     ],
     "rendered": [
-      424,
-      96
-    ]
+      225,
+      51
+    ],
+    "preserved_original": true
   },
   "tvguide_button_right.png": {
     "focus": false,
@@ -8898,9 +8933,10 @@
       52
     ],
     "rendered": [
-      8,
-      208
-    ]
+      2,
+      52
+    ],
+    "preserved_original": true
   },
   "tvguide_button_selected_left.png": {
     "focus": true,
@@ -8917,9 +8953,10 @@
       52
     ],
     "rendered": [
-      8,
-      208
-    ]
+      2,
+      52
+    ],
+    "preserved_original": true
   },
   "tvguide_button_selected_middle.png": {
     "focus": true,
@@ -8936,9 +8973,10 @@
       51
     ],
     "rendered": [
-      424,
-      96
-    ]
+      225,
+      51
+    ],
+    "preserved_original": true
   },
   "tvguide_button_selected_right.png": {
     "focus": true,
@@ -8955,9 +8993,10 @@
       52
     ],
     "rendered": [
-      8,
-      208
-    ]
+      2,
+      52
+    ],
+    "preserved_original": true
   },
   "tvguide_notify_button.png": {
     "focus": false,
@@ -8973,9 +9012,10 @@
       33
     ],
     "rendered": [
-      556,
-      96
-    ]
+      191,
+      33
+    ],
+    "preserved_original": true
   },
   "tvguide_recButton_Focus_left.png": {
     "focus": true,
@@ -8992,9 +9032,10 @@
       52
     ],
     "rendered": [
-      40,
-      208
-    ]
+      10,
+      52
+    ],
+    "preserved_original": true
   },
   "tvguide_recButton_Focus_middle.png": {
     "focus": true,
@@ -9011,9 +9052,10 @@
       51
     ],
     "rendered": [
-      424,
-      96
-    ]
+      225,
+      51
+    ],
+    "preserved_original": true
   },
   "tvguide_recButton_Focus_right.png": {
     "focus": true,
@@ -9031,9 +9073,10 @@
       52
     ],
     "rendered": [
-      40,
-      208
-    ]
+      10,
+      52
+    ],
+    "preserved_original": true
   },
   "tvguide_recButton_noFocus_left.png": {
     "focus": false,
@@ -9050,9 +9093,10 @@
       52
     ],
     "rendered": [
-      40,
-      208
-    ]
+      10,
+      52
+    ],
+    "preserved_original": true
   },
   "tvguide_recButton_noFocus_middle.png": {
     "focus": false,
@@ -9069,9 +9113,10 @@
       56
     ],
     "rendered": [
-      391,
-      96
-    ]
+      228,
+      56
+    ],
+    "preserved_original": true
   },
   "tvguide_recButton_noFocus_right.png": {
     "focus": false,
@@ -9087,9 +9132,10 @@
       52
     ],
     "rendered": [
-      40,
-      208
-    ]
+      10,
+      52
+    ],
+    "preserved_original": true
   },
   "tvguide_record_button.png": {
     "focus": false,
@@ -9106,9 +9152,10 @@
       33
     ],
     "rendered": [
-      556,
-      96
-    ]
+      191,
+      33
+    ],
+    "preserved_original": true
   },
   "tvguide_recordconflict_button.png": {
     "focus": false,
@@ -9124,9 +9171,10 @@
       33
     ],
     "rendered": [
-      556,
-      96
-    ]
+      191,
+      33
+    ],
+    "preserved_original": true
   },
   "tvguide_recordserie_button.png": {
     "focus": false,
@@ -9142,9 +9190,10 @@
       33
     ],
     "rendered": [
-      556,
-      96
-    ]
+      191,
+      33
+    ],
+    "preserved_original": true
   },
   "tvguide_recordserie_conflict_button.png": {
     "focus": false,
@@ -9160,9 +9209,10 @@
       33
     ],
     "rendered": [
-      556,
-      96
-    ]
+      191,
+      33
+    ],
+    "preserved_original": true
   },
   "tvguide_slider.png": {
     "kind": "timeline",
@@ -9177,7 +9227,8 @@
     "rendered": [
       37,
       277
-    ]
+    ],
+    "preserved_original": true
   },
   "tvguide_time_bg.png": {
     "focus": false,
@@ -9191,9 +9242,10 @@
       38
     ],
     "rendered": [
-      667,
-      96
-    ]
+      264,
+      38
+    ],
+    "preserved_original": true
   },
   "tvseries_SeasonListIcon.png": {
     "focus": false,
@@ -9338,9 +9390,10 @@
       30
     ],
     "rendered": [
-      1248,
-      96
-    ]
+      390,
+      30
+    ],
+    "preserved_original": true
   },
   "unselected_in_list_music.png": {
     "focus": false,
@@ -9357,9 +9410,10 @@
       30
     ],
     "rendered": [
-      1376,
-      96
-    ]
+      430,
+      30
+    ],
+    "preserved_original": true
   },
   "unselected_in_list_tvgemist.png": {
     "focus": false,
@@ -9375,9 +9429,10 @@
       30
     ],
     "rendered": [
-      2656,
-      96
-    ]
+      830,
+      30
+    ],
+    "preserved_original": true
   },
   "unselected_in_list_wide.png": {
     "focus": false,
@@ -9394,9 +9449,10 @@
       30
     ],
     "rendered": [
-      2656,
-      96
-    ]
+      830,
+      30
+    ],
+    "preserved_original": true
   },
   "video_window_focus.png": {
     "focus": true,
