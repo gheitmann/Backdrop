@@ -14,7 +14,7 @@
       <width>1920</width>
       <height>1080</height>
       <shouldCache>true</shouldCache>
-      <texture>Modern/home-lounge.png</texture>
+      <texture>#(iif(string.equals(#DayNight.Period,'morning'),'Modern/Morning/home-lounge.png',iif(string.equals(#DayNight.Period,'noon'),'Modern/Noon/home-lounge.png',iif(string.equals(#DayNight.Period,'day'),'Modern/Day/home-lounge.png','Modern/home-lounge.png'))))</texture>
     </control>
     <control>
       <description>background</description>

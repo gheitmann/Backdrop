@@ -169,7 +169,7 @@
       <width>1920</width>
       <height>1080</height>
       <shouldCache>true</shouldCache>
-      <texture>Animations\shutdownbg\default.jpg</texture>
+      <texture>#(iif(string.equals(#DayNight.Period,'morning'),'Modern/Morning/abstract.png',iif(string.equals(#DayNight.Period,'noon'),'Modern/Noon/abstract.png',iif(string.equals(#DayNight.Period,'day'),'Modern/Day/abstract.png','Animations/shutdownbg/default.jpg'))))</texture>
       <colordiffuse>ff707070</colordiffuse>
       <visible>Control.HasFocus(77066)|Control.HasFocus(77067)</visible>
       <animation effect="fade" time="850">VisibleChange</animation>
@@ -231,7 +231,7 @@
       <width>1920</width>
       <height>1080</height>
       <shouldCache>true</shouldCache>
-      <texture>Modern/settings-console.png</texture>
+      <texture>#(iif(string.equals(#DayNight.Period,'morning'),'Modern/Morning/settings-console.png',iif(string.equals(#DayNight.Period,'noon'),'Modern/Noon/settings-console.png',iif(string.equals(#DayNight.Period,'day'),'Modern/Day/settings-console.png','Modern/settings-console.png'))))</texture>
       <colordiffuse>ff707070</colordiffuse>
       <visible>Control.HasFocus(77064)|Control.HasFocus(77065)</visible>
       <animation effect="fade" time="850">VisibleChange</animation>
@@ -245,7 +245,7 @@
       <width>1920</width>
       <height>1080</height>
       <shouldCache>true</shouldCache>
-      <texture>Animations\games\default.jpg</texture>
+      <texture>#(iif(string.equals(#DayNight.Period,'morning'),'Modern/Morning/abstract.png',iif(string.equals(#DayNight.Period,'noon'),'Modern/Noon/abstract.png',iif(string.equals(#DayNight.Period,'day'),'Modern/Day/abstract.png','Animations/games/default.jpg'))))</texture>
       <colordiffuse>ff707070</colordiffuse>
       <visible>Control.HasFocus(77053)|Control.HasFocus(77054)|Control.HasFocus(77055)|Control.HasFocus(77052)</visible>
       <animation effect="fade" time="850">VisibleChange</animation>

@@ -4045,7 +4045,7 @@ namespace MediaPortal.Plugins
                 using (StreamWriter sw = new StreamWriter(filename))
                 {
                     writeLatest();
-                    sw.Write(rawXML.ToString());
+                    sw.Write(DayNightBackgrounds.Apply(rawXML.ToString()));
                 }
                 MessageBox.Show("Done generating new BasicHome. Please note that your changes in the menu editor is NOT saved. You will be asked to save your settings when leaving this configuration screen (by pressing the [X] button top right).");
             }
@@ -4504,7 +4504,7 @@ namespace MediaPortal.Plugins
                     rawXML.AppendLine("<animation effect=\"fade\" start=\"0\" end=\"100\" time=\"350\">WindowOpen</animation>");
                     rawXML.AppendLine("<animation effect=\"fade\" start=\"100\" end=\"0\" time=\"350\">WindowClose</animation>");
                     rawXML.AppendLine("</window>");
-                    String xml = rawXML.ToString();
+                    String xml = DayNightBackgrounds.Apply(rawXML.ToString());
                     xml = xml.Replace("<!-- RANDOM DEFINE TAGS WILL COME HERE -->", rawXMLDefineTags.ToString());
                     sw.Write(xml);
                 }

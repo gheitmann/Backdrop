@@ -8,7 +8,7 @@
       <posY>0</posY>
       <width>1920</width>
       <height>1080</height>
-      <texture>Modern/settings-console.png</texture>
+      <texture>#(iif(string.equals(#DayNight.Period,'morning'),'Modern/Morning/settings-console.png',iif(string.equals(#DayNight.Period,'noon'),'Modern/Noon/settings-console.png',iif(string.equals(#DayNight.Period,'day'),'Modern/Day/settings-console.png','Modern/settings-console.png'))))</texture>
       <colordiffuse>ff707070</colordiffuse>
     </control>
     <control>

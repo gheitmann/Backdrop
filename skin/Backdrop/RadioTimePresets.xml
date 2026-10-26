@@ -15,7 +15,7 @@
       <width>2880</width>
       <height>1620</height>
       <shouldCache>true</shouldCache>
-      <texture>Modern/home.jpg</texture>
+      <texture>#(iif(string.equals(#DayNight.Period,'morning'),'Modern/Morning/cinema.png',iif(string.equals(#DayNight.Period,'noon'),'Modern/Noon/cinema.png',iif(string.equals(#DayNight.Period,'day'),'Modern/Day/cinema.png','Modern/home.jpg'))))</texture>
       <colordiffuse>ff707070</colordiffuse>
       <animation effect="fade" start="10" end="100" time="850" delay="80" reversible="false">Visible</animation>
       <animation effect="fade" start="100" end="0" time="700" reversible="false">Hidden</animation>

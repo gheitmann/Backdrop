@@ -1,5 +1,12 @@
 # Current validation and historical evidence
 
+ALPHA27 (26 October 2026): four-period backgrounds and an independent optional
+plugin. Seven static checks passed (7/7), native integration probes each passed
+1,364/1,364 assertions on x86/x64, and independent plugin probes each passed
+2,201/2,201. Final package verified 2,442/2,442 files; final EXE VerifyOnly passed
+2/2 architectures without installation. Earlier local x64 interaction is carried
+forward. See [ALPHA27 build report](ALPHA27-BUILD-REPORT.md).
+
 ALPHA26 (26 October 2026): three thematic Home/Settings/Plugins backgrounds are mapped
 across eight XML definitions. Six selected static commands passed (6/6); 2,408
 package files and 21 private bundle files were byte-compared. The single EXE

@@ -19,6 +19,7 @@ $argsList+=Join-Path $PSScriptRoot 'OptionalPluginAdapters.cs'
 $argsList+=Join-Path $PSScriptRoot 'PointerSeek.cs'
 $argsList+=Join-Path $PSScriptRoot 'PointerTopbar.cs'
 $argsList+=Join-Path $PSScriptRoot 'PluginMenuLayout.cs'
+$argsList+=Join-Path $PSScriptRoot 'DayNightBackgrounds.cs'
 & 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe' @argsList
 if($LASTEXITCODE -ne 0){throw 'Compilation failed'}
 $workerPath=Join-Path $PSScriptRoot 'BackdropMenuEditor.x86.exe'
@@ -39,3 +40,6 @@ Remove-Item -LiteralPath $workerPath
 
 
 
+
+# Build the independent optional process plugin alongside the editor.
+& (Join-Path $PSScriptRoot 'DayNight/build.ps1') -MediaPortalDirectory $MediaPortalDirectory

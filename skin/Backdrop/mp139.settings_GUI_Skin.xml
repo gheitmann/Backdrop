@@ -460,7 +460,7 @@
           <textureFocus>listbg_fo.png</textureFocus>
           <label>300137</label>
           <onup>11</onup>
-          <ondown>10</ondown>
+          <ondown>87900</ondown>
           <onright>30</onright>
           <onleft>9992</onleft>
           <height>60</height>
@@ -491,6 +491,38 @@
           <scrollWrapString>  |  </scrollWrapString>
         </control>
         <control>
+          <description>Day/Night background configuration</description>
+          <type>button</type>
+          <id>87900</id>
+          <width>550</width>
+          <textureFocus>listbg_fo.png</textureFocus>
+          <label>#DayNight.Label.Title</label>
+          <onup>14</onup>
+          <ondown>32</ondown>
+          <onright>30</onright>
+          <onleft>9992</onleft>
+          <posX>799</posX>
+          <posY>375</posY>
+          <height>60</height>
+          <textXOff>25</textXOff>
+          <textYOff>1</textYOff>
+          <textalign>left</textalign>
+          <textvalign>middle</textvalign>
+          <textureNoFocus>listbg_nf.png</textureNoFocus>
+          <scrollStartDelaySec>5</scrollStartDelaySec>
+          <scrollWrapString>  |  </scrollWrapString>
+          <font>font12</font>
+          <textcolor>ffffffff</textcolor>
+          <colordiffuse>ffffffff</colordiffuse>
+          <disabledcolor>90ffffff</disabledcolor>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <dimColor>90ffffff</dimColor>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor />
+        <hyperlink>87950</hyperlink><visible>string.equals(#DayNight.Available,true)</visible></control>
+
+        <control>
           <description>Category BG BasicHome</description>
           <type>checkbutton</type>
           <id>32</id>
@@ -499,7 +531,7 @@
           <label>#SkinTranslation.Translations.CategoryBG.Label</label>
           <selected>#(skin.hassetting('#skin.category BG'))</selected>
           <onclick>#(skin.togglesetting('#skin.category BG'))</onclick>
-          <onup>14</onup>
+          <onup>87900</onup>
           <ondown>33</ondown>
           <onright>30</onright>
           <onleft>9992</onleft>

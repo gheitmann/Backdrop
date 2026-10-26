@@ -30,7 +30,7 @@
       <width>1920</width>
       <height>1080</height>
       <shouldCache>true</shouldCache>
-      <texture>Modern/tv.jpg</texture>
+      <texture>#(iif(string.equals(#DayNight.Period,'morning'),'Modern/Morning/tv.png',iif(string.equals(#DayNight.Period,'noon'),'Modern/Noon/tv.png',iif(string.equals(#DayNight.Period,'day'),'Modern/Day/tv.png','Modern/tv.jpg'))))</texture>
       <colordiffuse>ff707070</colordiffuse>
     </control>
     <control>

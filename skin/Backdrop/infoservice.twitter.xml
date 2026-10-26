@@ -30,7 +30,7 @@
       <posY>0</posY>
       <width>1920</width>
       <height>1080</height>
-      <texture>Modern/home.jpg</texture>
+      <texture>#(iif(string.equals(#DayNight.Period,'morning'),'Modern/Morning/cinema.png',iif(string.equals(#DayNight.Period,'noon'),'Modern/Noon/cinema.png',iif(string.equals(#DayNight.Period,'day'),'Modern/Day/cinema.png','Modern/home.jpg'))))</texture>
       <colordiffuse>ff707070</colordiffuse>
     </control>
     <control>

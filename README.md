@@ -2,19 +2,21 @@
 
 Experimental port of cul8er's **Backdrop 1.0.1** skin to **MediaPortal 1.39**.
 
-Current release: **ALPHA25 (1.39.0.25)**, including cinematic backgrounds, restored original Backdrop control artwork and recording-caption corrections. The editor launcher and installer select the installed client architecture. A compact practical pass was completed on MediaPortal 1.39 x64; full x86 runtime coverage remains pending. See [release notes and remaining limitations](docs/RELEASE-ALPHA25.md).
+Current release: **ALPHA27 (1.39.0.27)**, adding optional four-period backgrounds,
+in-skin controls and TV artwork/seek-overlay corrections. See the
+[English release notes](docs/RELEASE-ALPHA27.md) and
+[independent Day/Night plugin](https://github.com/gheitmann/MediaPortal-DayNight).
+Full x86 client runtime coverage remains pending.
 
-**Security notice:** ALPHA23 has reported Defender/VirusTotal detections. Local
-scans did not reproduce them; a false positive has not been established. See the
-[bounded investigation](docs/DEFENDER-ALPHA23-COMPARISON.md). ALPHA25 is published
-as a requested test release while that report remains unresolved; it is not a
-security-cleared replacement. ALPHA24 remains an earlier draft.
+The owner reports no Defender detections in recent versions. The historical
+ALPHA23 report is documented in [the bounded investigation](docs/DEFENDER-ALPHA23-COMPARISON.md);
+this is not a certification of every antivirus product.
 
 ## Install
 
-Download `Backdrop-Setup-ALPHA25.exe` from [Releases](https://github.com/gheitmann/Backdrop/releases), close MediaPortal and run the single executable. Back up any existing Backdrop installation first.
+Download `Backdrop-Setup-ALPHA27.exe` from [Releases](https://github.com/gheitmann/Backdrop/releases), close MediaPortal and run the single executable. Back up any existing Backdrop installation first.
 
-`Backdrop-Setup-ALPHA25.exe` combines the skin MPE1 with the buffered installer UI in one executable. Initialization and client-folder discovery run automatically; no companion files or manual PowerShell steps are required. See [installer instructions](docs/INSTALLER-UI.md). The setup uses an isolated installer presentation copy without replacing the installed Extension Installer.
+`Backdrop-Setup-ALPHA27.exe` combines the skin MPE1 with the buffered installer UI in one executable. Initialization and client-folder discovery run automatically; no companion files or manual PowerShell steps are required. See [installer instructions](docs/INSTALLER-UI.md). The setup uses an isolated installer presentation copy without replacing the installed Extension Installer.
 
 Use architecture-compatible versions of Fanart Handler, Latest Media Handler, and any other external plugins. This repository does not bundle third-party plugin installers or modified MediaPortal core binaries.
 
@@ -69,7 +71,7 @@ python tools/package.py
 
 Review the rebuilt DLL and assembly version before refreshing the payload hashes. The refresh records an intentional payload change; it is not a compatibility test. To package the unchanged checked-in reference DLL, skip the editor build and hash refresh.
 
-The current source builds `dist/Backdrop-MP139-AnyCPU-ALPHA25.mpe1`. Packaging can also use the checked-in reference DLL. GitHub Actions validates the payload and builds an installer artifact; it does not run the MediaPortal GUI or compile the editor against MediaPortal binaries.
+The current source builds `dist/Backdrop-MP139-AnyCPU-ALPHA27.mpe1`. Packaging can also use the checked-in reference DLL. GitHub Actions validates the payload and builds an installer artifact; it does not run the MediaPortal GUI or compile the editor against MediaPortal binaries.
 
 ## Credits
 

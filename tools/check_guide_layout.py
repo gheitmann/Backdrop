@@ -57,7 +57,7 @@ def check():
                 f'{name}: duplicate video area')
         backgrounds = [c for c in controls if c.findtext('type') == 'image'
                        and c.findtext('width') == '1920' and c.findtext('height') == '1080']
-        require(len(backgrounds) == 1 and backgrounds[0].findtext('texture') == 'Modern/home.jpg'
+        require(len(backgrounds) == 1 and backgrounds[0].findtext('texture') == "#(iif(string.equals(#DayNight.Period,'morning'),'Modern/Morning/cinema.png',iif(string.equals(#DayNight.Period,'noon'),'Modern/Noon/cinema.png',iif(string.equals(#DayNight.Period,'day'),'Modern/Day/cinema.png','Modern/home.jpg'))))"
                 and backgrounds[0].findtext('colordiffuse') == 'ff505050',
                 f'{name}: duplicate or foreign full-screen background')
         groups = [c for c in controls if c.findtext('id') == '100']

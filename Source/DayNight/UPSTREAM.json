@@ -1,0 +1,16 @@
+{
+  "repository": "https://github.com/gheitmann/MediaPortal-DayNight",
+  "tag": "v0.2.0-alpha.1",
+  "assembly_version": "0.2.0.0",
+  "source_sha256": {
+    "DayNightConfiguration.cs": "fb0658b750f0b53321dfb45d8a34cbcbe28db020e3c67ef4fd76d689107625fd",
+    "DayNightPlugin.cs": "b8f802594a84119fb8643b5dd728c30aed25cf65bf24a70548cf7dc0879c4060",
+    "DayNightSettings.cs": "a50b2f56a03cfc850b54061a719d4282f30fc0a0ebf1befb18c3c3f838077480",
+    "DayNightSkinActions.cs": "d5dd5863ba3b6b6b95d048bad4cd34fcaea69890fdf8ee48f5a542999e4efc04",
+    "DayNightText.cs": "3f059dd7c49fc8a5e328d55aa9bc33d7c65fd9e4e275dcd7bbedeaeda2f29029",
+    "DayNightWindow.cs": "d96f0af3f611563a50c7c15d7685d5bed4aca806e3dff7432a5a6eaa27450ac4",
+    "Languages.xml": "8a4602f633496d9974c652b4d5486925079017a69953b0093f81a946abf65a32"
+  },
+  "dll_sha256": "f60051709f8e1d9ec0df9162b51d7ab8a03ab275f0b5a6694d8f875e74a6f4f9",
+  "commit": "24269a2cbb5ea4169642bce8cb69712ea7276aeb"
+}
