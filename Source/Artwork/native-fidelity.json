@@ -2934,6 +2934,30 @@
         830,
         30
       ]
+    },
+    "tv_group_bg.png": {
+      "sha256": "60448950d7e4817e2e9ada2340e108d4b3e28ddd20d99520a8ef1716454e22b1",
+      "dimensions": [30, 340]
+    },
+    "tv_group_bg_focus.png": {
+      "sha256": "ecdf953740067270fbd905d8a920778232546e4936d1ee616b0f1f1c784fd49f",
+      "dimensions": [30, 340]
+    },
+    "hiddenmenu_togglebutton_on.png": {
+      "sha256": "8d97fd89c53087c305927fe34a3a52a1244efb8725ac8548c71cfc3c492d23ef",
+      "dimensions": [220, 28]
+    },
+    "hiddenmenu_togglebutton_nof_on.png": {
+      "sha256": "9fd69559478fdde2eebed1e2c80f15ebb408510171480de349bd107203e0c176",
+      "dimensions": [220, 28]
+    },
+    "hiddenmenu_togglebutton_off.png": {
+      "sha256": "774457e6ef7bf1a7de017fa4d1fc5cf1ebf288c32b564572a89fc388ec957567",
+      "dimensions": [220, 28]
+    },
+    "hiddenmenu_togglebutton_nof_off.png": {
+      "sha256": "fe9f917a7ff0ec17d75baa454bbc659f3c1bf29845bda4229bba23c56ac830cc",
+      "dimensions": [220, 27]
     }
   }
 }

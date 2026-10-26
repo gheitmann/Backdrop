@@ -7,7 +7,7 @@
   <rememberLastFocusedControl>yes</rememberLastFocusedControl>
   <controls>
     <import>mp139.common.settings.xml</import>
-    <import>mp139.common.time.xml</import>
+    <import>common.time.xml</import>
     <control>
       <description>General Overlay</description>
       <id>0</id>

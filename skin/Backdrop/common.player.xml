@@ -6,7 +6,7 @@
       <type>image</type>
       <id>0</id>
       <posX>1515</posX>
-      <posY>832</posY>
+      <posY>622</posY>
       <width>189</width>
       <height>117</height>
       <visible>player.rewinding|player.forwarding</visible>
@@ -17,7 +17,7 @@
       <type>image</type>
       <id>0</id>
       <posX>1690</posX>
-      <posY>849</posY>
+      <posY>639</posY>
       <width>34</width>
       <height>81</height>
       <visible>player.forwarding+!Control.IsVisible(10)</visible>
@@ -28,7 +28,7 @@
       <type>image</type>
       <id>0</id>
       <posX>1644</posX>
-      <posY>849</posY>
+      <posY>639</posY>
       <width>33</width>
       <height>82</height>
       <visible>player.rewinding+!Control.IsVisible(10)</visible>
@@ -39,7 +39,7 @@
       <type>image</type>
       <id>0</id>
       <posX>1527</posX>
-      <posY>846</posY>
+      <posY>636</posY>
       <width>93</width>
       <height>93</height>
       <visible>player.forwarding2x+!Control.IsVisible(10)</visible>
@@ -51,7 +51,7 @@
       <type>image</type>
       <id>0</id>
       <posX>1545</posX>
-      <posY>846</posY>
+      <posY>636</posY>
       <width>93</width>
       <height>93</height>
       <visible>player.forwarding4x+!Control.IsVisible(10)</visible>
@@ -63,7 +63,7 @@
       <type>image</type>
       <id>0</id>
       <posX>1563</posX>
-      <posY>846</posY>
+      <posY>636</posY>
       <width>93</width>
       <height>93</height>
       <visible>player.forwarding8x+!Control.IsVisible(10)</visible>
@@ -75,7 +75,7 @@
       <type>image</type>
       <id>0</id>
       <posX>1575</posX>
-      <posY>846</posY>
+      <posY>636</posY>
       <width>93</width>
       <height>93</height>
       <visible>player.forwarding16x+!Control.IsVisible(10)</visible>
@@ -87,7 +87,7 @@
       <type>image</type>
       <id>0</id>
       <posX>1599</posX>
-      <posY>846</posY>
+      <posY>636</posY>
       <width>93</width>
       <height>93</height>
       <visible>player.forwarding32x+!Control.IsVisible(10)</visible>
@@ -100,7 +100,7 @@
       <type>image</type>
       <id>0</id>
       <posX>1527</posX>
-      <posY>846</posY>
+      <posY>636</posY>
       <width>93</width>
       <height>93</height>
       <visible>player.rewinding32x+!Control.IsVisible(10)</visible>
@@ -112,7 +112,7 @@
       <type>image</type>
       <id>0</id>
       <posX>1545</posX>
-      <posY>846</posY>
+      <posY>636</posY>
       <width>93</width>
       <height>93</height>
       <visible>player.rewinding16x+!Control.IsVisible(10)</visible>
@@ -124,7 +124,7 @@
       <type>image</type>
       <id>0</id>
       <posX>1563</posX>
-      <posY>846</posY>
+      <posY>636</posY>
       <width>93</width>
       <height>93</height>
       <visible>player.rewinding8x+!Control.IsVisible(10)</visible>
@@ -136,7 +136,7 @@
       <type>image</type>
       <id>0</id>
       <posX>1581</posX>
-      <posY>846</posY>
+      <posY>636</posY>
       <width>93</width>
       <height>93</height>
       <visible>player.rewinding4x+!Control.IsVisible(10)</visible>
@@ -148,7 +148,7 @@
       <type>image</type>
       <id>0</id>
       <posX>1599</posX>
-      <posY>846</posY>
+      <posY>636</posY>
       <width>93</width>
       <height>93</height>
       <visible>player.rewinding2x+!Control.IsVisible(10)</visible>
