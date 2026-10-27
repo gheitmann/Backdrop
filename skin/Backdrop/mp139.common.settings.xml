@@ -78,7 +78,7 @@
       <label>#(iif(and(neq(L(102012), #currentmodule), neq(L(102002), #currentmodule), neq(L(100100), #currentmodule), neq(L(102015), #currentmodule)), #currentmodule, ' '))</label>
       <width>1802</width>
       <align>left</align>
-      <font>font12</font>
+      <font>font32</font>
       <shadowAngle>10</shadowAngle>
       <shadowDistance>3</shadowDistance>
       <shadowColor>ff000000</shadowColor>

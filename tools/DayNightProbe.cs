@@ -178,7 +178,7 @@ internal static class DayNightProbe
                 }
             }
         }
-        Check(expressions == 42, "all 42 shipped texture bindings exercised");
+        Check(expressions == 44, "all 44 shipped texture bindings exercised");
         var plugin = new DayNightPlugin();
         Check(plugin.HasSetup() && plugin.CanEnable() && plugin.DefaultEnabled(), "plugin setup/enable contract");
         plugin.Start(); plugin.Start(); plugin.Stop(); plugin.Stop();

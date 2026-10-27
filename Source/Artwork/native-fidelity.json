@@ -2937,27 +2937,80 @@
     },
     "tv_group_bg.png": {
       "sha256": "60448950d7e4817e2e9ada2340e108d4b3e28ddd20d99520a8ef1716454e22b1",
-      "dimensions": [30, 340]
+      "dimensions": [
+        30,
+        340
+      ]
     },
     "tv_group_bg_focus.png": {
       "sha256": "ecdf953740067270fbd905d8a920778232546e4936d1ee616b0f1f1c784fd49f",
-      "dimensions": [30, 340]
+      "dimensions": [
+        30,
+        340
+      ]
     },
     "hiddenmenu_togglebutton_on.png": {
       "sha256": "8d97fd89c53087c305927fe34a3a52a1244efb8725ac8548c71cfc3c492d23ef",
-      "dimensions": [220, 28]
+      "dimensions": [
+        220,
+        28
+      ]
     },
     "hiddenmenu_togglebutton_nof_on.png": {
       "sha256": "9fd69559478fdde2eebed1e2c80f15ebb408510171480de349bd107203e0c176",
-      "dimensions": [220, 28]
+      "dimensions": [
+        220,
+        28
+      ]
     },
     "hiddenmenu_togglebutton_off.png": {
       "sha256": "774457e6ef7bf1a7de017fa4d1fc5cf1ebf288c32b564572a89fc388ec957567",
-      "dimensions": [220, 28]
+      "dimensions": [
+        220,
+        28
+      ]
     },
     "hiddenmenu_togglebutton_nof_off.png": {
       "sha256": "fe9f917a7ff0ec17d75baa454bbc659f3c1bf29845bda4229bba23c56ac830cc",
-      "dimensions": [220, 27]
+      "dimensions": [
+        220,
+        27
+      ]
+    },
+    "list_background_focus.png": {
+      "sha256": "c9cbf0bcae46567fdfc6f8c91cde3d8fe6b41f88327dfe168bc314bdaab4ce03",
+      "dimensions": [
+        508,
+        40
+      ]
+    },
+    "play.now.button.focus.png": {
+      "sha256": "85d5956f3f216221cc809c5d64bcd6886ceb4e63bcc969ca49374c941e8703b3",
+      "dimensions": [
+        58,
+        22
+      ]
+    },
+    "play.now.button.nofocus.png": {
+      "sha256": "61c1b1816dbaa8f404d60aa21c751af6781696d4fde3a4026df1bd20d96b4371",
+      "dimensions": [
+        58,
+        22
+      ]
+    },
+    "play.now.button.back.png": {
+      "sha256": "d3956f969581947cc69b8bf46d7b74ee500570f4a257c8a280f47beb8230b933",
+      "dimensions": [
+        58,
+        22
+      ]
+    },
+    "list_bg_3.png": {
+      "sha256": "4eafcf64e60fde31d5ef42534a0a0f392e7db047edb7b3517aa14b008dfb0373",
+      "dimensions": [
+        500,
+        500
+      ]
     }
   }
 }

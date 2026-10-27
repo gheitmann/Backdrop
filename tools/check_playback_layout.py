@@ -48,11 +48,21 @@ assert int(panel.findtext('textYOff')) >= 0
 for name in ('common.facade.recordings.xml', 'common.facade.recordings2.xml'):
     grid = next(c for c in controls(name) if c.findtext('type') == 'thumbnailpanel')
     assert grid.findtext('enableFocusZoom') == 'no'
-    assert grid.findtext('zoomXPixels') == grid.findtext('zoomYPixels') == '0'
-    # Manual zoom uses an expanded clip rectangle even with automatic zoom off.
-    # With no expansion, the focused first row cannot extend above the viewport.
-    assert int(grid.findtext('textureHeight')) <= int(grid.findtext('itemHeight'))
-    assert int(grid.findtext('textureHeightBig')) <= int(grid.findtext('itemHeightBig'))
+    # Keep manual focus expansion inside the reserved cell spacing, including
+    # the small grid's bottom row. Do not restore the original 65-pixel zoom.
+    zx, zy = (int(grid.findtext(tag)) for tag in ('zoomXPixels', 'zoomYPixels'))
+    assert 0 < zx <= 6 and 0 < zy <= 6
+    assert int(grid.findtext('posX')) >= zx and int(grid.findtext('posY')) >= zy
+    for suffix in ('', 'Big'):
+        tw, th, iw, ih = (int(grid.findtext(tag + suffix))
+                          for tag in ('textureWidth', 'textureHeight', 'itemWidth', 'itemHeight'))
+        assert tw + 2 * zx <= iw and th + 2 * zy <= ih
+        assert ih - th >= 32, 'Reserve a complete caption line below each cover'
+        columns = int(grid.findtext('width')) // iw
+        rows = int(grid.findtext('height')) // ih
+        assert int(grid.findtext('posX')) + (columns - 1) * iw + tw + zx <= 1920
+        assert int(grid.findtext('posY')) + (rows - 1) * ih + th + zy <= 1080
+    assert not any(a.get('effect') == 'slide' for a in grid.findall('animation'))
 
 weather = next(c for c in controls('common.time.xml') if c.findtext('description') == 'Weather Condition')
 for value in ('temp', 'condition'):

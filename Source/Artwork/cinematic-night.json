@@ -48,9 +48,9 @@
     },
     "photos": {
       "file": "Modern/photos.jpg",
-      "sha256": "5200e2ba5df2808fe613591aec250439304d0e4fb8ff986f27ac5c6605865f8c",
-      "source": "Source/Artwork/cinematic-night/photos.png",
-      "source_sha256": "d468d5126c4de614bde6f0dbe0d3a7ea47bfc0c6481aa424a4498118b44f8475",
+      "sha256": "eea979a7f32e9e181ba0becb4877dc27070c42bb24be6fd0ac113e4538dd8b24",
+      "source": "Source/Artwork/cinematic-night/photos-sharper.png",
+      "source_sha256": "9b2af165ede12b61948de1029a009ee366b00117049a75a5f6df6a1774dd8e54",
       "source_dimensions": [
         1672,
         941
@@ -58,7 +58,8 @@
       "export_dimensions": [
         1920,
         1080
-      ]
+      ],
+      "edit": "2026-10-27: restrained generated central city-view focus correction; preserve night lighting and foreground composition. Exported to existing 1920x1080 JPEG format."
     },
     "gaming": {
       "file": "Modern/gaming.jpg",

@@ -46,7 +46,7 @@ namespace MediaPortal.Plugins
             if (property == null)
                 return;
             // If the value is empty always add a space
-            // otherwise the property will keep 
+            // otherwise the property will keep
             // displaying it's previous value
             if (String.IsNullOrEmpty(value))
                 value = " ";
@@ -59,7 +59,7 @@ namespace MediaPortal.Plugins
             if (property == null)
                 return;
             // If the value is empty always add a space
-            // otherwise the property will keep 
+            // otherwise the property will keep
             // displaying it's previous value
             if (String.IsNullOrEmpty(value))
                 value = "";
@@ -103,12 +103,12 @@ namespace MediaPortal.Plugins
                 }
 
                 SetTimeout(activeWindowId, 0);
-                
+
 
             }
             catch
             {
-                
+
             }
         }
 
@@ -122,7 +122,7 @@ namespace MediaPortal.Plugins
         {
             if (activeWindowId == 35)
             {
-                iTimeout = (ReadIdleSeconds(IdleTimeBasic, 7) + addSeconds) * 1000;             
+                iTimeout = (ReadIdleSeconds(IdleTimeBasic, 7) + addSeconds) * 1000;
             }
             else
             {
@@ -134,7 +134,7 @@ namespace MediaPortal.Plugins
         /*public void OnPlayBackStarted(g_Player.MediaType type, string filename)
             {
                 try
-                {                
+                {
                     if (refreshTimer != null && refreshTimer.Enabled && (type == g_Player.MediaType.Recording || type == g_Player.MediaType.TV || type == g_Player.MediaType.Video))
                     {
                         refreshTimer.Stop();
@@ -155,10 +155,10 @@ namespace MediaPortal.Plugins
                 {
                     refreshTimer.Start();
                 }
-             
+
             }
             catch
-            {              
+            {
             }
         }
 
@@ -171,7 +171,7 @@ namespace MediaPortal.Plugins
                 if (refreshTimer != null && !refreshTimer.Enabled)
                 {
                     refreshTimer.Start();
-                }             
+                }
             }
             catch
             {
@@ -190,7 +190,7 @@ namespace MediaPortal.Plugins
             }
             return false;
         }
-    
+
 
         public void readConfigFile(MediaPortal.Profile.Settings xmlreader)
         {
@@ -218,7 +218,7 @@ namespace MediaPortal.Plugins
         /// </summary>
         public void Start()
         {
-            try 
+            try
             {
                 if (CheckSkinName())
                 {
@@ -244,9 +244,9 @@ namespace MediaPortal.Plugins
                 }
             }
             catch //(Exception ex)
-            {            
+            {
             }
-            
+
         }
 
         /// <summary>
@@ -295,7 +295,7 @@ namespace MediaPortal.Plugins
         }
 
         private void GUIWindowManager_OnNewAction(MediaPortal.GUI.Library.Action action)
-        {           
+        {
             // Mouse hover must wake the submenu after the idle timer stopped.
             // This event runs on the GUI thread; do not restore/load windows here.
             if (action.wID == MediaPortal.GUI.Library.Action.ActionType.ACTION_MOUSE_MOVE
@@ -309,7 +309,13 @@ namespace MediaPortal.Plugins
             if (action.IsUserAction())
             {
                 int _activeWindow = GUIWindowManager.ActiveWindow;
-                
+                // Paging must leave the idle dummy just like directional navigation.
+                if (_activeWindow == 603
+                    && (action.wID == MediaPortal.GUI.Library.Action.ActionType.ACTION_PAGE_UP
+                        || action.wID == MediaPortal.GUI.Library.Action.ActionType.ACTION_PAGE_DOWN)
+                    && GUIWindowManager.GetWindow(_activeWindow).GetFocusControlId() == 93761234)
+                    GUIControl.FocusControl(_activeWindow, 50);
+
                 if (action.wID == MediaPortal.GUI.Library.Action.ActionType.ACTION_MOVE_LEFT)
                 {
                     if (refreshTimer != null && refreshTimer.Enabled == false && !(_activeWindow == 602 || _activeWindow == 2005))
@@ -320,7 +326,7 @@ namespace MediaPortal.Plugins
                     GUIButtonControl.HideControl(_activeWindow, 93761234);
                     GUIButtonControl.HideControl(_activeWindow, 93761236);
                     if (_activeWindow == 35)
-                    {                                               
+                    {
                         if (_currFocusedID.ToString().StartsWith("9191998") || _currFocusedID.ToString().StartsWith("9191999"))
                         {
                             GUIMessage msg = new GUIMessage(GUIMessage.MessageType.GUI_MSG_SETFOCUS, _activeWindow, 0, _prevFocusedID, 0, 0, null);
@@ -339,9 +345,10 @@ namespace MediaPortal.Plugins
                     GUIButtonControl.ShowControl(_activeWindow, 93761254);
                     GUIButtonControl.HideControl(_activeWindow, 93761234);
                     GUIButtonControl.HideControl(_activeWindow, 93761236);
-                    _currFocusedID = GUIWindowManager.GetWindow(_activeWindow).GetFocusControlId();                    
+                    _currFocusedID = GUIWindowManager.GetWindow(_activeWindow).GetFocusControlId();
                 }
-                else if (action.wID == MediaPortal.GUI.Library.Action.ActionType.ACTION_MOVE_UP)
+                else if (action.wID == MediaPortal.GUI.Library.Action.ActionType.ACTION_MOVE_UP
+                    || action.wID == MediaPortal.GUI.Library.Action.ActionType.ACTION_PAGE_UP)
                 {
                     if (refreshTimer != null && refreshTimer.Enabled == false && !(_activeWindow == 602 || _activeWindow == 2005))
                     {
@@ -359,7 +366,8 @@ namespace MediaPortal.Plugins
 
                     }
                 }
-                else if (action.wID == MediaPortal.GUI.Library.Action.ActionType.ACTION_MOVE_DOWN)
+                else if (action.wID == MediaPortal.GUI.Library.Action.ActionType.ACTION_MOVE_DOWN
+                    || action.wID == MediaPortal.GUI.Library.Action.ActionType.ACTION_PAGE_DOWN)
                 {
                     if (refreshTimer != null && refreshTimer.Enabled == false && !(_activeWindow == 602 || _activeWindow == 2005))
                     {
@@ -376,9 +384,9 @@ namespace MediaPortal.Plugins
                         }
                     }
                 }
-                
+
             }
-           
+
         }
 
 
@@ -408,8 +416,8 @@ namespace MediaPortal.Plugins
             catch
             {
             }
-        } 
-      
+        }
+
         public void UpdateImageTimer()
         {
             try
@@ -423,19 +431,19 @@ namespace MediaPortal.Plugins
                 {
                     _prevFocusedIDHome = GUIWindowManager.GetWindow(_activeWindow).GetFocusControlId();
                 }
-                
+
                 if (IsIdleBasichomeMenu())
                 {
-                    
+
                     if (_activeWindow == 35)
                     {
                         GUIButtonControl.ShowControl(GUIWindowManager.ActiveWindow, 93761236);
-                        //_isVisibleBasichomeMenu = true;                        
+                        //_isVisibleBasichomeMenu = true;
                     }
                 }
 
                 if (IsIdle())
-                {                                              
+                {
                     if (_activeWindow == 35)
                     {
                          GUIButtonControl.ShowControl(GUIWindowManager.ActiveWindow, 93761234);
@@ -451,7 +459,7 @@ namespace MediaPortal.Plugins
                     }
                     else if (_activeWindow == 2)
                     {
-                        GUIButtonControl.ShowControl(GUIWindowManager.ActiveWindow, 93761234);                       
+                        GUIButtonControl.ShowControl(GUIWindowManager.ActiveWindow, 93761234);
                         _isVisible = true;
                     }
                     else if (_activeWindow == 9811 && GUIWindowManager.GetWindow(_activeWindow).GetFocusControlId() == 50)
@@ -459,7 +467,7 @@ namespace MediaPortal.Plugins
                             GUIButtonControl.ShowControl(GUIWindowManager.ActiveWindow, 93761234);
                             GUIControl.FocusControl(GUIWindowManager.ActiveWindow, 93761234);
                             _isVisible = true;
-                    }                        
+                    }
                     else if ((_activeWindow == 603) && GUIWindowManager.GetWindow(_activeWindow).GetFocusControlId() == 50)
                     {
                         string _selecteditem = GUIPropertyManager.GetProperty("#selecteditem");
@@ -506,7 +514,7 @@ namespace MediaPortal.Plugins
                         {
                             GUIButtonControl.HideControl(GUIWindowManager.ActiveWindow, 93761234);
                         }
-                    }                        
+                    }
                     else if ((_activeWindow == 96742))
                     {
                         String _layout = GUIPropertyManager.GetProperty("#facadeview.layout");
@@ -514,9 +522,9 @@ namespace MediaPortal.Plugins
                         if (_layout != null && !_layout.Equals("coverflow") && GUIWindowManager.GetWindow(_activeWindow).GetFocusControlId() == 50)
                         {
                             GUIButtonControl.ShowControl(GUIWindowManager.ActiveWindow, 93761234);
-                            
+
                             if (GUIWindowManager.GetWindow(_activeWindow).GetFocusControlId() != 9879876 && GUIWindowManager.GetWindow(_activeWindow).GetFocusControlId() != 9879877 && GUIWindowManager.GetWindow(_activeWindow).GetFocusControlId() != 6 && GUIWindowManager.GetWindow(_activeWindow).GetFocusControlId() != 4755 && GUIWindowManager.GetWindow(_activeWindow).GetFocusControlId() != 69999 && GUIWindowManager.GetWindow(_activeWindow).GetFocusControlId() != 992899)
-                            {                            
+                            {
                                 GUIControl.FocusControl(GUIWindowManager.ActiveWindow, 93761234);
                             }
                             _isVisible = true;
@@ -527,7 +535,7 @@ namespace MediaPortal.Plugins
                         GUIButtonControl.ShowControl(GUIWindowManager.ActiveWindow, 93761234);
                         GUIControl.FocusControl(GUIWindowManager.ActiveWindow, 93761234);
                         _isVisible = true;
-                    }                    
+                    }
                 }
                 else
                 {
@@ -538,7 +546,7 @@ namespace MediaPortal.Plugins
                         {
                             GUIControl.FocusControl(GUIWindowManager.ActiveWindow, 50);
                         }
-                        _isVisible = false;                        
+                        _isVisible = false;
                     }
                     if (GUIWindowManager.ActiveWindow == 35)
                     {
@@ -568,9 +576,9 @@ namespace MediaPortal.Plugins
                 }
             }
             catch
-            {                
+            {
             }
-        }        
+        }
 
         #region ISetupForm Members
 
@@ -609,12 +617,8 @@ namespace MediaPortal.Plugins
         {
             try
             {
-                bool doEnable = false;
-                using (MediaPortal.Profile.Settings xmlreader = new MediaPortal.Profile.Settings(Config.GetFile(Configuration.Config.Dir.Config, "MediaPortal.xml")))
-                {
-                    doEnable = readMPConfigFile(xmlreader);
-                }
-                return doEnable;
+                // Respect the active skin, including /skin and alternate profiles.
+                return String.Equals(GUIGraphicsContext.SkinName, "Backdrop", StringComparison.OrdinalIgnoreCase);
             }
             catch
             {

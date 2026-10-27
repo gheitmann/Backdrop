@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
   <controls>
     <control>
@@ -166,7 +166,7 @@
           <textureWidth>216</textureWidth>
           <textureHeight>146</textureHeight>
           <itemWidth>232</itemWidth>
-          <itemHeight>160</itemHeight>
+          <itemHeight>190</itemHeight>
           <thumbWidth>216</thumbWidth>
           <thumbHeight>146</thumbHeight>
           <thumbPosX>0</thumbPosX>
@@ -189,9 +189,9 @@
           <enableFocusZoom>no</enableFocusZoom>
           <unfocusedAlpha>255</unfocusedAlpha>
           <scrollOffset>1</scrollOffset>
-          <!-- Manual zoom is applied by MP even when enableFocusZoom is false. -->
-          <zoomXPixels>0</zoomXPixels>
-          <zoomYPixels>0</zoomYPixels>
+          <!-- Bounded manual focus zoom; retain the stable viewport and no grid slide animations. -->
+          <zoomXPixels>6</zoomXPixels>
+          <zoomYPixels>6</zoomYPixels>
           <showFrame>true</showFrame>
           <hideUnfocusTexture>yes</hideUnfocusTexture>
           <renderFocusText>no</renderFocusText>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
   <controls>
     <control>
@@ -48,12 +48,12 @@
           <unfocusedAlpha>255</unfocusedAlpha>
           <!--					<dimColor>ffcccccc</dimColor>
 					<textcolor>ffffffff</textcolor>
-					<selectedColor>ffcccccc</selectedColor>	
+					<selectedColor>ffcccccc</selectedColor>
 					<shadedColor>ffcccccc</shadedColor>
 					<playedColor>ffcccccc</playedColor>
 					<textcolor2>ffcccccc</textcolor2>
 					<textcolor3>ffcccccc</textcolor3>
-					<colordiffuse>ffcccccc</colordiffuse>	
+					<colordiffuse>ffcccccc</colordiffuse>
 					<remoteColor>ffcccccc</remoteColor>
 					<downloadColor>ffcccccc</downloadColor>		-->
           <shadedColor>ffffffff</shadedColor>
@@ -108,12 +108,12 @@
           <unfocusedAlpha>255</unfocusedAlpha>
           <!--					<dimColor>ffcccccc</dimColor>
 					<textcolor>ffffffff</textcolor>
-					<selectedColor>ffcccccc</selectedColor>	
+					<selectedColor>ffcccccc</selectedColor>
 					<shadedColor>ffcccccc</shadedColor>
 					<playedColor>ffcccccc</playedColor>
 					<textcolor2>ffcccccc</textcolor2>
 					<textcolor3>ffcccccc</textcolor3>
-					<colordiffuse>ffcccccc</colordiffuse>	
+					<colordiffuse>ffcccccc</colordiffuse>
 					<remoteColor>ffcccccc</remoteColor>
 					<downloadColor>ffcccccc</downloadColor>		-->
           <shadedColor>ffffffff</shadedColor>
@@ -155,7 +155,7 @@
           <textureWidth>216</textureWidth>
           <textureHeight>146</textureHeight>
           <itemWidth>232</itemWidth>
-          <itemHeight>160</itemHeight>
+          <itemHeight>190</itemHeight>
           <thumbWidth>216</thumbWidth>
           <thumbHeight>146</thumbHeight>
           <thumbPosX>0</thumbPosX>
@@ -176,8 +176,8 @@
           <enableFocusZoom>no</enableFocusZoom>
           <unfocusedAlpha>255</unfocusedAlpha>
           <scrollOffset>1</scrollOffset>
-          <zoomXPixels>0</zoomXPixels>
-          <zoomYPixels>0</zoomYPixels>
+          <zoomXPixels>6</zoomXPixels>
+          <zoomYPixels>6</zoomYPixels>
           <hideUnfocusTexture>yes</hideUnfocusTexture>
           <renderFocusText>no</renderFocusText>
           <renderUnfocusText>no</renderUnfocusText>

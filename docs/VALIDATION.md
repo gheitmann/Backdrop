@@ -1,5 +1,10 @@
 # Current validation and historical evidence
 
+BETA1 (28 October 2026): scoped local x64 UI review, native package update,
+2,441 matching installed payload files plus one preserved personal configuration,
+and final EXE VerifyOnly on x64/x86. See [BETA1 build report](BETA1-BUILD-REPORT.md)
+for exact scopes and remaining limitations.
+
 ALPHA27 (26 October 2026): four-period backgrounds and an independent optional
 plugin. Seven static checks passed (7/7), native integration probes each passed
 1,364/1,364 assertions on x86/x64, and independent plugin probes each passed

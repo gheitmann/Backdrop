@@ -24,7 +24,9 @@ MENU_PAGES = (
 )
 count = 0
 for name in MENU_PAGES:
-    controls = ET.parse(SKIN / name).getroot().findall('.//control')
+    root = ET.parse(SKIN / name).getroot()
+    controls = root.findall('.//control')
+    parents = {child: parent for parent in root.iter() for child in parent}
     for c in controls:
         if (c.findtext('type') not in ('button', 'menubutton', 'sortbutton', 'checkbutton')
                 or int(c.findtext('width', '0')) < (150 if c.get('clrtype') == 'Menu' else 350)
@@ -43,11 +45,15 @@ for name in MENU_PAGES:
                        for a in c.findall('animation'))
         for field, texture in (('textureFocus', 'hiddenmenu_button_fo.png'),
                                ('textureNoFocus', 'hiddenmenu_button_no_fo.png')):
-            assert c.findtext(field) == texture
+            animated = any(image.findtext('description') == 'Animated menu focus background'
+                           and 'Control.HasFocus(' + c.findtext('id', '') + ')' in image.findtext('visible', '')
+                           for image in controls)
+            assert c.findtext(field) == ('-' if animated and field == 'textureFocus' else texture)
             assert (SKIN / 'Media' / texture).is_file()
         assert not any(c.findtext('id') and 'control.hasfocus(' + c.findtext('id') + ')' in image.findtext('visible', '').lower()
                        for image in controls if image.findtext('type') == 'image'
-                       and image.findtext('texture') == 'hiddenmenu_button_fo.png')
+                       and image.findtext('texture') == 'hiddenmenu_button_fo.png'
+                       and image.findtext('description') != 'Animated menu focus background')
         count += 1
 assert count == 265, count
 
@@ -97,3 +103,45 @@ assert plugin.findtext('type') == 'menu'  # Retain native plugin routing/binding
 assert int(plugin.findtext('buttonTextXOff')) >= 24
 assert int(plugin.findtext('buttonOffset')) == 0
 print(f'PASS: {count} menu rows across {len(MENU_PAGES)} pages; {selector_count} native selection rows; non-overlapping Sudoku rows; plugin text inset 24px.')
+
+# Native StackLayout must contain native buttons directly; nested group cells
+# are not supported reliably by this MediaPortal runtime.
+animated_count = 0
+for name, expected in {
+    'mymusicsongs.xml': 11, 'mymusicgenres.xml': 11,
+    'mymusicplaylist.xml': 13, 'mypics.xml': 6,
+    'myvideo.xml': 9, 'myvideoTitle.xml': 9,
+    'mytvrecordedtv.xml': 5, 'myradio.xml': 8, 'myradiosearch.xml': 4,
+}.items():
+    root = ET.parse(SKIN / name).getroot()
+    parents = {child: parent for parent in root.iter() for child in parent}
+    controls = list(root.iter('control'))
+    images = [c for c in controls if c.findtext('description') == 'Animated menu focus background']
+    assert len(images) == expected, name
+    assert not any(c.findtext('description') == 'Animated menu row' for c in controls)
+    for image in images:
+        import re
+        identifier = re.search(r'Control.HasFocus\((\d+)\)', image.findtext('visible')).group(1)
+        button = next(c for c in controls if c.findtext('id') == identifier and c.findtext('type') != 'image')
+        stack = parents[button]
+        assert stack.findtext('layout', '').startswith('StackLayout')
+        assert parents[image] is parents[stack]
+        assert list(parents[stack]).index(image) < list(parents[stack]).index(stack)
+        assert image.findtext('width') == button.findtext('width')
+        assert image.findtext('height') == button.findtext('height')
+        assert button.findtext('textureFocus') == '-'
+        assert button.find('posX') is None and button.find('posY') is None
+        animation = image.find('animation')
+        assert animation.get('effect') == 'slide' and animation.get('time') == '160'
+        assert animation.get('end') == '0,0' and animation.text == 'Visible'
+        assert not any(a.get('effect') == 'slide' for a in button.findall('animation'))
+        animated_count += 1
+for name, required in {'myradio.xml': {'2', '3', '4', '6', '7', '8', '9', '10'},
+                       'myradiosearch.xml': {'2', '20', '7', '19', '21'}}.items():
+    root = ET.parse(SKIN / name).getroot()
+    controls = list(root.iter('control'))
+    assert required <= {c.findtext('id') for c in controls}
+    assert any('#DayNight.Period' in c.findtext('texture', '') for c in controls)
+    assert 'common.time.xml' in [n.text for n in root.iter('import')]
+    assert any(c.findtext('texture') == 'dialog_290_400.png' for c in controls)
+print(f'PASS: {animated_count} independent focus backgrounds behind native stack buttons; radio/search controls retained.')

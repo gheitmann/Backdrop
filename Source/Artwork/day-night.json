@@ -325,7 +325,9 @@
     "RadioTime.xml": 1,
     "RadioTimePresets.xml": 1,
     "SubCentral.xml": 1,
-    "TVSeries.xml": 1
+    "TVSeries.xml": 1,
+    "myradio.xml": 1,
+    "myradiosearch.xml": 1
   },
   "periods": [
     "morning",
