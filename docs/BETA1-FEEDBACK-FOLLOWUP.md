@@ -1,0 +1,28 @@
+# Beta 1 tester feedback follow-up
+
+Source and local skin follow-up to BETA1, 28 October 2026. Included in BETA2 (29 October 2026); see BETA2-BUILD-REPORT.md for final packaging.
+
+## Corrections
+
+- Removed the 76 independent animated action-menu focus images from nine pages. The 74 corresponding native buttons now draw their own original focus texture. Two of the removed images redundantly targeted the same button in the music file/library menus. This avoids retaining independent highlight layers after moving focus; native IDs, actions, stack layout, checkmarks and menu opening/closing animations are preserved.
+- Compared the supplied `351980_Media_Backdrop_1_0_1.7z` with the current media directory. Initially 1,032 matching files were identical and 83 differed. Restored all 76 differing original PNG control resources except the intentionally replaced startup image. The other six differences are intentional animated/category background JPGs. The original archive is retained outside the repository. Restored file hashes and dimensions, the archive hash and exact restoration list are recorded in `Source/Artwork/native-fidelity.json`.
+- The restoration includes the Photos icon focus frame, inherited list/checkbutton states, dialog surfaces, paging/button graphics, banners and plugin control artwork. Native aspect ratios are preserved. Existing cinematic backgrounds, startup artwork and all four lighting variants remain in place.
+- Hide underlying Settings module captions while the standard or SMS keyboard is open. A modal keyboard changes `#currentmodule`; it must not become a second large page heading behind the keyboard.
+- Map the Photos page to the existing Photos morning/noon/day/night assets instead of the cinema assets. No new image was generated and no further sharpening was performed in this follow-up. The previous Photos sharpening was not clearly perceptible according to the tester; a stronger image edit remains a separate visual follow-up.
+- Remove DWHD scrollbars from Radio and Radio Search. Use original Backdrop paging arrows, keep their positions inside the 1920-wide skin canvas and simplify the station count. Original radio placeholders replace matching imported placeholders. Radio icon views use an empty texture mask and native station-icon fallback with transparent folder backgrounds, original focus frame and captions in both sizes; station logos remain available when supplied by MediaPortal.
+- Restyle the newer Radio Now Playing page with the existing studio backgrounds, original Backdrop clock, typography, dark panel, separators, progress textures and channel arrows. There is no historical Backdrop page to restore for this feature. Preserve window 764, previous/next channel buttons 3000/3001 and native actions 94/95, radio programme properties and progress binding. No MediaPortal or third-party plugin binary was changed.
+
+## Verification
+
+- Eight Python checks passed: payload validation, integration audit, guide layout, playback layout, menu layout, secondary layout, Day/Night contract and the focused Beta 1 regression check.
+- The artwork decoder passed separately: 518 decoded textures and 506 protected original texture hashes/dimensions.
+- Payload validation covers 2,442 mapped files and 560 skin XML files. No personal configuration or synthetic media was added to the payload.
+- Native x64 Day/Night probe: 1,420 assertions passed across 46 texture bindings in 37 XML files, including all four Photos paths and the radio player. The existing independent plugin binary is unchanged. Probe log4net configuration warnings are inherited and do not establish a client runtime failure.
+- Backed up, copied and SHA256-compared 92 changed skin files in the local installation. The existing Backdrop texture cache was retained outside the installation for regeneration. Receipt: project outputs `Runtime-review-29e17a07/deployment.json`.
+- Completed a scoped live x64 review using the separate Backdrop profile after Configuration Studio was closed. Music library and Current Playlist action menus showed a single focus highlight while navigating. Photos opened with original focus artwork. Radio List/Icons/Big Icons switching displayed the four synthetic stations; Radio Now Playing opened with its empty-programme fallback.
+- Live review exposed two further issues: redundant radio folder backgrounds duplicated station icons, and modal keyboard visibility alone did not hide the underlying Settings caption. Removed the redundant radio backgrounds and added localized keyboard-name exclusions (101002/101004) to Settings captions. These final adjustments were deployed and passed static regression checks. A subsequent live x64 review confirmed that the duplicate underlying keyboard captions disappear and that the station icons, including the focused entry, render once in Big Icons. The PIN dialog was cancelled without entering or changing a PIN.
+- Restored the personal menu configuration byte-for-byte (SHA256 AACABD7E808977DB1F7E97203425AF5F50C912F34BA23A416B0F3DF913FB02DF). MediaPortal was closed after testing. The main profile remains Apollo.
+
+## Remaining checks
+
+Final scoped visual confirmation is complete. Real radio tuning and populated station-logo rendering were not tested: the local synthetic stations have no tuner mapping. A native RadioHelper null-reference and a LatestMediaHandler cross-thread skin-load message were observed; no separate core/plugin changes were bundled. Full x86 interaction and previously deferred Live TV progress and recordings paging-flash limitations remain open. Published BETA1 assets are unchanged; these changes ship separately in BETA2.

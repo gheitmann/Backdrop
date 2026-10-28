@@ -37,13 +37,14 @@
         <posX>860</posX>
         <posY>255</posY>
         <width>480</width>
-        <label>#currentmodule</label>
+        <label>#(iif(and(neq(L(101002),#currentmodule),neq(L(101004),#currentmodule)), #currentmodule, ' '))</label>
         <textcolor>white</textcolor>
         <font>font12</font>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
         <shadowColor />
+        <visible>!Window.IsVisible(1002)+!Window.IsVisible(1004)</visible>
       </control>
       <control>
         <description>buttons</description>

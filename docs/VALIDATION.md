@@ -1,5 +1,16 @@
 # Current validation and historical evidence
 
+BETA2 (29 October 2026): eight static checks, 2,442/2,442 package and isolated
+native-copy comparisons, 21/21 setup bundle entries and final EXE VerifyOnly
+on 2/2 architectures passed. See [BETA2 build report](BETA2-BUILD-REPORT.md).
+
+Unreleased BETA1 source/local feedback follow-up (28 October 2026): 76 original
+control textures restored; eight Python checks and the artwork decoder passed.
+Native x64 Day/Night probe passed 1,420 assertions for 46 bindings; 92 local skin
+files were backed up, copied and hash-compared. Scoped live review covered music focus navigation, Photos and radio layouts.
+Final x64 visual confirmation passed for keyboard captions and nonduplicated radio icons. See
+[Beta 1 feedback follow-up](BETA1-FEEDBACK-FOLLOWUP.md) for scopes and open checks.
+
 BETA1 (28 October 2026): scoped local x64 UI review, native package update,
 2,441 matching installed payload files plus one preserved personal configuration,
 and final EXE VerifyOnly on x64/x86. See [BETA1 build report](BETA1-BUILD-REPORT.md)

@@ -45,10 +45,7 @@ for name in MENU_PAGES:
                        for a in c.findall('animation'))
         for field, texture in (('textureFocus', 'hiddenmenu_button_fo.png'),
                                ('textureNoFocus', 'hiddenmenu_button_no_fo.png')):
-            animated = any(image.findtext('description') == 'Animated menu focus background'
-                           and 'Control.HasFocus(' + c.findtext('id', '') + ')' in image.findtext('visible', '')
-                           for image in controls)
-            assert c.findtext(field) == ('-' if animated and field == 'textureFocus' else texture)
+            assert c.findtext(field) == texture
             assert (SKIN / 'Media' / texture).is_file()
         assert not any(c.findtext('id') and 'control.hasfocus(' + c.findtext('id') + ')' in image.findtext('visible', '').lower()
                        for image in controls if image.findtext('type') == 'image'
@@ -106,9 +103,9 @@ print(f'PASS: {count} menu rows across {len(MENU_PAGES)} pages; {selector_count}
 
 # Native StackLayout must contain native buttons directly; nested group cells
 # are not supported reliably by this MediaPortal runtime.
-animated_count = 0
+native_focus_count = 0
 for name, expected in {
-    'mymusicsongs.xml': 11, 'mymusicgenres.xml': 11,
+    'mymusicsongs.xml': 10, 'mymusicgenres.xml': 10,
     'mymusicplaylist.xml': 13, 'mypics.xml': 6,
     'myvideo.xml': 9, 'myvideoTitle.xml': 9,
     'mytvrecordedtv.xml': 5, 'myradio.xml': 8, 'myradiosearch.xml': 4,
@@ -117,25 +114,17 @@ for name, expected in {
     parents = {child: parent for parent in root.iter() for child in parent}
     controls = list(root.iter('control'))
     images = [c for c in controls if c.findtext('description') == 'Animated menu focus background']
-    assert len(images) == expected, name
+    assert not images, (name, 'Auxiliary focus layers can remain visible after navigation')
     assert not any(c.findtext('description') == 'Animated menu row' for c in controls)
-    for image in images:
-        import re
-        identifier = re.search(r'Control.HasFocus\((\d+)\)', image.findtext('visible')).group(1)
-        button = next(c for c in controls if c.findtext('id') == identifier and c.findtext('type') != 'image')
+    buttons = [c for c in controls if c.findtext('textureFocus') == 'hiddenmenu_button_fo.png'
+               and c.findtext('type') in ('button', 'checkbutton', 'menubutton', 'sortbutton')]
+    assert len(buttons) == expected, (name, len(buttons))
+    for button in buttons:
         stack = parents[button]
         assert stack.findtext('layout', '').startswith('StackLayout')
-        assert parents[image] is parents[stack]
-        assert list(parents[stack]).index(image) < list(parents[stack]).index(stack)
-        assert image.findtext('width') == button.findtext('width')
-        assert image.findtext('height') == button.findtext('height')
-        assert button.findtext('textureFocus') == '-'
         assert button.find('posX') is None and button.find('posY') is None
-        animation = image.find('animation')
-        assert animation.get('effect') == 'slide' and animation.get('time') == '160'
-        assert animation.get('end') == '0,0' and animation.text == 'Visible'
         assert not any(a.get('effect') == 'slide' for a in button.findall('animation'))
-        animated_count += 1
+        native_focus_count += 1
 for name, required in {'myradio.xml': {'2', '3', '4', '6', '7', '8', '9', '10'},
                        'myradiosearch.xml': {'2', '20', '7', '19', '21'}}.items():
     root = ET.parse(SKIN / name).getroot()
@@ -144,4 +133,4 @@ for name, required in {'myradio.xml': {'2', '3', '4', '6', '7', '8', '9', '10'},
     assert any('#DayNight.Period' in c.findtext('texture', '') for c in controls)
     assert 'common.time.xml' in [n.text for n in root.iter('import')]
     assert any(c.findtext('texture') == 'dialog_290_400.png' for c in controls)
-print(f'PASS: {animated_count} independent focus backgrounds behind native stack buttons; radio/search controls retained.')
+print(f'PASS: {native_focus_count} native focus textures without auxiliary layers; radio/search controls retained.')

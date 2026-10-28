@@ -48,9 +48,9 @@
     },
     "photos": {
       "file": "Modern/photos.jpg",
-      "sha256": "5200e2ba5df2808fe613591aec250439304d0e4fb8ff986f27ac5c6605865f8c",
-      "source": "Source/Artwork/cinematic-night/photos.png",
-      "source_sha256": "d468d5126c4de614bde6f0dbe0d3a7ea47bfc0c6481aa424a4498118b44f8475",
+      "sha256": "53b584592a4abeb5ac98eefc00358de049b0c1cf8898e28445c9effc662b05cb",
+      "source": "Source/Artwork/cinematic-night/photos-beta2.png",
+      "source_sha256": "a194c81a61f4cb755524788d3cd31c3da2afb4d8e69ef416468055ec85180cb3",
       "source_dimensions": [
         1672,
         941
@@ -58,7 +58,8 @@
       "export_dimensions": [
         1920,
         1080
-      ]
+      ],
+      "edit": "2026-10-29: built-in image_gen edit restoring deeper focus and clear central chair, books, bridge and buildings; original night composition and lighting retained. Other lighting variants unchanged."
     },
     "gaming": {
       "file": "Modern/gaming.jpg",

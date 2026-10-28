@@ -22,7 +22,7 @@
       <width>1350</width>
       <height>70</height>
       <font>font32</font>
-      <label>#currentmodule</label>
+      <label>665</label>
       <textcolor>ffffffff</textcolor>
     </control>
     <import>common.time.xml</import>
@@ -30,16 +30,17 @@
       <description>Itemcount CurrentModule</description>
       <type>label</type>
       <id>0</id>
-      <posX>1869</posX>
-      <posY>100</posY>
-      <label>#selectedindex/#itemcount #currentmodule</label>
+      <posX>1890</posX>
+      <posY>140</posY>
+      <label>#selectedindex/#itemcount</label>
       <align>right</align>
-      <font>font11</font>
-      <textcolor>lightgray</textcolor>
+      <font>font12</font>
+      <textcolor>ff7FB1E5</textcolor>
       <shadowAngle>10</shadowAngle>
       <shadowDistance>2</shadowDistance>
       <shadowColor>ff000000</shadowColor>
       <disabledcolor>90ffffff</disabledcolor>
+      <height>38</height>
     </control>
     <control>
       <type>fadelabel</type>
@@ -49,7 +50,7 @@
       <posY>129</posY>
       <width>1620</width>
       <align>left</align>
-      <label>#currentmodule  ·  #(L(971)): #Radio.Folder</label>
+      <label>#(L(665)) | #(L(971)): #Radio.Folder</label>
       <align>left</align>
       <font>font14</font>
       <textcolor>lightgray</textcolor>
@@ -124,102 +125,6 @@
       <height>1080</height>
       <dimColor>00ffffff</dimColor>
       <control>
-        <description>Animated menu focus background</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>806</posX>
-        <posY>338</posY>
-        <width>420</width>
-        <height>42</height>
-        <texture>hiddenmenu_button_fo.png</texture>
-        <visible>Control.HasFocus(2)</visible>
-        <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-      </control>
-      <control>
-        <description>Animated menu focus background</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>806</posX>
-        <posY>380</posY>
-        <width>420</width>
-        <height>42</height>
-        <texture>hiddenmenu_button_fo.png</texture>
-        <visible>Control.HasFocus(3)</visible>
-        <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-      </control>
-      <control>
-        <description>Animated menu focus background</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>806</posX>
-        <posY>422</posY>
-        <width>420</width>
-        <height>42</height>
-        <texture>hiddenmenu_button_fo.png</texture>
-        <visible>Control.HasFocus(4)</visible>
-        <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-      </control>
-      <control>
-        <description>Animated menu focus background</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>806</posX>
-        <posY>464</posY>
-        <width>420</width>
-        <height>42</height>
-        <texture>hiddenmenu_button_fo.png</texture>
-        <visible>Control.HasFocus(6)</visible>
-        <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-      </control>
-      <control>
-        <description>Animated menu focus background</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>806</posX>
-        <posY>506</posY>
-        <width>420</width>
-        <height>42</height>
-        <texture>hiddenmenu_button_fo.png</texture>
-        <visible>Control.HasFocus(7)</visible>
-        <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-      </control>
-      <control>
-        <description>Animated menu focus background</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>806</posX>
-        <posY>548</posY>
-        <width>420</width>
-        <height>42</height>
-        <texture>hiddenmenu_button_fo.png</texture>
-        <visible>Control.HasFocus(8)</visible>
-        <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-      </control>
-      <control>
-        <description>Animated menu focus background</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>806</posX>
-        <posY>590</posY>
-        <width>420</width>
-        <height>42</height>
-        <texture>hiddenmenu_button_fo.png</texture>
-        <visible>Control.HasFocus(9)</visible>
-        <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-      </control>
-      <control>
-        <description>Animated menu focus background</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>806</posX>
-        <posY>632</posY>
-        <width>420</width>
-        <height>42</height>
-        <texture>hiddenmenu_button_fo.png</texture>
-        <visible>Control.HasFocus(10)</visible>
-        <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-      </control>
-      <control>
         <description>group element</description>
         <type>group</type>
         <posX>806</posX>
@@ -269,7 +174,7 @@
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
           <shadowColor />
-          <textureFocus>-</textureFocus>
+          <textureFocus>hiddenmenu_button_fo.png</textureFocus>
           <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           <scrollStartDelaySec>5</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>
@@ -287,7 +192,7 @@
           <textYOff>0</textYOff>
           <textalign>left</textalign>
           <textvalign>middle</textvalign>
-          <textureFocus>-</textureFocus>
+          <textureFocus>hiddenmenu_button_fo.png</textureFocus>
           <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           <textureAscending>arrow_round_up_nofocus.png</textureAscending>
           <textureAscendingFocused>arrow_round_up_focus.png</textureAscendingFocused>
@@ -323,7 +228,7 @@
           <textYOff>0</textYOff>
           <textalign>left</textalign>
           <textvalign>middle</textvalign>
-          <textureFocus>-</textureFocus>
+          <textureFocus>hiddenmenu_button_fo.png</textureFocus>
           <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           <scrollStartDelaySec>5</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>
@@ -352,7 +257,7 @@
           <textYOff>0</textYOff>
           <textalign>left</textalign>
           <textvalign>middle</textvalign>
-          <textureFocus>-</textureFocus>
+          <textureFocus>hiddenmenu_button_fo.png</textureFocus>
           <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           <scrollStartDelaySec>5</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>
@@ -381,7 +286,7 @@
           <textYOff>0</textYOff>
           <textalign>left</textalign>
           <textvalign>middle</textvalign>
-          <textureFocus>-</textureFocus>
+          <textureFocus>hiddenmenu_button_fo.png</textureFocus>
           <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           <scrollStartDelaySec>5</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>
@@ -410,7 +315,7 @@
           <textYOff>0</textYOff>
           <textalign>left</textalign>
           <textvalign>middle</textvalign>
-          <textureFocus>-</textureFocus>
+          <textureFocus>hiddenmenu_button_fo.png</textureFocus>
           <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           <scrollStartDelaySec>5</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>
@@ -439,7 +344,7 @@
           <textYOff>0</textYOff>
           <textalign>left</textalign>
           <textvalign>middle</textvalign>
-          <textureFocus>-</textureFocus>
+          <textureFocus>hiddenmenu_button_fo.png</textureFocus>
           <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           <scrollStartDelaySec>5</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>
@@ -468,7 +373,7 @@
           <textYOff>0</textYOff>
           <textalign>left</textalign>
           <textvalign>middle</textvalign>
-          <textureFocus>-</textureFocus>
+          <textureFocus>hiddenmenu_button_fo.png</textureFocus>
           <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           <scrollStartDelaySec>5</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>
@@ -506,24 +411,17 @@
           <onright>2</onright>
           <scrollOffset>2</scrollOffset>
           <unfocusedAlpha>160</unfocusedAlpha>
-          <scrollbarHeight>400</scrollbarHeight>
-          <scrollbarbg>MP139\bar_vert.png</scrollbarbg>
-          <scrollbartop>MP139\mouse_left_horizontal.png</scrollbartop>
-          <scrollbarbottom>MP139\mouse_right_horizontal.png</scrollbarbottom>
-          <scrollbarXOff>52</scrollbarXOff>
-          <scrollbarYOff>0</scrollbarYOff>
-          <showScrollbar>yes</showScrollbar>
-          <scrollbarwidth>20</scrollbarwidth>
-          <spinWidth>49</spinWidth>
-          <spinHeight>49</spinHeight>
-          <spinPosX>1800</spinPosX>
-          <spinPosY>993</spinPosY>
+          <showScrollbar>no</showScrollbar>
+          <spinWidth>24</spinWidth>
+          <spinHeight>24</spinHeight>
+          <spinPosX>1860</spinPosX>
+          <spinPosY>1010</spinPosY>
           <spinAlign>Right</spinAlign>
           <spinColor>ffffffff</spinColor>
-          <textureUp>MP139\page_up_nofocus.png</textureUp>
-          <textureDown>MP139\page_down_nofocus.png</textureDown>
-          <textureUpFocus>MP139\page_up_focus.png</textureUpFocus>
-          <textureDownFocus>MP139\page_down_focus.png</textureDownFocus>
+          <textureUp>arrow_round_up_nofocus.png</textureUp>
+          <textureDown>arrow_round_down_nofocus.png</textureDown>
+          <textureUpFocus>arrow_round_up_focus.png</textureUpFocus>
+          <textureDownFocus>arrow_round_down_focus.png</textureDownFocus>
           <textureFocus>playlist_sub_focus1.png</textureFocus>
           <textureNoFocus>-</textureNoFocus>
           <textureHeight>48</textureHeight>
@@ -574,8 +472,8 @@
           <posY>250</posY>
           <width>1132</width>
           <height>750</height>
-          <spinPosX>1800</spinPosX>
-          <spinPosY>703</spinPosY>
+          <spinPosX>1860</spinPosX>
+          <spinPosY>1010</spinPosY>
           <font>font14</font>
           <font2>Label</font2>
           <shadedColor>20ffffff</shadedColor>
@@ -617,23 +515,16 @@
           <onright>50</onright>
           <onup>2</onup>
           <ondown>2</ondown>
-          <scrollbarHeight>400</scrollbarHeight>
-          <scrollbarbg>MP139\bar_vert.png</scrollbarbg>
-          <scrollbartop>MP139\mouse_left_horizontal.png</scrollbartop>
-          <scrollbarbottom>MP139\mouse_right_horizontal.png</scrollbarbottom>
-          <scrollbarXOff>40</scrollbarXOff>
-          <scrollbarYOff>0</scrollbarYOff>
-          <showScrollbar>yes</showScrollbar>
-          <scrollbarwidth>20</scrollbarwidth>
+          <showScrollbar>no</showScrollbar>
           <unfocusedAlpha>160</unfocusedAlpha>
-          <spinWidth>49</spinWidth>
-          <spinHeight>49</spinHeight>
+          <spinWidth>24</spinWidth>
+          <spinHeight>24</spinHeight>
           <spinAlign>Right</spinAlign>
           <spinColor>ffffffff</spinColor>
-          <textureUp>MP139\page_up_nofocus.png</textureUp>
-          <textureDown>MP139\page_down_nofocus.png</textureDown>
-          <textureUpFocus>MP139\page_up_focus.png</textureUpFocus>
-          <textureDownFocus>MP139\page_down_focus.png</textureDownFocus>
+          <textureUp>arrow_round_up_nofocus.png</textureUp>
+          <textureDown>arrow_round_down_nofocus.png</textureDown>
+          <textureUpFocus>arrow_round_up_focus.png</textureUpFocus>
+          <textureDownFocus>arrow_round_down_focus.png</textureDownFocus>
           <textcolor3>ffffffff</textcolor3>
           <scrollStartDelaySec>1</scrollStartDelaySec>
           <folderPrefix />
@@ -649,8 +540,8 @@
           <dimColor>90ffffff</dimColor>
           <id>50</id>
           <posX>90</posX>
-          <posY>285</posY>
-          <width>1800</width>
+          <posY>260</posY>
+          <width>1740</width>
           <height>720</height>
           <scrollOffset>0</scrollOffset>
           <onleft>2</onleft>
@@ -658,9 +549,9 @@
           <textureWidthBig>232</textureWidthBig>
           <textureHeightBig>232</textureHeightBig>
           <itemWidthBig>255</itemWidthBig>
-          <itemHeightBig>292</itemHeightBig>
+          <itemHeightBig>290</itemHeightBig>
           <itemWidth>180</itemWidth>
-          <itemHeight>217</itemHeight>
+          <itemHeight>220</itemHeight>
           <thumbWidthBig>232</thumbWidthBig>
           <thumbHeightBig>232</thumbHeightBig>
           <thumbPosXBig>0</thumbPosXBig>
@@ -671,31 +562,31 @@
           <thumbPosY>0</thumbPosY>
           <thumbZoom>no</thumbZoom>
           <enableFocusZoom>no</enableFocusZoom>
-          <zoomXPixels>40</zoomXPixels>
-          <zoomYPixels>40</zoomYPixels>
-          <hideUnfocusTexture>yes</hideUnfocusTexture>
-          <renderFocusText>no</renderFocusText>
-          <renderUnfocusText>no</renderUnfocusText>
+          <zoomXPixels>0</zoomXPixels>
+          <zoomYPixels>0</zoomYPixels>
+          <hideUnfocusTexture>no</hideUnfocusTexture>
+          <renderFocusText>yes</renderFocusText>
+          <renderUnfocusText>yes</renderUnfocusText>
           <showFrame>true</showFrame>
           <imageFolder>-</imageFolder>
           <imageFolderFocus>-</imageFolderFocus>
-          <textureMask>MP139\musicfanart_mask.png</textureMask>
-          <frameNoFocus>-</frameNoFocus>
-          <frameFocus>-</frameFocus>
-          <keepaspectratio>no</keepaspectratio>
-          <font>font10</font>
+          <textureMask />
+          <frameNoFocus>thumb.frame.black.png</frameNoFocus>
+          <frameFocus>thumb.frame.black.focus.png</frameFocus>
+          <keepaspectratio>yes</keepaspectratio>
+          <font>font12</font>
           <spinCanFocus>no</spinCanFocus>
           <dimColor>80ffffff</dimColor>
-          <spinPosY>1012</spinPosY>
-          <spinWidth>49</spinWidth>
-          <spinHeight>49</spinHeight>
-          <spinPosX>3240</spinPosX>
+          <spinPosY>1010</spinPosY>
+          <spinWidth>24</spinWidth>
+          <spinHeight>24</spinHeight>
+          <spinPosX>1860</spinPosX>
           <spinAlign>Right</spinAlign>
           <spinColor>ffffffff</spinColor>
-          <textureUp>MP139\page_up_nofocus.png</textureUp>
-          <textureDown>MP139\page_down_nofocus.png</textureDown>
-          <textureUpFocus>MP139\page_up_focus.png</textureUpFocus>
-          <textureDownFocus>MP139\page_down_focus.png</textureDownFocus>
+          <textureUp>arrow_round_up_nofocus.png</textureUp>
+          <textureDown>arrow_round_down_nofocus.png</textureDown>
+          <textureUpFocus>arrow_round_up_focus.png</textureUpFocus>
+          <textureDownFocus>arrow_round_down_focus.png</textureDownFocus>
           <textureWidth>168</textureWidth>
           <textureHeight>168</textureHeight>
           <shadedColor>20ffffff</shadedColor>
@@ -710,7 +601,8 @@
           <scrollStartDelaySec>1</scrollStartDelaySec>
           <suffix>|</suffix>
           <textXOff>0</textXOff>
-          <textYOff>0</textYOff>
+          <textYOff>4</textYOff>
+          <showScrollbar>no</showScrollbar>
         </control>
         <control>
           <description>Filmstrip view</description>
@@ -749,23 +641,19 @@
           <showInfoImage>no</showInfoImage>
           <keepaspectratio>no</keepaspectratio>
           <dimColor>80ffffff</dimColor>
-          <spinPosX>-800</spinPosX>
-          <scrollbarBackground>MP139\bar_hor.png</scrollbarBackground>
-          <scrollbarLeft>MP139\mouse_left_vertical.png</scrollbarLeft>
-          <scrollbarRight>MP139\mouse_right_vertical.png</scrollbarRight>
-          <scrollbarYOff>405</scrollbarYOff>
-          <showScrollbar>yes</showScrollbar>
+          <spinPosX>1860</spinPosX>
+          <showScrollbar>no</showScrollbar>
           <thumbAnimation effect="zoom" start="100,100" end="150,150" time="200" tween="circle" ease="inout">focus</thumbAnimation>
           <thumbAnimation effect="zoom" start="150,150" end="100,100" time="200" tween="back" ease="inout">unfocus</thumbAnimation>
-          <spinWidth>49</spinWidth>
-          <spinHeight>49</spinHeight>
-          <spinPosY>877</spinPosY>
+          <spinWidth>24</spinWidth>
+          <spinHeight>24</spinHeight>
+          <spinPosY>1010</spinPosY>
           <spinAlign>Right</spinAlign>
           <spinColor>ffffffff</spinColor>
-          <textureUp>MP139\page_up_nofocus.png</textureUp>
-          <textureDown>MP139\page_down_nofocus.png</textureDown>
-          <textureUpFocus>MP139\page_up_focus.png</textureUpFocus>
-          <textureDownFocus>MP139\page_down_focus.png</textureDownFocus>
+          <textureUp>arrow_round_up_nofocus.png</textureUp>
+          <textureDown>arrow_round_down_nofocus.png</textureDown>
+          <textureUpFocus>arrow_round_up_focus.png</textureUpFocus>
+          <textureDownFocus>arrow_round_down_focus.png</textureDownFocus>
           <font>font13</font>
           <shadedColor>20ffffff</shadedColor>
           <selectedColor>ffffffff</selectedColor>
@@ -859,11 +747,7 @@
           <label2YOff>430</label2YOff>
           <pageSize>5</pageSize>
           <keepaspectratio>no</keepaspectratio>
-          <scrollbarBackground>MP139\bar_hor.png</scrollbarBackground>
-          <scrollbarLeft>MP139\mouse_left_vertical.png</scrollbarLeft>
-          <scrollbarRight>MP139\mouse_right_vertical.png</scrollbarRight>
-          <scrollbarYOff>570</scrollbarYOff>
-          <showScrollbar>yes</showScrollbar>
+          <showScrollbar>no</showScrollbar>
           <cards mask="MP139\musicfanart_mask.png">MP139\musicfanart_mask.png</cards>
           <subitems>
             <subitem>                 &lt;controls&gt;
@@ -1060,6 +944,15 @@
             &lt;/controls&gt;</subitem>
           </subitems>
           <backgroundColor>000000FF</backgroundColor>
+          <spinPosX>1860</spinPosX>
+          <spinPosY>1010</spinPosY>
+          <spinWidth>24</spinWidth>
+          <spinHeight>24</spinHeight>
+          <spinColor>ffffffff</spinColor>
+          <textureUp>arrow_round_up_nofocus.png</textureUp>
+          <textureDown>arrow_round_down_nofocus.png</textureDown>
+          <textureUpFocus>arrow_round_up_focus.png</textureUpFocus>
+          <textureDownFocus>arrow_round_down_focus.png</textureDownFocus>
         </control>
         <control>
           <description>playlist listcontrol</description>
@@ -1079,14 +972,7 @@
           <selectedColor>ff7FB1E5</selectedColor>
           <scrollOffset>2</scrollOffset>
           <unfocusedAlpha>160</unfocusedAlpha>
-          <scrollbarHeight>400</scrollbarHeight>
-          <scrollbarbg>MP139\bar_vert.png</scrollbarbg>
-          <scrollbartop>MP139\mouse_left_horizontal.png</scrollbartop>
-          <scrollbarbottom>MP139\mouse_right_horizontal.png</scrollbarbottom>
-          <scrollbarXOff>32</scrollbarXOff>
-          <scrollbarYOff>0</scrollbarYOff>
-          <showScrollbar>yes</showScrollbar>
-          <scrollbarwidth>20</scrollbarwidth>
+          <showScrollbar>no</showScrollbar>
           <itemWidth>48</itemWidth>
           <itemHeight>48</itemHeight>
           <IconXOff>10</IconXOff>
@@ -1103,16 +989,16 @@
           <upBtnXOffset>1021</upBtnXOffset>
           <downBtnXOffset>1075</downBtnXOffset>
           <deleteBtnXOffset>1130</deleteBtnXOffset>
-          <spinWidth>49</spinWidth>
-          <spinHeight>49</spinHeight>
-          <spinPosX>3240</spinPosX>
-          <spinPosY>993</spinPosY>
+          <spinWidth>24</spinWidth>
+          <spinHeight>24</spinHeight>
+          <spinPosX>1860</spinPosX>
+          <spinPosY>1010</spinPosY>
           <spinAlign>Right</spinAlign>
           <spinColor>ffffffff</spinColor>
-          <textureUp>MP139\page_up_nofocus.png</textureUp>
-          <textureDown>MP139\page_down_nofocus.png</textureDown>
-          <textureUpFocus>MP139\page_up_focus.png</textureUpFocus>
-          <textureDownFocus>MP139\page_down_focus.png</textureDownFocus>
+          <textureUp>arrow_round_up_nofocus.png</textureUp>
+          <textureDown>arrow_round_down_nofocus.png</textureDown>
+          <textureUpFocus>arrow_round_up_focus.png</textureUpFocus>
+          <textureDownFocus>arrow_round_down_focus.png</textureDownFocus>
           <textureFocus>MP139\list_sub_focus.png</textureFocus>
           <textureNoFocus>MP139\list_sub_nofocus.png</textureNoFocus>
           <textureHeight>52</textureHeight>

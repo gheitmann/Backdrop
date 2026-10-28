@@ -3011,6 +3011,620 @@
         500,
         500
       ]
+    },
+    "bar_hor.png": {
+      "sha256": "cc2016b66fe5f1d88d13a0890247c47fae7f45a5f917083b8cb8cc499baa7fa4",
+      "dimensions": [
+        426,
+        20
+      ]
+    },
+    "button.white.focus.png": {
+      "sha256": "bd33316e0c359b959420f3ebb183ad6ee882396ce3c59d544c0eeeed6c5dbe8c",
+      "dimensions": [
+        134,
+        51
+      ]
+    },
+    "button.white.nofocus.png": {
+      "sha256": "e083060132dc1c369c3566a1db985d0440e4bb8c15eb2613060662227fb44967",
+      "dimensions": [
+        134,
+        51
+      ]
+    },
+    "button_focus.png": {
+      "sha256": "0db14477233d0162f7e7fb867c1d59688ddbd003f392a8a083b25170e098dbda",
+      "dimensions": [
+        200,
+        30
+      ]
+    },
+    "button_nofocus.png": {
+      "sha256": "8f4dc916ef7072c5eac75c672b2bc084218da6374018af0249856417ebe72587",
+      "dimensions": [
+        200,
+        30
+      ]
+    },
+    "button_small_settings_nofocus.png": {
+      "sha256": "fb533f95f0c1c433f94a0f227a57db9bcd3b7a9a4bfe11dda759e8fdb4a1c72a",
+      "dimensions": [
+        130,
+        49
+      ]
+    },
+    "coverflow.picture.glass.focus.png": {
+      "sha256": "9ad192d0eb34b7f7345cb6ca38c7291bda99e7b77591e0b81a349fcf29e782b5",
+      "dimensions": [
+        540,
+        366
+      ]
+    },
+    "dialogbigbuttonfo.png": {
+      "sha256": "262e24b0ef4344ca2e52c2aa544a785e103327afdf84fab1213d0c298d15d3a2",
+      "dimensions": [
+        128,
+        62
+      ]
+    },
+    "dialogbigbuttonnf.png": {
+      "sha256": "e7b9127aae1dac025c29622f6e59cd80d2f41916c9054510effbd9708890864e",
+      "dimensions": [
+        128,
+        62
+      ]
+    },
+    "dialogmenubottom.png": {
+      "sha256": "7e6604013a95593cb21d5adfc0461db88979f2207c16ef0fc99aba710bc0efb1",
+      "dimensions": [
+        512,
+        12
+      ]
+    },
+    "dialogmenubutton.png": {
+      "sha256": "b6eb8c32b3ec1c1aac48acfa5ab1d4bfb037bc630f38199f094659a16763deb5",
+      "dimensions": [
+        285,
+        39
+      ]
+    },
+    "dialogmenubutton_nf.png": {
+      "sha256": "a9f0c1cd473eb96c496f0871c8195b4368cb198245f4c892d9eb0e2f97c5b193",
+      "dimensions": [
+        285,
+        39
+      ]
+    },
+    "dialogmenumiddle.png": {
+      "sha256": "0a7bdbf3e09f3a57ac0f0d9f6c85835c2f2d52b7fe679bd45ad3d5d0f8a3f360",
+      "dimensions": [
+        512,
+        600
+      ]
+    },
+    "dialogmenutop.png": {
+      "sha256": "a9b934e6514b90eef271faf262dd07937e0cfe66b0ac76f4d8c9e2f275544c9a",
+      "dimensions": [
+        512,
+        37
+      ]
+    },
+    "dialog_bottom.png": {
+      "sha256": "b7ef22524836b2f0ba2a5bb15ef53eee51cc7c0287e5c12b83564bd79291d85e",
+      "dimensions": [
+        600,
+        25
+      ]
+    },
+    "dialog_middle.png": {
+      "sha256": "90aa23609494574a3cd57769a531be3f4eddd937db417fc2198c035dc95d772a",
+      "dimensions": [
+        600,
+        250
+      ]
+    },
+    "dialog_top.png": {
+      "sha256": "3d4009d9acc9f598647511d36cba63047109264803252a393edd30a626f56bd2",
+      "dimensions": [
+        600,
+        60
+      ]
+    },
+    "dropdown_togglebutton_nof_off.png": {
+      "sha256": "12227f08ef7012679715d982fade2bfbc83a45dbd041c18382364f06f6ae0952",
+      "dimensions": [
+        220,
+        27
+      ]
+    },
+    "dropdown_togglebutton_nof_on.png": {
+      "sha256": "153d0a85ca6681d67677c8d315128caa8545dfccbc363912e038c63e8aec97d7",
+      "dimensions": [
+        220,
+        28
+      ]
+    },
+    "dropdown_togglebutton_off.png": {
+      "sha256": "33c8b12ec0e37f8c8a4ffaa756c6172be0d93c01916f402e26554c0ccd4a788e",
+      "dimensions": [
+        220,
+        28
+      ]
+    },
+    "dropdown_togglebutton_on.png": {
+      "sha256": "f4fa9ab68d095be8279e77c9a1e904df04cf553c4eda5003cafd74b4855153c0",
+      "dimensions": [
+        220,
+        28
+      ]
+    },
+    "glasstitlebar.png": {
+      "sha256": "007d83e273e8586ad759b1fec9a4a342139dd93e5f8c303ee6098e58661e78cf",
+      "dimensions": [
+        512,
+        43
+      ]
+    },
+    "hp_selectionbar.png": {
+      "sha256": "0046c902ccc2b295409e8a697cab5314f1662829b8e032db38f52dadf8fcca81",
+      "dimensions": [
+        330,
+        96
+      ]
+    },
+    "icon_empty_focus.png": {
+      "sha256": "c2859ac839cc881cb95b69bf434cebd609164682f1d2e764a9a7a4b6310f4241",
+      "dimensions": [
+        54,
+        54
+      ]
+    },
+    "icon_empty_nofocus.png": {
+      "sha256": "511531a19fcb2291d9337bcb701c9bbc262528f14bf04f9b4889bbfc55001431",
+      "dimensions": [
+        54,
+        54
+      ]
+    },
+    "images_submenu_bg.png": {
+      "sha256": "4e0628d62f173c3404db80c4c35a7ae8f7f2434960a92dffc49e59733baef5af",
+      "dimensions": [
+        264,
+        38
+      ]
+    },
+    "listbg_togglebutton_off_fo.png": {
+      "sha256": "84c8fc0068abb8fafdc592a56860194135891008466eb8dfc47bc3877955f739",
+      "dimensions": [
+        595,
+        42
+      ]
+    },
+    "listbg_togglebutton_off_nf.png": {
+      "sha256": "4b33b04b112ab5048a6e0b605bb980c25a54b7b5a1615a1df25fe5f682b73807",
+      "dimensions": [
+        595,
+        42
+      ]
+    },
+    "listbg_togglebutton_on_fo.png": {
+      "sha256": "29543682d426c465bd936bcc31c0f20b61bb5e15c574b89b2b42225e5763b664",
+      "dimensions": [
+        595,
+        42
+      ]
+    },
+    "listbg_togglebutton_on_nf.png": {
+      "sha256": "54e5bcc864ce5c4f5e4eec3d21230d029cef5bd8090af965728415bf14e80534",
+      "dimensions": [
+        595,
+        42
+      ]
+    },
+    "list_background_focus_ledoff.png": {
+      "sha256": "f302432bd85fc6c7ac39aa5dcf8df0028b3ecb7d616ebda309b63dfa014aba48",
+      "dimensions": [
+        508,
+        40
+      ]
+    },
+    "list_background_focus_ledon.png": {
+      "sha256": "8e19590575c783e50d54b4fdba43bcff1a0c2210764fc1a4e4faaf4e4a4bea94",
+      "dimensions": [
+        508,
+        40
+      ]
+    },
+    "list_background_nofocus.png": {
+      "sha256": "1972379b65b6b94a1c809328fe6fa47495adb2d593d2b4782e61b4437e9f3931",
+      "dimensions": [
+        508,
+        40
+      ]
+    },
+    "list_background_nofocus_ledoff.png": {
+      "sha256": "69a7b12fcf9a40806db2015f4d977e8f1ab185e46ef379051514d0a4ec1a35a6",
+      "dimensions": [
+        508,
+        40
+      ]
+    },
+    "list_background_nofocus_ledon.png": {
+      "sha256": "7249adf2f9042baad4135f79ed2ed0073498e1e986a4d63b64367e214667a93f",
+      "dimensions": [
+        508,
+        40
+      ]
+    },
+    "max_button_blue.png": {
+      "sha256": "6dd831c31129723c933200a1f72e762ad13d54e62c95b8a85aae23d199d7e480",
+      "dimensions": [
+        250,
+        45
+      ]
+    },
+    "max_button_blue_focus.png": {
+      "sha256": "5fe22f46d85b4ce9fea7fa0c651969a5bdd575bdf393a87ce93b03c7a1fb28e7",
+      "dimensions": [
+        250,
+        45
+      ]
+    },
+    "max_button_green.png": {
+      "sha256": "ec471ec65b8ae9f415a90ea289a668788ed402bf7bdf16e5f284de3e18115405",
+      "dimensions": [
+        250,
+        45
+      ]
+    },
+    "max_button_green_focus.png": {
+      "sha256": "c8fd7f5935f876d7a70f940a4e3b13a34e3e18d086a0c735b5f75a074193e7b6",
+      "dimensions": [
+        250,
+        45
+      ]
+    },
+    "max_button_red.png": {
+      "sha256": "6186170f61fac8717d6a07fcd8039892605f999b8edf6dc93f8bfe98344adbdb",
+      "dimensions": [
+        250,
+        45
+      ]
+    },
+    "max_button_red_focus.png": {
+      "sha256": "4e516402097d7bc1acf392d43266a1c7ee7b316b4c29df4c433af61bc05b0383",
+      "dimensions": [
+        250,
+        45
+      ]
+    },
+    "max_button_yellow.png": {
+      "sha256": "8e2b3177e715d0890f58afa3eab8048dcfe6777ce798777e15462adba7197d9b",
+      "dimensions": [
+        250,
+        45
+      ]
+    },
+    "max_button_yellow_focus.png": {
+      "sha256": "ca0dde831a0777bd9d8082e29ef835965014141dd3da1d6eb0e4c660c8cf4bf4",
+      "dimensions": [
+        250,
+        45
+      ]
+    },
+    "menu_bg.png": {
+      "sha256": "50fdfdba9dc6f55136b6bd01686f9e06a183039a5a60340d0779a6e07346bc64",
+      "dimensions": [
+        1920,
+        103
+      ]
+    },
+    "menu_bg1.png": {
+      "sha256": "51eababc95d1ca29827ec5c591b2ea52d7376c1f102fa618ca26b8900c9ad04b",
+      "dimensions": [
+        1280,
+        37
+      ]
+    },
+    "menu_bg_aeon.png": {
+      "sha256": "48b524e399b2dd586ef01055d9f770a8080ddaf7fc1ff139f0a0deb93d59b344",
+      "dimensions": [
+        1280,
+        114
+      ]
+    },
+    "menu_bg_aeon_norss.png": {
+      "sha256": "a260ee99011ed22d0c2b4c4f682cabb8a2cbb1d770544f8c70589a1818a95844",
+      "dimensions": [
+        1280,
+        72
+      ]
+    },
+    "menu_bg_no_rss.png": {
+      "sha256": "06d025dcca0892dab81d9d4db19a3573b5f0543a5395e5e865e22ab80b943bcf",
+      "dimensions": [
+        1280,
+        80
+      ]
+    },
+    "menu_list_focus.png": {
+      "sha256": "bca423ff82dc3db84171a679ff17ff627abf35bcc4da8e1531c1553e7e793ccd",
+      "dimensions": [
+        299,
+        39
+      ]
+    },
+    "pandora_tile_focus.png": {
+      "sha256": "dcb251cdb921330258b9d4911737e399f6787da64b56418edaf85c19e1d25e13",
+      "dimensions": [
+        299,
+        356
+      ]
+    },
+    "restart_button.png": {
+      "sha256": "a88aac21303c58d38015ba12d67691e59e1cb4a4cb91378494d9004c54c34162",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    "rockstar_playlist.png": {
+      "sha256": "40dcdf76734416cb15dadd3232f516eadf20e814b61b9bc555922e4e16a45635",
+      "dimensions": [
+        256,
+        256
+      ]
+    },
+    "rockstar_playlist_small.png": {
+      "sha256": "872227f12f8e6afddbac63a50ce59e470da878b0e9a147c0751916496d9c945a",
+      "dimensions": [
+        64,
+        64
+      ]
+    },
+    "settingsbuttonfo.png": {
+      "sha256": "20eeacdd5d23095e915a80e4f9680cf5c008ba240ca36f0d8e70069e2b5d00b8",
+      "dimensions": [
+        285,
+        39
+      ]
+    },
+    "settingsbuttonnf.png": {
+      "sha256": "23d71f932a3e98256473f15c1c0956daa57dcd92fe15b3113b3e6cf71d8a2454",
+      "dimensions": [
+        285,
+        39
+      ]
+    },
+    "statusbar_back.png": {
+      "sha256": "1d62ccc52bd044169ad0c0863dd38f9fd1afba7cd314fa0a88f824c26ec93861",
+      "dimensions": [
+        620,
+        23
+      ]
+    },
+    "SubCentral_Button_Long_Focused.png": {
+      "sha256": "827d43cb630e7ee767a6e4800620338067b9240ec3e1cf97fb727eaaa7837988",
+      "dimensions": [
+        600,
+        38
+      ]
+    },
+    "submenu_bg.png": {
+      "sha256": "08fc90afbc2d66c35b7797c39c5d57afca8507282e89b5d630a8936220e5f14e",
+      "dimensions": [
+        1280,
+        30
+      ]
+    },
+    "thumb.frame.black.focus.png": {
+      "sha256": "c8fea1f43062137d2658b0febd5536e79e66312e0f24eada8d916d5f56352b41",
+      "dimensions": [
+        192,
+        270
+      ]
+    },
+    "thumbborder.png": {
+      "sha256": "846b873f13d7d95549544f6754aa4f0cfadcb27a3a7375c926d217e15c78e464",
+      "dimensions": [
+        120,
+        170
+      ]
+    },
+    "thumbborder2.png": {
+      "sha256": "100b208f7edcaa47e34dd34e6f3f22e71f9d1c8de260069d2024ee9721bd9a2b",
+      "dimensions": [
+        100,
+        100
+      ]
+    },
+    "togglebutton_off.png": {
+      "sha256": "a0633fa42ca504f33ab6f1bd2ae4c4c585ab4e1127fc1c5dc5c13b6cc823caec",
+      "dimensions": [
+        150,
+        28
+      ]
+    },
+    "togglebutton_on.png": {
+      "sha256": "b04c18e02219284230735ef77328c50fcd0a664f8d368611c921b8dc86b12f37",
+      "dimensions": [
+        150,
+        28
+      ]
+    },
+    "tvseries_focusframe.png": {
+      "sha256": "eb98750e66944046ec60a1738afa57cdd6919a2cd5ac547c64d56b84f38e05cf",
+      "dimensions": [
+        400,
+        255
+      ]
+    },
+    "tvseries_SeasonListIcon.png": {
+      "sha256": "5c21e0a17e13ec3f3e91edf079f85c3ba3d3d5cf3ab7f6dc240ab3a37fe7ee55",
+      "dimensions": [
+        96,
+        24
+      ]
+    },
+    "tvseries_SeriesListIcon.png": {
+      "sha256": "29251b22f7b93395cbed62235e41e57d3545b09871bfba34f06fc5529d9e3cfe",
+      "dimensions": [
+        96,
+        24
+      ]
+    },
+    "tv_on_button.png": {
+      "sha256": "f833f1f86531a945922e8b3cc23554c03307b1f6d1dcf0fe9e1394fd08b02aa7",
+      "dimensions": [
+        49,
+        33
+      ]
+    },
+    "tv_on_button_focus.png": {
+      "sha256": "ee4fc29663801720e29407d05085788ac00914f8af987fb809f7a605e5e6f939",
+      "dimensions": [
+        49,
+        33
+      ]
+    },
+    "tv_rec_focus_button.png": {
+      "sha256": "ca2d5daa329e665a0a2384e6b6e38e24bb79b6520a403719d2116fac41667179",
+      "dimensions": [
+        30,
+        30
+      ]
+    },
+    "tv_rec_nofocus_button.png": {
+      "sha256": "5f4c362b7be9ed9b633f89d443ec4dcb4377571536f59ef2a881b700911acd15",
+      "dimensions": [
+        30,
+        30
+      ]
+    },
+    "video_window_focus.png": {
+      "sha256": "da2a92dc384c507d3512a07bcfda160608f2edabc3fc620b4a7b22675d4a8c56",
+      "dimensions": [
+        161,
+        134
+      ]
+    },
+    "widebannerborder.png": {
+      "sha256": "6ab29b9f857793cdecc49ddd0a0bc6cde1fb213f112b14e357d7c34b5794585c",
+      "dimensions": [
+        414,
+        88
+      ]
+    },
+    "wide_banner_frame_focus.png": {
+      "sha256": "b2a1b9d2239d3a45d2567001441e4064858957c1966ddca7440775e00cc1b0a2",
+      "dimensions": [
+        479,
+        105
+      ]
+    },
+    "WOLPowerManager/WolPowerManager_ButtonGreen.png": {
+      "sha256": "1a708d1bd31bab04eb0593558f04d62d985e13cdb54f53fc4c377e9d517589b8",
+      "dimensions": [
+        16,
+        16
+      ]
+    },
+    "WOLPowerManager/WolPowerManager_ButtonOut.png": {
+      "sha256": "691c455650252bffad1bd426c9081ca5f4430396e233bc4c6c4b598fcbf8ab69",
+      "dimensions": [
+        25,
+        25
+      ]
+    },
+    "WOLPowerManager/WolPowerManager_ButtonRed.png": {
+      "sha256": "e0b3b4e5fb771512f846229d5302c9a1be73374f51bd2b43689f455972cf96f0",
+      "dimensions": [
+        16,
+        16
+      ]
     }
+  },
+  "additional_source": {
+    "archive": "351980_Media_Backdrop_1_0_1.7z",
+    "sha256": "8031bd076eb7db263f149aa058c96d5d95fee8c8623ca740bc3b14f9298c001e",
+    "restored_files": [
+      "bar_hor.png",
+      "button.white.focus.png",
+      "button.white.nofocus.png",
+      "button_focus.png",
+      "button_nofocus.png",
+      "button_small_settings_nofocus.png",
+      "coverflow.picture.glass.focus.png",
+      "dialogbigbuttonfo.png",
+      "dialogbigbuttonnf.png",
+      "dialogmenubottom.png",
+      "dialogmenubutton.png",
+      "dialogmenubutton_nf.png",
+      "dialogmenumiddle.png",
+      "dialogmenutop.png",
+      "dialog_bottom.png",
+      "dialog_middle.png",
+      "dialog_top.png",
+      "dropdown_togglebutton_nof_off.png",
+      "dropdown_togglebutton_nof_on.png",
+      "dropdown_togglebutton_off.png",
+      "dropdown_togglebutton_on.png",
+      "glasstitlebar.png",
+      "hp_selectionbar.png",
+      "icon_empty_focus.png",
+      "icon_empty_nofocus.png",
+      "images_submenu_bg.png",
+      "listbg_togglebutton_off_fo.png",
+      "listbg_togglebutton_off_nf.png",
+      "listbg_togglebutton_on_fo.png",
+      "listbg_togglebutton_on_nf.png",
+      "list_background_focus_ledoff.png",
+      "list_background_focus_ledon.png",
+      "list_background_nofocus.png",
+      "list_background_nofocus_ledoff.png",
+      "list_background_nofocus_ledon.png",
+      "max_button_blue.png",
+      "max_button_blue_focus.png",
+      "max_button_green.png",
+      "max_button_green_focus.png",
+      "max_button_red.png",
+      "max_button_red_focus.png",
+      "max_button_yellow.png",
+      "max_button_yellow_focus.png",
+      "menu_bg.png",
+      "menu_bg1.png",
+      "menu_bg_aeon.png",
+      "menu_bg_aeon_norss.png",
+      "menu_bg_no_rss.png",
+      "menu_list_focus.png",
+      "pandora_tile_focus.png",
+      "restart_button.png",
+      "rockstar_playlist.png",
+      "rockstar_playlist_small.png",
+      "settingsbuttonfo.png",
+      "settingsbuttonnf.png",
+      "statusbar_back.png",
+      "SubCentral_Button_Long_Focused.png",
+      "submenu_bg.png",
+      "thumb.frame.black.focus.png",
+      "thumbborder.png",
+      "thumbborder2.png",
+      "togglebutton_off.png",
+      "togglebutton_on.png",
+      "tvseries_focusframe.png",
+      "tvseries_SeasonListIcon.png",
+      "tvseries_SeriesListIcon.png",
+      "tv_on_button.png",
+      "tv_on_button_focus.png",
+      "tv_rec_focus_button.png",
+      "tv_rec_nofocus_button.png",
+      "video_window_focus.png",
+      "widebannerborder.png",
+      "wide_banner_frame_focus.png",
+      "WOLPowerManager/WolPowerManager_ButtonGreen.png",
+      "WOLPowerManager/WolPowerManager_ButtonOut.png",
+      "WOLPowerManager/WolPowerManager_ButtonRed.png"
+    ]
   }
 }

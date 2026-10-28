@@ -1,7 +1,7 @@
 {
   "Basic_focus.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "house",
     "active": false,
     "tags": [
@@ -20,7 +20,7 @@
   },
   "Basic_nofocus.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "house",
     "active": false,
     "tags": [
@@ -39,7 +39,7 @@
   },
   "DefaultFolderBackBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "folder",
     "tags": [
       "native-or-alternate-state"
@@ -56,7 +56,7 @@
   },
   "DefaultFolderBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "folder",
     "tags": [
       "native-or-alternate-state"
@@ -73,7 +73,7 @@
   },
   "DefaultMyradio.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "radio",
     "tags": [
       "native-or-alternate-state",
@@ -91,7 +91,7 @@
   },
   "DefaultMyradioBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "radio",
     "tags": [
       "native-or-alternate-state"
@@ -108,7 +108,7 @@
   },
   "DefaultMyradioBigLocked.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -126,7 +126,7 @@
   },
   "DefaultMyradioLocked.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -144,7 +144,7 @@
   },
   "DefaultMyradioStream.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "radio",
     "tags": [
       "native-or-alternate-state"
@@ -161,7 +161,7 @@
   },
   "DefaultMyradioStreamBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "radio",
     "tags": [
       "native-or-alternate-state"
@@ -178,7 +178,7 @@
   },
   "DefaultPlaylist.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -195,7 +195,7 @@
   },
   "DefaultPlaylistBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -212,7 +212,7 @@
   },
   "DefaultShortcutBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -229,7 +229,7 @@
   },
   "InfoService/defaultFeedALL.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -246,7 +246,7 @@
   },
   "InfoService/defaultFeedAtom.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -263,7 +263,7 @@
   },
   "InfoService/defaultFeedItemAtom.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -280,7 +280,7 @@
   },
   "InfoService/defaultFeedItemAtomBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -297,7 +297,7 @@
   },
   "InfoService/defaultFeedItemRDF.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -314,7 +314,7 @@
   },
   "InfoService/defaultFeedItemRDFBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -331,7 +331,7 @@
   },
   "InfoService/defaultFeedItemRSS.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -348,7 +348,7 @@
   },
   "InfoService/defaultFeedItemRSSBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -365,7 +365,7 @@
   },
   "InfoService/defaultFeedRDF.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -382,7 +382,7 @@
   },
   "InfoService/defaultFeedRSS.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -399,7 +399,7 @@
   },
   "InfoService/defaultTwitter.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -416,7 +416,7 @@
   },
   "Lock.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -473,7 +473,7 @@
   },
   "MP139/Arrow_left_button_dark_small.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-left",
     "tags": [
       "native-or-alternate-state",
@@ -491,7 +491,7 @@
   },
   "MP139/Arrow_left_button_small.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-left",
     "tags": [
       "native-or-alternate-state",
@@ -509,7 +509,7 @@
   },
   "MP139/Arrow_right_button_dark_small.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-right",
     "tags": [
       "native-or-alternate-state",
@@ -527,7 +527,7 @@
   },
   "MP139/Arrow_right_button_small.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-right",
     "tags": [
       "native-or-alternate-state",
@@ -564,7 +564,7 @@
   },
   "MP139/CompactDisc.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "headphones",
     "tags": [
       "native-or-alternate-state",
@@ -582,7 +582,7 @@
   },
   "MP139/DefaultCollectionBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state",
@@ -600,7 +600,7 @@
   },
   "MP139/DefaultDirectorBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "users",
     "tags": [
       "native-or-alternate-state",
@@ -618,7 +618,7 @@
   },
   "MP139/DefaultFolderBackBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "folder",
     "tags": [
       "native-or-alternate-state"
@@ -635,7 +635,7 @@
   },
   "MP139/DefaultFolderBackBigVideo.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "folder",
     "tags": [
       "native-or-alternate-state",
@@ -653,7 +653,7 @@
   },
   "MP139/DefaultFolderBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "folder",
     "tags": [
       "native-or-alternate-state"
@@ -670,7 +670,7 @@
   },
   "MP139/DefaultMyradio.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "radio",
     "tags": [
       "native-or-alternate-state"
@@ -687,7 +687,7 @@
   },
   "MP139/DefaultMyradioBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "radio",
     "tags": [
       "native-or-alternate-state"
@@ -722,7 +722,7 @@
   },
   "MP139/MyFilms/Persons.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "users",
     "tags": [
       "native-or-alternate-state",
@@ -740,7 +740,7 @@
   },
   "MP139/MyFilms/Trailer.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state",
@@ -758,7 +758,7 @@
   },
   "MP139/MyFilms/collection.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state",
@@ -776,7 +776,7 @@
   },
   "MP139/MyFilms/download.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "download",
     "active": false,
     "tags": [
@@ -795,7 +795,7 @@
   },
   "MP139/MyFilms/led_green.png": {
     "focus": false,
-    "kind": "mark",
+    "kind": "native-restored",
     "icon": "circle",
     "active": true,
     "status": "green",
@@ -815,7 +815,7 @@
   },
   "MP139/MyFilms/led_grey.png": {
     "focus": false,
-    "kind": "mark",
+    "kind": "native-restored",
     "icon": "circle",
     "active": false,
     "status": "grey",
@@ -835,7 +835,7 @@
   },
   "MP139/MyFilms/led_red.png": {
     "focus": false,
-    "kind": "mark",
+    "kind": "native-restored",
     "icon": "circle",
     "active": true,
     "status": "red",
@@ -855,7 +855,7 @@
   },
   "MP139/MyFilms/led_yellow.png": {
     "focus": false,
-    "kind": "mark",
+    "kind": "native-restored",
     "icon": "circle",
     "active": true,
     "status": "yellow",
@@ -875,7 +875,7 @@
   },
   "MP139/MyFilms/myfilms_latest_nocover.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state",
@@ -893,7 +893,7 @@
   },
   "MP139/MyFilms/online.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state",
@@ -930,7 +930,7 @@
   },
   "MP139/UserRatingStarOff.png": {
     "focus": false,
-    "kind": "mark",
+    "kind": "native-restored",
     "icon": "star",
     "active": false,
     "tags": [
@@ -949,7 +949,7 @@
   },
   "MP139/UserRatingStarOn.png": {
     "focus": false,
-    "kind": "mark",
+    "kind": "native-restored",
     "icon": "star",
     "active": true,
     "tags": [
@@ -968,7 +968,7 @@
   },
   "MP139/arrow_round_down_focus.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-down",
     "tags": [
       "native-or-alternate-state",
@@ -987,7 +987,7 @@
   },
   "MP139/arrow_round_down_nofocus.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-down",
     "tags": [
       "native-or-alternate-state",
@@ -1006,7 +1006,7 @@
   },
   "MP139/arrow_round_left_focus.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-left",
     "tags": [
       "native-or-alternate-state",
@@ -1026,7 +1026,7 @@
   },
   "MP139/arrow_round_left_nofocus.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-left",
     "tags": [
       "native-or-alternate-state",
@@ -1046,7 +1046,7 @@
   },
   "MP139/arrow_round_right_focus.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-right",
     "tags": [
       "native-or-alternate-state",
@@ -1066,7 +1066,7 @@
   },
   "MP139/arrow_round_right_nofocus.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-right",
     "tags": [
       "native-or-alternate-state",
@@ -1086,7 +1086,7 @@
   },
   "MP139/arrow_round_up_focus.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-up",
     "tags": [
       "native-or-alternate-state",
@@ -1105,7 +1105,7 @@
   },
   "MP139/arrow_round_up_nofocus.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-up",
     "tags": [
       "native-or-alternate-state",
@@ -1200,7 +1200,7 @@
   },
   "MP139/check-box.png": {
     "focus": false,
-    "kind": "mark",
+    "kind": "native-restored",
     "icon": "check",
     "active": true,
     "checkbox": true,
@@ -1220,7 +1220,7 @@
   },
   "MP139/check-boxNF.png": {
     "focus": false,
-    "kind": "mark",
+    "kind": "native-restored",
     "icon": "square",
     "active": false,
     "checkbox": true,
@@ -1240,7 +1240,7 @@
   },
   "MP139/defaultActor.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -1257,7 +1257,7 @@
   },
   "MP139/defaultActorBIG.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state",
@@ -1275,7 +1275,7 @@
   },
   "MP139/defaultAudioBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state",
@@ -1293,7 +1293,7 @@
   },
   "MP139/defaultGenreBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -1310,7 +1310,7 @@
   },
   "MP139/defaultGroupBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state",
@@ -1328,7 +1328,7 @@
   },
   "MP139/defaultLibraryBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state",
@@ -1346,7 +1346,7 @@
   },
   "MP139/defaultVideoBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state",
@@ -1364,7 +1364,7 @@
   },
   "MP139/defaultVideoSeenBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state",
@@ -1382,7 +1382,7 @@
   },
   "MP139/defaulttvlogo.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -1415,7 +1415,7 @@
   },
   "MP139/ff_16x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "fast-forward",
     "text": "16x",
     "tags": [
@@ -1434,7 +1434,7 @@
   },
   "MP139/ff_2x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "fast-forward",
     "text": "2x",
     "tags": [
@@ -1453,7 +1453,7 @@
   },
   "MP139/ff_32x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "fast-forward",
     "text": "32x",
     "tags": [
@@ -1472,7 +1472,7 @@
   },
   "MP139/ff_4x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "fast-forward",
     "text": "4x",
     "tags": [
@@ -1491,7 +1491,7 @@
   },
   "MP139/ff_8x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "fast-forward",
     "text": "8x",
     "tags": [
@@ -1528,7 +1528,7 @@
   },
   "MP139/hover_exit.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "x",
     "active": false,
     "tags": [
@@ -1564,7 +1564,7 @@
   },
   "MP139/hover_worldclock.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -1804,7 +1804,7 @@
   },
   "MP139/missing_coverart.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state",
@@ -1822,7 +1822,7 @@
   },
   "MP139/missing_coverart_radio.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "radio",
     "tags": [
       "native-or-alternate-state",
@@ -1840,7 +1840,7 @@
   },
   "MP139/numberblock.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -1859,7 +1859,7 @@
   },
   "MP139/osd_slider_nibFO.png": {
     "focus": true,
-    "kind": "mark",
+    "kind": "native-restored",
     "icon": "circle",
     "active": true,
     "tags": [
@@ -1878,7 +1878,7 @@
   },
   "MP139/osd_slider_nibNF.png": {
     "focus": false,
-    "kind": "mark",
+    "kind": "native-restored",
     "icon": "circle",
     "active": false,
     "tags": [
@@ -1897,7 +1897,7 @@
   },
   "MP139/page_down_focus.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-down",
     "tags": [
       "native-or-alternate-state",
@@ -1915,7 +1915,7 @@
   },
   "MP139/page_down_nofocus.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-down",
     "tags": [
       "native-or-alternate-state",
@@ -1933,7 +1933,7 @@
   },
   "MP139/page_up_focus.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-up",
     "tags": [
       "native-or-alternate-state",
@@ -1951,7 +1951,7 @@
   },
   "MP139/page_up_nofocus.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-up",
     "tags": [
       "native-or-alternate-state",
@@ -1969,7 +1969,7 @@
   },
   "MP139/pause_white_transparent.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "pause",
     "active": false,
     "tags": [
@@ -1988,7 +1988,7 @@
   },
   "MP139/playlist_item_delete_focus.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "x",
     "tags": [
       "native-or-alternate-state",
@@ -2006,7 +2006,7 @@
   },
   "MP139/playlist_item_delete_nofocus.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "x",
     "tags": [
       "native-or-alternate-state",
@@ -2024,7 +2024,7 @@
   },
   "MP139/playlist_item_down_focus.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-down",
     "tags": [
       "native-or-alternate-state",
@@ -2042,7 +2042,7 @@
   },
   "MP139/playlist_item_down_nofocus.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-down",
     "tags": [
       "native-or-alternate-state",
@@ -2060,7 +2060,7 @@
   },
   "MP139/playlist_item_up_focus.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-up",
     "tags": [
       "native-or-alternate-state",
@@ -2078,7 +2078,7 @@
   },
   "MP139/playlist_item_up_nofocus.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-up",
     "tags": [
       "native-or-alternate-state",
@@ -2132,7 +2132,7 @@
   },
   "MP139/rec.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "circle",
     "active": true,
     "tags": [
@@ -2151,7 +2151,7 @@
   },
   "MP139/rew_16x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "rewind",
     "text": "16x",
     "tags": [
@@ -2170,7 +2170,7 @@
   },
   "MP139/rew_2x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "rewind",
     "text": "2x",
     "tags": [
@@ -2189,7 +2189,7 @@
   },
   "MP139/rew_32x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "rewind",
     "text": "32x",
     "tags": [
@@ -2208,7 +2208,7 @@
   },
   "MP139/rew_4x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "rewind",
     "text": "4x",
     "tags": [
@@ -2227,7 +2227,7 @@
   },
   "MP139/rew_8x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "rewind",
     "text": "8x",
     "tags": [
@@ -2246,7 +2246,7 @@
   },
   "MP139/scroll-left-focus.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-left",
     "tags": [
       "native-or-alternate-state",
@@ -2264,7 +2264,7 @@
   },
   "MP139/scroll-left.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-left",
     "tags": [
       "native-or-alternate-state",
@@ -2282,7 +2282,7 @@
   },
   "MP139/scroll-right-focus.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-right",
     "tags": [
       "native-or-alternate-state",
@@ -2300,7 +2300,7 @@
   },
   "MP139/scroll-right.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-right",
     "tags": [
       "native-or-alternate-state",
@@ -2372,7 +2372,7 @@
   },
   "MP139/tb_cf3.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "layout-grid",
     "active": false,
     "tags": [
@@ -2391,7 +2391,7 @@
   },
   "MP139/tb_cfNF.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "layout-grid",
     "active": false,
     "tags": [
@@ -2410,7 +2410,7 @@
   },
   "MP139/tb_exitNF.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "x",
     "active": false,
     "tags": [
@@ -2429,7 +2429,7 @@
   },
   "MP139/tb_exit_dialogue.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "x",
     "active": false,
     "tags": [
@@ -2448,7 +2448,7 @@
   },
   "MP139/tb_extend3.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "maximize",
     "active": false,
     "tags": [
@@ -2467,7 +2467,7 @@
   },
   "MP139/tb_extend3b.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "maximize",
     "active": false,
     "tags": [
@@ -2486,7 +2486,7 @@
   },
   "MP139/tb_extendNF.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "maximize",
     "active": false,
     "tags": [
@@ -2505,7 +2505,7 @@
   },
   "MP139/tb_menu3.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "menu",
     "active": false,
     "tags": [
@@ -2524,7 +2524,7 @@
   },
   "MP139/tb_menuNF.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "menu",
     "active": false,
     "tags": [
@@ -2543,7 +2543,7 @@
   },
   "MP139/tb_music3.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "headphones",
     "active": false,
     "tags": [
@@ -2562,7 +2562,7 @@
   },
   "MP139/tb_musicNF.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "headphones",
     "active": false,
     "tags": [
@@ -2581,7 +2581,7 @@
   },
   "MP139/tb_playlist3.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "list-music",
     "active": false,
     "tags": [
@@ -2600,7 +2600,7 @@
   },
   "MP139/tb_playlistNF.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "list-music",
     "active": false,
     "tags": [
@@ -2619,7 +2619,7 @@
   },
   "MP139/tb_recordNF_red.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "circle",
     "active": true,
     "tags": [
@@ -2638,7 +2638,7 @@
   },
   "MP139/tb_record_red3.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "circle",
     "active": true,
     "tags": [
@@ -2657,7 +2657,7 @@
   },
   "MP139/tb_subtitles3.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "captions",
     "active": false,
     "tags": [
@@ -2676,7 +2676,7 @@
   },
   "MP139/tb_subtitlesNF.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "captions",
     "active": false,
     "tags": [
@@ -2695,7 +2695,7 @@
   },
   "MP139/tb_video3.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "video",
     "active": false,
     "tags": [
@@ -2714,7 +2714,7 @@
   },
   "MP139/tb_videoNF.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "video",
     "active": false,
     "tags": [
@@ -2751,7 +2751,7 @@
   },
   "MP139/tvguide_arrow_left_colorize.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-left",
     "tags": [
       "native-or-alternate-state",
@@ -2770,7 +2770,7 @@
   },
   "MP139/tvguide_arrow_left_colorize_overlay.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-left",
     "tags": [
       "native-or-alternate-state"
@@ -2787,7 +2787,7 @@
   },
   "MP139/tvguide_arrow_right_colorize.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-right",
     "tags": [
       "native-or-alternate-state",
@@ -2806,7 +2806,7 @@
   },
   "MP139/tvguide_arrow_right_colorize_overlay.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-right",
     "tags": [
       "native-or-alternate-state"
@@ -3278,7 +3278,7 @@
   },
   "MP139/uncheckbox_BHE.png": {
     "focus": false,
-    "kind": "mark",
+    "kind": "native-restored",
     "icon": "square",
     "active": false,
     "checkbox": true,
@@ -3298,7 +3298,7 @@
   },
   "MP139/video+16x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "fast-forward",
     "text": "16x",
     "tags": [
@@ -3317,7 +3317,7 @@
   },
   "MP139/video+2x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "fast-forward",
     "text": "2x",
     "tags": [
@@ -3336,7 +3336,7 @@
   },
   "MP139/video+32x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "fast-forward",
     "text": "32x",
     "tags": [
@@ -3355,7 +3355,7 @@
   },
   "MP139/video+4x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "fast-forward",
     "text": "4x",
     "tags": [
@@ -3374,7 +3374,7 @@
   },
   "MP139/video+8x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "fast-forward",
     "text": "8x",
     "tags": [
@@ -3393,7 +3393,7 @@
   },
   "MP139/video-16x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "rewind",
     "text": "16x",
     "tags": [
@@ -3412,7 +3412,7 @@
   },
   "MP139/video-2x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "rewind",
     "text": "2x",
     "tags": [
@@ -3431,7 +3431,7 @@
   },
   "MP139/video-32x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "rewind",
     "text": "32x",
     "tags": [
@@ -3450,7 +3450,7 @@
   },
   "MP139/video-4x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "rewind",
     "text": "4x",
     "tags": [
@@ -3469,7 +3469,7 @@
   },
   "MP139/video-8x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "rewind",
     "text": "8x",
     "tags": [
@@ -3488,7 +3488,7 @@
   },
   "MP139/video-pause.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "pause",
     "active": false,
     "tags": [
@@ -3507,7 +3507,7 @@
   },
   "MP139/volume.states.mute.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "volume-x",
     "active": false,
     "tags": [
@@ -3526,7 +3526,7 @@
   },
   "MP139/volume.states.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "volume-2",
     "active": false,
     "tags": [
@@ -3545,7 +3545,7 @@
   },
   "MP139/warning-icon.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "bell",
     "active": false,
     "tags": [
@@ -3564,7 +3564,7 @@
   },
   "MovingPictures/page_down_focus.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-down",
     "tags": [
       "native-or-alternate-state",
@@ -3582,7 +3582,7 @@
   },
   "MovingPictures/page_down_nofocus.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-down",
     "tags": [
       "native-or-alternate-state",
@@ -3600,7 +3600,7 @@
   },
   "MovingPictures/page_up_focus.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-up",
     "tags": [
       "native-or-alternate-state",
@@ -3618,7 +3618,7 @@
   },
   "MovingPictures/page_up_nofocus.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-up",
     "tags": [
       "native-or-alternate-state",
@@ -3636,7 +3636,7 @@
   },
   "Picture_cover.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "image",
     "tags": [
       "native-or-alternate-state",
@@ -3654,7 +3654,7 @@
   },
   "SubCentral_Button_Long_Focused.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -3667,13 +3667,13 @@
       38
     ],
     "rendered": [
-      1516,
-      96
+      600,
+      38
     ]
   },
   "Tetris/block_I.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -3691,7 +3691,7 @@
   },
   "Tetris/block_J.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -3709,7 +3709,7 @@
   },
   "Tetris/block_L.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -3727,7 +3727,7 @@
   },
   "Tetris/block_O.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -3745,7 +3745,7 @@
   },
   "Tetris/block_S.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -3763,7 +3763,7 @@
   },
   "Tetris/block_T.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -3781,7 +3781,7 @@
   },
   "Tetris/block_Z.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -3799,7 +3799,7 @@
   },
   "Tetris/block_blue.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -3817,7 +3817,7 @@
   },
   "Tetris/block_blue_glow.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -3835,7 +3835,7 @@
   },
   "Tetris/block_cyan.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -3853,7 +3853,7 @@
   },
   "Tetris/block_cyan_glow.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -3871,7 +3871,7 @@
   },
   "Tetris/block_gray.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -3889,7 +3889,7 @@
   },
   "Tetris/block_gray_glow.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -3907,7 +3907,7 @@
   },
   "Tetris/block_green.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -3925,7 +3925,7 @@
   },
   "Tetris/block_green_glow.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -3943,7 +3943,7 @@
   },
   "Tetris/block_orange.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -3961,7 +3961,7 @@
   },
   "Tetris/block_orange_glow.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -3979,7 +3979,7 @@
   },
   "Tetris/block_red.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -3997,7 +3997,7 @@
   },
   "Tetris/block_red_glow.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -4015,7 +4015,7 @@
   },
   "Tetris/block_yellow.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -4033,7 +4033,7 @@
   },
   "Tetris/block_yellow_glow.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -4051,7 +4051,7 @@
   },
   "UserRatingStarOff.png": {
     "focus": false,
-    "kind": "mark",
+    "kind": "native-restored",
     "icon": "star",
     "active": false,
     "tags": [
@@ -4071,7 +4071,7 @@
   },
   "UserRatingStarOn.png": {
     "focus": false,
-    "kind": "mark",
+    "kind": "native-restored",
     "icon": "star",
     "active": true,
     "tags": [
@@ -4091,7 +4091,7 @@
   },
   "WOLPowerManager/WolPowerManager_ButtonGreen.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": "green",
@@ -4104,13 +4104,13 @@
       16
     ],
     "rendered": [
-      64,
-      64
+      16,
+      16
     ]
   },
   "WOLPowerManager/WolPowerManager_ButtonOut.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -4123,13 +4123,13 @@
       25
     ],
     "rendered": [
-      96,
-      96
+      25,
+      25
     ]
   },
   "WOLPowerManager/WolPowerManager_ButtonRed.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -4142,13 +4142,13 @@
       16
     ],
     "rendered": [
-      64,
-      64
+      16,
+      16
     ]
   },
   "albumnocover.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "headphones",
     "tags": [
       "native-or-alternate-state",
@@ -4166,7 +4166,7 @@
   },
   "arrow_round_down_focus.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-down",
     "tags": [
       "native-or-alternate-state",
@@ -4184,7 +4184,7 @@
   },
   "arrow_round_down_focus1.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-down",
     "tags": [
       "native-or-alternate-state",
@@ -4202,7 +4202,7 @@
   },
   "arrow_round_down_nofocus.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-down",
     "tags": [
       "native-or-alternate-state",
@@ -4220,7 +4220,7 @@
   },
   "arrow_round_down_nofocus1.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-down",
     "tags": [
       "native-or-alternate-state",
@@ -4238,7 +4238,7 @@
   },
   "arrow_round_left_focus.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-left",
     "tags": [
       "native-or-alternate-state",
@@ -4258,7 +4258,7 @@
   },
   "arrow_round_left_focus1.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-left",
     "tags": [
       "native-or-alternate-state"
@@ -4275,7 +4275,7 @@
   },
   "arrow_round_left_nofocus.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-left",
     "tags": [
       "native-or-alternate-state",
@@ -4295,7 +4295,7 @@
   },
   "arrow_round_left_nofocus1.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-left",
     "tags": [
       "native-or-alternate-state"
@@ -4312,7 +4312,7 @@
   },
   "arrow_round_right_focus.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-right",
     "tags": [
       "native-or-alternate-state",
@@ -4332,7 +4332,7 @@
   },
   "arrow_round_right_focus1.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-right",
     "tags": [
       "native-or-alternate-state"
@@ -4349,7 +4349,7 @@
   },
   "arrow_round_right_nofocus.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-right",
     "tags": [
       "native-or-alternate-state",
@@ -4369,7 +4369,7 @@
   },
   "arrow_round_right_nofocus1.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-right",
     "tags": [
       "native-or-alternate-state"
@@ -4386,7 +4386,7 @@
   },
   "arrow_round_up_focus.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-up",
     "tags": [
       "native-or-alternate-state",
@@ -4404,7 +4404,7 @@
   },
   "arrow_round_up_focus1.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-up",
     "tags": [
       "native-or-alternate-state",
@@ -4422,7 +4422,7 @@
   },
   "arrow_round_up_nofocus.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-up",
     "tags": [
       "native-or-alternate-state",
@@ -4440,7 +4440,7 @@
   },
   "arrow_round_up_nofocus1.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-up",
     "tags": [
       "native-or-alternate-state",
@@ -4458,7 +4458,7 @@
   },
   "arrowdownfo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-down",
     "tags": [
       "native-or-alternate-state",
@@ -4477,7 +4477,7 @@
   },
   "arrowdownnf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-down",
     "tags": [
       "native-or-alternate-state",
@@ -4496,7 +4496,7 @@
   },
   "arrowleftfo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-left",
     "tags": [
       "native-or-alternate-state",
@@ -4514,7 +4514,7 @@
   },
   "arrowleftnf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-left",
     "tags": [
       "native-or-alternate-state",
@@ -4532,7 +4532,7 @@
   },
   "arrowrightfo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-right",
     "tags": [
       "native-or-alternate-state",
@@ -4550,7 +4550,7 @@
   },
   "arrowrightnf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-right",
     "tags": [
       "native-or-alternate-state",
@@ -4568,7 +4568,7 @@
   },
   "arrowupfo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-up",
     "tags": [
       "native-or-alternate-state",
@@ -4587,7 +4587,7 @@
   },
   "arrowupnf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-up",
     "tags": [
       "native-or-alternate-state",
@@ -4606,7 +4606,7 @@
   },
   "bar_hor.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -4621,13 +4621,13 @@
       20
     ],
     "rendered": [
-      1704,
-      80
+      426,
+      20
     ]
   },
   "button.focus.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -4648,7 +4648,7 @@
   },
   "button.livetv.left.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -4668,7 +4668,7 @@
   },
   "button.menu.left.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -4688,7 +4688,7 @@
   },
   "button.menu.top.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -4708,7 +4708,7 @@
   },
   "button.white.focus.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -4720,13 +4720,13 @@
       51
     ],
     "rendered": [
-      252,
-      96
+      134,
+      51
     ]
   },
   "button.white.nofocus.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -4738,13 +4738,13 @@
       51
     ],
     "rendered": [
-      252,
-      96
+      134,
+      51
     ]
   },
   "button_close_focus.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "x",
     "active": false,
     "tags": [
@@ -4763,7 +4763,7 @@
   },
   "button_close_nofocus.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "x",
     "active": false,
     "tags": [
@@ -4782,7 +4782,7 @@
   },
   "button_focus.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -4794,13 +4794,13 @@
       30
     ],
     "rendered": [
-      640,
-      96
+      200,
+      30
     ]
   },
   "button_nofocus.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -4812,13 +4812,13 @@
       30
     ],
     "rendered": [
-      640,
-      96
+      200,
+      30
     ]
   },
   "button_shutdown_focus.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "power",
     "active": false,
     "tags": [
@@ -4837,7 +4837,7 @@
   },
   "button_shutdown_nofocus.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "power",
     "active": false,
     "tags": [
@@ -4856,7 +4856,7 @@
   },
   "button_small_settings_nofocus.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -4868,13 +4868,13 @@
       49
     ],
     "rendered": [
-      255,
-      96
+      130,
+      49
     ]
   },
   "button_tvdesktop_focus.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "monitor",
     "active": false,
     "tags": [
@@ -4893,7 +4893,7 @@
   },
   "button_tvdesktop_nofocus.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "monitor",
     "active": false,
     "tags": [
@@ -4912,7 +4912,7 @@
   },
   "check-box.png": {
     "focus": false,
-    "kind": "mark",
+    "kind": "native-restored",
     "icon": "check",
     "active": true,
     "checkbox": true,
@@ -4934,7 +4934,7 @@
   },
   "check-boxNF.png": {
     "focus": false,
-    "kind": "mark",
+    "kind": "native-restored",
     "icon": "square",
     "active": false,
     "checkbox": true,
@@ -4955,7 +4955,7 @@
   },
   "clock.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "lock",
     "active": false,
     "tags": [
@@ -4974,7 +4974,7 @@
   },
   "coverflow.picture.glass.focus.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -4992,7 +4992,7 @@
   },
   "default.recording.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "circle",
     "active": true,
     "tags": [
@@ -5011,7 +5011,7 @@
   },
   "defaultActor.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -5028,7 +5028,7 @@
   },
   "defaultAlbum.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "headphones",
     "tags": [
       "native-or-alternate-state"
@@ -5045,7 +5045,7 @@
   },
   "defaultAudio.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -5062,7 +5062,7 @@
   },
   "defaultAudioBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -5079,7 +5079,7 @@
   },
   "defaultCdda.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -5096,7 +5096,7 @@
   },
   "defaultCddaBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -5113,7 +5113,7 @@
   },
   "defaultDVDEmpty.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -5130,7 +5130,7 @@
   },
   "defaultDVDEmptyBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -5147,7 +5147,7 @@
   },
   "defaultDVDRom.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -5164,7 +5164,7 @@
   },
   "defaultDVDRomBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -5181,7 +5181,7 @@
   },
   "defaultFolder.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "folder",
     "tags": [
       "native-or-alternate-state"
@@ -5198,7 +5198,7 @@
   },
   "defaultFolderBack.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "folder",
     "tags": [
       "native-or-alternate-state"
@@ -5215,7 +5215,7 @@
   },
   "defaultHardDisk.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -5232,7 +5232,7 @@
   },
   "defaultHardDiskBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -5249,7 +5249,7 @@
   },
   "defaultNetwork.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -5266,7 +5266,7 @@
   },
   "defaultNetworkBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -5283,7 +5283,7 @@
   },
   "defaultPicture.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "image",
     "tags": [
       "native-or-alternate-state"
@@ -5300,7 +5300,7 @@
   },
   "defaultPictureBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "image",
     "tags": [
       "native-or-alternate-state"
@@ -5317,7 +5317,7 @@
   },
   "defaultVideo.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -5334,7 +5334,7 @@
   },
   "defaultVideoBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state",
@@ -5352,7 +5352,7 @@
   },
   "defaultVideoSeenBig.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -5369,7 +5369,7 @@
   },
   "defaultdvdcover.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -5386,7 +5386,7 @@
   },
   "defaultposter.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state",
@@ -5404,7 +5404,7 @@
   },
   "defaultwideicon.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "film",
     "tags": [
       "native-or-alternate-state"
@@ -5421,7 +5421,7 @@
   },
   "dialog_290_400.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "tags": [
       "native-or-alternate-state",
       "texture"
@@ -5437,7 +5437,7 @@
   },
   "dialog_550_247.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "tags": [
       "native-or-alternate-state",
       "texture"
@@ -5454,7 +5454,7 @@
   },
   "dialog_743_336.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "tags": [
       "native-or-alternate-state",
       "texture"
@@ -5471,7 +5471,7 @@
   },
   "dialog_745_470.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "tags": [
       "native-or-alternate-state",
       "texture"
@@ -5488,7 +5488,7 @@
   },
   "dialog_bottom.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "tags": [
       "native-or-alternate-state"
     ],
@@ -5497,13 +5497,13 @@
       25
     ],
     "rendered": [
-      2304,
-      96
+      600,
+      25
     ]
   },
   "dialog_middle.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "tags": [
       "native-or-alternate-state"
     ],
@@ -5518,7 +5518,7 @@
   },
   "dialog_top.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "tags": [
       "native-or-alternate-state"
     ],
@@ -5527,13 +5527,13 @@
       60
     ],
     "rendered": [
-      960,
-      96
+      600,
+      60
     ]
   },
   "dialogbigbuttonfo.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -5547,13 +5547,13 @@
       62
     ],
     "rendered": [
-      198,
-      96
+      128,
+      62
     ]
   },
   "dialogbigbuttonnf.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -5566,13 +5566,13 @@
       62
     ],
     "rendered": [
-      198,
-      96
+      128,
+      62
     ]
   },
   "dialogmenubottom.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "tags": [
       "native-or-alternate-state",
       "texture"
@@ -5582,13 +5582,13 @@
       12
     ],
     "rendered": [
-      2048,
-      48
+      512,
+      12
     ]
   },
   "dialogmenubutton.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -5600,13 +5600,13 @@
       39
     ],
     "rendered": [
-      702,
-      96
+      285,
+      39
     ]
   },
   "dialogmenubutton_nf.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -5618,13 +5618,13 @@
       39
     ],
     "rendered": [
-      702,
-      96
+      285,
+      39
     ]
   },
   "dialogmenumiddle.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "tags": [
       "native-or-alternate-state",
       "texture"
@@ -5640,7 +5640,7 @@
   },
   "dialogmenutop.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "tags": [
       "native-or-alternate-state",
       "texture"
@@ -5650,13 +5650,13 @@
       37
     ],
     "rendered": [
-      1328,
-      96
+      512,
+      37
     ]
   },
   "dialogue_ok_focus.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "check",
     "active": false,
     "tags": [
@@ -5675,7 +5675,7 @@
   },
   "dialogue_ok_nofocus.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "check",
     "active": false,
     "tags": [
@@ -5694,7 +5694,7 @@
   },
   "dropdown_togglebutton_nof_off.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": true,
     "status": null,
@@ -5706,13 +5706,13 @@
       27
     ],
     "rendered": [
-      782,
-      96
+      220,
+      27
     ]
   },
   "dropdown_togglebutton_nof_on.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": true,
     "status": null,
@@ -5725,13 +5725,13 @@
       28
     ],
     "rendered": [
-      754,
-      96
+      220,
+      28
     ]
   },
   "dropdown_togglebutton_off.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": true,
     "status": null,
@@ -5743,13 +5743,13 @@
       28
     ],
     "rendered": [
-      754,
-      96
+      220,
+      28
     ]
   },
   "dropdown_togglebutton_on.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": true,
     "toggle": true,
     "status": null,
@@ -5762,13 +5762,13 @@
       28
     ],
     "rendered": [
-      754,
-      96
+      220,
+      28
     ]
   },
   "exit_button.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "x",
     "active": false,
     "tags": [
@@ -5786,7 +5786,7 @@
   },
   "glasstitlebar.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "tags": [
       "native-or-alternate-state",
       "texture"
@@ -5796,13 +5796,13 @@
       43
     ],
     "rendered": [
-      1143,
-      96
+      512,
+      43
     ]
   },
   "hiddenmenu_button_fo.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -5824,7 +5824,7 @@
   },
   "hiddenmenu_button_fo_right.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -5844,7 +5844,7 @@
   },
   "hiddenmenu_button_no_fo.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -5864,7 +5864,7 @@
   },
   "hiddenmenu_button_no_fo_right.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -5883,7 +5883,7 @@
   },
   "hiddenmenu_togglebutton_nof_off.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": true,
     "status": null,
@@ -5895,13 +5895,13 @@
       27
     ],
     "rendered": [
-      782,
-      96
+      220,
+      27
     ]
   },
   "hiddenmenu_togglebutton_nof_on.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": true,
     "status": null,
@@ -5914,13 +5914,13 @@
       28
     ],
     "rendered": [
-      754,
-      96
+      220,
+      28
     ]
   },
   "hiddenmenu_togglebutton_off.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": true,
     "status": null,
@@ -5932,13 +5932,13 @@
       28
     ],
     "rendered": [
-      754,
-      96
+      220,
+      28
     ]
   },
   "hiddenmenu_togglebutton_on.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": true,
     "toggle": true,
     "status": null,
@@ -5951,13 +5951,13 @@
       28
     ],
     "rendered": [
-      754,
-      96
+      220,
+      28
     ]
   },
   "hp_selectionbar.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -5977,7 +5977,7 @@
   },
   "icon_empty_focus.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -5990,13 +5990,13 @@
       54
     ],
     "rendered": [
-      96,
-      96
+      54,
+      54
     ]
   },
   "icon_empty_nofocus.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -6010,13 +6010,13 @@
       54
     ],
     "rendered": [
-      96,
-      96
+      54,
+      54
     ]
   },
   "images_submenu_bg.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "tags": [
       "native-or-alternate-state"
     ],
@@ -6025,13 +6025,13 @@
       38
     ],
     "rendered": [
-      667,
-      96
+      264,
+      38
     ]
   },
   "led.png": {
     "focus": false,
-    "kind": "mark",
+    "kind": "native-restored",
     "icon": "circle-check",
     "active": true,
     "tags": [
@@ -6049,7 +6049,7 @@
   },
   "ledoff.png": {
     "focus": false,
-    "kind": "mark",
+    "kind": "native-restored",
     "icon": "circle",
     "active": false,
     "tags": [
@@ -6068,7 +6068,7 @@
   },
   "ledon.png": {
     "focus": false,
-    "kind": "mark",
+    "kind": "native-restored",
     "icon": "circle-check",
     "active": true,
     "tags": [
@@ -6087,7 +6087,7 @@
   },
   "list_background_focus.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -6101,13 +6101,13 @@
       40
     ],
     "rendered": [
-      1219,
-      96
+      508,
+      40
     ]
   },
   "list_background_focus_ledoff.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -6119,13 +6119,13 @@
       40
     ],
     "rendered": [
-      1219,
-      96
+      508,
+      40
     ]
   },
   "list_background_focus_ledon.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": true,
     "toggle": true,
     "status": null,
@@ -6138,13 +6138,13 @@
       40
     ],
     "rendered": [
-      1219,
-      96
+      508,
+      40
     ]
   },
   "list_background_nofocus.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -6158,13 +6158,13 @@
       40
     ],
     "rendered": [
-      1219,
-      96
+      508,
+      40
     ]
   },
   "list_background_nofocus_ledoff.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -6176,13 +6176,13 @@
       40
     ],
     "rendered": [
-      1219,
-      96
+      508,
+      40
     ]
   },
   "list_background_nofocus_ledon.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": true,
     "toggle": true,
     "status": null,
@@ -6195,13 +6195,13 @@
       40
     ],
     "rendered": [
-      1219,
-      96
+      508,
+      40
     ]
   },
   "list_bg_3.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -6220,7 +6220,7 @@
   },
   "listbg_fo.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -6241,7 +6241,7 @@
   },
   "listbg_nf.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -6261,7 +6261,7 @@
   },
   "listbg_togglebutton_off_fo.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": true,
     "status": null,
@@ -6274,13 +6274,13 @@
       42
     ],
     "rendered": [
-      1360,
-      96
+      595,
+      42
     ]
   },
   "listbg_togglebutton_off_nf.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": true,
     "status": null,
@@ -6293,13 +6293,13 @@
       42
     ],
     "rendered": [
-      1360,
-      96
+      595,
+      42
     ]
   },
   "listbg_togglebutton_on_fo.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": true,
     "toggle": true,
     "status": null,
@@ -6312,13 +6312,13 @@
       42
     ],
     "rendered": [
-      1360,
-      96
+      595,
+      42
     ]
   },
   "listbg_togglebutton_on_nf.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": true,
     "toggle": true,
     "status": null,
@@ -6331,13 +6331,13 @@
       42
     ],
     "rendered": [
-      1360,
-      96
+      595,
+      42
     ]
   },
   "logo_fastforward.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "fast-forward",
     "active": false,
     "tags": [
@@ -6356,7 +6356,7 @@
   },
   "logo_pause.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "pause",
     "active": false,
     "tags": [
@@ -6375,7 +6375,7 @@
   },
   "logo_rewind.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "rewind",
     "active": false,
     "tags": [
@@ -6394,7 +6394,7 @@
   },
   "max_button_blue.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -6406,13 +6406,13 @@
       45
     ],
     "rendered": [
-      533,
-      96
+      250,
+      45
     ]
   },
   "max_button_blue_focus.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -6424,13 +6424,13 @@
       45
     ],
     "rendered": [
-      533,
-      96
+      250,
+      45
     ]
   },
   "max_button_green.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -6442,13 +6442,13 @@
       45
     ],
     "rendered": [
-      533,
-      96
+      250,
+      45
     ]
   },
   "max_button_green_focus.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -6460,13 +6460,13 @@
       45
     ],
     "rendered": [
-      533,
-      96
+      250,
+      45
     ]
   },
   "max_button_red.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -6478,13 +6478,13 @@
       45
     ],
     "rendered": [
-      533,
-      96
+      250,
+      45
     ]
   },
   "max_button_red_focus.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -6496,13 +6496,13 @@
       45
     ],
     "rendered": [
-      533,
-      96
+      250,
+      45
     ]
   },
   "max_button_yellow.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -6514,13 +6514,13 @@
       45
     ],
     "rendered": [
-      533,
-      96
+      250,
+      45
     ]
   },
   "max_button_yellow_focus.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -6532,13 +6532,13 @@
       45
     ],
     "rendered": [
-      533,
-      96
+      250,
+      45
     ]
   },
   "menu_bg.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "tags": [
       "native-or-alternate-state",
       "texture"
@@ -6554,7 +6554,7 @@
   },
   "menu_bg1.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "tags": [
       "native-or-alternate-state",
       "texture"
@@ -6564,13 +6564,13 @@
       37
     ],
     "rendered": [
-      3321,
-      96
+      1280,
+      37
     ]
   },
   "menu_bg_aeon.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "tags": [
       "native-or-alternate-state"
     ],
@@ -6585,7 +6585,7 @@
   },
   "menu_bg_aeon_norss.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "tags": [
       "native-or-alternate-state"
     ],
@@ -6594,13 +6594,13 @@
       72
     ],
     "rendered": [
-      1707,
-      96
+      1280,
+      72
     ]
   },
   "menu_bg_no_rss.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "tags": [
       "native-or-alternate-state"
     ],
@@ -6609,13 +6609,13 @@
       80
     ],
     "rendered": [
-      1536,
-      96
+      1280,
+      80
     ]
   },
   "menu_list_focus.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -6628,13 +6628,13 @@
       39
     ],
     "rendered": [
-      736,
-      96
+      299,
+      39
     ]
   },
   "menu_selected_bg_top.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "tags": [
       "native-or-alternate-state",
       "texture"
@@ -6651,7 +6651,7 @@
   },
   "new_icon.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "plus",
     "active": false,
     "tags": [
@@ -6670,7 +6670,7 @@
   },
   "new_icon_episode.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "plus",
     "active": false,
     "tags": [
@@ -6689,7 +6689,7 @@
   },
   "next.arrow.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-right",
     "active": false,
     "tags": [
@@ -6708,7 +6708,7 @@
   },
   "nothumb.png": {
     "focus": false,
-    "kind": "placeholder",
+    "kind": "native-restored",
     "icon": "image",
     "tags": [
       "native-or-alternate-state",
@@ -6726,7 +6726,7 @@
   },
   "nowplaying.overlay.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "play",
     "active": false,
     "tags": [
@@ -6745,7 +6745,7 @@
   },
   "osd16x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "fast-forward",
     "text": "16x",
     "tags": [
@@ -6764,7 +6764,7 @@
   },
   "osd2x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "fast-forward",
     "text": "2x",
     "tags": [
@@ -6783,7 +6783,7 @@
   },
   "osd32x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "fast-forward",
     "text": "32x",
     "tags": [
@@ -6802,7 +6802,7 @@
   },
   "osd4x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "fast-forward",
     "text": "4x",
     "tags": [
@@ -6821,7 +6821,7 @@
   },
   "osd8x.png": {
     "focus": false,
-    "kind": "speed",
+    "kind": "native-restored",
     "icon": "fast-forward",
     "text": "8x",
     "tags": [
@@ -6840,7 +6840,7 @@
   },
   "osdaudiofo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "volume-2",
     "active": false,
     "tags": [
@@ -6859,7 +6859,7 @@
   },
   "osdaudiomutefo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "volume-x",
     "active": false,
     "tags": [
@@ -6877,7 +6877,7 @@
   },
   "osdaudiomutenf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "volume-x",
     "active": false,
     "tags": [
@@ -6895,7 +6895,7 @@
   },
   "osdaudionf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "volume-2",
     "active": true,
     "tags": [
@@ -6914,7 +6914,7 @@
   },
   "osdbookmarksfo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "bookmark",
     "active": false,
     "tags": [
@@ -6933,7 +6933,7 @@
   },
   "osdbookmarksnf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "bookmark",
     "active": false,
     "tags": [
@@ -6952,7 +6952,7 @@
   },
   "osddvdfo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "disc-3",
     "active": false,
     "tags": [
@@ -6971,7 +6971,7 @@
   },
   "osddvdnf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "disc-3",
     "active": false,
     "tags": [
@@ -6990,7 +6990,7 @@
   },
   "osdforwardfo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "fast-forward",
     "active": false,
     "tags": [
@@ -7008,7 +7008,7 @@
   },
   "osdforwardnf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "fast-forward",
     "active": false,
     "tags": [
@@ -7026,7 +7026,7 @@
   },
   "osdnexttrackfo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "skip-forward",
     "active": false,
     "tags": [
@@ -7044,7 +7044,7 @@
   },
   "osdnexttracknf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "skip-forward",
     "active": false,
     "tags": [
@@ -7062,7 +7062,7 @@
   },
   "osdpausefo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "pause",
     "active": false,
     "tags": [
@@ -7080,7 +7080,7 @@
   },
   "osdpausenf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "pause",
     "active": false,
     "tags": [
@@ -7098,7 +7098,7 @@
   },
   "osdplayfo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "play",
     "active": false,
     "tags": [
@@ -7117,7 +7117,7 @@
   },
   "osdplaylistfo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "list-music",
     "active": false,
     "tags": [
@@ -7135,7 +7135,7 @@
   },
   "osdplaylistnf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "list-music",
     "active": false,
     "tags": [
@@ -7153,7 +7153,7 @@
   },
   "osdplaynf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "play",
     "active": false,
     "tags": [
@@ -7172,7 +7172,7 @@
   },
   "osdprefo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "sliders-horizontal",
     "active": false,
     "tags": [
@@ -7190,7 +7190,7 @@
   },
   "osdprenf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "sliders-horizontal",
     "active": false,
     "tags": [
@@ -7208,7 +7208,7 @@
   },
   "osdpresetsettingsfo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "sliders-horizontal",
     "active": false,
     "tags": [
@@ -7226,7 +7226,7 @@
   },
   "osdpresetsettingsnf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "sliders-horizontal",
     "active": false,
     "tags": [
@@ -7244,7 +7244,7 @@
   },
   "osdprevtrackfo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "skip-back",
     "active": false,
     "tags": [
@@ -7262,7 +7262,7 @@
   },
   "osdprevtracknf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "skip-back",
     "active": false,
     "tags": [
@@ -7280,7 +7280,7 @@
   },
   "osdrandomofffo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "shuffle",
     "active": false,
     "tags": [
@@ -7298,7 +7298,7 @@
   },
   "osdrandomoffnf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "shuffle",
     "active": false,
     "tags": [
@@ -7316,7 +7316,7 @@
   },
   "osdrandomonfo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "shuffle",
     "active": true,
     "tags": [
@@ -7334,7 +7334,7 @@
   },
   "osdrandomonnf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "shuffle",
     "active": true,
     "tags": [
@@ -7352,7 +7352,7 @@
   },
   "osdrecord2.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "circle",
     "active": true,
     "tags": [
@@ -7370,7 +7370,7 @@
   },
   "osdrecordfo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "circle",
     "active": true,
     "tags": [
@@ -7388,7 +7388,7 @@
   },
   "osdrecordnf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "circle",
     "active": true,
     "tags": [
@@ -7406,7 +7406,7 @@
   },
   "osdrecordoff.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "circle",
     "active": false,
     "tags": [
@@ -7424,7 +7424,7 @@
   },
   "osdrepeatallfo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "repeat",
     "active": false,
     "tags": [
@@ -7442,7 +7442,7 @@
   },
   "osdrepeatallnf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "repeat",
     "active": false,
     "tags": [
@@ -7460,7 +7460,7 @@
   },
   "osdrepeatfo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "repeat",
     "active": false,
     "tags": [
@@ -7478,7 +7478,7 @@
   },
   "osdrepeatnf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "repeat",
     "active": false,
     "tags": [
@@ -7496,7 +7496,7 @@
   },
   "osdrepeatonefo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "repeat-1",
     "active": true,
     "tags": [
@@ -7514,7 +7514,7 @@
   },
   "osdrepeatonenf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "repeat-1",
     "active": true,
     "tags": [
@@ -7532,7 +7532,7 @@
   },
   "osdrewindfo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "rewind",
     "active": false,
     "tags": [
@@ -7550,7 +7550,7 @@
   },
   "osdrewindnf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "rewind",
     "active": false,
     "tags": [
@@ -7568,7 +7568,7 @@
   },
   "osdseekforward.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "fast-forward",
     "active": false,
     "tags": [
@@ -7587,7 +7587,7 @@
   },
   "osdseekrewind.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "rewind",
     "active": false,
     "tags": [
@@ -7606,7 +7606,7 @@
   },
   "osdstopfo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "square",
     "active": false,
     "tags": [
@@ -7624,7 +7624,7 @@
   },
   "osdstopnf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "square",
     "active": false,
     "tags": [
@@ -7642,7 +7642,7 @@
   },
   "osdvideofo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "video",
     "active": false,
     "tags": [
@@ -7661,7 +7661,7 @@
   },
   "osdvideonf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "video",
     "active": true,
     "tags": [
@@ -7680,7 +7680,7 @@
   },
   "osdvizfo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chart-no-axes-column-increasing",
     "active": false,
     "tags": [
@@ -7699,7 +7699,7 @@
   },
   "osdviznf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chart-no-axes-column-increasing",
     "active": false,
     "tags": [
@@ -7718,7 +7718,7 @@
   },
   "pandora_tile_focus.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -7736,7 +7736,7 @@
   },
   "play.now.button.back.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -7749,13 +7749,13 @@
       22
     ],
     "rendered": [
-      232,
-      88
+      58,
+      22
     ]
   },
   "play.now.button.focus.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -7768,13 +7768,13 @@
       22
     ],
     "rendered": [
-      232,
-      88
+      58,
+      22
     ]
   },
   "play.now.button.nofocus.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -7787,13 +7787,13 @@
       22
     ],
     "rendered": [
-      232,
-      88
+      58,
+      22
     ]
   },
   "playlist_delete_fo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "x",
     "tags": [
       "native-or-alternate-state",
@@ -7811,7 +7811,7 @@
   },
   "playlist_delete_nf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "x",
     "tags": [
       "native-or-alternate-state",
@@ -7829,7 +7829,7 @@
   },
   "playlist_delete_nf_dimmed.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "x",
     "tags": [
       "native-or-alternate-state"
@@ -7846,7 +7846,7 @@
   },
   "playlist_down_fo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-down",
     "tags": [
       "native-or-alternate-state",
@@ -7864,7 +7864,7 @@
   },
   "playlist_down_nf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-down",
     "tags": [
       "native-or-alternate-state",
@@ -7882,7 +7882,7 @@
   },
   "playlist_down_nf_dimmed.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-down",
     "tags": [
       "native-or-alternate-state"
@@ -7899,7 +7899,7 @@
   },
   "playlist_sub_focus.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -7919,7 +7919,7 @@
   },
   "playlist_sub_focus1.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -7939,7 +7939,7 @@
   },
   "playlist_sub_focus2.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -7960,7 +7960,7 @@
   },
   "playlist_sub_focus3.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -7979,7 +7979,7 @@
   },
   "playlist_sub_focus4.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -7999,7 +7999,7 @@
   },
   "playlist_sub_nofocus.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8019,7 +8019,7 @@
   },
   "playlist_sub_nofocus1.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8040,7 +8040,7 @@
   },
   "playlist_sub_nofocus2.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8060,7 +8060,7 @@
   },
   "playlist_sub_nofocus2_bg.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8080,7 +8080,7 @@
   },
   "playlist_sub_nofocus2_end.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8100,7 +8100,7 @@
   },
   "playlist_sub_nofocus3.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8119,7 +8119,7 @@
   },
   "playlist_sub_nofocus3_end.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8139,7 +8139,7 @@
   },
   "playlist_sub_nofocus4_end.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8159,7 +8159,7 @@
   },
   "playlist_up_fo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-up",
     "tags": [
       "native-or-alternate-state",
@@ -8177,7 +8177,7 @@
   },
   "playlist_up_nf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-up",
     "tags": [
       "native-or-alternate-state",
@@ -8195,7 +8195,7 @@
   },
   "playlist_up_nf_dimmed.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-up",
     "tags": [
       "native-or-alternate-state"
@@ -8212,7 +8212,7 @@
   },
   "previous.arrow.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-left",
     "active": false,
     "tags": [
@@ -8231,7 +8231,7 @@
   },
   "rec_indicator.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "circle",
     "active": false,
     "tags": [
@@ -8250,7 +8250,7 @@
   },
   "restart_button.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8268,7 +8268,7 @@
   },
   "rockstar_playlist.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8286,7 +8286,7 @@
   },
   "rockstar_playlist_small.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8298,13 +8298,13 @@
       64
     ],
     "rendered": [
-      96,
-      96
+      64,
+      64
     ]
   },
   "selected_in_list.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8324,7 +8324,7 @@
   },
   "selected_in_list_music.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8344,7 +8344,7 @@
   },
   "selected_in_list_tvgemist.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8363,7 +8363,7 @@
   },
   "selected_in_list_wide.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8383,7 +8383,7 @@
   },
   "settingsbuttonfo.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8396,13 +8396,13 @@
       39
     ],
     "rendered": [
-      702,
-      96
+      285,
+      39
     ]
   },
   "settingsbuttonnf.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8415,13 +8415,13 @@
       39
     ],
     "rendered": [
-      702,
-      96
+      285,
+      39
     ]
   },
   "shutdown_button.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "power",
     "active": false,
     "tags": [
@@ -8439,7 +8439,7 @@
   },
   "sliderbackground.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "tags": [
       "native-or-alternate-state",
       "texturesliderbar"
@@ -8456,7 +8456,7 @@
   },
   "slidernibfo.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "circle",
     "active": false,
     "tags": [
@@ -8475,7 +8475,7 @@
   },
   "slidernibnf.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "circle",
     "active": false,
     "tags": [
@@ -8494,7 +8494,7 @@
   },
   "star_yellow.png": {
     "focus": false,
-    "kind": "mark",
+    "kind": "native-restored",
     "icon": "star",
     "active": true,
     "tags": [
@@ -8513,7 +8513,7 @@
   },
   "statusbar_back.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "tags": [
       "native-or-alternate-state",
       "texturebg"
@@ -8523,13 +8523,13 @@
       23
     ],
     "rendered": [
-      2480,
-      92
+      620,
+      23
     ]
   },
   "submenu_bg.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "tags": [
       "native-or-alternate-state"
     ],
@@ -8538,13 +8538,13 @@
       30
     ],
     "rendered": [
-      4096,
-      96
+      1280,
+      30
     ]
   },
   "thumb.frame.black.focus.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8562,7 +8562,7 @@
   },
   "togglebutton_off.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": true,
     "status": null,
@@ -8574,13 +8574,13 @@
       28
     ],
     "rendered": [
-      514,
-      96
+      150,
+      28
     ]
   },
   "togglebutton_on.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": true,
     "toggle": true,
     "status": null,
@@ -8594,13 +8594,13 @@
       28
     ],
     "rendered": [
-      514,
-      96
+      150,
+      28
     ]
   },
   "tv_group_bg.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8614,13 +8614,13 @@
       340
     ],
     "rendered": [
-      96,
-      1088
+      30,
+      340
     ]
   },
   "tv_group_bg_focus.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8634,13 +8634,13 @@
       340
     ],
     "rendered": [
-      96,
-      1088
+      30,
+      340
     ]
   },
   "tv_on_button.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8652,13 +8652,13 @@
       33
     ],
     "rendered": [
-      143,
-      96
+      49,
+      33
     ]
   },
   "tv_on_button_focus.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8670,13 +8670,13 @@
       33
     ],
     "rendered": [
-      143,
-      96
+      49,
+      33
     ]
   },
   "tv_rec_focus_button.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8688,13 +8688,13 @@
       30
     ],
     "rendered": [
-      96,
-      96
+      30,
+      30
     ]
   },
   "tv_rec_nofocus_button.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8706,13 +8706,13 @@
       30
     ],
     "rendered": [
-      96,
-      96
+      30,
+      30
     ]
   },
   "tvguide_arrow_left.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-left",
     "tags": [
       "native-or-alternate-state"
@@ -8730,7 +8730,7 @@
   },
   "tvguide_arrow_light_left.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-left",
     "tags": [
       "native-or-alternate-state"
@@ -8748,7 +8748,7 @@
   },
   "tvguide_arrow_light_right.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-right",
     "tags": [
       "native-or-alternate-state"
@@ -8766,7 +8766,7 @@
   },
   "tvguide_arrow_right.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-right",
     "tags": [
       "native-or-alternate-state"
@@ -8784,7 +8784,7 @@
   },
   "tvguide_arrow_selected_left.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-left",
     "tags": [
       "native-or-alternate-state"
@@ -8802,7 +8802,7 @@
   },
   "tvguide_arrow_selected_right.png": {
     "focus": true,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "chevron-right",
     "tags": [
       "native-or-alternate-state"
@@ -8820,7 +8820,7 @@
   },
   "tvguide_button_left.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8840,7 +8840,7 @@
   },
   "tvguide_button_light_left.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8860,7 +8860,7 @@
   },
   "tvguide_button_light_middle.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8880,7 +8880,7 @@
   },
   "tvguide_button_light_right.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8900,7 +8900,7 @@
   },
   "tvguide_button_middle.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8920,7 +8920,7 @@
   },
   "tvguide_button_right.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8940,7 +8940,7 @@
   },
   "tvguide_button_selected_left.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8960,7 +8960,7 @@
   },
   "tvguide_button_selected_middle.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -8980,7 +8980,7 @@
   },
   "tvguide_button_selected_right.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -9000,7 +9000,7 @@
   },
   "tvguide_notify_button.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -9019,7 +9019,7 @@
   },
   "tvguide_recButton_Focus_left.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": "red",
@@ -9039,7 +9039,7 @@
   },
   "tvguide_recButton_Focus_middle.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": "red",
@@ -9059,7 +9059,7 @@
   },
   "tvguide_recButton_Focus_right.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": "red",
@@ -9080,7 +9080,7 @@
   },
   "tvguide_recButton_noFocus_left.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": "red",
@@ -9100,7 +9100,7 @@
   },
   "tvguide_recButton_noFocus_middle.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": "red",
@@ -9120,7 +9120,7 @@
   },
   "tvguide_recButton_noFocus_right.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": "red",
@@ -9139,7 +9139,7 @@
   },
   "tvguide_record_button.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -9159,7 +9159,7 @@
   },
   "tvguide_recordconflict_button.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -9178,7 +9178,7 @@
   },
   "tvguide_recordserie_button.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -9197,7 +9197,7 @@
   },
   "tvguide_recordserie_conflict_button.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -9215,7 +9215,7 @@
     "preserved_original": true
   },
   "tvguide_slider.png": {
-    "kind": "timeline",
+    "kind": "native-restored",
     "tags": [
       "native-or-alternate-state",
       "texture"
@@ -9232,7 +9232,7 @@
   },
   "tvguide_time_bg.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "tags": [
       "native-or-alternate-state",
       "texture"
@@ -9249,7 +9249,7 @@
   },
   "tvseries_SeasonListIcon.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -9261,13 +9261,13 @@
       24
     ],
     "rendered": [
-      384,
-      96
+      96,
+      24
     ]
   },
   "tvseries_SeriesListIcon.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -9279,13 +9279,13 @@
       24
     ],
     "rendered": [
-      384,
-      96
+      96,
+      24
     ]
   },
   "tvseries_UnWatched.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "circle",
     "active": false,
     "tags": [
@@ -9304,7 +9304,7 @@
   },
   "tvseries_UnWatchedNA.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "circle",
     "active": false,
     "tags": [
@@ -9322,7 +9322,7 @@
   },
   "tvseries_Watched.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "check",
     "active": false,
     "tags": [
@@ -9341,7 +9341,7 @@
   },
   "tvseries_WatchedNA.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "check",
     "active": false,
     "tags": [
@@ -9359,7 +9359,7 @@
   },
   "tvseries_focusframe.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -9377,7 +9377,7 @@
   },
   "unselected_in_list.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -9397,7 +9397,7 @@
   },
   "unselected_in_list_music.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -9417,7 +9417,7 @@
   },
   "unselected_in_list_tvgemist.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -9436,7 +9436,7 @@
   },
   "unselected_in_list_wide.png": {
     "focus": false,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -9456,7 +9456,7 @@
   },
   "video_window_focus.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,
@@ -9474,7 +9474,7 @@
   },
   "volume.states.mute.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "volume-x",
     "active": false,
     "tags": [
@@ -9493,7 +9493,7 @@
   },
   "volume.states.png": {
     "focus": false,
-    "kind": "icon",
+    "kind": "native-restored",
     "icon": "volume-2",
     "active": false,
     "tags": [
@@ -9512,7 +9512,7 @@
   },
   "wide_banner_frame_focus.png": {
     "focus": true,
-    "kind": "surface",
+    "kind": "native-restored",
     "active": false,
     "toggle": false,
     "status": null,

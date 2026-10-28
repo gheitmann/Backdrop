@@ -4,6 +4,14 @@ Use this repository as the versioned source for future Backdrop changes. Keep re
 
 ## Start every update here
 
+Beta 1 source/local follow-up: `BETA1-FEEDBACK-FOLLOWUP.md` and the supplied
+v1.0.1 media archive add 76 original control resources to the fidelity manifest.
+Keep native action-menu button focus textures; do not reintroduce auxiliary
+animated focus images, which the tester observed remaining visible after navigation.
+Photos must use its own four lighting assets. Radio uses original paging arrows
+without DWHD scrollbars. Scoped x64 live review, including the final keyboard-heading and radio background
+adjustments, is complete and documented in the follow-up.
+
 Current artwork baseline: read `ALPHA25-FEEDBACK-FOLLOWUP.md` and `ALPHA26-BUILD-REPORT.md` first. Original Backdrop control artwork protected by `Source/Artwork/native-fidelity.json` takes precedence over the historical `LUCIDE-REFRESH.md` generation guidance. Retain the cinematic BasicHome/startup backgrounds and the ALPHA26 thematic Home/Settings backgrounds, current native dimensions and stock-background/editor consistency. Preserve raster aspect ratios and regenerate the test texture cache when dimensions change. Modern variant provenance is recorded separately; do not mix it into the classic baseline. The TV group caption remains static to avoid rotated-marquee flicker.
 
 1. Read this file and `VALIDATION.md`, inspect the current branch and remote changes, then check the target MediaPortal release and matching plugin architecture.

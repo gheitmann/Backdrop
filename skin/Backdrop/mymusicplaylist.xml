@@ -322,162 +322,6 @@
           <visible>Player.HasVideo+!control.isvisible(3337)+Control.IsVisible(50)</visible>
         </control>
         <control>
-          <description>Animated menu focus background</description>
-          <type>image</type>
-          <id>0</id>
-          <posX>806</posX>
-          <posY>338</posY>
-          <width>412</width>
-          <height>42</height>
-          <texture>hiddenmenu_button_fo.png</texture>
-          <visible>Control.HasFocus(2)</visible>
-          <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-        </control>
-        <control>
-          <description>Animated menu focus background</description>
-          <type>image</type>
-          <id>0</id>
-          <posX>806</posX>
-          <posY>380</posY>
-          <width>412</width>
-          <height>42</height>
-          <texture>hiddenmenu_button_fo.png</texture>
-          <visible>Control.HasFocus(20)</visible>
-          <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-        </control>
-        <control>
-          <description>Animated menu focus background</description>
-          <type>image</type>
-          <id>0</id>
-          <posX>806</posX>
-          <posY>422</posY>
-          <width>412</width>
-          <height>42</height>
-          <texture>hiddenmenu_button_fo.png</texture>
-          <visible>Control.HasFocus(30)</visible>
-          <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-        </control>
-        <control>
-          <description>Animated menu focus background</description>
-          <type>image</type>
-          <id>0</id>
-          <posX>806</posX>
-          <posY>464</posY>
-          <width>412</width>
-          <height>42</height>
-          <texture>hiddenmenu_button_fo.png</texture>
-          <visible>Control.HasFocus(10)</visible>
-          <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-        </control>
-        <control>
-          <description>Animated menu focus background</description>
-          <type>image</type>
-          <id>0</id>
-          <posX>806</posX>
-          <posY>506</posY>
-          <width>412</width>
-          <height>42</height>
-          <texture>hiddenmenu_button_fo.png</texture>
-          <visible>Control.HasFocus(21)</visible>
-          <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-        </control>
-        <control>
-          <description>Animated menu focus background</description>
-          <type>image</type>
-          <id>0</id>
-          <posX>806</posX>
-          <posY>548</posY>
-          <width>412</width>
-          <height>42</height>
-          <texture>hiddenmenu_button_fo.png</texture>
-          <visible>Control.HasFocus(22)</visible>
-          <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-        </control>
-        <control>
-          <description>Animated menu focus background</description>
-          <type>image</type>
-          <id>0</id>
-          <posX>806</posX>
-          <posY>590</posY>
-          <width>412</width>
-          <height>42</height>
-          <texture>hiddenmenu_button_fo.png</texture>
-          <visible>Control.HasFocus(9876561)</visible>
-          <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-        </control>
-        <control>
-          <description>Animated menu focus background</description>
-          <type>image</type>
-          <id>0</id>
-          <posX>806</posX>
-          <posY>632</posY>
-          <width>412</width>
-          <height>42</height>
-          <texture>hiddenmenu_button_fo.png</texture>
-          <visible>Control.HasFocus(9876562)</visible>
-          <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-        </control>
-        <control>
-          <description>Animated menu focus background</description>
-          <type>image</type>
-          <id>0</id>
-          <posX>806</posX>
-          <posY>674</posY>
-          <width>412</width>
-          <height>42</height>
-          <texture>hiddenmenu_button_fo.png</texture>
-          <visible>Control.HasFocus(9876563)</visible>
-          <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-        </control>
-        <control>
-          <description>Animated menu focus background</description>
-          <type>image</type>
-          <id>0</id>
-          <posX>806</posX>
-          <posY>716</posY>
-          <width>412</width>
-          <height>42</height>
-          <texture>hiddenmenu_button_fo.png</texture>
-          <visible>Control.HasFocus(12)</visible>
-          <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-        </control>
-        <control>
-          <description>Animated menu focus background</description>
-          <type>image</type>
-          <id>0</id>
-          <posX>806</posX>
-          <posY>758</posY>
-          <width>412</width>
-          <height>42</height>
-          <texture>hiddenmenu_button_fo.png</texture>
-          <visible>Control.HasFocus(28)</visible>
-          <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-        </control>
-        <control>
-          <description>Animated menu focus background</description>
-          <type>image</type>
-          <id>0</id>
-          <posX>806</posX>
-          <posY>800</posY>
-          <width>412</width>
-          <height>42</height>
-          <texture>hiddenmenu_button_fo.png</texture>
-          <visible>Control.HasFocus(27)</visible>
-          <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-        </control>
-        <control>
-          <description>Animated menu focus background</description>
-          <type>image</type>
-          <id>0</id>
-          <posX>806</posX>
-          <posY>842</posY>
-          <width>412</width>
-          <height>42</height>
-          <texture>hiddenmenu_button_fo.png</texture>
-          <visible>Control.HasFocus(29)</visible>
-          <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-        </control>
-        <control>
           <type>group</type>
           <description>group element</description>
           <posX>806</posX>
@@ -495,7 +339,7 @@
             <textcolor>ffffffff</textcolor>
             <colordiffuse>ffffffff</colordiffuse>
             <textcolorNoFocus>90cccccc</textcolorNoFocus>
-            <textureFocus>-</textureFocus>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
             <font>font14BC</font>
             <hover>-</hover>
             <onleft>50</onleft>
@@ -522,7 +366,7 @@
             <textcolor>ffffffff</textcolor>
             <colordiffuse>ffffffff</colordiffuse>
             <textcolorNoFocus>90cccccc</textcolorNoFocus>
-            <textureFocus>-</textureFocus>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
             <font>font14BC</font>
             <hover>-</hover>
             <onleft>50</onleft>
@@ -546,7 +390,7 @@
             <colordiffuse>ffffffff</colordiffuse>
             <textcolorNoFocus>90cccccc</textcolorNoFocus>
             <font>font14BC</font>
-            <textureFocus>-</textureFocus>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
             <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
             <onleft>50</onleft>
             <onright>50</onright>
@@ -574,7 +418,7 @@
             <textcolor>ffffffff</textcolor>
             <colordiffuse>ffffffff</colordiffuse>
             <textcolorNoFocus>90cccccc</textcolorNoFocus>
-            <textureFocus>-</textureFocus>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
             <font>font14BC</font>
             <hover>-</hover>
             <onleft>50</onleft>
@@ -597,7 +441,7 @@
             <textcolor>ffffffff</textcolor>
             <colordiffuse>ffffffff</colordiffuse>
             <textcolorNoFocus>90cccccc</textcolorNoFocus>
-            <textureFocus>-</textureFocus>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
             <font>font14BC</font>
             <hover>-</hover>
             <onleft>50</onleft>
@@ -620,7 +464,7 @@
             <textcolor>ffffffff</textcolor>
             <colordiffuse>ffffffff</colordiffuse>
             <textcolorNoFocus>90cccccc</textcolorNoFocus>
-            <textureFocus>-</textureFocus>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
             <font>font14BC</font>
             <hover>-</hover>
             <onleft>50</onleft>
@@ -643,7 +487,7 @@
             <textcolor>ffffffff</textcolor>
             <colordiffuse>ffffffff</colordiffuse>
             <textcolorNoFocus>90cccccc</textcolorNoFocus>
-            <textureFocus>-</textureFocus>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
             <font>font14BC</font>
             <hyperlink>510</hyperlink>
             <hover>-</hover>
@@ -667,7 +511,7 @@
             <textcolor>ffffffff</textcolor>
             <colordiffuse>ffffffff</colordiffuse>
             <textcolorNoFocus>90cccccc</textcolorNoFocus>
-            <textureFocus>-</textureFocus>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
             <font>font14BC</font>
             <hyperlink>90478</hyperlink>
             <hover>-</hover>
@@ -691,7 +535,7 @@
             <textcolor>ffffffff</textcolor>
             <colordiffuse>ffffffff</colordiffuse>
             <textcolorNoFocus>90cccccc</textcolorNoFocus>
-            <textureFocus>-</textureFocus>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
             <font>font14BC</font>
             <hyperlink>30885</hyperlink>
             <hover>-</hover>
@@ -715,7 +559,7 @@
             <textcolor>ffffffff</textcolor>
             <colordiffuse>ffffffff</colordiffuse>
             <textcolorNoFocus>90cccccc</textcolorNoFocus>
-            <textureFocus>-</textureFocus>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
             <font>font14BC</font>
             <hyperlink>14</hyperlink>
             <hover>-</hover>
@@ -739,7 +583,7 @@
             <textcolor>ffffffff</textcolor>
             <colordiffuse>ffffffff</colordiffuse>
             <textcolorNoFocus>90cccccc</textcolorNoFocus>
-            <textureFocus>-</textureFocus>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
             <font>font14BC</font>
             <hover>-</hover>
             <onleft>50</onleft>
@@ -763,7 +607,7 @@
             <colordiffuse>ffffffff</colordiffuse>
             <textcolorNoFocus>90cccccc</textcolorNoFocus>
             <font>font14BC</font>
-            <textureFocus>-</textureFocus>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
             <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
             <onleft>50</onleft>
             <onright>50</onright>
@@ -791,7 +635,7 @@
             <textcolor>ffffffff</textcolor>
             <colordiffuse>ffffffff</colordiffuse>
             <textcolorNoFocus>90cccccc</textcolorNoFocus>
-            <textureFocus>-</textureFocus>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
             <font>font14BC</font>
             <hover>-</hover>
             <onleft>50</onleft>

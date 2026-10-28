@@ -133,16 +133,8 @@ def check():
         radio = next(c for c in ET.parse(SKIN / name).getroot().findall('.//control') if c.findtext('id') == '18')
         require(radio.findtext('type') == 'checkbutton' and radio.findtext('hyperlink') == '30'
                 and radio.findtext('textureNoFocus') == 'hiddenmenu_button_no_fo.png', f'{name}: radio must use the same neutral row frame as other music controls')
-        root = ET.parse(SKIN / name).getroot()
-        parents = {child: parent for parent in root.iter() for child in parent}
-        radio = next(c for c in root.iter('control') if c.findtext('id') == '18')
-        stack = parents[radio]
-        background = next(c for c in parents[stack].findall('control')
-                          if c.findtext('description') == 'Animated menu focus background'
-                          and 'Control.HasFocus(18)' in c.findtext('visible', ''))
-        require(radio.findtext('textureFocus') == '-'
-                and list(parents[stack]).index(background) < list(parents[stack]).index(stack),
-                f'{name}: radio highlight must render behind the native checkbutton mark')
+        require(radio.findtext('textureFocus') == 'hiddenmenu_button_fo.png',
+                f'{name}: radio checkbutton must own its native focus texture')
         require(not any('Button 18 - Navigating' in c.findtext('description', '')
                         for c in ET.parse(SKIN / name).getroot().findall('.//control')),
                 f'{name}: external radio focus images obscure the state mark')

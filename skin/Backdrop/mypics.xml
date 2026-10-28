@@ -43,7 +43,7 @@
       <width>1920</width>
       <height>1080</height>
       <shouldCache>true</shouldCache>
-      <texture>#(iif(string.equals(#DayNight.Period,'morning'),'Modern/Morning/cinema.png',iif(string.equals(#DayNight.Period,'noon'),'Modern/Noon/cinema.png',iif(string.equals(#DayNight.Period,'day'),'Modern/Day/cinema.png','Modern/home.jpg'))))</texture>
+      <texture>#(iif(string.equals(#DayNight.Period,'morning'),'Modern/Morning/photos.png',iif(string.equals(#DayNight.Period,'noon'),'Modern/Noon/photos.png',iif(string.equals(#DayNight.Period,'day'),'Modern/Day/photos.png','Modern/photos.jpg'))))</texture>
       <colordiffuse>ff707070</colordiffuse>
       <visible>![control.hasthumb(132500)]</visible>
     </control>
@@ -313,78 +313,6 @@
           <visible>Player.HasVideo+!control.isvisible(3337)+Control.IsVisible(50)</visible>
         </control>
         <control>
-          <description>Animated menu focus background</description>
-          <type>image</type>
-          <id>0</id>
-          <posX>800</posX>
-          <posY>340</posY>
-          <width>375</width>
-          <height>42</height>
-          <texture>hiddenmenu_button_fo.png</texture>
-          <visible>Control.HasFocus(2)</visible>
-          <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-        </control>
-        <control>
-          <description>Animated menu focus background</description>
-          <type>image</type>
-          <id>0</id>
-          <posX>800</posX>
-          <posY>382</posY>
-          <width>375</width>
-          <height>42</height>
-          <texture>hiddenmenu_button_fo.png</texture>
-          <visible>Control.HasFocus(3)</visible>
-          <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-        </control>
-        <control>
-          <description>Animated menu focus background</description>
-          <type>image</type>
-          <id>0</id>
-          <posX>800</posX>
-          <posY>424</posY>
-          <width>375</width>
-          <height>42</height>
-          <texture>hiddenmenu_button_fo.png</texture>
-          <visible>Control.HasFocus(5)</visible>
-          <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-        </control>
-        <control>
-          <description>Animated menu focus background</description>
-          <type>image</type>
-          <id>0</id>
-          <posX>800</posX>
-          <posY>466</posY>
-          <width>375</width>
-          <height>42</height>
-          <texture>hiddenmenu_button_fo.png</texture>
-          <visible>Control.HasFocus(6)</visible>
-          <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-        </control>
-        <control>
-          <description>Animated menu focus background</description>
-          <type>image</type>
-          <id>0</id>
-          <posX>800</posX>
-          <posY>508</posY>
-          <width>375</width>
-          <height>42</height>
-          <texture>hiddenmenu_button_fo.png</texture>
-          <visible>Control.HasFocus(7)</visible>
-          <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-        </control>
-        <control>
-          <description>Animated menu focus background</description>
-          <type>image</type>
-          <id>0</id>
-          <posX>800</posX>
-          <posY>550</posY>
-          <width>375</width>
-          <height>42</height>
-          <texture>hiddenmenu_button_fo.png</texture>
-          <visible>Control.HasFocus(8)</visible>
-          <animation effect="slide" start="0,-12" end="0,0" time="160" reversible="false">Visible</animation>
-        </control>
-        <control>
           <type>group</type>
           <description>group element</description>
           <posX>800</posX>
@@ -416,7 +344,7 @@
             <textvalign>middle</textvalign>
             <textYOff>0</textYOff>
             <textXOff>16</textXOff>
-            <textureFocus>-</textureFocus>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
             <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           </control>
           <control>
@@ -438,7 +366,7 @@
             <textvalign>middle</textvalign>
             <textYOff>0</textYOff>
             <textXOff>16</textXOff>
-            <textureFocus>-</textureFocus>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
             <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
             <offsetSortButtonX>333</offsetSortButtonX>
             <offsetSortButtonY>6</offsetSortButtonY>
@@ -470,7 +398,7 @@
             <textvalign>middle</textvalign>
             <textYOff>0</textYOff>
             <textXOff>16</textXOff>
-            <textureFocus>-</textureFocus>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
             <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           </control>
           <control>
@@ -493,7 +421,7 @@
             <textvalign>middle</textvalign>
             <textYOff>0</textYOff>
             <textXOff>16</textXOff>
-            <textureFocus>-</textureFocus>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
             <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           </control>
           <control>
@@ -516,7 +444,7 @@
             <textvalign>middle</textvalign>
             <textYOff>0</textYOff>
             <textXOff>16</textXOff>
-            <textureFocus>-</textureFocus>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
             <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           </control>
           <control>
@@ -540,7 +468,7 @@
             <textvalign>middle</textvalign>
             <textYOff>0</textYOff>
             <textXOff>16</textXOff>
-            <textureFocus>-</textureFocus>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
             <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           </control>
         </control>
