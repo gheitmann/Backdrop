@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <window>
   <id>764</id>
-  <defaultcontrol>3000</defaultcontrol>
+  <defaultcontrol>0</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <disabletopbar>no</disabletopbar>
   <controls>
@@ -178,40 +178,6 @@
       <height>50</height>
       <font>font14</font>
       <textcolor>ffffffff</textcolor>
-    </control>
-    <control>
-      <description>Switch to left channel</description>
-      <type>button</type>
-      <id>3000</id>
-      <posX>390</posX>
-      <posY>850</posY>
-      <width>100</width>
-      <height>70</height>
-      <label>-</label>
-      <textureFocus>arrow_round_left_focus.png</textureFocus>
-      <textureNoFocus>arrow_round_left_nofocus.png</textureNoFocus>
-      <onleft>3001</onleft>
-      <onright>3001</onright>
-      <onup>3000</onup>
-      <ondown>3000</ondown>
-      <action>94</action>
-    </control>
-    <control>
-      <description>Switch to right channel</description>
-      <type>button</type>
-      <id>3001</id>
-      <posX>620</posX>
-      <posY>850</posY>
-      <width>100</width>
-      <height>70</height>
-      <label>-</label>
-      <textureFocus>arrow_round_right_focus.png</textureFocus>
-      <textureNoFocus>arrow_round_right_nofocus.png</textureNoFocus>
-      <onleft>3000</onleft>
-      <onright>3000</onright>
-      <onup>3001</onup>
-      <ondown>3001</ondown>
-      <action>95</action>
     </control>
   </controls>
 </window>

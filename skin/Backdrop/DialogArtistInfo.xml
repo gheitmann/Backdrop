@@ -24,7 +24,7 @@
       <posY>110</posY>
       <label>#ArtistInfo.Artist</label>
       <width>750</width>
-      <font>font16BC</font>
+      <font>font18BC</font>
       <textcolor>ff7FB1E5</textcolor>
       <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="350">WindowClose</animation>

@@ -110,7 +110,7 @@
           <type>filmstrip</type>
           <dimColor>90ffffff</dimColor>
           <id>50</id>
-          <onrigth>50</onrigth>
+          <onright>50</onright>
           <onleft>50</onleft>
           <onup>2</onup>
           <ondown>2</ondown>
@@ -130,15 +130,12 @@
           <itemHeight>195</itemHeight>
           <textureWidth>330</textureWidth>
           <textureHeight>218</textureHeight>
+          <imageFolder>-</imageFolder>
           <imageFolderFocus>-</imageFolderFocus>
-          <frame mask="episode.frame2.background.png">episode.frame2.png</frame>
-          <frameFocus mask="episode.frame2.background.png">episode.frame2.png</frameFocus>
-          <!--<frame>thumb.frame.small.png</frame>
-					<frameFocus>thumb.frame.small.png</frameFocus>-->
           <thumbs mask="episode.frame2.background.png" flipY="true" diffuse="diffuseoverlay.png" />
           <InfoImage>-</InfoImage>
           <background>-</background>
-          <showFrame>yes</showFrame>
+          <showFrame>no</showFrame>
           <keepaspectratio>yes</keepaspectratio>
           <centered>yes</centered>
           <showFolder>no</showFolder>

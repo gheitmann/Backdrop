@@ -34,13 +34,14 @@
       "prompt": "Use case: lighting-weather. Edit the provided image into its DAYTIME counterpart for a matching day/night wallpaper pair. Preserve exact camera viewpoint, architecture, framing, object positions, materials and subject identity. Wide 16:9. Replace night/dusk with clear natural late-morning daylight, blue daytime sky, soft sunlight and realistic neutral daylight interiors. Turn down decorative amber lamps and night glows. Keep elegant walnut/navy materials and moderately contrasted furniture; do not wash out dark surfaces or make a white theme. Keep the lower edge quiet for menu text. No people, no new objects, no new text, no overlays. Retain any existing signage exactly. Photorealistic."
     },
     "Modern/Day/photos.png": {
-      "sha256": "10d5475376d7ddfc210c69850acf9f9c13d16a01b85ac6edc4a1496e471504df",
+      "sha256": "f9c9014b44886eabe8e591e04d8d624c01b0d28c05afc5f8c07aa25d52bfb6c0",
       "dimensions": [
         1672,
         941
       ],
       "reference": "skin/Backdrop/Media/Modern/photos.jpg",
-      "prompt": "Use case: lighting-weather. Edit the provided image into its DAYTIME counterpart for a matching day/night wallpaper pair. Preserve exact camera viewpoint, architecture, framing, object positions, materials and subject identity. Wide 16:9. Replace night/dusk with clear natural late-morning daylight, blue daytime sky, soft sunlight and realistic neutral daylight interiors. Turn down decorative amber lamps and night glows. Keep elegant walnut/navy materials and moderately contrasted furniture; do not wash out dark surfaces or make a white theme. Keep the lower edge quiet for menu text. No people, no new objects, no new text, no overlays. Retain any existing signage exactly. Photorealistic."
+      "prompt": "Use case: lighting-weather. Edit the provided image into its DAYTIME counterpart for a matching day/night wallpaper pair. Preserve exact camera viewpoint, architecture, framing, object positions, materials and subject identity. Wide 16:9. Replace night/dusk with clear natural late-morning daylight, blue daytime sky, soft sunlight and realistic neutral daylight interiors. Turn down decorative amber lamps and night glows. Keep elegant walnut/navy materials and moderately contrasted furniture; do not wash out dark surfaces or make a white theme. Keep the lower edge quiet for menu text. No people, no new objects, no new text, no overlays. Retain any existing signage exactly. Photorealistic.",
+      "edit": "2026-10-29: built-in image_gen window skyline repair and deeper central focus; matching lighting preserved."
     },
     "Modern/Day/gaming.png": {
       "sha256": "bda6f64f4a26617b91c601b70489f28699561c9e43fb819851a59d30df98d502",
@@ -151,22 +152,24 @@
       "prompt": "Use case: lighting-weather. Edit target: the provided existing Backdrop wallpaper. Create a matching NOON counterpart. Preserve exact camera, architecture, furniture, framing, scene identity, subject positions and materials. Wide cinematic 16:9. No people, UI, new objects, labels, overlays or logos. Retain existing signage exactly. Photorealistic. Keep lower edge usable for a dark menu, retain rich dark walnut/navy materials and natural contrast. Bright midday around 12:30: high overhead sun, clean blue sky, short crisp shadows, neutral balanced whites, clear fresh visibility outside, abundant natural light in interiors, lamps visually subordinate. Clearly distinguish this from warm morning and night. Avoid washed-out whites or changing the dark furniture."
     },
     "Modern/Morning/photos.png": {
-      "sha256": "b878e3c837b79f826ce8d9e0e06ffe0018aaa1ef9a20d17fd4fa7ee5aaccd22f",
+      "sha256": "0a655d1fe0f0320270475f15338a28f4d20e08062bdadd971fd4cd814217191f",
       "dimensions": [
         1672,
         941
       ],
       "reference": "skin/Backdrop/Media/Modern/Day/photos.png",
-      "prompt": "Use case: lighting-weather. Edit target: the provided existing Backdrop wallpaper. Create a matching MORNING counterpart. Preserve exact camera, architecture, furniture, framing, scene identity, subject positions and materials. Wide cinematic 16:9. No people, UI, new objects, labels, overlays or logos. Retain existing signage exactly. Photorealistic. Keep lower edge usable for a dark menu, retain rich dark walnut/navy materials and natural contrast. Early morning around 07:00: soft low-angle golden sunlight, long gentle shadows, delicate atmospheric haze outside, fresh quiet dawn-after-sunrise mood, warm highlights and cool blue shadow tones. Clearly distinguish this from neutral daytime; avoid dusk, orange night lighting, or dark night sky."
+      "prompt": "Use case: lighting-weather. Edit target: the provided existing Backdrop wallpaper. Create a matching MORNING counterpart. Preserve exact camera, architecture, furniture, framing, scene identity, subject positions and materials. Wide cinematic 16:9. No people, UI, new objects, labels, overlays or logos. Retain existing signage exactly. Photorealistic. Keep lower edge usable for a dark menu, retain rich dark walnut/navy materials and natural contrast. Early morning around 07:00: soft low-angle golden sunlight, long gentle shadows, delicate atmospheric haze outside, fresh quiet dawn-after-sunrise mood, warm highlights and cool blue shadow tones. Clearly distinguish this from neutral daytime; avoid dusk, orange night lighting, or dark night sky.",
+      "edit": "2026-10-29: built-in image_gen window skyline repair and deeper central focus; matching lighting preserved."
     },
     "Modern/Noon/photos.png": {
-      "sha256": "0bb824725aecbce504028a2549d7d049597d95fbad7ff8706444d613c71c9e1d",
+      "sha256": "88338397962790eeccf09f2bbcd89eda85d688ba987e18475845cf4bfe96ed97",
       "dimensions": [
         1672,
         941
       ],
       "reference": "skin/Backdrop/Media/Modern/Day/photos.png",
-      "prompt": "Use case: lighting-weather. Edit target: the provided existing Backdrop wallpaper. Create a matching NOON counterpart. Preserve exact camera, architecture, furniture, framing, scene identity, subject positions and materials. Wide cinematic 16:9. No people, UI, new objects, labels, overlays or logos. Retain existing signage exactly. Photorealistic. Keep lower edge usable for a dark menu, retain rich dark walnut/navy materials and natural contrast. Bright midday around 12:30: high overhead sun, clean blue sky, short crisp shadows, neutral balanced whites, clear fresh visibility outside, abundant natural light in interiors, lamps visually subordinate. Clearly distinguish this from warm morning and night. Avoid washed-out whites or changing the dark furniture."
+      "prompt": "Use case: lighting-weather. Edit target: the provided existing Backdrop wallpaper. Create a matching NOON counterpart. Preserve exact camera, architecture, furniture, framing, scene identity, subject positions and materials. Wide cinematic 16:9. No people, UI, new objects, labels, overlays or logos. Retain existing signage exactly. Photorealistic. Keep lower edge usable for a dark menu, retain rich dark walnut/navy materials and natural contrast. Bright midday around 12:30: high overhead sun, clean blue sky, short crisp shadows, neutral balanced whites, clear fresh visibility outside, abundant natural light in interiors, lamps visually subordinate. Clearly distinguish this from warm morning and night. Avoid washed-out whites or changing the dark furniture.",
+      "edit": "2026-10-29: built-in image_gen window skyline repair and deeper central focus; matching lighting preserved."
     },
     "Modern/Morning/gaming.png": {
       "sha256": "3a7944029f7db0bb003c3505358f45cb53a7ba600101ab1f63ab6d140b57644d",
@@ -307,6 +310,7 @@
     "infoservice.xml": 1,
     "movingpictures.xml": 1,
     "mp139.common.settings.xml": 1,
+    "mp139.myradioguide.xml": 1,
     "mp139.mytvguide.xml": 1,
     "mp139.RadioPlayingNow.xml": 1,
     "myextensions.xml": 1,
@@ -318,6 +322,7 @@
     "mypics.xml": 1,
     "myplugins.xml": 1,
     "myradio.xml": 1,
+    "myradioguide.xml": 1,
     "myradiorecorded.xml": 1,
     "myradiosearch.xml": 1,
     "myrss.xml": 1,

@@ -22,6 +22,7 @@ jobs:
       - run: python tools/check_menu_layout.py
       - run: python tools/check_secondary_layout.py
       - run: python tools/check_beta1_feedback.py
+      - run: python tools/check_beta2_feedback.py
       - run: python tools/check_day_night.py
       - run: python tools/package.py
       - uses: actions/upload-artifact@v4

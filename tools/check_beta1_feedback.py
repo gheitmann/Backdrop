@@ -41,13 +41,11 @@ for name in ('myradio.xml','mp139.myradio.xml','myradiosearch.xml','mp139.myradi
 for name in ('RadioPlayingNow.xml','mp139.RadioPlayingNow.xml'):
     page=controls(name)
     buttons={c.findtext('id'):c for c in page if c.findtext('type')=='button'}
-    assert set(buttons)=={'3000','3001'}
-    assert buttons['3000'].findtext('action')=='94' and buttons['3001'].findtext('action')=='95'
-    assert all(b.findtext(edge) in buttons for b in buttons.values() for edge in ('onup','ondown','onleft','onright'))
+    assert not buttons, 'Channel-change arrows intentionally omitted after BETA2 feedback'
     assert 'common.time.xml' in [n.text for n in ET.parse(SKIN/name).getroot().iter('import')]
     for c in page:
         for key in ('texture','texturebg','midtexture','textureFocus','textureNoFocus'):
             value=c.findtext(key,'')
             assert 'MP139' not in value,(name,value)
             if value and not value.startswith(('#','-')):assert (SKIN/'Media'/value).is_file(),value
-print('PASS: 76 original textures; native focus ownership; modal keyboard guards; four Photos backgrounds; radio fallback icons, paging and native player commands.')
+print('PASS: 76 original textures; native focus ownership; modal keyboard guards; four Photos backgrounds; radio fallback icons, paging and omitted channel arrows.')

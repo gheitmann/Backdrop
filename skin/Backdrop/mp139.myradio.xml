@@ -14,6 +14,12 @@
       <height>1080</height>
     </control>
     <control>
+      <description>Radio list readability panel</description>
+      <type>image</type><id>0</id><posX>95</posX><posY>238</posY><width>1175</width><height>774</height>
+      <texture>black.png</texture><colordiffuse>b0000000</colordiffuse><visible>facadeview.list|facadeview.album</visible>
+    </control>
+
+    <control>
       <description>Title background</description>
       <type>image</type>
       <id>0</id>

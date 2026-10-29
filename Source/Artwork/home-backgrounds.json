@@ -48,9 +48,9 @@
     },
     "photos": {
       "file": "Modern/photos.jpg",
-      "sha256": "53b584592a4abeb5ac98eefc00358de049b0c1cf8898e28445c9effc662b05cb",
-      "source": "Source/Artwork/cinematic-night/photos-beta2.png",
-      "source_sha256": "a194c81a61f4cb755524788d3cd31c3da2afb4d8e69ef416468055ec85180cb3",
+      "sha256": "7bc5b41c02b9139ddcf6cbc66d7141c2f8b2c5cc93aeca248b55be9369a30c08",
+      "source": "Source/Artwork/photos-window-repair/night.png",
+      "source_sha256": "86598eeca85780a630073eae68a16620f6f0211c2e6ed68ce54d5dc6cd3c9169",
       "source_dimensions": [
         1672,
         941
@@ -59,7 +59,7 @@
         1920,
         1080
       ],
-      "edit": "2026-10-29: built-in image_gen edit restoring deeper focus and clear central chair, books, bridge and buildings; original night composition and lighting retained. Other lighting variants unchanged."
+      "edit": "2026-10-29: localized window skyline repair, preserving approved sharpness and lighting."
     },
     "gaming": {
       "file": "Modern/gaming.jpg",

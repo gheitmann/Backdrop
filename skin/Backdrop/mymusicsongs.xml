@@ -825,19 +825,6 @@
           <visible>control.isvisible(3337)+Player.HasAudio+Control.IsVisible(50)</visible>
         </control>
         <control>
-          <description>Now Playing Button Animation</description>
-          <type>image</type>
-          <id>0</id>
-          <posX>962</posX>
-          <posY>303</posY>
-          <width>70</width>
-          <height>27</height>
-          <shouldCache>true</shouldCache>
-          <texture>play.now.button.back.png</texture>
-          <animation effect="fade" time="450" delay="100" tween="cubic" easing="inout" condition="true" pulse="true">Conditional</animation>
-          <visible>control.isvisible(3337)+Player.HasAudio+Control.IsVisible(50)</visible>
-        </control>
-        <control>
           <description>Video Window Button</description>
           <type>button</type>
           <id>991799</id>
@@ -853,19 +840,6 @@
           <onleft>50</onleft>
           <onright>50</onright>
           <animation effect="fade" delay="500" start="100" end="0" time="50" reversible="true">Hidden</animation>
-          <visible>Player.HasVideo+!control.isvisible(3337)+Control.IsVisible(50)</visible>
-        </control>
-        <control>
-          <description>Now Playing Button Animation</description>
-          <type>image</type>
-          <id>0</id>
-          <posX>962</posX>
-          <posY>303</posY>
-          <width>70</width>
-          <height>27</height>
-          <shouldCache>true</shouldCache>
-          <texture>play.now.button.back.png</texture>
-          <animation effect="fade" time="450" delay="100" tween="cubic" easing="inout" condition="true" pulse="true">Conditional</animation>
           <visible>Player.HasVideo+!control.isvisible(3337)+Control.IsVisible(50)</visible>
         </control>
         <control>

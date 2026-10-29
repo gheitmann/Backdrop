@@ -1,5 +1,11 @@
 # Current validation and historical evidence
 
+Unreleased BETA2 follow-up (30 October 2026): eight Python commands and the
+native x64 Day/Night probe (1,448 assertions, 48 bindings) passed. Scoped live
+review confirmed populated radio-guide navigation and the Photos filmstrip.
+See [BETA2 feedback follow-up](BETA2-FEEDBACK-FOLLOWUP.md) for limits; this is
+not a new release or full runtime certification.
+
 BETA2 (29 October 2026): eight static checks, 2,442/2,442 package and isolated
 native-copy comparisons, 21/21 setup bundle entries and final EXE VerifyOnly
 on 2/2 architectures passed. See [BETA2 build report](BETA2-BUILD-REPORT.md).

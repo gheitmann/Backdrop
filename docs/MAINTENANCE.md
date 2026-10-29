@@ -4,6 +4,11 @@ Use this repository as the versioned source for future Backdrop changes. Keep re
 
 ## Start every update here
 
+Unreleased BETA2 feedback follow-up: read `BETA2-FEEDBACK-FOLLOWUP.md`.
+The active radio guide now shares the lower TV Guide geometry. Keep Photos
+filmstrip frame plates disabled, the repaired four lighting masters, and the
+requested omission of Radio Now Playing channel arrows.
+
 Beta 1 source/local follow-up: `BETA1-FEEDBACK-FOLLOWUP.md` and the supplied
 v1.0.1 media archive add 76 original control resources to the fidelity manifest.
 Keep native action-menu button focus textures; do not reintroduce auxiliary
@@ -23,7 +28,7 @@ Current artwork baseline: read `ALPHA25-FEEDBACK-FOLLOWUP.md` and `ALPHA26-BUILD
 7. Keep regular-page topbar changes selective. Dialog, fullscreen, OSD, calibration, and screensaver behavior needs separate review.
 8. Preserve fixed separators instead of unsupported `#scroll.wrap` tokens.
 
-The skin settings page omits the DefaultWideHD BasicHome editor and the ineffective EPG row selector. Backdrop has its own external editor. The TV guide uses the original lower seven-row layout from ALPHA12; the radio guide retains its prior layout.
+The skin settings page omits the DefaultWideHD BasicHome editor and the ineffective EPG row selector. Backdrop has its own external editor. TV and active radio guides use the original lower seven-row layout from ALPHA12.
 
 ## ALPHA6 lessons
 

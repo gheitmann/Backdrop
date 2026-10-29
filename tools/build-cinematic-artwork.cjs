@@ -21,7 +21,7 @@ async function main() {
   fs.mkdirSync(path.join(output, 'Modern'), {recursive:true});
   const photos = {};
   for (const name of ['cinema', 'tv', 'studio', 'photos', 'gaming', 'plugins']) {
-    const source = path.join(master, name === 'photos' ? 'photos-beta2.png' : name + '.png');
+    const source = (name === 'photos' ? path.join(root, 'Source/Artwork/photos-window-repair/night.png') : path.join(master, name + '.png'));
     const metadata = await sharp(source).metadata();
     // No stretching: cover-fit with a fixed central crop. Masters remain untouched.
     const jpg = await sharp(source).resize(width, height, {fit:'cover', position:'centre'}).jpeg({quality:94, chromaSubsampling:'4:4:4'}).toBuffer();
