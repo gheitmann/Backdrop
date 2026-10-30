@@ -1,5 +1,10 @@
 # Current validation and historical evidence
 
+BETA3 (30 October 2026): 2,442/2,442 package files and 21/21 private bundle
+entries matched. Final single EXE VerifyOnly passed on x64 and x86 (2/2
+architectures). See [BETA3 build verification](BETA3-BUILD-REPORT.md) and its
+explicit live-review limits.
+
 Unreleased BETA2 follow-up (30 October 2026): eight Python commands and the
 native x64 Day/Night probe (1,448 assertions, 48 bindings) passed. Scoped live
 review confirmed populated radio-guide navigation and the Photos filmstrip.
