@@ -14,9 +14,10 @@ def main():
     parser.add_argument('--output', type=Path, default=ROOT / 'dist/Backdrop-InstallerUI-ALPHA11.zip')
     args = parser.parse_args()
     files = {name: args.build / name for name in (
-        'BackdropInstaller.exe', 'Backdrop.InstallerPresentation.dll', 'PresentationProbe.exe',
+        'BackdropInstaller.x86.exe', 'BackdropInstaller.x64.exe', 'Backdrop.InstallerPresentation.dll',
+        'PresentationProbe.x86.exe', 'PresentationProbe.x64.exe',
         'PatchInstaller.exe', 'Mono.Cecil.dll')}
-    for name in ('Initialize.ps1', 'Find-MediaPortal.ps1', 'Start-BackdropInstaller.ps1', 'Install Backdrop.cmd'):
+    for name in ('Initialize.ps1', 'Find-MediaPortal.ps1', 'Get-MediaPortalArchitecture.ps1', 'Start-BackdropInstaller.ps1', 'Install Backdrop.cmd'):
         files[name] = ROOT / 'Source/InstallerUi' / name
     if args.package:
         if args.package.suffix.lower() != '.mpe1' or not zipfile.is_zipfile(args.package):

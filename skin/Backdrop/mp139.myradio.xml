@@ -1,10 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<?xml version='1.0' encoding='utf-8'?>
 <window>
   <id>30</id>
   <defaultcontrol>50</defaultcontrol>
   <allowoverlay>[facadeview.list|facadeview.filmstrip|facadeview.coverflow]</allowoverlay>
-  <!--define>#header.label:#currentmodule  ·  #Radio.Listen.Group</define-->
   <define>#header.hover:MP139\hover_my radio.png</define>
   <controls>
     <control>
@@ -16,6 +14,12 @@
       <height>1080</height>
     </control>
     <control>
+      <description>Radio list readability panel</description>
+      <type>image</type><id>0</id><posX>95</posX><posY>238</posY><width>1175</width><height>774</height>
+      <texture>black.png</texture><colordiffuse>b0000000</colordiffuse><visible>facadeview.list|facadeview.album</visible>
+    </control>
+
+    <control>
       <description>Title background</description>
       <type>image</type>
       <id>0</id>
@@ -26,7 +30,6 @@
       <texture>MP139\overlay_top.png</texture>
       <colordiffuse>ddffffff</colordiffuse>
     </control>
-    <!--import>common.window.xml</import-->
     <import>mp139.common.time.xml</import>
     <control>
       <description>General Overlay</description>
@@ -55,20 +58,18 @@
       <description>Itemcount CurrentModule</description>
       <type>label</type>
       <id>0</id>
-      <posX>1869</posX>
-      <posY>16</posY>
-      <label>#selectedindex/#itemcount #currentmodule</label>
+      <posX>1890</posX>
+      <posY>140</posY>
+      <label>#selectedindex/#itemcount</label>
       <align>right</align>
-      <font>mp139.RSS</font>
-      <textcolor>lightgray</textcolor>
+      <font>font12</font>
+      <textcolor>ff7FB1E5</textcolor>
       <shadowAngle>10</shadowAngle>
       <shadowDistance>2</shadowDistance>
       <shadowColor>ff000000</shadowColor>
       <disabledcolor>90ffffff</disabledcolor>
+      <height>38</height>
     </control>
-    <!-- *************************************************************************************************** -->
-    <!-- ****************************  Corrrect Display of current group  ********************************** -->
-    <!-- *************************************************************************************************** -->
     <control>
       <type>fadelabel</type>
       <description>group usw.</description>
@@ -77,7 +78,7 @@
       <posY>54</posY>
       <width>1620</width>
       <align>left</align>
-      <label>#currentmodule  ·  #(L(971)): #Radio.Folder</label>
+      <label>#(L(665)) | #(L(971)): #Radio.Folder</label>
       <align>left</align>
       <font>mp139.Label</font>
       <textcolor>lightgray</textcolor>
@@ -106,9 +107,6 @@
       <shadowDistance>0</shadowDistance>
       <shadowColor />
     </control>
-    <!-- *************************************************************************************************** -->
-    <!-- *************************************  The Hidden Menu  ******************************************* -->
-    <!-- *************************************************************************************************** -->
     <control>
       <type>actiongroup</type>
       <description>action menu</description>
@@ -128,7 +126,7 @@
         <id>0</id>
         <width>1920</width>
         <height>1080</height>
-        <texture>MP139\white.png</texture>
+        <texture>white.png</texture>
         <colordiffuse>50005eef</colordiffuse>
       </control>
       <control>
@@ -170,10 +168,10 @@
           <textYOff>9</textYOff>
           <textalign>left</textalign>
           <textvalign>middle</textvalign>
-          <textureUp>MP139\arrow_round_up_nofocus.png</textureUp>
-          <textureUpFocus>MP139\arrow_round_up_focus.png</textureUpFocus>
-          <textureDown>MP139\arrow_round_down_nofocus.png</textureDown>
-          <textureDownFocus>MP139\arrow_round_down_focus.png</textureDownFocus>
+          <textureUp>arrow_round_up_nofocus.png</textureUp>
+          <textureUpFocus>arrow_round_up_focus.png</textureUpFocus>
+          <textureDown>arrow_round_down_nofocus.png</textureDown>
+          <textureDownFocus>arrow_round_down_focus.png</textureDownFocus>
           <spinWidth>36</spinWidth>
           <spinHeight>36</spinHeight>
           <spinXOff>13</spinXOff>
@@ -195,8 +193,8 @@
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
           <shadowColor />
-          <textureFocus>MP139\button_focus.png</textureFocus>
-          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+          <textureFocus>button_focus.png</textureFocus>
+          <textureNoFocus>button_nofocus.png</textureNoFocus>
           <scrollStartDelaySec>5</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>
         </control>
@@ -213,12 +211,12 @@
           <textYOff>9</textYOff>
           <textalign>left</textalign>
           <textvalign>middle</textvalign>
-          <textureFocus>MP139\button_focus.png</textureFocus>
-          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
-          <textureAscending>MP139\arrow_round_up_nofocus.png</textureAscending>
-          <textureAscendingFocused>MP139\arrow_round_up_focus.png</textureAscendingFocused>
-          <textureDescending>MP139\arrow_round_down_nofocus.png</textureDescending>
-          <textureDescendingFocused>MP139\arrow_round_down_focus.png</textureDescendingFocused>
+          <textureFocus>button_focus.png</textureFocus>
+          <textureNoFocus>button_nofocus.png</textureNoFocus>
+          <textureAscending>arrow_round_up_nofocus.png</textureAscending>
+          <textureAscendingFocused>arrow_round_up_focus.png</textureAscendingFocused>
+          <textureDescending>arrow_round_down_nofocus.png</textureDescending>
+          <textureDescendingFocused>arrow_round_down_focus.png</textureDescendingFocused>
           <offsetSortButtonX>330</offsetSortButtonX>
           <offsetSortButtonY>10</offsetSortButtonY>
           <offsetSortButtonWidth>30</offsetSortButtonWidth>
@@ -251,8 +249,8 @@
           <textYOff>1</textYOff>
           <textalign>left</textalign>
           <textvalign>middle</textvalign>
-          <textureFocus>MP139\button_focus.png</textureFocus>
-          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+          <textureFocus>button_focus.png</textureFocus>
+          <textureNoFocus>button_nofocus.png</textureNoFocus>
           <scrollStartDelaySec>5</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>
           <font>mp139.Label</font>
@@ -282,8 +280,8 @@
           <textYOff>1</textYOff>
           <textalign>left</textalign>
           <textvalign>middle</textvalign>
-          <textureFocus>MP139\button_focus.png</textureFocus>
-          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+          <textureFocus>button_focus.png</textureFocus>
+          <textureNoFocus>button_nofocus.png</textureNoFocus>
           <scrollStartDelaySec>5</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>
           <font>mp139.Label</font>
@@ -313,8 +311,8 @@
           <textYOff>1</textYOff>
           <textalign>left</textalign>
           <textvalign>middle</textvalign>
-          <textureFocus>MP139\button_focus.png</textureFocus>
-          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+          <textureFocus>button_focus.png</textureFocus>
+          <textureNoFocus>button_nofocus.png</textureNoFocus>
           <scrollStartDelaySec>5</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>
           <font>mp139.Label</font>
@@ -344,8 +342,8 @@
           <textYOff>1</textYOff>
           <textalign>left</textalign>
           <textvalign>middle</textvalign>
-          <textureFocus>MP139\button_focus.png</textureFocus>
-          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+          <textureFocus>button_focus.png</textureFocus>
+          <textureNoFocus>button_nofocus.png</textureNoFocus>
           <scrollStartDelaySec>5</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>
           <font>mp139.Label</font>
@@ -375,8 +373,8 @@
           <textYOff>1</textYOff>
           <textalign>left</textalign>
           <textvalign>middle</textvalign>
-          <textureFocus>MP139\button_focus.png</textureFocus>
-          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+          <textureFocus>button_focus.png</textureFocus>
+          <textureNoFocus>button_nofocus.png</textureNoFocus>
           <scrollStartDelaySec>5</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>
           <font>mp139.Label</font>
@@ -406,8 +404,8 @@
           <textYOff>1</textYOff>
           <textalign>left</textalign>
           <textvalign>middle</textvalign>
-          <textureFocus>MP139\button_focus.png</textureFocus>
-          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+          <textureFocus>button_focus.png</textureFocus>
+          <textureNoFocus>button_nofocus.png</textureNoFocus>
           <scrollStartDelaySec>5</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>
           <font>mp139.Label</font>
@@ -424,9 +422,6 @@
       </control>
     </control>
     <import>mp139.common.facade.music.xml</import>
-    <!-- *************************************************************************************************** -->
-    <!-- *************************  The Radio Logo at the right  ******************************************* -->
-    <!-- *************************************************************************************************** -->
     <control>
       <id>1</id>
       <type>image</type>

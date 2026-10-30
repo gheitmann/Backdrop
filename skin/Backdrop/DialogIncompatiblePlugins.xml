@@ -80,7 +80,10 @@
       <textureFocus>MP139\button_focus.png</textureFocus>
       <textureNoFocus>MP139\button_focus.png</textureNoFocus>
       <label>#(string.formatcount(iif(eq(#countdownseconds,''),0,#countdownseconds), 1912))</label>
-      <textalign>CENTER</textalign>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textalign>center</textalign>
+      <textXOff>0</textXOff>
     </control>
   </controls>
 </window>

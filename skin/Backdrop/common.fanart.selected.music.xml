@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
   <define>#useSelectedFanart:Yes</define>
   <controls>
@@ -36,7 +36,8 @@
       <width>1920</width>
       <height>1080</height>
       <shouldCache>true</shouldCache>
-      <texture>default.png</texture>
+      <texture>#(iif(string.equals(#DayNight.Period,'morning'),'Modern/Morning/studio.png',iif(string.equals(#DayNight.Period,'noon'),'Modern/Noon/studio.png',iif(string.equals(#DayNight.Period,'day'),'Modern/Day/studio.png','Modern/studio.jpg'))))</texture>
+      <colordiffuse>ff707070</colordiffuse>
       <visible>!control.isvisible(91919293)</visible>
       <animation effect="fade" start="10" end="100" time="850" delay="80" reversible="true">Visible</animation>
       <animation effect="fade" start="100" end="0" time="700" reversible="true">Hidden</animation>

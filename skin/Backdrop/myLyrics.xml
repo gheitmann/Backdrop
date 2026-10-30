@@ -1041,9 +1041,6 @@
             <textcolor>ffffffff</textcolor>
             <colordiffuse>ffffffff</colordiffuse>
             <textcolorNoFocus>90cccccc</textcolorNoFocus>
-            <textureFocus>-</textureFocus>
-            <textXOff>10</textXOff>
-            <textYOff>2</textYOff>
             <font>font14BC</font>
             <hyperlink>500</hyperlink>
             <hover>-</hover>
@@ -1052,6 +1049,12 @@
             <onleft>20</onleft>
             <onright>20</onright>
             <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+            <height>42</height>
+            <textvalign>middle</textvalign>
+            <textYOff>0</textYOff>
+            <textXOff>16</textXOff>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+            <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           </control>
           <control>
             <description>Menu Button 1</description>
@@ -1062,9 +1065,6 @@
             <textcolor>ffffffff</textcolor>
             <colordiffuse>ffffffff</colordiffuse>
             <textcolorNoFocus>90cccccc</textcolorNoFocus>
-            <textureFocus>-</textureFocus>
-            <textXOff>10</textXOff>
-            <textYOff>2</textYOff>
             <font>font14BC</font>
             <hyperlink>510</hyperlink>
             <hover>-</hover>
@@ -1073,61 +1073,16 @@
             <onleft>20</onleft>
             <onright>20</onright>
             <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+            <height>42</height>
+            <textvalign>middle</textvalign>
+            <textYOff>0</textYOff>
+            <textXOff>16</textXOff>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+            <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           </control>
         </control>
       </control>
-      <control>
-        <description>Button 957 - Navigating from up</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>796</posX>
-        <posY>340</posY>
-        <width>380</width>
-        <height>42</height>
-        <shouldCache>true</shouldCache>
-        <texture>hiddenmenu_button_fo.png</texture>
-        <visible>Control.HasFocus(957)+Control.isvisible(93761264)</visible>
-        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
-      </control>
-      <control>
-        <description>Button 957 - Navigating from down</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>796</posX>
-        <posY>340</posY>
-        <width>380</width>
-        <height>42</height>
-        <shouldCache>true</shouldCache>
-        <texture>hiddenmenu_button_fo.png</texture>
-        <visible>Control.HasFocus(957)+!Control.isvisible(93761264)</visible>
-        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
-      </control>
-      <control>
-        <description>Button 958 - Navigating from up</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>796</posX>
-        <posY>382</posY>
-        <width>380</width>
-        <height>42</height>
-        <shouldCache>true</shouldCache>
-        <texture>hiddenmenu_button_fo.png</texture>
-        <visible>Control.HasFocus(958)+Control.isvisible(93761264)</visible>
-        <animation effect="slide" start="0,-42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
-      </control>
-      <control>
-        <description>Button 958 - Navigating from down</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>796</posX>
-        <posY>382</posY>
-        <width>380</width>
-        <height>42</height>
-        <shouldCache>true</shouldCache>
-        <texture>hiddenmenu_button_fo.png</texture>
-        <visible>Control.HasFocus(958)+!Control.isvisible(93761264)</visible>
-        <animation effect="slide" start="0,42" end="0,0" time="300" acceleration="-1.4" reversible="false">visible</animation>
-      </control>
+
     </control>
     <control>
       <id>50</id>

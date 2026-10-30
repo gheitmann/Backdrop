@@ -1,0 +1,363 @@
+{
+  "source_commit": "7fbaddb039387b4d85f35f98ceb6761f1169e4a5",
+  "purpose": "Recoverable pre-restoration artwork for a separate future modern variant; not an installed theme.",
+  "files": {
+    "Animations/settings/default.jpg": {
+      "sha256": "ad334078589b0dec77feb327870c56cf92eb9e59805264f148903204183fa03a",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    "button.focus.png": {
+      "sha256": "92160d33fa1c2e8e699a1bc9b2f9368156c2af6f8805d314ae7bc90dc2adaddf",
+      "dimensions": [
+        329,
+        96
+      ]
+    },
+    "button.livetv.left.png": {
+      "sha256": "3805c0a0799006851621a4cea4395e6f34ecdd97c8fc4815f498329eb6c172a2",
+      "dimensions": [
+        96,
+        512
+      ]
+    },
+    "button.menu.left.png": {
+      "sha256": "738716a99c867ecddb92443f8b644f644f743e5037c0b307a4126df236339602",
+      "dimensions": [
+        96,
+        304
+      ]
+    },
+    "button.menu.top.png": {
+      "sha256": "8a0052eddf2045d38bf2ecf19ea5895ca2fa976b0c38b51658330283cb14302c",
+      "dimensions": [
+        304,
+        96
+      ]
+    },
+    "default.png": {
+      "sha256": "e5affeb080628129cb91731bdf44dc50385663100173b1b3d83fac1deb495397",
+      "dimensions": [
+        3840,
+        2160
+      ]
+    },
+    "dialog_550_247.png": {
+      "sha256": "6b1bb040c17cb473ab5dea259671bc677595c3760f7c146c6ec79c9b02cd964c",
+      "dimensions": [
+        580,
+        260
+      ]
+    },
+    "dialog_743_336.png": {
+      "sha256": "699b914b3fe55b395c6f02d744b03d9e5e466ccf388c381a0ef8afd0641f16a3",
+      "dimensions": [
+        773,
+        350
+      ]
+    },
+    "dialog_745_470.png": {
+      "sha256": "1f9c5b342474e17b4e08e56031b324cc5218fb0e19ec914f3c3f7c5ef5b444b4",
+      "dimensions": [
+        745,
+        470
+      ]
+    },
+    "line.listview.png": {
+      "sha256": "5350413d1cb9753bc85750d5b5204b68a0118f74b926c1f474b7d60e7ba7aed2",
+      "dimensions": [
+        256,
+        341
+      ]
+    },
+    "playlist_sub_focus.png": {
+      "sha256": "a7729f3784818c6eb25d1d0dcd7e2824c4eb5a2a78408e3cd755e523c5553296",
+      "dimensions": [
+        1280,
+        96
+      ]
+    },
+    "playlist_sub_focus1.png": {
+      "sha256": "7419e5c5426e314f61d0071732a7ae3fae56d2740acc6c111be7dafbe25f57ef",
+      "dimensions": [
+        1210,
+        96
+      ]
+    },
+    "playlist_sub_focus3.png": {
+      "sha256": "7419e5c5426e314f61d0071732a7ae3fae56d2740acc6c111be7dafbe25f57ef",
+      "dimensions": [
+        1210,
+        96
+      ]
+    },
+    "playlist_sub_focus4.png": {
+      "sha256": "7419e5c5426e314f61d0071732a7ae3fae56d2740acc6c111be7dafbe25f57ef",
+      "dimensions": [
+        1210,
+        96
+      ]
+    },
+    "playlist_sub_nofocus.png": {
+      "sha256": "04b0c326d1e21cc982f43f04f8096ccc0a40693e0063a1b93dcb3e4f7468dcfd",
+      "dimensions": [
+        1280,
+        96
+      ]
+    },
+    "playlist_sub_nofocus2.png": {
+      "sha256": "5242155d46d1f0fe19151456e2163e501ba9dfccd108c92555d225f5ab05e82e",
+      "dimensions": [
+        1219,
+        96
+      ]
+    },
+    "playlist_sub_nofocus2_bg.png": {
+      "sha256": "63ffa35d2567f26d515a1e8c6916e3c482c42f47d58d6884d80feeba26823b28",
+      "dimensions": [
+        508,
+        600
+      ]
+    },
+    "playlist_sub_nofocus2_end.png": {
+      "sha256": "f374e6ac8651b1ba294b9e7b3c634fd36790f7f36f302d4ea5b430d198b2c225",
+      "dimensions": [
+        1250,
+        96
+      ]
+    },
+    "playlist_sub_nofocus3.png": {
+      "sha256": "5242155d46d1f0fe19151456e2163e501ba9dfccd108c92555d225f5ab05e82e",
+      "dimensions": [
+        1219,
+        96
+      ]
+    },
+    "playlist_sub_nofocus3_end.png": {
+      "sha256": "5242155d46d1f0fe19151456e2163e501ba9dfccd108c92555d225f5ab05e82e",
+      "dimensions": [
+        1219,
+        96
+      ]
+    },
+    "playlist_sub_nofocus4_end.png": {
+      "sha256": "5242155d46d1f0fe19151456e2163e501ba9dfccd108c92555d225f5ab05e82e",
+      "dimensions": [
+        1219,
+        96
+      ]
+    },
+    "selected_in_list.png": {
+      "sha256": "6448b9cdd962d209edd886b27bd35f6a883deee3703c36bf99324643379aec31",
+      "dimensions": [
+        1248,
+        96
+      ]
+    },
+    "selected_in_list_music.png": {
+      "sha256": "bb9656e4c070a66e9979f0e9f2ff9d57aba340a91f04583901693ff3fe68387e",
+      "dimensions": [
+        1376,
+        96
+      ]
+    },
+    "selected_in_list_tvgemist.png": {
+      "sha256": "c5d3b053417e20aeb13520566aec07cee13caa30616bfca2a8a3222fc97dbfbf",
+      "dimensions": [
+        2656,
+        96
+      ]
+    },
+    "selected_in_list_wide.png": {
+      "sha256": "c5d3b053417e20aeb13520566aec07cee13caa30616bfca2a8a3222fc97dbfbf",
+      "dimensions": [
+        2656,
+        96
+      ]
+    },
+    "tvguide_button_left.png": {
+      "sha256": "98776acb948cfeb50ef3eb90223db0d4ffcdda8417c9f878824e7fd3f65c6f35",
+      "dimensions": [
+        8,
+        208
+      ]
+    },
+    "tvguide_button_light_left.png": {
+      "sha256": "98776acb948cfeb50ef3eb90223db0d4ffcdda8417c9f878824e7fd3f65c6f35",
+      "dimensions": [
+        8,
+        208
+      ]
+    },
+    "tvguide_button_light_middle.png": {
+      "sha256": "eba90182b4dbca54079c8718404916fd90eadb95098ef435a71241ca653a74bf",
+      "dimensions": [
+        424,
+        96
+      ]
+    },
+    "tvguide_button_light_right.png": {
+      "sha256": "98776acb948cfeb50ef3eb90223db0d4ffcdda8417c9f878824e7fd3f65c6f35",
+      "dimensions": [
+        8,
+        208
+      ]
+    },
+    "tvguide_button_middle.png": {
+      "sha256": "eba90182b4dbca54079c8718404916fd90eadb95098ef435a71241ca653a74bf",
+      "dimensions": [
+        424,
+        96
+      ]
+    },
+    "tvguide_button_right.png": {
+      "sha256": "98776acb948cfeb50ef3eb90223db0d4ffcdda8417c9f878824e7fd3f65c6f35",
+      "dimensions": [
+        8,
+        208
+      ]
+    },
+    "tvguide_button_selected_left.png": {
+      "sha256": "7693d67f3f50219358ae424d2636410a61355adbdb3a3183e4621d68b609b797",
+      "dimensions": [
+        8,
+        208
+      ]
+    },
+    "tvguide_button_selected_middle.png": {
+      "sha256": "4ee2c69017eaf3118b66096bcfaa604770f54ea01ededa1d135aa7f4e68afbd7",
+      "dimensions": [
+        424,
+        96
+      ]
+    },
+    "tvguide_button_selected_right.png": {
+      "sha256": "7693d67f3f50219358ae424d2636410a61355adbdb3a3183e4621d68b609b797",
+      "dimensions": [
+        8,
+        208
+      ]
+    },
+    "tvguide_notify_button.png": {
+      "sha256": "156436e365a0cf3be3a62f403f1ee3dc18163f8137e325acdaf1de4af3356f16",
+      "dimensions": [
+        556,
+        96
+      ]
+    },
+    "tvguide_recButton_Focus_left.png": {
+      "sha256": "2ae7311561213908505283409788c04fc4c245db3e1a343671f4e7359bb8f5e5",
+      "dimensions": [
+        40,
+        208
+      ]
+    },
+    "tvguide_recButton_Focus_middle.png": {
+      "sha256": "7e92659b30c3a09ba341a30d249b1e003065e2af8ca7c62942f60c4b64c35aff",
+      "dimensions": [
+        424,
+        96
+      ]
+    },
+    "tvguide_recButton_Focus_right.png": {
+      "sha256": "2ae7311561213908505283409788c04fc4c245db3e1a343671f4e7359bb8f5e5",
+      "dimensions": [
+        40,
+        208
+      ]
+    },
+    "tvguide_recButton_noFocus_left.png": {
+      "sha256": "02ab361d66fe23bdf08797de6324625e2baebd6ab3102a06026270a27654acec",
+      "dimensions": [
+        40,
+        208
+      ]
+    },
+    "tvguide_recButton_noFocus_middle.png": {
+      "sha256": "305ca648525be7aad34d946de0ebd6c6c92f00c1f1bc74ca992181b32db6c665",
+      "dimensions": [
+        391,
+        96
+      ]
+    },
+    "tvguide_recButton_noFocus_right.png": {
+      "sha256": "02ab361d66fe23bdf08797de6324625e2baebd6ab3102a06026270a27654acec",
+      "dimensions": [
+        40,
+        208
+      ]
+    },
+    "tvguide_record_button.png": {
+      "sha256": "156436e365a0cf3be3a62f403f1ee3dc18163f8137e325acdaf1de4af3356f16",
+      "dimensions": [
+        556,
+        96
+      ]
+    },
+    "tvguide_recordconflict_button.png": {
+      "sha256": "156436e365a0cf3be3a62f403f1ee3dc18163f8137e325acdaf1de4af3356f16",
+      "dimensions": [
+        556,
+        96
+      ]
+    },
+    "tvguide_recordserie_button.png": {
+      "sha256": "156436e365a0cf3be3a62f403f1ee3dc18163f8137e325acdaf1de4af3356f16",
+      "dimensions": [
+        556,
+        96
+      ]
+    },
+    "tvguide_recordserie_conflict_button.png": {
+      "sha256": "156436e365a0cf3be3a62f403f1ee3dc18163f8137e325acdaf1de4af3356f16",
+      "dimensions": [
+        556,
+        96
+      ]
+    },
+    "tvguide_slider.png": {
+      "sha256": "ac3b02d33fa0d2de6d41d4447308cd961459c36e4aa187766bbe67fa5ee9c19f",
+      "dimensions": [
+        37,
+        277
+      ]
+    },
+    "tvguide_time_bg.png": {
+      "sha256": "1d70444081fb5d948b88cbadbf1cc20f0a23f1967d454e5c4eeed6612e704455",
+      "dimensions": [
+        667,
+        96
+      ]
+    },
+    "unselected_in_list.png": {
+      "sha256": "663c5a64631724bcbecc1e91e580f7451ee9056a94303d7ba48cc4f2858e9da1",
+      "dimensions": [
+        1248,
+        96
+      ]
+    },
+    "unselected_in_list_music.png": {
+      "sha256": "31ec9dbe56ddbc71c511d7c2eff4230eb7a74761dba71b9accecaf6345d6027d",
+      "dimensions": [
+        1376,
+        96
+      ]
+    },
+    "unselected_in_list_tvgemist.png": {
+      "sha256": "e044bb30e4f435e438f0770792276c7f7d8feaeef3de5e5b68c4d7be6bc69573",
+      "dimensions": [
+        2656,
+        96
+      ]
+    },
+    "unselected_in_list_wide.png": {
+      "sha256": "e044bb30e4f435e438f0770792276c7f7d8feaeef3de5e5b68c4d7be6bc69573",
+      "dimensions": [
+        2656,
+        96
+      ]
+    }
+  }
+}

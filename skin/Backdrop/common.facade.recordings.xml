@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
   <controls>
     <control>
@@ -48,12 +48,12 @@
           <unfocusedAlpha>255</unfocusedAlpha>
           <!--					<dimColor>ffcccccc</dimColor>
 					<textcolor>ffffffff</textcolor>
-					<selectedColor>ffcccccc</selectedColor>	
+					<selectedColor>ffcccccc</selectedColor>
 					<shadedColor>ffcccccc</shadedColor>
 					<playedColor>ffcccccc</playedColor>
 					<textcolor2>ffcccccc</textcolor2>
 					<textcolor3>ffcccccc</textcolor3>
-					<colordiffuse>ffcccccc</colordiffuse>	
+					<colordiffuse>ffcccccc</colordiffuse>
 					<remoteColor>ffcccccc</remoteColor>
 					<downloadColor>ffcccccc</downloadColor>		-->
           <shadedColor>ffffffff</shadedColor>
@@ -114,12 +114,12 @@
           <unfocusedAlpha>255</unfocusedAlpha>
           <!--					<dimColor>ffcccccc</dimColor>
 					<textcolor>ffffffff</textcolor>
-					<selectedColor>ffcccccc</selectedColor>	
+					<selectedColor>ffcccccc</selectedColor>
 					<shadedColor>ffcccccc</shadedColor>
 					<playedColor>ffcccccc</playedColor>
 					<textcolor2>ffcccccc</textcolor2>
 					<textcolor3>ffcccccc</textcolor3>
-					<colordiffuse>ffcccccc</colordiffuse>	
+					<colordiffuse>ffcccccc</colordiffuse>
 					<remoteColor>ffcccccc</remoteColor>
 					<downloadColor>ffcccccc</downloadColor>		-->
           <shadedColor>ffffffff</shadedColor>
@@ -150,8 +150,8 @@
           <posX>34</posX>
           <posY>600</posY>
           <width>1875</width>
-          <height>600</height>
-          <spinPosX>3300</spinPosX>
+          <height>480</height>
+          <spinPosX>1890</spinPosX>
           <spinPosY>1028</spinPosY>
           <textureUp>-</textureUp>
           <textureDown>-</textureDown>
@@ -166,7 +166,7 @@
           <textureWidth>216</textureWidth>
           <textureHeight>146</textureHeight>
           <itemWidth>232</itemWidth>
-          <itemHeight>160</itemHeight>
+          <itemHeight>190</itemHeight>
           <thumbWidth>216</thumbWidth>
           <thumbHeight>146</thumbHeight>
           <thumbPosX>0</thumbPosX>
@@ -182,26 +182,21 @@
           <thumbPosXBig>0</thumbPosXBig>
           <thumbPosYBig>0</thumbPosYBig>
           <textXOff>12</textXOff>
-          <textYOff>-8</textYOff>
+          <textYOff>0</textYOff>
           <thumbZoom>no</thumbZoom>
           <keepaspectratio>no</keepaspectratio>
           <centered>yes</centered>
           <enableFocusZoom>no</enableFocusZoom>
           <unfocusedAlpha>255</unfocusedAlpha>
           <scrollOffset>1</scrollOffset>
-          <!--<zoomXPixels>60</zoomXPixels>
-					<zoomYPixels>40</zoomYPixels>	-->
-          <zoomXPixels>65</zoomXPixels>
-          <zoomYPixels>65</zoomYPixels>
+          <!-- Bounded manual focus zoom; retain the stable viewport and no grid slide animations. -->
+          <zoomXPixels>6</zoomXPixels>
+          <zoomYPixels>6</zoomYPixels>
           <showFrame>true</showFrame>
           <hideUnfocusTexture>yes</hideUnfocusTexture>
           <renderFocusText>no</renderFocusText>
           <renderUnfocusText>yes</renderUnfocusText>
           <visible>!Control.isvisible(93761234)</visible>
-          <animation effect="slide" start="2025,0" time="1200" acceleration="-0.9" reversible="true">focus</animation>
-          <animation effect="slide" end="-2025,0" time="1400" acceleration="0.5" reversible="true">unfocus</animation>
-          <animation effect="slide" start="2025,0" time="1200" acceleration="-0.9" reversible="true">visible</animation>
-          <animation effect="slide" end="-2025,0" time="1400" acceleration="0.5" reversible="true">hidden</animation>
         </control>
       </control>
     </control>

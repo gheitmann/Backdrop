@@ -57,6 +57,11 @@
       <onright>9005</onright>
       <onup>2</onup>
       <ondown>3</ondown>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textXOff>16</textXOff>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
     </control>
     <control>
       <description>Menu Button 1</description>
@@ -77,6 +82,11 @@
       <onright>9005</onright>
       <onup>2</onup>
       <ondown>4</ondown>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textXOff>16</textXOff>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
     </control>
     <control>
       <description>Menu Button 2</description>
@@ -97,6 +107,11 @@
       <onright>9005</onright>
       <onup>3</onup>
       <ondown>2</ondown>
+      <textvalign>middle</textvalign>
+      <textYOff>0</textYOff>
+      <textXOff>16</textXOff>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
     </control>
   </controls>
 </window>

@@ -1,0 +1,101 @@
+{
+  "collection": "cinematic-night",
+  "generated_with": "OpenAI image_gen",
+  "date": "2026-10-25",
+  "notes": "Photographic masters are 1672x941 from the built-in image tool; larger exports are resampled, not native 4K. Wordmark is rasterized from SVG at target resolution. No baked loading percentage.",
+  "photos": {
+    "cinema": {
+      "file": "Modern/cinema.jpg",
+      "sha256": "5e82ab167b453d6c0e32b3a1f731b529d635d8c14c4564b798dd3fdf3dedc474",
+      "source": "Source/Artwork/cinematic-night/cinema.png",
+      "source_sha256": "9333f0323121020833e187d104435a516ee7b8f4deb1e70ab08ef443f67db0d9",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "export_dimensions": [
+        1920,
+        1080
+      ]
+    },
+    "tv": {
+      "file": "Modern/tv.jpg",
+      "sha256": "f3f927a730f922489af34db930f1528dd3c3489437c6df051871c614a87f9636",
+      "source": "Source/Artwork/cinematic-night/tv.png",
+      "source_sha256": "a1dbe41bb5fd2ccb821384d8e542941a4a27082d11e17a857a0fafd6d2e07c3f",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "export_dimensions": [
+        1920,
+        1080
+      ]
+    },
+    "studio": {
+      "file": "Modern/studio.jpg",
+      "sha256": "8d2f6da15ef5ec1e366ccac4cc3e384137830d017b0b0fbe1b2aded707b21073",
+      "source": "Source/Artwork/cinematic-night/studio.png",
+      "source_sha256": "cb8f43b026ae9aed0869b5ddd1bbe957a241a57c86dbeb25c80fab4ac8d85e24",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "export_dimensions": [
+        1920,
+        1080
+      ]
+    },
+    "photos": {
+      "file": "Modern/photos.jpg",
+      "sha256": "7bc5b41c02b9139ddcf6cbc66d7141c2f8b2c5cc93aeca248b55be9369a30c08",
+      "source": "Source/Artwork/photos-window-repair/night.png",
+      "source_sha256": "86598eeca85780a630073eae68a16620f6f0211c2e6ed68ce54d5dc6cd3c9169",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "export_dimensions": [
+        1920,
+        1080
+      ],
+      "edit": "2026-10-29: localized window skyline repair, preserving approved sharpness and lighting."
+    },
+    "gaming": {
+      "file": "Modern/gaming.jpg",
+      "sha256": "63b97a051a35e60e190748ac34c2cd140034e8fb9f45a29195025a2fccb422da",
+      "source": "Source/Artwork/cinematic-night/gaming.png",
+      "source_sha256": "3593a1b26349c1e2e7e1c2abc8e4d5d62822b036e0d31cf5f77e007b1d63a3be",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "export_dimensions": [
+        1920,
+        1080
+      ]
+    },
+    "plugins": {
+      "file": "Modern/plugins.jpg",
+      "sha256": "7ad01352464cf0027af932c9abed0615ffe8c08a90a6b610e454dc9dee4165b4",
+      "source": "Source/Artwork/cinematic-night/plugins.png",
+      "source_sha256": "5900c0510bc24b9ce3e519a26c9d7935e4edb501fd38bda05856593be9752f81",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "export_dimensions": [
+        1920,
+        1080
+      ]
+    }
+  },
+  "splash": {
+    "sha256": "46fa7757b7ccbba2594441785a45c6623c2803931edc289303979d5fffeee67c",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "logo_source": "Source/Artwork/cinematic-night/backdrop-logo.svg"
+  }
+}

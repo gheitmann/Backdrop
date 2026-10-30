@@ -14,7 +14,7 @@
       <width>1920</width>
       <height>1080</height>
       <shouldCache>true</shouldCache>
-      <texture>default.png</texture>
+      <texture>#(iif(string.equals(#DayNight.Period,'morning'),'Modern/Morning/home-lounge.png',iif(string.equals(#DayNight.Period,'noon'),'Modern/Noon/home-lounge.png',iif(string.equals(#DayNight.Period,'day'),'Modern/Day/home-lounge.png','Modern/home-lounge.png'))))</texture>
     </control>
     <control>
       <description>background</description>
@@ -47,7 +47,7 @@
       <textcolor>ffffffff</textcolor>
       <textColorNoFocus>ffc9c9c9</textColorNoFocus>
       <dimColor>0x99ffffff</dimColor>
-      <buttonTextXOff>0</buttonTextXOff>
+      <buttonTextXOff>24</buttonTextXOff>
       <buttonTextYOff>0</buttonTextYOff>
       <buttonOffset>0</buttonOffset>
       <buttonFont>font16</buttonFont>

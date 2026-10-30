@@ -1,85 +1,64 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<?xml version='1.0' encoding='utf-8'?>
 <window>
   <id>30</id>
   <defaultcontrol>50</defaultcontrol>
   <allowoverlay>[facadeview.list|facadeview.filmstrip|facadeview.coverflow]</allowoverlay>
-  <!--define>#header.label:#currentmodule  ·  #Radio.Listen.Group</define-->
   <define>#header.hover:MP139\hover_my radio.png</define>
   <controls>
     <control>
       <description>BG</description>
       <type>image</type>
       <id>1</id>
-      <texture>MP139\Radio2.jpg</texture>
+      <texture>#(iif(string.equals(#DayNight.Period,'morning'),'Modern/Morning/studio.png',iif(string.equals(#DayNight.Period,'noon'),'Modern/Noon/studio.png',iif(string.equals(#DayNight.Period,'day'),'Modern/Day/studio.png','Modern/studio.jpg'))))</texture>
       <width>1920</width>
       <height>1080</height>
     </control>
     <control>
-      <description>Title background</description>
-      <type>image</type>
-      <id>0</id>
-      <posX>0</posX>
-      <posY>0</posY>
-      <width>1920</width>
-      <height>379</height>
-      <texture>MP139\overlay_top.png</texture>
-      <colordiffuse>ddffffff</colordiffuse>
+      <description>Radio list readability panel</description>
+      <type>image</type><id>0</id><posX>95</posX><posY>238</posY><width>1175</width><height>774</height>
+      <texture>black.png</texture><colordiffuse>b0000000</colordiffuse><visible>facadeview.list|facadeview.album</visible>
     </control>
-    <!--import>common.window.xml</import-->
-    <import>mp139.common.time.xml</import>
+
     <control>
-      <description>General Overlay</description>
+      <description>Backdrop radio page title</description>
+      <type>label</type>
       <id>0</id>
-      <type>image</type>
-      <posX>0</posX>
-      <posY>45</posY>
-      <width>1920</width>
-      <height>1080</height>
-      <texture>MP139\general_overlay.png</texture>
+      <posX>30</posX>
+      <posY>42</posY>
+      <width>1350</width>
+      <height>70</height>
+      <font>font32</font>
+      <label>665</label>
+      <textcolor>ffffffff</textcolor>
     </control>
-    <control>
-      <description>General Overlay</description>
-      <id>0</id>
-      <type>image</type>
-      <posX>0</posX>
-      <posY>45</posY>
-      <width>1920</width>
-      <height>1080</height>
-      <texture>MP139\general_overlay.png</texture>
-      <colordiffuse>99ffffff</colordiffuse>
-      <animation effect="fade" time="300">visible</animation>
-      <animation effect="fade" time="300">hidden</animation>
-    </control>
+    <import>common.time.xml</import>
     <control>
       <description>Itemcount CurrentModule</description>
       <type>label</type>
       <id>0</id>
-      <posX>1869</posX>
-      <posY>16</posY>
-      <label>#selectedindex/#itemcount #currentmodule</label>
+      <posX>1890</posX>
+      <posY>140</posY>
+      <label>#selectedindex/#itemcount</label>
       <align>right</align>
-      <font>mp139.RSS</font>
-      <textcolor>lightgray</textcolor>
+      <font>font12</font>
+      <textcolor>ff7FB1E5</textcolor>
       <shadowAngle>10</shadowAngle>
       <shadowDistance>2</shadowDistance>
       <shadowColor>ff000000</shadowColor>
       <disabledcolor>90ffffff</disabledcolor>
+      <height>38</height>
     </control>
-    <!-- *************************************************************************************************** -->
-    <!-- ****************************  Corrrect Display of current group  ********************************** -->
-    <!-- *************************************************************************************************** -->
     <control>
       <type>fadelabel</type>
       <description>group usw.</description>
       <id>0</id>
       <posX>40</posX>
-      <posY>54</posY>
+      <posY>129</posY>
       <width>1620</width>
       <align>left</align>
-      <label>#currentmodule  ·  #(L(971)): #Radio.Folder</label>
+      <label>#(L(665)) | #(L(971)): #Radio.Folder</label>
       <align>left</align>
-      <font>mp139.Label</font>
+      <font>font14</font>
       <textcolor>lightgray</textcolor>
       <wrapString>  |  </wrapString>
       <scrollStartDelaySec>5</scrollStartDelaySec>
@@ -92,12 +71,12 @@
       <description>group usw.</description>
       <id>0</id>
       <posX>40</posX>
-      <posY>98</posY>
+      <posY>173</posY>
       <width>1620</width>
       <align>left</align>
       <label>#(L(620)): #selecteditem</label>
       <align>left</align>
-      <font>mp139.Label</font>
+      <font>font14</font>
       <visible>!string.equals(#selectedthumb,MP139\DefaultFolderBig.png)+!string.equals(#selecteditem,..)</visible>
       <textcolor>lightgray</textcolor>
       <wrapString>  |  </wrapString>
@@ -106,10 +85,38 @@
       <shadowDistance>0</shadowDistance>
       <shadowColor />
     </control>
-    <!-- *************************************************************************************************** -->
-    <!-- *************************************  The Hidden Menu  ******************************************* -->
-    <!-- *************************************************************************************************** -->
     <control>
+      <control>
+        <description>Backdrop radio menu dimmer</description>
+        <type>image</type>
+        <id>0</id>
+        <width>1920</width>
+        <height>1080</height>
+        <texture>overlay.dim.png</texture>
+      </control>
+      <control>
+        <description>Backdrop radio menu frame</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>720</posX>
+        <posY>274</posY>
+        <width>525</width>
+        <height>682</height>
+        <texture>dialog_290_400.png</texture>
+      </control>
+      <control>
+        <description>Backdrop radio menu caption</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>744</posX>
+        <posY>580</posY>
+        <width>220</width>
+        <height>38</height>
+        <label>924</label>
+        <font>font16BCB</font>
+        <textcolor>ff7FB1E5</textcolor>
+        <animation effect="rotate" start="90" end="90" center="744,580" time="0" condition="true">Conditional</animation>
+      </control>
       <type>actiongroup</type>
       <description>action menu</description>
       <defaultcontrol>2</defaultcontrol>
@@ -119,38 +126,16 @@
       <buttonwidth>159</buttonwidth>
       <buttonheight>1080</buttonheight>
       <textureFocus>-</textureFocus>
-      <textureNoFocus>MP139\Action_nofocus.png</textureNoFocus>
-      <width>852</width>
-      <height>1350</height>
+      <textureNoFocus>-</textureNoFocus>
+      <width>1920</width>
+      <height>1080</height>
       <dimColor>00ffffff</dimColor>
-      <control>
-        <type>image</type>
-        <id>0</id>
-        <width>1920</width>
-        <height>1080</height>
-        <texture>MP139\white.png</texture>
-        <colordiffuse>50005eef</colordiffuse>
-      </control>
-      <control>
-        <type>image</type>
-        <posX>39</posX>
-        <posY>117</posY>
-        <width>480</width>
-        <height>886</height>
-        <texture>MP139\Backslide.png</texture>
-        <colorDiffuse>fffffffff</colorDiffuse>
-        <visible>!Control.HasFocus(50)</visible>
-        <animation effect="slide" time="70" start="-300,0" reversible="false">visible</animation>
-        <animation effect="slide" time="70" end="-300,0" reversible="false">hidden</animation>
-      </control>
       <control>
         <description>group element</description>
         <type>group</type>
-        <animation effect="slide" time="70" start="-300,0" reversible="false">visible</animation>
-        <animation effect="slide" time="70" end="-300,0" reversible="false">hidden</animation>
-        <posX>75</posX>
-        <posY>181</posY>
-        <layout>StackLayout</layout>
+        <posX>806</posX>
+        <posY>338</posY>
+        <layout>StackLayout(0, Vertical, true)</layout>
         <visible>!Control.HasFocus(50)</visible>
         <control>
           <description>View-As</description>
@@ -164,16 +149,16 @@
           <dialogTitle>792</dialogTitle>
           <valueTextInButton>yes</valueTextInButton>
           <valuePrefixText>95</valuePrefixText>
-          <width>390</width>
-          <height>60</height>
-          <textXOff>25</textXOff>
-          <textYOff>9</textYOff>
+          <width>420</width>
+          <height>42</height>
+          <textXOff>16</textXOff>
+          <textYOff>0</textYOff>
           <textalign>left</textalign>
           <textvalign>middle</textvalign>
-          <textureUp>MP139\arrow_round_up_nofocus.png</textureUp>
-          <textureUpFocus>MP139\arrow_round_up_focus.png</textureUpFocus>
-          <textureDown>MP139\arrow_round_down_nofocus.png</textureDown>
-          <textureDownFocus>MP139\arrow_round_down_focus.png</textureDownFocus>
+          <textureUp>arrow_round_up_nofocus.png</textureUp>
+          <textureUpFocus>arrow_round_up_focus.png</textureUpFocus>
+          <textureDown>arrow_round_down_nofocus.png</textureDown>
+          <textureDownFocus>arrow_round_down_focus.png</textureDownFocus>
           <spinWidth>36</spinWidth>
           <spinHeight>36</spinHeight>
           <spinXOff>13</spinXOff>
@@ -186,17 +171,17 @@
           <reverse>no</reverse>
           <cycleItems>yes</cycleItems>
           <dialogShowNumbers>no</dialogShowNumbers>
-          <font>mp139.Label</font>
+          <font>font14BC</font>
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff00bfff</textcolorNoFocus>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
           <shadowColor />
-          <textureFocus>MP139\button_focus.png</textureFocus>
-          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+          <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+          <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           <scrollStartDelaySec>5</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>
         </control>
@@ -207,27 +192,27 @@
           <onup>2</onup>
           <ondown>4</ondown>
           <onright>50</onright>
-          <width>390</width>
-          <height>60</height>
-          <textXOff>25</textXOff>
-          <textYOff>9</textYOff>
+          <width>420</width>
+          <height>42</height>
+          <textXOff>16</textXOff>
+          <textYOff>0</textYOff>
           <textalign>left</textalign>
           <textvalign>middle</textvalign>
-          <textureFocus>MP139\button_focus.png</textureFocus>
-          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
-          <textureAscending>MP139\arrow_round_up_nofocus.png</textureAscending>
-          <textureAscendingFocused>MP139\arrow_round_up_focus.png</textureAscendingFocused>
-          <textureDescending>MP139\arrow_round_down_nofocus.png</textureDescending>
-          <textureDescendingFocused>MP139\arrow_round_down_focus.png</textureDescendingFocused>
-          <offsetSortButtonX>330</offsetSortButtonX>
-          <offsetSortButtonY>10</offsetSortButtonY>
+          <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+          <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
+          <textureAscending>arrow_round_up_nofocus.png</textureAscending>
+          <textureAscendingFocused>arrow_round_up_focus.png</textureAscendingFocused>
+          <textureDescending>arrow_round_down_nofocus.png</textureDescending>
+          <textureDescendingFocused>arrow_round_down_focus.png</textureDescendingFocused>
+          <offsetSortButtonX>378</offsetSortButtonX>
+          <offsetSortButtonY>6</offsetSortButtonY>
           <offsetSortButtonWidth>30</offsetSortButtonWidth>
           <offsetSortButtonHeight>30</offsetSortButtonHeight>
-          <font>mp139.Label</font>
+          <font>font14BC</font>
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff00bfff</textcolorNoFocus>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
           <dimColor>ffcccccc</dimColor>
           <label>103</label>
           <shadowAngle>0</shadowAngle>
@@ -243,23 +228,21 @@
           <onup>3</onup>
           <ondown>6</ondown>
           <onright>50</onright>
-          <posX>799</posX>
-          <posY>375</posY>
-          <width>390</width>
-          <height>60</height>
-          <textXOff>25</textXOff>
-          <textYOff>1</textYOff>
+          <width>420</width>
+          <height>42</height>
+          <textXOff>16</textXOff>
+          <textYOff>0</textYOff>
           <textalign>left</textalign>
           <textvalign>middle</textvalign>
-          <textureFocus>MP139\button_focus.png</textureFocus>
-          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+          <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+          <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           <scrollStartDelaySec>5</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>
-          <font>mp139.Label</font>
+          <font>font14BC</font>
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff00bfff</textcolorNoFocus>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -274,23 +257,21 @@
           <onup>4</onup>
           <ondown>7</ondown>
           <action>95</action>
-          <posX>799</posX>
-          <posY>375</posY>
-          <width>390</width>
-          <height>60</height>
-          <textXOff>25</textXOff>
-          <textYOff>1</textYOff>
+          <width>420</width>
+          <height>42</height>
+          <textXOff>16</textXOff>
+          <textYOff>0</textYOff>
           <textalign>left</textalign>
           <textvalign>middle</textvalign>
-          <textureFocus>MP139\button_focus.png</textureFocus>
-          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+          <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+          <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           <scrollStartDelaySec>5</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>
-          <font>mp139.Label</font>
+          <font>font14BC</font>
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff00bfff</textcolorNoFocus>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -305,23 +286,21 @@
           <ondown>8</ondown>
           <onright>50</onright>
           <action>94</action>
-          <posX>799</posX>
-          <posY>375</posY>
-          <width>390</width>
-          <height>60</height>
-          <textXOff>25</textXOff>
-          <textYOff>1</textYOff>
+          <width>420</width>
+          <height>42</height>
+          <textXOff>16</textXOff>
+          <textYOff>0</textYOff>
           <textalign>left</textalign>
           <textvalign>middle</textvalign>
-          <textureFocus>MP139\button_focus.png</textureFocus>
-          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+          <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+          <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           <scrollStartDelaySec>5</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>
-          <font>mp139.Label</font>
+          <font>font14BC</font>
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff00bfff</textcolorNoFocus>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -336,23 +315,21 @@
           <onup>7</onup>
           <ondown>9</ondown>
           <hyperlink>762</hyperlink>
-          <posX>799</posX>
-          <posY>375</posY>
-          <width>390</width>
-          <height>60</height>
-          <textXOff>25</textXOff>
-          <textYOff>1</textYOff>
+          <width>420</width>
+          <height>42</height>
+          <textXOff>16</textXOff>
+          <textYOff>0</textYOff>
           <textalign>left</textalign>
           <textvalign>middle</textvalign>
-          <textureFocus>MP139\button_focus.png</textureFocus>
-          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+          <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+          <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           <scrollStartDelaySec>5</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>
-          <font>mp139.Label</font>
+          <font>font14BC</font>
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff00bfff</textcolorNoFocus>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -367,23 +344,21 @@
           <onup>8</onup>
           <ondown>10</ondown>
           <hyperlink>763</hyperlink>
-          <posX>799</posX>
-          <posY>375</posY>
-          <width>390</width>
-          <height>60</height>
-          <textXOff>25</textXOff>
-          <textYOff>1</textYOff>
+          <width>420</width>
+          <height>42</height>
+          <textXOff>16</textXOff>
+          <textYOff>0</textYOff>
           <textalign>left</textalign>
           <textvalign>middle</textvalign>
-          <textureFocus>MP139\button_focus.png</textureFocus>
-          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+          <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+          <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           <scrollStartDelaySec>5</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>
-          <font>mp139.Label</font>
+          <font>font14BC</font>
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff00bfff</textcolorNoFocus>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -398,23 +373,21 @@
           <onup>9</onup>
           <ondown>2</ondown>
           <hyperlink>8900</hyperlink>
-          <posX>799</posX>
-          <posY>375</posY>
-          <width>390</width>
-          <height>60</height>
-          <textXOff>25</textXOff>
-          <textYOff>1</textYOff>
+          <width>420</width>
+          <height>42</height>
+          <textXOff>16</textXOff>
+          <textYOff>0</textYOff>
           <textalign>left</textalign>
           <textvalign>middle</textvalign>
-          <textureFocus>MP139\button_focus.png</textureFocus>
-          <textureNoFocus>MP139\button_nofocus.png</textureNoFocus>
+          <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+          <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           <scrollStartDelaySec>5</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>
-          <font>mp139.Label</font>
+          <font>font14BC</font>
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff00bfff</textcolorNoFocus>
+          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -423,10 +396,651 @@
         <dimColor>ffffffff</dimColor>
       </control>
     </control>
-    <import>mp139.common.facade.music.xml</import>
-    <!-- *************************************************************************************************** -->
-    <!-- *************************  The Radio Logo at the right  ******************************************* -->
-    <!-- *************************************************************************************************** -->
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+      <control>
+        <description>composite control consisting of a list control and a thumbnail panel</description>
+        <type>facadeview</type>
+        <id>50</id>
+        <control style="NoShadow">
+          <description>listcontrol</description>
+          <type>listcontrol</type>
+          <id>50</id>
+          <width>1132</width>
+          <posX>100</posX>
+          <posY>247</posY>
+          <height>750</height>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <scrollOffset>2</scrollOffset>
+          <unfocusedAlpha>160</unfocusedAlpha>
+          <showScrollbar>no</showScrollbar>
+          <spinWidth>24</spinWidth>
+          <spinHeight>24</spinHeight>
+          <spinPosX>1860</spinPosX>
+          <spinPosY>1010</spinPosY>
+          <spinAlign>Right</spinAlign>
+          <spinColor>ffffffff</spinColor>
+          <textureUp>arrow_round_up_nofocus.png</textureUp>
+          <textureDown>arrow_round_down_nofocus.png</textureDown>
+          <textureUpFocus>arrow_round_up_focus.png</textureUpFocus>
+          <textureDownFocus>arrow_round_down_focus.png</textureDownFocus>
+          <textureFocus>playlist_sub_focus1.png</textureFocus>
+          <textureNoFocus>-</textureNoFocus>
+          <textureHeight>48</textureHeight>
+          <spaceBetweenItems />
+          <font>font14</font>
+          <shadedColor>20ffffff</shadedColor>
+          <selectedColor3>ff7FB1E5</selectedColor3>
+          <selectedColor2>ff7FB1E5</selectedColor2>
+          <selectedColor>ff7FB1E5</selectedColor>
+          <playedColor>ffffffff</playedColor>
+          <playedColor2>ffffffff</playedColor2>
+          <textcolor>ffffffff</textcolor>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
+          <textcolor2>ffffffff</textcolor2>
+          <textcolor3>ffffffff</textcolor3>
+          <colordiffuse>ffffffff</colordiffuse>
+          <remoteColor>ff99f9ff</remoteColor>
+          <remoteColor2>ff99f9ff</remoteColor2>
+          <downloadColor>ff666666</downloadColor>
+          <downloadColor2>ff80ff80</downloadColor2>
+          <dimColor>ffffffff</dimColor>
+          <scrollStartDelaySec>1</scrollStartDelaySec>
+          <textXOff>24</textXOff>
+          <textYOff>2</textYOff>
+          <textXOff2>0</textXOff2>
+          <textYOff2>2</textYOff2>
+          <itemWidth>44</itemWidth>
+          <itemHeight>44</itemHeight>
+          <IconXOff>10</IconXOff>
+          <IconYOff>2</IconYOff>
+          <PinIconXOff>1177</PinIconXOff>
+          <PinIconYOff>9</PinIconYOff>
+          <PinIconWidth>35</PinIconWidth>
+          <PinIconHeight>25</PinIconHeight>
+          <folderPrefix />
+          <folderSuffix />
+          <keepaspectratio>yes</keepaspectratio>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor>0</shadowColor>
+        </control>
+        <control>
+          <description>album view listcontrol</description>
+          <type>listcontrol</type>
+          <subtype>album</subtype>
+          <id>50</id>
+          <posX>120</posX>
+          <posY>250</posY>
+          <width>1132</width>
+          <height>750</height>
+          <spinPosX>1860</spinPosX>
+          <spinPosY>1010</spinPosY>
+          <font>font14</font>
+          <font2>Label</font2>
+          <shadedColor>20ffffff</shadedColor>
+          <selectedColor3>FF00CC00</selectedColor3>
+          <selectedColor2>FF00CC00</selectedColor2>
+          <selectedColor>FF00CC00</selectedColor>
+          <playedColor>FFffffff</playedColor>
+          <playedColor2>FFffffff</playedColor2>
+          <playedColor3>FFffffff</playedColor3>
+          <textcolor>ffffffff</textcolor>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
+          <textcolor2>ffffffff</textcolor2>
+          <colordiffuse>ffffffff</colordiffuse>
+          <remoteColor>ff00ffff</remoteColor>
+          <remoteColor2>ff00ffff</remoteColor2>
+          <downloadColor>ff666666</downloadColor>
+          <downloadColor2>ff80ff80</downloadColor2>
+          <dimColor>90ffffff</dimColor>
+          <textXOff>24</textXOff>
+          <textXOff2>1110</textXOff2> 1150
+          <textXOff3>87</textXOff3>
+          <textYOff>17</textYOff>
+          <textYOff2>17</textYOff2>
+          <textYOff3>35</textYOff3>
+          <itemWidth>76</itemWidth>
+          <itemHeight>76</itemHeight>
+          <IconXOff>10</IconXOff>
+          <IconYOff>2</IconYOff>
+          <PinIconXOff>1005</PinIconXOff>
+          <PinIconYOff>40</PinIconYOff>
+          <PinIconWidth>30</PinIconWidth>
+          <PinIconHeight>30</PinIconHeight>
+          <spaceBetweenItems>3</spaceBetweenItems>
+          <textureHeight>80</textureHeight>
+          <scrollOffset>4</scrollOffset>
+          <textureFocus>playlist_sub_focus1.png</textureFocus>
+          <textureNoFocus>-</textureNoFocus>
+          <onleft>2</onleft>
+          <onright>50</onright>
+          <onup>2</onup>
+          <ondown>2</ondown>
+          <showScrollbar>no</showScrollbar>
+          <unfocusedAlpha>160</unfocusedAlpha>
+          <spinWidth>24</spinWidth>
+          <spinHeight>24</spinHeight>
+          <spinAlign>Right</spinAlign>
+          <spinColor>ffffffff</spinColor>
+          <textureUp>arrow_round_up_nofocus.png</textureUp>
+          <textureDown>arrow_round_down_nofocus.png</textureDown>
+          <textureUpFocus>arrow_round_up_focus.png</textureUpFocus>
+          <textureDownFocus>arrow_round_down_focus.png</textureDownFocus>
+          <textcolor3>ffffffff</textcolor3>
+          <scrollStartDelaySec>1</scrollStartDelaySec>
+          <folderPrefix />
+          <folderSuffix />
+          <keepaspectratio>yes</keepaspectratio>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor>0</shadowColor>
+        </control>
+        <control>
+          <description>Thumbnail Panel</description>
+          <type>thumbnailpanel</type>
+          <dimColor>90ffffff</dimColor>
+          <id>50</id>
+          <posX>90</posX>
+          <posY>260</posY>
+          <width>1740</width>
+          <height>720</height>
+          <scrollOffset>0</scrollOffset>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <textureWidthBig>232</textureWidthBig>
+          <textureHeightBig>232</textureHeightBig>
+          <itemWidthBig>255</itemWidthBig>
+          <itemHeightBig>290</itemHeightBig>
+          <itemWidth>180</itemWidth>
+          <itemHeight>220</itemHeight>
+          <thumbWidthBig>232</thumbWidthBig>
+          <thumbHeightBig>232</thumbHeightBig>
+          <thumbPosXBig>0</thumbPosXBig>
+          <thumbPosYBig>0</thumbPosYBig>
+          <thumbWidth>165</thumbWidth>
+          <thumbHeight>165</thumbHeight>
+          <thumbPosX>0</thumbPosX>
+          <thumbPosY>0</thumbPosY>
+          <thumbZoom>no</thumbZoom>
+          <enableFocusZoom>no</enableFocusZoom>
+          <zoomXPixels>0</zoomXPixels>
+          <zoomYPixels>0</zoomYPixels>
+          <hideUnfocusTexture>no</hideUnfocusTexture>
+          <renderFocusText>yes</renderFocusText>
+          <renderUnfocusText>yes</renderUnfocusText>
+          <showFrame>true</showFrame>
+          <imageFolder>-</imageFolder>
+          <imageFolderFocus>-</imageFolderFocus>
+          <textureMask />
+          <frameNoFocus>thumb.frame.black.png</frameNoFocus>
+          <frameFocus>thumb.frame.black.focus.png</frameFocus>
+          <keepaspectratio>yes</keepaspectratio>
+          <font>font12</font>
+          <spinCanFocus>no</spinCanFocus>
+          <dimColor>80ffffff</dimColor>
+          <spinPosY>1010</spinPosY>
+          <spinWidth>24</spinWidth>
+          <spinHeight>24</spinHeight>
+          <spinPosX>1860</spinPosX>
+          <spinAlign>Right</spinAlign>
+          <spinColor>ffffffff</spinColor>
+          <textureUp>arrow_round_up_nofocus.png</textureUp>
+          <textureDown>arrow_round_down_nofocus.png</textureDown>
+          <textureUpFocus>arrow_round_up_focus.png</textureUpFocus>
+          <textureDownFocus>arrow_round_down_focus.png</textureDownFocus>
+          <textureWidth>168</textureWidth>
+          <textureHeight>168</textureHeight>
+          <shadedColor>20ffffff</shadedColor>
+          <selectedColor>ffffffff</selectedColor>
+          <playedColor>ff6FAFE1</playedColor>
+          <textcolor>ffffffff</textcolor>
+          <textcolor2>ffffffff</textcolor2>
+          <textcolor3>ffffffff</textcolor3>
+          <colordiffuse>ffffffff</colordiffuse>
+          <remoteColor>ffffcc000</remoteColor>
+          <downloadColor>ffffcc000</downloadColor>
+          <scrollStartDelaySec>1</scrollStartDelaySec>
+          <suffix>|</suffix>
+          <textXOff>0</textXOff>
+          <textYOff>4</textYOff>
+          <showScrollbar>no</showScrollbar>
+        </control>
+        <control>
+          <description>Filmstrip view</description>
+          <type>filmstrip</type>
+          <colordiffuse>90ffffff</colordiffuse>
+          <dimColor>90ffffff</dimColor>
+          <id>50</id>
+          <scrollOffset>2</scrollOffset>
+          <posX>90</posX>
+          <posY>390</posY>
+          <width>1770</width>
+          <height>1080</height>
+          <onup>2</onup>
+          <onleft>2</onleft>
+          <thumbWidth>300</thumbWidth>
+          <thumbHeight>300</thumbHeight>
+          <thumbPosX>0</thumbPosX>
+          <thumbPosY>0</thumbPosY>
+          <itemWidth>285</itemWidth>
+          <itemHeight>315</itemHeight>
+          <textureWidth>300</textureWidth>
+          <textureHeight>300</textureHeight>
+          <imageFolder>-</imageFolder>
+          <imageFolderFocus>-</imageFolderFocus>
+          <frame>-</frame>
+          <frameFocus>-</frameFocus>
+          <textureMask>MP139\musicfanart_mask.png</textureMask>
+          <thumbs mask="MP139\musicfanart_mask.png">
+          </thumbs>
+          <background>emtpy.png</background>
+          <InfoImage>
+          </InfoImage>
+          <showFrame>yes</showFrame>
+          <showFolder>no</showFolder>
+          <showBackGround>no</showBackGround>
+          <showInfoImage>no</showInfoImage>
+          <keepaspectratio>no</keepaspectratio>
+          <dimColor>80ffffff</dimColor>
+          <spinPosX>1860</spinPosX>
+          <showScrollbar>no</showScrollbar>
+          <thumbAnimation effect="zoom" start="100,100" end="150,150" time="200" tween="circle" ease="inout">focus</thumbAnimation>
+          <thumbAnimation effect="zoom" start="150,150" end="100,100" time="200" tween="back" ease="inout">unfocus</thumbAnimation>
+          <spinWidth>24</spinWidth>
+          <spinHeight>24</spinHeight>
+          <spinPosY>1010</spinPosY>
+          <spinAlign>Right</spinAlign>
+          <spinColor>ffffffff</spinColor>
+          <textureUp>arrow_round_up_nofocus.png</textureUp>
+          <textureDown>arrow_round_down_nofocus.png</textureDown>
+          <textureUpFocus>arrow_round_up_focus.png</textureUpFocus>
+          <textureDownFocus>arrow_round_down_focus.png</textureDownFocus>
+          <font>font13</font>
+          <shadedColor>20ffffff</shadedColor>
+          <selectedColor>ffffffff</selectedColor>
+          <playedColor>ff6FAFE1</playedColor>
+          <textcolor>ff000000</textcolor>
+          <textcolor2>ffffffff</textcolor2>
+          <textcolor3>ffffffff</textcolor3>
+          <remoteColor>ff000000</remoteColor>
+          <downloadColor>ff666666</downloadColor>
+          <suffix>|</suffix>
+          <textureWidthBig>288</textureWidthBig>
+          <textureHeightBig>202</textureHeightBig>
+          <itemWidthBig>361</itemWidthBig>
+          <itemHeightBig>250</itemHeightBig>
+          <thumbWidthBig>223</thumbWidthBig>
+          <thumbHeightBig>157</thumbHeightBig>
+          <thumbPosXBig>31</thumbPosXBig>
+          <thumbPosYBig>22</thumbPosYBig>
+          <enableFocusZoom>no</enableFocusZoom>
+          <backgroundx>799</backgroundx>
+          <backgroundy>181</backgroundy>
+          <backgroundwidth>834</backgroundwidth>
+          <backgroundheight>610</backgroundheight>
+          <backgrounddiffuse>60ffffff</backgrounddiffuse>
+          <InfoImagex>840</InfoImagex>
+          <InfoImagey>214</InfoImagey>
+          <InfoImagewidth>732</InfoImagewidth>
+          <InfoImageheight>514</InfoImageheight>
+          <InfoImagediffuse>ffffffff</InfoImagediffuse>
+          <textXOff>3000</textXOff>
+          <textYOff>3000</textYOff>
+        </control>
+        <control>
+          <description>Cover Flow view</description>
+          <type>coverflow</type>
+          <colordiffuse>90ffffff</colordiffuse>
+          <dimColor>90ffffff</dimColor>
+          <id>50</id>
+          <posX>0</posX>
+          <posY>300</posY>
+          <width>1920</width>
+          <height>1080</height>
+          <onup>2</onup>
+          <onleft>2</onleft>
+          <selectedCard>0</selectedCard>
+          <cardWidth>540</cardWidth>
+          <cardHeight>540</cardHeight>
+          <angle>65</angle>
+          <sideShift>380</sideShift>
+          <sideGap>90</sideGap>
+          <sideDepth>550</sideDepth>
+          <offsetY>0</offsetY>
+          <selectedOffsetY>0</selectedOffsetY>
+          <speed>8</speed>
+          <backgroundHeight>120</backgroundHeight>
+          <backgroundWidth>1920</backgroundWidth>
+          <backgroundX>0</backgroundX>
+          <backgroundY>645</backgroundY>
+          <backgroundDiffuse>FF000000</backgroundDiffuse>
+          <background>MP139\roof.png</background>
+          <showBackground>yes</showBackground>
+          <foregroundHeight>720</foregroundHeight>
+          <foregroundWidth>1280</foregroundWidth>
+          <foregroundX>0</foregroundX>
+          <foregroundY>0</foregroundY>
+          <foregroundDiffuse>FF000000</foregroundDiffuse>
+          <foreground>MP139\coverflow_foreground.png</foreground>
+          <showForeground>no</showForeground>
+          <showFrame>yes</showFrame>
+          <frame>-</frame>
+          <frameFocus>-</frameFocus>
+          <frameWidth>540</frameWidth>
+          <frameHeight>540</frameHeight>
+          <spinSpeed>8</spinSpeed>
+          <unfocusedAlpha>FF</unfocusedAlpha>
+          <folderPrefix>[</folderPrefix>
+          <folderSuffix>]</folderSuffix>
+          <font1>font13</font1>
+          <font2>font10</font2>
+          <label1 />
+          <label2 />
+          <textColor>FFFFFFFF</textColor>
+          <remoteColor>FFFF0000</remoteColor>
+          <playedColor>FFA0D0FF</playedColor>
+          <downloadColor>FF00FF00</downloadColor>
+          <selectedColor>FFFFFFFF</selectedColor>
+          <shadowAngle>45</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor>FF000000</shadowColor>
+          <label1YOff>405</label1YOff>
+          <label2YOff>430</label2YOff>
+          <pageSize>5</pageSize>
+          <keepaspectratio>no</keepaspectratio>
+          <showScrollbar>no</showScrollbar>
+          <cards mask="MP139\musicfanart_mask.png">MP139\musicfanart_mask.png</cards>
+          <subitems>
+            <subitem>                 &lt;controls&gt;
+              &lt;control&gt;
+                &lt;description&gt;background&lt;/description&gt;
+                &lt;type&gt;image&lt;/type&gt;
+                &lt;posX&gt;0&lt;/posX&gt;
+                &lt;posY&gt;0&lt;/posY&gt;
+                &lt;width&gt;360&lt;/width&gt;
+                &lt;height&gt;360&lt;/height&gt;
+                &lt;texture mask="MP139\musicfanart_mask.png"&gt;MP139\blue.png&lt;/texture&gt;
+              &lt;/control&gt;
+              &lt;control&gt;
+                &lt;description&gt;Music Details&lt;/description&gt;
+                &lt;type&gt;label&lt;/type&gt;
+                &lt;posX&gt;20&lt;/posX&gt;
+                &lt;posY&gt;10&lt;/posY&gt;
+                &lt;width&gt;320&lt;/width&gt;
+                &lt;label&gt;102001&lt;/label&gt;
+                &lt;font&gt;font10&lt;/font&gt;
+                &lt;textcolor&gt;lightgray&lt;/textcolor&gt;
+                &lt;shadowAngle&gt;0&lt;/shadowAngle&gt;
+                &lt;shadowDistance&gt;0&lt;/shadowDistance&gt;
+              &lt;/control&gt;
+              &lt;control&gt;
+                &lt;description&gt;General Info&lt;/description&gt;
+                &lt;type&gt;fadelabel&lt;/type&gt;
+                &lt;posX&gt;20&lt;/posX&gt;
+                &lt;posY&gt;32&lt;/posY&gt;
+                &lt;width&gt;320&lt;/width&gt;
+                &lt;label&gt;#(L(171)) #music.albumArtist&lt;/label&gt;
+                &lt;font&gt;font10&lt;/font&gt;
+                &lt;align&gt;left&lt;/align&gt;
+                &lt;textcolor&gt;lightgray&lt;/textcolor&gt;
+                &lt;shadowAngle&gt;0&lt;/shadowAngle&gt;
+                &lt;shadowDistance&gt;0&lt;/shadowDistance&gt;
+              &lt;/control&gt;
+              &lt;control&gt;
+                &lt;description&gt;General Info&lt;/description&gt;
+                &lt;type&gt;fadelabel&lt;/type&gt;
+                &lt;posX&gt;20&lt;/posX&gt;
+                &lt;posY&gt;54&lt;/posY&gt;
+                &lt;width&gt;320&lt;/width&gt;
+                &lt;label&gt;#(L(170)) #music.album&lt;/label&gt;
+                &lt;font&gt;font10&lt;/font&gt;
+                &lt;align&gt;left&lt;/align&gt;
+                &lt;textcolor&gt;lightgray&lt;/textcolor&gt;
+                &lt;shadowAngle&gt;0&lt;/shadowAngle&gt;
+                &lt;shadowDistance&gt;0&lt;/shadowDistance&gt;
+              &lt;/control&gt;
+              &lt;control&gt;
+                &lt;description&gt;General Info&lt;/description&gt;
+                &lt;type&gt;fadelabel&lt;/type&gt;
+                &lt;posX&gt;20&lt;/posX&gt;
+                &lt;posY&gt;76&lt;/posY&gt;
+                &lt;width&gt;320&lt;/width&gt;
+                &lt;label&gt;#(L(179)): #music.title&lt;/label&gt;
+                &lt;font&gt;font10&lt;/font&gt;
+                &lt;align&gt;left&lt;/align&gt;
+                &lt;textcolor&gt;lightgray&lt;/textcolor&gt;
+                &lt;shadowAngle&gt;0&lt;/shadowAngle&gt;
+                &lt;shadowDistance&gt;0&lt;/shadowDistance&gt;
+              &lt;/control&gt;
+              &lt;control&gt;
+                &lt;description&gt;General Info&lt;/description&gt;
+                &lt;type&gt;fadelabel&lt;/type&gt;
+                &lt;posX&gt;20&lt;/posX&gt;
+                &lt;posY&gt;98&lt;/posY&gt;
+                &lt;width&gt;320&lt;/width&gt;
+                &lt;label&gt;#(L(178)) # #music.track&lt;/label&gt;
+                &lt;font&gt;font10&lt;/font&gt;
+                &lt;align&gt;left&lt;/align&gt;
+                &lt;textcolor&gt;lightgray&lt;/textcolor&gt;
+                &lt;shadowAngle&gt;0&lt;/shadowAngle&gt;
+                &lt;shadowDistance&gt;0&lt;/shadowDistance&gt;
+              &lt;/control&gt;
+              &lt;control&gt;
+                &lt;description&gt;General Info&lt;/description&gt;
+                &lt;type&gt;fadelabel&lt;/type&gt;
+                &lt;posX&gt;20&lt;/posX&gt;
+                &lt;posY&gt;120&lt;/posY&gt;
+                &lt;width&gt;320&lt;/width&gt;
+                &lt;label&gt;#(L(437)) #music.duration&lt;/label&gt;
+                &lt;font&gt;font10&lt;/font&gt;
+                &lt;align&gt;left&lt;/align&gt;
+                &lt;textcolor&gt;lightgray&lt;/textcolor&gt;
+                &lt;shadowAngle&gt;0&lt;/shadowAngle&gt;
+                &lt;shadowDistance&gt;0&lt;/shadowDistance&gt;
+              &lt;/control&gt;
+              &lt;control&gt;
+                &lt;description&gt;General Info&lt;/description&gt;
+                &lt;type&gt;fadelabel&lt;/type&gt;
+                &lt;posX&gt;20&lt;/posX&gt;
+                &lt;posY&gt;142&lt;/posY&gt;
+                &lt;width&gt;320&lt;/width&gt;
+                &lt;label&gt;Filetype: #music.filetype&lt;/label&gt;
+                &lt;font&gt;font10&lt;/font&gt;
+                &lt;align&gt;left&lt;/align&gt;
+                &lt;textcolor&gt;lightgray&lt;/textcolor&gt;
+                &lt;shadowAngle&gt;0&lt;/shadowAngle&gt;
+                &lt;shadowDistance&gt;0&lt;/shadowDistance&gt;
+              &lt;/control&gt;
+              &lt;control&gt;
+                &lt;description&gt;General Info&lt;/description&gt;
+                &lt;type&gt;fadelabel&lt;/type&gt;
+                &lt;posX&gt;20&lt;/posX&gt;
+                &lt;posY&gt;166&lt;/posY&gt;
+                &lt;width&gt;320&lt;/width&gt;
+                &lt;label&gt;Codec: #music.codec&lt;/label&gt;
+                &lt;font&gt;font10&lt;/font&gt;
+                &lt;align&gt;left&lt;/align&gt;
+                &lt;textcolor&gt;lightgray&lt;/textcolor&gt;
+                &lt;shadowAngle&gt;0&lt;/shadowAngle&gt;
+                &lt;shadowDistance&gt;0&lt;/shadowDistance&gt;
+              &lt;/control&gt;
+              &lt;control&gt;
+                &lt;description&gt;General Info&lt;/description&gt;
+                &lt;type&gt;fadelabel&lt;/type&gt;
+                &lt;posX&gt;20&lt;/posX&gt;
+                &lt;posY&gt;188&lt;/posY&gt;
+                &lt;width&gt;320&lt;/width&gt;
+                &lt;label&gt;Bitrate: #music.bitrate&lt;/label&gt;
+                &lt;font&gt;font10&lt;/font&gt;
+                &lt;align&gt;left&lt;/align&gt;
+                &lt;textcolor&gt;lightgray&lt;/textcolor&gt;
+                &lt;shadowAngle&gt;0&lt;/shadowAngle&gt;
+                &lt;shadowDistance&gt;0&lt;/shadowDistance&gt;
+              &lt;/control&gt;
+              &lt;control&gt;
+                &lt;description&gt;General Info&lt;/description&gt;
+                &lt;type&gt;fadelabel&lt;/type&gt;
+                &lt;posX&gt;20&lt;/posX&gt;
+                &lt;posY&gt;210&lt;/posY&gt;
+                &lt;width&gt;320&lt;/width&gt;
+                &lt;label&gt;BPM: #music.bpm&lt;/label&gt;
+                &lt;font&gt;font10&lt;/font&gt;
+                &lt;align&gt;left&lt;/align&gt;
+                &lt;textcolor&gt;lightgray&lt;/textcolor&gt;
+                &lt;shadowAngle&gt;0&lt;/shadowAngle&gt;
+                &lt;shadowDistance&gt;0&lt;/shadowDistance&gt;
+              &lt;/control&gt;
+              &lt;control&gt;
+                &lt;description&gt;General Info&lt;/description&gt;
+                &lt;type&gt;fadelabel&lt;/type&gt;
+                &lt;posX&gt;20&lt;/posX&gt;
+                &lt;posY&gt;232&lt;/posY&gt;
+                &lt;width&gt;320&lt;/width&gt;
+                &lt;label&gt;#(L(627)) #music.channels&lt;/label&gt;
+                &lt;font&gt;font10&lt;/font&gt;
+                &lt;align&gt;left&lt;/align&gt;
+                &lt;textcolor&gt;lightgray&lt;/textcolor&gt;
+                &lt;shadowAngle&gt;0&lt;/shadowAngle&gt;
+                &lt;shadowDistance&gt;0&lt;/shadowDistance&gt;
+              &lt;/control&gt;
+              &lt;control&gt;
+                &lt;description&gt;General Info&lt;/description&gt;
+                &lt;type&gt;fadelabel&lt;/type&gt;
+                &lt;posX&gt;20&lt;/posX&gt;
+                &lt;posY&gt;254&lt;/posY&gt;
+                &lt;width&gt;320&lt;/width&gt;
+                &lt;label&gt;Samplerate: #music.samplerate&lt;/label&gt;
+                &lt;font&gt;font10&lt;/font&gt;
+                &lt;align&gt;left&lt;/align&gt;
+                &lt;textcolor&gt;lightgray&lt;/textcolor&gt;
+                &lt;shadowAngle&gt;0&lt;/shadowAngle&gt;
+                &lt;shadowDistance&gt;0&lt;/shadowDistance&gt;
+              &lt;/control&gt;
+              &lt;control&gt;
+                &lt;description&gt;General Info&lt;/description&gt;
+                &lt;type&gt;fadelabel&lt;/type&gt;
+                &lt;posX&gt;20&lt;/posX&gt;
+                &lt;posY&gt;276&lt;/posY&gt;
+                &lt;width&gt;320&lt;/width&gt;
+                &lt;label&gt;Date added: #music.dateadded&lt;/label&gt;
+                &lt;font&gt;font10&lt;/font&gt;
+                &lt;align&gt;left&lt;/align&gt;
+                &lt;textcolor&gt;lightgray&lt;/textcolor&gt;
+                &lt;shadowAngle&gt;0&lt;/shadowAngle&gt;
+                &lt;shadowDistance&gt;0&lt;/shadowDistance&gt;
+              &lt;/control&gt;
+              &lt;control&gt;
+                &lt;description&gt;General Info&lt;/description&gt;
+                &lt;type&gt;fadelabel&lt;/type&gt;
+                &lt;posX&gt;20&lt;/posX&gt;
+                &lt;posY&gt;298&lt;/posY&gt;
+                &lt;width&gt;320&lt;/width&gt;
+                &lt;label&gt;Last played: #music.datelastplayed&lt;/label&gt;
+                &lt;font&gt;font10&lt;/font&gt;
+                &lt;align&gt;left&lt;/align&gt;
+                &lt;textcolor&gt;lightgray&lt;/textcolor&gt;
+                &lt;shadowAngle&gt;0&lt;/shadowAngle&gt;
+                &lt;shadowDistance&gt;0&lt;/shadowDistance&gt;
+              &lt;/control&gt;
+            &lt;/controls&gt;</subitem>
+          </subitems>
+          <backgroundColor>000000FF</backgroundColor>
+          <spinPosX>1860</spinPosX>
+          <spinPosY>1010</spinPosY>
+          <spinWidth>24</spinWidth>
+          <spinHeight>24</spinHeight>
+          <spinColor>ffffffff</spinColor>
+          <textureUp>arrow_round_up_nofocus.png</textureUp>
+          <textureDown>arrow_round_down_nofocus.png</textureDown>
+          <textureUpFocus>arrow_round_up_focus.png</textureUpFocus>
+          <textureDownFocus>arrow_round_down_focus.png</textureDownFocus>
+        </control>
+        <control>
+          <description>playlist listcontrol</description>
+          <type>playlistcontrol</type>
+          <id>50</id>
+          <posX>100</posX>
+          <posY>247</posY>
+          <width>1200</width>
+          <height>770</height>
+          <upBtnXOffset>990</upBtnXOffset>
+          <downBtnXOffset>1050</downBtnXOffset>
+          <deleteBtnXOffset>1110</deleteBtnXOffset>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <selectedColor3>ff7FB1E5</selectedColor3>
+          <selectedColor2>ff7FB1E5</selectedColor2>
+          <selectedColor>ff7FB1E5</selectedColor>
+          <scrollOffset>2</scrollOffset>
+          <unfocusedAlpha>160</unfocusedAlpha>
+          <showScrollbar>no</showScrollbar>
+          <itemWidth>48</itemWidth>
+          <itemHeight>48</itemHeight>
+          <IconXOff>10</IconXOff>
+          <IconYOff>2</IconYOff>
+          <upBtnWidth>52</upBtnWidth>
+          <downBtnWidth>52</downBtnWidth>
+          <deleteBtnWidth>48</deleteBtnWidth>
+          <upBtnHeight>52</upBtnHeight>
+          <downBtnHeight>52</downBtnHeight>
+          <deleteBtnHeight>48</deleteBtnHeight>
+          <upBtnYOffset>0</upBtnYOffset>
+          <downBtnYOffset>-4</downBtnYOffset>
+          <deleteBtnYOffset>1</deleteBtnYOffset>
+          <upBtnXOffset>1021</upBtnXOffset>
+          <downBtnXOffset>1075</downBtnXOffset>
+          <deleteBtnXOffset>1130</deleteBtnXOffset>
+          <spinWidth>24</spinWidth>
+          <spinHeight>24</spinHeight>
+          <spinPosX>1860</spinPosX>
+          <spinPosY>1010</spinPosY>
+          <spinAlign>Right</spinAlign>
+          <spinColor>ffffffff</spinColor>
+          <textureUp>arrow_round_up_nofocus.png</textureUp>
+          <textureDown>arrow_round_down_nofocus.png</textureDown>
+          <textureUpFocus>arrow_round_up_focus.png</textureUpFocus>
+          <textureDownFocus>arrow_round_down_focus.png</textureDownFocus>
+          <textureFocus>MP139\list_sub_focus.png</textureFocus>
+          <textureNoFocus>MP139\list_sub_nofocus.png</textureNoFocus>
+          <textureHeight>52</textureHeight>
+          <spaceBetweenItems />
+          <font>font12</font>
+          <shadedColor>20ffffff</shadedColor>
+          <playedColor>ffffffff</playedColor>
+          <playedColor2>ffffffff</playedColor2>
+          <textcolor>ffffffff</textcolor>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
+          <textcolor2>ffffffff</textcolor2>
+          <textcolor3>ffffffff</textcolor3>
+          <colordiffuse>ffffffff</colordiffuse>
+          <remoteColor>ff99f9ff</remoteColor>
+          <remoteColor2>ff99f9ff</remoteColor2>
+          <downloadColor>ff666666</downloadColor>
+          <downloadColor2>ff80ff80</downloadColor2>
+          <dimColor>ffffffff</dimColor>
+          <textXOff>6</textXOff>
+          <textYOff>3</textYOff>
+          <textXOff2>0</textXOff2>
+          <textYOff2>7</textYOff2>
+          <suffix>|</suffix>
+          <textureMoveUp>MP139\playlist_item_up_nofocus.png</textureMoveUp>
+          <textureMoveUpFocused>MP139\playlist_item_up_focus.png</textureMoveUpFocused>
+          <textureMoveDown>MP139\playlist_item_down_nofocus.png</textureMoveDown>
+          <textureMoveDownFocused>MP139\playlist_item_down_focus.png</textureMoveDownFocused>
+          <textureDelete>MP139\playlist_item_delete_nofocus.png</textureDelete>
+          <textureDeleteFocused>MP139\playlist_item_delete_focus.png</textureDeleteFocused>
+          <shadowAngle>0</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor>0</shadowColor>
+        </control>
+      </control>
+      <dimColor>ffffffff</dimColor>
+    </control>
     <control>
       <id>1</id>
       <type>image</type>

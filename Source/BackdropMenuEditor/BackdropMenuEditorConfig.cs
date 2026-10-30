@@ -31,10 +31,10 @@ namespace MediaPortal.Plugins
         List<menuItem> menuItems4 = new List<menuItem>();
         List<menuItem> menuItems5 = new List<menuItem>();
         List<menuItem> menuItems6 = new List<menuItem>();
-        List<bgItem> bgItems = new List<bgItem>();        
+        List<bgItem> bgItems = new List<bgItem>();
         StringBuilder rawXML = new StringBuilder();
         StringBuilder rawXMLBg = new StringBuilder();
-        StringBuilder rawXMLDefineTags = new StringBuilder();        
+        StringBuilder rawXMLDefineTags = new StringBuilder();
         bool configloaded = false;
         int updateIndex = 999;
         string latestPictures = null;
@@ -54,7 +54,7 @@ namespace MediaPortal.Plugins
 
 
         public BackdropMenuEditorConfig()
-        {            
+        {
             InitializeComponent();
         }
 
@@ -89,27 +89,39 @@ namespace MediaPortal.Plugins
 
         }
 
-        private void BackdropMenuEditorConfig_FormClosing(object sender, FormClosedEventArgs e)
+        protected virtual DialogResult ConfirmSaveOnClose()
         {
-            if (!DesignMode)
-            {
-                DialogResult result = MessageBox.Show("Do you want to save your changes?", "Save Changes?", MessageBoxButtons.YesNo);
-                if (result == DialogResult.No)
-                {
-                    //do nothing
-                }
+            return MessageBox.Show(this, "Do you want to save your changes?", "Save Changes?", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+        }
 
-                if (result == DialogResult.Yes)
-                {
-                    DoSave();
-                }
-                this.Close();                
+        protected virtual void ReportSaveError(Exception error)
+        {
+            MessageBox.Show(this, "Your changes could not be saved. The editor will remain open.\r\n\r\n" + error.Message,
+                "Backdrop Menu Editor", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void BackdropMenuEditorConfig_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (DesignMode || e.Cancel) return;
+            try
+            {
+                DialogResult result = ConfirmSaveOnClose();
+                // FormClosing already owns the close operation. Never call Close
+                // from this event or from the save routine it invokes.
+                if (result == DialogResult.No) return;
+                e.Cancel = result != DialogResult.Yes || !SaveMenuConfiguration();
+            }
+            catch (Exception error)
+            {
+                e.Cancel = true;
+                ReportSaveError(error);
             }
         }
 
         private void BackdropMenuEditorConfig_Load(object sender, EventArgs e)
-        {                      
-            
+        {
+
             //Config.GetFile(Config.Dir.Config, "BackdropMenuEditor.xml")
             path = Config.GetFolder(Config.Dir.Skin) + @"\Backdrop";
             //path = sMediaPortalDir + "\\skin\\BackdropMenuEditor";
@@ -127,7 +139,7 @@ namespace MediaPortal.Plugins
                 used_list.Enabled = true;
                 //Enable whatever needs to be enabled...
             }
-            
+
             if (checkBox1.Checked)
             {
                 useMenu2 = "True";
@@ -189,8 +201,8 @@ namespace MediaPortal.Plugins
                 //checkBox6.Checked = false;
             }
             tabControl2.TabPages[1].Enabled = false;
-            
-            
+
+
         }
 
         private void SetMenuCount()
@@ -215,7 +227,7 @@ namespace MediaPortal.Plugins
             if (checkBox5.Checked)
             {
                 menuCount++;
-            }         
+            }
             if (checkBox6.Checked)
             {
                 menuCount++;
@@ -223,8 +235,34 @@ namespace MediaPortal.Plugins
         }
 
 
+        protected virtual void ReportMenuInputError(string message)
+        {
+            MessageBox.Show(this, message, "Missing Fields", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        }
+
+        private bool ValidateSubmenuInput()
+        {
+            int target;
+            string background = Convert.ToString(comboBox5.SelectedItem);
+            string error = null;
+            if (String.IsNullOrWhiteSpace(new_windowid.Text) || String.IsNullOrWhiteSpace(new_name.Text))
+                error = "Select a module and enter its submenu text.";
+            else if (!Int32.TryParse(Convert.ToString(comboBox1.SelectedItem), out target) || target < 1 || target > 6)
+                error = "Select the destination in 'Add To Menu'.";
+            else if (background != "Multiple Images" && background != "Single Image" && background != "Fanart Plugin")
+                error = "Select a 'Backdrop Type' and its background path or fanart source.";
+            else if (background == "Fanart Plugin" && comboBox16.SelectedItem == null)
+                error = "Select a fanart source in 'Backdrop Id'.";
+            else if (background != "Fanart Plugin" && String.IsNullOrWhiteSpace(new_imagepath.Text))
+                error = "Enter a background path or image name.";
+            if (error == null) return true;
+            ReportMenuInputError(error);
+            return false;
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            if (!ValidateSubmenuInput()) return;
             bool b = true;
             if (new_windowid.Text != "" && new_name.Text != "")
             {
@@ -244,7 +282,7 @@ namespace MediaPortal.Plugins
                         b = false;
                     }
                 }
-                else if (comboBox16.SelectedItem.Equals("Fanart Plugin"))
+                else if (comboBox5.SelectedItem.Equals("Fanart Plugin") && comboBox16.SelectedItem == null)
                 {
                     MessageBox.Show("'Backdrop Name' must have a value (like Random Movies).");
                     b = false;
@@ -255,7 +293,7 @@ namespace MediaPortal.Plugins
                     menuItem item = new menuItem();
                     item.name = new_name.Text;
                     item.hyperlink = new_windowid.Text;
-                    item.useLatestMedia = comboBox17.SelectedItem.ToString();
+                    item.useLatestMedia = comboBox17.SelectedItem == null ? "No" : comboBox17.SelectedItem.ToString();
                     if (comboBox5.SelectedItem.Equals("Fanart Plugin"))
                         item.imagePath = comboBox16.SelectedItem.ToString();
                     else
@@ -478,7 +516,7 @@ namespace MediaPortal.Plugins
             removeToolStripMenuItem_Click1(sender, e);
         }
 
-        // Move selected menu item down one position in list. 
+        // Move selected menu item down one position in list.
         private void btMoveDown_Click(object sender, EventArgs e)
         {
             // Do nothing if no item is selected or if already at bottom
@@ -507,7 +545,7 @@ namespace MediaPortal.Plugins
             }
         }
 
-        // Move selected menu item up one position in list. 
+        // Move selected menu item up one position in list.
         private void btMoveUp_Click(object sender, EventArgs e)
         {
             // Do nothing if no item is selected or if already at top
@@ -621,12 +659,12 @@ namespace MediaPortal.Plugins
                 MessageBox.Show("No item is selected for removal", "Remove", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
 
-        private void DoSave()
+        protected virtual bool SaveMenuConfiguration()
         {
             if (checkFields() == true)
             {
 
-                int mycount = 0;                
+                int mycount = 0;
 
                 using (MediaPortal.Profile.Settings xmlwriter = new MediaPortal.Profile.Settings(Config.GetFile(Config.Dir.Config, "BackdropMenuEditor.xml")))
                 {
@@ -661,7 +699,7 @@ namespace MediaPortal.Plugins
                         xmlwriter.RemoveEntry("BackdropMenuEditor", "menuText6Multiimage");
                         xmlwriter.RemoveEntry("BackdropMenuEditor", "useMenu6");
                         xmlwriter.RemoveEntry("BackdropMenuEditor", "menuDefaultMenu");
-                        xmlwriter.RemoveEntry("BackdropMenuEditor", "doCenterMenu");                        
+                        xmlwriter.RemoveEntry("BackdropMenuEditor", "doCenterMenu");
                         xmlwriter.RemoveEntry("BackdropMenuEditor", "IdleTimeBasic");
                         xmlwriter.RemoveEntry("BackdropMenuEditor", "IdleTimeOther");
                         xmlwriter.RemoveEntry("FanartHandler", "useMenu1");
@@ -677,7 +715,7 @@ namespace MediaPortal.Plugins
                         xmlwriter.RemoveEntry("BackdropMenuEditor", "useMenu5");
                         xmlwriter.RemoveEntry("BackdropMenuEditor", "useMenu6");
                         xmlwriter.RemoveEntry("BackdropMenuEditor", "doHideClock");
-                        
+
 
                         int a = 0;
                         do
@@ -794,7 +832,7 @@ namespace MediaPortal.Plugins
                     xmlwriter.SetValue("BackdropMenuEditor", "doCenterMenu", checkBox7.Checked ? true : false);
                     xmlwriter.SetValue("BackdropMenuEditor", "menuDefaultMenu", comboBox2.SelectedItem);
                     xmlwriter.SetValue("BackdropMenuEditor", "IdleTimeOther", IdleTimeOther.SelectedItem);
-                    xmlwriter.SetValue("BackdropMenuEditor", "IdleTimeBasic", IdleTimeBasic.SelectedItem);      
+                    xmlwriter.SetValue("BackdropMenuEditor", "IdleTimeBasic", IdleTimeBasic.SelectedItem);
 
 
                     foreach (menuItem item in menuItems1)
@@ -865,19 +903,28 @@ namespace MediaPortal.Plugins
                         mycount++;
                     }
                 }
-                MessageBox.Show("Done saving your menu configuration (old is kept as backup). Settings is stored in memory. Make sure to press Ok when exiting MP Configuration. Pressing Cancel when exiting MP Configuration will result in these setting NOT being saved!");
-                this.Close();
+                if (Object.Equals(AppDomain.CurrentDomain.GetData("Backdrop.StandaloneEditor"), true))
+                {
+                    MediaPortal.Profile.Settings.SaveCache();
+                    MessageBox.Show("Your menu configuration has been saved. The previous configuration is kept as a backup. Restart MediaPortal to use the updated menu.", "Backdrop Menu Editor");
+                }
+                else
+                {
+                    MessageBox.Show("Done saving your menu configuration (old is kept as backup). Settings is stored in memory. Make sure to press Ok when exiting MP Configuration. Pressing Cancel when exiting MP Configuration will result in these setting NOT being saved!");
+                }
+                return true;
             }
             else
             {
                 MessageBox.Show("ERROR!! Nothing was saved because of missing values!");
+                return false;
             }
         }
 
         // Save settings to file
         private void btSave_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btCancel_Click(object sender, EventArgs e)
@@ -939,7 +986,7 @@ namespace MediaPortal.Plugins
                 sOut = "weatherbg";
             else if (ss.IndexOf("map") >= 0)
                 sOut = "worldmap";
-            
+
             return sOut;
         }
 
@@ -952,8 +999,8 @@ namespace MediaPortal.Plugins
             comboBox1.Items.Add("3");
             comboBox1.Items.Add("4");
             comboBox1.Items.Add("5");
-            comboBox1.Items.Add("6");            
-            
+            comboBox1.Items.Add("6");
+
             comboBox5.Enabled = true;
             comboBox5.Items.Clear();
             comboBox5.Items.Add("Single Image");
@@ -965,9 +1012,9 @@ namespace MediaPortal.Plugins
             comboBox17.Items.Add("No");
             comboBox17.Items.Add("Moving Pictures");
             comboBox17.Items.Add("Music");
-            comboBox17.Items.Add("Pictures");            
+            comboBox17.Items.Add("Pictures");
             comboBox17.Items.Add("TV Recordings");
-            comboBox17.Items.Add("TVSeries");            
+            comboBox17.Items.Add("TVSeries");
 
             comboBox6.Enabled = true;
             comboBox6.Items.Clear();
@@ -1095,7 +1142,7 @@ namespace MediaPortal.Plugins
             comboBox16.Items.Add("Random Plugins");
             comboBox16.Items.Add("Random TV");
             comboBox16.Items.Add("Random TVSeries");
-            
+
             avail_list.Enabled = true;
             avail_list.Items.Clear();
 
@@ -1108,7 +1155,7 @@ namespace MediaPortal.Plugins
             {
                 string s = fi.Name;
                 bool b = false;
-                
+
                 if (s.StartsWith("common") == true)
                     b = true;
                 else if (s.StartsWith("Common") == true)
@@ -1129,7 +1176,7 @@ namespace MediaPortal.Plugins
                     b = true;
                 else if (s.StartsWith("wizard") == true)
                     b = true;
-                else if (s.StartsWith("BackdropMenuEditor_selector") == true)                    
+                else if (s.StartsWith("BackdropMenuEditor_selector") == true)
                     b = false;
                 else if (s.StartsWith("BackdropMenuEditor_currentvideo") == true)
                     b = false;
@@ -1139,24 +1186,24 @@ namespace MediaPortal.Plugins
                     b = true;
                 else if (s.StartsWith(".watched") == true)
                     b = true;
-                
+
                 if (b == false)
                 {
                     myXPathDocument = new XPathDocument(fi.FullName);
                     XPathNavigator myXPathNavigator = myXPathDocument.CreateNavigator();
                     XPathNodeIterator myXPathNodeIterator  = myXPathNavigator.Select("/window/id");
-                    
+
                     if (myXPathNodeIterator.Count > 0)
                     {
-                        myXPathNodeIterator.MoveNext();    
+                        myXPathNodeIterator.MoveNext();
                         avail_item = new menuItem();
-                        avail_item.name = s;                        
+                        avail_item.name = s;
                         avail_item.hyperlink = myXPathNodeIterator.Current.Value;
                         avail_item.imagePath = getFolderName(s);
                         avail_list.Items.Add(avail_item.name);
                         AvailmenuItems.Add(avail_item);
                     }
-                }               
+                }
             }
 
             avail_item = new menuItem();
@@ -1164,14 +1211,14 @@ namespace MediaPortal.Plugins
             avail_item.hyperlink = "";
             avail_item.imagePath = "games";
             avail_list.Items.Add(avail_item.name);
-            AvailmenuItems.Add(avail_item);     
+            AvailmenuItems.Add(avail_item);
 
             avail_item = new menuItem();
             avail_item.name = "Exit";
             avail_item.hyperlink = "Exit";
             avail_item.imagePath = "shutdownbg";
             avail_list.Items.Add(avail_item.name);
-            AvailmenuItems.Add(avail_item);           
+            AvailmenuItems.Add(avail_item);
 
             avail_item = new menuItem();
             avail_item.name = "Restart";
@@ -1594,7 +1641,7 @@ namespace MediaPortal.Plugins
                 textBox7.Text = "Plugins";
             if (textBox3.Text.Length < 1)
                 textBox3.Text = "pluginsbg";
-            
+
             if (sImgType != null && sImgType.Length > 0)
             {
                 if (sImgType.Equals("Yes"))
@@ -1685,7 +1732,7 @@ namespace MediaPortal.Plugins
             IdleTimeBasic.SelectedItem = xmlreader.GetValueAsString("BackdropMenuEditor", "IdleTimeBasic", "");
             if (IdleTimeBasic.SelectedIndex < 0)
                 IdleTimeBasic.SelectedItem = "7";
-          
+
             int a = 0;
 
             do
@@ -1827,7 +1874,7 @@ namespace MediaPortal.Plugins
             listBox1.Items.Clear();
             listBox2.Items.Clear();
             listBox3.Items.Clear();
-            listBox4.Items.Clear();            
+            listBox4.Items.Clear();
             textBox1.Clear();
             //new_prefix.Clear();
             textBox2.Clear();;
@@ -1841,9 +1888,9 @@ namespace MediaPortal.Plugins
 
             if (File.Exists(Config.GetFile(Configuration.Config.Dir.Config, "BackdropMenuEditor.xml")) == false)
             {
-                File.Copy(path + @"\BackdropMenuEditor.xml", Config.GetFolder(Config.Dir.Config) + @"\BackdropMenuEditor.xml");                                   
+                File.Copy(path + @"\BackdropMenuEditor.xml", Config.GetFolder(Config.Dir.Config) + @"\BackdropMenuEditor.xml");
             }
-        
+
 
 
             using (MediaPortal.Profile.Settings xmlreader = new MediaPortal.Profile.Settings(Config.GetFile(Configuration.Config.Dir.Config, "BackdropMenuEditor.xml")))
@@ -1854,7 +1901,7 @@ namespace MediaPortal.Plugins
             using (MediaPortal.Profile.Settings xmlreader = new MediaPortal.Profile.Settings(Config.GetFile(Configuration.Config.Dir.Config, "LatestMediaHandler.xml")))
             {
                 readFHConfigFile(xmlreader);
-            } 
+            }
 
             //return true;
             if (used_list.Items.Count > 0)
@@ -2124,7 +2171,7 @@ namespace MediaPortal.Plugins
                             al = MovingPictureHandler.GetRootNodes();
                         }
                     }
-                    catch { }                       
+                    catch { }
                     foreach (string s in al)
                     {
                         comboBox18.Items.Add(s);
@@ -2388,7 +2435,7 @@ namespace MediaPortal.Plugins
         }
 
         private void writeMenuPart2(StreamWriter sw, int itemNo, List<menuItem> itemIn)
-        {            
+        {
             int iCount = 0;
             string visibleTag = "";
             string xValue = "";
@@ -2407,7 +2454,7 @@ namespace MediaPortal.Plugins
             else if (itemNo == 3)
             {
                 //iCount = menuItems3.Count;
-                xValue = (GetXStartValue() + 636).ToString(); 
+                xValue = (GetXStartValue() + 636).ToString();
             }
             else if (itemNo == 4)
             {
@@ -2491,11 +2538,11 @@ namespace MediaPortal.Plugins
             rawXML.AppendLine("  <height>52</height>");
             rawXML.AppendLine("  <shouldCache>true</shouldCache>");
             rawXML.AppendLine("  <texture>menu.selected.png</texture>");
-            rawXML.AppendLine(visibleTag.Replace("<visible allowhiddenfocus=\"true\">", "<visible allowhiddenfocus=\"true\">Control.isvisible(93761254)+"));            
+            rawXML.AppendLine(visibleTag.Replace("<visible allowhiddenfocus=\"true\">", "<visible allowhiddenfocus=\"true\">Control.isvisible(93761254)+"));
             rawXML.AppendLine("  <animation effect=\"slide\" start=\"-333,0\" end=\"0,0\" time=\"200\" acceleration=\"-0.9\" reversible=\"false\">visible</animation>");
             rawXML.AppendLine("</control>");
             rawXML.AppendLine(" ");
-            
+
             rawXML.AppendLine("<control>");
             rawXML.AppendLine("  <description>Menu " + itemNo + " Selected - Nevigating from right</description>");
             rawXML.AppendLine("  <type>image</type>");
@@ -2516,7 +2563,7 @@ namespace MediaPortal.Plugins
                 getSubMenyPart(sw, itemNo, z, xValue, yValue, visibleTag, item, iCount, itemIn.Count);
                 z++;
             }
-            
+
         }
 
 
@@ -2554,6 +2601,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("  <height>76</height>");
                 rawXML.AppendLine("  <textureFocus>hiddenmenu_button_fo.png</textureFocus>");
                 rawXML.AppendLine("  <textureNoFocus>-</textureNoFocus>");
+                rawXML.AppendLine("  <visible allowhiddenfocus=\"true\">!Control.IsVisible(93761234)</visible>");
                 rawXML.AppendLine("  <textalign>center</textalign>");
                 rawXML.AppendLine("  <label>" + formatXMLChar(item.name) + "</label>");
                 rawXML.AppendLine("  <textcolor>00ffffff</textcolor>");
@@ -2754,7 +2802,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("  <onleft>770" + menuCount + "2</onleft>");
             else
                 rawXML.AppendLine("  <onleft>770" + (itemNo - 1) + "2</onleft>");
-            
+
             if (item.useLatestMedia.Equals("Moving Pictures") && latestMovingPictures != null && latestMovingPictures.Equals("True"))
             {
                 //rawXML.AppendLine("  <textureFocus>hiddenmenu_button_fo_right.png</textureFocus>");
@@ -2788,6 +2836,7 @@ namespace MediaPortal.Plugins
                     rawXML.AppendLine("  <onright>770" + (itemNo + 1) + "2</onright>");
             }
             rawXML.AppendLine("  <textureFocus>-</textureFocus>");
+            rawXML.AppendLine("  <textureNoFocus>-</textureNoFocus>");
             string up = "";
             string down = "";
             if (z == 0)
@@ -2929,7 +2978,7 @@ namespace MediaPortal.Plugins
             s = s.Replace("<", "&lt;");
             s = s.Replace(">", "&gt;");
             s = s.Replace("\"", "&quot;");
-            s = s.Replace("'", "&#39;");    
+            s = s.Replace("'", "&#39;");
             return s;
         }
 
@@ -3004,7 +3053,7 @@ namespace MediaPortal.Plugins
                 x = 15;
                 xValue = (GetXStartValue() + 1605).ToString();
             }
-         
+
             rawXML.AppendLine("<control>");
             rawXML.AppendLine("  <description>Menu " + i + " Label</description>");
             rawXML.AppendLine("  <id>600" + (x + 2) + "</id>");
@@ -3025,7 +3074,7 @@ namespace MediaPortal.Plugins
             rawXML.AppendLine(" ");
         }
 
-          
+
 
         private string getBgVisibilityTag_Vertical(string module)
         {
@@ -3374,7 +3423,7 @@ namespace MediaPortal.Plugins
                     s = s + "|Control.HasFocus(73071091)";
                 else
                     s = s + "Control.HasFocus(73071091)";
-            }            
+            }
             string defMenu = "";
             if (comboBox2.SelectedItem.Equals("Menu 1"))
             {
@@ -3441,7 +3490,7 @@ namespace MediaPortal.Plugins
                 else
                     s = s + "Control.HasFocus(98129812)";
             }
-            
+
             if (s.Length == 0)
                 s = "no";
             return s;
@@ -3489,13 +3538,13 @@ namespace MediaPortal.Plugins
             else if (key.Equals("Random TVSeries") && firstValue)
                 sout = "#fanarthandler.tvseries.backdrop1.any";
             else if (key.Equals("Random TVSeries") && !firstValue)
-                sout = "#fanarthandler.tvseries.backdrop2.any"; 
+                sout = "#fanarthandler.tvseries.backdrop2.any";
             return sout;
         }
 
-   
 
-        
+
+
 
         private void makeMultiImagePart_Vertical(StreamWriter sw)
         {
@@ -3848,11 +3897,11 @@ namespace MediaPortal.Plugins
             }
         }
 
-       
-       
 
 
-    
+
+
+
 
         private bool checkFields()
         {
@@ -3865,7 +3914,7 @@ namespace MediaPortal.Plugins
                     MessageBox.Show("You must enable main menu 1 if you have this as default menu!");
                     b = false;
                 }
-            }             
+            }
             else if (comboBox2.SelectedItem.Equals("Menu 2"))
             {
                 if (!useMenu2.Equals("True"))
@@ -3906,7 +3955,7 @@ namespace MediaPortal.Plugins
                     b = false;
                 }
             }
-            
+
             if (useMenu1.Equals("True"))
             {
                 if (textBox1.Text.Length < 1 || (textBox15.Text.Length < 1 && comboBox3.SelectedItem.ToString().Length < 1))
@@ -3983,16 +4032,16 @@ namespace MediaPortal.Plugins
                 {
                     MessageBox.Show("Modules in Menu 6 must all have atleast one subitem!");
                     b = false;
-                } 
+                }
             }
-                    
+
             return b;
         }
 
         private string setDefaultMenu(string layout)
         {
             string s = "";
-            
+
             if (comboBox2.SelectedItem.Equals("Menu 1"))
                 s = "77012";
             else if (comboBox2.SelectedItem.Equals("Menu 2"))
@@ -4005,7 +4054,7 @@ namespace MediaPortal.Plugins
                 s = "77052";
             else if (comboBox2.SelectedItem.Equals("Menu 6"))
                 s = "77062";
-            
+
             return s;
         }
 
@@ -4022,7 +4071,7 @@ namespace MediaPortal.Plugins
                 using (StreamWriter sw = new StreamWriter(filename))
                 {
                     writeLatest();
-                    sw.Write(rawXML.ToString());
+                    sw.Write(DayNightBackgrounds.Apply(rawXML.ToString()));
                 }
                 MessageBox.Show("Done generating new BasicHome. Please note that your changes in the menu editor is NOT saved. You will be asked to save your settings when leaving this configuration screen (by pressing the [X] button top right).");
             }
@@ -4126,7 +4175,7 @@ namespace MediaPortal.Plugins
             foreach (menuItem item in menuItems1)
             {
                 handleDefineTags(item, ht);
-                
+
             }
             foreach (menuItem item in menuItems2)
             {
@@ -4152,7 +4201,7 @@ namespace MediaPortal.Plugins
             foreach (DictionaryEntry de in ht)
             {
                 rawXMLDefineTags.AppendLine("<define>"+de.Key.ToString() + de.Value.ToString() + "</define>");
-            }            
+            }
 
         }
 
@@ -4179,7 +4228,7 @@ namespace MediaPortal.Plugins
                     rawXML.AppendLine("<define>#LatestMediaHandler:Yes</define>");
                     rawXML.AppendLine("<define>#usePlayFanart:Yes</define>");
                     rawXML.AppendLine("<define>#useSelectedFanart:Yes</define>");
-                    rawXML.AppendLine("<define>#backdrops.skin.lastfocused:" + setDefaultMenu("Vertical") + "</define>");                    
+                    rawXML.AppendLine("<define>#backdrops.skin.lastfocused:" + setDefaultMenu("Vertical") + "</define>");
                     rawXML.AppendLine("<!-- RANDOM DEFINE TAGS WILL COME HERE -->");
                     rawXML.AppendLine("<controls>");
                     rawXML.AppendLine("<import>common.backdrop.fallback.xml</import>");
@@ -4193,7 +4242,7 @@ namespace MediaPortal.Plugins
                     rawXML.AppendLine("  <width>1</width>");
                     rawXML.AppendLine("  <visible>no</visible>");
                     rawXML.AppendLine("</control>");
-                    rawXML.AppendLine(" ");         
+                    rawXML.AppendLine(" ");
                     rawXML.AppendLine("<control>");
                     rawXML.AppendLine("  <description>DUMMY CONTROLL FOR MENU VISIBILITY CONDITION</description>");
                     rawXML.AppendLine("  <type>label</type>");
@@ -4203,7 +4252,7 @@ namespace MediaPortal.Plugins
                     rawXML.AppendLine("  <width>1</width>");
                     rawXML.AppendLine("  <visible>no</visible>");
                     rawXML.AppendLine("</control>");
-                    rawXML.AppendLine(" ");                             
+                    rawXML.AppendLine(" ");
                     rawXML.AppendLine("<control>");
                     rawXML.AppendLine("  <description>DUMMY CONTROLL FOR NAVIGATION CONDITION</description>");
                     rawXML.AppendLine("  <type>label</type>");
@@ -4223,7 +4272,7 @@ namespace MediaPortal.Plugins
                     rawXML.AppendLine("  <width>1</width>");
                     rawXML.AppendLine("  <visible>no</visible>");
                     rawXML.AppendLine("</control>");
-                    rawXML.AppendLine(" ");           
+                    rawXML.AppendLine(" ");
                     rawXML.AppendLine("<control>");
                     rawXML.AppendLine("  <description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>");
                     rawXML.AppendLine("  <type>label</type>");
@@ -4314,6 +4363,7 @@ namespace MediaPortal.Plugins
                     rawXML.AppendLine("  <animation effect=\"fade\" time=\"850\">VisibleChange</animation>");
                     rawXML.AppendLine("</control>");
                     rawXML.AppendLine(" ");
+                    rawXML.AppendLine("<import>common.basichome.categories.xml</import>");
                     rawXML.AppendLine("<import>common.basichome.latest.xml</import> ");
                     rawXML.AppendLine(" ");
                     rawXML.AppendLine("<control>");
@@ -4329,7 +4379,7 @@ namespace MediaPortal.Plugins
                     rawXML.AppendLine("  <visible>!Control.HasFocus(7888)+!Control.HasFocus(7999)+!Control.HasFocus(7777)+!Control.HasFocus(73071091)+!Control.isvisible(93761234)</visible>");
                     rawXML.AppendLine("</control>");
                     rawXML.AppendLine(" ");
-                
+
                     rawXML.AppendLine("<control><description>feed image</description>");
                     rawXML.AppendLine("  <type>button</type>");
                     rawXML.AppendLine("  <id>91111</id>");
@@ -4360,7 +4410,7 @@ namespace MediaPortal.Plugins
                     rawXML.AppendLine("  <textcolor>FFFFFFFF</textcolor>");
                     rawXML.AppendLine("  <label>#infoservice.feed.titles</label>");
                     rawXML.AppendLine("  <wrapString> :: </wrapString>");
-                    rawXML.AppendLine("  <scrollStartDelaySec>5</scrollStartDelaySec>");                    
+                    rawXML.AppendLine("  <scrollStartDelaySec>5</scrollStartDelaySec>");
                     rawXML.AppendLine("  <animation effect=\"fade\" start=\"0\" end=\"50\" time=\"10\" reversible=\"false\">WindowOpen</animation>");
                     rawXML.AppendLine("  <visible>plugin.isenabled(InfoService)+![Control.HasFocus(73071091)|Control.isvisible(93761234)]</visible>");
                     rawXML.AppendLine("</control>");
@@ -4378,7 +4428,7 @@ namespace MediaPortal.Plugins
                     rawXML.AppendLine("  <visible>plugin.isenabled(InfoService)+![Control.HasFocus(73071091)|Control.isvisible(93761234)]</visible>");
                     rawXML.AppendLine("</control>");
                     rawXML.AppendLine(" ");
-                
+
                     rawXML.AppendLine("<control>");
                     rawXML.AppendLine("  <description>Bg Now Playing Top Line</description>");
                     rawXML.AppendLine("  <type>image</type>");
@@ -4404,7 +4454,7 @@ namespace MediaPortal.Plugins
                     rawXML.AppendLine("  <texture>top.png</texture>");
                     rawXML.AppendLine("  <visible>![window.istopmost(0)|window.istopmost(34)]+![Control.HasFocus(73071091)|Control.isvisible(93761234)]</visible>");
                     rawXML.AppendLine("</control>");
-                    rawXML.AppendLine(" ");                    
+                    rawXML.AppendLine(" ");
 
                     int iMenu = 1;
                     if (useMenu1.Equals("True"))
@@ -4438,7 +4488,7 @@ namespace MediaPortal.Plugins
                         iMenu++;
                     }
                     iMenu = 1;
-                    
+
                     if (useMenu1.Equals("True"))
                     {
                         writeMenuPart2(sw, iMenu, menuItems1);
@@ -4469,7 +4519,7 @@ namespace MediaPortal.Plugins
                         writeMenuPart2(sw, iMenu, menuItems6);
                         iMenu++;
                     }
-                    rawXML.AppendLine("");                    
+                    rawXML.AppendLine("");
                     rawXML.AppendLine("<import>common.overlays.xml</import>	");
                     rawXML.AppendLine("<import>common.time.xml</import>	");
                     rawXML.AppendLine("<import>basichome.overlay.WolPowerManager.xml</import> ");
@@ -4480,7 +4530,7 @@ namespace MediaPortal.Plugins
                     rawXML.AppendLine("<animation effect=\"fade\" start=\"0\" end=\"100\" time=\"350\">WindowOpen</animation>");
                     rawXML.AppendLine("<animation effect=\"fade\" start=\"100\" end=\"0\" time=\"350\">WindowClose</animation>");
                     rawXML.AppendLine("</window>");
-                    String xml = rawXML.ToString();
+                    String xml = DayNightBackgrounds.Apply(rawXML.ToString());
                     xml = xml.Replace("<!-- RANDOM DEFINE TAGS WILL COME HERE -->", rawXMLDefineTags.ToString());
                     sw.Write(xml);
                 }
@@ -4568,6 +4618,7 @@ namespace MediaPortal.Plugins
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (comboBox1.SelectedItem == null) return;
             if (comboBox1.SelectedItem.Equals("1"))
             {
                 tabControl12.SelectedTab = tabControl12.TabPages[0];
@@ -4609,7 +4660,7 @@ namespace MediaPortal.Plugins
             rawXML.AppendLine("<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>");
             rawXML.AppendLine("<window>");
             rawXML.AppendLine("<controls>");
-            rawXML.AppendLine("");            
+            rawXML.AppendLine("");
             int iID = 0;
             int iCount = 0;
             int iMenu = 1;
@@ -5014,7 +5065,7 @@ namespace MediaPortal.Plugins
             {
                 sMovingPictures = "[" + sMovingPictures + "]";
                 rawXML.AppendLine("    <!--MovingPicture 1 ******************************************************-->");
-                
+
                 rawXML.AppendLine("    <control>");
                 rawXML.AppendLine("        <description>SELECTED BACKGROUND</description>");
                 rawXML.AppendLine("        <id>0</id>");
@@ -5076,7 +5127,8 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <width>1920</width>");
                 rawXML.AppendLine("        <height>1080</height>");
                 rawXML.AppendLine("        <shouldCache>true</shouldCache>");
-                rawXML.AppendLine("        <texture>default.png</texture>");
+                rawXML.AppendLine("        <texture>Modern/home.jpg</texture>");
+                rawXML.AppendLine("        <colordiffuse>ff707070</colordiffuse>");
                 rawXML.AppendLine("        <visible>[Control.HasFocus(91919991)+!string.equals(#latestMediaHandler.movingpicture.latest1.fanart)]|[Control.HasFocus(91919992)+!string.equals(#latestMediaHandler.movingpicture.latest2.fanart)]|[Control.HasFocus(91919993)+!string.equals(#latestMediaHandler.movingpicture.latest3.fanart)]</visible>");
                 rawXML.AppendLine("    </control>");
 
@@ -5207,7 +5259,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"0\" end=\"100\" time=\"350\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"100\" end=\"0\" time=\"50\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>Control.HasFocus(91919991)+!Control.isvisible(93761234)</visible>");
-                rawXML.AppendLine("    </control>	"); 
+                rawXML.AppendLine("    </control>	");
 
                 rawXML.AppendLine("    <control>");
                 rawXML.AppendLine("        <description>Play Button</description>");
@@ -5223,7 +5275,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <hyperlink>96742</hyperlink>");
                 rawXML.AppendLine("        <hyperlinkParameter>movieid:#latestMediaHandler.movingpicture.latest1.id</hyperlinkParameter>");
                 rawXML.AppendLine("        <onleft>#backdrops.skin.lastfocused</onleft>");
-                rawXML.AppendLine("        <onright>#backdrops.skin.lastfocused</onright>");                
+                rawXML.AppendLine("        <onright>#backdrops.skin.lastfocused</onright>");
                 rawXML.AppendLine("        <onup>91919993</onup>");
                 rawXML.AppendLine("        <ondown>91919992</ondown>");
                 rawXML.AppendLine("        <font>font12</font>");
@@ -5319,7 +5371,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"0\" end=\"100\" time=\"350\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"100\" end=\"0\" time=\"50\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>Control.HasFocus(91919992)+!Control.isvisible(93761234)</visible>");
-                rawXML.AppendLine("    </control>	"); 
+                rawXML.AppendLine("    </control>	");
 
                 rawXML.AppendLine("    <control>");
                 rawXML.AppendLine("        <description>Play Button</description>");
@@ -5328,7 +5380,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <posX>1800</posX>");
                 rawXML.AppendLine("        <posY>585</posY>");
                 rawXML.AppendLine("        <width>112</width>");
-                rawXML.AppendLine("        <height>166</height>");                
+                rawXML.AppendLine("        <height>166</height>");
                 rawXML.AppendLine("        <textureFocus>poster_frame_rounder_corners_play.png</textureFocus>");
                 rawXML.AppendLine("        <textureNoFocus>poster_frame_rounder_corners.png</textureNoFocus>");
                 rawXML.AppendLine("        <label>-</label>");
@@ -5430,7 +5482,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"0\" end=\"100\" time=\"350\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"100\" end=\"0\" time=\"50\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>Control.HasFocus(91919993)+!Control.isvisible(93761234)</visible>");
-                rawXML.AppendLine("    </control>	"); 
+                rawXML.AppendLine("    </control>	");
 
                 rawXML.AppendLine("    <control>");
                 rawXML.AppendLine("        <description>Play Button</description>");
@@ -5522,7 +5574,8 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <posY>0</posY>");
                 rawXML.AppendLine("        <width>1920</width>");
                 rawXML.AppendLine("        <height>1080</height>");
-                rawXML.AppendLine("        <texture>default.png</texture>");
+                rawXML.AppendLine("        <texture>Modern/home.jpg</texture>");
+                rawXML.AppendLine("        <colordiffuse>ff707070</colordiffuse>");
                 rawXML.AppendLine("        <visible>[Control.HasFocus(91919994)+!string.equals(#latestMediaHandler.tvseries.latest1.fanart)]|[Control.HasFocus(91919995)+!string.equals(#latestMediaHandler.tvseries.latest2.fanart)]|[Control.HasFocus(91919996)+!string.equals(#latestMediaHandler.tvseries.latest3.fanart)]</visible>");
                 rawXML.AppendLine("    </control>");
 
@@ -5642,7 +5695,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"100\" end=\"0\" time=\"50\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>Control.HasFocus(91919994)+!Control.isvisible(93761234)</visible>");
                 rawXML.AppendLine("    </control>	");
-               
+
                 rawXML.AppendLine("    <control>");
                 rawXML.AppendLine("        <description>Episode Label</description>");
                 rawXML.AppendLine("        <type>fadelabel</type>");
@@ -5687,7 +5740,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <visible allowhiddenfocus=\"true\">[[Control.HasFocus(91919994)|Control.HasFocus(91919995)|Control.HasFocus(91919996)]|[Control.isvisible(98345511)+" + sTVSeries + "]]+!Control.isvisible(93761234)</visible>");
                 rawXML.AppendLine("    </control>");
                 rawXML.AppendLine("");
-                
+
                 rawXML.AppendLine("    <!--TVSeries 2 ******************************************************-->");
                 rawXML.AppendLine("    <control>");
                 rawXML.AppendLine("        <description>Dummy label</description>");
@@ -5699,7 +5752,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <label>#latestMediaHandler.tvseries.latest2.episodeName</label>");
                 rawXML.AppendLine("        <visible>string.equals(#latestMediaHandler.tvseries.latest2.episodeName)</visible>");
                 rawXML.AppendLine("    </control>	");
-                
+
                 rawXML.AppendLine("    <control>");
                 rawXML.AppendLine("        <description>Cover Art</description>");
                 rawXML.AppendLine("        <type>image</type>");
@@ -5718,7 +5771,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <animation effect=\"slide\" start=\"450,0\" end=\"0,0\" tween=\"quadratic\" easing=\"in\" time=\"350\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"slide\" start=\"0,0\" end=\"450,0\" tween=\"quadratic\" easing=\"in\" time=\"350\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>[[Control.HasFocus(91919994)|Control.HasFocus(91919995)|Control.HasFocus(91919996)]|[Control.isvisible(98345521)+" + sTVSeries + "]]+!Control.isvisible(93761234)</visible>");
-                rawXML.AppendLine("    </control>");               
+                rawXML.AppendLine("    </control>");
 
                 rawXML.AppendLine("    <control>");
                 rawXML.AppendLine("        <description>Cover Art</description>");
@@ -5984,7 +6037,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <animation effect=\"slide\" start=\"450,0\" end=\"0,0\" tween=\"quadratic\" easing=\"in\" time=\"350\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"slide\" start=\"0,0\" end=\"450,0\" tween=\"quadratic\" easing=\"in\" time=\"350\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>Control.isvisible(98345711)+" + sPictures + "+!Control.isvisible(93761234)</visible>");
-                rawXML.AppendLine("    </control>");                
+                rawXML.AppendLine("    </control>");
 
                 rawXML.AppendLine("    <control>");
                 rawXML.AppendLine("        <id>0</id>");
@@ -6094,7 +6147,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <animation effect=\"slide\" start=\"0,0\" end=\"450,0\" tween=\"quadratic\" easing=\"in\" time=\"350\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>Control.isvisible(98345731)+" + sPictures + "+!Control.isvisible(93761234)</visible>");
                 rawXML.AppendLine("    </control>	");
-  
+
             }
 
             if (sMusicVis.Length > 0 && latestMusic != null && latestMusic.Equals("True"))
@@ -6161,7 +6214,8 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <posY>0</posY>");
                 rawXML.AppendLine("        <width>1920</width>");
                 rawXML.AppendLine("        <height>1080</height>");
-                rawXML.AppendLine("        <texture>default.png</texture>");
+                rawXML.AppendLine("        <texture>Modern/home.jpg</texture>");
+                rawXML.AppendLine("        <colordiffuse>ff707070</colordiffuse>");
                 rawXML.AppendLine("        <visible>[Control.HasFocus(91919997)+!string.equals(#latestMediaHandler.music.latest1.fanart)]|[Control.HasFocus(91919998)+!string.equals(#latestMediaHandler.music.latest2.fanart)]|[Control.HasFocus(91919999)+!string.equals(#latestMediaHandler.music.latest3.fanart)]</visible>");
                 rawXML.AppendLine("    </control>");
 
@@ -6175,7 +6229,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <label>#latestMediaHandler.music.latest1.artist</label>");
                 rawXML.AppendLine("        <visible>string.equals(#latestMediaHandler.music.latest1.artist)</visible>");
                 rawXML.AppendLine("    </control>	");
-                
+
                 rawXML.AppendLine("    <control>");
                 rawXML.AppendLine("        <description>Latest Label</description>");
                 rawXML.AppendLine("        <type>fadelabel</type>");
@@ -6294,7 +6348,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"0\" end=\"100\" time=\"350\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"100\" end=\"0\" time=\"50\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>Control.HasFocus(91919997)+!Control.isvisible(93761234)</visible>");
-                rawXML.AppendLine("    </control>	"); 
+                rawXML.AppendLine("    </control>	");
 
                 rawXML.AppendLine("    <control>");
                 rawXML.AppendLine("        <description>Play Button</description>");
@@ -6404,7 +6458,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"0\" end=\"100\" time=\"350\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"100\" end=\"0\" time=\"50\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>Control.HasFocus(91919998)+!Control.isvisible(93761234)</visible>");
-                rawXML.AppendLine("    </control>	"); 
+                rawXML.AppendLine("    </control>	");
 
                 rawXML.AppendLine("    <control>");
                 rawXML.AppendLine("        <description>Play Button</description>");
@@ -6514,7 +6568,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"0\" end=\"100\" time=\"350\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"100\" end=\"0\" time=\"50\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>Control.HasFocus(91919999)+!Control.isvisible(93761234)</visible>");
-                rawXML.AppendLine("    </control>	"); 
+                rawXML.AppendLine("    </control>	");
 
                 rawXML.AppendLine("    <control>");
                 rawXML.AppendLine("        <description>Play Button</description>");
@@ -6658,9 +6712,10 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <description>Series Label</description>");
                 rawXML.AppendLine("        <type>fadelabel</type>");
                 rawXML.AppendLine("        <id>0</id>");
-                rawXML.AppendLine("        <posX>1396</posX>");
-                rawXML.AppendLine("        <posY>670</posY>");
-                rawXML.AppendLine("        <width>420</width>");
+                rawXML.AppendLine("        <posX>1602</posX>");
+                rawXML.AppendLine("        <posY>970</posY>");
+                rawXML.AppendLine("        <width>400</width>");
+                rawXML.AppendLine("        <height>30</height>");
                 rawXML.AppendLine("        <align>left</align>");
                 rawXML.AppendLine("        <scrollStartDelaySec>3600</scrollStartDelaySec>");
                 rawXML.AppendLine("        <label>#latestMediaHandler.tvrecordings.latest1.title</label>");
@@ -6669,20 +6724,20 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <shadowAngle>45</shadowAngle>");
                 rawXML.AppendLine("        <shadowDistance>1</shadowDistance>");
                 rawXML.AppendLine("        <shadowColor>ff333333</shadowColor>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" end=\"90\" time=\"0\">Visible</animation>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" end=\"90\" time=\"0\">Hidden</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"0\" end=\"100\" time=\"350\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"100\" end=\"0\" time=\"50\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>Control.HasFocus(91919984)+!Control.isvisible(93761234)</visible>");
+                rawXML.AppendLine("        <animation effect=\"rotate\" start=\"90\" end=\"90\" center=\"1602,970\" time=\"0\" condition=\"true\">Conditional</animation>");
                 rawXML.AppendLine("    </control>	");
 
                 rawXML.AppendLine("    <control>");
                 rawXML.AppendLine("        <description>Episode Label</description>");
                 rawXML.AppendLine("        <type>fadelabel</type>");
                 rawXML.AppendLine("        <id>0</id>");
-                rawXML.AppendLine("        <posX>1425</posX>");
-                rawXML.AppendLine("        <posY>670</posY>");
-                rawXML.AppendLine("        <width>420</width>");
+                rawXML.AppendLine("        <posX>1640</posX>");
+                rawXML.AppendLine("        <posY>970</posY>");
+                rawXML.AppendLine("        <width>400</width>");
+                rawXML.AppendLine("        <height>30</height>");
                 rawXML.AppendLine("        <align>left</align>");
                 rawXML.AppendLine("        <scrollStartDelaySec>3600</scrollStartDelaySec>");
                 rawXML.AppendLine("        <label>#latestMediaHandler.tvrecordings.latest1.genre</label>");
@@ -6691,11 +6746,10 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <shadowAngle>45</shadowAngle>");
                 rawXML.AppendLine("        <shadowDistance>1</shadowDistance>");
                 rawXML.AppendLine("        <shadowColor>ff333333</shadowColor>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" end=\"90\" time=\"0\">Visible</animation>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" end=\"90\" time=\"0\">Hidden</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"0\" end=\"100\" time=\"350\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"100\" end=\"0\" time=\"50\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>Control.HasFocus(91919984)+!Control.isvisible(93761234)</visible>");
+                rawXML.AppendLine("        <animation effect=\"rotate\" start=\"90\" end=\"90\" center=\"1640,970\" time=\"0\" condition=\"true\">Conditional</animation>");
                 rawXML.AppendLine("    </control>");
 
                 rawXML.AppendLine("    <control>");
@@ -6717,7 +6771,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"100\" end=\"0\" time=\"350\">WindowClose</animation>");
                 rawXML.AppendLine("        <animation effect=\"slide\" start=\"450,0\" end=\"0,0\" tween=\"quadratic\" easing=\"in\" time=\"350\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"slide\" start=\"0,0\" end=\"450,0\" tween=\"quadratic\" easing=\"in\" time=\"350\">Hidden</animation>");
-                rawXML.AppendLine("        <visible allowhiddenfocus=\"true\">[[Control.HasFocus(91919984)|Control.HasFocus(91919985)|Control.HasFocus(91919986)]|[Control.isvisible(98345911)+" + sTVVis + "]]+!Control.isvisible(93761234)</visible>");                
+                rawXML.AppendLine("        <visible allowhiddenfocus=\"true\">[[Control.HasFocus(91919984)|Control.HasFocus(91919985)|Control.HasFocus(91919986)]|[Control.isvisible(98345911)+" + sTVVis + "]]+!Control.isvisible(93761234)</visible>");
                 rawXML.AppendLine("    </control>");
 
 
@@ -6792,9 +6846,10 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <description>Series Label</description>");
                 rawXML.AppendLine("        <type>fadelabel</type>");
                 rawXML.AppendLine("        <id>0</id>");
-                rawXML.AppendLine("        <posX>1396</posX>");
-                rawXML.AppendLine("        <posY>670</posY>");
-                rawXML.AppendLine("        <width>420</width>");
+                rawXML.AppendLine("        <posX>1602</posX>");
+                rawXML.AppendLine("        <posY>970</posY>");
+                rawXML.AppendLine("        <width>400</width>");
+                rawXML.AppendLine("        <height>30</height>");
                 rawXML.AppendLine("        <align>left</align>");
                 rawXML.AppendLine("        <scrollStartDelaySec>3600</scrollStartDelaySec>");
                 rawXML.AppendLine("        <label>#latestMediaHandler.tvrecordings.latest2.title</label>");
@@ -6803,20 +6858,20 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <shadowAngle>45</shadowAngle>");
                 rawXML.AppendLine("        <shadowDistance>1</shadowDistance>");
                 rawXML.AppendLine("        <shadowColor>ff333333</shadowColor>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" end=\"90\" time=\"0\">Visible</animation>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" end=\"90\" time=\"0\">Hidden</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"0\" end=\"100\" time=\"350\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"100\" end=\"0\" time=\"50\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>Control.HasFocus(91919985)+!Control.isvisible(93761234)</visible>");
+                rawXML.AppendLine("        <animation effect=\"rotate\" start=\"90\" end=\"90\" center=\"1602,970\" time=\"0\" condition=\"true\">Conditional</animation>");
                 rawXML.AppendLine("    </control>	");
 
                 rawXML.AppendLine("    <control>");
                 rawXML.AppendLine("        <description>Episode Label</description>");
                 rawXML.AppendLine("        <type>fadelabel</type>");
                 rawXML.AppendLine("        <id>0</id>");
-                rawXML.AppendLine("        <posX>1425</posX>");
-                rawXML.AppendLine("        <posY>670</posY>");
-                rawXML.AppendLine("        <width>420</width>");
+                rawXML.AppendLine("        <posX>1640</posX>");
+                rawXML.AppendLine("        <posY>970</posY>");
+                rawXML.AppendLine("        <width>400</width>");
+                rawXML.AppendLine("        <height>30</height>");
                 rawXML.AppendLine("        <align>left</align>");
                 rawXML.AppendLine("        <scrollStartDelaySec>3600</scrollStartDelaySec>");
                 rawXML.AppendLine("        <label>#latestMediaHandler.tvrecordings.latest2.genre</label>");
@@ -6825,11 +6880,10 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <shadowAngle>45</shadowAngle>");
                 rawXML.AppendLine("        <shadowDistance>1</shadowDistance>");
                 rawXML.AppendLine("        <shadowColor>ff333333</shadowColor>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" end=\"90\" time=\"0\">Visible</animation>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" end=\"90\" time=\"0\">Hidden</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"0\" end=\"100\" time=\"350\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"100\" end=\"0\" time=\"50\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>Control.HasFocus(91919985)+!Control.isvisible(93761234)</visible>");
+                rawXML.AppendLine("        <animation effect=\"rotate\" start=\"90\" end=\"90\" center=\"1640,970\" time=\"0\" condition=\"true\">Conditional</animation>");
                 rawXML.AppendLine("    </control>");
 
                 rawXML.AppendLine("    <control>");
@@ -6853,7 +6907,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <animation effect=\"slide\" start=\"0,0\" end=\"450,0\" tween=\"quadratic\" easing=\"in\" time=\"350\">Hidden</animation>");
                 rawXML.AppendLine("        <visible allowhiddenfocus=\"true\">[[Control.HasFocus(91919984)|Control.HasFocus(91919985)|Control.HasFocus(91919986)]|[Control.isvisible(98345921)+" + sTVVis + "]]+!Control.isvisible(93761234)</visible>");
                 rawXML.AppendLine("    </control>");
- 
+
                 rawXML.AppendLine("    <!--TV Recordings 3 ******************************************************-->");
                 rawXML.AppendLine("    <control>");
                 rawXML.AppendLine("        <description>Dummy label</description>");
@@ -6925,9 +6979,10 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <description>Series Label</description>");
                 rawXML.AppendLine("        <type>fadelabel</type>");
                 rawXML.AppendLine("        <id>0</id>");
-                rawXML.AppendLine("        <posX>1396</posX>");
-                rawXML.AppendLine("        <posY>670</posY>");
-                rawXML.AppendLine("        <width>420</width>");
+                rawXML.AppendLine("        <posX>1602</posX>");
+                rawXML.AppendLine("        <posY>970</posY>");
+                rawXML.AppendLine("        <width>400</width>");
+                rawXML.AppendLine("        <height>30</height>");
                 rawXML.AppendLine("        <align>left</align>");
                 rawXML.AppendLine("        <scrollStartDelaySec>3600</scrollStartDelaySec>");
                 rawXML.AppendLine("        <label>#latestMediaHandler.tvrecordings.latest3.title</label>");
@@ -6936,20 +6991,20 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <shadowAngle>45</shadowAngle>");
                 rawXML.AppendLine("        <shadowDistance>1</shadowDistance>");
                 rawXML.AppendLine("        <shadowColor>ff333333</shadowColor>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" end=\"90\" time=\"0\">Visible</animation>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" end=\"90\" time=\"0\">Hidden</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"0\" end=\"100\" time=\"350\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"100\" end=\"0\" time=\"50\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>Control.HasFocus(91919986)+!Control.isvisible(93761234)</visible>");
+                rawXML.AppendLine("        <animation effect=\"rotate\" start=\"90\" end=\"90\" center=\"1602,970\" time=\"0\" condition=\"true\">Conditional</animation>");
                 rawXML.AppendLine("    </control>	");
 
                 rawXML.AppendLine("    <control>");
                 rawXML.AppendLine("        <description>Episode Label</description>");
                 rawXML.AppendLine("        <type>fadelabel</type>");
                 rawXML.AppendLine("        <id>0</id>");
-                rawXML.AppendLine("        <posX>1425</posX>");
-                rawXML.AppendLine("        <posY>670</posY>");
-                rawXML.AppendLine("        <width>420</width>");
+                rawXML.AppendLine("        <posX>1640</posX>");
+                rawXML.AppendLine("        <posY>970</posY>");
+                rawXML.AppendLine("        <width>400</width>");
+                rawXML.AppendLine("        <height>30</height>");
                 rawXML.AppendLine("        <align>left</align>");
                 rawXML.AppendLine("        <scrollStartDelaySec>3600</scrollStartDelaySec>");
                 rawXML.AppendLine("        <label>#latestMediaHandler.tvrecordings.latest3.genre</label>");
@@ -6958,11 +7013,10 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <shadowAngle>45</shadowAngle>");
                 rawXML.AppendLine("        <shadowDistance>1</shadowDistance>");
                 rawXML.AppendLine("        <shadowColor>ff333333</shadowColor>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" end=\"90\" time=\"0\">Visible</animation>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" end=\"90\" time=\"0\">Hidden</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"0\" end=\"100\" time=\"350\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"100\" end=\"0\" time=\"50\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>Control.HasFocus(91919986)+!Control.isvisible(93761234)</visible>");
+                rawXML.AppendLine("        <animation effect=\"rotate\" start=\"90\" end=\"90\" center=\"1640,970\" time=\"0\" condition=\"true\">Conditional</animation>");
                 rawXML.AppendLine("    </control>");
 
                 rawXML.AppendLine("    <control>");
@@ -6987,17 +7041,17 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <visible allowhiddenfocus=\"true\">[[Control.HasFocus(91919984)|Control.HasFocus(91919985)|Control.HasFocus(91919986)]|[Control.isvisible(98345921)+" + sTVVis + "]]+!Control.isvisible(93761234)</visible>");
                 rawXML.AppendLine("    </control>");
             }
-            
+
             rawXML.AppendLine("");
             rawXML.AppendLine("</controls>");
             rawXML.AppendLine("</window>");
-  
+
         }
         private void used_list_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (used_list.SelectedIndex >= 0)
             {
-                int index = used_list.SelectedIndex;                
+                int index = used_list.SelectedIndex;
                 new_name.Text = menuItems1[index].name;
                 new_windowid.Text = menuItems1[index].hyperlink;
                 comboBox17.SelectedItem = menuItems1[index].useLatestMedia;
@@ -7028,7 +7082,7 @@ namespace MediaPortal.Plugins
                     }
                 }
                 if (menuItems1[index].subCategory != null && menuItems1[index].subCategory.Length > 0)
-                {                    
+                {
                     if (new_windowid.Text.Equals("96742"))
                     {
                         comboBox19.SelectedItem = menuItems1[index].subCategory;
@@ -7052,7 +7106,7 @@ namespace MediaPortal.Plugins
                 {
                     comboBox5.SelectedItem = "Multiple Images";
                     new_imagepath.Text = menuItems1[index].imagePath;
-                }                
+                }
                 listBox1.SelectedIndex = -1;
                 listBox2.SelectedIndex = -1;
                 listBox3.SelectedIndex = -1;
@@ -7064,7 +7118,7 @@ namespace MediaPortal.Plugins
                 }
 
                 updateIndex = index;
-                comboBox1.Enabled = false;                
+                comboBox1.Enabled = false;
             }
         }
 
@@ -7140,7 +7194,7 @@ namespace MediaPortal.Plugins
 //                listBox1.Items.RemoveAt(index);
 //                menuItems2.RemoveAt(index);
                 updateIndex = index;
-                comboBox1.Enabled = false;                
+                comboBox1.Enabled = false;
             }
         }
 
@@ -7216,7 +7270,7 @@ namespace MediaPortal.Plugins
 //                listBox2.Items.RemoveAt(index);
 //                menuItems3.RemoveAt(index);
                 updateIndex = index;
-                comboBox1.Enabled = false;                
+                comboBox1.Enabled = false;
             }
         }
 
@@ -7292,7 +7346,7 @@ namespace MediaPortal.Plugins
 //                listBox3.Items.RemoveAt(index);
 //                menuItems4.RemoveAt(index);
                 updateIndex = index;
-                comboBox1.Enabled = false;                
+                comboBox1.Enabled = false;
             }
         }
 
@@ -7368,7 +7422,7 @@ namespace MediaPortal.Plugins
 //                listBox4.Items.RemoveAt(index);
 //                menuItems5.RemoveAt(index);
                 updateIndex = index;
-                comboBox1.Enabled = false;                
+                comboBox1.Enabled = false;
             }
         }
 
@@ -7379,7 +7433,7 @@ namespace MediaPortal.Plugins
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button22_Click(object sender, EventArgs e)
@@ -7524,7 +7578,7 @@ namespace MediaPortal.Plugins
                 //                listBox4.Items.RemoveAt(index);
                 //                menuItems5.RemoveAt(index);
                 updateIndex = index;
-                comboBox1.Enabled = false;                
+                comboBox1.Enabled = false;
             }
         }
 
@@ -7534,8 +7588,8 @@ namespace MediaPortal.Plugins
         }
 
 
-      
-  
+
+
 
         private string getBackdropMenuEditorVisibilityTag(string tag, int itemNo)
         {
@@ -7552,6 +7606,7 @@ namespace MediaPortal.Plugins
 
         private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (comboBox5.SelectedItem == null) return;
             if (comboBox5.SelectedItem.Equals("Multiple Images"))
             {
                 label14.Text = "Backdrop Path:";
@@ -7587,37 +7642,37 @@ namespace MediaPortal.Plugins
 
         private void textBox15_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void textBox16_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void textBox17_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void textBox18_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void textBox19_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void textBox3_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void new_imagepath_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
@@ -7667,7 +7722,7 @@ namespace MediaPortal.Plugins
                 textBox15.Visible = true;
                 comboBox3.Visible = false;
                 button5.Visible = true;
-            }            
+            }
         }
 
         private void comboBox10_SelectedIndexChanged(object sender, EventArgs e)
@@ -7718,7 +7773,7 @@ namespace MediaPortal.Plugins
                 textBox17.Visible = true;
                 comboBox12.Visible = false;
                 button13.Visible = true;
-            }            
+            }
         }
 
         private void comboBox8_SelectedIndexChanged(object sender, EventArgs e)
@@ -7835,7 +7890,7 @@ namespace MediaPortal.Plugins
         {
 
         }
-       
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -8276,7 +8331,7 @@ namespace MediaPortal.Plugins
                     if (IsAssemblyAvailable("OnlineVideos", new Version(0, 27, 0, 0), filename))
                     {
                         al = OnlineVideoHandler.GetCategories(comboBox21.SelectedItem.ToString());
-                    }                    
+                    }
                 }
                 catch { }
                 foreach (string s in al)

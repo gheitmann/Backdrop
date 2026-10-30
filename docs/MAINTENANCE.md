@@ -4,6 +4,21 @@ Use this repository as the versioned source for future Backdrop changes. Keep re
 
 ## Start every update here
 
+Unreleased BETA2 feedback follow-up: read `BETA2-FEEDBACK-FOLLOWUP.md`.
+The active radio guide now shares the lower TV Guide geometry. Keep Photos
+filmstrip frame plates disabled, the repaired four lighting masters, and the
+requested omission of Radio Now Playing channel arrows.
+
+Beta 1 source/local follow-up: `BETA1-FEEDBACK-FOLLOWUP.md` and the supplied
+v1.0.1 media archive add 76 original control resources to the fidelity manifest.
+Keep native action-menu button focus textures; do not reintroduce auxiliary
+animated focus images, which the tester observed remaining visible after navigation.
+Photos must use its own four lighting assets. Radio uses original paging arrows
+without DWHD scrollbars. Scoped x64 live review, including the final keyboard-heading and radio background
+adjustments, is complete and documented in the follow-up.
+
+Current artwork baseline: read `ALPHA25-FEEDBACK-FOLLOWUP.md` and `ALPHA26-BUILD-REPORT.md` first. Original Backdrop control artwork protected by `Source/Artwork/native-fidelity.json` takes precedence over the historical `LUCIDE-REFRESH.md` generation guidance. Retain the cinematic BasicHome/startup backgrounds and the ALPHA26 thematic Home/Settings backgrounds, current native dimensions and stock-background/editor consistency. Preserve raster aspect ratios and regenerate the test texture cache when dimensions change. Modern variant provenance is recorded separately; do not mix it into the classic baseline. The TV group caption remains static to avoid rotated-marquee flicker.
+
 1. Read this file and `VALIDATION.md`, inspect the current branch and remote changes, then check the target MediaPortal release and matching plugin architecture.
 2. Preserve native required control types and IDs. Restyle compatible modern pages instead of restoring incompatible legacy XML wholesale.
 3. Keep the lower BasicHome category hit areas aligned with visible captions: Y=966, height=76. Preserve the matching editor generator and mouse-move wake-up changes.
@@ -13,7 +28,7 @@ Use this repository as the versioned source for future Backdrop changes. Keep re
 7. Keep regular-page topbar changes selective. Dialog, fullscreen, OSD, calibration, and screensaver behavior needs separate review.
 8. Preserve fixed separators instead of unsupported `#scroll.wrap` tokens.
 
-The skin settings page omits the DefaultWideHD BasicHome editor and the ineffective EPG row selector. Backdrop has its own external editor. The TV guide uses the original lower seven-row layout from ALPHA12; the radio guide retains its prior layout.
+The skin settings page omits the DefaultWideHD BasicHome editor and the ineffective EPG row selector. Backdrop has its own external editor. TV and active radio guides use the original lower seven-row layout from ALPHA12.
 
 ## ALPHA6 lessons
 
@@ -95,6 +110,16 @@ Local maintenance history and immutable fixtures remain under the owner's `Docum
 - Preserve the original 1920 x 1080 canvas without scaling coordinates again. Current control bindings still take precedence over legacy control types: group 100 is button3part, preview is videowindow 99 and keyed-channel label 34 remains present.
 - Inline the preview overlay exactly once. Retain common.time.xml for the original right-aligned clock. Channel label width, header logo position and clipped timeline are documented compatibility adjustments.
 - Seven visible rows require pagination testing. Retained fixtures exercised selection, long descriptions, keyboard pagination, group switching and single-channel mode. Actual Live TV remains unverified without a tuner mapping.
+
+## Release news
+
+- All GitHub content must be in English, including release news, changelogs,
+  issues and pull request descriptions. This is an explicit user preference.
+- For every GitHub Alpha/release, include a concise English changelog of the most
+  important user-visible changes in the release body. State the comparison
+  version, retain relevant known limitations, and publish the notes with the
+  release rather than only in chat. This is an explicit user preference.
+- Keep the checked-in release notes synchronized with GitHub release news.
 
 ## ALPHA13 lessons
 

@@ -1,4 +1,61 @@
+# Current validation and historical evidence
+
+BETA3 (30 October 2026): 2,442/2,442 package files and 21/21 private bundle
+entries matched. Final single EXE VerifyOnly passed on x64 and x86 (2/2
+architectures). See [BETA3 build verification](BETA3-BUILD-REPORT.md) and its
+explicit live-review limits.
+
+Unreleased BETA2 follow-up (30 October 2026): eight Python commands and the
+native x64 Day/Night probe (1,448 assertions, 48 bindings) passed. Scoped live
+review confirmed populated radio-guide navigation and the Photos filmstrip.
+See [BETA2 feedback follow-up](BETA2-FEEDBACK-FOLLOWUP.md) for limits; this is
+not a new release or full runtime certification.
+
+BETA2 (29 October 2026): eight static checks, 2,442/2,442 package and isolated
+native-copy comparisons, 21/21 setup bundle entries and final EXE VerifyOnly
+on 2/2 architectures passed. See [BETA2 build report](BETA2-BUILD-REPORT.md).
+
+Unreleased BETA1 source/local feedback follow-up (28 October 2026): 76 original
+control textures restored; eight Python checks and the artwork decoder passed.
+Native x64 Day/Night probe passed 1,420 assertions for 46 bindings; 92 local skin
+files were backed up, copied and hash-compared. Scoped live review covered music focus navigation, Photos and radio layouts.
+Final x64 visual confirmation passed for keyboard captions and nonduplicated radio icons. See
+[Beta 1 feedback follow-up](BETA1-FEEDBACK-FOLLOWUP.md) for scopes and open checks.
+
+BETA1 (28 October 2026): scoped local x64 UI review, native package update,
+2,441 matching installed payload files plus one preserved personal configuration,
+and final EXE VerifyOnly on x64/x86. See [BETA1 build report](BETA1-BUILD-REPORT.md)
+for exact scopes and remaining limitations.
+
+ALPHA27 (26 October 2026): four-period backgrounds and an independent optional
+plugin. Seven static checks passed (7/7), native integration probes each passed
+1,364/1,364 assertions on x86/x64, and independent plugin probes each passed
+2,201/2,201. Final package verified 2,442/2,442 files; final EXE VerifyOnly passed
+2/2 architectures without installation. Earlier local x64 interaction is carried
+forward. See [ALPHA27 build report](ALPHA27-BUILD-REPORT.md).
+
+ALPHA26 (26 October 2026): three thematic Home/Settings/Plugins backgrounds are mapped
+across eight XML definitions. Six selected static commands passed (6/6); 2,408
+package files and 21 private bundle files were byte-compared. The single EXE
+passed VerifyOnly preparation on x64 and x86 (2/2). Live visual confirmation
+and full x86 runtime coverage remain open. See
+[ALPHA26 build verification](ALPHA26-BUILD-REPORT.md).
+
+Earlier source/local follow-up (26 October 2026): see
+[ALPHA25 artwork feedback](ALPHA25-FEEDBACK-FOLLOWUP.md). The reviewed changes
+restore 51 original textures while preserving cinematic BasicHome artwork.
+Six static commands passed (6/6); 518 textures decoded and 419 original hashes
+and dimensions checked. Local deployment verified 53/53 copied files. Live
+visual confirmation, recording pagination flash and full x86 runtime coverage
+remain open. These reviewed changes are included in ALPHA26.
+Scheduled maintenance also revalidated and byte-compared all 2405 package files;
+see [26 October maintenance](MAINTENANCE-2026-10-26.md).
+
+The entries below are historical evidence, not the current release identity.
+
 # ALPHA15 validation
+
+LOCAL17 visual follow-up: `LUCIDE-REFRESH.md` records 550 generated UI textures, modern stock backgrounds, static TV group caption, full-height selection rows and native checked/unchecked visual confirmation. Payload validation covers 2,398 files and 557 XML definitions; the single EXE passes VerifyOnly. These working changes do not replace the published ALPHA15 release.
 
 Current working follow-up: QUICKCHECK-LOCAL16.md records 5/6 fresh runtime cases passed (83.3%), complete static 11-command topbar coverage, a repaired Danish fallback key and the remaining transport/locale/x86 limits. LATEST-MUSIC-DETAILS.md supersedes the earlier Latest Music fixture blocker with 2/2 runtime layout passes. Published ALPHA15 remains unchanged.
 

@@ -1,0 +1,74 @@
+"""Check native playback geometry and recording-review contracts."""
+from pathlib import Path
+import xml.etree.ElementTree as ET
+
+SKIN = Path(__file__).resolve().parent.parent / 'skin/Backdrop'
+
+def controls(name):
+    return ET.parse(SKIN / name).getroot().findall('.//control')
+
+recordings = controls('mytvrecordedtv.xml')
+compress = next(c for c in recordings if c.findtext('id') == '7')
+assert compress.findtext('type') == 'button' and compress.findtext('visible') == 'no'
+assert compress.find('hyperlink') is None
+assert not any(c.findtext('ondown') == '7' for c in recordings)
+
+PROGRESS_PAGES = (
+    'MyMusicPlayingNow.xml', 'MyMusicPlayingNowAnVU.xml',
+    'MyMusicPlayingNowLedVU.xml', 'common.overlays.xml',
+    'common.overlays.guide.xml', 'mytvguide.xml', 'mp139.mytvguide.xml',
+    'radiotimenowplaying.xml',
+)
+progress_count = 0
+for name in PROGRESS_PAGES:
+    page_controls = controls(name)
+    for c in page_controls:
+        if c.findtext('type') != 'progress' or c.findtext('midtexture') != 'progressbar_mid.png':
+            continue
+        progress_count += 1
+        assert c.findtext('texturebg') == 'progressback.png'
+        assert c.findtext('onlymidtexture') == 'yes'
+        assert c.findtext('midwidth') == c.findtext('width')
+        assert c.findtext('midheight') == c.findtext('height')
+        assert c.findtext('midoffsetX') == c.findtext('midoffsetY') == '0'
+        # An independent image can drift and can have a different visibility rule.
+        assert not any(image.findtext('type') == 'image'
+                       and image.findtext('texture') == 'progressback.png'
+                       and image.findtext('visible') != 'no' for image in page_controls), name
+        # With native only-mid rendering, 0/50/100% stay within the track,
+        # starting at its left/top edge without legacy cap/centering offsets.
+        for percent in (0, 50, 100):
+            fill_width = int(c.findtext('midwidth')) * percent / 100
+            assert 0 <= fill_width <= int(c.findtext('width'))
+
+panel = next(c for c in controls('common.facade.recordings.xml') if c.findtext('type') == 'thumbnailpanel')
+assert int(panel.findtext('posY')) + int(panel.findtext('height')) <= 1080
+assert int(panel.findtext('posX')) + int(panel.findtext('width')) <= 1920
+assert int(panel.findtext('textYOff')) >= 0
+for name in ('common.facade.recordings.xml', 'common.facade.recordings2.xml'):
+    grid = next(c for c in controls(name) if c.findtext('type') == 'thumbnailpanel')
+    assert grid.findtext('enableFocusZoom') == 'no'
+    # Keep manual focus expansion inside the reserved cell spacing, including
+    # the small grid's bottom row. Do not restore the original 65-pixel zoom.
+    zx, zy = (int(grid.findtext(tag)) for tag in ('zoomXPixels', 'zoomYPixels'))
+    assert 0 < zx <= 6 and 0 < zy <= 6
+    assert int(grid.findtext('posX')) >= zx and int(grid.findtext('posY')) >= zy
+    for suffix in ('', 'Big'):
+        tw, th, iw, ih = (int(grid.findtext(tag + suffix))
+                          for tag in ('textureWidth', 'textureHeight', 'itemWidth', 'itemHeight'))
+        assert tw + 2 * zx <= iw and th + 2 * zy <= ih
+        assert ih - th >= 32, 'Reserve a complete caption line below each cover'
+        columns = int(grid.findtext('width')) // iw
+        rows = int(grid.findtext('height')) // ih
+        assert int(grid.findtext('posX')) + (columns - 1) * iw + tw + zx <= 1920
+        assert int(grid.findtext('posY')) + (rows - 1) * ih + th + zy <= 1080
+    assert not any(a.get('effect') == 'slide' for a in grid.findall('animation'))
+
+weather = next(c for c in controls('common.time.xml') if c.findtext('description') == 'Weather Condition')
+for value in ('temp', 'condition'):
+    assert '!string.equals(#infoservice.weather.today.' + value + ',)' in weather.findtext('visible')
+
+assert progress_count == 15, progress_count
+preview = next(c for c in controls('common.overlays.xml') if c.findtext('type') == 'videowindow')
+assert '[window.isactive(35)|[' in preview.findtext('visible')
+print(f'PASS: hidden legacy Compress binding, {progress_count} co-located playback tracks, recording viewport, empty-weather guard and Home preview override.')

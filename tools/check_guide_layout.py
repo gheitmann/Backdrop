@@ -57,7 +57,7 @@ def check():
                 f'{name}: duplicate video area')
         backgrounds = [c for c in controls if c.findtext('type') == 'image'
                        and c.findtext('width') == '1920' and c.findtext('height') == '1080']
-        require(len(backgrounds) == 1 and backgrounds[0].findtext('texture') == 'default.png'
+        require(len(backgrounds) == 1 and backgrounds[0].findtext('texture') == "#(iif(string.equals(#DayNight.Period,'morning'),'Modern/Morning/cinema.png',iif(string.equals(#DayNight.Period,'noon'),'Modern/Noon/cinema.png',iif(string.equals(#DayNight.Period,'day'),'Modern/Day/cinema.png','Modern/home.jpg'))))"
                 and backgrounds[0].findtext('colordiffuse') == 'ff505050',
                 f'{name}: duplicate or foreign full-screen background')
         groups = [c for c in controls if c.findtext('id') == '100']
@@ -65,6 +65,8 @@ def check():
                 f'{name}: incompatible native group binding')
         caption = [c for c in controls if c.findtext('description') == 'TvGroup button label']
         require(len(caption) == 1, f'{name}: missing guide caption')
+        require(caption[0].findtext('type') == 'label' and caption[0].find('scrollStartDelaySec') is None,
+                f'{name}: rotated marquee reintroduced; group caption must remain static')
         check_caption(caption[0], (7, 612, 59, 1060), name)
     require((SKIN / 'mytvguide.xml').read_bytes() == (SKIN / 'mp139.mytvguide.xml').read_bytes(),
             'Active guide definitions differ')
@@ -88,6 +90,24 @@ def check():
     for c in details:
         x = float(c.findtext('posX'))
         check_caption(c, (x, 400, x + 100, 980), c.findtext('label'))
+    recording_details = [c for c in latest.findall('.//control')
+                         if c.findtext('description') in ('Series Label', 'Episode Label')
+                         and c.findtext('label', '').startswith('#latestMediaHandler.tvrecordings.')]
+    require(len(recording_details) == 6, 'Missing TV recording metadata captions')
+    for c in recording_details:
+        require(c.findtext('posX') == ('1602' if c.findtext('description') == 'Series Label' else '1640'),
+                'TV title/genre strips overlap')
+        check_caption(c, (float(c.findtext('posX')), 400, float(c.findtext('posX')) + 30, 980), c.findtext('label'))
+    # Focused heading occupies x=1554..1594; details follow it and must end
+    # before thumbnails at x=1678. Check all three focus states explicitly.
+    for slot in (1, 2, 3):
+        title, genre = [next(c for c in recording_details if c.findtext('label') ==
+                            f'#latestMediaHandler.tvrecordings.latest{slot}.{field}')
+                        for field in ('title', 'genre')]
+        require(1594 + 8 <= float(title.findtext('posX')) and
+                float(title.findtext('posX')) + float(title.findtext('height')) + 8 <= float(genre.findtext('posX')) and
+                float(genre.findtext('posX')) + float(genre.findtext('height')) + 8 <= 1678,
+                'Focused Latest Recordings heading/details/thumbnails overlap')
     source = (ROOT / 'Source/BackdropMenuEditor/BackdropMenuEditorConfig.cs').read_text(encoding='utf-8-sig')
     import re
     generated = re.findall(r'<description>Latest Label</description>.*?<label>(#SkinTranslation[^<]+)</label>', source, re.S)
@@ -95,6 +115,16 @@ def check():
     # The generator uses literal geometry for each definition; protect its persisted output too.
     blocks = re.findall(r'<description>Latest Label</description>.*?<label>#SkinTranslation[^<]+</label>.*?>Conditional</animation>', source, re.S)
     require(len(blocks) == 9, 'Latest caption generator rotation drifted')
+    native_blocks = re.findall(r'rawXML.AppendLine\("    <control>"\);(?:(?!rawXML.AppendLine\("    <control>"\);).)*?rawXML.AppendLine\("    </control>[^\n]*', source, re.S)
+    recording_blocks = [b for b in native_blocks if re.search(r'<description>(?:Series|Episode) Label</description>', b)
+                        and '#latestMediaHandler.tvrecordings.latest' in b]
+    require(len(recording_blocks) == 6, 'TV recording caption generator drifted')
+    for c, block in zip(recording_details, recording_blocks):
+        for field in ('posX', 'posY', 'width', 'height'):
+            require(f'<{field}>{c.findtext(field)}</{field}>' in block, 'TV recording caption generator geometry differs')
+        require('center=\\"' + c.findtext('posX') + ',970\\"' in block, 'TV recording caption generator pivot differs')
+        require(block.count('>Conditional</animation>') == 1 and 'end=\\"90\\" time=\\"0\\">Hidden' not in block,
+                'TV recording captions must not interpolate their rotation')
     for c, block in zip(captions, blocks):
         for field in ('posX', 'posY', 'width', 'height'):
             require(f'<{field}>{c.findtext(field)}</{field}>' in block, 'Latest caption generator geometry differs')
@@ -102,9 +132,15 @@ def check():
     for name in ('mymusicgenres.xml', 'mymusicsongs.xml'):
         radio = next(c for c in ET.parse(SKIN / name).getroot().findall('.//control') if c.findtext('id') == '18')
         require(radio.findtext('type') == 'checkbutton' and radio.findtext('hyperlink') == '30'
-                and radio.findtext('textureNoFocus') == '-', f'{name}: inherited yellow radio texture returned')
+                and radio.findtext('textureNoFocus') == 'hiddenmenu_button_no_fo.png', f'{name}: radio must use the same neutral row frame as other music controls')
+        require(radio.findtext('textureFocus') == 'hiddenmenu_button_fo.png',
+                f'{name}: radio checkbutton must own its native focus texture')
+        require(not any('Button 18 - Navigating' in c.findtext('description', '')
+                        for c in ET.parse(SKIN / name).getroot().findall('.//control')),
+                f'{name}: external radio focus images obscure the state mark')
     print('Latest captions: 9 definitions x 2 output sizes passed; generator geometry and 2 radio-menu overrides passed.')
     print('Focused music metadata captions: 6 definitions x 2 output sizes passed.')
+    print('Focused TV recording metadata: 6 definitions x 2 output sizes passed.')
 
 
 if __name__ == '__main__':

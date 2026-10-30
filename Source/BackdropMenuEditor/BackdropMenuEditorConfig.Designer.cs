@@ -2009,7 +2009,7 @@
             this.Name = "BackdropMenuEditorConfig";
             this.Text = "Backdrops Menu Editor";
             this.Load += new System.EventHandler(this.BackdropMenuEditorConfig_Load);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.BackdropMenuEditorConfig_FormClosing);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.BackdropMenuEditorConfig_FormClosing);
             this.groupBox1.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);

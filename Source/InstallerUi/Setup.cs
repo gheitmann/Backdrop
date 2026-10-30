@@ -6,8 +6,8 @@ using System.Reflection;
 using System.Security.Principal;
 using System.Windows.Forms;
 
-[assembly: AssemblyVersion("1.39.0.16")]
-[assembly: AssemblyFileVersion("1.39.0.16")]
+[assembly: AssemblyVersion("1.39.0.30")]
+[assembly: AssemblyFileVersion("1.39.0.30")]
 
 // One distributable EXE. Dependencies are private temporary files, not user setup steps.
 class Setup
@@ -24,6 +24,7 @@ class Setup
         string run = null;
         string cache = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "BackdropInstaller");
         bool verify = false, preview = false;
+        bool completed = false;
         try
         {
             string client = null;
@@ -76,26 +77,29 @@ class Setup
                 System.Threading.Tasks.Task<string> errors = process.StandardError.ReadToEndAsync();
                 process.WaitForExit();
                 string report = output.Result + Environment.NewLine + errors.Result;
-                foreach (string probe in new[] { "presentation-probe.txt", "binding-probe.txt", "native-run.txt", "preview-error.txt" })
+                foreach (string probe in new[] { "architecture.txt", "presentation-probe.txt", "binding-probe.txt", "native-run.txt", "preview-error.txt", "native-fallback.txt", "patch-error.txt", "compatibility-warning.txt" })
                 {
                     string path = Path.Combine(run, "Runtime", probe);
                     if (File.Exists(path)) report += Environment.NewLine + File.ReadAllText(path);
                 }
                 File.WriteAllText(Path.Combine(cache, verify ? "last-verification.txt" : "last-run.txt"), report);
-                if (process.ExitCode != 0) throw new InvalidOperationException("Installer preparation failed. See " + Path.Combine(cache, verify ? "last-verification.txt" : "last-run.txt") + Environment.NewLine + report);
+                if (process.ExitCode != 0) throw new InvalidOperationException("Installer could not complete. See " + Path.Combine(cache, verify ? "last-verification.txt" : "last-run.txt") + Environment.NewLine + report);
+                completed = true;
                 return 0;
             }
         }
         catch (Exception error)
         {
-            if (!verify) MessageBox.Show(error.Message, "Backdrop Setup", MessageBoxButtons.OK, MessageBoxIcon.Error);
             Directory.CreateDirectory(cache);
             File.WriteAllText(Path.Combine(cache, "setup-error.txt"), error.ToString());
+            if (!verify) MessageBox.Show("Setup could not complete. The diagnostic files have been retained.\n\nReport: "
+                + Path.Combine(cache, "setup-error.txt") + "\n\n" + (run == null ? "" : "Working folder: " + run),
+                "Backdrop Setup", MessageBoxButtons.OK, MessageBoxIcon.Error);
             return 1;
         }
         finally
         {
-            if (run != null && Directory.Exists(run))
+            if (completed && run != null && Directory.Exists(run))
             {
                 try { Directory.Delete(run, true); } catch (IOException) { } catch (UnauthorizedAccessException) { }
             }

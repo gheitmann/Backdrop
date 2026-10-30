@@ -1,0 +1,122 @@
+{
+  "back_disabled": [
+    50,
+    50
+  ],
+  "back_enabled": [
+    50,
+    50
+  ],
+  "exit_disabled": [
+    50,
+    50
+  ],
+  "exit_enabled": [
+    50,
+    50
+  ],
+  "fastforward_disabled": [
+    50,
+    50
+  ],
+  "fastforward_enabled": [
+    50,
+    50
+  ],
+  "full_screen_disabled": [
+    50,
+    50
+  ],
+  "full_screen_enabled": [
+    50,
+    50
+  ],
+  "home_disabled": [
+    50,
+    50
+  ],
+  "home_enabled": [
+    50,
+    50
+  ],
+  "lyrics_disabled": [
+    50,
+    50
+  ],
+  "lyrics_enabled": [
+    50,
+    50
+  ],
+  "nowplaying_disabled": [
+    50,
+    50
+  ],
+  "nowplaying_enabled": [
+    50,
+    50
+  ],
+  "pause_disabled": [
+    50,
+    50
+  ],
+  "pause_enabled": [
+    50,
+    50
+  ],
+  "play_disabled": [
+    50,
+    50
+  ],
+  "play_enabled": [
+    50,
+    50
+  ],
+  "playlist_disabled": [
+    50,
+    50
+  ],
+  "playlist_enabled": [
+    50,
+    50
+  ],
+  "rew_disabled": [
+    50,
+    50
+  ],
+  "rew_enabled": [
+    50,
+    50
+  ],
+  "search_disabled": [
+    50,
+    50
+  ],
+  "search_enabled": [
+    50,
+    50
+  ],
+  "skipback_disabled": [
+    50,
+    50
+  ],
+  "skipback_enabled": [
+    50,
+    50
+  ],
+  "skipforward_disabled": [
+    50,
+    50
+  ],
+  "skipforward_enabled": [
+    50,
+    50
+  ],
+  "stop_disabled": [
+    50,
+    50
+  ],
+  "stop_enabled": [
+    50,
+    50
+  ]
+}

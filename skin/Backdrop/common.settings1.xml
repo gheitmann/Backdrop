@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
   <controls>
     <control>
@@ -8,7 +8,8 @@
       <posY>0</posY>
       <width>1920</width>
       <height>1080</height>
-      <texture>default.png</texture>
+      <texture>#(iif(string.equals(#DayNight.Period,'morning'),'Modern/Morning/settings-console.png',iif(string.equals(#DayNight.Period,'noon'),'Modern/Noon/settings-console.png',iif(string.equals(#DayNight.Period,'day'),'Modern/Day/settings-console.png','Modern/settings-console.png'))))</texture>
+      <colordiffuse>ff707070</colordiffuse>
     </control>
     <control>
       <type>image</type>
@@ -134,12 +135,7 @@
         <type>button</type>
         <id>9004</id>
         <width>525</width>
-        <height>52</height>
-        <textXOff>15</textXOff>
-        <textYOff>3</textYOff>
         <textalign>right</textalign>
-        <textureFocus>playlist_sub_focus1.png</textureFocus>
-        <textureNoFocus>playlist_sub_nofocus1.png</textureNoFocus>
         <label>128</label>
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
@@ -150,18 +146,19 @@
         <hover>-</hover>
         <onup>9012</onup>
         <ondown>9005</ondown>
+        <height>52</height>
+        <textvalign>middle</textvalign>
+        <textYOff>0</textYOff>
+        <textXOff>16</textXOff>
+        <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+        <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
       </control>
       <control>
         <description>Menu Button 2</description>
         <type>button</type>
         <id>9005</id>
         <width>525</width>
-        <height>52</height>
-        <textXOff>15</textXOff>
-        <textYOff>3</textYOff>
         <textalign>right</textalign>
-        <textureFocus>playlist_sub_focus1.png</textureFocus>
-        <textureNoFocus>playlist_sub_nofocus1.png</textureNoFocus>
         <label>6023</label>
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
@@ -172,18 +169,19 @@
         <hover>-</hover>
         <onup>9004</onup>
         <ondown>9010</ondown>
+        <height>52</height>
+        <textvalign>middle</textvalign>
+        <textYOff>0</textYOff>
+        <textXOff>16</textXOff>
+        <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+        <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
       </control>
       <control>
         <description>Menu Button 3</description>
         <type>button</type>
         <id>9010</id>
         <width>525</width>
-        <height>52</height>
-        <textXOff>15</textXOff>
-        <textYOff>3</textYOff>
         <textalign>right</textalign>
-        <textureFocus>playlist_sub_focus1.png</textureFocus>
-        <textureNoFocus>playlist_sub_nofocus1.png</textureNoFocus>
         <label>605</label>
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
@@ -194,18 +192,19 @@
         <hover>-</hover>
         <onup>9005</onup>
         <ondown>9007</ondown>
+        <height>52</height>
+        <textvalign>middle</textvalign>
+        <textYOff>0</textYOff>
+        <textXOff>16</textXOff>
+        <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+        <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
       </control>
       <control>
         <description>Menu Button 4</description>
         <type>button</type>
         <id>9007</id>
         <width>525</width>
-        <height>52</height>
-        <textXOff>15</textXOff>
-        <textYOff>3</textYOff>
         <textalign>right</textalign>
-        <textureFocus>playlist_sub_focus1.png</textureFocus>
-        <textureNoFocus>playlist_sub_nofocus1.png</textureNoFocus>
         <label>1</label>
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
@@ -216,18 +215,19 @@
         <hover>-</hover>
         <onup>9010</onup>
         <ondown>9008</ondown>
+        <height>52</height>
+        <textvalign>middle</textvalign>
+        <textYOff>0</textYOff>
+        <textXOff>16</textXOff>
+        <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+        <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
       </control>
       <control>
         <description>Menu Button 5</description>
         <type>button</type>
         <id>9008</id>
         <width>525</width>
-        <height>52</height>
-        <textXOff>15</textXOff>
-        <textYOff>3</textYOff>
         <textalign>right</textalign>
-        <textureFocus>playlist_sub_focus1.png</textureFocus>
-        <textureNoFocus>playlist_sub_nofocus1.png</textureNoFocus>
         <label>3</label>
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
@@ -238,18 +238,19 @@
         <hover>-</hover>
         <onup>9007</onup>
         <ondown>9009</ondown>
+        <height>52</height>
+        <textvalign>middle</textvalign>
+        <textYOff>0</textYOff>
+        <textXOff>16</textXOff>
+        <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+        <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
       </control>
       <control>
         <description>Menu Button 6</description>
         <type>button</type>
         <id>9009</id>
         <width>525</width>
-        <height>52</height>
-        <textXOff>15</textXOff>
-        <textYOff>3</textYOff>
         <textalign>right</textalign>
-        <textureFocus>playlist_sub_focus1.png</textureFocus>
-        <textureNoFocus>playlist_sub_nofocus1.png</textureNoFocus>
         <label>1027</label>
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
@@ -260,18 +261,19 @@
         <hover>-</hover>
         <onup>9008</onup>
         <ondown>9006</ondown>
+        <height>52</height>
+        <textvalign>middle</textvalign>
+        <textYOff>0</textYOff>
+        <textXOff>16</textXOff>
+        <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+        <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
       </control>
       <control>
         <description>Menu Button 7</description>
         <type>button</type>
         <id>9006</id>
         <width>525</width>
-        <height>52</height>
-        <textXOff>15</textXOff>
-        <textYOff>3</textYOff>
         <textalign>right</textalign>
-        <textureFocus>playlist_sub_focus1.png</textureFocus>
-        <textureNoFocus>playlist_sub_nofocus1.png</textureNoFocus>
         <label>2</label>
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
@@ -282,18 +284,19 @@
         <hover>-</hover>
         <onup>9009</onup>
         <ondown>9011</ondown>
+        <height>52</height>
+        <textvalign>middle</textvalign>
+        <textYOff>0</textYOff>
+        <textXOff>16</textXOff>
+        <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+        <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
       </control>
       <control>
         <description>Menu Button 8</description>
         <type>button</type>
         <id>9011</id>
         <width>525</width>
-        <height>52</height>
-        <textXOff>15</textXOff>
-        <textYOff>3</textYOff>
         <textalign>right</textalign>
-        <textureFocus>playlist_sub_focus1.png</textureFocus>
-        <textureNoFocus>playlist_sub_nofocus1.png</textureNoFocus>
         <label>9100</label>
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
@@ -304,18 +307,19 @@
         <hover>-</hover>
         <onup>9006</onup>
         <ondown>9012</ondown>
+        <height>52</height>
+        <textvalign>middle</textvalign>
+        <textYOff>0</textYOff>
+        <textXOff>16</textXOff>
+        <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+        <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
       </control>
       <control>
         <description>Menu Button 9</description>
         <type>button</type>
         <id>9012</id>
         <width>525</width>
-        <height>52</height>
-        <textXOff>15</textXOff>
-        <textYOff>3</textYOff>
         <textalign>right</textalign>
-        <textureFocus>playlist_sub_focus1.png</textureFocus>
-        <textureNoFocus>playlist_sub_nofocus1.png</textureNoFocus>
         <label>I.F.R</label>
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
@@ -326,6 +330,12 @@
         <hover>-</hover>
         <onup>9011</onup>
         <ondown>9004</ondown>
+        <height>52</height>
+        <textvalign>middle</textvalign>
+        <textYOff>0</textYOff>
+        <textXOff>16</textXOff>
+        <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+        <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
       </control>
       <!--	<control>
 				<description>Menu Button 9</description>

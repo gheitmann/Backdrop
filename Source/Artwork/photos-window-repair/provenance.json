@@ -1,0 +1,12 @@
+{
+  "tool": "OpenAI image_gen.imagegen",
+  "date": "2026-10-29",
+  "edits": {
+    "Morning": "exec-afa8d1f5-07df-41bd-a267-b425bd75f647.png",
+    "Noon": "exec-5c77a823-4a9c-41a6-9239-0396d735b49e.png",
+    "Day": "exec-b4387db4-c6ab-4e9c-b0ab-1461ea9983ac.png",
+    "Night": "exec-d09c582e-4217-4ba0-b491-8af8dfd059dc.png"
+  },
+  "prompt": "Faithful edit per existing lighting variant: remove isolated chimney/spire tips floating above central window crossbar left of dome, replace with continuous sky, keep real skyline below crossbar and all composition. Deepen photographic focus on chair, books, window, bridge and city for Morning/Noon/Day; preserve approved Night sharpness. No new objects or redesign.",
+  "source": "skin/Backdrop/Media/Modern photos assets from BETA2"
+}

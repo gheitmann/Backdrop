@@ -13,7 +13,8 @@
       <posY>0</posY>
       <width>1920</width>
       <height>1080</height>
-      <texture>default.png</texture>
+      <texture>#(iif(string.equals(#DayNight.Period,'morning'),'Modern/Morning/cinema.png',iif(string.equals(#DayNight.Period,'noon'),'Modern/Noon/cinema.png',iif(string.equals(#DayNight.Period,'day'),'Modern/Day/cinema.png','Modern/home.jpg'))))</texture>
+      <colordiffuse>ff707070</colordiffuse>
     </control>
     <control>
       <type>image</type>
@@ -54,8 +55,6 @@
       <posY>170</posY>
       <width>460</width>
       <font>font14BC</font>
-      <textXOff>10</textXOff>
-      <textYOff>2</textYOff>
       <label>19002</label>
       <textcolor>ffffffff</textcolor>
       <colordiffuse>ffffffff</colordiffuse>
@@ -67,6 +66,12 @@
       <onleft>10</onleft>
       <onright>10</onright>
       <animation effect="fade" start="30" end="100" time="300" reversible="false">focus</animation>
+      <height>42</height>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
+      <textvalign>middle</textvalign>
+      <textXOff>16</textXOff>
+      <textYOff>0</textYOff>
     </control>
     <control>
       <description>Menu Button 1</description>
@@ -75,16 +80,11 @@
       <posX>30</posX>
       <posY>220</posY>
       <width>460</width>
-      <textureFocus>-</textureFocus>
       <font>font14BC</font>
-      <textXOff>10</textXOff>
-      <textYOff>2</textYOff>
       <label>19004</label>
       <textcolor>ffffffff</textcolor>
       <colordiffuse>ffffffff</colordiffuse>
       <textcolorNoFocus>90cccccc</textcolorNoFocus>
-      <textureFocus>dropdown_togglebutton_on.png</textureFocus>
-      <textureNoFocus>dropdown_togglebutton_nof_on.png</textureNoFocus>
       <textalign>center</textalign>
       <onup>2</onup>
       <ondown>2</ondown>
@@ -98,6 +98,12 @@
       <markalign>right</markalign>
       <markvalign>middle</markvalign>
       <markXOff>12</markXOff>
+      <height>42</height>
+      <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+      <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
+      <textvalign>middle</textvalign>
+      <textXOff>16</textXOff>
+      <textYOff>0</textYOff>
     </control>
     <control>
       <description>Highscore Menu label</description>

@@ -332,9 +332,13 @@
             <onright>50</onright>
             <onup>991799</onup>
             <ondown>20</ondown>
-            <animation effect="zoom" start="95,95" end="100,100" time="450" tween="back" easing="out" reversible="true">focus</animation>
-            <animation effect="zoom" start="102,102" end="100,100" time="150" tween="back" easing="out" reversible="true">unfocus</animation>
             <animation effect="fade" start="30" end="100" time="200" reversible="true">focus</animation>
+            <height>42</height>
+            <textvalign>middle</textvalign>
+            <textYOff>0</textYOff>
+            <textXOff>16</textXOff>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+            <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           </control>
           <control>
             <description>Menu Button 1</description>
@@ -351,9 +355,13 @@
             <onright>50</onright>
             <onup>2</onup>
             <ondown>30</ondown>
-            <animation effect="zoom" start="95,95" end="100,100" time="450" tween="back" easing="out" reversible="true">focus</animation>
-            <animation effect="zoom" start="102,102" end="100,100" time="150" tween="back" easing="out" reversible="true">unfocus</animation>
             <animation effect="fade" start="30" end="100" time="200" reversible="true">focus</animation>
+            <height>42</height>
+            <textvalign>middle</textvalign>
+            <textYOff>0</textYOff>
+            <textXOff>16</textXOff>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+            <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           </control>
           <control>
             <description>Menu Button 2</description>
@@ -361,19 +369,14 @@
             <id>30</id>
             <width>375</width>
             <label>486</label>
-            <textYOff>8</textYOff>
             <textcolor>ffffffff</textcolor>
             <colordiffuse>ffffffff</colordiffuse>
             <textcolorNoFocus>90cccccc</textcolorNoFocus>
             <font>font14BC</font>
-            <textureFocus>dropdown_togglebutton_on.png</textureFocus>
-            <textureNoFocus>dropdown_togglebutton_nof_on.png</textureNoFocus>
             <onleft>50</onleft>
             <onright>50</onright>
             <onup>20</onup>
             <ondown>40</ondown>
-            <animation effect="zoom" start="95,95" end="100,100" time="450" tween="back" easing="out" reversible="true">focus</animation>
-            <animation effect="zoom" start="102,102" end="100,100" time="150" tween="back" easing="out" reversible="true">unfocus</animation>
             <animation effect="fade" start="30" end="100" time="200" reversible="true">focus</animation>
             <textureCheckmark>check-box.png</textureCheckmark>
             <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
@@ -382,6 +385,12 @@
             <markalign>right</markalign>
             <markvalign>middle</markvalign>
             <markXOff>12</markXOff>
+            <height>42</height>
+            <textvalign>middle</textvalign>
+            <textYOff>0</textYOff>
+            <textXOff>16</textXOff>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+            <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           </control>
           <control>
             <description>Menu Button 3</description>
@@ -389,19 +398,14 @@
             <id>40</id>
             <width>375</width>
             <label>Auto Play</label>
-            <textYOff>8</textYOff>
             <textcolor>ffffffff</textcolor>
             <colordiffuse>ffffffff</colordiffuse>
             <textcolorNoFocus>90cccccc</textcolorNoFocus>
             <font>font14BC</font>
-            <textureFocus>dropdown_togglebutton_on.png</textureFocus>
-            <textureNoFocus>dropdown_togglebutton_nof_on.png</textureNoFocus>
             <onleft>50</onleft>
             <onright>50</onright>
             <onup>30</onup>
             <ondown>21</ondown>
-            <animation effect="zoom" start="95,95" end="100,100" time="450" tween="back" easing="out" reversible="true">focus</animation>
-            <animation effect="zoom" start="102,102" end="100,100" time="150" tween="back" easing="out" reversible="true">unfocus</animation>
             <animation effect="fade" start="30" end="100" time="200" reversible="true">focus</animation>
             <textureCheckmark>check-box.png</textureCheckmark>
             <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
@@ -410,6 +414,12 @@
             <markalign>right</markalign>
             <markvalign>middle</markvalign>
             <markXOff>12</markXOff>
+            <height>42</height>
+            <textvalign>middle</textvalign>
+            <textYOff>0</textYOff>
+            <textXOff>16</textXOff>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+            <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           </control>
           <control>
             <description>Menu Button 4</description>
@@ -426,9 +436,13 @@
             <onright>50</onright>
             <onup>40</onup>
             <ondown>22</ondown>
-            <animation effect="zoom" start="95,95" end="100,100" time="450" tween="back" easing="out" reversible="true">focus</animation>
-            <animation effect="zoom" start="102,102" end="100,100" time="150" tween="back" easing="out" reversible="true">unfocus</animation>
             <animation effect="fade" start="30" end="100" time="200" reversible="true">focus</animation>
+            <height>42</height>
+            <textvalign>middle</textvalign>
+            <textYOff>0</textYOff>
+            <textXOff>16</textXOff>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+            <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           </control>
           <control>
             <description>Menu Button 5</description>
@@ -445,9 +459,13 @@
             <onright>50</onright>
             <onup>21</onup>
             <ondown>23</ondown>
-            <animation effect="zoom" start="95,95" end="100,100" time="450" tween="back" easing="out" reversible="true">focus</animation>
-            <animation effect="zoom" start="102,102" end="100,100" time="150" tween="back" easing="out" reversible="true">unfocus</animation>
             <animation effect="fade" start="30" end="100" time="200" reversible="true">focus</animation>
+            <height>42</height>
+            <textvalign>middle</textvalign>
+            <textYOff>0</textYOff>
+            <textXOff>16</textXOff>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+            <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           </control>
           <control>
             <description>Menu Button 6</description>
@@ -464,9 +482,13 @@
             <onright>50</onright>
             <onup>22</onup>
             <ondown>24</ondown>
-            <animation effect="zoom" start="95,95" end="100,100" time="450" tween="back" easing="out" reversible="true">focus</animation>
-            <animation effect="zoom" start="102,102" end="100,100" time="150" tween="back" easing="out" reversible="true">unfocus</animation>
             <animation effect="fade" start="30" end="100" time="200" reversible="true">focus</animation>
+            <height>42</height>
+            <textvalign>middle</textvalign>
+            <textYOff>0</textYOff>
+            <textXOff>16</textXOff>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+            <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           </control>
           <control>
             <description>Menu Button 7</description>
@@ -483,9 +505,13 @@
             <onright>50</onright>
             <onup>23</onup>
             <ondown>25</ondown>
-            <animation effect="zoom" start="95,95" end="100,100" time="450" tween="back" easing="out" reversible="true">focus</animation>
-            <animation effect="zoom" start="102,102" end="100,100" time="150" tween="back" easing="out" reversible="true">unfocus</animation>
             <animation effect="fade" start="30" end="100" time="200" reversible="true">focus</animation>
+            <height>42</height>
+            <textvalign>middle</textvalign>
+            <textYOff>0</textYOff>
+            <textXOff>16</textXOff>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+            <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           </control>
           <control>
             <description>Menu Button 8</description>
@@ -502,9 +528,13 @@
             <onright>50</onright>
             <onup>24</onup>
             <ondown>9</ondown>
-            <animation effect="zoom" start="95,95" end="100,100" time="450" tween="back" easing="out" reversible="true">focus</animation>
-            <animation effect="zoom" start="102,102" end="100,100" time="150" tween="back" easing="out" reversible="true">unfocus</animation>
             <animation effect="fade" start="30" end="100" time="200" reversible="true">focus</animation>
+            <height>42</height>
+            <textvalign>middle</textvalign>
+            <textYOff>0</textYOff>
+            <textXOff>16</textXOff>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+            <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           </control>
           <control>
             <description>Menu Button 9</description>
@@ -521,9 +551,13 @@
             <onright>50</onright>
             <onup>25</onup>
             <ondown>2</ondown>
-            <animation effect="zoom" start="95,95" end="100,100" time="450" tween="back" easing="out" reversible="true">focus</animation>
-            <animation effect="zoom" start="102,102" end="100,100" time="150" tween="back" easing="out" reversible="true">unfocus</animation>
             <animation effect="fade" start="30" end="100" time="200" reversible="true">focus</animation>
+            <height>42</height>
+            <textvalign>middle</textvalign>
+            <textYOff>0</textYOff>
+            <textXOff>16</textXOff>
+            <textureFocus>hiddenmenu_button_fo.png</textureFocus>
+            <textureNoFocus>hiddenmenu_button_no_fo.png</textureNoFocus>
           </control>
         </control>
       </control>

@@ -1,0 +1,9531 @@
+{
+  "Basic_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "house",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      50,
+      50
+    ],
+    "rendered": [
+      50,
+      50
+    ],
+    "native_fidelity": true
+  },
+  "Basic_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "house",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      50,
+      50
+    ],
+    "rendered": [
+      50,
+      50
+    ],
+    "native_fidelity": true
+  },
+  "DefaultFolderBackBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "folder",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      128,
+      128
+    ],
+    "rendered": [
+      128,
+      128
+    ],
+    "native_fidelity": true
+  },
+  "DefaultFolderBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "folder",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      128,
+      128
+    ],
+    "rendered": [
+      128,
+      128
+    ],
+    "native_fidelity": true
+  },
+  "DefaultMyradio.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "radio",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      49,
+      49
+    ],
+    "rendered": [
+      49,
+      49
+    ],
+    "native_fidelity": true
+  },
+  "DefaultMyradioBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "radio",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      256,
+      256
+    ],
+    "rendered": [
+      256,
+      256
+    ],
+    "native_fidelity": true
+  },
+  "DefaultMyradioBigLocked.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      256,
+      256
+    ],
+    "rendered": [
+      256,
+      256
+    ],
+    "native_fidelity": true
+  },
+  "DefaultMyradioLocked.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      49,
+      49
+    ],
+    "rendered": [
+      49,
+      49
+    ],
+    "native_fidelity": true
+  },
+  "DefaultMyradioStream.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "radio",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      49,
+      49
+    ],
+    "rendered": [
+      49,
+      49
+    ],
+    "native_fidelity": true
+  },
+  "DefaultMyradioStreamBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "radio",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      256,
+      256
+    ],
+    "rendered": [
+      256,
+      256
+    ],
+    "native_fidelity": true
+  },
+  "DefaultPlaylist.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      150,
+      150
+    ],
+    "rendered": [
+      150,
+      150
+    ],
+    "native_fidelity": true
+  },
+  "DefaultPlaylistBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      150,
+      150
+    ],
+    "rendered": [
+      150,
+      150
+    ],
+    "native_fidelity": true
+  },
+  "DefaultShortcutBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      84,
+      84
+    ],
+    "rendered": [
+      84,
+      84
+    ],
+    "native_fidelity": true
+  },
+  "InfoService/defaultFeedALL.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      80,
+      80
+    ],
+    "rendered": [
+      80,
+      80
+    ],
+    "native_fidelity": true
+  },
+  "InfoService/defaultFeedAtom.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      80,
+      80
+    ],
+    "rendered": [
+      80,
+      80
+    ],
+    "native_fidelity": true
+  },
+  "InfoService/defaultFeedItemAtom.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      32,
+      32
+    ],
+    "rendered": [
+      32,
+      32
+    ],
+    "native_fidelity": true
+  },
+  "InfoService/defaultFeedItemAtomBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      320,
+      320
+    ],
+    "rendered": [
+      320,
+      320
+    ],
+    "native_fidelity": true
+  },
+  "InfoService/defaultFeedItemRDF.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      32,
+      32
+    ],
+    "rendered": [
+      32,
+      32
+    ],
+    "native_fidelity": true
+  },
+  "InfoService/defaultFeedItemRDFBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      320,
+      320
+    ],
+    "rendered": [
+      320,
+      320
+    ],
+    "native_fidelity": true
+  },
+  "InfoService/defaultFeedItemRSS.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      32,
+      32
+    ],
+    "rendered": [
+      32,
+      32
+    ],
+    "native_fidelity": true
+  },
+  "InfoService/defaultFeedItemRSSBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      320,
+      320
+    ],
+    "rendered": [
+      320,
+      320
+    ],
+    "native_fidelity": true
+  },
+  "InfoService/defaultFeedRDF.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      80,
+      80
+    ],
+    "rendered": [
+      80,
+      80
+    ],
+    "native_fidelity": true
+  },
+  "InfoService/defaultFeedRSS.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      80,
+      80
+    ],
+    "rendered": [
+      80,
+      80
+    ],
+    "native_fidelity": true
+  },
+  "InfoService/defaultTwitter.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      320,
+      320
+    ],
+    "rendered": [
+      320,
+      320
+    ],
+    "native_fidelity": true
+  },
+  "Lock.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      128,
+      128
+    ],
+    "rendered": [
+      128,
+      128
+    ],
+    "native_fidelity": true
+  },
+  "MP139/Action_focus.png": {
+    "focus": true,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      60,
+      576
+    ],
+    "rendered": [
+      96,
+      922
+    ]
+  },
+  "MP139/Action_nofocus.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      60,
+      576
+    ],
+    "rendered": [
+      96,
+      922
+    ]
+  },
+  "MP139/Arrow_left_button_dark_small.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-left",
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      148,
+      55
+    ],
+    "rendered": [
+      148,
+      55
+    ],
+    "native_fidelity": true
+  },
+  "MP139/Arrow_left_button_small.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-left",
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      148,
+      55
+    ],
+    "rendered": [
+      148,
+      55
+    ],
+    "native_fidelity": true
+  },
+  "MP139/Arrow_right_button_dark_small.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-right",
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      148,
+      55
+    ],
+    "rendered": [
+      148,
+      55
+    ],
+    "native_fidelity": true
+  },
+  "MP139/Arrow_right_button_small.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-right",
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      148,
+      55
+    ],
+    "rendered": [
+      148,
+      55
+    ],
+    "native_fidelity": true
+  },
+  "MP139/Button_tiny.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      120,
+      60
+    ],
+    "rendered": [
+      192,
+      96
+    ]
+  },
+  "MP139/CompactDisc.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "headphones",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      278,
+      278
+    ],
+    "rendered": [
+      278,
+      278
+    ],
+    "native_fidelity": true
+  },
+  "MP139/DefaultCollectionBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      288,
+      400
+    ],
+    "rendered": [
+      288,
+      400
+    ],
+    "native_fidelity": true
+  },
+  "MP139/DefaultDirectorBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "users",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      288,
+      400
+    ],
+    "rendered": [
+      288,
+      400
+    ],
+    "native_fidelity": true
+  },
+  "MP139/DefaultFolderBackBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "folder",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      400,
+      400
+    ],
+    "rendered": [
+      400,
+      400
+    ],
+    "native_fidelity": true
+  },
+  "MP139/DefaultFolderBackBigVideo.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "folder",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      288,
+      400
+    ],
+    "rendered": [
+      288,
+      400
+    ],
+    "native_fidelity": true
+  },
+  "MP139/DefaultFolderBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "folder",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      400,
+      400
+    ],
+    "rendered": [
+      400,
+      400
+    ],
+    "native_fidelity": true
+  },
+  "MP139/DefaultMyradio.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "radio",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      49,
+      49
+    ],
+    "rendered": [
+      49,
+      49
+    ],
+    "native_fidelity": true
+  },
+  "MP139/DefaultMyradioBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "radio",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      400,
+      400
+    ],
+    "rendered": [
+      400,
+      400
+    ],
+    "native_fidelity": true
+  },
+  "MP139/HomeCaseFocus.png": {
+    "focus": true,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      445,
+      300
+    ],
+    "rendered": [
+      445,
+      300
+    ]
+  },
+  "MP139/MyFilms/Persons.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "users",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "MP139/MyFilms/Trailer.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      58,
+      40
+    ],
+    "rendered": [
+      58,
+      40
+    ],
+    "native_fidelity": true
+  },
+  "MP139/MyFilms/collection.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      122,
+      122
+    ],
+    "rendered": [
+      122,
+      122
+    ],
+    "native_fidelity": true
+  },
+  "MP139/MyFilms/download.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "download",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "MP139/MyFilms/led_green.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "circle",
+    "active": true,
+    "status": "green",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      55,
+      54
+    ],
+    "rendered": [
+      55,
+      54
+    ],
+    "native_fidelity": true
+  },
+  "MP139/MyFilms/led_grey.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "circle",
+    "active": false,
+    "status": "grey",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      55,
+      54
+    ],
+    "rendered": [
+      55,
+      54
+    ],
+    "native_fidelity": true
+  },
+  "MP139/MyFilms/led_red.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "circle",
+    "active": true,
+    "status": "red",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      55,
+      54
+    ],
+    "rendered": [
+      55,
+      54
+    ],
+    "native_fidelity": true
+  },
+  "MP139/MyFilms/led_yellow.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "circle",
+    "active": true,
+    "status": "yellow",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      55,
+      54
+    ],
+    "rendered": [
+      55,
+      54
+    ],
+    "native_fidelity": true
+  },
+  "MP139/MyFilms/myfilms_latest_nocover.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      350,
+      513
+    ],
+    "rendered": [
+      350,
+      513
+    ],
+    "native_fidelity": true
+  },
+  "MP139/MyFilms/online.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      128,
+      128
+    ],
+    "rendered": [
+      128,
+      128
+    ],
+    "native_fidelity": true
+  },
+  "MP139/OSDlabel_button.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      192,
+      46
+    ],
+    "rendered": [
+      401,
+      96
+    ]
+  },
+  "MP139/UserRatingStarOff.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "star",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturecheckmarknofocus"
+    ],
+    "native": [
+      32,
+      32
+    ],
+    "rendered": [
+      32,
+      32
+    ],
+    "native_fidelity": true
+  },
+  "MP139/UserRatingStarOn.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "star",
+    "active": true,
+    "tags": [
+      "native-or-alternate-state",
+      "texturecheckmark"
+    ],
+    "native": [
+      32,
+      32
+    ],
+    "rendered": [
+      32,
+      32
+    ],
+    "native_fidelity": true
+  },
+  "MP139/arrow_round_down_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-down",
+    "tags": [
+      "native-or-alternate-state",
+      "texturedescendingfocused",
+      "texturedownfocus"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "MP139/arrow_round_down_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-down",
+    "tags": [
+      "native-or-alternate-state",
+      "texturedescending",
+      "texturedown"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "MP139/arrow_round_left_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-left",
+    "tags": [
+      "native-or-alternate-state",
+      "texturedownfocus",
+      "texturefocus",
+      "textureleftfocus"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "MP139/arrow_round_left_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-left",
+    "tags": [
+      "native-or-alternate-state",
+      "texturedown",
+      "textureleft",
+      "texturenofocus"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "MP139/arrow_round_right_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-right",
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus",
+      "texturerightfocus",
+      "textureupfocus"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "MP139/arrow_round_right_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-right",
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus",
+      "textureright",
+      "textureup"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "MP139/arrow_round_up_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-up",
+    "tags": [
+      "native-or-alternate-state",
+      "textureascendingfocused",
+      "textureupfocus"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "MP139/arrow_round_up_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-up",
+    "tags": [
+      "native-or-alternate-state",
+      "textureascending",
+      "textureup"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "MP139/bar_hor.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      426,
+      20
+    ],
+    "rendered": [
+      1704,
+      80
+    ]
+  },
+  "MP139/button_focus.png": {
+    "focus": true,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturebg",
+      "texturefocus",
+      "texturenofocus"
+    ],
+    "native": [
+      450,
+      60
+    ],
+    "rendered": [
+      720,
+      96
+    ]
+  },
+  "MP139/button_focus_transparent.png": {
+    "focus": true,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      450,
+      60
+    ],
+    "rendered": [
+      720,
+      96
+    ]
+  },
+  "MP139/button_nofocus.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      260,
+      45
+    ],
+    "rendered": [
+      555,
+      96
+    ]
+  },
+  "MP139/check-box.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "check",
+    "active": true,
+    "checkbox": true,
+    "tags": [
+      "native-or-alternate-state",
+      "texturecheckmark"
+    ],
+    "native": [
+      100,
+      100
+    ],
+    "rendered": [
+      100,
+      100
+    ],
+    "native_fidelity": true
+  },
+  "MP139/check-boxNF.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "square",
+    "active": false,
+    "checkbox": true,
+    "tags": [
+      "native-or-alternate-state",
+      "texturecheckmarknofocus"
+    ],
+    "native": [
+      100,
+      100
+    ],
+    "rendered": [
+      100,
+      100
+    ],
+    "native_fidelity": true
+  },
+  "MP139/defaultActor.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      50,
+      50
+    ],
+    "rendered": [
+      50,
+      50
+    ],
+    "native_fidelity": true
+  },
+  "MP139/defaultActorBIG.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      288,
+      400
+    ],
+    "rendered": [
+      288,
+      400
+    ],
+    "native_fidelity": true
+  },
+  "MP139/defaultAudioBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      400,
+      400
+    ],
+    "rendered": [
+      400,
+      400
+    ],
+    "native_fidelity": true
+  },
+  "MP139/defaultGenreBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      288,
+      400
+    ],
+    "rendered": [
+      288,
+      400
+    ],
+    "native_fidelity": true
+  },
+  "MP139/defaultGroupBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      288,
+      400
+    ],
+    "rendered": [
+      288,
+      400
+    ],
+    "native_fidelity": true
+  },
+  "MP139/defaultLibraryBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      288,
+      400
+    ],
+    "rendered": [
+      288,
+      400
+    ],
+    "native_fidelity": true
+  },
+  "MP139/defaultVideoBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      288,
+      400
+    ],
+    "rendered": [
+      288,
+      400
+    ],
+    "native_fidelity": true
+  },
+  "MP139/defaultVideoSeenBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      288,
+      400
+    ],
+    "rendered": [
+      288,
+      400
+    ],
+    "native_fidelity": true
+  },
+  "MP139/defaulttvlogo.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      256,
+      256
+    ],
+    "rendered": [
+      256,
+      256
+    ],
+    "native_fidelity": true
+  },
+  "MP139/dialog_background.png": {
+    "focus": false,
+    "kind": "surface",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      436,
+      246
+    ],
+    "rendered": [
+      436,
+      246
+    ]
+  },
+  "MP139/ff_16x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "fast-forward",
+    "text": "16x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      110,
+      110
+    ],
+    "rendered": [
+      110,
+      110
+    ],
+    "native_fidelity": true
+  },
+  "MP139/ff_2x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "fast-forward",
+    "text": "2x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      110,
+      110
+    ],
+    "rendered": [
+      110,
+      110
+    ],
+    "native_fidelity": true
+  },
+  "MP139/ff_32x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "fast-forward",
+    "text": "32x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      110,
+      110
+    ],
+    "rendered": [
+      110,
+      110
+    ],
+    "native_fidelity": true
+  },
+  "MP139/ff_4x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "fast-forward",
+    "text": "4x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      110,
+      110
+    ],
+    "rendered": [
+      110,
+      110
+    ],
+    "native_fidelity": true
+  },
+  "MP139/ff_8x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "fast-forward",
+    "text": "8x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      110,
+      110
+    ],
+    "rendered": [
+      110,
+      110
+    ],
+    "native_fidelity": true
+  },
+  "MP139/hover_TvWishList.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      472,
+      324
+    ],
+    "rendered": [
+      472,
+      324
+    ]
+  },
+  "MP139/hover_exit.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "x",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      472,
+      324
+    ],
+    "rendered": [
+      472,
+      324
+    ],
+    "native_fidelity": true
+  },
+  "MP139/hover_my playlists.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      472,
+      324
+    ],
+    "rendered": [
+      472,
+      324
+    ]
+  },
+  "MP139/hover_worldclock.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      472,
+      324
+    ],
+    "rendered": [
+      472,
+      324
+    ],
+    "native_fidelity": true
+  },
+  "MP139/icon_empty_focus.png": {
+    "focus": true,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      85,
+      32
+    ],
+    "rendered": [
+      255,
+      96
+    ]
+  },
+  "MP139/icon_empty_focus_music.png": {
+    "focus": true,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      221,
+      169
+    ],
+    "rendered": [
+      221,
+      169
+    ]
+  },
+  "MP139/icon_empty_nofocus.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      85,
+      32
+    ],
+    "rendered": [
+      255,
+      96
+    ]
+  },
+  "MP139/icon_empty_nofocus_music.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      221,
+      169
+    ],
+    "rendered": [
+      221,
+      169
+    ]
+  },
+  "MP139/list_sub_focus.png": {
+    "focus": true,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      630,
+      38
+    ],
+    "rendered": [
+      1592,
+      96
+    ]
+  },
+  "MP139/list_sub_focus_deepblue.png": {
+    "focus": true,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      630,
+      38
+    ],
+    "rendered": [
+      1592,
+      96
+    ]
+  },
+  "MP139/list_sub_nofocus.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      247,
+      33
+    ],
+    "rendered": [
+      719,
+      96
+    ]
+  },
+  "MP139/listbg.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      1270,
+      815
+    ],
+    "rendered": [
+      1270,
+      815
+    ]
+  },
+  "MP139/listfocus.png": {
+    "focus": true,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      630,
+      38
+    ],
+    "rendered": [
+      1592,
+      96
+    ]
+  },
+  "MP139/listfocus_menu.png": {
+    "focus": true,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      630,
+      45
+    ],
+    "rendered": [
+      1344,
+      96
+    ]
+  },
+  "MP139/listfocus_notwatched.png": {
+    "focus": true,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      630,
+      38
+    ],
+    "rendered": [
+      1592,
+      96
+    ]
+  },
+  "MP139/listnofocus.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      474,
+      20
+    ],
+    "rendered": [
+      1896,
+      80
+    ]
+  },
+  "MP139/missing_coverart.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      256,
+      256
+    ],
+    "rendered": [
+      256,
+      256
+    ],
+    "native_fidelity": true
+  },
+  "MP139/missing_coverart_radio.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "radio",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      256,
+      256
+    ],
+    "rendered": [
+      256,
+      256
+    ],
+    "native_fidelity": true
+  },
+  "MP139/numberblock.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      100,
+      135
+    ],
+    "rendered": [
+      100,
+      135
+    ],
+    "native_fidelity": true
+  },
+  "MP139/osd_slider_nibFO.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "circle",
+    "active": true,
+    "tags": [
+      "native-or-alternate-state",
+      "textureslidernibfocus"
+    ],
+    "native": [
+      12,
+      25
+    ],
+    "rendered": [
+      12,
+      25
+    ],
+    "native_fidelity": true
+  },
+  "MP139/osd_slider_nibNF.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "circle",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "textureslidernib"
+    ],
+    "native": [
+      12,
+      25
+    ],
+    "rendered": [
+      12,
+      25
+    ],
+    "native_fidelity": true
+  },
+  "MP139/page_down_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-down",
+    "tags": [
+      "native-or-alternate-state",
+      "texturedownfocus"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "MP139/page_down_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-down",
+    "tags": [
+      "native-or-alternate-state",
+      "texturedown"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "MP139/page_up_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-up",
+    "tags": [
+      "native-or-alternate-state",
+      "textureupfocus"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "MP139/page_up_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-up",
+    "tags": [
+      "native-or-alternate-state",
+      "textureup"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "MP139/pause_white_transparent.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "pause",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      300,
+      300
+    ],
+    "rendered": [
+      300,
+      300
+    ],
+    "native_fidelity": true
+  },
+  "MP139/playlist_item_delete_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "x",
+    "tags": [
+      "native-or-alternate-state",
+      "texturedeletefocused"
+    ],
+    "native": [
+      50,
+      45
+    ],
+    "rendered": [
+      50,
+      45
+    ],
+    "native_fidelity": true
+  },
+  "MP139/playlist_item_delete_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "x",
+    "tags": [
+      "native-or-alternate-state",
+      "texturedelete"
+    ],
+    "native": [
+      50,
+      45
+    ],
+    "rendered": [
+      50,
+      45
+    ],
+    "native_fidelity": true
+  },
+  "MP139/playlist_item_down_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-down",
+    "tags": [
+      "native-or-alternate-state",
+      "texturemovedownfocused"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "MP139/playlist_item_down_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-down",
+    "tags": [
+      "native-or-alternate-state",
+      "texturemovedown"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "MP139/playlist_item_up_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-up",
+    "tags": [
+      "native-or-alternate-state",
+      "texturemoveupfocused"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "MP139/playlist_item_up_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-up",
+    "tags": [
+      "native-or-alternate-state",
+      "texturemoveup"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "MP139/playlist_sub_focus.png": {
+    "focus": true,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      630,
+      38
+    ],
+    "rendered": [
+      1592,
+      96
+    ]
+  },
+  "MP139/playlist_sub_nofocus.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      721,
+      47
+    ],
+    "rendered": [
+      1473,
+      96
+    ]
+  },
+  "MP139/rec.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "circle",
+    "active": true,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      68,
+      68
+    ],
+    "rendered": [
+      68,
+      68
+    ],
+    "native_fidelity": true
+  },
+  "MP139/rew_16x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "rewind",
+    "text": "16x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      110,
+      110
+    ],
+    "rendered": [
+      110,
+      110
+    ],
+    "native_fidelity": true
+  },
+  "MP139/rew_2x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "rewind",
+    "text": "2x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      110,
+      110
+    ],
+    "rendered": [
+      110,
+      110
+    ],
+    "native_fidelity": true
+  },
+  "MP139/rew_32x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "rewind",
+    "text": "32x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      110,
+      110
+    ],
+    "rendered": [
+      110,
+      110
+    ],
+    "native_fidelity": true
+  },
+  "MP139/rew_4x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "rewind",
+    "text": "4x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      110,
+      110
+    ],
+    "rendered": [
+      110,
+      110
+    ],
+    "native_fidelity": true
+  },
+  "MP139/rew_8x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "rewind",
+    "text": "8x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      110,
+      110
+    ],
+    "rendered": [
+      110,
+      110
+    ],
+    "native_fidelity": true
+  },
+  "MP139/scroll-left-focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-left",
+    "tags": [
+      "native-or-alternate-state",
+      "texturedownfocus"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "MP139/scroll-left.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-left",
+    "tags": [
+      "native-or-alternate-state",
+      "texturedown"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "MP139/scroll-right-focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-right",
+    "tags": [
+      "native-or-alternate-state",
+      "textureupfocus"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "MP139/scroll-right.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-right",
+    "tags": [
+      "native-or-alternate-state",
+      "textureup"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "MP139/setting_button_long.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      1000,
+      60
+    ],
+    "rendered": [
+      1600,
+      96
+    ]
+  },
+  "MP139/setting_button_medium.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      600,
+      60
+    ],
+    "rendered": [
+      960,
+      96
+    ]
+  },
+  "MP139/setting_button_short.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      310,
+      60
+    ],
+    "rendered": [
+      496,
+      96
+    ]
+  },
+  "MP139/tb_cf3.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "layout-grid",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      88,
+      88
+    ],
+    "rendered": [
+      88,
+      88
+    ],
+    "native_fidelity": true
+  },
+  "MP139/tb_cfNF.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "layout-grid",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      88,
+      88
+    ],
+    "rendered": [
+      88,
+      88
+    ],
+    "native_fidelity": true
+  },
+  "MP139/tb_exitNF.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "x",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      88,
+      88
+    ],
+    "rendered": [
+      88,
+      88
+    ],
+    "native_fidelity": true
+  },
+  "MP139/tb_exit_dialogue.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "x",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      45,
+      45
+    ],
+    "rendered": [
+      45,
+      45
+    ],
+    "native_fidelity": true
+  },
+  "MP139/tb_extend3.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "maximize",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      88,
+      88
+    ],
+    "rendered": [
+      88,
+      88
+    ],
+    "native_fidelity": true
+  },
+  "MP139/tb_extend3b.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "maximize",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      88,
+      88
+    ],
+    "rendered": [
+      88,
+      88
+    ],
+    "native_fidelity": true
+  },
+  "MP139/tb_extendNF.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "maximize",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      88,
+      88
+    ],
+    "rendered": [
+      88,
+      88
+    ],
+    "native_fidelity": true
+  },
+  "MP139/tb_menu3.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "menu",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      88,
+      88
+    ],
+    "rendered": [
+      88,
+      88
+    ],
+    "native_fidelity": true
+  },
+  "MP139/tb_menuNF.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "menu",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      88,
+      88
+    ],
+    "rendered": [
+      88,
+      88
+    ],
+    "native_fidelity": true
+  },
+  "MP139/tb_music3.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "headphones",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      88,
+      88
+    ],
+    "rendered": [
+      88,
+      88
+    ],
+    "native_fidelity": true
+  },
+  "MP139/tb_musicNF.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "headphones",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      88,
+      88
+    ],
+    "rendered": [
+      88,
+      88
+    ],
+    "native_fidelity": true
+  },
+  "MP139/tb_playlist3.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "list-music",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      88,
+      88
+    ],
+    "rendered": [
+      88,
+      88
+    ],
+    "native_fidelity": true
+  },
+  "MP139/tb_playlistNF.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "list-music",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      88,
+      88
+    ],
+    "rendered": [
+      88,
+      88
+    ],
+    "native_fidelity": true
+  },
+  "MP139/tb_recordNF_red.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "circle",
+    "active": true,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      88,
+      88
+    ],
+    "rendered": [
+      88,
+      88
+    ],
+    "native_fidelity": true
+  },
+  "MP139/tb_record_red3.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "circle",
+    "active": true,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      88,
+      88
+    ],
+    "rendered": [
+      88,
+      88
+    ],
+    "native_fidelity": true
+  },
+  "MP139/tb_subtitles3.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "captions",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      88,
+      88
+    ],
+    "rendered": [
+      88,
+      88
+    ],
+    "native_fidelity": true
+  },
+  "MP139/tb_subtitlesNF.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "captions",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      88,
+      88
+    ],
+    "rendered": [
+      88,
+      88
+    ],
+    "native_fidelity": true
+  },
+  "MP139/tb_video3.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "video",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      88,
+      88
+    ],
+    "rendered": [
+      88,
+      88
+    ],
+    "native_fidelity": true
+  },
+  "MP139/tb_videoNF.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "video",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      88,
+      88
+    ],
+    "rendered": [
+      88,
+      88
+    ],
+    "native_fidelity": true
+  },
+  "MP139/thumb.frame.black.focus.png": {
+    "focus": true,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      192,
+      270
+    ],
+    "rendered": [
+      192,
+      270
+    ]
+  },
+  "MP139/tvguide_arrow_left_colorize.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-left",
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocusedleft",
+      "texturenonfocusedleft"
+    ],
+    "native": [
+      32,
+      64
+    ],
+    "rendered": [
+      32,
+      64
+    ],
+    "native_fidelity": true
+  },
+  "MP139/tvguide_arrow_left_colorize_overlay.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-left",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      32,
+      64
+    ],
+    "rendered": [
+      32,
+      64
+    ],
+    "native_fidelity": true
+  },
+  "MP139/tvguide_arrow_right_colorize.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-right",
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocusedright",
+      "texturenonfocusedright"
+    ],
+    "native": [
+      32,
+      64
+    ],
+    "rendered": [
+      32,
+      64
+    ],
+    "native_fidelity": true
+  },
+  "MP139/tvguide_arrow_right_colorize_overlay.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-right",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      32,
+      64
+    ],
+    "rendered": [
+      32,
+      64
+    ],
+    "native_fidelity": true
+  },
+  "MP139/tvguide_button_left.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      2,
+      52
+    ],
+    "rendered": [
+      8,
+      208
+    ]
+  },
+  "MP139/tvguide_button_light_left.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      2,
+      52
+    ],
+    "rendered": [
+      8,
+      208
+    ]
+  },
+  "MP139/tvguide_button_light_middle.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      225,
+      51
+    ],
+    "rendered": [
+      424,
+      96
+    ]
+  },
+  "MP139/tvguide_button_light_right.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      2,
+      52
+    ],
+    "rendered": [
+      8,
+      208
+    ]
+  },
+  "MP139/tvguide_button_middle.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      225,
+      51
+    ],
+    "rendered": [
+      424,
+      96
+    ]
+  },
+  "MP139/tvguide_button_middle_colorize.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texture",
+      "texturefocusedmid",
+      "texturenonfocusedmid"
+    ],
+    "native": [
+      251,
+      64
+    ],
+    "rendered": [
+      377,
+      96
+    ]
+  },
+  "MP139/tvguide_button_middle_colorize_overlay.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      251,
+      64
+    ],
+    "rendered": [
+      377,
+      96
+    ]
+  },
+  "MP139/tvguide_button_right.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      2,
+      52
+    ],
+    "rendered": [
+      8,
+      208
+    ]
+  },
+  "MP139/tvguide_button_selected_left.png": {
+    "focus": true,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      2,
+      52
+    ],
+    "rendered": [
+      8,
+      208
+    ]
+  },
+  "MP139/tvguide_button_selected_middle.png": {
+    "focus": true,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      225,
+      51
+    ],
+    "rendered": [
+      424,
+      96
+    ]
+  },
+  "MP139/tvguide_button_selected_right.png": {
+    "focus": true,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      2,
+      52
+    ],
+    "rendered": [
+      8,
+      208
+    ]
+  },
+  "MP139/tvguide_notifyButton_Focus_left.png": {
+    "focus": true,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocusedleft"
+    ],
+    "native": [
+      2,
+      52
+    ],
+    "rendered": [
+      8,
+      208
+    ]
+  },
+  "MP139/tvguide_notifyButton_Focus_middle.png": {
+    "focus": true,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocusedmid"
+    ],
+    "native": [
+      1000,
+      51
+    ],
+    "rendered": [
+      1882,
+      96
+    ]
+  },
+  "MP139/tvguide_notifyButton_Focus_right.png": {
+    "focus": true,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocusedright"
+    ],
+    "native": [
+      2,
+      52
+    ],
+    "rendered": [
+      8,
+      208
+    ]
+  },
+  "MP139/tvguide_notifyButton_noFocus_left.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenonfocusedleft"
+    ],
+    "native": [
+      2,
+      52
+    ],
+    "rendered": [
+      8,
+      208
+    ]
+  },
+  "MP139/tvguide_notifyButton_noFocus_middle.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenonfocusedmid"
+    ],
+    "native": [
+      1000,
+      51
+    ],
+    "rendered": [
+      1882,
+      96
+    ]
+  },
+  "MP139/tvguide_notifyButton_noFocus_right.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenonfocusedright"
+    ],
+    "native": [
+      2,
+      52
+    ],
+    "rendered": [
+      8,
+      208
+    ]
+  },
+  "MP139/tvguide_recButton_Focus_left.png": {
+    "focus": true,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": "red",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      2,
+      52
+    ],
+    "rendered": [
+      8,
+      208
+    ]
+  },
+  "MP139/tvguide_recButton_Focus_middle.png": {
+    "focus": true,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": "red",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      1000,
+      51
+    ],
+    "rendered": [
+      1882,
+      96
+    ]
+  },
+  "MP139/tvguide_recButton_Focus_right.png": {
+    "focus": true,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": "red",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      2,
+      52
+    ],
+    "rendered": [
+      8,
+      208
+    ]
+  },
+  "MP139/tvguide_recButton_noFocus_left.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": "red",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      2,
+      52
+    ],
+    "rendered": [
+      8,
+      208
+    ]
+  },
+  "MP139/tvguide_recButton_noFocus_middle.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": "red",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      1000,
+      51
+    ],
+    "rendered": [
+      1882,
+      96
+    ]
+  },
+  "MP139/tvguide_record_button.png": {
+    "focus": false,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      38,
+      38
+    ],
+    "rendered": [
+      96,
+      96
+    ]
+  },
+  "MP139/tvguide_slider.png": {
+    "kind": "timeline",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      38,
+      277
+    ],
+    "rendered": [
+      38,
+      277
+    ]
+  },
+  "MP139/tvseries_listbanner_focus.png": {
+    "focus": true,
+    "kind": "surface",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      856,
+      126
+    ],
+    "rendered": [
+      856,
+      126
+    ]
+  },
+  "MP139/uncheckbox_BHE.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "square",
+    "active": false,
+    "checkbox": true,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      250,
+      100
+    ],
+    "rendered": [
+      250,
+      100
+    ],
+    "native_fidelity": true
+  },
+  "MP139/video+16x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "fast-forward",
+    "text": "16x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      111,
+      26
+    ],
+    "rendered": [
+      111,
+      26
+    ],
+    "native_fidelity": true
+  },
+  "MP139/video+2x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "fast-forward",
+    "text": "2x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      111,
+      26
+    ],
+    "rendered": [
+      111,
+      26
+    ],
+    "native_fidelity": true
+  },
+  "MP139/video+32x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "fast-forward",
+    "text": "32x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      111,
+      26
+    ],
+    "rendered": [
+      111,
+      26
+    ],
+    "native_fidelity": true
+  },
+  "MP139/video+4x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "fast-forward",
+    "text": "4x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      111,
+      26
+    ],
+    "rendered": [
+      111,
+      26
+    ],
+    "native_fidelity": true
+  },
+  "MP139/video+8x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "fast-forward",
+    "text": "8x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      111,
+      26
+    ],
+    "rendered": [
+      111,
+      26
+    ],
+    "native_fidelity": true
+  },
+  "MP139/video-16x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "rewind",
+    "text": "16x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      111,
+      26
+    ],
+    "rendered": [
+      111,
+      26
+    ],
+    "native_fidelity": true
+  },
+  "MP139/video-2x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "rewind",
+    "text": "2x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      111,
+      26
+    ],
+    "rendered": [
+      111,
+      26
+    ],
+    "native_fidelity": true
+  },
+  "MP139/video-32x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "rewind",
+    "text": "32x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      111,
+      26
+    ],
+    "rendered": [
+      111,
+      26
+    ],
+    "native_fidelity": true
+  },
+  "MP139/video-4x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "rewind",
+    "text": "4x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      111,
+      26
+    ],
+    "rendered": [
+      111,
+      26
+    ],
+    "native_fidelity": true
+  },
+  "MP139/video-8x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "rewind",
+    "text": "8x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      111,
+      26
+    ],
+    "rendered": [
+      111,
+      26
+    ],
+    "native_fidelity": true
+  },
+  "MP139/video-pause.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "pause",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      111,
+      26
+    ],
+    "rendered": [
+      111,
+      26
+    ],
+    "native_fidelity": true
+  },
+  "MP139/volume.states.mute.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "volume-x",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      50,
+      50
+    ],
+    "rendered": [
+      50,
+      50
+    ],
+    "native_fidelity": true
+  },
+  "MP139/volume.states.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "volume-2",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      12,
+      105
+    ],
+    "rendered": [
+      12,
+      105
+    ],
+    "native_fidelity": true
+  },
+  "MP139/warning-icon.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "bell",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      256,
+      256
+    ],
+    "rendered": [
+      256,
+      256
+    ],
+    "native_fidelity": true
+  },
+  "MovingPictures/page_down_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-down",
+    "tags": [
+      "native-or-alternate-state",
+      "texturedownfocus"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "MovingPictures/page_down_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-down",
+    "tags": [
+      "native-or-alternate-state",
+      "texturedown"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "MovingPictures/page_up_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-up",
+    "tags": [
+      "native-or-alternate-state",
+      "textureupfocus"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "MovingPictures/page_up_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-up",
+    "tags": [
+      "native-or-alternate-state",
+      "textureup"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "Picture_cover.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "image",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      221,
+      169
+    ],
+    "rendered": [
+      221,
+      169
+    ],
+    "native_fidelity": true
+  },
+  "SubCentral_Button_Long_Focused.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      600,
+      38
+    ],
+    "rendered": [
+      600,
+      38
+    ]
+  },
+  "Tetris/block_I.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      91,
+      22
+    ],
+    "rendered": [
+      91,
+      22
+    ],
+    "native_fidelity": true
+  },
+  "Tetris/block_J.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      69,
+      43
+    ],
+    "rendered": [
+      69,
+      43
+    ],
+    "native_fidelity": true
+  },
+  "Tetris/block_L.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      69,
+      43
+    ],
+    "rendered": [
+      69,
+      43
+    ],
+    "native_fidelity": true
+  },
+  "Tetris/block_O.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      46,
+      43
+    ],
+    "rendered": [
+      46,
+      43
+    ],
+    "native_fidelity": true
+  },
+  "Tetris/block_S.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      69,
+      43
+    ],
+    "rendered": [
+      69,
+      43
+    ],
+    "native_fidelity": true
+  },
+  "Tetris/block_T.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      69,
+      43
+    ],
+    "rendered": [
+      69,
+      43
+    ],
+    "native_fidelity": true
+  },
+  "Tetris/block_Z.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      69,
+      43
+    ],
+    "rendered": [
+      69,
+      43
+    ],
+    "native_fidelity": true
+  },
+  "Tetris/block_blue.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      23,
+      22
+    ],
+    "rendered": [
+      23,
+      22
+    ],
+    "native_fidelity": true
+  },
+  "Tetris/block_blue_glow.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      23,
+      22
+    ],
+    "rendered": [
+      23,
+      22
+    ],
+    "native_fidelity": true
+  },
+  "Tetris/block_cyan.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      23,
+      22
+    ],
+    "rendered": [
+      23,
+      22
+    ],
+    "native_fidelity": true
+  },
+  "Tetris/block_cyan_glow.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      23,
+      22
+    ],
+    "rendered": [
+      23,
+      22
+    ],
+    "native_fidelity": true
+  },
+  "Tetris/block_gray.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      23,
+      22
+    ],
+    "rendered": [
+      23,
+      22
+    ],
+    "native_fidelity": true
+  },
+  "Tetris/block_gray_glow.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      23,
+      22
+    ],
+    "rendered": [
+      23,
+      22
+    ],
+    "native_fidelity": true
+  },
+  "Tetris/block_green.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      23,
+      22
+    ],
+    "rendered": [
+      23,
+      22
+    ],
+    "native_fidelity": true
+  },
+  "Tetris/block_green_glow.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      23,
+      22
+    ],
+    "rendered": [
+      23,
+      22
+    ],
+    "native_fidelity": true
+  },
+  "Tetris/block_orange.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      23,
+      22
+    ],
+    "rendered": [
+      23,
+      22
+    ],
+    "native_fidelity": true
+  },
+  "Tetris/block_orange_glow.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      23,
+      22
+    ],
+    "rendered": [
+      23,
+      22
+    ],
+    "native_fidelity": true
+  },
+  "Tetris/block_red.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      23,
+      22
+    ],
+    "rendered": [
+      23,
+      22
+    ],
+    "native_fidelity": true
+  },
+  "Tetris/block_red_glow.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      23,
+      22
+    ],
+    "rendered": [
+      23,
+      22
+    ],
+    "native_fidelity": true
+  },
+  "Tetris/block_yellow.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      23,
+      22
+    ],
+    "rendered": [
+      23,
+      22
+    ],
+    "native_fidelity": true
+  },
+  "Tetris/block_yellow_glow.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      23,
+      22
+    ],
+    "rendered": [
+      23,
+      22
+    ],
+    "native_fidelity": true
+  },
+  "UserRatingStarOff.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "star",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture",
+      "texturecheckmarknofocus"
+    ],
+    "native": [
+      32,
+      32
+    ],
+    "rendered": [
+      32,
+      32
+    ],
+    "native_fidelity": true
+  },
+  "UserRatingStarOn.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "star",
+    "active": true,
+    "tags": [
+      "native-or-alternate-state",
+      "texture",
+      "texturecheckmark"
+    ],
+    "native": [
+      32,
+      32
+    ],
+    "rendered": [
+      32,
+      32
+    ],
+    "native_fidelity": true
+  },
+  "WOLPowerManager/WolPowerManager_ButtonGreen.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": "green",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      16,
+      16
+    ],
+    "rendered": [
+      16,
+      16
+    ]
+  },
+  "WOLPowerManager/WolPowerManager_ButtonOut.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      25,
+      25
+    ],
+    "rendered": [
+      25,
+      25
+    ]
+  },
+  "WOLPowerManager/WolPowerManager_ButtonRed.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      16,
+      16
+    ],
+    "rendered": [
+      16,
+      16
+    ]
+  },
+  "albumnocover.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "headphones",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      144,
+      144
+    ],
+    "rendered": [
+      144,
+      144
+    ],
+    "native_fidelity": true
+  },
+  "arrow_round_down_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-down",
+    "tags": [
+      "native-or-alternate-state",
+      "texturedownfocus"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "arrow_round_down_focus1.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-down",
+    "tags": [
+      "native-or-alternate-state",
+      "texturedownfocus"
+    ],
+    "native": [
+      40,
+      40
+    ],
+    "rendered": [
+      40,
+      40
+    ],
+    "native_fidelity": true
+  },
+  "arrow_round_down_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-down",
+    "tags": [
+      "native-or-alternate-state",
+      "texturedown"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "arrow_round_down_nofocus1.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-down",
+    "tags": [
+      "native-or-alternate-state",
+      "texturedown"
+    ],
+    "native": [
+      40,
+      40
+    ],
+    "rendered": [
+      40,
+      40
+    ],
+    "native_fidelity": true
+  },
+  "arrow_round_left_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-left",
+    "tags": [
+      "native-or-alternate-state",
+      "texturedownfocus",
+      "texturefocus",
+      "textureleftfocus"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "arrow_round_left_focus1.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-left",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      40,
+      40
+    ],
+    "rendered": [
+      40,
+      40
+    ],
+    "native_fidelity": true
+  },
+  "arrow_round_left_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-left",
+    "tags": [
+      "native-or-alternate-state",
+      "texturedown",
+      "textureleft",
+      "texturenofocus"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "arrow_round_left_nofocus1.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-left",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      40,
+      40
+    ],
+    "rendered": [
+      40,
+      40
+    ],
+    "native_fidelity": true
+  },
+  "arrow_round_right_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-right",
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus",
+      "texturerightfocus",
+      "textureupfocus"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "arrow_round_right_focus1.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-right",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      40,
+      40
+    ],
+    "rendered": [
+      40,
+      40
+    ],
+    "native_fidelity": true
+  },
+  "arrow_round_right_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-right",
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus",
+      "textureright",
+      "textureup"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "arrow_round_right_nofocus1.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-right",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      40,
+      40
+    ],
+    "rendered": [
+      40,
+      40
+    ],
+    "native_fidelity": true
+  },
+  "arrow_round_up_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-up",
+    "tags": [
+      "native-or-alternate-state",
+      "textureupfocus"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "arrow_round_up_focus1.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-up",
+    "tags": [
+      "native-or-alternate-state",
+      "textureupfocus"
+    ],
+    "native": [
+      40,
+      40
+    ],
+    "rendered": [
+      40,
+      40
+    ],
+    "native_fidelity": true
+  },
+  "arrow_round_up_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-up",
+    "tags": [
+      "native-or-alternate-state",
+      "textureup"
+    ],
+    "native": [
+      37,
+      37
+    ],
+    "rendered": [
+      37,
+      37
+    ],
+    "native_fidelity": true
+  },
+  "arrow_round_up_nofocus1.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-up",
+    "tags": [
+      "native-or-alternate-state",
+      "textureup"
+    ],
+    "native": [
+      40,
+      40
+    ],
+    "rendered": [
+      40,
+      40
+    ],
+    "native_fidelity": true
+  },
+  "arrowdownfo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-down",
+    "tags": [
+      "native-or-alternate-state",
+      "texturedescendingfocused",
+      "texturedownfocus"
+    ],
+    "native": [
+      16,
+      16
+    ],
+    "rendered": [
+      16,
+      16
+    ],
+    "native_fidelity": true
+  },
+  "arrowdownnf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-down",
+    "tags": [
+      "native-or-alternate-state",
+      "texturedescending",
+      "texturedown"
+    ],
+    "native": [
+      16,
+      16
+    ],
+    "rendered": [
+      16,
+      16
+    ],
+    "native_fidelity": true
+  },
+  "arrowleftfo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-left",
+    "tags": [
+      "native-or-alternate-state",
+      "textureleftfocus"
+    ],
+    "native": [
+      16,
+      16
+    ],
+    "rendered": [
+      16,
+      16
+    ],
+    "native_fidelity": true
+  },
+  "arrowleftnf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-left",
+    "tags": [
+      "native-or-alternate-state",
+      "textureleft"
+    ],
+    "native": [
+      16,
+      16
+    ],
+    "rendered": [
+      16,
+      16
+    ],
+    "native_fidelity": true
+  },
+  "arrowrightfo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-right",
+    "tags": [
+      "native-or-alternate-state",
+      "texturerightfocus"
+    ],
+    "native": [
+      16,
+      16
+    ],
+    "rendered": [
+      16,
+      16
+    ],
+    "native_fidelity": true
+  },
+  "arrowrightnf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-right",
+    "tags": [
+      "native-or-alternate-state",
+      "textureright"
+    ],
+    "native": [
+      16,
+      16
+    ],
+    "rendered": [
+      16,
+      16
+    ],
+    "native_fidelity": true
+  },
+  "arrowupfo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-up",
+    "tags": [
+      "native-or-alternate-state",
+      "textureascendingfocused",
+      "textureupfocus"
+    ],
+    "native": [
+      16,
+      16
+    ],
+    "rendered": [
+      16,
+      16
+    ],
+    "native_fidelity": true
+  },
+  "arrowupnf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-up",
+    "tags": [
+      "native-or-alternate-state",
+      "textureascending",
+      "textureup"
+    ],
+    "native": [
+      16,
+      16
+    ],
+    "rendered": [
+      16,
+      16
+    ],
+    "native_fidelity": true
+  },
+  "bar_hor.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturebg",
+      "texturefocus",
+      "texturenofocus"
+    ],
+    "native": [
+      426,
+      20
+    ],
+    "rendered": [
+      426,
+      20
+    ]
+  },
+  "button.focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus",
+      "texturenofocus"
+    ],
+    "native": [
+      120,
+      35
+    ],
+    "rendered": [
+      120,
+      35
+    ],
+    "preserved_original": true
+  },
+  "button.livetv.left.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      30,
+      160
+    ],
+    "rendered": [
+      30,
+      160
+    ],
+    "preserved_original": true
+  },
+  "button.menu.left.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      30,
+      95
+    ],
+    "rendered": [
+      30,
+      95
+    ],
+    "preserved_original": true
+  },
+  "button.menu.top.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      95,
+      30
+    ],
+    "rendered": [
+      95,
+      30
+    ],
+    "preserved_original": true
+  },
+  "button.white.focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      134,
+      51
+    ],
+    "rendered": [
+      134,
+      51
+    ]
+  },
+  "button.white.nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      134,
+      51
+    ],
+    "rendered": [
+      134,
+      51
+    ]
+  },
+  "button_close_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "x",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      50,
+      50
+    ],
+    "rendered": [
+      50,
+      50
+    ],
+    "native_fidelity": true
+  },
+  "button_close_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "x",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      50,
+      50
+    ],
+    "rendered": [
+      50,
+      50
+    ],
+    "native_fidelity": true
+  },
+  "button_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      200,
+      30
+    ],
+    "rendered": [
+      200,
+      30
+    ]
+  },
+  "button_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      200,
+      30
+    ],
+    "rendered": [
+      200,
+      30
+    ]
+  },
+  "button_shutdown_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "power",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      50,
+      50
+    ],
+    "rendered": [
+      50,
+      50
+    ],
+    "native_fidelity": true
+  },
+  "button_shutdown_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "power",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      50,
+      50
+    ],
+    "rendered": [
+      50,
+      50
+    ],
+    "native_fidelity": true
+  },
+  "button_small_settings_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      130,
+      49
+    ],
+    "rendered": [
+      130,
+      49
+    ]
+  },
+  "button_tvdesktop_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "monitor",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      50,
+      50
+    ],
+    "rendered": [
+      50,
+      50
+    ],
+    "native_fidelity": true
+  },
+  "button_tvdesktop_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "monitor",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      50,
+      50
+    ],
+    "rendered": [
+      50,
+      50
+    ],
+    "native_fidelity": true
+  },
+  "check-box.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "check",
+    "active": true,
+    "checkbox": true,
+    "tags": [
+      "native-or-alternate-state",
+      "texture",
+      "texturecheckmark",
+      "texturefocus"
+    ],
+    "native": [
+      16,
+      16
+    ],
+    "rendered": [
+      16,
+      16
+    ],
+    "native_fidelity": true
+  },
+  "check-boxNF.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "square",
+    "active": false,
+    "checkbox": true,
+    "tags": [
+      "native-or-alternate-state",
+      "texturecheckmarknofocus",
+      "texturenofocus"
+    ],
+    "native": [
+      16,
+      16
+    ],
+    "rendered": [
+      16,
+      16
+    ],
+    "native_fidelity": true
+  },
+  "clock.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "lock",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      93,
+      48
+    ],
+    "rendered": [
+      93,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "coverflow.picture.glass.focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      540,
+      366
+    ],
+    "rendered": [
+      540,
+      366
+    ]
+  },
+  "default.recording.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "circle",
+    "active": true,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      300,
+      169
+    ],
+    "rendered": [
+      300,
+      169
+    ],
+    "native_fidelity": true
+  },
+  "defaultActor.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      300,
+      450
+    ],
+    "rendered": [
+      300,
+      450
+    ],
+    "native_fidelity": true
+  },
+  "defaultAlbum.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "headphones",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      133,
+      133
+    ],
+    "rendered": [
+      133,
+      133
+    ],
+    "native_fidelity": true
+  },
+  "defaultAudio.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      49,
+      49
+    ],
+    "rendered": [
+      49,
+      49
+    ],
+    "native_fidelity": true
+  },
+  "defaultAudioBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      190,
+      190
+    ],
+    "rendered": [
+      190,
+      190
+    ],
+    "native_fidelity": true
+  },
+  "defaultCdda.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      49,
+      49
+    ],
+    "rendered": [
+      49,
+      49
+    ],
+    "native_fidelity": true
+  },
+  "defaultCddaBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      128,
+      128
+    ],
+    "rendered": [
+      128,
+      128
+    ],
+    "native_fidelity": true
+  },
+  "defaultDVDEmpty.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      256,
+      256
+    ],
+    "rendered": [
+      256,
+      256
+    ],
+    "native_fidelity": true
+  },
+  "defaultDVDEmptyBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      256,
+      256
+    ],
+    "rendered": [
+      256,
+      256
+    ],
+    "native_fidelity": true
+  },
+  "defaultDVDRom.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      49,
+      49
+    ],
+    "rendered": [
+      49,
+      49
+    ],
+    "native_fidelity": true
+  },
+  "defaultDVDRomBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      150,
+      150
+    ],
+    "rendered": [
+      150,
+      150
+    ],
+    "native_fidelity": true
+  },
+  "defaultFolder.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "folder",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      64,
+      64
+    ],
+    "rendered": [
+      64,
+      64
+    ],
+    "native_fidelity": true
+  },
+  "defaultFolderBack.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "folder",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      64,
+      64
+    ],
+    "rendered": [
+      64,
+      64
+    ],
+    "native_fidelity": true
+  },
+  "defaultHardDisk.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      49,
+      49
+    ],
+    "rendered": [
+      49,
+      49
+    ],
+    "native_fidelity": true
+  },
+  "defaultHardDiskBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      84,
+      84
+    ],
+    "rendered": [
+      84,
+      84
+    ],
+    "native_fidelity": true
+  },
+  "defaultNetwork.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      190,
+      190
+    ],
+    "rendered": [
+      190,
+      190
+    ],
+    "native_fidelity": true
+  },
+  "defaultNetworkBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      190,
+      190
+    ],
+    "rendered": [
+      190,
+      190
+    ],
+    "native_fidelity": true
+  },
+  "defaultPicture.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "image",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      49,
+      49
+    ],
+    "rendered": [
+      49,
+      49
+    ],
+    "native_fidelity": true
+  },
+  "defaultPictureBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "image",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      190,
+      190
+    ],
+    "rendered": [
+      190,
+      190
+    ],
+    "native_fidelity": true
+  },
+  "defaultVideo.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      49,
+      49
+    ],
+    "rendered": [
+      49,
+      49
+    ],
+    "native_fidelity": true
+  },
+  "defaultVideoBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      190,
+      190
+    ],
+    "rendered": [
+      190,
+      190
+    ],
+    "native_fidelity": true
+  },
+  "defaultVideoSeenBig.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      190,
+      190
+    ],
+    "rendered": [
+      190,
+      190
+    ],
+    "native_fidelity": true
+  },
+  "defaultdvdcover.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      266,
+      390
+    ],
+    "rendered": [
+      266,
+      390
+    ],
+    "native_fidelity": true
+  },
+  "defaultposter.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      390,
+      577
+    ],
+    "rendered": [
+      390,
+      577
+    ],
+    "native_fidelity": true
+  },
+  "defaultwideicon.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "film",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      144,
+      29
+    ],
+    "rendered": [
+      144,
+      29
+    ],
+    "native_fidelity": true
+  },
+  "dialog_290_400.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      290,
+      400
+    ],
+    "rendered": [
+      290,
+      400
+    ]
+  },
+  "dialog_550_247.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      580,
+      260
+    ],
+    "rendered": [
+      580,
+      260
+    ],
+    "preserved_original": true
+  },
+  "dialog_743_336.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      773,
+      350
+    ],
+    "rendered": [
+      773,
+      350
+    ],
+    "preserved_original": true
+  },
+  "dialog_745_470.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      745,
+      470
+    ],
+    "rendered": [
+      745,
+      470
+    ],
+    "preserved_original": true
+  },
+  "dialog_bottom.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      600,
+      25
+    ],
+    "rendered": [
+      600,
+      25
+    ]
+  },
+  "dialog_middle.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      600,
+      250
+    ],
+    "rendered": [
+      600,
+      250
+    ]
+  },
+  "dialog_top.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      600,
+      60
+    ],
+    "rendered": [
+      600,
+      60
+    ]
+  },
+  "dialogbigbuttonfo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturebg",
+      "texturefocus"
+    ],
+    "native": [
+      128,
+      62
+    ],
+    "rendered": [
+      128,
+      62
+    ]
+  },
+  "dialogbigbuttonnf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      128,
+      62
+    ],
+    "rendered": [
+      128,
+      62
+    ]
+  },
+  "dialogmenubottom.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      512,
+      12
+    ],
+    "rendered": [
+      512,
+      12
+    ]
+  },
+  "dialogmenubutton.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      285,
+      39
+    ],
+    "rendered": [
+      285,
+      39
+    ]
+  },
+  "dialogmenubutton_nf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      285,
+      39
+    ],
+    "rendered": [
+      285,
+      39
+    ]
+  },
+  "dialogmenumiddle.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      512,
+      600
+    ],
+    "rendered": [
+      512,
+      600
+    ]
+  },
+  "dialogmenutop.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      512,
+      37
+    ],
+    "rendered": [
+      512,
+      37
+    ]
+  },
+  "dialogue_ok_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "check",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      44,
+      44
+    ],
+    "rendered": [
+      44,
+      44
+    ],
+    "native_fidelity": true
+  },
+  "dialogue_ok_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "check",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      44,
+      44
+    ],
+    "rendered": [
+      44,
+      44
+    ],
+    "native_fidelity": true
+  },
+  "dropdown_togglebutton_nof_off.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": true,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      220,
+      27
+    ],
+    "rendered": [
+      220,
+      27
+    ]
+  },
+  "dropdown_togglebutton_nof_on.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": true,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      220,
+      28
+    ],
+    "rendered": [
+      220,
+      28
+    ]
+  },
+  "dropdown_togglebutton_off.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": true,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      220,
+      28
+    ],
+    "rendered": [
+      220,
+      28
+    ]
+  },
+  "dropdown_togglebutton_on.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": true,
+    "toggle": true,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      220,
+      28
+    ],
+    "rendered": [
+      220,
+      28
+    ]
+  },
+  "exit_button.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "x",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      128,
+      128
+    ],
+    "rendered": [
+      128,
+      128
+    ],
+    "native_fidelity": true
+  },
+  "glasstitlebar.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      512,
+      43
+    ],
+    "rendered": [
+      512,
+      43
+    ]
+  },
+  "hiddenmenu_button_fo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texture",
+      "texturebg",
+      "texturefocus"
+    ],
+    "native": [
+      220,
+      28
+    ],
+    "rendered": [
+      220,
+      28
+    ],
+    "native_fidelity": true
+  },
+  "hiddenmenu_button_fo_right.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      220,
+      28
+    ],
+    "rendered": [
+      220,
+      28
+    ],
+    "native_fidelity": true
+  },
+  "hiddenmenu_button_no_fo.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      220,
+      28
+    ],
+    "rendered": [
+      220,
+      28
+    ],
+    "native_fidelity": true
+  },
+  "hiddenmenu_button_no_fo_right.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      194,
+      23
+    ],
+    "rendered": [
+      194,
+      23
+    ],
+    "native_fidelity": true
+  },
+  "hiddenmenu_togglebutton_nof_off.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": true,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      220,
+      27
+    ],
+    "rendered": [
+      220,
+      27
+    ]
+  },
+  "hiddenmenu_togglebutton_nof_on.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": true,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      220,
+      28
+    ],
+    "rendered": [
+      220,
+      28
+    ]
+  },
+  "hiddenmenu_togglebutton_off.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": true,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      220,
+      28
+    ],
+    "rendered": [
+      220,
+      28
+    ]
+  },
+  "hiddenmenu_togglebutton_on.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": true,
+    "toggle": true,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      220,
+      28
+    ],
+    "rendered": [
+      220,
+      28
+    ]
+  },
+  "hp_selectionbar.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texture",
+      "texturefocus"
+    ],
+    "native": [
+      330,
+      96
+    ],
+    "rendered": [
+      330,
+      96
+    ]
+  },
+  "icon_empty_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      54,
+      54
+    ],
+    "rendered": [
+      54,
+      54
+    ]
+  },
+  "icon_empty_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturedisabled",
+      "texturenofocus"
+    ],
+    "native": [
+      54,
+      54
+    ],
+    "rendered": [
+      54,
+      54
+    ]
+  },
+  "images_submenu_bg.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      264,
+      38
+    ],
+    "rendered": [
+      264,
+      38
+    ]
+  },
+  "led.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "circle-check",
+    "active": true,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      27,
+      27
+    ],
+    "rendered": [
+      27,
+      27
+    ],
+    "native_fidelity": true
+  },
+  "ledoff.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "circle",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturecheckmarknofocus"
+    ],
+    "native": [
+      27,
+      27
+    ],
+    "rendered": [
+      27,
+      27
+    ],
+    "native_fidelity": true
+  },
+  "ledon.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "circle-check",
+    "active": true,
+    "tags": [
+      "native-or-alternate-state",
+      "texturecheckmark"
+    ],
+    "native": [
+      27,
+      27
+    ],
+    "rendered": [
+      27,
+      27
+    ],
+    "native_fidelity": true
+  },
+  "list_background_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texture",
+      "texturefocus"
+    ],
+    "native": [
+      508,
+      40
+    ],
+    "rendered": [
+      508,
+      40
+    ]
+  },
+  "list_background_focus_ledoff.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      508,
+      40
+    ],
+    "rendered": [
+      508,
+      40
+    ]
+  },
+  "list_background_focus_ledon.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": true,
+    "toggle": true,
+    "status": null,
+    "tags": [
+      "alttexturefocus",
+      "native-or-alternate-state"
+    ],
+    "native": [
+      508,
+      40
+    ],
+    "rendered": [
+      508,
+      40
+    ]
+  },
+  "list_background_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texture",
+      "texturenofocus"
+    ],
+    "native": [
+      508,
+      40
+    ],
+    "rendered": [
+      508,
+      40
+    ]
+  },
+  "list_background_nofocus_ledoff.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      508,
+      40
+    ],
+    "rendered": [
+      508,
+      40
+    ]
+  },
+  "list_background_nofocus_ledon.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": true,
+    "toggle": true,
+    "status": null,
+    "tags": [
+      "alttexturenofocus",
+      "native-or-alternate-state"
+    ],
+    "native": [
+      508,
+      40
+    ],
+    "rendered": [
+      508,
+      40
+    ]
+  },
+  "list_bg_3.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      500,
+      500
+    ],
+    "rendered": [
+      500,
+      500
+    ]
+  },
+  "listbg_fo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texture",
+      "texturebg",
+      "texturefocus"
+    ],
+    "native": [
+      595,
+      42
+    ],
+    "rendered": [
+      595,
+      42
+    ]
+  },
+  "listbg_nf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texture",
+      "texturenofocus"
+    ],
+    "native": [
+      595,
+      42
+    ],
+    "rendered": [
+      595,
+      42
+    ]
+  },
+  "listbg_togglebutton_off_fo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": true,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      595,
+      42
+    ],
+    "rendered": [
+      595,
+      42
+    ]
+  },
+  "listbg_togglebutton_off_nf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": true,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      595,
+      42
+    ],
+    "rendered": [
+      595,
+      42
+    ]
+  },
+  "listbg_togglebutton_on_fo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": true,
+    "toggle": true,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      595,
+      42
+    ],
+    "rendered": [
+      595,
+      42
+    ]
+  },
+  "listbg_togglebutton_on_nf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": true,
+    "toggle": true,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      595,
+      42
+    ],
+    "rendered": [
+      595,
+      42
+    ]
+  },
+  "logo_fastforward.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "fast-forward",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "logo_pause.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "pause",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "logo_rewind.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "rewind",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "max_button_blue.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      250,
+      45
+    ],
+    "rendered": [
+      250,
+      45
+    ]
+  },
+  "max_button_blue_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      250,
+      45
+    ],
+    "rendered": [
+      250,
+      45
+    ]
+  },
+  "max_button_green.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      250,
+      45
+    ],
+    "rendered": [
+      250,
+      45
+    ]
+  },
+  "max_button_green_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      250,
+      45
+    ],
+    "rendered": [
+      250,
+      45
+    ]
+  },
+  "max_button_red.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      250,
+      45
+    ],
+    "rendered": [
+      250,
+      45
+    ]
+  },
+  "max_button_red_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      250,
+      45
+    ],
+    "rendered": [
+      250,
+      45
+    ]
+  },
+  "max_button_yellow.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      250,
+      45
+    ],
+    "rendered": [
+      250,
+      45
+    ]
+  },
+  "max_button_yellow_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      250,
+      45
+    ],
+    "rendered": [
+      250,
+      45
+    ]
+  },
+  "menu_bg.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      1920,
+      103
+    ],
+    "rendered": [
+      1920,
+      103
+    ]
+  },
+  "menu_bg1.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      1280,
+      37
+    ],
+    "rendered": [
+      1280,
+      37
+    ]
+  },
+  "menu_bg_aeon.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      1280,
+      114
+    ],
+    "rendered": [
+      1280,
+      114
+    ]
+  },
+  "menu_bg_aeon_norss.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      1280,
+      72
+    ],
+    "rendered": [
+      1280,
+      72
+    ]
+  },
+  "menu_bg_no_rss.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      1280,
+      80
+    ],
+    "rendered": [
+      1280,
+      80
+    ]
+  },
+  "menu_list_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      299,
+      39
+    ],
+    "rendered": [
+      299,
+      39
+    ]
+  },
+  "menu_selected_bg_top.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      336,
+      230
+    ],
+    "rendered": [
+      336,
+      230
+    ],
+    "native_fidelity": true
+  },
+  "new_icon.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "plus",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      100,
+      108
+    ],
+    "rendered": [
+      100,
+      108
+    ],
+    "native_fidelity": true
+  },
+  "new_icon_episode.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "plus",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      98,
+      105
+    ],
+    "rendered": [
+      98,
+      105
+    ],
+    "native_fidelity": true
+  },
+  "next.arrow.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-right",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      34,
+      38
+    ],
+    "rendered": [
+      34,
+      38
+    ],
+    "native_fidelity": true
+  },
+  "nothumb.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "image",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      500,
+      500
+    ],
+    "rendered": [
+      500,
+      500
+    ],
+    "native_fidelity": true
+  },
+  "nowplaying.overlay.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "play",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      1920,
+      1080
+    ],
+    "rendered": [
+      1920,
+      1080
+    ],
+    "native_fidelity": true
+  },
+  "osd16x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "fast-forward",
+    "text": "16x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      64,
+      64
+    ],
+    "rendered": [
+      64,
+      64
+    ],
+    "native_fidelity": true
+  },
+  "osd2x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "fast-forward",
+    "text": "2x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      64,
+      64
+    ],
+    "rendered": [
+      64,
+      64
+    ],
+    "native_fidelity": true
+  },
+  "osd32x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "fast-forward",
+    "text": "32x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      64,
+      64
+    ],
+    "rendered": [
+      64,
+      64
+    ],
+    "native_fidelity": true
+  },
+  "osd4x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "fast-forward",
+    "text": "4x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      64,
+      64
+    ],
+    "rendered": [
+      64,
+      64
+    ],
+    "native_fidelity": true
+  },
+  "osd8x.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "fast-forward",
+    "text": "8x",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      64,
+      64
+    ],
+    "rendered": [
+      64,
+      64
+    ],
+    "native_fidelity": true
+  },
+  "osdaudiofo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "volume-2",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdaudiomutefo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "volume-x",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdaudiomutenf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "volume-x",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdaudionf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "volume-2",
+    "active": true,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdbookmarksfo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "bookmark",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdbookmarksnf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "bookmark",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osddvdfo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "disc-3",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osddvdnf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "disc-3",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdforwardfo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "fast-forward",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdforwardnf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "fast-forward",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdnexttrackfo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "skip-forward",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdnexttracknf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "skip-forward",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdpausefo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "pause",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdpausenf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "pause",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdplayfo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "play",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdplaylistfo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "list-music",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdplaylistnf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "list-music",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdplaynf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "play",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdprefo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "sliders-horizontal",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdprenf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "sliders-horizontal",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdpresetsettingsfo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "sliders-horizontal",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdpresetsettingsnf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "sliders-horizontal",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdprevtrackfo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "skip-back",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdprevtracknf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "skip-back",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdrandomofffo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "shuffle",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdrandomoffnf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "shuffle",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdrandomonfo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "shuffle",
+    "active": true,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdrandomonnf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "shuffle",
+    "active": true,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdrecord2.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "circle",
+    "active": true,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdrecordfo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "circle",
+    "active": true,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdrecordnf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "circle",
+    "active": true,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdrecordoff.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "circle",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdrepeatallfo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "repeat",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdrepeatallnf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "repeat",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdrepeatfo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "repeat",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdrepeatnf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "repeat",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdrepeatonefo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "repeat-1",
+    "active": true,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdrepeatonenf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "repeat-1",
+    "active": true,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdrewindfo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "rewind",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdrewindnf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "rewind",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdseekforward.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "fast-forward",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      26,
+      57
+    ],
+    "rendered": [
+      26,
+      57
+    ],
+    "native_fidelity": true
+  },
+  "osdseekrewind.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "rewind",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      26,
+      57
+    ],
+    "rendered": [
+      26,
+      57
+    ],
+    "native_fidelity": true
+  },
+  "osdstopfo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "square",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdstopnf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "square",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdvideofo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "video",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdvideonf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "video",
+    "active": true,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdvizfo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chart-no-axes-column-increasing",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "osdviznf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chart-no-axes-column-increasing",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      48,
+      48
+    ],
+    "rendered": [
+      48,
+      48
+    ],
+    "native_fidelity": true
+  },
+  "pandora_tile_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      299,
+      356
+    ],
+    "rendered": [
+      299,
+      356
+    ]
+  },
+  "play.now.button.back.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      58,
+      22
+    ],
+    "rendered": [
+      58,
+      22
+    ]
+  },
+  "play.now.button.focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      58,
+      22
+    ],
+    "rendered": [
+      58,
+      22
+    ]
+  },
+  "play.now.button.nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      58,
+      22
+    ],
+    "rendered": [
+      58,
+      22
+    ]
+  },
+  "playlist_delete_fo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "x",
+    "tags": [
+      "native-or-alternate-state",
+      "texturedeletefocused"
+    ],
+    "native": [
+      35,
+      69
+    ],
+    "rendered": [
+      35,
+      69
+    ],
+    "native_fidelity": true
+  },
+  "playlist_delete_nf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "x",
+    "tags": [
+      "native-or-alternate-state",
+      "texturedelete"
+    ],
+    "native": [
+      35,
+      69
+    ],
+    "rendered": [
+      35,
+      69
+    ],
+    "native_fidelity": true
+  },
+  "playlist_delete_nf_dimmed.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "x",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      35,
+      69
+    ],
+    "rendered": [
+      35,
+      69
+    ],
+    "native_fidelity": true
+  },
+  "playlist_down_fo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-down",
+    "tags": [
+      "native-or-alternate-state",
+      "texturemovedownfocused"
+    ],
+    "native": [
+      30,
+      69
+    ],
+    "rendered": [
+      30,
+      69
+    ],
+    "native_fidelity": true
+  },
+  "playlist_down_nf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-down",
+    "tags": [
+      "native-or-alternate-state",
+      "texturemovedown"
+    ],
+    "native": [
+      30,
+      69
+    ],
+    "rendered": [
+      30,
+      69
+    ],
+    "native_fidelity": true
+  },
+  "playlist_down_nf_dimmed.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-down",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      30,
+      69
+    ],
+    "rendered": [
+      30,
+      69
+    ],
+    "native_fidelity": true
+  },
+  "playlist_sub_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      920,
+      69
+    ],
+    "rendered": [
+      920,
+      69
+    ],
+    "preserved_original": true
+  },
+  "playlist_sub_focus1.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      504,
+      40
+    ],
+    "rendered": [
+      504,
+      40
+    ],
+    "preserved_original": true
+  },
+  "playlist_sub_focus2.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturebuttonfocus",
+      "texturefocus"
+    ],
+    "native": [
+      504,
+      40
+    ],
+    "rendered": [
+      504,
+      40
+    ],
+    "preserved_original": true
+  },
+  "playlist_sub_focus3.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      504,
+      40
+    ],
+    "rendered": [
+      504,
+      40
+    ],
+    "preserved_original": true
+  },
+  "playlist_sub_focus4.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      504,
+      40
+    ],
+    "rendered": [
+      504,
+      40
+    ],
+    "preserved_original": true
+  },
+  "playlist_sub_nofocus.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      920,
+      69
+    ],
+    "rendered": [
+      920,
+      69
+    ],
+    "preserved_original": true
+  },
+  "playlist_sub_nofocus1.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturebuttonnofocus",
+      "texturenofocus"
+    ],
+    "native": [
+      508,
+      40
+    ],
+    "rendered": [
+      508,
+      40
+    ],
+    "preserved_original": true
+  },
+  "playlist_sub_nofocus2.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      508,
+      40
+    ],
+    "rendered": [
+      508,
+      40
+    ],
+    "preserved_original": true
+  },
+  "playlist_sub_nofocus2_bg.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      508,
+      600
+    ],
+    "rendered": [
+      508,
+      600
+    ],
+    "preserved_original": true
+  },
+  "playlist_sub_nofocus2_end.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      508,
+      39
+    ],
+    "rendered": [
+      508,
+      39
+    ],
+    "preserved_original": true
+  },
+  "playlist_sub_nofocus3.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      508,
+      40
+    ],
+    "rendered": [
+      508,
+      40
+    ],
+    "preserved_original": true
+  },
+  "playlist_sub_nofocus3_end.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      508,
+      40
+    ],
+    "rendered": [
+      508,
+      40
+    ],
+    "preserved_original": true
+  },
+  "playlist_sub_nofocus4_end.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      508,
+      40
+    ],
+    "rendered": [
+      508,
+      40
+    ],
+    "preserved_original": true
+  },
+  "playlist_up_fo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-up",
+    "tags": [
+      "native-or-alternate-state",
+      "texturemoveupfocused"
+    ],
+    "native": [
+      30,
+      69
+    ],
+    "rendered": [
+      30,
+      69
+    ],
+    "native_fidelity": true
+  },
+  "playlist_up_nf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-up",
+    "tags": [
+      "native-or-alternate-state",
+      "texturemoveup"
+    ],
+    "native": [
+      30,
+      69
+    ],
+    "rendered": [
+      30,
+      69
+    ],
+    "native_fidelity": true
+  },
+  "playlist_up_nf_dimmed.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-up",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      30,
+      69
+    ],
+    "rendered": [
+      30,
+      69
+    ],
+    "native_fidelity": true
+  },
+  "previous.arrow.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-left",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      34,
+      38
+    ],
+    "rendered": [
+      34,
+      38
+    ],
+    "native_fidelity": true
+  },
+  "rec_indicator.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "circle",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      100,
+      42
+    ],
+    "rendered": [
+      100,
+      42
+    ],
+    "native_fidelity": true
+  },
+  "restart_button.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      128,
+      128
+    ],
+    "rendered": [
+      128,
+      128
+    ]
+  },
+  "rockstar_playlist.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      256,
+      256
+    ],
+    "rendered": [
+      256,
+      256
+    ]
+  },
+  "rockstar_playlist_small.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      64,
+      64
+    ],
+    "rendered": [
+      64,
+      64
+    ]
+  },
+  "selected_in_list.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      390,
+      30
+    ],
+    "rendered": [
+      390,
+      30
+    ],
+    "preserved_original": true
+  },
+  "selected_in_list_music.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      430,
+      30
+    ],
+    "rendered": [
+      430,
+      30
+    ],
+    "preserved_original": true
+  },
+  "selected_in_list_tvgemist.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      830,
+      30
+    ],
+    "rendered": [
+      830,
+      30
+    ],
+    "preserved_original": true
+  },
+  "selected_in_list_wide.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      830,
+      30
+    ],
+    "rendered": [
+      830,
+      30
+    ],
+    "preserved_original": true
+  },
+  "settingsbuttonfo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus"
+    ],
+    "native": [
+      285,
+      39
+    ],
+    "rendered": [
+      285,
+      39
+    ]
+  },
+  "settingsbuttonnf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      285,
+      39
+    ],
+    "rendered": [
+      285,
+      39
+    ]
+  },
+  "shutdown_button.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "power",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      128,
+      128
+    ],
+    "rendered": [
+      128,
+      128
+    ],
+    "native_fidelity": true
+  },
+  "sliderbackground.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "tags": [
+      "native-or-alternate-state",
+      "texturesliderbar"
+    ],
+    "native": [
+      330,
+      38
+    ],
+    "rendered": [
+      330,
+      38
+    ],
+    "native_fidelity": true
+  },
+  "slidernibfo.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "circle",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "textureslidernibfocus"
+    ],
+    "native": [
+      12,
+      25
+    ],
+    "rendered": [
+      12,
+      25
+    ],
+    "native_fidelity": true
+  },
+  "slidernibnf.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "circle",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "textureslidernib"
+    ],
+    "native": [
+      12,
+      25
+    ],
+    "rendered": [
+      12,
+      25
+    ],
+    "native_fidelity": true
+  },
+  "star_yellow.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "star",
+    "active": true,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      50,
+      50
+    ],
+    "rendered": [
+      50,
+      50
+    ],
+    "native_fidelity": true
+  },
+  "statusbar_back.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "tags": [
+      "native-or-alternate-state",
+      "texturebg"
+    ],
+    "native": [
+      620,
+      23
+    ],
+    "rendered": [
+      620,
+      23
+    ]
+  },
+  "submenu_bg.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      1280,
+      30
+    ],
+    "rendered": [
+      1280,
+      30
+    ]
+  },
+  "thumb.frame.black.focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      192,
+      270
+    ],
+    "rendered": [
+      192,
+      270
+    ]
+  },
+  "togglebutton_off.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": true,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      150,
+      28
+    ],
+    "rendered": [
+      150,
+      28
+    ]
+  },
+  "togglebutton_on.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": true,
+    "toggle": true,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus",
+      "texturenofocus"
+    ],
+    "native": [
+      150,
+      28
+    ],
+    "rendered": [
+      150,
+      28
+    ]
+  },
+  "tv_group_bg.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus",
+      "texturenonfocusedmid"
+    ],
+    "native": [
+      30,
+      340
+    ],
+    "rendered": [
+      30,
+      340
+    ]
+  },
+  "tv_group_bg_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocus",
+      "texturefocusedmid"
+    ],
+    "native": [
+      30,
+      340
+    ],
+    "rendered": [
+      30,
+      340
+    ]
+  },
+  "tv_on_button.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      49,
+      33
+    ],
+    "rendered": [
+      49,
+      33
+    ]
+  },
+  "tv_on_button_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      49,
+      33
+    ],
+    "rendered": [
+      49,
+      33
+    ]
+  },
+  "tv_rec_focus_button.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      30,
+      30
+    ],
+    "rendered": [
+      30,
+      30
+    ]
+  },
+  "tv_rec_nofocus_button.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      30,
+      30
+    ],
+    "rendered": [
+      30,
+      30
+    ]
+  },
+  "tvguide_arrow_left.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-left",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      24,
+      51
+    ],
+    "rendered": [
+      24,
+      51
+    ],
+    "native_fidelity": true,
+    "preserved_original": true
+  },
+  "tvguide_arrow_light_left.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-left",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      24,
+      51
+    ],
+    "rendered": [
+      24,
+      51
+    ],
+    "native_fidelity": true,
+    "preserved_original": true
+  },
+  "tvguide_arrow_light_right.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-right",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      24,
+      51
+    ],
+    "rendered": [
+      24,
+      51
+    ],
+    "native_fidelity": true,
+    "preserved_original": true
+  },
+  "tvguide_arrow_right.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "chevron-right",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      24,
+      51
+    ],
+    "rendered": [
+      24,
+      51
+    ],
+    "native_fidelity": true,
+    "preserved_original": true
+  },
+  "tvguide_arrow_selected_left.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-left",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      24,
+      51
+    ],
+    "rendered": [
+      24,
+      51
+    ],
+    "native_fidelity": true,
+    "preserved_original": true
+  },
+  "tvguide_arrow_selected_right.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "icon": "chevron-right",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      24,
+      51
+    ],
+    "rendered": [
+      24,
+      51
+    ],
+    "native_fidelity": true,
+    "preserved_original": true
+  },
+  "tvguide_button_left.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenonfocusedleft"
+    ],
+    "native": [
+      2,
+      52
+    ],
+    "rendered": [
+      2,
+      52
+    ],
+    "preserved_original": true
+  },
+  "tvguide_button_light_left.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenonfocusedleft"
+    ],
+    "native": [
+      2,
+      52
+    ],
+    "rendered": [
+      2,
+      52
+    ],
+    "preserved_original": true
+  },
+  "tvguide_button_light_middle.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenonfocusedmid"
+    ],
+    "native": [
+      225,
+      51
+    ],
+    "rendered": [
+      225,
+      51
+    ],
+    "preserved_original": true
+  },
+  "tvguide_button_light_right.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenonfocusedright"
+    ],
+    "native": [
+      2,
+      52
+    ],
+    "rendered": [
+      2,
+      52
+    ],
+    "preserved_original": true
+  },
+  "tvguide_button_middle.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenonfocusedmid"
+    ],
+    "native": [
+      225,
+      51
+    ],
+    "rendered": [
+      225,
+      51
+    ],
+    "preserved_original": true
+  },
+  "tvguide_button_right.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenonfocusedright"
+    ],
+    "native": [
+      2,
+      52
+    ],
+    "rendered": [
+      2,
+      52
+    ],
+    "preserved_original": true
+  },
+  "tvguide_button_selected_left.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocusedleft"
+    ],
+    "native": [
+      2,
+      52
+    ],
+    "rendered": [
+      2,
+      52
+    ],
+    "preserved_original": true
+  },
+  "tvguide_button_selected_middle.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocusedmid"
+    ],
+    "native": [
+      225,
+      51
+    ],
+    "rendered": [
+      225,
+      51
+    ],
+    "preserved_original": true
+  },
+  "tvguide_button_selected_right.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocusedright"
+    ],
+    "native": [
+      2,
+      52
+    ],
+    "rendered": [
+      2,
+      52
+    ],
+    "preserved_original": true
+  },
+  "tvguide_notify_button.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      191,
+      33
+    ],
+    "rendered": [
+      191,
+      33
+    ],
+    "preserved_original": true
+  },
+  "tvguide_recButton_Focus_left.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": "red",
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocusedleft"
+    ],
+    "native": [
+      10,
+      52
+    ],
+    "rendered": [
+      10,
+      52
+    ],
+    "preserved_original": true
+  },
+  "tvguide_recButton_Focus_middle.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": "red",
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocusedmid"
+    ],
+    "native": [
+      225,
+      51
+    ],
+    "rendered": [
+      225,
+      51
+    ],
+    "preserved_original": true
+  },
+  "tvguide_recButton_Focus_right.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": "red",
+    "tags": [
+      "native-or-alternate-state",
+      "texturefocusedright",
+      "texturenonfocusedright"
+    ],
+    "native": [
+      10,
+      52
+    ],
+    "rendered": [
+      10,
+      52
+    ],
+    "preserved_original": true
+  },
+  "tvguide_recButton_noFocus_left.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": "red",
+    "tags": [
+      "native-or-alternate-state",
+      "texturenonfocusedleft"
+    ],
+    "native": [
+      10,
+      52
+    ],
+    "rendered": [
+      10,
+      52
+    ],
+    "preserved_original": true
+  },
+  "tvguide_recButton_noFocus_middle.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": "red",
+    "tags": [
+      "native-or-alternate-state",
+      "texturenonfocusedmid"
+    ],
+    "native": [
+      228,
+      56
+    ],
+    "rendered": [
+      228,
+      56
+    ],
+    "preserved_original": true
+  },
+  "tvguide_recButton_noFocus_right.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": "red",
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      10,
+      52
+    ],
+    "rendered": [
+      10,
+      52
+    ],
+    "preserved_original": true
+  },
+  "tvguide_record_button.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      191,
+      33
+    ],
+    "rendered": [
+      191,
+      33
+    ],
+    "preserved_original": true
+  },
+  "tvguide_recordconflict_button.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      191,
+      33
+    ],
+    "rendered": [
+      191,
+      33
+    ],
+    "preserved_original": true
+  },
+  "tvguide_recordserie_button.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      191,
+      33
+    ],
+    "rendered": [
+      191,
+      33
+    ],
+    "preserved_original": true
+  },
+  "tvguide_recordserie_conflict_button.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      191,
+      33
+    ],
+    "rendered": [
+      191,
+      33
+    ],
+    "preserved_original": true
+  },
+  "tvguide_slider.png": {
+    "kind": "native-restored",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      37,
+      277
+    ],
+    "rendered": [
+      37,
+      277
+    ],
+    "preserved_original": true
+  },
+  "tvguide_time_bg.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      264,
+      38
+    ],
+    "rendered": [
+      264,
+      38
+    ],
+    "preserved_original": true
+  },
+  "tvseries_SeasonListIcon.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      96,
+      24
+    ],
+    "rendered": [
+      96,
+      24
+    ]
+  },
+  "tvseries_SeriesListIcon.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      96,
+      24
+    ],
+    "rendered": [
+      96,
+      24
+    ]
+  },
+  "tvseries_UnWatched.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "circle",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      96,
+      24
+    ],
+    "rendered": [
+      96,
+      24
+    ],
+    "native_fidelity": true
+  },
+  "tvseries_UnWatchedNA.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "circle",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      96,
+      24
+    ],
+    "rendered": [
+      96,
+      24
+    ],
+    "native_fidelity": true
+  },
+  "tvseries_Watched.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "check",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      96,
+      24
+    ],
+    "rendered": [
+      96,
+      24
+    ],
+    "native_fidelity": true
+  },
+  "tvseries_WatchedNA.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "check",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      96,
+      24
+    ],
+    "rendered": [
+      96,
+      24
+    ],
+    "native_fidelity": true
+  },
+  "tvseries_focusframe.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      400,
+      255
+    ],
+    "rendered": [
+      400,
+      255
+    ]
+  },
+  "unselected_in_list.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      390,
+      30
+    ],
+    "rendered": [
+      390,
+      30
+    ],
+    "preserved_original": true
+  },
+  "unselected_in_list_music.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      430,
+      30
+    ],
+    "rendered": [
+      430,
+      30
+    ],
+    "preserved_original": true
+  },
+  "unselected_in_list_tvgemist.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      830,
+      30
+    ],
+    "rendered": [
+      830,
+      30
+    ],
+    "preserved_original": true
+  },
+  "unselected_in_list_wide.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state",
+      "texturenofocus"
+    ],
+    "native": [
+      830,
+      30
+    ],
+    "rendered": [
+      830,
+      30
+    ],
+    "preserved_original": true
+  },
+  "video_window_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      161,
+      134
+    ],
+    "rendered": [
+      161,
+      134
+    ]
+  },
+  "volume.states.mute.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "volume-x",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      99,
+      44
+    ],
+    "rendered": [
+      99,
+      44
+    ],
+    "native_fidelity": true
+  },
+  "volume.states.png": {
+    "focus": false,
+    "kind": "native-restored",
+    "icon": "volume-2",
+    "active": false,
+    "tags": [
+      "native-or-alternate-state",
+      "texture"
+    ],
+    "native": [
+      13,
+      72
+    ],
+    "rendered": [
+      13,
+      72
+    ],
+    "native_fidelity": true
+  },
+  "wide_banner_frame_focus.png": {
+    "focus": true,
+    "kind": "native-restored",
+    "active": false,
+    "toggle": false,
+    "status": null,
+    "tags": [
+      "native-or-alternate-state"
+    ],
+    "native": [
+      479,
+      105
+    ],
+    "rendered": [
+      479,
+      105
+    ]
+  }
+}

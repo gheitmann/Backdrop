@@ -1,0 +1,30 @@
+Backdrop artwork credits
+
+Cinematic night background collection (25 October 2026)
+AI-generated with OpenAI image_gen for this Backdrop redesign.
+Cinema: approved cinema-at-night concept, with branding/loading removed.
+TV: large-screen evening living room. Music: recording studio.
+Photos: camera workroom. Games/sports: controller and racing lounge.
+Plugins: home media equipment and modular AV cabinet.
+The generic home background uses the cinema scene.
+Home lounge and Settings control-console backgrounds (26 October 2026):
+AI-generated with OpenAI image_gen to match the cinematic startup palette.
+Both original outputs are 1672x941; see Source/Artwork/alpha26-backgrounds.json.
+Plugins browser background (26 October 2026): an AI-generated modular AV rack
+with film camera and speakers, matching the same amber/night palette. Original
+output is 1672x941; provenance is in alpha26-backgrounds.json.
+Sources, prompts and SHA256: Source/Artwork/cinematic-night/ and cinematic-night.json.
+Brand mark and wordmark: code-native SVG, rendered at target resolution.
+Original photographic tool outputs are 1672x941; larger exports are resampled,
+not native 4K photography. No loading percentage is embedded in the artwork.
+
+Lucide icons: https://lucide.dev/
+Source revision: 7faf87628a1ad6175975bc595344337ce14a7db4
+ISC and Feather-derived MIT notices are included in LUCIDE-LICENSE.txt.
+Other original Backdrop and MediaPortal artwork credits remain in NOTICE.md.
+
+Retained abstract background: Jack B / Unsplash
+https://unsplash.com/photos/blue-and-black-abstract-artwork-qnBMlkav-j8
+License: https://unsplash.com/license
+The earlier Unsplash/Pexels category photographs have been replaced by the
+cinematic collection; no attribution to those photographers is claimed for it.
