@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <window>
   <id>1020</id>
   <defaultcontrol>2</defaultcontrol>
@@ -6,7 +6,7 @@
   <rememberLastFocusedControl>no</rememberLastFocusedControl>
   <controls>
     <import>mp139.common.settings.xml</import>
-    <import>mp139.common.time.xml</import>
+    <import>common.time.xml</import>
     <control>
       <description>buttons</description>
       <type>group</type>
@@ -41,7 +41,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -71,7 +71,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -101,7 +101,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -131,7 +131,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -161,7 +161,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -191,7 +191,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -221,7 +221,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -251,7 +251,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -282,7 +282,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -314,7 +314,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -332,7 +332,7 @@
         <onup>5</onup>
         <onright>2</onright>
         <onleft>9992</onleft>
-   		v<width>600</width><textureFocus>listbg_fo.png</textureFocus><height>60</height><textXOff>25</textXOff><textYOff>9</textYOff><textpadding>30</textpadding><textureNoFocus>listbg_nf.png</textureNoFocus><font>font12</font><textcolor>ffffffff</textcolor><colordiffuse>ffffffff</colordiffuse><disabledcolor>90ffffff</disabledcolor><textcolorNoFocus>ff7FB1E5</textcolorNoFocus><dimColor>90ffffff</dimColor><shadowAngle>0</shadowAngle><shadowDistance>0</shadowDistance><shadowColor /><markWidth>43</markWidth><markHeight>42</markHeight><markXOff>20</markXOff><markYOff>10</markYOff><markalign>right</markalign><markvalign>middle</markvalign><textureCheckmark>check-box.png</textureCheckmark><textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus><textalign>left</textalign><textvalign>middle</textvalign><scrollStartDelaySec>5</scrollStartDelaySec><scrollWrapString>  |  </scrollWrapString></control>
+   		v<width>600</width><textureFocus>listbg_fo.png</textureFocus><height>60</height><textXOff>25</textXOff><textYOff>9</textYOff><textpadding>30</textpadding><textureNoFocus>listbg_nf.png</textureNoFocus><font>font12</font><textcolor>ffffffff</textcolor><colordiffuse>ffffffff</colordiffuse><disabledcolor>90ffffff</disabledcolor><textcolorNoFocus>ffffffff</textcolorNoFocus><dimColor>90ffffff</dimColor><shadowAngle>0</shadowAngle><shadowDistance>0</shadowDistance><shadowColor /><markWidth>43</markWidth><markHeight>42</markHeight><markXOff>20</markXOff><markYOff>10</markYOff><markalign>right</markalign><markvalign>middle</markvalign><textureCheckmark>check-box.png</textureCheckmark><textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus><textalign>left</textalign><textvalign>middle</textvalign><scrollStartDelaySec>5</scrollStartDelaySec><scrollWrapString>  |  </scrollWrapString></control>
       <control>
         <description>Delay label</description>
         <type>label</type>
@@ -356,10 +356,10 @@
         <textcolor>ffffffff</textcolor>
         <width>42</width>
         <height>30</height>
-        <textureUp>MP139\page_up_nofocus.png</textureUp>
-        <textureDown>MP139\page_down_nofocus.png</textureDown>
-        <textureUpFocus>MP139\page_up_focus.png</textureUpFocus>
-        <textureDownFocus>MP139\page_down_focus.png</textureDownFocus>
+        <textureUp>arrowupnf.png</textureUp>
+        <textureDown>arrowdownnf.png</textureDown>
+        <textureUpFocus>arrowupfo.png</textureUpFocus>
+        <textureDownFocus>arrowdownfo.png</textureDownFocus>
         <font>font12</font>
         <reverse>yes</reverse>
         <disabledcolor>90ffffff</disabledcolor>
@@ -377,7 +377,7 @@
         <ondown>5</ondown>
         <onright>4</onright>
         <onleft>9992</onleft>
-   		v<width>600</width><textureFocus>listbg_fo.png</textureFocus><height>60</height><textXOff>25</textXOff><textYOff>9</textYOff><textpadding>30</textpadding><textureNoFocus>listbg_nf.png</textureNoFocus><font>font12</font><textcolor>ffffffff</textcolor><colordiffuse>ffffffff</colordiffuse><disabledcolor>90ffffff</disabledcolor><textcolorNoFocus>ff7FB1E5</textcolorNoFocus><dimColor>90ffffff</dimColor><shadowAngle>0</shadowAngle><shadowDistance>0</shadowDistance><shadowColor /><markWidth>43</markWidth><markHeight>42</markHeight><markXOff>20</markXOff><markYOff>10</markYOff><markalign>right</markalign><markvalign>middle</markvalign><textureCheckmark>check-box.png</textureCheckmark><textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus><textalign>left</textalign><textvalign>middle</textvalign><scrollStartDelaySec>5</scrollStartDelaySec><scrollWrapString>  |  </scrollWrapString></control>
+   		v<width>600</width><textureFocus>listbg_fo.png</textureFocus><height>60</height><textXOff>25</textXOff><textYOff>9</textYOff><textpadding>30</textpadding><textureNoFocus>listbg_nf.png</textureNoFocus><font>font12</font><textcolor>ffffffff</textcolor><colordiffuse>ffffffff</colordiffuse><disabledcolor>90ffffff</disabledcolor><textcolorNoFocus>ffffffff</textcolorNoFocus><dimColor>90ffffff</dimColor><shadowAngle>0</shadowAngle><shadowDistance>0</shadowDistance><shadowColor /><markWidth>43</markWidth><markHeight>42</markHeight><markXOff>20</markXOff><markYOff>10</markYOff><markalign>right</markalign><markvalign>middle</markvalign><textureCheckmark>check-box.png</textureCheckmark><textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus><textalign>left</textalign><textvalign>middle</textvalign><scrollStartDelaySec>5</scrollStartDelaySec><scrollWrapString>  |  </scrollWrapString></control>
       <control>
         <description>Reduce framerate</description>
         <type>checkbutton</type>
@@ -389,7 +389,7 @@
         <onup>4</onup>
         <onright>5</onright>
         <onleft>9992</onleft>
-   		v<width>600</width><textureFocus>listbg_fo.png</textureFocus><height>60</height><textXOff>25</textXOff><textYOff>9</textYOff><textpadding>30</textpadding><textureNoFocus>listbg_nf.png</textureNoFocus><font>font12</font><textcolor>ffffffff</textcolor><colordiffuse>ffffffff</colordiffuse><disabledcolor>90ffffff</disabledcolor><textcolorNoFocus>ff7FB1E5</textcolorNoFocus><dimColor>90ffffff</dimColor><shadowAngle>0</shadowAngle><shadowDistance>0</shadowDistance><shadowColor /><markWidth>43</markWidth><markHeight>42</markHeight><markXOff>20</markXOff><markYOff>10</markYOff><markalign>right</markalign><markvalign>middle</markvalign><textureCheckmark>check-box.png</textureCheckmark><textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus><textalign>left</textalign><textvalign>middle</textvalign><scrollStartDelaySec>5</scrollStartDelaySec><scrollWrapString>  |  </scrollWrapString></control>
+   		v<width>600</width><textureFocus>listbg_fo.png</textureFocus><height>60</height><textXOff>25</textXOff><textYOff>9</textYOff><textpadding>30</textpadding><textureNoFocus>listbg_nf.png</textureNoFocus><font>font12</font><textcolor>ffffffff</textcolor><colordiffuse>ffffffff</colordiffuse><disabledcolor>90ffffff</disabledcolor><textcolorNoFocus>ffffffff</textcolorNoFocus><dimColor>90ffffff</dimColor><shadowAngle>0</shadowAngle><shadowDistance>0</shadowDistance><shadowColor /><markWidth>43</markWidth><markHeight>42</markHeight><markXOff>20</markXOff><markYOff>10</markYOff><markalign>right</markalign><markvalign>middle</markvalign><textureCheckmark>check-box.png</textureCheckmark><textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus><textalign>left</textalign><textvalign>middle</textvalign><scrollStartDelaySec>5</scrollStartDelaySec><scrollWrapString>  |  </scrollWrapString></control>
       <dimColor>ffffffff</dimColor>
     </control>
   </controls>

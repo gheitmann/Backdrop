@@ -61,7 +61,7 @@
       <posY>284</posY>
       <width>448</width>
       <label>924</label>
-      <textcolor>lightgray</textcolor>
+      <textcolor>ff7FB1E5</textcolor>
       <align>center</align>
       <font>font12</font>
       <visible>!window.isvisible(4)+!skin.hassetting(#skin.basichome.editor)</visible>
@@ -76,16 +76,17 @@
       <posX>45</posX>
       <posY>54</posY>
       <label>#(iif(and(neq(L(101002),#currentmodule),neq(L(101004),#currentmodule)), iif(and(neq(L(102012), #currentmodule), neq(L(102002), #currentmodule), neq(L(100100), #currentmodule), neq(L(102015), #currentmodule)), #currentmodule, ' '), ' '))</label>
-      <width>1802</width>
+      <width>1700</width>
+      <height>90</height>
       <align>left</align>
       <font>font32</font>
       <shadowAngle>10</shadowAngle>
       <shadowDistance>3</shadowDistance>
       <shadowColor>ff000000</shadowColor>
-      <textcolor>lightgray</textcolor>
+      <textcolor>ff7FB1E5</textcolor>
       <colordiffuse>ffffffff</colordiffuse>
       <disabledcolor>90ffffff</disabledcolor>
-      <visible>!Window.IsVisible(1002)+!Window.IsVisible(1004)</visible>
+      <visible>!Window.IsVisible(1002)+!Window.IsVisible(1004) + !window.isvisible(4)</visible>
     </control>
     <control>
       <type>label</type>
@@ -94,13 +95,26 @@
       <posY>260</posY>
       <width>1000</width>
       <label>#(iif(and(neq(L(101002),#currentmodule),neq(L(101004),#currentmodule)), #currentmodule, ' '))</label>
-      <textcolor>lightgray</textcolor>
+      <textcolor>ff7FB1E5</textcolor>
       <font>font12</font>
       <visible>[!window.isvisible(4)+!skin.hassetting(#skin.basichome.editor)]+!Window.IsVisible(1002)+!Window.IsVisible(1004)</visible>
       <disabledcolor>90ffffff</disabledcolor>
       <shadowAngle>0</shadowAngle>
       <shadowDistance>0</shadowDistance>
       <shadowColor />
+    </control>
+    <control>
+      <description>Settings root heading</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>45</posX>
+      <posY>54</posY>
+      <width>1700</width>
+      <height>90</height>
+      <label>897</label>
+      <font>font32</font>
+      <textcolor>ff7FB1E5</textcolor>
+      <visible>window.isvisible(4)</visible>
     </control>
   </controls>
 </window>

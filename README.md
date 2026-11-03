@@ -2,9 +2,9 @@
 
 Experimental port of cul8er's **Backdrop 1.0.1** skin to **MediaPortal 1.39**.
 
-Current release: **BETA4 (1.39.0.31)**, restoring the previous Photos filmstrip, correcting MovingPictures logo categories and bounding the slideshow Properties heading.
-See the [English release notes](docs/RELEASE-BETA4.md) and
-[build verification](docs/BETA4-BUILD-REPORT.md).
+Current release: **BETA5 (1.39.0.32)**, adopting the tester slideshow and restoring Backdrop Settings artwork, clocks and headings without overlapping panel frames.
+See the [English release notes](docs/RELEASE-BETA5.md) and
+[build verification](docs/BETA5-BUILD-REPORT.md).
 
 The owner reports no Defender detections in recent versions. The historical
 ALPHA23 report is documented in [the bounded investigation](docs/DEFENDER-ALPHA23-COMPARISON.md);
@@ -12,9 +12,9 @@ this is not a certification of every antivirus product.
 
 ## Install
 
-Download `Backdrop-Setup-BETA4.exe` from [Releases](https://github.com/gheitmann/Backdrop/releases), close MediaPortal and run the single executable. Back up any existing Backdrop installation first.
+Download `Backdrop-Setup-BETA5.exe` from [Releases](https://github.com/gheitmann/Backdrop/releases), close MediaPortal and run the single executable. Back up any existing Backdrop installation first.
 
-`Backdrop-Setup-BETA4.exe` combines the skin MPE1 with the buffered installer UI in one executable. Initialization and client-folder discovery run automatically; no companion files or manual PowerShell steps are required. See [installer instructions](docs/INSTALLER-UI.md). The setup uses an isolated installer presentation copy without replacing the installed Extension Installer.
+`Backdrop-Setup-BETA5.exe` combines the skin MPE1 with the buffered installer UI in one executable. Initialization and client-folder discovery run automatically; no companion files or manual PowerShell steps are required. See [installer instructions](docs/INSTALLER-UI.md). The setup uses an isolated installer presentation copy without replacing the installed Extension Installer.
 
 Use architecture-compatible versions of Fanart Handler, Latest Media Handler, and any other external plugins. This repository does not bundle third-party plugin installers or modified MediaPortal core binaries.
 

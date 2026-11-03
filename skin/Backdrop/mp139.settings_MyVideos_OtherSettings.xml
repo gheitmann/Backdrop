@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <window>
   <id>1023</id>
   <defaultcontrol>2</defaultcontrol>
@@ -6,7 +6,7 @@
   <rememberLastFocusedControl>no</rememberLastFocusedControl>
   <controls>
     <import>mp139.common.settings.xml</import>
-    <import>mp139.common.time.xml</import>
+    <import>common.time.xml</import>
     <control>
       <description>buttons</description>
       <type>group</type>
@@ -38,7 +38,7 @@
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
         <disabledcolor>90ffffff</disabledcolor>
-        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <textcolorNoFocus>ffffffff</textcolorNoFocus>
         <dimColor>90ffffff</dimColor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -68,7 +68,7 @@
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
         <disabledcolor>90ffffff</disabledcolor>
-        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <textcolorNoFocus>ffffffff</textcolorNoFocus>
         <dimColor>90ffffff</dimColor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -98,7 +98,7 @@
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
         <disabledcolor>90ffffff</disabledcolor>
-        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <textcolorNoFocus>ffffffff</textcolorNoFocus>
         <dimColor>90ffffff</dimColor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -128,7 +128,7 @@
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
         <disabledcolor>90ffffff</disabledcolor>
-        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <textcolorNoFocus>ffffffff</textcolorNoFocus>
         <dimColor>90ffffff</dimColor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -158,7 +158,7 @@
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
         <disabledcolor>90ffffff</disabledcolor>
-        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <textcolorNoFocus>ffffffff</textcolorNoFocus>
         <dimColor>90ffffff</dimColor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -188,7 +188,7 @@
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
         <disabledcolor>90ffffff</disabledcolor>
-        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <textcolorNoFocus>ffffffff</textcolorNoFocus>
         <dimColor>90ffffff</dimColor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -218,7 +218,7 @@
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
         <disabledcolor>90ffffff</disabledcolor>
-        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <textcolorNoFocus>ffffffff</textcolorNoFocus>
         <dimColor>90ffffff</dimColor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -248,7 +248,7 @@
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
         <disabledcolor>90ffffff</disabledcolor>
-        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <textcolorNoFocus>ffffffff</textcolorNoFocus>
         <dimColor>90ffffff</dimColor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -279,7 +279,7 @@
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
         <disabledcolor>90ffffff</disabledcolor>
-        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <textcolorNoFocus>ffffffff</textcolorNoFocus>
         <dimColor>90ffffff</dimColor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -311,7 +311,7 @@
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
         <disabledcolor>90ffffff</disabledcolor>
-        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <textcolorNoFocus>ffffffff</textcolorNoFocus>
         <dimColor>90ffffff</dimColor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -345,7 +345,7 @@
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
         <disabledcolor>90ffffff</disabledcolor>
-        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <textcolorNoFocus>ffffffff</textcolorNoFocus>
         <dimColor>90ffffff</dimColor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -383,7 +383,7 @@
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
         <disabledcolor>90ffffff</disabledcolor>
-        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <textcolorNoFocus>ffffffff</textcolorNoFocus>
         <dimColor>90ffffff</dimColor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -421,7 +421,7 @@
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
         <disabledcolor>90ffffff</disabledcolor>
-        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <textcolorNoFocus>ffffffff</textcolorNoFocus>
         <dimColor>90ffffff</dimColor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -467,10 +467,10 @@
       <font>font12</font>
       <width>42</width>
       <height>30</height>
-      <textureUp>MP139\page_up_nofocus.png</textureUp>
-      <textureDown>MP139\page_down_nofocus.png</textureDown>
-      <textureUpFocus>MP139\page_up_focus.png</textureUpFocus>
-      <textureDownFocus>MP139\page_down_focus.png</textureDownFocus>
+      <textureUp>arrowupnf.png</textureUp>
+      <textureDown>arrowdownnf.png</textureDown>
+      <textureUpFocus>arrowupfo.png</textureUpFocus>
+      <textureDownFocus>arrowdownfo.png</textureDownFocus>
       <reverse>yes</reverse>
       <textcolor>lightgray</textcolor>
       <disabledcolor>90ffffff</disabledcolor>
@@ -506,10 +506,10 @@
       <font>font12</font>
       <width>42</width>
       <height>30</height>
-      <textureUp>MP139\page_up_nofocus.png</textureUp>
-      <textureDown>MP139\page_down_nofocus.png</textureDown>
-      <textureUpFocus>MP139\page_up_focus.png</textureUpFocus>
-      <textureDownFocus>MP139\page_down_focus.png</textureDownFocus>
+      <textureUp>arrowupnf.png</textureUp>
+      <textureDown>arrowdownnf.png</textureDown>
+      <textureUpFocus>arrowupfo.png</textureUpFocus>
+      <textureDownFocus>arrowdownfo.png</textureDownFocus>
       <reverse>yes</reverse>
       <textcolor>lightgray</textcolor>
       <disabledcolor>90ffffff</disabledcolor>

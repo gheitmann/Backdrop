@@ -1,13 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <window>
   <id>9004</id>
   <defaultcontrol>20</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <define>#header.label:109004</define>
-  <define>#header.hover:MP139\hover_settings.png</define>
+  <define>#header.hover:hover_settings.png</define>
   <controls>
     <import>mp139.common.settings.xml</import>
-    <import>mp139.common.time.xml</import>
+    <import>common.time.xml</import>
     <control>
       <description>buttons</description>
       <type>group</type>
@@ -56,7 +56,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -86,7 +86,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -116,7 +116,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -146,7 +146,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -176,7 +176,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -206,7 +206,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -236,7 +236,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -266,7 +266,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -297,7 +297,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -329,7 +329,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -361,7 +361,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -406,7 +406,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>ffffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>ffffffff</dimColor>
           <scrollStartDelaySec>20</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>
@@ -428,7 +428,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -463,7 +463,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -508,7 +508,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>ffffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>ffffffff</dimColor>
           <scrollStartDelaySec>20</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>
@@ -531,7 +531,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -577,7 +577,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>ffffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>ffffffff</dimColor>
           <scrollStartDelaySec>20</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>
@@ -610,7 +610,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>ffffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>ffffffff</dimColor>
           <scrollStartDelaySec>20</scrollStartDelaySec>
           <scrollWrapString>  |  </scrollWrapString>

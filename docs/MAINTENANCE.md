@@ -4,6 +4,14 @@ Use this repository as the versioned source for future Backdrop changes. Keep re
 
 ## Start every update here
 
+Latest release: BETA5. Read `BETA5-BUILD-REPORT.md` for final runtime and installer evidence. Keep Settings root titles in native visible labels; `window.isvisible` is a visibility condition, not a callable skin expression.
+
+BETA5 includes this follow-up: read `BETA4-FEEDBACK-FOLLOWUP.md`. Keep the supplied
+non-scrolling slideshow textbox and the Settings native binding inventory.
+Use Backdrop clocks and list artwork on modern Settings pages; preserve current
+MediaPortal IDs and commands. Do not stretch dialog frames over the dense Settings
+panels or alter shared DWHD facades for one extension page.
+
 Latest release BETA4 includes the BETA3 tester corrections: read
 `BETA4-BUILD-REPORT.md` and `BETA3-FEEDBACK-FOLLOWUP.md`. Restore the
 exact BETA2 Photos facade with its translucent frames; the tester explicitly
@@ -94,7 +102,7 @@ Local maintenance history and immutable fixtures remain under the owner's `Docum
 ## ALPHA10 lessons
 
 - Apply the V6 feedback cleanup before future fallback-page updates: remove guide row-count captions in all 20 TV/radio variants and the static Skin settings caption in both definitions.
-- Do not reintroduce DWHD Keyboard Shortcuts or DriveFreeSpace panels into General settings. Keep native MP buttons 2–7, remove obsolete visibility conditions, and wrap focus 2 Up to 7 / 7 Down to 2. Saved flags may remain in personal settings and must not hide native options.
+- Do not reintroduce DWHD Keyboard Shortcuts or DriveFreeSpace panels into General settings. Keep native MP buttons 2â€“7, remove obsolete visibility conditions, and wrap focus 2 Up to 7 / 7 Down to 2. Saved flags may remain in personal settings and must not hide native options.
 - Keep current MP 1.39 category navigation vertical; restoring the entire old settings_general.xml would discard current native settings navigation.
 - Distinguish a second full-screen background from Backdrop's original sofa image fading to black. The populated TV guide check did not reproduce a second image; retain this as open rather than claiming a speculative fix.
 

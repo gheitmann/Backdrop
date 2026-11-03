@@ -40,7 +40,7 @@
       <posY>374</posY>
       <width>862</width>
       <height>420</height>
-      <texture>dialog_schedule_rec.png</texture>
+      <texture>dialog_743_336.png</texture>
     </control>
     <control>
       <description>Exit button</description>
@@ -50,8 +50,8 @@
       <posY>398</posY>
       <width>64</width>
       <height>26</height>
-      <textureFocus>dialogue_shutdown_focus.png</textureFocus>
-      <textureNoFocus>dialogue_shutdown_nofocus.png</textureNoFocus>
+      <textureFocus>button_close_focus.png</textureFocus>
+      <textureNoFocus>button_close_nofocus.png</textureNoFocus>
       <label>-</label>
       <onleft>3</onleft>
       <onright>3</onright>

@@ -198,6 +198,7 @@
               <ZipFileName>Installer{CopyFile}\{17739dae-0113-43bc-b417-fc9fa47d13ba}-common.facade.pictures.xml</ZipFileName>
               <DestinationFilename>%Skin%\Backdrop\common.facade.pictures.xml</DestinationFilename>
             </FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/common.facade.settings.extensions.xml</LocalFileName><ZipFileName>Installer{CopyFile}\{a85dfea2-0255-5deb-ba77-31508b4ec91a}-common.facade.settings.extensions.xml</ZipFileName><DestinationFilename>%Skin%\Backdrop\common.facade.settings.extensions.xml</DestinationFilename></FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
@@ -16784,7 +16785,7 @@
     </Items>
   </Dependencies>
   <GeneralInfo>
-    <Name>Backdrop MP 1.39 AnyCPU BETA4</Name>
+    <Name>Backdrop MP 1.39 AnyCPU BETA5</Name>
     <Id>7aec8315-531b-49b4-ac24-d6b285d039d0</Id>
     <Author>cul8er; local MP 1.39 AnyCPU adaptation</Author>
     <HomePage>https://github.com/gheitmann/Backdrop</HomePage>
@@ -16795,10 +16796,10 @@
       <Major>1</Major>
       <Minor>39</Minor>
       <Build>0</Build>
-      <Revision>31</Revision>
+      <Revision>32</Revision>
     </Version>
     <ExtensionDescription>Experimental Backdrop 1.0.1 port for MediaPortal 1.39. Includes an AnyCPU menu editor. Tested on x64; full x86 runtime testing remains pending. Requires compatible external Fanart Handler and Latest Media Handler plugins. See README.md and docs/VALIDATION.md.</ExtensionDescription>
-    <VersionDescription>BETA4: restore previous Photos filmstrip; correct MovingPictures resolution and aspect ratio logos using tester-supplied files; constrain slideshow Properties title without scrolling.</VersionDescription>
+    <VersionDescription>BETA5: adopt tester slideshow title textbox; restore Backdrop Settings clocks, lists and navigation artwork; remove overlapping panel frames and stale Settings headings while preserving native controls.</VersionDescription>
     <DevelopmentStatus>Beta</DevelopmentStatus>
     <OnlineLocation>
     </OnlineLocation>
@@ -17031,6 +17032,7 @@
         <ZipFileName>Installer{CopyFile}\{17739dae-0113-43bc-b417-fc9fa47d13ba}-common.facade.pictures.xml</ZipFileName>
         <DestinationFilename>%Skin%\Backdrop\common.facade.pictures.xml</DestinationFilename>
       </FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/common.facade.settings.extensions.xml</LocalFileName><ZipFileName>Installer{CopyFile}\{a85dfea2-0255-5deb-ba77-31508b4ec91a}-common.facade.settings.extensions.xml</ZipFileName><DestinationFilename>%Skin%\Backdrop\common.facade.settings.extensions.xml</DestinationFilename></FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>

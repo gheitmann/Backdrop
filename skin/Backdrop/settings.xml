@@ -37,7 +37,7 @@
         <posX>860</posX>
         <posY>255</posY>
         <width>480</width>
-        <label>#(iif(and(neq(L(101002),#currentmodule),neq(L(101004),#currentmodule)), #currentmodule, ' '))</label>
+        <label>897</label>
         <textcolor>white</textcolor>
         <font>font12</font>
         <disabledcolor>90ffffff</disabledcolor>
@@ -76,7 +76,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -104,7 +104,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -132,7 +132,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -160,7 +160,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -188,7 +188,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -216,7 +216,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -244,7 +244,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -272,7 +272,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -301,7 +301,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -331,7 +331,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -355,7 +355,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>

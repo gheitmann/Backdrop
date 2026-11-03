@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <window>
   <id>1012</id>
   <defaultcontrol>3</defaultcontrol>
@@ -6,7 +6,7 @@
   <rememberLastFocusedControl>no</rememberLastFocusedControl>
   <controls>
     <import>mp139.common.settings.xml</import>
-    <import>mp139.common.time.xml</import>
+    <import>common.time.xml</import>
     <control>
       <description>buttons</description>
       <type>group</type>
@@ -41,7 +41,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -71,7 +71,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -101,7 +101,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -131,7 +131,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -161,7 +161,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -191,7 +191,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -221,7 +221,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -251,7 +251,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -282,7 +282,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -314,7 +314,7 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <disabledcolor>90ffffff</disabledcolor>
-          <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+          <textcolorNoFocus>ffffffff</textcolorNoFocus>
           <dimColor>90ffffff</dimColor>
           <shadowAngle>0</shadowAngle>
           <shadowDistance>0</shadowDistance>
@@ -360,7 +360,7 @@
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
         <disabledcolor>90ffffff</disabledcolor>
-        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <textcolorNoFocus>ffffffff</textcolorNoFocus>
         <dimColor>90ffffff</dimColor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -391,7 +391,7 @@
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>
         <disabledcolor>90ffffff</disabledcolor>
-        <textcolorNoFocus>ff7FB1E5</textcolorNoFocus>
+        <textcolorNoFocus>ffffffff</textcolorNoFocus>
         <dimColor>90ffffff</dimColor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -457,8 +457,8 @@
         <unfocusedAlpha>160</unfocusedAlpha>
         <scrollbarHeight>400</scrollbarHeight>
         <scrollbarbg>bar_vert.png</scrollbarbg>
-        <scrollbartop>MP139\mouse_left_horizontal.png</scrollbartop>
-        <scrollbarbottom>MP139\mouse_right_horizontal.png</scrollbarbottom>
+        <scrollbartop>-</scrollbartop>
+        <scrollbarbottom>-</scrollbarbottom>
         <scrollbarYOff>0</scrollbarYOff>
         <showScrollbar>yes</showScrollbar>
         <scrollbarwidth>20</scrollbarwidth>
@@ -468,12 +468,12 @@
         <spinPosY>993</spinPosY>
         <spinAlign>Right</spinAlign>
         <spinColor>ffffffff</spinColor>
-        <textureUp>MP139\page_up_nofocus.png</textureUp>
-        <textureDown>MP139\page_down_nofocus.png</textureDown>
-        <textureUpFocus>MP139\page_up_focus.png</textureUpFocus>
-        <textureDownFocus>MP139\page_down_focus.png</textureDownFocus>
-        <textureFocus>MP139\list_sub_focus.png</textureFocus>
-        <textureNoFocus>MP139\list_sub_nofocus.png</textureNoFocus>
+        <textureUp>arrowupnf.png</textureUp>
+        <textureDown>arrowdownnf.png</textureDown>
+        <textureUpFocus>arrowupfo.png</textureUpFocus>
+        <textureDownFocus>arrowdownfo.png</textureDownFocus>
+        <textureFocus>playlist_sub_focus.png</textureFocus>
+        <textureNoFocus>playlist_sub_nofocus.png</textureNoFocus>
         <shadedColor>20ffffff</shadedColor>
         <selectedColor3>ff00ff00</selectedColor3>
         <selectedColor2>ff00ff00</selectedColor2>

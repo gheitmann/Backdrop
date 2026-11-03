@@ -1,0 +1,1455 @@
+{
+  "reference": "Backdrop v1.0.1 tester-provided original package",
+  "scope": "All root XML files whose filenames contain settings (case insensitive), including aliases, shared definitions and plugin settings.",
+  "files": [
+    {
+      "file": "common.facade.settings.extensions.xml",
+      "window_id": null,
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": false,
+      "remaining_foreign_resources": [],
+      "binding_signature": "67a25ecacd29aaf8341b639a2513872239faf3eb0bf570ff12e9a8f31855387e",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "common.settings.xml",
+      "window_id": null,
+      "original_file": "common.settings.xml",
+      "original_window_id": null,
+      "changed": false,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "b1b842f5684e434b17dd2b908291ca3bbb87ab9d3e51ed1f666608e119f54fad",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "common.settings1.xml",
+      "window_id": null,
+      "original_file": "common.settings1.xml",
+      "original_window_id": null,
+      "changed": false,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "1f02918e3ab6956b3e51f920556bbe9693444212ab3c632b59ba52ef9f8006ff",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "IFC_Settings.xml",
+      "window_id": "240782",
+      "original_file": "IFC_Settings.xml",
+      "original_window_id": "240782",
+      "changed": false,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "a97fe89f8d16d70ca5f51feb63b1b17c6b6de0d8a069f022d8ae965418a43a0f",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "LatestMediaHandler.SkinSettings.xml",
+      "window_id": null,
+      "original_file": null,
+      "original_window_id": null,
+      "changed": false,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "b1b842f5684e434b17dd2b908291ca3bbb87ab9d3e51ed1f666608e119f54fad",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.common.settings.xml",
+      "window_id": null,
+      "original_file": "common.settings.xml",
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "f3d922625565de8aa0717fa708749bfb807cd6f2ea51ac3ec7ddbd79ac0cf759",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "mp139.myextensions2settings.xml",
+      "window_id": "803",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "4df0f38e42d1bf09cb0e9e4145aa6a8c0dbe106ec908e2eb66b605e7cf40af8a",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings.xml",
+      "window_id": "4",
+      "original_file": "settings.xml",
+      "original_window_id": "4",
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "fcf1b2f8ae35def23dc82fd5e2811ecc0c476567009d6f0da29c47e560c1708a",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "mp139.settings_BluRay.xml",
+      "window_id": "1024",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [
+        {
+          "tag": "texture",
+          "resource": "MP139\\Blu-ray_regions.png",
+          "visibility": "inherited"
+        }
+      ],
+      "binding_signature": "1aff1873c475a7f9f6480e45452a98138a59a6597d6c38692e1f53a92a7fad64",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_Common_Extensions.xml",
+      "window_id": "1001",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "2be4717c5d6bb026e1c9a75738d58591e5e6b8d37a573062e75b637ee1567870",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_Common_Playlist.xml",
+      "window_id": "1014",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "8f1685758fb478dd636997f42c00857201c9f776c85e6d06f98f4ea8cb3fb964",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_Common_ShareFolders.xml",
+      "window_id": "1000",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "2460933f9f316718afdb2cd5ab3d7688f473dd4dc1ae87be1e0915f31b40f055",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_dvd.xml",
+      "window_id": "704",
+      "original_file": "settings_dvd.xml",
+      "original_window_id": "704",
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "a694381cd9089a2b7c94259774678908da86568e3571cd4ef83c11b6150f786c",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "mp139.settings_General.xml",
+      "window_id": "1016",
+      "original_file": "settings_general.xml",
+      "original_window_id": "705",
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "f45d8dd00a8b251ecb50cce156504778821c8b304ff4183dd8faac5b0cc5eca7",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "mp139.settings_General_DynamicRefreshRate.xml",
+      "window_id": "1008",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "0c500bd05c01925b544b435813734e1ee7b58e3164c1660395be2af905f471df",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_General_MP.xml",
+      "window_id": "1018",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "addd3826c778a4c8defc977042ec17bdcef7b5d6fac3e6b311879cff22bd0b05",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_General_Resume.xml",
+      "window_id": "1017",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "8e437dba86888581ab500ecf55e9a1367e2345bb7948565dee6c3b4148509bcc",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_General_Startup.xml",
+      "window_id": "1019",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "ce3b179f9071af5602e5cdbf7b6c9c16de0b3b497872d3af4534a57fd3430fd6",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_General_Volume.xml",
+      "window_id": "1007",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "b560d34c2cad0bc25293d0077dc97cbb1bc917955d15c4abdfa719824756445a",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_GUI.xml",
+      "window_id": "1021",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "d410eac20427fb00aab89421be1d00b7bbbdea07ff194846dac7b0b7bbedf53a",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_GUI_General.xml",
+      "window_id": "1022",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "31d726872d6a66db56794e0349d8bdf61b305fba12b99a653495200a7258de47",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_GUI_OnScreenDisplay.xml",
+      "window_id": "1006",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "f49afffb4add002ee0c6bc2e6dfe63fd772de682366ac420cababda3fedc7484",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_GUI_ScreenSaver.xml",
+      "window_id": "1020",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "11cc100674e90ca1755c7c6988cf3d54df1c84d839462f50faaf7108e1713f4c",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_GUI_ScreenSetup.xml",
+      "window_id": "9",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "00039b438d144e27115d4b54f9083acea98b0f3a4b23cc9d86779262e30c0677",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_GUI_ScrollSpeed.xml",
+      "window_id": "31",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "5ebec8469794baf077a80d1e542cd7cfd8c2003ce4797f0d3b5bc0c2c1de986a",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_GUI_Skin.xml",
+      "window_id": "705",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\basichome_nopluginbg.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\basichome_pluginbg.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\tvguide_10lines.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\radioguide_10lines.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\tvguide_12lines.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\radioguide_12lines.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\tvguide_15lines.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\radioguide_15lines.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\tvguide_18lines.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\radioguide_18lines.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\tvguide_24lines.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\radioguide_24lines.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\basichome_novideofanart.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\basichome_videofanart.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\basichome_music_norandomfanart.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\basichome_music_randomfanart.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\basichome_nomusicplayfanart.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\basichome_musicplayfanart.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\myhomeListview.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\myhomeLargeIconsview.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\myhomeFilmstripview.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\myhomeCoverflowview.png",
+          "visibility": "no"
+        }
+      ],
+      "binding_signature": "0fb92c299fac8ac16d834ae5dfb9d91bec0ab7e2ea24366ab59ae78bbb093eb7",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_GUI_SkipSteps.xml",
+      "window_id": "708",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "5272f3abb7edb6626d4fde9b07cc37bb081d0832f4895f172dd86c020a29526f",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_GUI_Thumbnails.xml",
+      "window_id": "1005",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "2940fb21fdabedbfa589f962ce8664b3db1549020ee2fc437a2b5aa570c61c6f",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_GUI_UICalibration.xml",
+      "window_id": "10",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "88848077dc6bbc1008ee7b0d0182a50ce247caeb1b3f69d18be0fb246b73325d",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_GUI_VideoScreenCalibration.xml",
+      "window_id": "11",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": false,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "ec91add7b50455b81e6517100b76c78ece3d1516c433152da03e6b2d933a1e50",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_MiniDisplay_BackLight.xml",
+      "window_id": "9001",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "60b9912c6aeba5d1da15cb88497d742e9c5d7ed79494d77a3f614efbe1c4ed38",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_MiniDisplay_Control.xml",
+      "window_id": "9002",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "592727e4106417760bfee5044a930e900b1b8831ccf8b89d5c1c374b9e9284b1",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_MiniDisplay_Equalizer.xml",
+      "window_id": "9004",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "e2efd29a8b75ee5ab6db90fde43beed3618ceab17d6ebabfa983041ba55c7dd8",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_MiniDisplay_Keypad.xml",
+      "window_id": "9005",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "d0788dfde8769c0c2d3f0f71ee79b5c58b8b77973d5e4da8cccc6af12fa6a2bc",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_MiniDisplay_Main.xml",
+      "window_id": "9000",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "4d0ed8fffd15a90414018cec796513d94a8f11d358e506c4eaf2219f6a819e92",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_MiniDisplay_Options.xml",
+      "window_id": "9003",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "cd6f9c808864b7c72d92096d49e0bf529b11db411a32c5febe9c5f8595ea1530",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_MiniDisplay_Remote.xml",
+      "window_id": "9006",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "d659cb2fc9b0ebad5a6b48f05ec0b8732cc9762f010b1f647c104484d3215b26",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_MyMusic.xml",
+      "window_id": "14",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "b9226db6d27bafc808e6cf5a5bc95968ed0f7924f8ba835aaec492f8c6dc2f8a",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_MyMusic_Database.xml",
+      "window_id": "1011",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "975d1eee284e75a4fe7526234283c595f2f38ec7d7c49575fa745b2856707223",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_MyMusic_NowPlaying.xml",
+      "window_id": "1013",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "fa05b8a1582294afe3332b1f30b416d30fbd771c366d392809f2d713cae437aa",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_MyPictures.xml",
+      "window_id": "12",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "0f82505cec24e7e4f7a0dee9ac74c64d011002111dc90569e1fe73b7bf34386e",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_MyPictures_Database.xml",
+      "window_id": "1012",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "99ab3fccb8ba2de342fb1b0eb5d9c85d2ae00a09c5c7d694a73a0a5016699cfe",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_MyPictures_Slideshow.xml",
+      "window_id": "1015",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "10cbe72d440769019032dc3bf38bc523fa26b564ff106c266e0a8b4afa36375a",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_MyVideos.xml",
+      "window_id": "703",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "98f4c51561b3102e93a522e5c7d3ce6c0199a94c3d85a9eea8ad28703c659df7",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_MyVideos_Database.xml",
+      "window_id": "1010",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "e57ab9600b31f33cda8040d3934f757b471690a34e0e3969b5e9cd33e0d1d673",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_MyVideos_OtherSettings.xml",
+      "window_id": "1023",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "c38bb7c6593c9889fe76f36497397f4e66991d907df1f32745699f3080183b5b",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "mp139.settings_tv.xml",
+      "window_id": "700",
+      "original_file": "settings_tv.xml",
+      "original_window_id": "700",
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "6ca95bea687a7f6495f093dd2cf4a5bc41a544000c970e6cd7a89eeec13c6649",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "myextensions2settings.xml",
+      "window_id": "803",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "4df0f38e42d1bf09cb0e9e4145aa6a8c0dbe106ec908e2eb66b605e7cf40af8a",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings.xml",
+      "window_id": "4",
+      "original_file": "settings.xml",
+      "original_window_id": "4",
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "fcf1b2f8ae35def23dc82fd5e2811ecc0c476567009d6f0da29c47e560c1708a",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "settings_BluRay.xml",
+      "window_id": "1024",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [
+        {
+          "tag": "texture",
+          "resource": "MP139\\Blu-ray_regions.png",
+          "visibility": "inherited"
+        }
+      ],
+      "binding_signature": "1aff1873c475a7f9f6480e45452a98138a59a6597d6c38692e1f53a92a7fad64",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_Common_Extensions.xml",
+      "window_id": "1001",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "2be4717c5d6bb026e1c9a75738d58591e5e6b8d37a573062e75b637ee1567870",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_Common_Playlist.xml",
+      "window_id": "1014",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "8f1685758fb478dd636997f42c00857201c9f776c85e6d06f98f4ea8cb3fb964",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_Common_ShareFolders.xml",
+      "window_id": "1000",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "2460933f9f316718afdb2cd5ab3d7688f473dd4dc1ae87be1e0915f31b40f055",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_Display_BackLight.xml",
+      "window_id": "9001",
+      "original_file": "settings_Display_BackLight.xml",
+      "original_window_id": "9001",
+      "changed": false,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "fcc16ce9dd59dcc32ee058cffbd8264509cd00f503224c5d9160909d3e988591",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "settings_Display_DisplayControl.xml",
+      "window_id": "9002",
+      "original_file": "settings_Display_DisplayControl.xml",
+      "original_window_id": "9002",
+      "changed": false,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "38feef4a3645bbb8fc242a4dbefda889ff1fe4ecabf87901826170158c9df272",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "settings_Display_DisplayOptions.xml",
+      "window_id": "9003",
+      "original_file": "settings_Display_DisplayOptions.xml",
+      "original_window_id": "9003",
+      "changed": false,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "9dfb2a703067c5a87387649d6207758ba3bd50658f68d677b4077e7b3dd05f66",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "settings_Display_Equalizer.xml",
+      "window_id": "9004",
+      "original_file": "settings_Display_Equalizer.xml",
+      "original_window_id": "9004",
+      "changed": false,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "d52c9e1ab2e8c95527cd832c245472e4fcb64350b95d97f5a3beee89a65b52e8",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "settings_Display_Keypad.xml",
+      "window_id": "9005",
+      "original_file": "settings_Display_Keypad.xml",
+      "original_window_id": "9005",
+      "changed": false,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "0cada8a2fc7a30059eda3d7bf96ee2af29c6376f73722756cc145bab5a85fd48",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "settings_Display_Main.xml",
+      "window_id": "9000",
+      "original_file": "settings_Display_Main.xml",
+      "original_window_id": "9000",
+      "changed": false,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "428bce8b91e9c7d525914e2d48888c36b3c22c15f284ddb472545db99ba27c59",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "settings_Display_Remote.xml",
+      "window_id": "9006",
+      "original_file": "settings_Display_Remote.xml",
+      "original_window_id": "9006",
+      "changed": false,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "0a75d48170d50b42a198ddfa8fbf09ef964959f1cc0ef2ec114a9a44ad425820",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "settings_dvd.xml",
+      "window_id": "704",
+      "original_file": "settings_dvd.xml",
+      "original_window_id": "704",
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "a694381cd9089a2b7c94259774678908da86568e3571cd4ef83c11b6150f786c",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "settings_general.xml",
+      "window_id": "1016",
+      "original_file": "settings_general.xml",
+      "original_window_id": "705",
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "f45d8dd00a8b251ecb50cce156504778821c8b304ff4183dd8faac5b0cc5eca7",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "settings_General_DynamicRefreshRate.xml",
+      "window_id": "1008",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "0c500bd05c01925b544b435813734e1ee7b58e3164c1660395be2af905f471df",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_General_MP.xml",
+      "window_id": "1018",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "addd3826c778a4c8defc977042ec17bdcef7b5d6fac3e6b311879cff22bd0b05",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_General_Resume.xml",
+      "window_id": "1017",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "8e437dba86888581ab500ecf55e9a1367e2345bb7948565dee6c3b4148509bcc",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_General_Startup.xml",
+      "window_id": "1019",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "ce3b179f9071af5602e5cdbf7b6c9c16de0b3b497872d3af4534a57fd3430fd6",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_General_Volume.xml",
+      "window_id": "1007",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "b560d34c2cad0bc25293d0077dc97cbb1bc917955d15c4abdfa719824756445a",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_GUI.xml",
+      "window_id": "1021",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "d410eac20427fb00aab89421be1d00b7bbbdea07ff194846dac7b0b7bbedf53a",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_GUI_General.xml",
+      "window_id": "1022",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "31d726872d6a66db56794e0349d8bdf61b305fba12b99a653495200a7258de47",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_GUI_OnScreenDisplay.xml",
+      "window_id": "1006",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "f49afffb4add002ee0c6bc2e6dfe63fd772de682366ac420cababda3fedc7484",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_GUI_ScreenSaver.xml",
+      "window_id": "1020",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "11cc100674e90ca1755c7c6988cf3d54df1c84d839462f50faaf7108e1713f4c",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_GUI_ScreenSetup.xml",
+      "window_id": "9",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "00039b438d144e27115d4b54f9083acea98b0f3a4b23cc9d86779262e30c0677",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_GUI_ScrollSpeed.xml",
+      "window_id": "31",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "5ebec8469794baf077a80d1e542cd7cfd8c2003ce4797f0d3b5bc0c2c1de986a",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_GUI_Skin.xml",
+      "window_id": "705",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\basichome_nopluginbg.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\basichome_pluginbg.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\tvguide_10lines.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\radioguide_10lines.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\tvguide_12lines.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\radioguide_12lines.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\tvguide_15lines.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\radioguide_15lines.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\tvguide_18lines.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\radioguide_18lines.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\tvguide_24lines.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\radioguide_24lines.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\basichome_novideofanart.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\basichome_videofanart.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\basichome_music_norandomfanart.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\basichome_music_randomfanart.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\basichome_nomusicplayfanart.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\basichome_musicplayfanart.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\myhomeListview.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\myhomeLargeIconsview.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\myhomeFilmstripview.png",
+          "visibility": "no"
+        },
+        {
+          "tag": "texture",
+          "resource": "MP139\\Settings\\myhomeCoverflowview.png",
+          "visibility": "no"
+        }
+      ],
+      "binding_signature": "0fb92c299fac8ac16d834ae5dfb9d91bec0ab7e2ea24366ab59ae78bbb093eb7",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_GUI_SkipSteps.xml",
+      "window_id": "708",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "5272f3abb7edb6626d4fde9b07cc37bb081d0832f4895f172dd86c020a29526f",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_GUI_Thumbnails.xml",
+      "window_id": "1005",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "2940fb21fdabedbfa589f962ce8664b3db1549020ee2fc437a2b5aa570c61c6f",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_GUI_UICalibration.xml",
+      "window_id": "10",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "88848077dc6bbc1008ee7b0d0182a50ce247caeb1b3f69d18be0fb246b73325d",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_GUI_VideoScreenCalibration.xml",
+      "window_id": "11",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": false,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "ec91add7b50455b81e6517100b76c78ece3d1516c433152da03e6b2d933a1e50",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_MiniDisplay_BackLight.xml",
+      "window_id": "9001",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "60b9912c6aeba5d1da15cb88497d742e9c5d7ed79494d77a3f614efbe1c4ed38",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_MiniDisplay_Control.xml",
+      "window_id": "9002",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "592727e4106417760bfee5044a930e900b1b8831ccf8b89d5c1c374b9e9284b1",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_MiniDisplay_Equalizer.xml",
+      "window_id": "9004",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "e2efd29a8b75ee5ab6db90fde43beed3618ceab17d6ebabfa983041ba55c7dd8",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_MiniDisplay_Keypad.xml",
+      "window_id": "9005",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "d0788dfde8769c0c2d3f0f71ee79b5c58b8b77973d5e4da8cccc6af12fa6a2bc",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_MiniDisplay_Main.xml",
+      "window_id": "9000",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "4d0ed8fffd15a90414018cec796513d94a8f11d358e506c4eaf2219f6a819e92",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_MiniDisplay_Options.xml",
+      "window_id": "9003",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "cd6f9c808864b7c72d92096d49e0bf529b11db411a32c5febe9c5f8595ea1530",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_MiniDisplay_Remote.xml",
+      "window_id": "9006",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "d659cb2fc9b0ebad5a6b48f05ec0b8732cc9762f010b1f647c104484d3215b26",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_movies.xml",
+      "window_id": "703",
+      "original_file": "settings_movies.xml",
+      "original_window_id": "703",
+      "changed": false,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "eea03c492f90e34fdedb2f1f7dde351c1f60fc99cdf49c1b559c9e8667517c5c",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "settings_MyMusic.xml",
+      "window_id": "14",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "b9226db6d27bafc808e6cf5a5bc95968ed0f7924f8ba835aaec492f8c6dc2f8a",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_MyMusic_Database.xml",
+      "window_id": "1011",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "975d1eee284e75a4fe7526234283c595f2f38ec7d7c49575fa745b2856707223",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_MyMusic_NowPlaying.xml",
+      "window_id": "1013",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "fa05b8a1582294afe3332b1f30b416d30fbd771c366d392809f2d713cae437aa",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_MyPictures.xml",
+      "window_id": "12",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "0f82505cec24e7e4f7a0dee9ac74c64d011002111dc90569e1fe73b7bf34386e",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_MyPictures_Database.xml",
+      "window_id": "1012",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "99ab3fccb8ba2de342fb1b0eb5d9c85d2ae00a09c5c7d694a73a0a5016699cfe",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_MyPictures_Slideshow.xml",
+      "window_id": "1015",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "10cbe72d440769019032dc3bf38bc523fa26b564ff106c266e0a8b4afa36375a",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_MyVideos.xml",
+      "window_id": "703",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "98f4c51561b3102e93a522e5c7d3ce6c0199a94c3d85a9eea8ad28703c659df7",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_MyVideos_Database.xml",
+      "window_id": "1010",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "e57ab9600b31f33cda8040d3934f757b471690a34e0e3969b5e9cd33e0d1d673",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_MyVideos_OtherSettings.xml",
+      "window_id": "1023",
+      "original_file": null,
+      "original_window_id": null,
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "c38bb7c6593c9889fe76f36497397f4e66991d907df1f32745699f3080183b5b",
+      "basis": "No namesake historical file; current native functionality restyled with Backdrop assets"
+    },
+    {
+      "file": "settings_recording.xml",
+      "window_id": "701",
+      "original_file": "settings_recording.xml",
+      "original_window_id": "701",
+      "changed": false,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "8c6b14bc04c5db56b16b2be36bef6a6f80944927508985e528fe9d5fd5e3ea8e",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "settings_tv.xml",
+      "window_id": "700",
+      "original_file": "settings_tv.xml",
+      "original_window_id": "700",
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "6ca95bea687a7f6495f093dd2cf4a5bc41a544000c970e6cd7a89eeec13c6649",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "settings_tvEpg.xml",
+      "window_id": "706",
+      "original_file": "settings_tvEpg.xml",
+      "original_window_id": "706",
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "62e1223086fb8447720a5e8fca138500e9c6376f210e829b2cd597c572f5ebc6",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "settings_tvepg_select.xml",
+      "window_id": "707",
+      "original_file": "settings_tvepg_select.xml",
+      "original_window_id": "707",
+      "changed": false,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "3fe5013ba86aff29f81217d0049220e62adbcb35f2dff480cd19960d638a3222",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "settings_tvSort.xml",
+      "window_id": "702",
+      "original_file": "settings_tvSort.xml",
+      "original_window_id": "702",
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "b16fc612ce340d62288867b07796b9c10252fadd946c8460d058836056896ace",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "SettingsGUI.xml",
+      "window_id": "31",
+      "original_file": "SettingsGUI.xml",
+      "original_window_id": "31",
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "7d2174e8d83361e727316eda50f8db0abfcbbc3b16d7fee34dca42049df3d826",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "SettingsMyMusic.xml",
+      "window_id": "14",
+      "original_file": "SettingsMyMusic.xml",
+      "original_window_id": "14",
+      "changed": false,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "ccf1239289cb4d130aca8f19b2e529923e3f88049753eb2b256dd73754dae062",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "SettingsOSD.xml",
+      "window_id": "18",
+      "original_file": "SettingsOSD.xml",
+      "original_window_id": "18",
+      "changed": false,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "ec76aeb22b65d7356d64446616e6f409449a512dc113eabbb806915c1ba81925",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "settingsScreen.xml",
+      "window_id": "9",
+      "original_file": "settingsScreen.xml",
+      "original_window_id": "9",
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "11aa7fa88feba16bb46030295ee7a52f1ecb93c3f3508d6d3d1548461a760842",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "settingsScreenCalibration.xml",
+      "window_id": "11",
+      "original_file": "settingsScreenCalibration.xml",
+      "original_window_id": "11",
+      "changed": false,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "ba4d22b7f9144cfc1725396961aa35c8557f213d30d448c9bce28aa68793d2ed",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "settingsSkipSteps.xml",
+      "window_id": "708",
+      "original_file": "settingsSkipSteps.xml",
+      "original_window_id": "708",
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "561863192275430b4e53d41c859d87c480ccd00a6fef5dc096299b51ce71294c",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "SettingsSlideShow.xml",
+      "window_id": "12",
+      "original_file": "SettingsSlideShow.xml",
+      "original_window_id": "12",
+      "changed": false,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "c0d4296df6b261758b1d88281e663a823068276fde6d13a8ef7144e0fee91ab4",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "settingsUICalibration.xml",
+      "window_id": "10",
+      "original_file": "settingsUICalibration.xml",
+      "original_window_id": "10",
+      "changed": false,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "c03ce9ebd109a102aa3999034c418e42298d42aafafe0eaf3bb7f76683dcd6fc",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "TVCropSettings.xml",
+      "window_id": "3011",
+      "original_file": "TVCropSettings.xml",
+      "original_window_id": "3011",
+      "changed": true,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "12c9ea4e0b37a71ba7808378e41f75af1c0698182159ab8f260110bdbeaa9146",
+      "basis": "Original-name match with current native bindings retained"
+    },
+    {
+      "file": "TVSeries.SkinSettings.xml",
+      "window_id": null,
+      "original_file": "TVSeries.SkinSettings.xml",
+      "original_window_id": null,
+      "changed": false,
+      "native_bindings_preserved": true,
+      "remaining_foreign_resources": [],
+      "binding_signature": "b1b842f5684e434b17dd2b908291ca3bbb87ab9d3e51ed1f666608e119f54fad",
+      "basis": "Original-name match with current native bindings retained"
+    }
+  ],
+  "slideshow": {
+    "source_archive": "352122_slideshow.7z",
+    "sha256": "4ad3561702f24fc7df23b6116c33345dbcbf998438216b4b869e01412a114d6e",
+    "replacement": "Exact tester-supplied file"
+  }
+}

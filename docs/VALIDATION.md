@@ -1,5 +1,13 @@
 # Current validation and historical evidence
 
+BETA5 (3 November 2026): final Settings root/Pictures/Slideshow live review passed; overlapping frames removed and native titles verified. All 110 Settings contracts, 2,444/2,444 package files and 21/21 bundle entries checked. Final EXE VerifyOnly passed x64 and isolated x86 (2/2 architectures). See [build verification](BETA5-BUILD-REPORT.md).
+
+BETA4 feedback follow-up (included in BETA5) (3 November 2026): all 110 Settings native
+binding contracts checked, supplied slideshow adopted, eight Python checks passed
+and native x64 Day/Night probe passed 1,476 assertions for 50 expressions. Scoped
+live Settings navigation and clock review completed. See
+[feedback verification](BETA4-FEEDBACK-FOLLOWUP.md) for final revision and runtime limits.
+
 BETA4 (3 November 2026): 2,443/2,443 package files and 21/21 private bundle
 entries matched. Final single EXE VerifyOnly passed for x64 and x86 (2/2
 architectures), without installation. See [build verification](BETA4-BUILD-REPORT.md).

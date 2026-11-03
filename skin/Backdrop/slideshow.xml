@@ -15,7 +15,7 @@
       <height>138</height>
       <texture>calibration_bar.png</texture>
     </control>
-    <control>
+    <!--<control>
       <description>row 1 label</description>
       <type>label</type>
       <id>10</id>
@@ -25,9 +25,22 @@
       <align>left</align>
       <font>font16</font>
       <textcolor>FFFFFFFF</textcolor>
+    </control>-->
+	<control>
+    <description>row 1 textbox</description>
+    <type>textbox</type>
+    <id>0</id>
+    <posX>186</posX>
+    <posY>102</posY>
+    <width>1313</width>
+    <height>300</height>
+    <label>#selecteditem</label>
+    <font>font16</font>
+    <textcolor>ffffffff</textcolor>
+    <colordiffuse>ffffffff</colordiffuse>
     </control>
     <control>
-      <description>row 2 label</description>
+      <description>row 2 label: itemcount</description>
       <type>label</type>
       <id>11</id>
       <posX>1599</posX>
