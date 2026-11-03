@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
   <id>2014</id>
   <defaultcontrol>6</defaultcontrol>
@@ -32,10 +32,11 @@
       <description>Image Title value</description>
       <type>label</type>
       <id>20</id>
-      <font>font16BC</font>
       <posX>345</posX>
       <posY>150</posY>
-      <font>font18BC</font>
+      <width>1245</width>
+      <height>65</height>
+      <font>font16BC</font>
       <textcolor>ff7FB1E5</textcolor>
       <label>-</label>
     </control>

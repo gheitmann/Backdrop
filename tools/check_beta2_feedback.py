@@ -19,13 +19,15 @@ for name in ('myradioguide.xml', 'mp139.myradioguide.xml'):
 
 film = next(c for c in ET.parse(SKIN / 'common.facade.pictures.xml').getroot().iter('control')
             if c.findtext('type') == 'filmstrip')
-assert film.findtext('showFrame') == 'no', 'Fixed-size plates must not show behind aspect-fitted photographs'
+assert film.findtext('showFrame') == 'yes', 'BETA3 tester requested the previous translucent filmstrip frames'
+assert film.findtext('frame') == 'episode.frame2.png'
+assert film.findtext('frameFocus') == 'episode.frame2.png'
 assert film.findtext('showFolder') == 'no' and film.findtext('keepaspectratio') == 'yes'
-assert film.findtext('onright') == '50'
+assert (film.findtext('onright') or film.findtext('onrigth')) == '50'
 for name in ('RadioPlayingNow.xml', 'mp139.RadioPlayingNow.xml'):
     assert not any(c.findtext('type') == 'button' for c in ET.parse(SKIN / name).getroot().iter('control'))
 for name in ('mymusicgenres.xml', 'mymusicsongs.xml', 'mymusicplaylist.xml'):
     controls = list(ET.parse(SKIN / name).getroot().iter('control'))
     assert not any(c.findtext('description') == 'Now Playing Button Animation' for c in controls)
     assert any(c.findtext('id') == '991899' and c.findtext('hyperlink') == '510' for c in controls)
-print('PASS: classic lower radio-guide geometry, native guide IDs, clean photo filmstrip and omitted radio channel arrows.')
+print('PASS: classic lower radio-guide geometry, native guide IDs, restored photo filmstrip and omitted radio channel arrows.')

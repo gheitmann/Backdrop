@@ -9319,307 +9319,92 @@
               <ZipFileName>Installer{CopyFile}\{e818a99d-6541-4401-aca4-bbda9ae541fd}-subtitles.png</ZipFileName>
               <DestinationFilename>%Skin%\Backdrop\Media\Logos\Misc\subtitles.png</DestinationFilename>
             </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/1080.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{eead4bbd-a0a9-47f3-afd1-b8b33d78e48a}-1080.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\1080.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/1080i.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{50856f8f-ca38-45e8-bb55-799c273cc44c}-1080i.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\1080i.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/1080p.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{ca9d90c3-d791-4b8b-9785-19b4437dcde4}-1080p.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\1080p.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/720.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{528dcb52-f785-4d25-b664-b35ab5dc6976}-720.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\720.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/720i.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{2111472d-1a5c-4ddd-b144-e1a3e2d11f0f}-720i.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\720i.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/720p.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{adc514cf-929b-45b7-9194-7e309d604b0b}-720p.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\720p.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/fullscreen.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{28e782e0-90f2-4f22-a261-157c3640d612}-fullscreen.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\fullscreen.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/HD 1080.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{101832b7-6b4d-4808-a383-6c95efe81455}-HD 1080.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\HD 1080.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/HD 1080I.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{b6c558f1-92c3-4c32-bb71-5dcb19d392c8}-HD 1080I.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\HD 1080I.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/HD 1080P.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{73105952-6adf-4494-a31b-59812893ad4f}-HD 1080P.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\HD 1080P.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/HD 720.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{f5ab8a68-52f9-4fc1-9031-663c4991925d}-HD 720.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\HD 720.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/HD 720I.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{a0f5b07c-ecdc-42a3-bb97-65f3b94034ce}-HD 720I.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\HD 720I.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/HD 720P.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{2295a5de-2bc4-4d4c-93f7-fd35299269bc}-HD 720P.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\HD 720P.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/hd.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{923ca802-d8f2-4e92-8e0d-f29ea6c1a682}-hd.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\hd.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/HDREADY.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{fd180b54-853d-4434-99aa-721ff68853dc}-HDREADY.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\HDREADY.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/HDTV.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{ed5aa2a5-1a40-4a40-8fb0-52e0be408a29}-HDTV.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\HDTV.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/sd.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{9e85ab89-5115-4a90-bf15-74b71c42f028}-sd.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\sd.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/sdtv.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{125d16f2-2a45-4968-882d-3e5b40b5d17b}-sdtv.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\sdtv.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/TrueHD.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{a8c5abfb-990a-4b51-acee-162eb7cda8b2}-TrueHD.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\TrueHD.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/widescreen.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{2fad33ab-43a4-410b-9e68-cb39604a5c9c}-widescreen.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\widescreen.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/20.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{6a2e8f6f-f718-4739-b7bd-a7c8d7d4f5db}-20.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\20.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/AVC.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{faf6997f-f830-47d0-a28a-e913d0ad44a4}-AVC.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\AVC.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/DivX.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{d99764b6-0fc9-4628-b812-ad7f6a52c9f4}-DivX.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\DivX.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/Dx50.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{0a86b8ba-91fa-41a5-a036-640463968827}-Dx50.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\Dx50.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/flv.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{d970509c-0b9b-4721-931e-7d725c265aae}-flv.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\flv.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/h264.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{46368fbd-18f2-42fa-ae1d-41e88e43d9f4}-h264.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\h264.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/mp1v.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{e4aecb75-613b-4eb7-91de-9d58629670e1}-mp1v.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\mp1v.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/mp2v.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{248818c6-887c-4a6a-90c0-0c126a37f05d}-mp2v.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\mp2v.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/mp4v.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{01542483-bdb3-479b-a7f1-57c9ba9b8c22}-mp4v.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\mp4v.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/MPEG VIDEO VERSION 1.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{0f47432b-c9c3-4429-9977-538f56c6f24f}-MPEG VIDEO VERSION 1.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\MPEG VIDEO VERSION 1.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/MPEG VIDEO VERSION 2.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{06452199-36fe-44f5-93ba-29525550dec7}-MPEG VIDEO VERSION 2.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\MPEG VIDEO VERSION 2.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/MPEG VIDEO VERSION 4.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{e08821d3-d690-4ab9-9b07-963e9ffa727e}-MPEG VIDEO VERSION 4.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\MPEG VIDEO VERSION 4.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/ogg.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{8d801241-f1d4-4da0-a7b5-9f148b73adbf}-ogg.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\ogg.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/Quicktime.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{2b37d2b5-b47a-4ace-8a9e-40a8613f104f}-Quicktime.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\Quicktime.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/realvideo.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{73f48579-bee9-4282-9741-32a45e349382}-realvideo.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\realvideo.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/S-MPEG 4 V2.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{e720b43b-9651-4793-8939-417d96b3c231}-S-MPEG 4 V2.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\S-MPEG 4 V2.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/Sorenson 1.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{1f435f08-f994-409e-a5f2-25f5323582f4}-Sorenson 1.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\Sorenson 1.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/vc-1.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{d2685f98-f59c-4e6e-98d2-f5df14fc2fb2}-vc-1.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\vc-1.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/Vorbis.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{16a824c8-51f0-4cf7-bb80-31fa09e11986}-Vorbis.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\Vorbis.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/VP6.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{d5e6d520-cf99-41ff-8971-26b3d5f8ac56}-VP6.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\VP6.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/wmv.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{f21a1ccd-17c2-487f-b2a7-3b6b12868bdd}-wmv.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\wmv.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/WMV2.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{838bc90c-a338-40b7-ba2e-9ff622e726a8}-WMV2.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\WMV2.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-              <Param1 />
-              <UpdateOption>AlwaysOverwrite</UpdateOption>
-              <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/xvid.png</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{c8ca321e-f8ea-4c42-95d9-7d0cb1acfac3}-xvid.png</ZipFileName>
-              <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\xvid.png</DestinationFilename>
-            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/1.33.png</LocalFileName><ZipFileName>Installer{CopyFile}\{562eec62-d6e0-517f-9b11-d6c43b9c47a6}-1.33.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\1.33.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/1.78.png</LocalFileName><ZipFileName>Installer{CopyFile}\{fc27d279-c18d-5d48-8996-548148879db2}-1.78.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\1.78.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/fullscreen.png</LocalFileName><ZipFileName>Installer{CopyFile}\{048c1f5f-1e46-5e97-8439-c3409b645fe5}-fullscreen.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\fullscreen.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/widescreen.png</LocalFileName><ZipFileName>Installer{CopyFile}\{31af4284-7398-5fce-a89d-4662ac2b93e0}-widescreen.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\widescreen.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/20.png</LocalFileName><ZipFileName>Installer{CopyFile}\{7d976024-e2fe-59c9-9c71-db4e0d779b1f}-20.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\20.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/AVC.png</LocalFileName><ZipFileName>Installer{CopyFile}\{e8cda1db-45d9-507d-8667-14720d359f62}-AVC.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\AVC.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/DivX.png</LocalFileName><ZipFileName>Installer{CopyFile}\{102a3a80-b3c6-5a37-a6cd-99c2befee8dd}-DivX.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\DivX.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/Dx50.png</LocalFileName><ZipFileName>Installer{CopyFile}\{3398b053-6daa-5412-ab0c-b62eadf714cb}-Dx50.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\Dx50.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/flv.png</LocalFileName><ZipFileName>Installer{CopyFile}\{430944f4-88d6-543a-ba95-6f423a204c6b}-flv.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\flv.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/h264.png</LocalFileName><ZipFileName>Installer{CopyFile}\{90472dd6-6a38-553c-8f40-c04b884a8d20}-h264.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\h264.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/mp1v.png</LocalFileName><ZipFileName>Installer{CopyFile}\{4cc9b4bb-648f-5277-b660-40ea2fc728ec}-mp1v.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\mp1v.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/mp2v.png</LocalFileName><ZipFileName>Installer{CopyFile}\{0fa1fead-c26f-5494-a919-10b1aa8c4bc5}-mp2v.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\mp2v.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/mp4v.png</LocalFileName><ZipFileName>Installer{CopyFile}\{8acdbbb6-983b-5186-8f1a-bbcc6daa8bae}-mp4v.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\mp4v.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/MPEG VIDEO VERSION 1.png</LocalFileName><ZipFileName>Installer{CopyFile}\{4ded9b3f-c908-56f1-aeb3-4af5e787dd55}-MPEG VIDEO VERSION 1.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\MPEG VIDEO VERSION 1.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/MPEG VIDEO VERSION 2.png</LocalFileName><ZipFileName>Installer{CopyFile}\{55f951fa-9bc8-5fca-9518-d606b30326b6}-MPEG VIDEO VERSION 2.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\MPEG VIDEO VERSION 2.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/MPEG VIDEO VERSION 4.png</LocalFileName><ZipFileName>Installer{CopyFile}\{c3ebf3ea-064f-582f-836f-1e567539294f}-MPEG VIDEO VERSION 4.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\MPEG VIDEO VERSION 4.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/mpg4.png</LocalFileName><ZipFileName>Installer{CopyFile}\{3f25d606-37e7-5892-a98e-2dbad8c6459b}-mpg4.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\mpg4.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/ogg.png</LocalFileName><ZipFileName>Installer{CopyFile}\{88210fac-2a1c-551b-9ff2-5906c3f0845a}-ogg.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\ogg.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/Quicktime.png</LocalFileName><ZipFileName>Installer{CopyFile}\{df744646-377c-5bf0-b7b6-d8b882043ec4}-Quicktime.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\Quicktime.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/realvideo.png</LocalFileName><ZipFileName>Installer{CopyFile}\{fb0fd7f2-22ed-5254-8db5-227e88e08709}-realvideo.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\realvideo.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/vc-1.png</LocalFileName><ZipFileName>Installer{CopyFile}\{66fe81de-7fc0-5e6e-89ba-918b8102a8c9}-vc-1.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\vc-1.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/Vorbis.png</LocalFileName><ZipFileName>Installer{CopyFile}\{26af8719-4c93-5244-a3dd-ebdeb4e50938}-Vorbis.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\Vorbis.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/VP6.png</LocalFileName><ZipFileName>Installer{CopyFile}\{f324b345-984e-5ed0-a76f-26aa9928ed22}-VP6.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\VP6.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/wmv.png</LocalFileName><ZipFileName>Installer{CopyFile}\{ea9de928-c397-5649-a286-6cce4dd81ba4}-wmv.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\wmv.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/WMV2.png</LocalFileName><ZipFileName>Installer{CopyFile}\{a2da5391-d764-5802-872e-163da1141ccf}-WMV2.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\WMV2.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/xvid.png</LocalFileName><ZipFileName>Installer{CopyFile}\{a3c4f6db-40a9-5df5-971a-73a85040f8a8}-xvid.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\xvid.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/1080.png</LocalFileName><ZipFileName>Installer{CopyFile}\{3ad6b70f-ff49-5fc5-9473-c94237471e50}-1080.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\1080.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/1080i.png</LocalFileName><ZipFileName>Installer{CopyFile}\{937e8597-673e-54f8-b293-f45d38f9ad11}-1080i.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\1080i.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/1080p.png</LocalFileName><ZipFileName>Installer{CopyFile}\{35807b0c-c893-5c8b-ba1a-619af4de0f31}-1080p.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\1080p.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/720.png</LocalFileName><ZipFileName>Installer{CopyFile}\{ca03f24d-d162-562e-8b2e-ad8e3ab5d388}-720.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\720.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/720i.png</LocalFileName><ZipFileName>Installer{CopyFile}\{70539140-49eb-58a9-8ae4-f294f58ddd87}-720i.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\720i.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/720p.png</LocalFileName><ZipFileName>Installer{CopyFile}\{e66f48d5-05c9-5037-99cc-29938340bbca}-720p.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\720p.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/HD 1080.png</LocalFileName><ZipFileName>Installer{CopyFile}\{0a832bd0-a325-5733-b3e4-621d48e0c927}-HD 1080.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\HD 1080.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/HD 1080I.png</LocalFileName><ZipFileName>Installer{CopyFile}\{f3d64b69-ab97-51c9-9a55-aea37c3f1f54}-HD 1080I.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\HD 1080I.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/HD 1080P.png</LocalFileName><ZipFileName>Installer{CopyFile}\{0a12c441-81bd-59df-9c16-0a35db87ca0e}-HD 1080P.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\HD 1080P.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/HD 720.png</LocalFileName><ZipFileName>Installer{CopyFile}\{e1b406ca-7ce1-5f13-aa52-380914ce57f2}-HD 720.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\HD 720.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/HD 720I.png</LocalFileName><ZipFileName>Installer{CopyFile}\{3a2dd9cd-f2a6-55dd-b6c6-50040f8dd02e}-HD 720I.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\HD 720I.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/HD 720P.png</LocalFileName><ZipFileName>Installer{CopyFile}\{5076dbcf-b710-5850-8473-9a7fdbcd3673}-HD 720P.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\HD 720P.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/hd.png</LocalFileName><ZipFileName>Installer{CopyFile}\{7b867f06-8c80-53d1-bf1d-b457e8683b22}-hd.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\hd.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/HDREADY.png</LocalFileName><ZipFileName>Installer{CopyFile}\{eb5bd592-43ed-5616-8173-e72c70eeccf1}-HDREADY.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\HDREADY.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/HDTV.png</LocalFileName><ZipFileName>Installer{CopyFile}\{c50176e3-156f-5f2b-87f9-f510bff932a5}-HDTV.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\HDTV.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/sd.png</LocalFileName><ZipFileName>Installer{CopyFile}\{710fa28c-d3d3-55ba-8add-243468a2e054}-sd.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\sd.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/sdtv.png</LocalFileName><ZipFileName>Installer{CopyFile}\{236a63fe-3c5e-5efb-ae55-3c039c070831}-sdtv.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\sdtv.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/TrueHD.png</LocalFileName><ZipFileName>Installer{CopyFile}\{822ecf37-6300-5638-909d-576af132997e}-TrueHD.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\TrueHD.png</DestinationFilename></FileItem>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
               <Param1 />
               <UpdateOption>AlwaysOverwrite</UpdateOption>
@@ -26367,307 +26152,92 @@
         <ZipFileName>Installer{CopyFile}\{e818a99d-6541-4401-aca4-bbda9ae541fd}-subtitles.png</ZipFileName>
         <DestinationFilename>%Skin%\Backdrop\Media\Logos\Misc\subtitles.png</DestinationFilename>
       </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/1080.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{eead4bbd-a0a9-47f3-afd1-b8b33d78e48a}-1080.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\1080.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/1080i.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{50856f8f-ca38-45e8-bb55-799c273cc44c}-1080i.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\1080i.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/1080p.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{ca9d90c3-d791-4b8b-9785-19b4437dcde4}-1080p.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\1080p.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/720.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{528dcb52-f785-4d25-b664-b35ab5dc6976}-720.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\720.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/720i.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{2111472d-1a5c-4ddd-b144-e1a3e2d11f0f}-720i.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\720i.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/720p.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{adc514cf-929b-45b7-9194-7e309d604b0b}-720p.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\720p.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/fullscreen.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{28e782e0-90f2-4f22-a261-157c3640d612}-fullscreen.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\fullscreen.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/HD 1080.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{101832b7-6b4d-4808-a383-6c95efe81455}-HD 1080.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\HD 1080.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/HD 1080I.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{b6c558f1-92c3-4c32-bb71-5dcb19d392c8}-HD 1080I.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\HD 1080I.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/HD 1080P.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{73105952-6adf-4494-a31b-59812893ad4f}-HD 1080P.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\HD 1080P.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/HD 720.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{f5ab8a68-52f9-4fc1-9031-663c4991925d}-HD 720.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\HD 720.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/HD 720I.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{a0f5b07c-ecdc-42a3-bb97-65f3b94034ce}-HD 720I.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\HD 720I.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/HD 720P.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{2295a5de-2bc4-4d4c-93f7-fd35299269bc}-HD 720P.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\HD 720P.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/hd.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{923ca802-d8f2-4e92-8e0d-f29ea6c1a682}-hd.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\hd.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/HDREADY.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{fd180b54-853d-4434-99aa-721ff68853dc}-HDREADY.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\HDREADY.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/HDTV.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{ed5aa2a5-1a40-4a40-8fb0-52e0be408a29}-HDTV.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\HDTV.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/sd.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{9e85ab89-5115-4a90-bf15-74b71c42f028}-sd.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\sd.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/sdtv.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{125d16f2-2a45-4968-882d-3e5b40b5d17b}-sdtv.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\sdtv.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/TrueHD.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{a8c5abfb-990a-4b51-acee-162eb7cda8b2}-TrueHD.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\TrueHD.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/widescreen.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{2fad33ab-43a4-410b-9e68-cb39604a5c9c}-widescreen.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\widescreen.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/20.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{6a2e8f6f-f718-4739-b7bd-a7c8d7d4f5db}-20.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\20.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/AVC.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{faf6997f-f830-47d0-a28a-e913d0ad44a4}-AVC.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\AVC.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/DivX.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{d99764b6-0fc9-4628-b812-ad7f6a52c9f4}-DivX.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\DivX.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/Dx50.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{0a86b8ba-91fa-41a5-a036-640463968827}-Dx50.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\Dx50.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/flv.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{d970509c-0b9b-4721-931e-7d725c265aae}-flv.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\flv.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/h264.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{46368fbd-18f2-42fa-ae1d-41e88e43d9f4}-h264.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\h264.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/mp1v.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{e4aecb75-613b-4eb7-91de-9d58629670e1}-mp1v.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\mp1v.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/mp2v.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{248818c6-887c-4a6a-90c0-0c126a37f05d}-mp2v.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\mp2v.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/mp4v.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{01542483-bdb3-479b-a7f1-57c9ba9b8c22}-mp4v.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\mp4v.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/MPEG VIDEO VERSION 1.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{0f47432b-c9c3-4429-9977-538f56c6f24f}-MPEG VIDEO VERSION 1.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\MPEG VIDEO VERSION 1.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/MPEG VIDEO VERSION 2.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{06452199-36fe-44f5-93ba-29525550dec7}-MPEG VIDEO VERSION 2.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\MPEG VIDEO VERSION 2.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/MPEG VIDEO VERSION 4.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{e08821d3-d690-4ab9-9b07-963e9ffa727e}-MPEG VIDEO VERSION 4.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\MPEG VIDEO VERSION 4.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/ogg.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{8d801241-f1d4-4da0-a7b5-9f148b73adbf}-ogg.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\ogg.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/Quicktime.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{2b37d2b5-b47a-4ace-8a9e-40a8613f104f}-Quicktime.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\Quicktime.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/realvideo.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{73f48579-bee9-4282-9741-32a45e349382}-realvideo.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\realvideo.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/S-MPEG 4 V2.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{e720b43b-9651-4793-8939-417d96b3c231}-S-MPEG 4 V2.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\S-MPEG 4 V2.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/Sorenson 1.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{1f435f08-f994-409e-a5f2-25f5323582f4}-Sorenson 1.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\Sorenson 1.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/vc-1.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{d2685f98-f59c-4e6e-98d2-f5df14fc2fb2}-vc-1.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\vc-1.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/Vorbis.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{16a824c8-51f0-4cf7-bb80-31fa09e11986}-Vorbis.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\Vorbis.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/VP6.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{d5e6d520-cf99-41ff-8971-26b3d5f8ac56}-VP6.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\VP6.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/wmv.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{f21a1ccd-17c2-487f-b2a7-3b6b12868bdd}-wmv.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\wmv.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/WMV2.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{838bc90c-a338-40b7-ba2e-9ff622e726a8}-WMV2.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\WMV2.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
-        <Param1 />
-        <UpdateOption>AlwaysOverwrite</UpdateOption>
-        <LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/xvid.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{c8ca321e-f8ea-4c42-95d9-7d0cb1acfac3}-xvid.png</ZipFileName>
-        <DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\xvid.png</DestinationFilename>
-      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/1.33.png</LocalFileName><ZipFileName>Installer{CopyFile}\{562eec62-d6e0-517f-9b11-d6c43b9c47a6}-1.33.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\1.33.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/1.78.png</LocalFileName><ZipFileName>Installer{CopyFile}\{fc27d279-c18d-5d48-8996-548148879db2}-1.78.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\1.78.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/fullscreen.png</LocalFileName><ZipFileName>Installer{CopyFile}\{048c1f5f-1e46-5e97-8439-c3409b645fe5}-fullscreen.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\fullscreen.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoAspectRatio/widescreen.png</LocalFileName><ZipFileName>Installer{CopyFile}\{31af4284-7398-5fce-a89d-4662ac2b93e0}-widescreen.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoAspectRatio\widescreen.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/20.png</LocalFileName><ZipFileName>Installer{CopyFile}\{7d976024-e2fe-59c9-9c71-db4e0d779b1f}-20.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\20.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/AVC.png</LocalFileName><ZipFileName>Installer{CopyFile}\{e8cda1db-45d9-507d-8667-14720d359f62}-AVC.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\AVC.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/DivX.png</LocalFileName><ZipFileName>Installer{CopyFile}\{102a3a80-b3c6-5a37-a6cd-99c2befee8dd}-DivX.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\DivX.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/Dx50.png</LocalFileName><ZipFileName>Installer{CopyFile}\{3398b053-6daa-5412-ab0c-b62eadf714cb}-Dx50.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\Dx50.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/flv.png</LocalFileName><ZipFileName>Installer{CopyFile}\{430944f4-88d6-543a-ba95-6f423a204c6b}-flv.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\flv.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/h264.png</LocalFileName><ZipFileName>Installer{CopyFile}\{90472dd6-6a38-553c-8f40-c04b884a8d20}-h264.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\h264.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/mp1v.png</LocalFileName><ZipFileName>Installer{CopyFile}\{4cc9b4bb-648f-5277-b660-40ea2fc728ec}-mp1v.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\mp1v.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/mp2v.png</LocalFileName><ZipFileName>Installer{CopyFile}\{0fa1fead-c26f-5494-a919-10b1aa8c4bc5}-mp2v.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\mp2v.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/mp4v.png</LocalFileName><ZipFileName>Installer{CopyFile}\{8acdbbb6-983b-5186-8f1a-bbcc6daa8bae}-mp4v.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\mp4v.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/MPEG VIDEO VERSION 1.png</LocalFileName><ZipFileName>Installer{CopyFile}\{4ded9b3f-c908-56f1-aeb3-4af5e787dd55}-MPEG VIDEO VERSION 1.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\MPEG VIDEO VERSION 1.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/MPEG VIDEO VERSION 2.png</LocalFileName><ZipFileName>Installer{CopyFile}\{55f951fa-9bc8-5fca-9518-d606b30326b6}-MPEG VIDEO VERSION 2.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\MPEG VIDEO VERSION 2.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/MPEG VIDEO VERSION 4.png</LocalFileName><ZipFileName>Installer{CopyFile}\{c3ebf3ea-064f-582f-836f-1e567539294f}-MPEG VIDEO VERSION 4.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\MPEG VIDEO VERSION 4.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/mpg4.png</LocalFileName><ZipFileName>Installer{CopyFile}\{3f25d606-37e7-5892-a98e-2dbad8c6459b}-mpg4.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\mpg4.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/ogg.png</LocalFileName><ZipFileName>Installer{CopyFile}\{88210fac-2a1c-551b-9ff2-5906c3f0845a}-ogg.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\ogg.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/Quicktime.png</LocalFileName><ZipFileName>Installer{CopyFile}\{df744646-377c-5bf0-b7b6-d8b882043ec4}-Quicktime.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\Quicktime.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/realvideo.png</LocalFileName><ZipFileName>Installer{CopyFile}\{fb0fd7f2-22ed-5254-8db5-227e88e08709}-realvideo.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\realvideo.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/vc-1.png</LocalFileName><ZipFileName>Installer{CopyFile}\{66fe81de-7fc0-5e6e-89ba-918b8102a8c9}-vc-1.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\vc-1.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/Vorbis.png</LocalFileName><ZipFileName>Installer{CopyFile}\{26af8719-4c93-5244-a3dd-ebdeb4e50938}-Vorbis.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\Vorbis.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/VP6.png</LocalFileName><ZipFileName>Installer{CopyFile}\{f324b345-984e-5ed0-a76f-26aa9928ed22}-VP6.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\VP6.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/wmv.png</LocalFileName><ZipFileName>Installer{CopyFile}\{ea9de928-c397-5649-a286-6cce4dd81ba4}-wmv.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\wmv.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/WMV2.png</LocalFileName><ZipFileName>Installer{CopyFile}\{a2da5391-d764-5802-872e-163da1141ccf}-WMV2.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\WMV2.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoCodecs/xvid.png</LocalFileName><ZipFileName>Installer{CopyFile}\{a3c4f6db-40a9-5df5-971a-73a85040f8a8}-xvid.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoCodecs\xvid.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/1080.png</LocalFileName><ZipFileName>Installer{CopyFile}\{3ad6b70f-ff49-5fc5-9473-c94237471e50}-1080.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\1080.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/1080i.png</LocalFileName><ZipFileName>Installer{CopyFile}\{937e8597-673e-54f8-b293-f45d38f9ad11}-1080i.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\1080i.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/1080p.png</LocalFileName><ZipFileName>Installer{CopyFile}\{35807b0c-c893-5c8b-ba1a-619af4de0f31}-1080p.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\1080p.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/720.png</LocalFileName><ZipFileName>Installer{CopyFile}\{ca03f24d-d162-562e-8b2e-ad8e3ab5d388}-720.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\720.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/720i.png</LocalFileName><ZipFileName>Installer{CopyFile}\{70539140-49eb-58a9-8ae4-f294f58ddd87}-720i.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\720i.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/720p.png</LocalFileName><ZipFileName>Installer{CopyFile}\{e66f48d5-05c9-5037-99cc-29938340bbca}-720p.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\720p.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/HD 1080.png</LocalFileName><ZipFileName>Installer{CopyFile}\{0a832bd0-a325-5733-b3e4-621d48e0c927}-HD 1080.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\HD 1080.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/HD 1080I.png</LocalFileName><ZipFileName>Installer{CopyFile}\{f3d64b69-ab97-51c9-9a55-aea37c3f1f54}-HD 1080I.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\HD 1080I.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/HD 1080P.png</LocalFileName><ZipFileName>Installer{CopyFile}\{0a12c441-81bd-59df-9c16-0a35db87ca0e}-HD 1080P.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\HD 1080P.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/HD 720.png</LocalFileName><ZipFileName>Installer{CopyFile}\{e1b406ca-7ce1-5f13-aa52-380914ce57f2}-HD 720.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\HD 720.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/HD 720I.png</LocalFileName><ZipFileName>Installer{CopyFile}\{3a2dd9cd-f2a6-55dd-b6c6-50040f8dd02e}-HD 720I.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\HD 720I.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/HD 720P.png</LocalFileName><ZipFileName>Installer{CopyFile}\{5076dbcf-b710-5850-8473-9a7fdbcd3673}-HD 720P.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\HD 720P.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/hd.png</LocalFileName><ZipFileName>Installer{CopyFile}\{7b867f06-8c80-53d1-bf1d-b457e8683b22}-hd.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\hd.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/HDREADY.png</LocalFileName><ZipFileName>Installer{CopyFile}\{eb5bd592-43ed-5616-8173-e72c70eeccf1}-HDREADY.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\HDREADY.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/HDTV.png</LocalFileName><ZipFileName>Installer{CopyFile}\{c50176e3-156f-5f2b-87f9-f510bff932a5}-HDTV.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\HDTV.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/sd.png</LocalFileName><ZipFileName>Installer{CopyFile}\{710fa28c-d3d3-55ba-8add-243468a2e054}-sd.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\sd.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/sdtv.png</LocalFileName><ZipFileName>Installer{CopyFile}\{236a63fe-3c5e-5efb-ae55-3c039c070831}-sdtv.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\sdtv.png</DestinationFilename></FileItem>
+<FileItem InstallType="CopyFile" SystemFile="false" Modified="true"><Param1 /><UpdateOption>AlwaysOverwrite</UpdateOption><LocalFileName>skin/Backdrop/Media/Logos/VideoResolution/TrueHD.png</LocalFileName><ZipFileName>Installer{CopyFile}\{822ecf37-6300-5638-909d-576af132997e}-TrueHD.png</ZipFileName><DestinationFilename>%Skin%\Backdrop\Media\Logos\VideoResolution\TrueHD.png</DestinationFilename></FileItem>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>

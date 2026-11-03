@@ -549,7 +549,7 @@
       <width>80</width>
       <height>40</height>
       <colordiffuse>FF000000</colordiffuse>
-      <texture>Logos\VideoAspectRatio\#MovingPictures.LocalMedia.videoresolution.png</texture>
+      <texture>Logos\VideoResolution\#MovingPictures.LocalMedia.videoresolution.png</texture>
       <animation effect="fade" start="0" end="100" time="350" delay="300" reversible="true">visible</animation>
       <animation effect="fade" start="100" end="0" time="200" reversible="true">hidden</animation>
       <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>

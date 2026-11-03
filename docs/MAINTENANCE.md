@@ -4,9 +4,13 @@ Use this repository as the versioned source for future Backdrop changes. Keep re
 
 ## Start every update here
 
-Unreleased BETA2 feedback follow-up: read `BETA2-FEEDBACK-FOLLOWUP.md`.
+Latest BETA3 tester corrections: read `BETA3-FEEDBACK-FOLLOWUP.md`. Restore the
+exact BETA2 Photos facade with its translucent frames; the tester explicitly
+rejected their removal. Keep resolution logos separate from aspect-ratio logos.
+
+BETA2 feedback follow-up (included in BETA3): read `BETA2-FEEDBACK-FOLLOWUP.md`.
 The active radio guide now shares the lower TV Guide geometry. Keep Photos
-filmstrip frame plates disabled, the repaired four lighting masters, and the
+filmstrip frames restored per the later feedback, the repaired four lighting masters, and the
 requested omission of Radio Now Playing channel arrows.
 
 Beta 1 source/local follow-up: `BETA1-FEEDBACK-FOLLOWUP.md` and the supplied

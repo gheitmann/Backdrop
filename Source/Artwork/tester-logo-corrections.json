@@ -1,0 +1,315 @@
+{
+  "source_archive": "352096_Korrigierte_Dateien_und_Ordner.7z",
+  "source_sha256": "76d1ba1ce608c4ea62a2a6f5b1d9d06863d25d619523304bd6921d35a0a88f27",
+  "purpose": "Tester-supplied MovingPictures codec, aspect ratio and resolution categories; supersedes the previous misfiled logo inventory.",
+  "files": {
+    "Media/Logos/VideoAspectRatio/1.33.png": {
+      "sha256": "106ce51bffd6b0c4341f80d73b80f46819d311f08ee13195cb316fa905480dfe",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoAspectRatio/1.78.png": {
+      "sha256": "14b819e8088a544d0f50eee379ea13a2766db255f5203d8d304b26a38cdada45",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoAspectRatio/fullscreen.png": {
+      "sha256": "747af9f2581878954edd5e8437f23a64bceb5db8c4c9e7db4cd60f93c82b7eef",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoAspectRatio/widescreen.png": {
+      "sha256": "35a1e85033e50fc9ebd55d688c233d77eaa516699251a69ef2faa55ba686b0ae",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoCodecs/20.png": {
+      "sha256": "811d66ee952a0e74d5aa46522049f3cdbd0e3bcabf4b5f8a9be3567ef11e1928",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoCodecs/AVC.png": {
+      "sha256": "5ba13bbd5a104f549a0f9f3878c403a3766c6f1bd0ab996b6b091d6f6f38e9b3",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoCodecs/DivX.png": {
+      "sha256": "4f6bc29f84be0b3237b0afa41ab37b509840d6ad8ac03fc5627807e56dc31149",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoCodecs/Dx50.png": {
+      "sha256": "5fd38536ca3b2549417b24580f084123b74b1505da3ba9af585da525577d98be",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoCodecs/flv.png": {
+      "sha256": "bb09449893a0e4fc2ee4808784c6ec5c89a5535ef8ff663c1353dbc8bca37f20",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoCodecs/h264.png": {
+      "sha256": "c9106f7badefef9307820be1599c58827998ba89364bc596f58575d3ea17a6d2",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoCodecs/mp1v.png": {
+      "sha256": "8aa05c6dfcd600601385cb766a742d4a61c89fe50d10e0213e06657498e6e77f",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoCodecs/mp2v.png": {
+      "sha256": "0142b3f7d6ce1ea9779a2a6c68c5571ccd9d8cdb37e62823e3d27e565336e8f9",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoCodecs/mp4v.png": {
+      "sha256": "3c8a11fcb71ec564347b41ae45eddf959098948b3b913934e77f59c09d78a646",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoCodecs/MPEG VIDEO VERSION 1.png": {
+      "sha256": "8aa05c6dfcd600601385cb766a742d4a61c89fe50d10e0213e06657498e6e77f",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoCodecs/MPEG VIDEO VERSION 2.png": {
+      "sha256": "0142b3f7d6ce1ea9779a2a6c68c5571ccd9d8cdb37e62823e3d27e565336e8f9",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoCodecs/MPEG VIDEO VERSION 4.png": {
+      "sha256": "3c8a11fcb71ec564347b41ae45eddf959098948b3b913934e77f59c09d78a646",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoCodecs/mpg4.png": {
+      "sha256": "1d57eac0612db620d92eb55d293d1bedefa68cc02e3251ba02f4f40ec8f6c08f",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoCodecs/ogg.png": {
+      "sha256": "89266bd7d3106847a6864c6021268b89fad3529a53dd245634bb4863254fa1be",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoCodecs/Quicktime.png": {
+      "sha256": "811d66ee952a0e74d5aa46522049f3cdbd0e3bcabf4b5f8a9be3567ef11e1928",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoCodecs/realvideo.png": {
+      "sha256": "663a5c2863d815f76513f689bffaab9f691494c756890f4b3c6766ea9fb0f4b3",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoCodecs/vc-1.png": {
+      "sha256": "269f0fefa081a1494fdec86a876d8c0c3a6bf61bdde9ef33a663c1ef74730c0c",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoCodecs/Vorbis.png": {
+      "sha256": "89266bd7d3106847a6864c6021268b89fad3529a53dd245634bb4863254fa1be",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoCodecs/VP6.png": {
+      "sha256": "324b83cf36e157ca04fa100376b6151ef61cc320b6a700649ca137f80960279e",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoCodecs/wmv.png": {
+      "sha256": "70ff918e3aef6c29c49b0990c3082afd501c930491964427587c695c6c8d55c2",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoCodecs/WMV2.png": {
+      "sha256": "70ff918e3aef6c29c49b0990c3082afd501c930491964427587c695c6c8d55c2",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoCodecs/xvid.png": {
+      "sha256": "ad65307760775fc3ad114e967216bd62326ee1a464d43c87dbcf5956271132af",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoResolution/1080.png": {
+      "sha256": "295860c962ea510256782b7a2fc8e4a0e7f99b624782b60dc219bc279c73d3c7",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoResolution/1080i.png": {
+      "sha256": "ed66c528c9ce75ac3430d03bfaf7d0c38c81347fa492f8bd6d4e542736753fda",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoResolution/1080p.png": {
+      "sha256": "aec23fadf25909cb8fed4eae8a3a950b3784e76325c33de14f1516c7e6882c30",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoResolution/720.png": {
+      "sha256": "ef2a60a5b0ba6ed41dd1b6e92f49aa75add31394697a76c10b3946056747eace",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoResolution/720i.png": {
+      "sha256": "2ab37039c3fe8f54cb6f8eb9fa9d5a74f73ab30a4e60a931b40638b5c06fa2e2",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoResolution/720p.png": {
+      "sha256": "651b6c534baeb334d72dcb8cc013ed439874ac69135c1fbc2b5b2c02fb2174e1",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoResolution/HD 1080.png": {
+      "sha256": "15412a5b719dd7dc33b3a4d8c1fcabbdb6aef1c30c3feeaaa0b7591d84444384",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoResolution/HD 1080I.png": {
+      "sha256": "ed66c528c9ce75ac3430d03bfaf7d0c38c81347fa492f8bd6d4e542736753fda",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoResolution/HD 1080P.png": {
+      "sha256": "d7adfe97df4646580af6f65833ffd59d25fe4f6ed9be5c50e2b97ba844e8a442",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoResolution/HD 720.png": {
+      "sha256": "ef2a60a5b0ba6ed41dd1b6e92f49aa75add31394697a76c10b3946056747eace",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoResolution/HD 720I.png": {
+      "sha256": "2ab37039c3fe8f54cb6f8eb9fa9d5a74f73ab30a4e60a931b40638b5c06fa2e2",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoResolution/HD 720P.png": {
+      "sha256": "775404f7eedae4642e14f789e6072707d661049748655d8bba9a07fc126fd9f0",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoResolution/hd.png": {
+      "sha256": "5712ae4003cd84d584615641530e21c7ba84c942d27fae63960229c353ae9e32",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoResolution/HDREADY.png": {
+      "sha256": "bd34d3154be640d9d4acb3e349408d6231c93a5bd1306cd630a0ea96cd70038e",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoResolution/HDTV.png": {
+      "sha256": "5712ae4003cd84d584615641530e21c7ba84c942d27fae63960229c353ae9e32",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoResolution/sd.png": {
+      "sha256": "1f1cbd79146d882b5d53d1b72b1a1522036042678aa4ed6d729d991fcc098ac7",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoResolution/sdtv.png": {
+      "sha256": "1f1cbd79146d882b5d53d1b72b1a1522036042678aa4ed6d729d991fcc098ac7",
+      "dimensions": [
+        120,
+        60
+      ]
+    },
+    "Media/Logos/VideoResolution/TrueHD.png": {
+      "sha256": "295860c962ea510256782b7a2fc8e4a0e7f99b624782b60dc219bc279c73d3c7",
+      "dimensions": [
+        120,
+        60
+      ]
+    }
+  }
+}
