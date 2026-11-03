@@ -1,6 +1,10 @@
 # Current validation and historical evidence
 
-Unreleased BETA3 tester follow-up (3 November 2026): previous Photos filmstrip
+BETA4 (3 November 2026): 2,443/2,443 package files and 21/21 private bundle
+entries matched. Final single EXE VerifyOnly passed for x64 and x86 (2/2
+architectures), without installation. See [build verification](BETA4-BUILD-REPORT.md).
+
+BETA3 tester follow-up (3 November 2026; included in BETA4): previous Photos filmstrip
 restored, supplied MovingPictures XML/logo categories adopted and slideshow
 title bounded without marquee. Seven static commands passed; 44/44 logos
 decoded and matched the archive. See [feedback details](BETA3-FEEDBACK-FOLLOWUP.md).

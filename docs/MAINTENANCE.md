@@ -4,7 +4,8 @@ Use this repository as the versioned source for future Backdrop changes. Keep re
 
 ## Start every update here
 
-Latest BETA3 tester corrections: read `BETA3-FEEDBACK-FOLLOWUP.md`. Restore the
+Latest release BETA4 includes the BETA3 tester corrections: read
+`BETA4-BUILD-REPORT.md` and `BETA3-FEEDBACK-FOLLOWUP.md`. Restore the
 exact BETA2 Photos facade with its translucent frames; the tester explicitly
 rejected their removal. Keep resolution logos separate from aspect-ratio logos.
 
