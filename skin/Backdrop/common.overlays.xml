@@ -260,7 +260,7 @@ same location everywhere
       <width>359</width>
       <height>197</height>
       <textureFocus></textureFocus>
-      <visible>[Player.HasVideo|string.contains(#Play.Current.File,tsbuffer)]+![facadeview.smallicons|facadeview.largeicons]+!control.isvisible(51)</visible>
+      <visible>[Player.HasVideo|string.contains(#Play.Current.File,tsbuffer)]+[window.isactive(35)|[![facadeview.smallicons|facadeview.largeicons]+!control.isvisible(51)]]</visible>
     </control>
     <control>
       <id>0</id>

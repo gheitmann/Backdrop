@@ -5999,7 +5999,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <description>Latest Label</description>");
                 rawXML.AppendLine("        <type>fadelabel</type>");
                 rawXML.AppendLine("        <id>0</id>");
-                rawXML.AppendLine("        <posX>1654</posX>");
+                rawXML.AppendLine("        <posX>1624</posX>");
                 rawXML.AppendLine("        <posY>970</posY>");
                 rawXML.AppendLine("        <width>400</width>");
                 rawXML.AppendLine("        <height>40</height>");
@@ -6011,7 +6011,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <shadowAngle>45</shadowAngle>");
                 rawXML.AppendLine("        <shadowDistance>1</shadowDistance>");
                 rawXML.AppendLine("        <shadowColor>ff333333</shadowColor>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" start=\"90\" end=\"90\" center=\"1654,970\" time=\"0\" condition=\"true\">Conditional</animation>");
+                rawXML.AppendLine("        <animation effect=\"rotate\" start=\"90\" end=\"90\" center=\"1624,970\" time=\"0\" condition=\"true\">Conditional</animation>");
                 rawXML.AppendLine("        <animation effect=\"slide\" start=\"0,450\" end=\"0,0\" tween=\"quadratic\" easing=\"in\" time=\"350\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"slide\" start=\"0,0\" end=\"0,450\" tween=\"quadratic\" easing=\"in\" time=\"350\">Hidden</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"0\" end=\"100\" time=\"350\">Visible</animation>");

@@ -68,7 +68,7 @@ weather = next(c for c in controls('common.time.xml') if c.findtext('description
 for value in ('temp', 'condition'):
     assert '!string.equals(#infoservice.weather.today.' + value + ',)' in weather.findtext('visible')
 
-assert progress_count == 15, progress_count
+assert progress_count == 19, progress_count
 preview = next(c for c in controls('common.overlays.xml') if c.findtext('type') == 'videowindow')
 assert '[window.isactive(35)|[' in preview.findtext('visible')
 print(f'PASS: hidden legacy Compress binding, {progress_count} co-located playback tracks, recording viewport, empty-weather guard and Home preview override.')
