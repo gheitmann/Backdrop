@@ -330,7 +330,7 @@
         <width>600</width>
         <label>#(L(300145)):</label>
         <font>font12</font>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -369,7 +369,7 @@
         <width>600</width>
         <label>300149</label>
         <font>font12</font>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -399,7 +399,7 @@
         <width>400</width>
         <label>169</label>
         <font>font12</font>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -429,7 +429,7 @@
         <width>400</width>
         <label>300146</label>
         <font>font12</font>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -459,7 +459,7 @@
         <width>400</width>
         <label>300147</label>
         <font>font12</font>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -489,7 +489,7 @@
         <width>400</width>
         <label>300148</label>
         <font>font12</font>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -519,7 +519,7 @@
         <width>200</width>
         <label>249</label>
         <font>font12</font>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -605,7 +605,7 @@
         <width>250</width>
         <label>300152</label>
         <font>font12</font>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -691,7 +691,7 @@
         <width>250</width>
         <label>300155</label>
         <font>font12</font>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -789,7 +789,7 @@
         <width>400</width>
         <label>300159</label>
         <font>font12</font>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>

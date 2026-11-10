@@ -470,7 +470,7 @@
         <width>900</width>
         <label>300094</label>
         <font>font12</font>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <visible>control.isvisible(6)</visible>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>

@@ -328,7 +328,7 @@
         <posX>686</posX>
         <posY>321</posY>
         <label>300175</label>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <font>font12</font>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
@@ -380,7 +380,7 @@
         <posX>686</posX>
         <posY>501</posY>
         <label>300180</label>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <font>font12</font>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>

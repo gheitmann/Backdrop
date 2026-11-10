@@ -21,7 +21,7 @@
       <posY>0</posY>
       <width>1920</width>
       <height>1080</height>
-      <texture>#(iif(string.equals(#DayNight.Period,'morning'),'Modern/Morning/cinema.png',iif(string.equals(#DayNight.Period,'noon'),'Modern/Noon/cinema.png',iif(string.equals(#DayNight.Period,'day'),'Modern/Day/cinema.png','Modern/home.jpg'))))</texture>
+      <texture>#(iif(string.equals(#DayNight.Period,'morning'),'Modern/Morning/tv.png',iif(string.equals(#DayNight.Period,'noon'),'Modern/Noon/tv.png',iif(string.equals(#DayNight.Period,'day'),'Modern/Day/tv.png','Modern/tv.jpg'))))</texture>
       <colordiffuse>ff505050</colordiffuse>
     </control>
     <control>
@@ -406,7 +406,7 @@
       <shadowDistance>0</shadowDistance>
       <shadowColor/>
     </control>
-    <control>
+     <control>
       <description>dummy (visible when there is a next track)</description>
       <type>label</type>
       <id>3338</id>
@@ -638,7 +638,7 @@
       <width>359</width>
       <height>197</height>
       <textureFocus>-</textureFocus>
-      <visible>Player.HasVideo+!control.isvisible(3337)+![facadeview.smallicons|facadeview.largeicons]</visible>
+      <visible>[Player.HasVideo|string.contains(#Play.Current.File,tsbuffer)]+![facadeview.smallicons|facadeview.largeicons]</visible>
     </control>
     <control>
       <id>0</id>
@@ -649,7 +649,7 @@
       <height>278</height>
       <shouldCache>true</shouldCache>
       <texture>lcd_flat.png</texture>
-      <visible>Player.HasVideo+!control.isvisible(3337)+![facadeview.smallicons|facadeview.largeicons]</visible>
+      <visible>Player.HasVideo+!string.contains(#Play.Current.File,tsbuffer)+![facadeview.smallicons|facadeview.largeicons]</visible>
     </control>
     <control>
       <description>title label</description>
@@ -666,7 +666,7 @@
       <shadowDistance>2</shadowDistance>
       <shadowColor>ff191919</shadowColor>
       <font>font13</font>
-      <visible>Player.HasVideo+!control.isvisible(3337)+![facadeview.smallicons|facadeview.largeicons]</visible>
+      <visible>Player.HasVideo+!string.contains(#Play.Current.File,tsbuffer)+![facadeview.smallicons|facadeview.largeicons]</visible>
     </control>
 
     <control>
@@ -677,7 +677,7 @@
       <lefttexture>-</lefttexture>
       <midtexture>progressbar_mid.png</midtexture>
       <righttexture>-</righttexture>
-      <visible>Player.HasVideo+!control.isvisible(3337)+![facadeview.smallicons|facadeview.largeicons]</visible>
+      <visible>Player.HasVideo+!string.contains(#Play.Current.File,tsbuffer)+![facadeview.smallicons|facadeview.largeicons]</visible>
       <posX>1279</posX>
       <posY>297</posY>
       <width>234</width>
@@ -704,7 +704,75 @@
       <shadowDistance>2</shadowDistance>
       <shadowColor>ff191919</shadowColor>
       <font>font13</font>
-      <visible>Player.HasVideo+!control.isvisible(3337)+![facadeview.smallicons|facadeview.largeicons]</visible>
+      <visible>Player.HasVideo+!string.contains(#Play.Current.File,tsbuffer)+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+	<!--TV**********************************************************************************-->
+	
+    <control>
+      <id>0</id>
+      <type>image</type>
+      <posX>1490</posX>
+      <posY>120</posY>
+      <width>450</width>
+      <height>278</height>
+      <shouldCache>true</shouldCache>
+      <texture>lcd_flat.png</texture>
+      <visible>string.contains(#Play.Current.File,tsbuffer)+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+    <control>
+      <description>title label</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <width>900</width>
+      <height>60</height>
+      <posX>1515</posX>
+      <posY>252</posY>
+      <label>#TV.Guide.ChannelName</label>
+      <align>right</align>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <font>font13</font>
+      <visible>string.contains(#Play.Current.File,tsbuffer)+![facadeview.smallicons|facadeview.largeicons]</visible>
+    </control>
+
+    <control>
+      <description>progress bar</description>
+      <type>progress</type>
+      <id>0</id>
+      <label>#TV.View.Percentage</label>
+      <lefttexture>-</lefttexture>
+      <midtexture>progressbar_mid.png</midtexture>
+      <righttexture>-</righttexture>
+      <visible>string.contains(#Play.Current.File,tsbuffer)+![facadeview.smallicons|facadeview.largeicons]</visible>
+      <posX>1279</posX>
+      <posY>297</posY>
+      <width>234</width>
+      <height>15</height>
+      <texturebg>progressback.png</texturebg> 
+      <onlymidtexture>yes</onlymidtexture>
+      <midwidth>234</midwidth>
+      <midheight>15</midheight>
+      <midoffsetX>0</midoffsetX>
+      <midoffsetY>0</midoffsetY>
+    </control>
+    <control>
+      <description>start time / remaining time</description>
+      <type>label</type>
+      <id>0</id>
+      <width>270</width>
+      <height>60</height>
+      <posX>1515</posX>
+      <posY>300</posY>
+      <align>right</align>
+      <label>#TV.View.start / #TV.View.stop</label> 
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff191919</shadowColor>
+      <font>font13</font>
+      <visible>string.contains(#Play.Current.File,tsbuffer)+![facadeview.smallicons|facadeview.largeicons]</visible>
     </control>
   </controls>
 </window>

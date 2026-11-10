@@ -456,7 +456,7 @@
         <width>500</width>
         <textureFocus>listbg_fo.png</textureFocus>
         <label>300071</label>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <font>font12</font>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
@@ -544,7 +544,7 @@
         <posY>334</posY>
         <width>500</width>
         <label>300072</label>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <font>font12</font>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
@@ -565,7 +565,7 @@
           <width>245</width>
           <label>853</label>
           <font>font12</font>
-          <textcolor>dodgerblue</textcolor>
+          <textcolor>ff5597DC</textcolor>
           <posX>213</posX>
           <posY>112</posY>
           <disabledcolor>90ffffff</disabledcolor>
@@ -580,7 +580,7 @@
           <width>245</width>
           <label>300073</label>
           <font>font12</font>
-          <textcolor>dodgerblue</textcolor>
+          <textcolor>ff5597DC</textcolor>
           <posX>213</posX>
           <posY>112</posY>
           <disabledcolor>90ffffff</disabledcolor>
@@ -595,7 +595,7 @@
           <width>245</width>
           <label>300074</label>
           <font>font12</font>
-          <textcolor>dodgerblue</textcolor>
+          <textcolor>ff5597DC</textcolor>
           <posX>213</posX>
           <posY>112</posY>
           <disabledcolor>90ffffff</disabledcolor>
@@ -610,7 +610,7 @@
           <width>245</width>
           <label>300075</label>
           <font>font12</font>
-          <textcolor>dodgerblue</textcolor>
+          <textcolor>ff5597DC</textcolor>
           <posX>213</posX>
           <posY>112</posY>
           <disabledcolor>90ffffff</disabledcolor>
@@ -625,7 +625,7 @@
           <width>245</width>
           <label>300222</label>
           <font>font12</font>
-          <textcolor>dodgerblue</textcolor>
+          <textcolor>ff5597DC</textcolor>
           <posX>213</posX>
           <posY>112</posY>
           <disabledcolor>90ffffff</disabledcolor>
@@ -640,7 +640,7 @@
           <width>245</width>
           <label>300223</label>
           <font>font12</font>
-          <textcolor>dodgerblue</textcolor>
+          <textcolor>ff5597DC</textcolor>
           <posX>213</posX>
           <posY>112</posY>
           <disabledcolor>90ffffff</disabledcolor>
@@ -779,7 +779,7 @@
         <posY>620</posY>
         <width>500</width>
         <label>496</label>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <font>font12</font>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>

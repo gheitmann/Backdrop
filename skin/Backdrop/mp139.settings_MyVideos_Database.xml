@@ -502,7 +502,7 @@
         <width>600</width>
         <label>300071</label>
         <font>font12</font>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -589,7 +589,7 @@
         <posY>580</posY>
         <label>300194</label>
         <font>font12</font>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>

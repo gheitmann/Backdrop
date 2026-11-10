@@ -362,6 +362,7 @@
       <visible>no</visible>
     </control>
     <import>common.time.xml</import>
+	<import>common.overlays.guide.xml</import>
     <control>
       <description>Keyed channel number</description>
       <type>label</type>

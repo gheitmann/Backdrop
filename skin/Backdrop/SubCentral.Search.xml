@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <window>
   <disabletopbar>yes</disabletopbar>
   <controls>
@@ -57,7 +57,7 @@
         <spinPosX>2100</spinPosX>
         <textXOff>10</textXOff>
         <textYOff>0</textYOff>
-        <textXOff2>145</textXOff2>
+        <textXOff2>155</textXOff2>
         <textYOff2>35</textYOff2>
         <textXOff3>380</textXOff3>
         <textYOff3>35</textYOff3>

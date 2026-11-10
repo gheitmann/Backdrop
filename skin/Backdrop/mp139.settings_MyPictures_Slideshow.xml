@@ -330,7 +330,7 @@
         <width>600</width>
         <label>300183</label>
         <font>font12</font>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -461,7 +461,7 @@
         <posY>551</posY>
         <label>300184</label>
         <font>font12</font>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -556,7 +556,7 @@
         <posY>741</posY>
         <label>300233</label>
         <font>font12</font>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -653,7 +653,7 @@
         <textureFocus>listbg_fo.png</textureFocus>
         <label>300187</label>
         <font>font12</font>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -667,7 +667,7 @@
         <posY>353</posY>
         <label>224</label>
         <font>font12</font>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -706,7 +706,7 @@
         <posY>398</posY>
         <label>225</label>
         <font>font12</font>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -745,7 +745,7 @@
         <posY>443</posY>
         <label>13011</label>
         <font>font12</font>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -865,7 +865,7 @@
         <textureFocus>listbg_fo.png</textureFocus>
         <label>300188</label>
         <font>font12</font>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>

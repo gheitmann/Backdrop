@@ -14,6 +14,7 @@
       <width>72</width>
       <height>30</height>
       <texture>rec_indicator.png</texture>
+      <visible>!Window.IsVisible(1)</visible>
       <animation effect="fade" start="100" end="40" time="600" delay="200" tween="cubic" easing="inout" condition="true" pulse="true">Conditional</animation>
     </control>
   </controls>

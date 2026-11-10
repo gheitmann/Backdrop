@@ -419,7 +419,7 @@
         <width>550</width>
         <label>300139</label>
         <font>font12</font>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -478,7 +478,7 @@
         <width>550</width>
         <label>300141</label>
         <font>font12</font>
-        <textcolor>dodgerblue</textcolor>
+        <textcolor>ff5597DC</textcolor>
         <disabledcolor>90ffffff</disabledcolor>
         <shadowAngle>0</shadowAngle>
         <shadowDistance>0</shadowDistance>
@@ -619,7 +619,7 @@
           <label>9997</label>
           <font>font12</font>
           <height>40</height>
-          <textcolor>dodgerblue</textcolor>
+          <textcolor>ff5597DC</textcolor>
           <posX>213</posX>
           <posY>112</posY>
           <disabledcolor>90ffffff</disabledcolor>
@@ -726,7 +726,7 @@
           <label>9998</label>
           <height>40</height>
           <font>font12</font>
-          <textcolor>dodgerblue</textcolor>
+          <textcolor>ff5597DC</textcolor>
           <posX>213</posX>
           <posY>112</posY>
           <disabledcolor>90ffffff</disabledcolor>
@@ -917,7 +917,7 @@
           <label>9999</label>
           <font>font12</font>
           <height>40</height>
-          <textcolor>dodgerblue</textcolor>
+          <textcolor>ff5597DC</textcolor>
           <posX>213</posX>
           <posY>112</posY>
           <disabledcolor>90ffffff</disabledcolor>

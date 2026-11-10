@@ -50,6 +50,7 @@
       <width>522</width>
       <height>645</height>
       <textXOff2>450</textXOff2>
+      <textYOff2>34</textYOff2>
       <spinPosX>4310</spinPosX>
       <spinPosY>3742</spinPosY>
       <textXOff>45</textXOff>
@@ -73,7 +74,7 @@
       <colordiffuse>ff999999</colordiffuse>
       <remoteColor>ffFFA075</remoteColor>
       <downloadColor>ff80ff80</downloadColor>
-      <textureHeight>58</textureHeight>
+      <textureHeight>92</textureHeight>
       <spaceBetweenItems>-1</spaceBetweenItems>
       <spinPosX>1233</spinPosX>
       <spinPosY>705</spinPosY>
