@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>2015</id>
@@ -19,14 +19,15 @@
       <description>GFX-Heading "menu" text label</description>
       <type>label</type>
       <id>4</id>
-      <posX>638</posX>
-      <posY>158</posY>
-      <width>735</width>
+      <posX>664</posX>
+      <posY>775</posY>
+      <width>400</width>
       <label>181</label>
       <font>font16BCB</font>
-      <textcolor>ff335266</textcolor>
+      <textcolor>ff7FB1E5</textcolor>
       <align>left</align>
-      <visible>no</visible>
+      <height>38</height>
+      <animation effect="rotate" start="90" end="90" center="664,775" time="0" condition="true">Conditional</animation>
     </control>
     <control>
       <description>Heading text label</description>

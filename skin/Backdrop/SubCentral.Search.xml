@@ -57,7 +57,8 @@
         <spinPosX>2100</spinPosX>
         <textXOff>10</textXOff>
         <textYOff>0</textYOff>
-        <textXOff2>155</textXOff2>
+        <textXOff2>16</textXOff2>
+        <textalign2>left</textalign2>
         <textYOff2>35</textYOff2>
         <textXOff3>380</textXOff3>
         <textYOff3>35</textYOff3>

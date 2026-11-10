@@ -49,7 +49,8 @@
       <posY>160</posY>
       <width>522</width>
       <height>645</height>
-      <textXOff2>450</textXOff2>
+      <textXOff2>51</textXOff2>
+      <textalign2>left</textalign2>
       <textYOff2>34</textYOff2>
       <spinPosX>4310</spinPosX>
       <spinPosY>3742</spinPosY>

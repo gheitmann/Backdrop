@@ -5147,9 +5147,9 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <description>Latest Label</description>");
                 rawXML.AppendLine("        <type>fadelabel</type>");
                 rawXML.AppendLine("        <id>0</id>");
-                rawXML.AppendLine("        <posX>1734</posX>");
+                rawXML.AppendLine("        <posX>1600</posX>");
                 rawXML.AppendLine("        <posY>970</posY>");
-                rawXML.AppendLine("        <width>400</width>");
+                rawXML.AppendLine("        <width>320</width>");
                 rawXML.AppendLine("        <height>40</height>");
                 rawXML.AppendLine("        <align>left</align>");
                 rawXML.AppendLine("        <scrollStartDelaySec>3600</scrollStartDelaySec>");
@@ -5159,7 +5159,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <shadowAngle>45</shadowAngle>");
                 rawXML.AppendLine("        <shadowDistance>1</shadowDistance>");
                 rawXML.AppendLine("        <shadowColor>ff333333</shadowColor>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" start=\"90\" end=\"90\" center=\"1734,970\" time=\"0\" condition=\"true\">Conditional</animation>");
+                rawXML.AppendLine("        <animation effect=\"rotate\" start=\"90\" end=\"90\" center=\"1600,970\" time=\"0\" condition=\"true\">Conditional</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"0\" end=\"100\" delay=\"350\" time=\"50\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"100\" end=\"0\" time=\"50\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>[Control.isvisible(98345611)+" + sMovingPictures + "]+!Control.isvisible(93761234)</visible>");
@@ -5169,9 +5169,9 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <description>Latest Label</description>");
                 rawXML.AppendLine("        <type>fadelabel</type>");
                 rawXML.AppendLine("        <id>0</id>");
-                rawXML.AppendLine("        <posX>1670</posX>");
+                rawXML.AppendLine("        <posX>1600</posX>");
                 rawXML.AppendLine("        <posY>970</posY>");
-                rawXML.AppendLine("        <width>400</width>");
+                rawXML.AppendLine("        <width>320</width>");
                 rawXML.AppendLine("        <height>40</height>");
                 rawXML.AppendLine("        <align>left</align>");
                 rawXML.AppendLine("        <scrollStartDelaySec>3600</scrollStartDelaySec>");
@@ -5181,7 +5181,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <shadowAngle>45</shadowAngle>");
                 rawXML.AppendLine("        <shadowDistance>1</shadowDistance>");
                 rawXML.AppendLine("        <shadowColor>ff333333</shadowColor>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" start=\"90\" end=\"90\" center=\"1670,970\" time=\"0\" condition=\"true\">Conditional</animation>");
+                rawXML.AppendLine("        <animation effect=\"rotate\" start=\"90\" end=\"90\" center=\"1600,970\" time=\"0\" condition=\"true\">Conditional</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"0\" end=\"100\" time=\"350\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"100\" end=\"0\" time=\"50\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>[Control.HasFocus(91919991)|Control.HasFocus(91919992)|Control.HasFocus(91919993)]+!Control.isvisible(93761234)</visible>");
