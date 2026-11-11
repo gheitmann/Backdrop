@@ -128,7 +128,7 @@
       <description>Listview separator line</description>
       <type>image</type>
       <id>0</id>
-      <posX>1464</posX>
+        <posX>1440</posX>
       <posY>180</posY>
       <width>10</width>
       <height>920</height>

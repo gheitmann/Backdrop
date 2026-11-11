@@ -466,7 +466,7 @@
       <width>65</width>
       <height>65</height>
       <texture>new_icon.png</texture>
-      <visible>Control.IsVisible(50)+Control.isvisible(93761234)+!Control.IsVisible(51)+!Control.IsVisible(9)</visible>
+      <visible>Control.IsVisible(50)+![facadeview.smallicons|facadeview.largeicons]+Control.isvisible(93761234)+!Control.IsVisible(51)+!Control.IsVisible(9)</visible>
       <animation effect="slide" start="0,300" end="0,0" time="250" delay="150" acceleration="-0.9" reversible="true">visible</animation>
       <animation effect="slide" start="0,0" end="0,300" time="200" reversible="true">hidden</animation>
       <animation effect="fade" start="0" end="100" time="350">WindowOpen</animation>
