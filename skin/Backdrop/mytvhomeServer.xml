@@ -465,10 +465,11 @@
       <id>24</id>
       <posX>1820</posX>
       <posY>85</posY>
-      <width>92</width>
-      <height>33</height>
+      <width>92</width> 
+      <height>33</height> 
       <texture>rec_indicator.png</texture>
       <animation effect="fade" start="100" end="40" time="600" delay="200" tween="cubic" easing="inout" condition="true" pulse="true">Conditional</animation>
+	  <visible>no</visible>
     </control>
     <control>
       <description>Menu Image</description>

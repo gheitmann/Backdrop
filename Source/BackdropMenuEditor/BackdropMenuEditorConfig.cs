@@ -5148,7 +5148,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <type>fadelabel</type>");
                 rawXML.AppendLine("        <id>0</id>");
                 rawXML.AppendLine("        <posX>1600</posX>");
-                rawXML.AppendLine("        <posY>970</posY>");
+                rawXML.AppendLine("        <posY>1035</posY>");
                 rawXML.AppendLine("        <width>320</width>");
                 rawXML.AppendLine("        <height>40</height>");
                 rawXML.AppendLine("        <align>left</align>");
@@ -5169,7 +5169,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <description>Latest Label</description>");
                 rawXML.AppendLine("        <type>fadelabel</type>");
                 rawXML.AppendLine("        <id>0</id>");
-                rawXML.AppendLine("        <posX>1600</posX>");
+                rawXML.AppendLine("        <posX>1650</posX>");
                 rawXML.AppendLine("        <posY>970</posY>");
                 rawXML.AppendLine("        <width>320</width>");
                 rawXML.AppendLine("        <height>40</height>");
@@ -5181,7 +5181,7 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <shadowAngle>45</shadowAngle>");
                 rawXML.AppendLine("        <shadowDistance>1</shadowDistance>");
                 rawXML.AppendLine("        <shadowColor>ff333333</shadowColor>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" start=\"90\" end=\"90\" center=\"1600,970\" time=\"0\" condition=\"true\">Conditional</animation>");
+                rawXML.AppendLine("        <animation effect=\"rotate\" start=\"90\" end=\"90\" center=\"1650,970\" time=\"0\" condition=\"true\">Conditional</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"0\" end=\"100\" time=\"350\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"100\" end=\"0\" time=\"50\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>[Control.HasFocus(91919991)|Control.HasFocus(91919992)|Control.HasFocus(91919993)]+!Control.isvisible(93761234)</visible>");

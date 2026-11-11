@@ -81,9 +81,15 @@ def check():
     latest = ET.parse(SKIN / 'common.basichome.latest.xml').getroot()
     captions = [c for c in latest.findall('.//control') if c.findtext('description') == 'Latest Label']
     require(len(captions) == 9, 'Missing latest-media captions')
+    movie_captions = [c for c in captions if c.findtext('label') == '#SkinTranslation.Translations.LatestMovies.Label']
+    require([(c.findtext('posX'), c.findtext('posY'), c.findtext('width')) for c in movie_captions] == [('1600', '1035', '320'), ('1650', '970', '320')], 'Tester movie caption positions drifted')
     for c in captions:
         x = float(c.findtext('posX'))
-        check_caption(c, (x, 400, x + 100, 980), c.findtext('label'))
+        if c in movie_captions:
+            rotations = [a for a in c.findall('animation') if a.get('effect') == 'rotate']
+            require(len(rotations) == 1 and rotations[0].get('center') == c.findtext('posX') + ',970' and rotations[0].text == 'Conditional', 'Tester movie rotation drifted')
+        else:
+            check_caption(c, (x, 400, x + 100, 980), c.findtext('label'))
     details = [c for c in latest.findall('.//control') if c.findtext('description') in ('Artist Label', 'Album Label')
                and (c.findtext('label') or '').startswith('#latestMediaHandler.music.')]
     require(len(details) == 6, 'Missing music metadata captions')
