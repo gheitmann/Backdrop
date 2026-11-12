@@ -15,9 +15,17 @@ def main():
     if args.output is None:
         revision = root.findtext('./GeneralInfo/Version/Revision')
         description = root.findtext('./GeneralInfo/VersionDescription', '')
-        kind = 'BETA' if description.startswith('BETA') else 'LOCAL' if description.startswith('LOCAL') else 'ALPHA'
-        release_number = description.split(':', 1)[0].removeprefix(kind) if kind == 'BETA' else revision
-        args.output = ROOT / 'dist' / f'Backdrop-MP139-AnyCPU-{kind}{release_number}.mpe1'
+        if description.startswith('BETA'):
+            suffix = 'BETA' + description.split(':', 1)[0].removeprefix('BETA')
+        elif description.startswith('LOCAL'):
+            suffix = 'LOCAL' + revision
+        elif description.startswith('ALPHA'):
+            suffix = 'ALPHA' + revision
+        else:
+            version = root.find('./GeneralInfo/Version')
+            fields = ('Major', 'Minor', 'Build', 'Revision')
+            suffix = '.'.join((version.findtext(field) or '').strip() for field in fields)
+        args.output = ROOT / 'dist' / f'Backdrop-MP139-AnyCPU-{suffix}.mpe1'
     entries = root.findall('./Groups/Items/GroupItem/Files/Items/FileItem')
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(args.output, 'w', compression=zipfile.ZIP_DEFLATED) as archive:

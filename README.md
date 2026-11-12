@@ -2,7 +2,7 @@
 
 Experimental port of cul8er's **Backdrop 1.0.1** skin to **MediaPortal 1.39**.
 
-Current release: **1.39.0.34**. See the [English release notes](docs/RELEASE-1.39.0.34.md) and
+Current release: **1.39.0.36**. See the [English release notes](docs/RELEASE-1.39.0.36.md) and
 [validation evidence](docs/VALIDATION.md).
 
 The owner reports no Defender detections in recent versions. The historical
@@ -11,9 +11,9 @@ this is not a certification of every antivirus product.
 
 ## Install
 
-Download `Backdrop-Setup-1.39.0.34.exe` from [Releases](https://github.com/gheitmann/Backdrop/releases), close MediaPortal and run the single executable. Back up any existing Backdrop installation first.
+Download `Backdrop-Setup-1.39.0.36.exe` from [Releases](https://github.com/gheitmann/Backdrop/releases), close MediaPortal and run the single executable. Back up any existing Backdrop installation first.
 
-`Backdrop-Setup-1.39.0.34.exe` combines the skin MPE1 with the buffered installer UI in one executable. Initialization and client-folder discovery run automatically; no companion files or manual PowerShell steps are required. See [installer instructions](docs/INSTALLER-UI.md). The setup uses an isolated installer presentation copy without replacing the installed Extension Installer.
+`Backdrop-Setup-1.39.0.36.exe` combines the skin MPE1 with the buffered installer UI in one executable. Initialization and client-folder discovery run automatically; no companion files or manual PowerShell steps are required. See [installer instructions](docs/INSTALLER-UI.md). The setup uses an isolated installer presentation copy without replacing the installed Extension Installer.
 
 Use architecture-compatible versions of Fanart Handler, Latest Media Handler, and any other external plugins. This repository does not bundle third-party plugin installers or modified MediaPortal core binaries.
 
@@ -68,7 +68,7 @@ python tools/package.py
 
 Review the rebuilt DLL and assembly version before refreshing the payload hashes. The refresh records an intentional payload change; it is not a compatibility test. To package the unchanged checked-in reference DLL, skip the editor build and hash refresh.
 
-`python tools/package.py` writes the versioned MPE1 for the current package version (1.39.0.34) to `dist/`. Packaging can also use the checked-in reference DLL. GitHub Actions validates the payload and builds an installer artifact; it does not run the MediaPortal GUI or compile the editor against MediaPortal binaries.
+`python tools/package.py` writes the versioned MPE1 for the current package version (1.39.0.36) to `dist/`. Packaging can also use the checked-in reference DLL. GitHub Actions validates the payload and builds an installer artifact; it does not run the MediaPortal GUI or compile the editor against MediaPortal binaries.
 
 ## Credits
 
