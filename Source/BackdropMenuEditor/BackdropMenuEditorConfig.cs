@@ -5159,7 +5159,8 @@ namespace MediaPortal.Plugins
                 rawXML.AppendLine("        <shadowAngle>45</shadowAngle>");
                 rawXML.AppendLine("        <shadowDistance>1</shadowDistance>");
                 rawXML.AppendLine("        <shadowColor>ff333333</shadowColor>");
-                rawXML.AppendLine("        <animation effect=\"rotate\" start=\"90\" end=\"90\" center=\"1600,970\" time=\"0\" condition=\"true\">Conditional</animation>");
+                rawXML.AppendLine("        <animation effect=\"rotate\" start=\"90\" end=\"90\" center=\"1600,900\" time=\"0\" condition=\"true\">Conditional</animation>");
+                rawXML.AppendLine("        <animation effect=\"slide\" end=\"-70,0\" time=\"0\" condition=\"true\">Conditional</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"0\" end=\"100\" delay=\"350\" time=\"50\">Visible</animation>");
                 rawXML.AppendLine("        <animation effect=\"fade\" start=\"100\" end=\"0\" time=\"50\">Hidden</animation>");
                 rawXML.AppendLine("        <visible>[Control.isvisible(98345611)+" + sMovingPictures + "]+!Control.isvisible(93761234)</visible>");

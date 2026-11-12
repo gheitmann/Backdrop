@@ -87,7 +87,11 @@ def check():
         x = float(c.findtext('posX'))
         if c in movie_captions:
             rotations = [a for a in c.findall('animation') if a.get('effect') == 'rotate']
-            require(len(rotations) == 1 and rotations[0].get('center') == c.findtext('posX') + ',970' and rotations[0].text == 'Conditional', 'Tester movie rotation drifted')
+            pivot_y = '900' if c is movie_captions[0] else '970'
+            require(len(rotations) == 1 and rotations[0].get('center') == c.findtext('posX') + ',' + pivot_y and rotations[0].text == 'Conditional', 'Tester movie rotation drifted')
+            slides = [a for a in c.findall('animation') if a.get('effect') == 'slide']
+            require((len(slides) == 1 and slides[0].get('end') == '-70,0' and slides[0].text == 'Conditional') if c is movie_captions[0] else not slides,
+                    'Tester movie heading offset drifted')
         else:
             check_caption(c, (x, 400, x + 100, 980), c.findtext('label'))
     details = [c for c in latest.findall('.//control') if c.findtext('description') in ('Artist Label', 'Album Label')
@@ -119,9 +123,10 @@ def check():
     generated = re.findall(r'<description>Latest Label</description>.*?<label>(#SkinTranslation[^<]+)</label>', source, re.S)
     require(len(generated) == 9, 'Latest caption generator count drifted')
     # The generator uses literal geometry for each definition; protect its persisted output too.
-    blocks = re.findall(r'<description>Latest Label</description>.*?<label>#SkinTranslation[^<]+</label>.*?>Conditional</animation>', source, re.S)
-    require(len(blocks) == 9, 'Latest caption generator rotation drifted')
     native_blocks = re.findall(r'rawXML.AppendLine\("    <control>"\);(?:(?!rawXML.AppendLine\("    <control>"\);).)*?rawXML.AppendLine\("    </control>[^\n]*', source, re.S)
+    blocks = [b for b in native_blocks if '<description>Latest Label</description>' in b
+              and '<label>#SkinTranslation' in b]
+    require(len(blocks) == 9, 'Latest caption generator control count drifted')
     recording_blocks = [b for b in native_blocks if re.search(r'<description>(?:Series|Episode) Label</description>', b)
                         and '#latestMediaHandler.tvrecordings.latest' in b]
     require(len(recording_blocks) == 6, 'TV recording caption generator drifted')
@@ -134,7 +139,11 @@ def check():
     for c, block in zip(captions, blocks):
         for field in ('posX', 'posY', 'width', 'height'):
             require(f'<{field}>{c.findtext(field)}</{field}>' in block, 'Latest caption generator geometry differs')
-        require('center=\\"' + c.findtext('posX') + ',970\\"' in block, 'Latest caption generator pivot differs')
+        pivot_y = '900' if c is movie_captions[0] else '970'
+        require('center=\\"' + c.findtext('posX') + ',' + pivot_y + '\\"' in block, 'Latest caption generator pivot differs')
+        if c is movie_captions[0]:
+            require('effect=\\"slide\\" end=\\"-70,0\\" time=\\"0\\"' in block,
+                    'Latest movie heading offset missing from generator')
     for name in ('mymusicgenres.xml', 'mymusicsongs.xml'):
         radio = next(c for c in ET.parse(SKIN / name).getroot().findall('.//control') if c.findtext('id') == '18')
         require(radio.findtext('type') == 'checkbutton' and radio.findtext('hyperlink') == '30'
