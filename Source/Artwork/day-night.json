@@ -341,7 +341,8 @@
     "mytvpriorities.xml": 1,
     "mytvrecordedtv.xml": 1,
     "mytvschedulerServer.xml": 1,
-    "mytvsearch.xml": 1
+    "mytvsearch.xml": 1,
+    "wikipedia.xml": 1
   },
   "periods": [
     "morning",
