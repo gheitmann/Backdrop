@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
   <id>801</id>
   <defaultcontrol>50</defaultcontrol>
@@ -268,7 +268,8 @@
     </control>
     <control>
       <description>Extension Version Description</description>
-      <type>label</type>
+      <type>label</type>
+      <visible>no</visible>
       <id>0</id>
       <posX>1322</posX>
       <posY>804</posY>
@@ -279,7 +280,8 @@
     </control>
     <control>
       <description>Extension Version Description</description>
-      <type>label</type>
+      <type>label</type>
+      <visible>no</visible>
       <id>0</id>
       <posX>1320</posX>
       <posY>802</posY>

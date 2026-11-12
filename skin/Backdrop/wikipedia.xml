@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version='1.0' encoding='utf-8'?>
 <window>
   <id>4711</id>
   <defaultcontrol>10</defaultcontrol>
@@ -207,13 +207,24 @@
     </control>
     <!--            :: MAIN ::            -->
     <control>
+      <description>Content panel</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>40</posX>
+      <posY>165</posY>
+      <width>1840</width>
+      <height>845</height>
+      <texture>black.png</texture>
+      <colordiffuse>8c000000</colordiffuse>
+    </control>
+    <control>
       <description>Article title/searchterm</description>
       <type>label</type>
       <id>4</id>
       <posX>75</posX>
-      <posY>195</posY>
-      <width>1425</width>
-      <font>font16BC</font>
+      <posY>185</posY>
+      <width>1700</width>
+      <font>font18</font>
       <visible>no</visible>
       <textcolor>FFffffff</textcolor>
       <label>Article title/searchterm</label>
@@ -222,10 +233,10 @@
       <description>Here is the article text displayed</description>
       <type>textbox</type>
       <id>20</id>
-      <posX>75</posX>
+      <posX>760</posX>
       <posY>240</posY>
-      <width>1800</width>
-      <height>525</height>
+      <width>1085</width>
+      <height>800</height>
       <visible>no</visible>
       <font>font14</font>
       <spinWidth>56</spinWidth>
@@ -244,10 +255,10 @@
       <description>Image description</description>
       <type>label</type>
       <id>5</id>
-      <posX>45</posX>
-      <posY>195</posY>
-      <width>1425</width>
-      <font>font16BC</font>
+      <posX>75</posX>
+      <posY>610</posY>
+      <width>640</width>
+      <font>font12</font>
       <visible>no</visible>
       <textcolor>FFffffff</textcolor>
       <label>Image description</label>
@@ -257,11 +268,11 @@
       <description>Article Image</description>
       <type>image</type>
       <id>25</id>
-      <posX>45</posX>
+      <posX>75</posX>
       <posY>240</posY>
       <visible>no</visible>
-      <width>750</width>
-      <height>450</height>
+      <width>640</width>
+      <height>360</height>
       <texture />
       <colorkey>00000000</colorkey>
       <colordiffuse>White</colordiffuse>

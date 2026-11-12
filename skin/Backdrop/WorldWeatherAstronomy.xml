@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <allowoverlay>yes</allowoverlay>
+  <controls>
+    <!-- *** Starry Sky *** -->
+    <control>
+      <description>Starry sky image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>2100</width> 1920
+      <height>1080</height> 1080
+      <texture>black.png</texture>
+      <visible>string.equals(#WorldWeather.View,Astronomy)</visible>
+    </control>
+	<control>
+      <description>Location label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>45</posX>
+      <posY>54</posY>
+      <width>1475</width>
+      <label>#(L(8)) | #WorldWeather.TranslationStarrySky/#WorldWeather.TranslationZodiac</label>
+      <font>mp139.Label</font>
+      <align>left</align>
+      <textcolor>lightgray</textcolor>
+      <visible>string.equals(#WorldWeather.View,Astronomy)</visible>
+    </control>
+    <control>
+      <description>Starry sky image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1006</posX> 
+      <posY>270</posY>
+      <width>720</width>
+      <height>720</height>
+      <texture>#WorldWeather.ImageStarrySky</texture>
+      <!--texture>#WorldWeather.ImageZodiac</texture-->
+      <visible>string.equals(#WorldWeather.View,Astronomy)</visible>
+    </control>
+	 <control>
+      <description>black mask</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1000</posX> 
+      <posY>270</posY> 
+      <width>1000</width> 
+      <height>26</height> 
+      <texture>black.png</texture>
+      <visible>string.equals(#WorldWeather.View,Astronomy)</visible>
+    </control>
+	 <control>
+      <description>black mask</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>900</posX> 
+      <posY>950</posY> 
+      <width>1000</width> 1000
+      <height>60</height>  40
+      <texture>black.png</texture>
+      <visible>string.equals(#WorldWeather.View,Astronomy)</visible>
+    </control>
+	  <!--control>
+      <description>Labeling compass south</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1440</posX> 
+      <posY>234</posY> 
+      <label>S</label> 
+      <font>font10Bold</font> 
+      <textcolor>crimson</textcolor>
+      <visible>string.equals(#WorldWeather.View,Astronomy)</visible>
+    </control-->
+    <control>
+      <description>Zodiac image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>80</posX>
+      <posY>270</posY>
+      <width>720</width>
+      <height>720</height>
+      <texture>#WorldWeather.ImageZodiac</texture>
+      <visible>string.equals(#WorldWeather.View,Astronomy)+string.equals(#WorldWeather.ImageZodiacEnabled,true)</visible>
+    </control>
+    <control>
+      <description>Zodiac Today sky image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>770</posX>
+      <posY>180</posY>
+      <width>200</width>
+      <height>200</height>
+      <texture>#WorldWeather.TodayZodiacImage</texture>
+      <visible>string.equals(#WorldWeather.View,Astronomy)+string.equals(#WorldWeather.ImageZodiacEnabled,true)</visible>
+    </control>
+    <control>
+      <description>Zodiac Today label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>760</posX>
+      <posY>190</posY>
+      <width>1000</width>
+      <align>right</align>
+      <label>#WorldWeather.TodayZodiac</label>
+      <font>mp139.Label</font>
+      <visible>string.equals(#WorldWeather.View,Astronomy)+string.equals(#WorldWeather.ImageZodiacEnabled,true)</visible>
+    </control>
+  </controls>
+</window>
