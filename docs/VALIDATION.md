@@ -2,6 +2,10 @@
 
 Current working tree (12 November 2026, package version 1.39.0.34): static-only review of the imported 1.39.0.34 tree. Twelve Python checks pass; `tools/check_skin_references.py` resolves every static texture, mask, font, import and MediaPortal 1.39 window ID against the shipped files, and packaging reproduces 2,444/2,444 payload files. No MediaPortal runtime review is claimed for these changes, and the BETA5 runtime evidence below still describes the 1.39.0.32 build.
 
+Runtime spot check of the same working tree (12 November 2026): the eleven reviewed skin files were deployed to the installed Backdrop skin and MediaPortal 1.39 x64 was started with a copied configuration (`/config`, skin set to Backdrop, `/windowed`). The classic Home window, the video shares root, a populated synthetic share folder and a movie detail page rendered correctly, MediaPortal exited normally, and `MediaPortal.log` contained no texture-loading errors and no error entries. `gui/startbasichome=yes` in the copied configuration did not activate BasicHome, so the screenshots show the classic Home window. Not exercised: TV no-signal, file-dialog progress, cover-art grabber progress and SubCentral search. The installed skin was restored byte-identically afterwards.
+
+The runtime check also showed that `common.facade.video.Title.xml`, `common.facade.video.shares.xml` and `myvideo.facade.fanartwall.xml` (and their `mp139.` twins) are unused templates: they contain a window fragment without a window id and no skin file imports them, so MediaPortal never loads them. Correcting their texture paths removes broken static references but has no runtime effect; the active video list is defined in `common.facade.video.xml`.
+
 BETA5 (3 November 2026): final Settings root/Pictures/Slideshow live review passed; overlapping frames removed and native titles verified. All 110 Settings contracts, 2,444/2,444 package files and 21/21 bundle entries checked. Final EXE VerifyOnly passed x64 and isolated x86 (2/2 architectures). See [build verification](BETA5-BUILD-REPORT.md).
 
 BETA4 feedback follow-up (included in BETA5) (3 November 2026): all 110 Settings native
