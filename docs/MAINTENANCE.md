@@ -4,7 +4,7 @@ Use this repository as the versioned source for future Backdrop changes. Keep re
 
 ## Start every update here
 
-Current package version: 1.39.0.36; read `RELEASE-1.39.0.36.md`. The latest tester-driven runtime and installer evidence is BETA5 in `BETA5-BUILD-REPORT.md`. Keep Settings root titles in native visible labels; `window.isvisible` is a visibility condition, not a callable skin expression.
+Current package version: 1.39.0.37; read `RELEASE-1.39.0.37.md`. The latest tester-driven runtime and installer evidence is BETA5 in `BETA5-BUILD-REPORT.md`. Keep Settings root titles in native visible labels; `window.isvisible` is a visibility condition, not a callable skin expression.
 
 BETA5 includes this follow-up: read `BETA4-FEEDBACK-FOLLOWUP.md`. Keep the supplied
 non-scrolling slideshow textbox and the Settings native binding inventory.

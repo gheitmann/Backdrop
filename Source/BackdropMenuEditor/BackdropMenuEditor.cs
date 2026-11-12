@@ -28,6 +28,7 @@ namespace MediaPortal.Plugins
     {
         #region declarations
         private readonly object lockObject = new object();
+        private int _updatePending = 0;
         private System.Timers.Timer refreshTimer = null;
         private int iTimeout = 5000;
         private string IdleTimeOther = null;
@@ -563,6 +564,25 @@ namespace MediaPortal.Plugins
         {
             try
             {
+                // The timer runs on a worker thread. Touching windows or controls from it
+                // makes MediaPortal load skin resources off the GUI thread, so hand the
+                // work over and coalesce overlapping ticks into a single queued callback.
+                if (Interlocked.Exchange(ref _updatePending, 1) != 0)
+                {
+                    return;
+                }
+                GUIWindowManager.SendThreadCallback(OnUpdateImageCallback, 0, 0, null);
+            }
+            catch
+            {
+                Interlocked.Exchange(ref _updatePending, 0);
+            }
+        }
+
+        private int OnUpdateImageCallback(int param1, int param2, object data)
+        {
+            try
+            {
                 if (Monitor.TryEnter(lockObject))
                 {
                     try
@@ -578,6 +598,11 @@ namespace MediaPortal.Plugins
             catch
             {
             }
+            finally
+            {
+                Interlocked.Exchange(ref _updatePending, 0);
+            }
+            return 0;
         }
 
         #region ISetupForm Members

@@ -16618,7 +16618,7 @@
               <Description />
             </SectionParam>
             <SectionParam Name="Description">
-              <Value>Experimental MP 1.39 AnyCPU test build. Read README-DE.md and back up any existing Backdrop installation before continuing. External plugins require their own compatible versions.</Value>
+              <Value>Backdrop for MediaPortal 1.39. Close MediaPortal and back up any existing Backdrop settings before continuing. External plugins require their own compatible versions.</Value>
               <ValueType>String</ValueType>
               <Description />
             </SectionParam>
@@ -16785,7 +16785,7 @@
     </Items>
   </Dependencies>
   <GeneralInfo>
-    <Name>Backdrop MP 1.39 AnyCPU 1.39.0.36</Name>
+    <Name>Backdrop MP 1.39 AnyCPU 1.39.0.37</Name>
     <Id>7aec8315-531b-49b4-ac24-d6b285d039d0</Id>
     <Author>cul8er; local MP 1.39 AnyCPU adaptation</Author>
     <HomePage>https://github.com/gheitmann/Backdrop</HomePage>
@@ -16796,10 +16796,10 @@
       <Major>1</Major>
       <Minor>39</Minor>
       <Build>0</Build>
-      <Revision>36</Revision>
+      <Revision>37</Revision>
     </Version>
     <ExtensionDescription>Experimental Backdrop 1.0.1 port for MediaPortal 1.39. Includes an AnyCPU menu editor. Tested on x64; full x86 runtime testing remains pending. Requires compatible external Fanart Handler and Latest Media Handler plugins. See README.md and docs/VALIDATION.md.</ExtensionDescription>
-    <VersionDescription>Static skin reference check with corrected texture paths and aligned release identity.</VersionDescription>
+    <VersionDescription>Menu editor timer thread fix and refreshed installer welcome text.</VersionDescription>
     <DevelopmentStatus>Stable</DevelopmentStatus>
     <OnlineLocation>
     </OnlineLocation>
