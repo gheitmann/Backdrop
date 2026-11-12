@@ -26,6 +26,7 @@ jobs:
       - run: python tools/check_beta3_feedback.py
       - run: python tools/check_settings_fidelity.py
       - run: python tools/check_day_night.py
+      - run: python tools/check_skin_references.py
       - run: python tools/package.py
       - uses: actions/upload-artifact@v4
         with:

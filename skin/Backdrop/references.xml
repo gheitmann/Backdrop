@@ -402,10 +402,10 @@
     <spinPosY>915</spinPosY>
     <spinAlign>Right</spinAlign>
     <spinColor>ffffffff</spinColor>
-    <textureUp>page_up_nofocus.png</textureUp>
-    <textureDown>page_down_nofocus.png</textureDown>
-    <textureUpFocus>page_up_focus.png</textureUpFocus>
-    <textureDownFocus>page_down_focus.png</textureDownFocus>
+    <textureUp>MP139\page_up_nofocus.png</textureUp>
+    <textureDown>MP139\page_down_nofocus.png</textureDown>
+    <textureUpFocus>MP139\page_up_focus.png</textureUpFocus>
+    <textureDownFocus>MP139\page_down_focus.png</textureDownFocus>
     <textureFocus>listbg_fo.png</textureFocus>
     <textureNoFocus>listbg_nf.png</textureNoFocus>
     <textureHeight>63</textureHeight>
@@ -728,8 +728,8 @@
     <label2YOff>585</label2YOff>
     <pageSize>10</pageSize>
     <scrollbarBackground>bar_hor.png</scrollbarBackground>
-    <scrollbarLeft>mouse_left_horizontal.png</scrollbarLeft>
-    <scrollbarRight>mouse_right_horizontal.png</scrollbarRight>
+    <scrollbarLeft>MP139\mouse_left_horizontal.png</scrollbarLeft>
+    <scrollbarRight>MP139\mouse_right_horizontal.png</scrollbarRight>
     <scrollbarYOff>600</scrollbarYOff>
     <showScrollbar>yes</showScrollbar>
     <keepaspectratio>no</keepaspectratio>
@@ -756,8 +756,8 @@
     <posX>284</posX>
     <posY>650</posY>
     <texturebg>bar_hor.png</texturebg>
-    <lefttexture>mouse_left_horizontal.png</lefttexture>
-    <righttexture>mouse_right_horizontal.png</righttexture>
+    <lefttexture>MP139\mouse_left_horizontal.png</lefttexture>
+    <righttexture>MP139\mouse_right_horizontal.png</righttexture>
     <visible>no</visible>
   </control>
   <control>
@@ -767,8 +767,8 @@
     <posX>284</posX>
     <posY>50</posY>
     <scrollbarbg>bar_vert.png</scrollbarbg>
-    <scrollbartop>mouse_left_vertical.png</scrollbartop>
-    <scrollbarbottom>mouse_right_vertical.png</scrollbarbottom>
+    <scrollbartop>MP139\mouse_left_vertical.png</scrollbartop>
+    <scrollbarbottom>MP139\mouse_right_vertical.png</scrollbarbottom>
     <visible>no</visible>
   </control>
   <control>
