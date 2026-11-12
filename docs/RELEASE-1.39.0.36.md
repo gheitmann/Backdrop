@@ -14,6 +14,8 @@
   SubCentral default poster path, and the unused video facade templates.
 - Aligned the README, maintenance notes and the in-skin version label with the
   package version.
+- Rebuilt the AnyCPU menu editor at package version 1.39.0.36 and rebuilt the
+  optional Day/Night plugin (0.2.0.0) from the merged sources.
 
 Download the single Backdrop-Setup-1.39.0.36.exe and close MediaPortal before installation.
 

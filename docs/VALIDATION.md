@@ -1,6 +1,6 @@
 # Current validation and historical evidence
 
-1.39.0.36 (12 November 2026): package version advanced after merging the 1.39.0.35 tester work into `main`. Twelve Python checks pass, packaging verifies 2,444/2,444 payload files, and a scoped start of the isolated client copy reported no texture-loading errors. No full runtime, installer wizard or x86 review is claimed for this release; see [release notes](RELEASE-1.39.0.36.md).
+1.39.0.36 (12 November 2026): package version advanced after merging the 1.39.0.35 tester work into `main`. Twelve Python checks pass, packaging verifies 2,444/2,444 payload files, and a scoped start of the isolated client copy reported no texture-loading errors. The AnyCPU menu editor and the optional Day/Night plugin were rebuilt from the merged sources. No full runtime, installer wizard or x86 review is claimed for this release; see [release notes](RELEASE-1.39.0.36.md).
 
 Current working tree (12 November 2026, package version 1.39.0.34): static-only review of the imported 1.39.0.34 tree. Twelve Python checks pass; `tools/check_skin_references.py` resolves every static texture, mask, font, import and MediaPortal 1.39 window ID against the shipped files, and packaging reproduces 2,444/2,444 payload files. No MediaPortal runtime review is claimed for these changes, and the BETA5 runtime evidence below still describes the 1.39.0.32 build.
 

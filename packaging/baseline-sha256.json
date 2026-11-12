@@ -1,7 +1,7 @@
 {
-  "Source/BackdropMenuEditor.dll": "5c8600c81aac07403fae369f715824c07b90690109a8a2943b0bc73a7bcd36da",
-  "Source/BackdropMenuEditor.exe": "f549226c5fc755130ae446d736f2c8c409e3e249277e695c52af7609d7803995",
-  "Source/DayNight.Backgrounds.dll": "3f1e1d19e51f76e69aa61ec78d8328ebc5dab0444a336e39f5ce407dd30c1c84",
+  "Source/BackdropMenuEditor.dll": "9a9c1c416f67248ef23e2175408e9c2be41f653b66cf648883013123716aab7f",
+  "Source/BackdropMenuEditor.exe": "a6064d94ecc201dc14830f1b2926b201e0844aad7a29fc05d3978cc3a3f12970",
+  "Source/DayNight.Backgrounds.dll": "f9d217b68e3c2110356d1b0f44dde198009a85d499d1219d9d0fc969401bc7a1",
   "Source/DayNight/LICENSE": "b08fda8fbbc3dc5b8d5e3545a9dd825ff85fcba1679e67e53e774b768824ac62",
   "config/BackdropMenuEditor.xml": "59eeb018bff419448506cb8968056c9bcf16228107be14102185b9fcb16c945c",
   "fonts/2Level Body Caps.ttf": "176813cc736e0020a26354b45da30c235ae9f304d6f5a87c80918c1896290388",
