@@ -30,6 +30,6 @@ jobs:
       - run: python tools/package.py
       - uses: actions/upload-artifact@v4
         with:
-          name: Backdrop-MP139-AnyCPU
+          name: Backdrop-MP139
           path: dist/*
           retention-days: 14

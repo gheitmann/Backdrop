@@ -25,7 +25,7 @@ def main():
             version = root.find('./GeneralInfo/Version')
             fields = ('Major', 'Minor', 'Build', 'Revision')
             suffix = '.'.join((version.findtext(field) or '').strip() for field in fields)
-        args.output = ROOT / 'dist' / f'Backdrop-MP139-AnyCPU-{suffix}.mpe1'
+        args.output = ROOT / 'dist' / f'Backdrop-MP139-{suffix}.mpe1'
     entries = root.findall('./Groups/Items/GroupItem/Files/Items/FileItem')
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(args.output, 'w', compression=zipfile.ZIP_DEFLATED) as archive:
