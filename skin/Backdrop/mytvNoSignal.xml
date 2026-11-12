@@ -23,7 +23,7 @@
       <posY>900</posY>
       <width>532</width>
       <height>9</height>
-      <texturebg>osd_progress_back.png</texturebg>
+      <texturebg>MP139\osd_progress_background.png</texturebg>
     </control>
     <control>
       <type>label</type>

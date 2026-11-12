@@ -36,7 +36,7 @@
       <posX>782</posX>
       <posY>771</posY>
       <width>690</width>
-      <texture>osd_progress_background.png</texture>
+      <texture>MP139\osd_progress_background.png</texture>
     </control>
     <control>
       <type>image</type>
@@ -44,7 +44,7 @@
       <posX>782</posX>
       <posY>906</posY>
       <width>690</width>
-      <texture>osd_progress_background.png</texture>
+      <texture>MP139\osd_progress_background.png</texture>
     </control>
     <control>
       <type>fadelabel</type>

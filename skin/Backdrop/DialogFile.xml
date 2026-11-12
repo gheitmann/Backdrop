@@ -13,7 +13,7 @@
       <posX>638</posX>
       <posY>602</posY>
       <width>765</width>
-      <texture>osd_progress_background.png</texture>
+      <texture>MP139\osd_progress_background.png</texture>
     </control>
     <control>
       <description>progress control</description>

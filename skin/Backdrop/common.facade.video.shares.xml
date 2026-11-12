@@ -51,10 +51,10 @@
           <folderPrefix />
           <folderSuffix />
           <textureFocus>#(iif(eq(#watchedcount,'0'),'MP139\listfocus_notwatched.png','MP139\listfocus.png'))</textureFocus>
-          <texturebg>videobar.png</texturebg>
-          <lefttexture>now_playing_progress_peach2.png</lefttexture>
-          <midtexture>now_playing_progress_peach2.png</midtexture>
-          <righttexture>now_playing_progress_peach2.png</righttexture>
+          <texturebg>MP139\now_playing_progress_back.png</texturebg>
+          <lefttexture>MP139\now_playing_progress_bar.png</lefttexture>
+          <midtexture>MP139\now_playing_progress_bar.png</midtexture>
+          <righttexture>MP139\now_playing_progress_bar.png</righttexture>
           <ProgressBarWidth>745</ProgressBarWidth>
           <ProgressBarHeight>5</ProgressBarHeight>
           <ProgressBarXOffset>45</ProgressBarXOffset>

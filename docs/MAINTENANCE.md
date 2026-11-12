@@ -4,7 +4,7 @@ Use this repository as the versioned source for future Backdrop changes. Keep re
 
 ## Start every update here
 
-Latest release: BETA5. Read `BETA5-BUILD-REPORT.md` for final runtime and installer evidence. Keep Settings root titles in native visible labels; `window.isvisible` is a visibility condition, not a callable skin expression.
+Current package version: 1.39.0.34; read `RELEASE-1.39.0.34.md`. The latest tester-driven runtime and installer evidence is BETA5 in `BETA5-BUILD-REPORT.md`. Keep Settings root titles in native visible labels; `window.isvisible` is a visibility condition, not a callable skin expression.
 
 BETA5 includes this follow-up: read `BETA4-FEEDBACK-FOLLOWUP.md`. Keep the supplied
 non-scrolling slideshow textbox and the Settings native binding inventory.
@@ -60,7 +60,7 @@ The skin settings page omits the DefaultWideHD BasicHome editor and the ineffect
 - Check local and remote changes before synchronizing; never overwrite unrelated work or force-push the default branch.
 - Rebuild the AnyCPU editor only when its source changes and matching MediaPortal references are available. Review the resulting assembly flags and version.
 - Refresh `packaging/baseline-sha256.json` intentionally after reviewing payload changes (`python tools/validate.py --refresh`). Refreshing hashes is not proof of compatibility.
-- Run `python tools/check_skin_references.py` after adding or renaming skin files, textures, fonts or imports. MediaPortal silently ignores an unresolved texture, falls back to the debug font for an unknown font name, and only warns about a missing import, so a visual review cannot catch these defects. `Source/Artwork/skin-reference-baseline.json` records the intentional unresolved legacy references with a reason; remove an entry when its asset is added instead of leaving a stale line. `Source/Artwork/mp139-window-ids.json` pins the MediaPortal 1.39 window ID of every core window this skin ships, which is how a copy-paste ID such as the former `topbarhome.xml` volume-overlay collision is caught.
+- Run `python tools/check_skin_references.py` after adding or renaming skin files, textures, fonts or imports. MediaPortal silently ignores an unresolved texture, falls back to the debug font for an unknown font name, and only warns about a missing import, so a visual review cannot catch these defects. The check parses the skin XML instead of matching text, so commented-out controls are ignored, and it covers texture elements plus `mask` attributes. `Source/Artwork/skin-reference-baseline.json` records the intentional unresolved legacy references with a reason; remove an entry when its asset is added instead of leaving a stale line. `Source/Artwork/mp139-window-ids.json` pins the MediaPortal 1.39 window ID of every core window this skin ships, which is how a copy-paste ID such as the former `topbarhome.xml` volume-overlay collision is caught.
 - Run `python tools/validate.py` and `python tools/package.py`, then inspect the installer payload.
 - Test affected screens in the authorized isolated MediaPortal instance. Retain reusable synthetic fixtures outside the repository; do not import personal media or databases.
 - Record verified results separately from untested assumptions. Percentages must state the exact denominator. Do not silently reuse historical compatibility scores.

@@ -75,7 +75,7 @@ def main():
     flags = struct.unpack_from('<I', dll, cli_offset + 16)[0]
     assert flags & 1 and not flags & (2 | 0x20000), 'Editor must be ILOnly without 32-bit required/preferred flags'
     if args.refresh:
-        manifest_path.write_text(json.dumps(dict(sorted(actual.items())), indent=2) + '\n', encoding='utf-8')
+        manifest_path.write_text(json.dumps(dict(sorted(actual.items())), indent=2) + '\n', encoding='utf-8', newline='\n')
         print('Refreshed reviewed payload checksums.')
     elif actual != baseline:
         changes = sorted(p for p in actual.keys() | baseline.keys() if actual.get(p) != baseline.get(p))

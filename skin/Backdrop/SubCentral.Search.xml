@@ -99,7 +99,7 @@
       <posY>680</posY>
       <width>256</width>
       <height>380</height>
-      <texture mask="poster_frame_rounder_corners_bg_filmstrip.png">defaultposter.png.png</texture>
+      <texture mask="poster_frame_rounder_corners_bg_filmstrip.png">defaultposter.png</texture>
       <visible>Control.IsVisible(102)+Control.HasFocus(50)+!Control.HasThumb(911)</visible>
       <animation effect="fade" time="250">visiblechange</animation>
       <animation effect="fade" time="250">WindowClose</animation>

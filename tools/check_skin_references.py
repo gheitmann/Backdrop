@@ -3,11 +3,11 @@
 MediaPortal silently ignores a texture that does not exist, falls back to the
 debug font for an unknown font name, and logs only a warning for a missing
 import. These defects therefore survive visual review. This check resolves every
-static reference against the shipped files and the MediaPortal 1.39 window IDs.
+static reference (texture elements and `mask` attributes) against the shipped
+files and the MediaPortal 1.39 window IDs.
 """
 from pathlib import Path
 import json
-import re
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -16,19 +16,26 @@ MEDIA = SKIN / 'Media'
 BASELINE = ROOT / 'Source' / 'Artwork' / 'skin-reference-baseline.json'
 WINDOWS = ROOT / 'Source' / 'Artwork' / 'mp139-window-ids.json'
 
-TEXTURE_TAGS = (
-    'texture', 'textureFocus', 'textureNoFocus', 'textureUp', 'textureDown',
-    'textureUpFocus', 'textureDownFocus', 'image', 'imagepath', 'textureCheckmark',
-    'textureCheckmarkNoFocus', 'lefttexture', 'midtexture', 'righttexture',
-    'texturebg', 'scrollbarBackground', 'scrollbarLeft', 'scrollbarRight',
+TEXTURE_TAGS = {
+    'texture', 'texturefocus', 'texturenofocus', 'textureup', 'texturedown',
+    'textureupfocus', 'texturedownfocus', 'image', 'imagepath', 'texturecheckmark',
+    'texturecheckmarknofocus', 'lefttexture', 'midtexture', 'righttexture',
+    'texturebg', 'scrollbarbackground', 'scrollbarleft', 'scrollbarright',
     'scrollbartop', 'scrollbarbottom', 'scrollbarbg',
-)
+}
+TEXTURE_ATTRIBUTES = {'mask'}
 IMAGE_SUFFIXES = ('.png', '.jpg', '.jpeg', '.gif', '.bmp')
-TEXTURE_PATTERN = re.compile(r'<(%s)>\s*([^<]+?)\s*</\1>' % '|'.join(TEXTURE_TAGS), re.IGNORECASE)
 
 
 def skin_files():
     return sorted(SKIN.glob('*.xml'))
+
+
+def skin_tree(path):
+    try:
+        return ET.parse(path)
+    except ET.ParseError as error:
+        raise ValueError(f'Invalid skin XML {path.name}: {error}') from error
 
 
 def media_index():
@@ -45,20 +52,27 @@ def defined_fonts():
     return names
 
 
+def texture_references(node):
+    if isinstance(node.tag, str) and node.tag.lower() in TEXTURE_TAGS:
+        yield (node.text or '').strip()
+    for name, value in node.attrib.items():
+        if name.lower() in TEXTURE_ATTRIBUTES:
+            yield (value or '').strip()
+
+
 def check_textures(index, allowed):
     unresolved = {}
     for path in skin_files():
-        text = path.read_text(encoding='utf-8-sig', errors='replace')
-        for match in TEXTURE_PATTERN.finditer(text):
-            reference = match.group(2)
-            lowered = reference.lower()
-            if '#' in reference or reference.startswith('..') or ':' in reference:
-                continue
-            if not lowered.endswith(IMAGE_SUFFIXES):
-                continue
-            if lowered.replace('\\', '/') in index:
-                continue
-            unresolved.setdefault(reference, set()).add(path.name)
+        for node in skin_tree(path).iter():
+            for reference in texture_references(node):
+                lowered = reference.lower()
+                if '#' in reference or reference.startswith('..') or ':' in reference:
+                    continue
+                if not lowered.endswith(IMAGE_SUFFIXES):
+                    continue
+                if lowered.replace('\\', '/') in index:
+                    continue
+                unresolved.setdefault(reference, set()).add(path.name)
     unexpected = sorted(set(unresolved) - set(allowed))
     if unexpected:
         details = '; '.join(f'{name} ({", ".join(sorted(unresolved[name])[:3])})' for name in unexpected)
@@ -71,11 +85,7 @@ def check_fonts():
     known = defined_fonts()
     unknown = {}
     for path in skin_files():
-        try:
-            tree = ET.parse(path)
-        except ET.ParseError as error:
-            raise ValueError(f'Invalid skin XML {path.name}: {error}') from error
-        for node in tree.iter('font'):
+        for node in skin_tree(path).iter('font'):
             name = (node.text or '').strip()
             if not name or name == '-' or name in known:
                 continue
@@ -89,12 +99,12 @@ def check_fonts():
 def check_imports():
     missing = {}
     for path in skin_files():
-        text = path.read_text(encoding='utf-8-sig', errors='replace')
-        for tag in ('import', 'include'):
-            for match in re.finditer(r'<%s>\s*([^<]+?)\s*</%s>' % (tag, tag), text, re.IGNORECASE):
-                name = match.group(1)
-                if not (SKIN / name).is_file():
-                    missing.setdefault(name, set()).add(path.name)
+        for node in skin_tree(path).iter():
+            if not isinstance(node.tag, str) or node.tag.lower() not in ('import', 'include'):
+                continue
+            name = (node.text or '').strip()
+            if not (SKIN / name).is_file():
+                missing.setdefault(name, set()).add(path.name)
     if missing:
         details = '; '.join(f'{name} ({", ".join(sorted(files)[:3])})' for name, files in sorted(missing.items()))
         raise ValueError(f'Missing imports or includes: {details}')
@@ -107,7 +117,7 @@ def check_window_ids():
         path = SKIN / name
         if not path.is_file():
             raise ValueError(f'Missing MediaPortal 1.39 window file: {name}')
-        window = ET.parse(path).getroot()
+        window = skin_tree(path).getroot()
         if window.tag != 'window':
             raise ValueError(f'Not a window definition: {name}')
         actual = (window.findtext('id') or '').strip()

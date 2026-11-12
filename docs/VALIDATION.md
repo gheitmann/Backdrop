@@ -1,5 +1,7 @@
 # Current validation and historical evidence
 
+Current working tree (12 November 2026, package version 1.39.0.34): static-only review of the imported 1.39.0.34 tree. Twelve Python checks pass; `tools/check_skin_references.py` resolves every static texture, mask, font, import and MediaPortal 1.39 window ID against the shipped files, and packaging reproduces 2,444/2,444 payload files. No MediaPortal runtime review is claimed for these changes, and the BETA5 runtime evidence below still describes the 1.39.0.32 build.
+
 BETA5 (3 November 2026): final Settings root/Pictures/Slideshow live review passed; overlapping frames removed and native titles verified. All 110 Settings contracts, 2,444/2,444 package files and 21/21 bundle entries checked. Final EXE VerifyOnly passed x64 and isolated x86 (2/2 architectures). See [build verification](BETA5-BUILD-REPORT.md).
 
 BETA4 feedback follow-up (included in BETA5) (3 November 2026): all 110 Settings native
